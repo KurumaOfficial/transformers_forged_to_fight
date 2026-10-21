@@ -1,0 +1,706 @@
+{
+  "token": "sess_tf_stub_token_12345",
+  "userToken": "sess_tf_stub_token_12345",
+  "stoken": "sess_tf_stub_token_12345",
+  "server_tag": "Prod",
+  "serverTag": "Prod",
+  "user": {
+    "uid": "10001",
+    "id": 10001,
+    "user_id": 10001,
+    "userId": 10001,
+    "name": "Commander",
+    "email": "commander@local.test",
+    "cohort": 1792505982,
+    "created": 1792505982,
+    "revenue": 0,
+    "time_revenue": 0,
+    "time_last": 1792592382,
+    "level": 1,
+    "naid": "",
+    "geo": "RU",
+    "geo_join": "RU",
+    "fbid": "",
+    "gcid": "",
+    "gamestats": {
+      "stats": {},
+      "achievements": {}
+    },
+    "base": {
+      "mode": "base",
+      "category": "base",
+      "id": "user_base",
+      "hash": "v1",
+      "versionHash": "v1",
+      "setName": "primordial_base",
+      "setId": "primordial_base_1",
+      "uid": "10001",
+      "aid": "",
+      "summary": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "data": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "map": {
+        "mapHash": "base_map_hash",
+        "gridDimension": 1,
+        "walkableCount": 1,
+        "visibleWalkableCount": 1,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": true,
+              "walkable": true
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ],
+        "paths": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "tiles": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      },
+      "placements": {},
+      "placement": {}
+    }
+  },
+  "gamestats": {
+    "stats": {},
+    "achievements": {}
+  },
+  "base": {
+    "user": {
+      "Base": {
+        "mode": "base",
+        "category": "base",
+        "id": "user_base",
+        "hash": "v1",
+        "versionHash": "v1",
+        "setName": "primordial_base",
+        "setId": "primordial_base_1",
+        "uid": "10001",
+        "aid": "",
+        "summary": {
+          "id": "user_base",
+          "category": "base",
+          "name": "Base",
+          "friendlyName": "Base",
+          "description": "",
+          "isDetailed": false,
+          "theme": "primordial",
+          "todIndex": 0,
+          "energyPerTile": 0
+        },
+        "data": {
+          "id": "user_base",
+          "category": "base",
+          "name": "Base",
+          "friendlyName": "Base",
+          "description": "",
+          "isDetailed": false,
+          "theme": "primordial",
+          "todIndex": 0,
+          "energyPerTile": 0
+        },
+        "map": {
+          "mapHash": "base_map_hash",
+          "gridDimension": 1,
+          "walkableCount": 1,
+          "visibleWalkableCount": 1,
+          "grid": [
+            [
+              {
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "start": true,
+                "final": true,
+                "walkable": true
+              }
+            ]
+          ],
+          "pathData": [
+            {
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ]
+            }
+          ],
+          "paths": [
+            {
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "tiles": [
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ]
+            }
+          ]
+        },
+        "placements": {},
+        "placement": {}
+      },
+      "base": {
+        "mode": "base",
+        "category": "base",
+        "id": "user_base",
+        "hash": "v1",
+        "versionHash": "v1",
+        "setName": "primordial_base",
+        "setId": "primordial_base_1",
+        "uid": "10001",
+        "aid": "",
+        "summary": {
+          "id": "user_base",
+          "category": "base",
+          "name": "Base",
+          "friendlyName": "Base",
+          "description": "",
+          "isDetailed": false,
+          "theme": "primordial",
+          "todIndex": 0,
+          "energyPerTile": 0
+        },
+        "data": {
+          "id": "user_base",
+          "category": "base",
+          "name": "Base",
+          "friendlyName": "Base",
+          "description": "",
+          "isDetailed": false,
+          "theme": "primordial",
+          "todIndex": 0,
+          "energyPerTile": 0
+        },
+        "map": {
+          "mapHash": "base_map_hash",
+          "gridDimension": 1,
+          "walkableCount": 1,
+          "visibleWalkableCount": 1,
+          "grid": [
+            [
+              {
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "start": true,
+                "final": true,
+                "walkable": true
+              }
+            ]
+          ],
+          "pathData": [
+            {
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ]
+            }
+          ],
+          "paths": [
+            {
+              "path": [
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "tiles": [
+                {
+                  "x": 0,
+                  "y": 0
+                }
+              ]
+            }
+          ]
+        },
+        "placements": {},
+        "placement": {}
+      },
+      "AvailableBuildings": [],
+      "Buildings": [],
+      "Sockets": []
+    },
+    "userBase": {
+      "mode": "base",
+      "category": "base",
+      "id": "user_base",
+      "hash": "v1",
+      "versionHash": "v1",
+      "setName": "primordial_base",
+      "setId": "primordial_base_1",
+      "uid": "10001",
+      "aid": "",
+      "summary": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "data": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "map": {
+        "mapHash": "base_map_hash",
+        "gridDimension": 1,
+        "walkableCount": 1,
+        "visibleWalkableCount": 1,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": true,
+              "walkable": true
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ],
+        "paths": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "tiles": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      },
+      "placements": {},
+      "placement": {}
+    },
+    "user_base": {
+      "mode": "base",
+      "category": "base",
+      "id": "user_base",
+      "hash": "v1",
+      "versionHash": "v1",
+      "setName": "primordial_base",
+      "setId": "primordial_base_1",
+      "uid": "10001",
+      "aid": "",
+      "summary": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "data": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "map": {
+        "mapHash": "base_map_hash",
+        "gridDimension": 1,
+        "walkableCount": 1,
+        "visibleWalkableCount": 1,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": true,
+              "walkable": true
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ],
+        "paths": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "tiles": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      },
+      "placements": {},
+      "placement": {}
+    },
+    "userAvailableBuildings": [],
+    "userBuildings": [],
+    "userSockets": [],
+    "Base": {
+      "mode": "base",
+      "category": "base",
+      "id": "user_base",
+      "hash": "v1",
+      "versionHash": "v1",
+      "setName": "primordial_base",
+      "setId": "primordial_base_1",
+      "uid": "10001",
+      "aid": "",
+      "summary": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "data": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "map": {
+        "mapHash": "base_map_hash",
+        "gridDimension": 1,
+        "walkableCount": 1,
+        "visibleWalkableCount": 1,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": true,
+              "walkable": true
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ],
+        "paths": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "tiles": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      },
+      "placements": {},
+      "placement": {}
+    },
+    "base": {
+      "mode": "base",
+      "category": "base",
+      "id": "user_base",
+      "hash": "v1",
+      "versionHash": "v1",
+      "setName": "primordial_base",
+      "setId": "primordial_base_1",
+      "uid": "10001",
+      "aid": "",
+      "summary": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "data": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "map": {
+        "mapHash": "base_map_hash",
+        "gridDimension": 1,
+        "walkableCount": 1,
+        "visibleWalkableCount": 1,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": true,
+              "walkable": true
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ],
+        "paths": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "tiles": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      },
+      "placements": {},
+      "placement": {}
+    },
+    "AvailableBuildings": [],
+    "Buildings": [],
+    "Sockets": []
+  },
+  "push": {
+    "websocket": "ws://127.0.0.1:8080/ws"
+  },
+  "xlate2Resources": {
+    "resources": [
+      {
+        "category": "alliances",
+        "resource": "en_alliances_6e2c8895f4c6c0658b6a15c6b23e690b456feb99.json"
+      },
+      {
+        "category": "bcg",
+        "resource": "en_bcg_578fba7b1c05bf03fd74c5b82c0cb7d86b314db2.json"
+      },
+      {
+        "category": "bcg_stat",
+        "resource": "en_bcg_stat_02553030363b4a0dc633184d2163c01071dba20b.json"
+      },
+      {
+        "category": "character_bios",
+        "resource": "en_character_bios_5739854424faa9c949c1aa5f13abe48322bdb51a.json"
+      },
+      {
+        "category": "common",
+        "resource": "en_common_e7553c03e162326da77096348624ec888c1c5a92.json"
+      },
+      {
+        "category": "cutscenes",
+        "resource": "en_cutscenes_7fbbdecb96f1d8615e40a9758fb9902b40368b75.json"
+      },
+      {
+        "category": "items",
+        "resource": "en_items_71b08e297d564ef51c46c4d4f8af0a995cf18587.json"
+      },
+      {
+        "category": "kabamaccounts",
+        "resource": "en_kabamaccounts_f6bc4d2c3e962f841a8ef6220952ed8019608320.json"
+      },
+      {
+        "category": "masteries",
+        "resource": "en_masteries_384bee276713ba21dabb3c605f943286b90a8ae4.json"
+      },
+      {
+        "category": "misc",
+        "resource": "en_misc_d68acf8f3cd928a268e71f08946b64cb06151944.json"
+      },
+      {
+        "category": "pvp",
+        "resource": "en_pvp_74d018a31ee4eaee543d6be5b1c1f98ea895cf4d.json"
+      },
+      {
+        "category": "quests",
+        "resource": "en_quests_dca297e47492e9f6c1bec1d94cfa80b71d7d8967.json"
+      },
+      {
+        "category": "social",
+        "resource": "en_social_9a733dc138960f95abe861a743429bfb515660cb.json"
+      },
+      {
+        "category": "special_attacks",
+        "resource": "en_special_attacks_482c726c8151419c8b8a262b772e0779b8e14f72.json"
+      },
+      {
+        "category": "synergies",
+        "resource": "en_synergies_6084c0298e1d572c052091742bd34baaab4de935.json"
+      },
+      {
+        "category": "tips",
+        "resource": "en_tips_787158fd35f2cd2b6077a833f4bd14acfcdcd125.json"
+      },
+      {
+        "category": "tutorials",
+        "resource": "en_tutorials_2f9fc5ddb7c79131dfa396bdd5da7f659e1b6b88.json"
+      }
+    ]
+  },
+  "modeData": {
+    "modeGroups": {},
+    "modes": {}
+  },
+  "tut": {},
+  "redeemers": [],
+  "loc": [],
+  "master": [],
+  "pvp": {
+    "duel": {
+      "userData": {}
+    }
+  },
+  "auth": {
+    "device": true
+  },
+  "auth_data": {
+    "authenticator": "device"
+  },
+  "endpoints": {
+    "device": "http://127.0.0.1:8080"
+  },
+  "endpoint": {},
+  "features": {}
+}

@@ -1,0 +1,493 @@
+{
+  "user": {
+    "Base": {
+      "mode": "base",
+      "category": "base",
+      "id": "user_base",
+      "hash": "v1",
+      "versionHash": "v1",
+      "setName": "primordial_base",
+      "setId": "primordial_base_1",
+      "uid": "10001",
+      "aid": "",
+      "summary": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "data": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "map": {
+        "mapHash": "base_map_hash",
+        "gridDimension": 1,
+        "walkableCount": 1,
+        "visibleWalkableCount": 1,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": true,
+              "walkable": true
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ],
+        "paths": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "tiles": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      },
+      "placements": {},
+      "placement": {}
+    },
+    "base": {
+      "mode": "base",
+      "category": "base",
+      "id": "user_base",
+      "hash": "v1",
+      "versionHash": "v1",
+      "setName": "primordial_base",
+      "setId": "primordial_base_1",
+      "uid": "10001",
+      "aid": "",
+      "summary": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "data": {
+        "id": "user_base",
+        "category": "base",
+        "name": "Base",
+        "friendlyName": "Base",
+        "description": "",
+        "isDetailed": false,
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 0
+      },
+      "map": {
+        "mapHash": "base_map_hash",
+        "gridDimension": 1,
+        "walkableCount": 1,
+        "visibleWalkableCount": 1,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": true,
+              "walkable": true
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ],
+        "paths": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "tiles": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      },
+      "placements": {},
+      "placement": {}
+    },
+    "AvailableBuildings": [],
+    "Buildings": [],
+    "Sockets": []
+  },
+  "userBase": {
+    "mode": "base",
+    "category": "base",
+    "id": "user_base",
+    "hash": "v1",
+    "versionHash": "v1",
+    "setName": "primordial_base",
+    "setId": "primordial_base_1",
+    "uid": "10001",
+    "aid": "",
+    "summary": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "data": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "map": {
+      "mapHash": "base_map_hash",
+      "gridDimension": 1,
+      "walkableCount": 1,
+      "visibleWalkableCount": 1,
+      "grid": [
+        [
+          {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "start": true,
+            "final": true,
+            "walkable": true
+          }
+        ]
+      ],
+      "pathData": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "tiles": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ]
+    },
+    "placements": {},
+    "placement": {}
+  },
+  "user_base": {
+    "mode": "base",
+    "category": "base",
+    "id": "user_base",
+    "hash": "v1",
+    "versionHash": "v1",
+    "setName": "primordial_base",
+    "setId": "primordial_base_1",
+    "uid": "10001",
+    "aid": "",
+    "summary": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "data": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "map": {
+      "mapHash": "base_map_hash",
+      "gridDimension": 1,
+      "walkableCount": 1,
+      "visibleWalkableCount": 1,
+      "grid": [
+        [
+          {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "start": true,
+            "final": true,
+            "walkable": true
+          }
+        ]
+      ],
+      "pathData": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "tiles": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ]
+    },
+    "placements": {},
+    "placement": {}
+  },
+  "userAvailableBuildings": [],
+  "userBuildings": [],
+  "userSockets": [],
+  "Base": {
+    "mode": "base",
+    "category": "base",
+    "id": "user_base",
+    "hash": "v1",
+    "versionHash": "v1",
+    "setName": "primordial_base",
+    "setId": "primordial_base_1",
+    "uid": "10001",
+    "aid": "",
+    "summary": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "data": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "map": {
+      "mapHash": "base_map_hash",
+      "gridDimension": 1,
+      "walkableCount": 1,
+      "visibleWalkableCount": 1,
+      "grid": [
+        [
+          {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "start": true,
+            "final": true,
+            "walkable": true
+          }
+        ]
+      ],
+      "pathData": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "tiles": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ]
+    },
+    "placements": {},
+    "placement": {}
+  },
+  "base": {
+    "mode": "base",
+    "category": "base",
+    "id": "user_base",
+    "hash": "v1",
+    "versionHash": "v1",
+    "setName": "primordial_base",
+    "setId": "primordial_base_1",
+    "uid": "10001",
+    "aid": "",
+    "summary": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "data": {
+      "id": "user_base",
+      "category": "base",
+      "name": "Base",
+      "friendlyName": "Base",
+      "description": "",
+      "isDetailed": false,
+      "theme": "primordial",
+      "todIndex": 0,
+      "energyPerTile": 0
+    },
+    "map": {
+      "mapHash": "base_map_hash",
+      "gridDimension": 1,
+      "walkableCount": 1,
+      "visibleWalkableCount": 1,
+      "grid": [
+        [
+          {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "start": true,
+            "final": true,
+            "walkable": true
+          }
+        ]
+      ],
+      "pathData": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "tiles": [
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ]
+    },
+    "placements": {},
+    "placement": {}
+  },
+  "AvailableBuildings": [],
+  "Buildings": [],
+  "Sockets": []
+}

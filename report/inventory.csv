@@ -1,0 +1,14 @@
+﻿Category,FileCount,TotalSizeBytes,TotalSizeMB,StatusInAPK,SampleFiles
+Bot 3D Models & Roster,122,309627586,295.28,Полностью в APK,assets/assetpack/arcee_gs_deluxe2014_odr/arcee_gs_deluxe2014.assetbundle; assets/assetpack/arcee_gs_deluxe2014_odr/arcee_gs_deluxe2014.assetbundle.manifest
+Animations,5,13204134,12.59,Полностью в APK,assets/assetpack/characters_procedural_odr/character_anim_procedural.assetbundle; assets/assetpack/characters_procedural_odr/character_anim_procedural.assetbundle.manifest
+Audio & SFX,4,5032904,4.80,Полностью в APK,assets/assetpack/characters/character_audio.assetbundle; assets/assetpack/characters/character_audio.assetbundle.manifest
+Arenas & Battle Stages,26,260348520,248.29,Полностью в APK,assets/assetpack/base/base_merged.assetbundle; assets/assetpack/base/base_merged.assetbundle.manifest
+"UI, Icons & Portraits",1044,99269380,94.67,Полностью в APK,assets/assetpack/buildings_odr/buildings.assetbundle; assets/assetpack/buildings_odr/buildings.assetbundle.manifest
+Localization & Strings,1793,71784366,68.46,"Частично (тексты есть, серверные таблицы отсутствуют)",assets/assetpack/chinesesimplified_odr/chinesesimplified.assetbundle; assets/assetpack/chinesesimplified_odr/chinesesimplified.assetbundle.manifest
+VFX & Shaders,6,5135310,4.90,Полностью в APK,assets/assetpack/characters/character_fx.assetbundle; assets/assetpack/characters/character_fx.assetbundle.manifest
+"Base, Towers & Relics",9,23004180,21.94,"Частично (модели есть, серверные конфиги отсутствуют)",assets/assetpack/chests_odr/chests/chests_01.png; assets/assetpack/chests_odr/chests/chests_02.png
+Quests & Gameboards,17,789498,0.75,"Частично (ассетборды есть, серверные карты отсутствуют)",assets/assetpack/assets_quest_fte_odr/assets_quest_fte.assetbundle; assets/assetpack/assets_quest_fte_odr/assets_quest_fte.assetbundle.manifest
+Code & Native Binaries,32,164565456,156.94,Полностью в APK,classes.dex; classes2.dex
+Configs & Manifests,491,1075510,1.03,Полностью в APK,AndroidManifest.xml; androidsupportmultidexversion.txt
+Unity Engine Data,9,21136172,20.16,Полностью в APK,assets/bin/Data/11eca100e87e64d89ba7bc488872fada; assets/bin/Data/1e1d9537d0c0d465d86e5a63d17ec818
+Android Resources & Other,575,10028545,9.56,Полностью в APK,firebase-analytics-impl.properties; firebase-analytics.properties

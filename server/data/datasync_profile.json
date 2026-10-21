@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "profile": {
+    "musicVol": 1.0,
+    "sfxVol": 1.0,
+    "unlockedHeroForge": true,
+    "unlockedTowerForge": true,
+    "hasSeenRankUpToolTip": true,
+    "disableDialogueOnReplay": false,
+    "gachaUsesRemaining": 10,
+    "lastMedalCount": 0
+  }
+}

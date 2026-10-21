@@ -1,0 +1,371 @@
+import http.server
+import socketserver
+import json
+import time
+import os
+import sys
+import urllib.parse
+from datetime import datetime
+
+PORT = 8080
+LOG_FILE = os.path.join(os.path.dirname(__file__), "requests.jsonl")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
+def load_data_json(filename, default=None):
+    """Load JSON data payload from server/data/<filename>."""
+    filepath = os.path.join(DATA_DIR, filename)
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"[!] Error loading {filepath}: {e}", file=sys.stderr)
+    return default if default is not None else {}
+
+def make_sparx_response(result=None, sync=None, async_list=None, error=None, fatal=False, retry=False):
+    # Sparx canonical envelope [STATIC: parsed from EB.Sparx.Response and EB.Sparx.EndPoint]
+    resp = {
+        "ts": int(time.time()),
+        "result": result if result is not None else {},
+    }
+    if sync:
+        resp["sync"] = sync
+    if async_list:
+        resp["async"] = async_list
+    if error:
+        resp["error"] = error
+        resp["fatal"] = fatal
+        resp["retry"] = retry
+    return json.dumps(resp, ensure_ascii=False)
+
+class SparxStubHandler(http.server.BaseHTTPRequestHandler):
+    protocol_version = 'HTTP/1.1'
+
+    def log_request_details(self, method, body_bytes=b""):
+        parsed_url = urllib.parse.urlparse(self.path)
+        path = parsed_url.path
+        query = urllib.parse.parse_qs(parsed_url.query)
+        headers_dict = dict(self.headers)
+
+        body_str = ""
+        body_json = None
+        if body_bytes:
+            try:
+                body_str = body_bytes.decode('utf-8')
+                body_json = json.loads(body_str)
+            except Exception:
+                body_str = body_bytes.decode('utf-8', errors='replace')
+
+        entry = {
+            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "client_ip": self.client_address[0],
+            "client_port": self.client_address[1],
+            "method": method,
+            "path": path,
+            "query": query,
+            "headers": headers_dict,
+            "body": body_json if body_json is not None else body_str
+        }
+
+        # Write to JSONL file with explicit flush
+        try:
+            with open(LOG_FILE, "a", encoding="utf-8") as f:
+                f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+                f.flush()
+        except Exception as e:
+            print(f"[!] Error writing log: {e}", file=sys.stderr)
+
+        print(f"\n[CLIENT REQUEST] {method} {path}")
+        print(f"       Client: {self.client_address[0]}:{self.client_address[1]}")
+        print(f"       Headers: stoken={headers_dict.get('stoken') or query.get('stoken', [None])[0]}")
+        if body_json:
+            print(f"       Body JSON: {json.dumps(body_json, ensure_ascii=False)}")
+        elif body_str:
+            print(f"       Body Raw: {body_str[:120]}")
+
+        return path, query, headers_dict, body_json
+
+    def send_sparx(self, result=None, sync=None, status_code=200, assumed_label="[ASSUMED]"):
+        payload = make_sparx_response(result=result, sync=sync)
+        body = payload.encode('utf-8')
+        self.send_response(status_code)
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Content-Length', str(len(body)))
+        self.send_header('Connection', 'keep-alive')
+        self.end_headers()
+        self.wfile.write(body)
+        print(f"[SPARX RESPONSE 200] {assumed_label} Sent {len(body)} bytes")
+
+    def do_GET(self):
+        # Support WebSocket upgrade handshake if client requests ws
+        if self.headers.get("Upgrade", "").lower() == "websocket" or self.path == "/ws":
+            self.send_response(400)
+            self.end_headers()
+            return
+
+        path, query, headers, body_json = self.log_request_details("GET")
+        self.dispatch(path, query, headers, body_json)
+
+    def do_POST(self):
+        content_length = int(self.headers.get('Content-Length', 0))
+        body_bytes = self.rfile.read(content_length) if content_length > 0 else b""
+        path, query, headers, body_json = self.log_request_details("POST", body_bytes)
+        self.dispatch(path, query, headers, body_json)
+
+    def dispatch(self, path, query, headers, body):
+        now = int(time.time())
+
+        # 1. Auth Init [RUN: confirmed in device test]
+        if path == "/auth/init":
+            self.send_sparx({
+                "status": "ok",
+                "session": "sess_tf_stub_token_12345"
+            }, assumed_label="[RUN: /auth/init]")
+            return
+
+        # 2. Auth Enumerate [STATIC: return [] for fresh account flow to invoke PreLoginFlow]
+        if path == "/auth/enumerate":
+            self.send_sparx([], assumed_label="[STATIC: /auth/enumerate empty accounts array]")
+            return
+
+        # 3. Prelogin [STATIC: salt="" causes SyncGenerateHMACSignatureFromAPK to skip APK_Check_Start_Salt in libapkprotect.so]
+        if path == "/auth/prelogin":
+            self.send_sparx({
+                "salt": "",
+                "status": "ok"
+            }, assumed_label="[STATIC: /auth/prelogin bypass libapkprotect with empty salt]")
+            return
+
+        # 4. Login [STATIC: loaded from server/data/login_response.json]
+        if path == "/auth/login":
+            data = load_data_json("login_response.json")
+            if not data:
+                data = {
+                    "token": "sess_tf_stub_token_12345",
+                    "stoken": "sess_tf_stub_token_12345",
+                    "auth": {"device": True},
+                    "endpoints": {"device": "http://127.0.0.1:8080"}
+                }
+            self.send_sparx(data, assumed_label="[STATIC: /auth/login loaded from data/login_response.json]")
+            return
+
+        # 5. Account Data [STATIC: loaded from server/data/account_data.json]
+        if path == "/account/data":
+            data = load_data_json("account_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /account/data loaded from data/account_data.json]")
+            return
+
+        # 6. Krash / Error reporting [RUN: captured in live run]
+        if path == "/krash" or path.startswith("/krash/"):
+            print("[KRASH REPORT RECEIVED]")
+            self.send_sparx({"status": "received", "id": "krash_1001"}, assumed_label="[RUN: /krash]")
+            return
+
+        # 7. Tuning [STATIC: loaded from server/data/tuning_data.json]
+        if path == "/tuning":
+            data = load_data_json("tuning_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /tuning loaded from data/tuning_data.json]")
+            return
+
+        # 8. BCG getLoginData [STATIC: loaded from server/data/bcg_login_data.json]
+        if path == "/bcg/getLoginData":
+            data = load_data_json("bcg_login_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /bcg/getLoginData loaded from data/bcg_login_data.json]")
+            return
+
+        # 9. BCG base hero data [STATIC: BCGAPI]
+        if path == "/bcg/getBaseHeroData":
+            self.send_sparx({
+                "heroes": {},
+                "blueprints": {},
+                "growth": {},
+                "classes": {},
+                "rarity": {}
+            }, assumed_label="[STATIC: /bcg/getBaseHeroData]")
+            return
+
+        # 10. BCG user data (roster) [STATIC: BCGAPI and BCGUserData]
+        if path == "/bcg/getUserData":
+            self.send_sparx({
+                "heroes": [],
+                "entities": [],
+                "evoBlueprints": {},
+                "savedTeams": {},
+                "activeTeams": {},
+                "blueprintsMax": 50,
+                "teamSizeMax": 3,
+                "teamCountMax": 3,
+                "evoFragments": {}
+            }, assumed_label="[STATIC: /bcg/getUserData]")
+            return
+
+        # 11. AutoRefresh endpoints [STATIC: loaded from server/data/missions_config.json or generic envelope]
+        if path.startswith("/autorefresh/missionsconfig/"):
+            data = load_data_json("missions_config.json")
+            self.send_sparx(data, assumed_label="[STATIC: /autorefresh/missionsconfig/ loaded from data/missions_config.json]")
+            return
+
+        if path.startswith("/autorefresh/"):
+            sub_name = path.split("/")[2] if len(path.split("/")) > 2 else "data"
+            self.send_sparx({
+                "check": "check_hash_12345",
+                "refresh": 3600,
+                "cache": False,
+                sub_name: {}
+            }, assumed_label=f"[STATIC: /autorefresh/{sub_name}]")
+            return
+
+        # 12. Quests: Available quests [STATIC: loaded from server/data/quest_list.json]
+        if path == "/quests/quest-list":
+            data = load_data_json("quest_list.json", default=[])
+            self.send_sparx(data, assumed_label="[STATIC: /quests/quest-list loaded from data/quest_list.json]")
+            return
+
+        # 13. Quests: Active quest [STATIC: loaded from server/data/quest_active.json]
+        if path == "/quests/quest-active":
+            data = load_data_json("quest_active.json")
+            self.send_sparx(data, assumed_label="[STATIC: /quests/quest-active loaded from data/quest_active.json]")
+            return
+
+        # 14. PVP Login Data [STATIC: loaded from server/data/pvp_login_data.json]
+        if path == "/pvp/get-login-data":
+            data = load_data_json("pvp_login_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /pvp/get-login-data loaded from data/pvp_login_data.json]")
+            return
+
+        # 15. Base Active [STATIC: loaded from server/data/base_active.json]
+        if path == "/base/active":
+            data = load_data_json("base_active.json")
+            self.send_sparx(data, assumed_label="[STATIC: /base/active loaded from data/base_active.json]")
+            return
+
+        # 16. Payments Payouts [STATIC: loaded from server/data/payments_payouts.json]
+        if path == "/payments/payouts":
+            data = load_data_json("payments_payouts.json")
+            self.send_sparx(data, assumed_label="[STATIC: /payments/payouts loaded from data/payments_payouts.json]")
+            return
+
+        # 17. Offers Data [STATIC: loaded from server/data/offers_data.json]
+        if path == "/offers/getLoginData":
+            data = load_data_json("offers_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /offers/getLoginData loaded from data/offers_data.json]")
+            return
+
+        # 18. Redeemer Refresh [STATIC: loaded from server/data/redeemer_data.json]
+        if path == "/redeemer/refresh":
+            data = load_data_json("redeemer_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /redeemer/refresh loaded from data/redeemer_data.json]")
+            return
+
+        # 19. Events Refresh [STATIC: loaded from server/data/events_data.json]
+        if path == "/events/refresh":
+            data = load_data_json("events_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /events/refresh loaded from data/events_data.json]")
+            return
+
+        # 20. GameStats [STATIC: loaded from server/data/gamestats_data.json]
+        if path == "/gamestats/get-login-data":
+            data = load_data_json("gamestats_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /gamestats/get-login-data loaded from data/gamestats_data.json]")
+            return
+
+        # 21. GameStats Achievements Check [STATIC]
+        if path == "/gamestats/check-login-achievements":
+            self.send_sparx([], assumed_label="[STATIC: /gamestats/check-login-achievements]")
+            return
+
+        # 22. Performance Profile [STATIC: loaded from server/data/performance_profile.json]
+        if path == "/performance/profile":
+            data = load_data_json("performance_profile.json")
+            self.send_sparx(data, assumed_label="[STATIC: /performance/profile loaded from data/performance_profile.json]")
+            return
+
+        # 23. Tutorial login data [STATIC: loaded from server/data/tutorial_data.json]
+        if path == "/tutorial/get-login-data":
+            data = load_data_json("tutorial_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /tutorial/get-login-data loaded from data/tutorial_data.json]")
+            return
+
+        # 23b. Tutorial Actions [STATIC: TutorialAPI StartTutorial, StartBranch, CompleteTutorial]
+        if path.startswith("/tutorial/"):
+            tid = "FTE"
+            bid = "close"
+            if isinstance(body, dict):
+                tid = body.get("tid", "FTE")
+                bid = body.get("bid", "close")
+
+            branch_data = {
+                "s": "completed",
+                "branchID": bid,
+                "state": "completed"
+            }
+            res_data = {
+                "s": "completed",
+                "state": "completed",
+                "current_bid": bid,
+                "currentBranchID": bid,
+                "branches": {
+                    bid: branch_data,
+                    "close": branch_data,
+                    "FTE": branch_data
+                }
+            }
+            self.send_sparx({
+                tid: res_data,
+                "FTE": res_data
+            }, assumed_label="[STATIC: /tutorial/* action]")
+            return
+
+        # 24. Push token [STATIC: PushAPI]
+        if path == "/push/token":
+            self.send_sparx({
+                "status": "ok",
+                "websocket": "ws://127.0.0.1:8080/ws"
+            }, assumed_label="[STATIC: /push/token]")
+            return
+
+        # 25. Inventory [STATIC: InventoryAPI]
+        if path.startswith("/inventory"):
+            self.send_sparx({
+                "items": []
+            }, assumed_label="[STATIC: /inventory]")
+            return
+
+        # 26. Wallet [STATIC: loaded from server/data/wallet_data.json]
+        if path.startswith("/wallet"):
+            data = load_data_json("wallet_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /wallet loaded from data/wallet_data.json]")
+            return
+
+        # 27. DataSync [STATIC: loaded from server/data/datasync_profile.json]
+        if path.startswith("/ds/"):
+            data = load_data_json("datasync_profile.json")
+            self.send_sparx(data, assumed_label="[STATIC: /ds/ loaded from data/datasync_profile.json]")
+            return
+
+        # Default safe empty response for any unknown path [ASSUMED]
+        print(f"[!] Warning: Handled UNKNOWN endpoint {path} with safe empty envelope")
+        self.send_sparx({}, assumed_label="[ASSUMED: unknown fallback]")
+
+class ThreadedHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
+    daemon_threads = True
+
+def run(port=PORT):
+    server_address = ('0.0.0.0', port)
+    httpd = ThreadedHTTPServer(server_address, SparxStubHandler)
+    print(f"==================================================")
+    print(f"  Transformers: Forged to Fight - Mock Stub Server")
+    print(f"  Listening on: http://0.0.0.0:{port}")
+    print(f"  Logging all requests to: {LOG_FILE}")
+    print(f"  Data Directory: {DATA_DIR}")
+    print(f"  Status: Ready for client connection [STATIC/RUN schemas]")
+    print(f"==================================================")
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\nStopping server...")
+        httpd.server_close()
+
+if __name__ == "__main__":
+    p = int(sys.argv[1]) if len(sys.argv) > 1 else PORT
+    run(p)

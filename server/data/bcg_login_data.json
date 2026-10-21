@@ -1,0 +1,334 @@
+{
+  "cdn": "http://127.0.0.1:8080/cdn",
+  "sigLvlMax": 100,
+  "ratingPrecision": 1,
+  "heroRatingAttackWeight": 1.0,
+  "heroRatingMaxHPWeight": 0.2,
+  "attributeGrowthDefs": [
+    {
+      "level_key": "level",
+      "curve_key": "curve_linear",
+      "rounded": true,
+      "attribute_keys": [
+        "attack",
+        "health"
+      ]
+    }
+  ],
+  "statMods": {
+    "stat_mod_attack_pct": {
+      "id": "stat_mod_attack_pct",
+      "var": "attack",
+      "modSource": "passive",
+      "growthTarget": "attack",
+      "growthCurve": "curve_linear",
+      "ratingCurve": "curve_linear",
+      "appearanceID": "appear_attack_pct",
+      "auth": [
+        "bumblebee_cin_dotm_2"
+      ],
+      "growthConst": 1.0,
+      "stackable": 1,
+      "tier": 1,
+      "heroRatingHP": 0.0,
+      "heroRatingAttack": 1.0,
+      "chance": 1.0,
+      "modifier": 0.1,
+      "duration": 0.0,
+      "priority": 1,
+      "triggerMod": 0.0
+    }
+  },
+  "statModAppears": {
+    "appear_attack_pct": {
+      "id": "appear_attack_pct",
+      "ability_title_id": "Attack Boost",
+      "short_string_id": "ATK+",
+      "long_string_id": "Increases Attack",
+      "simple_string_id": "ATK+",
+      "icon_texture": "icon_attack",
+      "fx_profile": "",
+      "callout_string_id": "ATK UP",
+      "pause_short_string_id": "ATK+",
+      "pause_long_string_id": "Increases Attack",
+      "callout_text_color": "#FFFFFFFF",
+      "callout_text_grad_top": "#FFFFFFFF",
+      "callout_text_grad_bottom": "#CCCCCCFF"
+    }
+  },
+  "heroes": {
+    "bumblebee_cin_dotm_2": {
+      "1": {
+        "blueprint": "bumblebee_cin_dotm_2",
+        "rank": 1,
+        "max_level": 10,
+        "stamina": 5,
+        "exp_growth": 1.0,
+        "flat_growth": 1.0,
+        "attack_ratio": 1.0,
+        "hp_ratio": 1.0,
+        "attr_base": 100,
+        "hp_mod": 1.0,
+        "attack_mod": 1.0,
+        "hero_rating_hp": 1.0,
+        "hero_rating_attack": 1.0,
+        "xp_curve": [
+          0,
+          100,
+          250,
+          450,
+          700,
+          1000,
+          1350,
+          1750,
+          2200,
+          2700
+        ],
+        "evo_cost": 100,
+        "evo_recipe": {},
+        "invest_base": [],
+        "invest_level_mod": 1.0,
+        "invest2_base": [],
+        "invest2_level_mod": 1.0,
+        "invest3_base": [],
+        "invest3_level_mod": 1.0,
+        "invest4_base": [],
+        "invest4_sig_mod": 1.0
+      }
+    }
+  },
+  "blueprints": {
+    "bumblebee_cin_dotm_2": {
+      "blueprint": "bumblebee_cin_dotm_2",
+      "entity_type": "hero",
+      "character": "bumblebee_cin_dotm",
+      "friendly_name": "Bumblebee",
+      "friendly_name_short": "Bumblebee",
+      "modelId": "bumblebee_cin_dotm",
+      "evo_blueprint": "evo_t1_basic",
+      "map_asset": "bumblebee_cin_dotm",
+      "hero_colour": "#FFD700FF",
+      "max_rank": 5,
+      "rarity": 2,
+      "cl": 1,
+      "class": 1,
+      "hero_class": 1,
+      "attribute_base_type": "scout",
+      "bcg_curve_values": {
+        "attack": "curve_linear",
+        "health": "curve_linear"
+      },
+      "gacha_reveal": "reveal_scout",
+      "stamina_regen": "default",
+      "base_damage": [
+        "kinetic"
+      ],
+      "base_ranged_damage": [
+        "energy"
+      ],
+      "special_1_damage": 1.0,
+      "special_2_damage": 1.5,
+      "special_3_damage": 2.0,
+      "max_special_attacks": 3,
+      "attack_bonus": 1.0,
+      "tags": [
+        "scout",
+        "autobot"
+      ],
+      "imgID": "bumblebee_cin_dotm",
+      "s3imgID": false,
+      "gachaFeaturedImg": "bumblebee_cin_dotm",
+      "s3GachaFeaturedImg": false,
+      "synergy_bonuses": [
+        "syn_autobots"
+      ],
+      "redeemer_base": [],
+      "gg": 10,
+      "gold_generation": 10,
+      "mfl": 100,
+      "max_forge_level": 100,
+      "nfr": 1,
+      "next_forge_rank": 1,
+      "fgr": 1.0,
+      "forge_growth_rate": 1.0,
+      "fcpg": "curve_linear",
+      "forge_cp_growth": "curve_linear",
+      "fhpag": "curve_linear",
+      "forge_hp_atk_growth": "curve_linear",
+      "victory_stage": ""
+    }
+  },
+  "characters": {
+    "bumblebee_cin_dotm": {
+      "id": "bumblebee_cin_dotm",
+      "name": "Bumblebee",
+      "friendly_name": "Bumblebee",
+      "faction": 1,
+      "subgroup": "Autobot",
+      "generation": "Cinematic",
+      "ai_personality": "aggressive",
+      "victory_stage": "",
+      "special_stage": ""
+    }
+  },
+  "evoBlueprints": {
+    "evo_t1_basic": {
+      "b": "evo_t1_basic",
+      "blueprint": "evo_t1_basic",
+      "evo_blueprint": "evo_t1_basic",
+      "evo_type": 1,
+      "friendly_name": "Tier 1 Basic Spark",
+      "description": "Catalyst used to rank up bots.",
+      "rarity": 1,
+      "class": 0,
+      "default_max": 50,
+      "dm": 50,
+      "tint_color": "#FFFFFFFF",
+      "imgID": "spark_basic_t1",
+      "s3imgID": false,
+      "gachaFeaturedImg": "",
+      "s3GachaFeaturedImg": false,
+      "base_iso_value": 100,
+      "conversion_cost": 0,
+      "base_coin_value": 100,
+      "frag_max": 1000,
+      "sell_redeems": [],
+      "enabled": true,
+      "banner_text": "",
+      "header": "",
+      "show_conversion": false
+    }
+  },
+  "synergyBonuses": {
+    "syn_autobots": {
+      "id": "syn_autobots",
+      "friendly_name": "Autobot Allegiance",
+      "description": "Increases HP and Attack by 5%",
+      "description_value": 5.0,
+      "texture": "syn_autobot",
+      "bonus_heroes": [
+        "bumblebee_cin_dotm_2"
+      ],
+      "required_heroes": [
+        "bumblebee_cin_dotm_2"
+      ],
+      "target_tags": [
+        "autobot"
+      ],
+      "enabled": true,
+      "hero_rating_hp_mod": 1.05,
+      "hero_rating_atk_mod": 1.05,
+      "hero_rating_stat_mods": []
+    }
+  },
+  "attackValues": {
+    "basic_melee": {
+      "id": "basic_melee",
+      "a": "basic_melee",
+      "percent": 1.0,
+      "p": 1.0,
+      "mana_gain": 0.05,
+      "m": 0.05,
+      "crit_chance": 0.05,
+      "c": 0.05,
+      "crit_damage": 1.5,
+      "d": 1.5,
+      "crit_pierce": 0.0
+    }
+  },
+  "blueprintBonuses": {
+    "base_bonus": {
+      "id": "base_bonus",
+      "modifier": 1.0,
+      "m": 1.0
+    }
+  },
+  "heroClasses": {
+    "scout": {
+      "id": "scout",
+      "name": "Scout",
+      "advantage": "tech",
+      "disadvantage": "demolition"
+    }
+  },
+  "staminaRegen": {
+    "default": {
+      "id": "default",
+      "interval": 300
+    }
+  },
+  "rarityProperties": {
+    "1": {
+      "id": "1",
+      "rarity": 1,
+      "max_rank": 2,
+      "max_level": 20
+    },
+    "2": {
+      "id": "2",
+      "rarity": 2,
+      "max_rank": 3,
+      "max_level": 30
+    }
+  },
+  "evoCosts": {
+    "evo_cost_t1": {
+      "id": "evo_cost_t1",
+      "rank": 1,
+      "r": 1,
+      "sc": 1000,
+      "recipe": [
+        "evo_t1_basic"
+      ],
+      "prizes": []
+    }
+  },
+  "curves": {
+    "curve_linear": {
+      "id": "curve_linear",
+      "a": 1.0,
+      "b": 1.0,
+      "c": 0.0,
+      "exp": 1.0,
+      "max": 1000.0
+    }
+  },
+  "damage_types": {
+    "kinetic": {
+      "id": "kinetic",
+      "name": "Kinetic"
+    },
+    "energy": {
+      "id": "energy",
+      "name": "Energy"
+    }
+  },
+  "userData": {
+    "heroes": [
+      {
+        "id": 10001,
+        "blueprint": "bumblebee_cin_dotm_2",
+        "level": 1,
+        "rank": 1,
+        "sig_level": 0,
+        "forge_level": 0,
+        "xp": 0,
+        "stamina": 5
+      }
+    ],
+    "entities": [],
+    "evoBlueprints": {
+      "evo_t1_basic": 10
+    },
+    "savedTeams": {},
+    "activeTeams": {
+      "quest": [
+        10001
+      ]
+    },
+    "blueprintsMax": 50,
+    "teamSizeMax": 3,
+    "teamCountMax": 3,
+    "evoFragments": {}
+  }
+}

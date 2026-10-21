@@ -1,0 +1,19 @@
+{
+  "check": "check_hash_12345",
+  "refresh": 3600,
+  "cache": false,
+  "missionsconfig": {
+    "configsHash": "v1",
+    "configs": {
+      "user-base": {},
+      "alliance-base": {},
+      "user": {},
+      "alliance": {},
+      "base": {},
+      "pve": {},
+      "ava": {},
+      "ave": {},
+      "raid": {}
+    }
+  }
+}

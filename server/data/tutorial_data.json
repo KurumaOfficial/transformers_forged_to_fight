@@ -1,0 +1,1484 @@
+{
+  "FTE": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "fte": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "close": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "tutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "prologue": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "NavToQuestTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "BotPlacementTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ShieldTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "RaidsTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "FightResultsTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "DailyMissionsTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "AllianceEventsPopupTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "AllianceEventsTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ArenaChipsTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ArenaTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "AutoFightTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "BotCrystalTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "BotDupedTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ClassAdvantageTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ClassGateTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ForgeBotTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ForgeModTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "LineStylesTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "LinkNodesTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "LoginRewardsTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "MasteriesScreenTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "MasteriesTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "MasteryPointTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ModDupedTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ModTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "OneShotTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "RankUpTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "RelicsTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "ResourceGenerationTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "SparksTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "StashTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "TreasuryTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "BaseTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  },
+  "SynergyTutorial": {
+    "s": "completed",
+    "state": "completed",
+    "current_bid": "close",
+    "currentBranchID": "close",
+    "branches": {
+      "close": {
+        "s": "completed",
+        "branchID": "close",
+        "state": "completed"
+      },
+      "fte_complete": {
+        "s": "completed",
+        "branchID": "fte_complete",
+        "state": "completed"
+      },
+      "fte": {
+        "s": "completed",
+        "branchID": "fte",
+        "state": "completed"
+      },
+      "Shields": {
+        "s": "completed",
+        "branchID": "Shields",
+        "state": "completed"
+      },
+      "FTEIntroCutScene": {
+        "s": "completed",
+        "branchID": "FTEIntroCutScene",
+        "state": "completed"
+      },
+      "FTEIntroFight": {
+        "s": "completed",
+        "branchID": "FTEIntroFight",
+        "state": "completed"
+      }
+    }
+  }
+}

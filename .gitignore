@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Work directory (heavy artifacts, unpacked apk, emulator images)
+work/
+*.apk
+*.tmp
+query
+
+
+# Server runtime logs
+server/requests.jsonl
+*.log
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
