@@ -1,0 +1,147 @@
+{
+  "uniqueId": "active_quest_1001",
+  "qid": "story_act1_ch1_m1",
+  "category": "Story",
+  "mode": "story",
+  "phase": 1,
+  "isFinished": false,
+  "startTime": 1729000000,
+  "expiryTime": 1799000000,
+  "team": [
+    "bot_optimus_prime"
+  ],
+  "currentPosition": {
+    "x": 0,
+    "y": 0
+  },
+  "playerPosition": {
+    "x": 0,
+    "y": 0
+  },
+  "data": {
+    "id": "story_act1_ch1_m1",
+    "category": "Story",
+    "friendlyName": "1.1 Landing Site",
+    "description": "Scout the immediate landing area.",
+    "isDetailed": true,
+    "theme": "primordial",
+    "todIndex": 0,
+    "energyPerTile": 1,
+    "minXpPerTile": 20,
+    "maxXpPerTile": 50,
+    "actIndex": 1,
+    "chapterIndex": 1,
+    "missionIndex": 1,
+    "act": 1,
+    "chapter": 1,
+    "mission": 1,
+    "teamSizeMin": 1,
+    "teamSizeMax": 1,
+    "unlocked": true
+  },
+  "map": {
+    "mapHash": "act1_ch1_m1_map",
+    "gridDimension": 3,
+    "walkableCount": 3,
+    "visibleWalkableCount": 3,
+    "grid": [
+      [
+        {
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "start": true,
+          "final": false,
+          "walkable": true,
+          "links": [
+            {
+              "x": 1,
+              "y": 0
+            }
+          ],
+          "visibleLinks": [
+            {
+              "x": 1,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "position": {
+            "x": 1,
+            "y": 0
+          },
+          "start": false,
+          "final": false,
+          "walkable": true,
+          "barrier": "",
+          "entities": [
+            {
+              "id": "barricade_boss",
+              "hero": "barricade",
+              "level": 1,
+              "rank": 1,
+              "team": "enemy",
+              "ai": "default"
+            }
+          ],
+          "links": [
+            {
+              "x": 2,
+              "y": 0
+            }
+          ],
+          "visibleLinks": [
+            {
+              "x": 2,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "position": {
+            "x": 2,
+            "y": 0
+          },
+          "start": false,
+          "final": true,
+          "walkable": true,
+          "links": [],
+          "visibleLinks": []
+        }
+      ]
+    ],
+    "pathData": [
+      {
+        "path": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 0
+          },
+          {
+            "x": 2,
+            "y": 0
+          }
+        ]
+      }
+    ]
+  },
+  "progression": {
+    "clearedTiles": [
+      {
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "currentTile": {
+      "x": 0,
+      "y": 0
+    },
+    "percentComplete": 0
+  }
+}

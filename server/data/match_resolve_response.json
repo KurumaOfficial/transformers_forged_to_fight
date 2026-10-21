@@ -1,0 +1,30 @@
+{
+  "matchId": "match_pve_1001",
+  "victory": true,
+  "xpEarned": 250,
+  "rewards": [
+    {
+      "id": "gold",
+      "type": "currency",
+      "amount": 500
+    },
+    {
+      "id": "xp",
+      "type": "currency",
+      "amount": 250
+    },
+    {
+      "id": "ore13",
+      "type": "currency",
+      "amount": 100
+    }
+  ],
+  "pveProgression": {
+    "story_act1_ch1_m1": {
+      "completed": true,
+      "mastered": true,
+      "clearedCount": 3,
+      "walkableCount": 3
+    }
+  }
+}

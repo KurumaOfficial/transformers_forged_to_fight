@@ -2,8 +2,8 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Transformers: Forged to Fight - Sparx Protocol Specification",
-    "version": "9.2.0",
-    "description": "Specification of the Sparx RPC protocol for Transformers: Forged to Fight v9.2.0 reverse-engineered from libil2cpp and network dumps."
+    "version": "0.2.0-partial",
+    "description": "Specification of the Sparx RPC protocol for Transformers: Forged to Fight v9.2.0 reverse-engineered from libil2cpp and network dumps. Partial: only endpoints observed in the live 2026-10-21 run and/or verified in dump.cs. Quest wire keys are documented in spec/quest_protocol.md."
   },
   "servers": [
     {
@@ -803,6 +803,316 @@
                   },
                   "stats": {
                     "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quests/quest-detail/{qid}": {
+      "post": {
+        "summary": "Quest details",
+        "x-verified": "RUN 2026-10-21",
+        "parameters": [
+          {
+            "name": "qid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "hash",
+                  "setId"
+                ],
+                "properties": {
+                  "hash": {
+                    "type": "string"
+                  },
+                  "setId": {
+                    "type": "string"
+                  },
+                  "api": {
+                    "type": "integer"
+                  },
+                  "nonce": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Sparx envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "summary",
+                        "map"
+                      ],
+                      "properties": {
+                        "summary": {
+                          "type": "object"
+                        },
+                        "map": {
+                          "type": "object"
+                        }
+                      }
+                    },
+                    "sync": {
+                      "type": "object"
+                    },
+                    "async": {
+                      "type": "array"
+                    },
+                    "error": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fatal": {
+                      "type": "boolean"
+                    },
+                    "retry": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quests/quest-begin/{qid}": {
+      "post": {
+        "summary": "Begin quest (NOT OBSERVED)",
+        "x-verified": "NOT OBSERVED",
+        "parameters": [
+          {
+            "name": "qid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sparx envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer"
+                    },
+                    "result": {
+                      "type": "object"
+                    },
+                    "sync": {
+                      "type": "object"
+                    },
+                    "async": {
+                      "type": "array"
+                    },
+                    "error": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fatal": {
+                      "type": "boolean"
+                    },
+                    "retry": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quests/quest-moveto/{qid}": {
+      "post": {
+        "summary": "Move on quest board (NOT OBSERVED)",
+        "x-verified": "NOT OBSERVED",
+        "parameters": [
+          {
+            "name": "qid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sparx envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer"
+                    },
+                    "result": {
+                      "type": "object"
+                    },
+                    "sync": {
+                      "type": "object"
+                    },
+                    "async": {
+                      "type": "array"
+                    },
+                    "error": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fatal": {
+                      "type": "boolean"
+                    },
+                    "retry": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/matches/match-loaded/{matchType}/{id}": {
+      "post": {
+        "summary": "Signal match loaded (NOT OBSERVED)",
+        "x-verified": "NOT OBSERVED",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer"
+                    },
+                    "result": {
+                      "type": "object"
+                    },
+                    "sync": {
+                      "type": "object"
+                    },
+                    "async": {
+                      "type": "array"
+                    },
+                    "error": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fatal": {
+                      "type": "boolean"
+                    },
+                    "retry": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bcg/getUserData": {
+      "get": {
+        "summary": "User roster (NOT OBSERVED; schema experimental)",
+        "x-verified": "NOT OBSERVED",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer"
+                    },
+                    "result": {
+                      "type": "object"
+                    },
+                    "sync": {
+                      "type": "object"
+                    },
+                    "async": {
+                      "type": "array"
+                    },
+                    "error": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fatal": {
+                      "type": "boolean"
+                    },
+                    "retry": {
+                      "type": "boolean"
+                    }
                   }
                 }
               }

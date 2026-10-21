@@ -102,5 +102,37 @@ class TestApiSchemas(unittest.TestCase):
         status, data = self.request_endpoint("/quests/quest-list", "GET")
         self.assertIsInstance(data["result"], list, "/quests/quest-list result must be a list/array")
 
+    def test_quest_list_wire_keys(self):
+        """Verified keys: actCount, 1-based chapterCount, availableQuests with act/chapter/mission."""
+        status, data = self.request_endpoint("/quests/quest-list", "GET")
+        sets = data["result"]
+        self.assertGreater(len(sets), 0, "quest-list must contain at least one set")
+        s = sets[0]
+        for key in ("actCount", "chapterCount", "availableQuests", "acts", "chapters",
+                    "setId", "setName", "hash", "category"):
+            self.assertIn(key, s, f"quest set missing verified key '{key}'")
+        self.assertIsInstance(s["chapterCount"], list)
+        self.assertGreaterEqual(len(s["chapterCount"]), 2,
+                                "chapterCount must be 1-based (index 0 dummy)")
+        self.assertEqual(s["chapterCount"][0], 0,
+                         "chapterCount[0] must be the dummy 0")
+        self.assertGreater(len(s["availableQuests"]), 0)
+        q = s["availableQuests"][0]
+        for key in ("id", "category", "act", "chapter", "mission"):
+            self.assertIn(key, q, f"quest summary missing verified key '{key}'")
+        self.assertGreaterEqual(q["act"], 1)
+        self.assertGreaterEqual(q["chapter"], 1)
+        self.assertGreaterEqual(q["mission"], 1)
+
+    def test_quest_detail_route(self):
+        """The client calls POST /quests/quest-detail/{qid} with hash/setId."""
+        status, data = self.request_endpoint(
+            "/quests/quest-detail/story_act1_ch1_m1", "POST",
+            {"hash": "v1", "setId": "story_act_1", "api": 11})
+        self.assertEqual(status, 200)
+        self.assertIn("summary", data["result"])
+        self.assertIn("map", data["result"])
+        self.assertEqual(data["result"]["summary"]["id"], "story_act1_ch1_m1")
+
 if __name__ == "__main__":
     unittest.main()

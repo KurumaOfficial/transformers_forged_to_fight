@@ -184,19 +184,10 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             }, assumed_label="[STATIC: /bcg/getBaseHeroData]")
             return
 
-        # 10. BCG user data (roster) [STATIC: BCGAPI and BCGUserData]
+        # 10. BCG user data (roster) [STATIC: loaded from data/bcg_user_data.json]
         if path == "/bcg/getUserData":
-            self.send_sparx({
-                "heroes": [],
-                "entities": [],
-                "evoBlueprints": {},
-                "savedTeams": {},
-                "activeTeams": {},
-                "blueprintsMax": 50,
-                "teamSizeMax": 3,
-                "teamCountMax": 3,
-                "evoFragments": {}
-            }, assumed_label="[STATIC: /bcg/getUserData]")
+            data = load_data_json("bcg_user_data.json")
+            self.send_sparx(data, assumed_label="[STATIC: /bcg/getUserData loaded from data/bcg_user_data.json]")
             return
 
         # 11. AutoRefresh endpoints [STATIC: loaded from server/data/missions_config.json or generic envelope]
@@ -219,6 +210,50 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
         if path == "/quests/quest-list":
             data = load_data_json("quest_list.json", default=[])
             self.send_sparx(data, assumed_label="[STATIC: /quests/quest-list loaded from data/quest_list.json]")
+            return
+
+        # 12b. Quests: Progression [STATIC: QuestsAPI]
+        if path == "/quests/quest-progression":
+            data = load_data_json("quest_progression.json")
+            self.send_sparx(data, assumed_label="[STATIC: /quests/quest-progression loaded from data/quest_progression.json]")
+            return
+
+        # 12c. Quests: Quest Details [STATIC: loaded from server/data/quest_detail.json]
+        if path.startswith("/quests/quest-detail/") or path == "/quests/quest-details":
+            data = load_data_json("quest_detail.json")
+            self.send_sparx(data, assumed_label="[STATIC: /quests/quest-detail/ loaded from data/quest_detail.json]")
+            return
+
+        # 12d. Quests: Begin Quest [STATIC: loaded from server/data/quest_begin_response.json]
+        if path.startswith("/quests/quest-begin/") or path == "/quests/begin-quest":
+            data = load_data_json("quest_begin_response.json")
+            self.send_sparx(data, assumed_label="[STATIC: /quests/quest-begin/ loaded from data/quest_begin_response.json]")
+            return
+
+        # 12e. Quests: Move To [STATIC: loaded from server/data/quest_begin_response.json]
+        if path.startswith("/quests/quest-moveto/"):
+            data = load_data_json("quest_begin_response.json")
+            if isinstance(body, dict) and "x" in body and "y" in body:
+                data["currentPosition"] = {"x": body["x"], "y": body["y"]}
+                data["playerPosition"] = {"x": body["x"], "y": body["y"]}
+            self.send_sparx(data, assumed_label="[STATIC: /quests/quest-moveto/]")
+            return
+
+        # 12f. Matches: Activate Match [STATIC: loaded from server/data/match_activate_response.json]
+        if path.startswith("/matches/activate-match/"):
+            data = load_data_json("match_activate_response.json")
+            self.send_sparx(data, assumed_label="[STATIC: /matches/activate-match/ loaded from data/match_activate_response.json]")
+            return
+
+        # 12g. Matches: Match Loaded [STATIC: MatchAPI SignalMatchLoaded]
+        if path.startswith("/matches/match-loaded/"):
+            self.send_sparx({"status": "ok"}, assumed_label="[STATIC: /matches/match-loaded/]")
+            return
+
+        # 12h. Matches: Resolve Match [STATIC: loaded from server/data/match_resolve_response.json]
+        if path.startswith("/matches/resolve-match/"):
+            data = load_data_json("match_resolve_response.json")
+            self.send_sparx(data, assumed_label="[STATIC: /matches/resolve-match/ loaded from data/match_resolve_response.json]")
             return
 
         # 13. Quests: Active quest [STATIC: loaded from server/data/quest_active.json]

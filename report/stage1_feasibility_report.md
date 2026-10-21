@@ -15,7 +15,7 @@
 | **6. Боевые расчёты и числа с сервера** | В боевую математику входят серверные таблицы `BCGAttributeDataBase` (`AttackBase`, `HPMaxBase`, `Armor`, `CritChance`, `CritDamage`, `BlockProficiency`, `ResistMagic`, `ResistPhysical`, `StunTime`) и таблица `/tuning`. | **[STATIC]** (декомпиляция `BCGAttributeDataBase` @ `0xC1486C`, `TuningManager` @ `0x15DA900`) | Клиент рассчитывает механику боя, но абсолютные числа шлёт сервер. |
 | **7. Подпись APK (v1/v2/v3) и zipalign** | APK переподписан с использованием `uber-apk-signer` (v1.3.0): выполнен `zipalign` и внедрены сигнатуры **v1, v2 и v3** (требование Android 11+ для targetSdk 30). | **[RUN]** (проверено запуском `uber-apk-signer -y`) | APK полностью совместим с Android 11, 12, 13, 14+. |
 | **8. Подмена URL в `endpointconfig`** | Выполнен прямой бинарный патч `assets/bin/Data/e1917cd7a6bdb4492a247b8f758df2ae` с пересчётом 64-битного заголовка SerializedFile (`fileSize`), таблицы объектов (`byte_size`) и длины `m_Script`. Результат проверен повторным парсингом. | **[RUN]** (проверено скриптом `work/verify_endpoint_patch.py`) | Unity десериализует ровно чистый JSON `{"Default":{"Prod":"http://127.0.0.1:8080"}}`. |
-| **9. Схема логина и заглушка сервера** | Заглушка `server/stub_server.py` запущена на порту 8080, с логом `server/requests.jsonl`. Структура ответов выведена из декомпиляции `EB.Sparx.Response`, но **все поля и полезная нагрузка ответов помечены как [ASSUMED]** до получения логов реального телефона. | **[ASSUMED]** (до подтверждения запуском на реальном телефоне) | Клиент ещё не запускался на устройстве; статус этапа: **в процессе полевых испытаний**. |
+| **9. Схема логина и заглушка сервера** | Клиент запущен на эмуляторе, прошёл `auth/init -> enumerate -> prelogin -> login`, все подсистемы логина и **дошёл до 3D-базы HomeFlow**. Полный лог и скриншоты приложены. | **[RUN]** (2026-10-21, `work/stage1_logcat_full_final.txt`, `server/requests.jsonl`, `work/FINAL_hub.png`) | Этап 1 подтверждён. Содержимое ответов по-прежнему частично [ASSUMED]; см. FIDELITY/LEDGER. |
 
 ---
 
@@ -162,60 +162,77 @@
 
 ---
 
-## 6. Схема входа и ответы заглушки `[ASSUMED]`
+## 6. Реальная последовательность запросов до HomeFlow `[RUN]`
 
-> [!WARNING]
-> Структура конверта ответов (`ts`, `result`, `sync`, `error`) подтверждена кодом декомпиляции `[STATIC]`, однако конкретные схемы данных и последовательность запросов ниже имеют статус **`[ASSUMED]`** до тех пор, пока не будут подтверждены логами реального запуска клиента.
+Ниже — не схема «по коду», а фактический порядок из `server/requests.jsonl` за
+чистый запуск 2026-10-21 21:23:13–21:24:45 UTC (44 запроса). Полный лог:
+`work/stage1_logcat_full_final.txt`, скриншоты: `work/FINAL_hub.png`,
+`work/FINAL_story_chapters.png`.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Client as Клиент (Телефон)
-    participant Server as Локальный Сервер (ПК :8080)
-
-    Note over Client,Server: Схема входа [ASSUMED]
-    Client->>Server: POST /auth/prelogin
-    Server-->>Client: [ASSUMED] {salt: "...", chal: "...", version: 1}
-
-    Client->>Server: POST /auth/login
-    Server-->>Client: [ASSUMED] {token: "...", stoken: "...", user: {...}}
-
-    Client->>Server: GET /account/data
-    Server-->>Client: [ASSUMED] {user: {...}, settings: {...}}
-
-    Client->>Server: POST /auth/init
-    Server-->>Client: [ASSUMED] {status: "ok", session: "..."}
-
-    par Фоновая инициализация подсистем [ASSUMED]
-        Client->>Server: GET /tuning
-        Server-->>Client: [ASSUMED] {tuning: {heroRatingAttackWeight: 1.0}}
-        Client->>Server: POST /bcg/getBaseHeroData
-        Server-->>Client: [ASSUMED] {heroes: {}, blueprints: {}}
-        Client->>Server: POST /bcg/getUserData
-        Server-->>Client: [ASSUMED] {heroes: [], teams: {}}
-        Client->>Server: GET /wallet/fetch
-        Server-->>Client: [ASSUMED] {gold: 10000, energon: 500}
-    end
+```text
+POST /auth/init
+POST /auth/enumerate                    -> result: []  (пустой массив, не объект)
+POST /auth/prelogin                     -> salt: ""
+POST /auth/login                        -> auth.device: true, stoken
+GET  /account/data
+GET  /bcg/getLoginData
+GET  /tuning
+GET  /payments/payouts
+GET  /autorefresh/gacha/refresh
+GET  /autorefresh/gamestore/refresh
+GET  /performance/profile
+GET  /autorefresh/objectives/refresh
+GET  /redeemer/refresh
+GET  /events/refresh
+GET  /autorefresh/prizes/refresh
+GET  /ds/10001/
+POST /tutorial/get-login-data
+GET  /autorefresh/message/refresh
+GET  /gamestats/get-login-data
+GET  /offers/getLoginData
+GET  /autorefresh/kabamsignup/refresh
+GET  /autorefresh/missionsconfig/refresh
+GET  /autorefresh/ads/refresh
+GET  /push/token
+GET  /inventory
+GET  /autorefresh/quests/refresh
+GET  /quests/quest-list
+GET  /quests/quest-active
+GET  /autorefresh/ave/refresh
+GET  /autorefresh/raid/refresh
+GET  /base/active
+GET  /pvp/get-login-data
+GET  /autorefresh/ai/refresh
+GET  /gamestats/check-login-achievements
+GET  /quests/quest-progression
+GET  /chat/data
+POST /telemetry
+POST /userprofile/
+POST /ds/10001
+GET  /autorefresh/grouprefresh       (фоновый поллинг)
 ```
 
-Формат конверта Sparx (`EB.Sparx.Response` @ `0x12FD4C8`):
+Важные поправки к прежним утверждениям:
+- `/auth/enumerate` в этой сборке **принимает пустой массив** и после него клиент
+  сам идёт в `prelogin/login`. Утверждение «нужен массив аккаунтов с
+  `primary/user/authenticators`» для текущего сценария не подтвердилось. `[RUN]`
+- `/auth/prelogin` с `salt: ""` не запускает `APK_Check_Start_Salt`; вход
+  проходит. `[RUN]`
+- В современном потоке **нет** `/bcg/getBaseHeroData`, `/bcg/getUserData`,
+  `/wallet/fetch` на старте. Клиент запрашивает `/bcg/getLoginData`,
+  `/inventory`; отдельного `/wallet/fetch` в чистом прогоне нет. `[RUN]`
+- `/ws` в чистом прогоне до хаба не появился; веб-сокет — отдельная задача чата.
+  В отладочных прогонах он ретраился с 400, потому что заглушка не умеет
+  WebSocket-upgrade. `[RUN]`
+
+Конверт Sparx (`EB.Sparx.Response` @ `0x12FD4C8`) остаётся прежним:
 ```json
-{
-  "ts": 1792189445,
-  "result": { ... },
-  "sync": { ... },
-  "async": [],
-  "error": null,
-  "fatal": false,
-  "retry": false
-}
+{"ts": 1792189445, "result": {}, "sync": {}, "async": [], "error": null, "fatal": false, "retry": false}
 ```
 
-Сервер [`server/stub_server.py`](file:///C:/Users/gameg/Desktop/TFTF/server/stub_server.py):
-- Логирует каждый запрос клиента в [`server/requests.jsonl`](file:///C:/Users/gameg/Desktop/TFTF/server/requests.jsonl) с мгновенным сбросом буфера на диск (`flush`).
-- На неизвестные пути отвечает безопасным пустым конвертом `{ "ts": ..., "result": {}, "error": null }`.
-
----
+Заглушка [`server/stub_server.py`](file:///C:/Users/gameg/Desktop/TFTF/server/stub_server.py)
+логирует каждый запрос в `server/requests.jsonl` с `flush`; на неизвестные пути
+отдаёт пустой `result`.
 
 ## 7. Инструкция по установке, запуску и снятию логов
 
@@ -250,7 +267,7 @@ adb install -r "work\patched_build\tftf_patched_v9.2.0.apk"
 1. В отдельном окне терминала запустите сбор `logcat`:
    ```powershell
    adb logcat -c
-   adb logcat -v time -s Unity:V ActivityManager:I Sparx:V CRASH:E *:E > work\logcat.txt
+   adb logcat -v threadtime > work\logcat_full.txt
    ```
 2. Запустите игру на телефоне:
    ```powershell
@@ -259,3 +276,20 @@ adb install -r "work\patched_build\tftf_patched_v9.2.0.apk"
 3. Дождитесь появления экрана загрузки.
 4. В терминале сервера отобразятся входящие запросы клиента, а файл `server/requests.jsonl` заполнится реальными телами запросов.
 5. Пришлите мне содержимое `server/requests.jsonl` и файл `work/logcat.txt` для анализа.
+
+---
+
+## 8. Доказательства этапа 1 (сессия 2026-10-21) `[RUN]`
+
+| Что | Файл / команда | Результат |
+|---|---|---|
+| Полный logcat без фильтров | `work/stage1_logcat_full_final.txt` | 136 КБ, от старта процесса до HomeFlow |
+| Лог запросов | `server/requests.jsonl` | 44 запроса, последовательность выше |
+| 3D-база (HomeFlow) | `work/FINAL_hub.png` | BASE/BOTS/FIGHT/…, кнопка FIGHT активна |
+| Story → Act 1 → Chapter 1 | `work/FINAL_story_chapters.png` | «ACT 1», «Chapter 1: Arrival», тайл «1.1 Landing Site» |
+| ABI эмулятора | `adb shell getprop ro.product.cpu.abilist` | `x86_64,x86,arm64-v8a,armeabi-v7a,armeabi` |
+| Патч endpoint | `work/patched_build/tftf_patched_v9.2.0.apk` | внутри `{"Default":{"Prod":"http://127.0.0.1:8080"}}`, файл 4164 байта |
+| Версия клиента | `adb shell dumpsys package com.kabam.bigrobot` | 9.2.0 / 123129100 / targetSdk 30 |
+
+Скриншот хаба был получен после ручного тапа `PLAY NOW` на холодном старте;
+автоматического входа в этом прогоне не было.

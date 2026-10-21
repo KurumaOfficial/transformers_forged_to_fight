@@ -3,8 +3,8 @@
     "uid": "10001",
     "id": 10001,
     "name": "Commander",
-    "level": 1,
-    "xp": 0
+    "level": 5,
+    "xp": 1000
   },
   "settings": {},
   "flags": {},

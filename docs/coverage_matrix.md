@@ -51,3 +51,24 @@
 3. **Формат путей карты (`Map`):**
    - Корневой ключ в описании карты — строго `"pathData"`, содержащий список объектов.
    - Внутри каждого объекта пути — ключ `"path"`, содержащий список точек `[{"x": 0, "y": 0}]`.
+
+
+---
+
+### 3. Обновление 2026-10-21: квестовый срез [RUN]
+
+| # | Метод | Эндпоинт | Статус | Что подтверждено |
+|---|---|---|---|---|
+| 32 | GET | /quests/quest-list | **[RUN]** | Массив сетов; ключи ctCount, chapterCount (1-based), vailableQuests; сводки обязаны иметь ct, chapter, mission |
+| 33 | POST | /quests/quest-detail/{qid} | **[RUN]** | Клиент шлёт {hash,nonce,api,setId}; экран деталей квеста открывается |
+| 34 | GET | /quests/quest-progression | **[RUN]** | Словарь по категории, затем по id; значения уходят в UpdateProgression |
+| 35 | GET | /quests/quest-active | **[RUN]** | Запрос наблюдается; пустой ответ принят, но активный квест не проверен |
+| 36 | POST | /quests/quest-begin/... | **[NOT OBSERVED]** | Не вызывался: START заблокирован пустым ростером |
+| 37 | POST | /matches/activate-match/... | **[NOT OBSERVED]** | Не вызывался |
+| 38 | GET | /bcg/getLoginData | **[RUN]** | Каталог принят; userData/ростер не заработал |
+| 39 | GET | /bcg/getUserData | **[NOT OBSERVED]** | Клиент не запросил; экран BOTS падает в HeroesScreen.SetFeaturedHeroData |
+
+#### Блокер 2B
+EDIT SQUAD пуст, TOTAL 0 / RECOMMENDED 100-200, START серый. Причина:
+не восстановлен формат BCGUserData.heroes / BCGUserHero. Это следующий
+шаг; бой в этой сессии не запускался.

@@ -13,6 +13,9 @@ query
 
 # Server runtime logs
 server/requests.jsonl
+server/requests_*.jsonl
+server/*.err
+server/data/*.pre_*.json
 *.log
 
 # OS & IDE

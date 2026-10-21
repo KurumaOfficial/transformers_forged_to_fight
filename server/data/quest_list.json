@@ -1,1 +1,356 @@
-[]
+[
+  {
+    "category": "Story",
+    "hash": "v1",
+    "setName": "Story",
+    "setId": "story_act_1",
+    "cdn": "",
+    "showInUI": true,
+    "groupTag": "story",
+    "difficulty": "normal",
+    "difficultyLabel": "Normal",
+    "minLevel": 0,
+    "recommendedMinLevel": 0,
+    "hasProgression": true,
+    "actCount": 1,
+    "chapterCount": [
+      0,
+      1
+    ],
+    "availableQuests": [
+      {
+        "id": "story_act1_ch1_m1",
+        "category": "Story",
+        "isDetailed": false,
+        "actIndex": 1,
+        "chapterIndex": 1,
+        "missionIndex": 1,
+        "unlocked": true,
+        "alwaysLocked": false,
+        "minLevel": 0,
+        "minCL": 0,
+        "completed": false,
+        "mastered": false,
+        "friendlyName": "1.1 Landing Site",
+        "description": "Scout the immediate landing area.",
+        "theme": "primordial",
+        "todIndex": 0,
+        "energyPerTile": 1,
+        "minXpPerTile": 20,
+        "maxXpPerTile": 50,
+        "minHealthPerTile": 0,
+        "maxHealthPerTile": 0,
+        "sid": "story_act1_ch1_m1",
+        "mapHash": "act1_ch1_m1_map",
+        "finalBoss": {
+          "id": "barricade",
+          "level": 1,
+          "rank": 1
+        },
+        "teamSizeMin": 1,
+        "teamSizeMax": 1,
+        "difficulty": "normal",
+        "recommendedPartyPI": 100,
+        "recommendedMasteryPI": 200,
+        "multiplier": 1.0,
+        "firstCompletionRewards": [
+          {
+            "id": "gold",
+            "type": "currency",
+            "amount": 2000
+          },
+          {
+            "id": "shards",
+            "type": "currency",
+            "amount": 100
+          }
+        ],
+        "firstCompletionRewardsMin": [
+          {
+            "id": "gold",
+            "type": "currency",
+            "amount": 2000
+          },
+          {
+            "id": "shards",
+            "type": "currency",
+            "amount": 100
+          }
+        ],
+        "firstCompletionRewardsMax": [
+          {
+            "id": "gold",
+            "type": "currency",
+            "amount": 2000
+          },
+          {
+            "id": "shards",
+            "type": "currency",
+            "amount": 100
+          }
+        ],
+        "masteryCompletionRewards": [],
+        "potentialCompletionRewards": [],
+        "act": 1,
+        "chapter": 1,
+        "mission": 1
+      }
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "friendlyName": "Act 1: All Fall Down",
+        "description": "Enter the battlefield on New Quintessa.",
+        "image": "act_1_banner",
+        "unlocked": true,
+        "completed": false,
+        "mastered": false,
+        "clearedCount": 0,
+        "visibleClearedCount": 0,
+        "walkableCount": 3,
+        "visibleWalkableCount": 3,
+        "firstCompletionRewards": [
+          {
+            "id": "gold",
+            "type": "currency",
+            "amount": 2000
+          },
+          {
+            "id": "shards",
+            "type": "currency",
+            "amount": 100
+          }
+        ],
+        "masteryCompletionRewards": [],
+        "potentialCompletionRewards": [],
+        "Chapters": [
+          {
+            "friendlyName": "Chapter 1: Arrival",
+            "description": "Crash landing in the primordial ruins.",
+            "image": "chapter_1_banner",
+            "unlocked": true,
+            "completed": false,
+            "mastered": false,
+            "alwaysLocked": false,
+            "clearedCount": 0,
+            "visibleClearedCount": 0,
+            "walkableCount": 3,
+            "visibleWalkableCount": 3,
+            "firstCompletionRewards": [
+              {
+                "id": "gold",
+                "type": "currency",
+                "amount": 1000
+              }
+            ],
+            "masteryCompletionRewards": [],
+            "potentialCompletionRewards": [],
+            "Quests": [
+              {
+                "id": "story_act1_ch1_m1",
+                "category": "Story",
+                "isDetailed": false,
+                "actIndex": 1,
+                "chapterIndex": 1,
+                "missionIndex": 1,
+                "unlocked": true,
+                "alwaysLocked": false,
+                "minLevel": 0,
+                "minCL": 0,
+                "completed": false,
+                "mastered": false,
+                "friendlyName": "1.1 Landing Site",
+                "description": "Scout the immediate landing area.",
+                "theme": "primordial",
+                "todIndex": 0,
+                "energyPerTile": 1,
+                "minXpPerTile": 20,
+                "maxXpPerTile": 50,
+                "minHealthPerTile": 0,
+                "maxHealthPerTile": 0,
+                "sid": "story_act1_ch1_m1",
+                "mapHash": "act1_ch1_m1_map",
+                "finalBoss": {
+                  "id": "barricade",
+                  "level": 1,
+                  "rank": 1
+                },
+                "teamSizeMin": 1,
+                "teamSizeMax": 1,
+                "difficulty": "normal",
+                "recommendedPartyPI": 100,
+                "recommendedMasteryPI": 200,
+                "multiplier": 1.0,
+                "firstCompletionRewards": [
+                  {
+                    "id": "gold",
+                    "type": "currency",
+                    "amount": 2000
+                  },
+                  {
+                    "id": "shards",
+                    "type": "currency",
+                    "amount": 100
+                  }
+                ],
+                "firstCompletionRewardsMin": [
+                  {
+                    "id": "gold",
+                    "type": "currency",
+                    "amount": 2000
+                  },
+                  {
+                    "id": "shards",
+                    "type": "currency",
+                    "amount": 100
+                  }
+                ],
+                "firstCompletionRewardsMax": [
+                  {
+                    "id": "gold",
+                    "type": "currency",
+                    "amount": 2000
+                  },
+                  {
+                    "id": "shards",
+                    "type": "currency",
+                    "amount": 100
+                  }
+                ],
+                "masteryCompletionRewards": [],
+                "potentialCompletionRewards": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "act": 1,
+        "chapter": 1,
+        "friendlyName": "Chapter 1: Arrival",
+        "description": "Crash landing in the primordial ruins.",
+        "image": "chapter_1_banner",
+        "unlocked": true,
+        "completed": false,
+        "mastered": false,
+        "alwaysLocked": false,
+        "clearedCount": 0,
+        "visibleClearedCount": 0,
+        "walkableCount": 3,
+        "visibleWalkableCount": 3,
+        "firstCompletionRewards": [
+          {
+            "id": "gold",
+            "type": "currency",
+            "amount": 1000
+          }
+        ],
+        "masteryCompletionRewards": [],
+        "potentialCompletionRewards": []
+      }
+    ],
+    "QuestMaps": {
+      "story_act1_ch1_m1": {
+        "mapHash": "act1_ch1_m1_map",
+        "gridDimension": 3,
+        "walkableCount": 3,
+        "visibleWalkableCount": 3,
+        "grid": [
+          [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "start": true,
+              "final": false,
+              "walkable": true,
+              "links": [
+                {
+                  "x": 1,
+                  "y": 0
+                }
+              ],
+              "visibleLinks": [
+                {
+                  "x": 1,
+                  "y": 0
+                }
+              ]
+            },
+            {
+              "position": {
+                "x": 1,
+                "y": 0
+              },
+              "start": false,
+              "final": false,
+              "walkable": true,
+              "barrier": "",
+              "entities": [
+                {
+                  "id": "barricade_boss",
+                  "hero": "barricade",
+                  "level": 1,
+                  "rank": 1,
+                  "team": "enemy",
+                  "ai": "default"
+                }
+              ],
+              "links": [
+                {
+                  "x": 2,
+                  "y": 0
+                }
+              ],
+              "visibleLinks": [
+                {
+                  "x": 2,
+                  "y": 0
+                }
+              ]
+            },
+            {
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "start": false,
+              "final": true,
+              "walkable": true,
+              "links": [],
+              "visibleLinks": []
+            }
+          ]
+        ],
+        "pathData": [
+          {
+            "path": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "x": 1,
+                "y": 0
+              },
+              {
+                "x": 2,
+                "y": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "expiry": 2000000000,
+    "showUI": true,
+    "group": "story",
+    "recommendMinLevel": 0,
+    "timeLimit": 0,
+    "timeLimitGrace": 0,
+    "use_ui_color": false
+  }
+]

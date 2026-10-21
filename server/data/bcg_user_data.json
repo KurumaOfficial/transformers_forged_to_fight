@@ -1,0 +1,51 @@
+{
+  "heroes": {
+    "1": {
+      "entityType": "hero",
+      "blueprint": "bumblebee_cin_dotm_2",
+      "rank": 1,
+      "level": 1,
+      "sigLvl": 0,
+      "requiredXP": 0,
+      "maxXP": 100,
+      "attributeData": {
+        "hpMaxBase": 1000,
+        "hpMax": 1000,
+        "hp": 1000.0,
+        "attack": 120,
+        "attackBase": 120,
+        "armor": 50.0,
+        "critChance": 0.1,
+        "critDamage": 1.5,
+        "perfectBlockChance": 0.0,
+        "blockProficiency": 0.5,
+        "manaGain": 1.0,
+        "manaStart": 0,
+        "resistMagic": 0.0,
+        "resistPhysical": 0.0,
+        "stunTime": 0,
+        "stunChance": 0.0,
+        "heroRating": 100,
+        "heroRatingHP": 50,
+        "heroRatingAttack": 50,
+        "heroRatingHPBase": 50,
+        "heroRatingAttackBase": 50,
+        "specialAttackCount": 3,
+        "statMods": [],
+        "sigMods": [],
+        "buffMods": []
+      },
+      "stamina": 5,
+      "staminaNextGrowthTime": 0,
+      "staminaFullGrowthTime": 0
+    }
+  },
+  "entities": {},
+  "evoBlueprints": {},
+  "savedTeams": {},
+  "activeTeams": {},
+  "blueprintsMax": 50,
+  "teamSizeMax": 3,
+  "teamCountMax": 3,
+  "evoFragments": {}
+}

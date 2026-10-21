@@ -89,3 +89,21 @@
 |---|---|---|---|
 | `tuning.version` | `1` | `[ASSUMED]` | Версия словаря тюнинга |
 | `tuning.combat` | Заглушка боевых констант | `[ASSUMED]` | Будет наполнено в Этапе 2B |
+
+
+---
+
+## 7. Квестовый протокол (обновление 2026-10-21)
+
+| Поле | Значение | Источник | Доказательство |
+|---|---|---|---|
+| chapterCount | [0, 1] (1-based, index 0 dummy) | [STATIC]+[RUN] | BuildSummaryTable RVA 0x1039BE4; краш при [1] |
+| summary ct/chapter/mission | 1/1/1 | [STATIC]+[RUN] | после добавления ключей появились Chapter 1 и тайл квеста |
+| vailableQuests | массив Summary | [STATIC]+[RUN] | AddQuestSummarys RVA 0x10381F0 |
+| showUI / group / 
+ecommendMinLevel | правильные wire-ключи | [STATIC] | вместо showInUI/groupTag/
+ecommendedMinLevel |
+| quest-detail body | {hash,nonce,api,setId} | [RUN] | server/requests.jsonl 2026-10-21 21:09:11 |
+| Act/Chapter/quest names, map, rewards | выдуманы | [ASSUMED] | quest_list.json |
+| /quests/quest-progression values | выдуманы | [ASSUMED] | quest_progression.json |
+| /bcg/getUserData / userData | эксперимент, не принят | [ASSUMED] | cg_user_data.json |
