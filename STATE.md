@@ -117,6 +117,10 @@ accepted. The exact `userData`/`BCGUserHero` wire keys are not yet verified.
 - The old `REPORT.md` figures (100% combat, 85-90%, 50-55%) are not evidence.
 
 ## 6. Next step
+
+Milestone commit: `5dcc0c4` (stage1+2a). Stage 2B partial report:
+`report/stage2b_vertical_slice.md`.
+
 1. Fix roster: determine the exact `BCGUserHero` / `BCGUserData` wire keys
    (start from `BCGUserHeroBase..ctor` RVA 0xA62348 and `OnBCGData` RVA
    0x168C7C4), or find a real `userData` dump. Then make one hero appear in
