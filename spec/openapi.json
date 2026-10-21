@@ -1,0 +1,815 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Transformers: Forged to Fight - Sparx Protocol Specification",
+    "version": "9.2.0",
+    "description": "Specification of the Sparx RPC protocol for Transformers: Forged to Fight v9.2.0 reverse-engineered from libil2cpp and network dumps."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8080"
+    }
+  ],
+  "paths": {
+    "/auth/init": {
+      "post": {
+        "summary": "Initialize anonymous session",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "status",
+                        "session"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "string"
+                        },
+                        "session": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "session"
+        ],
+        "x-client-error-reaction": "Fatal bootflow alert; cannot proceed without session",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "api": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/enumerate": {
+      "post": {
+        "summary": "Enumerate available device/primary accounts",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "[] array structure (not dict)"
+        ],
+        "x-client-error-reaction": "Throws _PostInit.listToAuthenticate.Count=0 if not an array",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "api": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/prelogin": {
+      "post": {
+        "summary": "Get salt and challenge for HMAC signature",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "salt": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "salt"
+        ],
+        "x-client-error-reaction": "If salt non-empty, calls APK_Check_Start_Salt in libapkprotect.so",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "api": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "Login with device authenticator and anti-cheat signature",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "auth",
+                        "endpoints",
+                        "stoken"
+                      ],
+                      "properties": {
+                        "auth": {
+                          "type": "object"
+                        },
+                        "endpoints": {
+                          "type": "object"
+                        },
+                        "stoken": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "auth.device",
+          "endpoints.device",
+          "stoken"
+        ],
+        "x-client-error-reaction": "Fatal alert: Login failed modal",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "api": {
+                    "type": "integer"
+                  },
+                  "auth": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/account/data": {
+      "get": {
+        "summary": "Fetch commander profile and privacy settings",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "privacySettings",
+                        "invitesDB",
+                        "maxHelpsPerRequest"
+                      ],
+                      "properties": {
+                        "user": {
+                          "type": "object"
+                        },
+                        "privacySettings": {
+                          "type": "object"
+                        },
+                        "invitesDB": {
+                          "type": "object"
+                        },
+                        "maxHelpsPerRequest": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "privacySettings.friendsinvite",
+          "invitesDB",
+          "maxHelpsPerRequest"
+        ],
+        "x-client-error-reaction": "NullReferenceException in InvitesManager.InvitePrivacySetting"
+      }
+    },
+    "/bcg/getLoginData": {
+      "get": {
+        "summary": "Fetch character base definitions, growth curves, evolution blueprints",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "heroes",
+                        "blueprints",
+                        "evoBlueprints",
+                        "attributeGrowthDefs"
+                      ],
+                      "properties": {
+                        "heroes": {
+                          "type": "object"
+                        },
+                        "attributeGrowthDefs": {
+                          "type": "object"
+                        },
+                        "statMods": {
+                          "type": "object"
+                        },
+                        "statModAppears": {
+                          "type": "object"
+                        },
+                        "blueprints": {
+                          "type": "object"
+                        },
+                        "evoBlueprints": {
+                          "type": "object"
+                        },
+                        "synergyBonuses": {
+                          "type": "object"
+                        },
+                        "attackValues": {
+                          "type": "object"
+                        },
+                        "blueprintBonuses": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "attributeGrowthDefs",
+          "heroes",
+          "blueprints",
+          "evoBlueprints",
+          "statMods"
+        ],
+        "x-client-error-reaction": "NullReferenceException or fatal alert: No evo blueprints"
+      }
+    },
+    "/tuning": {
+      "get": {
+        "summary": "Fetch global game and combat balance constants",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "combat tuning dictionary"
+        ],
+        "x-client-error-reaction": "Silent default tuning values"
+      }
+    },
+    "/base/active": {
+      "get": {
+        "summary": "Fetch active player base mission, map, and tiles",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "user",
+                        "userBase"
+                      ],
+                      "properties": {
+                        "user": {
+                          "type": "object"
+                        },
+                        "userBase": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "map.pathData",
+          "map.gridDimension",
+          "map.grid",
+          "summary.theme"
+        ],
+        "x-client-error-reaction": "NullReferenceException in PathAnalyzer.GetPathsFromMap"
+      }
+    },
+    "/tutorial/get-login-data": {
+      "post": {
+        "summary": "Fetch user tutorial progress dictionary",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "FTE": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "s",
+          "current_bid",
+          "branches"
+        ],
+        "x-client-error-reaction": "If FTE not completed, launches FTE combat cutscene"
+      }
+    },
+    "/tutorial/{action}": {
+      "post": {
+        "summary": "Perform tutorial step (start, branch, complete)",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "s",
+          "current_bid"
+        ],
+        "x-client-error-reaction": "Client retry loop",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tid": {
+                    "type": "string"
+                  },
+                  "bid": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quests/quest-list": {
+      "get": {
+        "summary": "List available quest chapters and acts",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "ArrayList of active chapters"
+        ],
+        "x-client-error-reaction": "Quests screen displays empty acts"
+      }
+    },
+    "/quests/quest-active": {
+      "get": {
+        "summary": "Get currently active quest session and board state",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "active": {
+                          "type": "object"
+                        },
+                        "battlegroups": {
+                          "type": "array"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "active dictionary or empty object"
+        ],
+        "x-client-error-reaction": "Client assumes no quest in progress"
+      }
+    },
+    "/quests/quest-progression": {
+      "get": {
+        "summary": "Get completion percentages for story acts",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "progression mapping"
+        ],
+        "x-client-error-reaction": "Shows 0% on chapter badges"
+      }
+    },
+    "/matches/activate-match/{matchType}": {
+      "post": {
+        "summary": "Initialize 1v1 battle session and opponent fighter stats",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "matchId",
+                        "fighterData"
+                      ],
+                      "properties": {
+                        "matchId": {
+                          "type": "string"
+                        },
+                        "fighterData": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "matchId",
+          "fighterData.enemyFighter"
+        ],
+        "x-client-error-reaction": "FightFlow.OnMatchInit error modal, aborts combat",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "hero": {
+                    "type": "string"
+                  },
+                  "qid": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/matches/resolve-match/{matchType}": {
+      "post": {
+        "summary": "Post fight outcome, health, and match stats",
+        "responses": {
+          "200": {
+            "description": "Successful Sparx RPC Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "Server epoch timestamp"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "rewards",
+                        "victory"
+                      ],
+                      "properties": {
+                        "rewards": {
+                          "type": "array"
+                        },
+                        "victory": {
+                          "type": "boolean"
+                        },
+                        "xpEarned": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-required-client-fields": [
+          "rewards",
+          "victory"
+        ],
+        "x-client-error-reaction": "Match retry prompt; results discarded",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "matchId": {
+                    "type": "string"
+                  },
+                  "matchResult": {
+                    "type": "integer"
+                  },
+                  "enemyHealth": {
+                    "type": "number"
+                  },
+                  "stats": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
