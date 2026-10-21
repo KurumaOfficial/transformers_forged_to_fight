@@ -1,22 +1,32 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Transformers: Forged to Fight - Sparx Protocol Specification",
-    "version": "0.2.0-partial",
-    "description": "Specification of the Sparx RPC protocol for Transformers: Forged to Fight v9.2.0 reverse-engineered from libil2cpp and network dumps. Partial: only endpoints observed in the live 2026-10-21 run and/or verified in dump.cs. Quest wire keys are documented in spec/quest_protocol.md."
+    "title": "Transformers: Forged to Fight 9.2.0 — observed Sparx protocol",
+    "version": "0.3.0-facts",
+    "description": "FACT-ONLY partial specification. Every path has x-evidence; every non-obvious field carries [RUN]/[STATIC]/[ASSUMED] in its description. The 14 unittest cases check internal consistency (envelope, array shapes, required keys) and DO NOT prove client compatibility. Client compatibility is proven only by a live run with server/requests.jsonl + logcat. Quest schema: spec/quest_protocol.md. Coverage matrix: docs/protocol_coverage.md."
   },
   "servers": [
     {
       "url": "http://127.0.0.1:8080"
     }
   ],
+  "tags": [
+    {
+      "name": "observed"
+    },
+    {
+      "name": "not-observed"
+    }
+  ],
   "paths": {
     "/auth/init": {
       "post": {
-        "summary": "Initialize anonymous session",
+        "summary": "Initialize anonymous session (observed POST too)",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "same as GET; POST observed in later run",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -28,42 +38,37 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
-                      "required": [
-                        "status",
-                        "session"
-                      ],
-                      "properties": {
-                        "status": {
-                          "type": "string"
-                        },
-                        "session": {
-                          "type": "string"
-                        }
-                      }
+                      "properties": {},
+                      "description": "status/session object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "session"
-        ],
-        "x-client-error-reaction": "Fatal bootflow alert; cannot proceed without session",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "api": {
-                    "type": "integer"
                   }
                 }
               }
@@ -74,10 +79,12 @@
     },
     "/auth/enumerate": {
       "post": {
-        "summary": "Enumerate available device/primary accounts",
+        "summary": "Enumerate device accounts",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
+        "x-client-behavior": "empty array is accepted; client falls through to prelogin/login",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
             "content": {
               "application/json": {
                 "schema": {
@@ -89,33 +96,37 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "array",
-                      "items": {
-                        "type": "object"
-                      }
+                      "items": {},
+                      "description": "array; empty [] confirmed"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "[] array structure (not dict)"
-        ],
-        "x-client-error-reaction": "Throws _PostInit.listToAuthenticate.Count=0 if not an array",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "api": {
-                    "type": "integer"
                   }
                 }
               }
@@ -126,10 +137,12 @@
     },
     "/auth/prelogin": {
       "post": {
-        "summary": "Get salt and challenge for HMAC signature",
+        "summary": "Pre-login salt/challenge",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "empty salt -> no apkprotect HMAC path",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -141,38 +154,46 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
                       "properties": {
                         "salt": {
-                          "type": "string"
+                          "type": "string",
+                          "description": "empty salt skips APK_Check_Start_Salt [RUN] observed 2026-10-21 21:23-21:24 UTC"
                         },
                         "status": {
-                          "type": "string"
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
                         }
-                      }
+                      },
+                      "description": "salt/status"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "salt"
-        ],
-        "x-client-error-reaction": "If salt non-empty, calls APK_Check_Start_Salt in libapkprotect.so",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "api": {
-                    "type": "integer"
                   }
                 }
               }
@@ -183,10 +204,12 @@
     },
     "/auth/login": {
       "post": {
-        "summary": "Login with device authenticator and anti-cheat signature",
+        "summary": "Login with device authenticator",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "missing auth.device or stoken -> login failure",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -198,51 +221,67 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
-                      "required": [
-                        "auth",
-                        "endpoints",
-                        "stoken"
-                      ],
                       "properties": {
-                        "auth": {
-                          "type": "object"
-                        },
-                        "endpoints": {
-                          "type": "object"
+                        "token": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
                         },
                         "stoken": {
-                          "type": "string"
+                          "type": "string",
+                          "description": "[RUN] observed 2026-10-21 21:23-21:24 UTC session token used by later calls"
+                        },
+                        "auth": {
+                          "type": "object",
+                          "description": "must contain device:true [RUN] observed 2026-10-21 21:23-21:24 UTC",
+                          "properties": {
+                            "device": {
+                              "type": "boolean"
+                            }
+                          }
+                        },
+                        "endpoints": {
+                          "type": "object",
+                          "description": "[RUN] observed 2026-10-21 21:23-21:24 UTC service endpoint map"
+                        },
+                        "user": {
+                          "type": "object",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "modeData": {
+                          "type": "object",
+                          "description": "[ASSUMED] stub value, not original"
                         }
-                      }
+                      },
+                      "description": "login payload; most values [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "auth.device",
-          "endpoints.device",
-          "stoken"
-        ],
-        "x-client-error-reaction": "Fatal alert: Login failed modal",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "api": {
-                    "type": "integer"
-                  },
-                  "auth": {
-                    "type": "object"
                   }
                 }
               }
@@ -253,10 +292,12 @@
     },
     "/account/data": {
       "get": {
-        "summary": "Fetch commander profile and privacy settings",
+        "summary": "Commander profile",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "missing privacySettings/invitesDB -> NullReferenceException",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -268,50 +309,79 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
-                      "required": [
-                        "privacySettings",
-                        "invitesDB",
-                        "maxHelpsPerRequest"
-                      ],
                       "properties": {
                         "user": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "uid/name/level/xp; values [ASSUMED] stub value, not original"
                         },
                         "privacySettings": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] required by InvitesManager",
+                          "properties": {
+                            "friendsinvite": {
+                              "type": "boolean"
+                            }
+                          }
                         },
                         "invitesDB": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] required"
                         },
                         "maxHelpsPerRequest": {
-                          "type": "integer"
+                          "type": "integer",
+                          "description": "[RUN] required"
+                        },
+                        "xlate2Resources": {
+                          "type": "object",
+                          "description": "[ASSUMED] stub value, not original"
                         }
-                      }
+                      },
+                      "description": "profile object; values [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
               }
             }
           }
-        },
-        "x-required-client-fields": [
-          "privacySettings.friendsinvite",
-          "invitesDB",
-          "maxHelpsPerRequest"
-        ],
-        "x-client-error-reaction": "NullReferenceException in InvitesManager.InvitePrivacySetting"
+        }
       }
     },
     "/bcg/getLoginData": {
       "get": {
-        "summary": "Fetch character base definitions, growth curves, evolution blueprints",
+        "summary": "BCG catalog + optional userData",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
+        "x-client-behavior": "missing required collections -> alerts/NullRef; userData roster still empty [RUN]",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
             "content": {
               "application/json": {
                 "schema": {
@@ -323,68 +393,122 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
-                      "required": [
-                        "heroes",
-                        "blueprints",
-                        "evoBlueprints",
-                        "attributeGrowthDefs"
-                      ],
                       "properties": {
                         "heroes": {
-                          "type": "object"
-                        },
-                        "attributeGrowthDefs": {
-                          "type": "object"
-                        },
-                        "statMods": {
-                          "type": "object"
-                        },
-                        "statModAppears": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] catalog accepted; values [ASSUMED] stub value, not original"
                         },
                         "blueprints": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] catalog accepted; values [ASSUMED] stub value, not original"
+                        },
+                        "characters": {
+                          "type": "object",
+                          "description": "[RUN] catalog accepted; values [ASSUMED] stub value, not original"
                         },
                         "evoBlueprints": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "attributeGrowthDefs": {
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "statMods": {
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "statModAppears": {
+                          "type": "object",
+                          "description": "[RUN] required"
                         },
                         "synergyBonuses": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] required"
                         },
                         "attackValues": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] required"
                         },
                         "blueprintBonuses": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "heroClasses": {
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "curves": {
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "evoCosts": {
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "rarityProperties": {
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "staminaRegen": {
+                          "type": "object",
+                          "description": "[RUN] required"
+                        },
+                        "userData": {
+                          "type": "object",
+                          "description": "[STATIC] top-level key read by OnBCGData; exact shape not yet accepted. [ASSUMED]"
+                        },
+                        "cdn": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
                         }
-                      }
+                      },
+                      "description": "catalog + userData; only key names verified, values [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
               }
             }
           }
-        },
-        "x-required-client-fields": [
-          "attributeGrowthDefs",
-          "heroes",
-          "blueprints",
-          "evoBlueprints",
-          "statMods"
-        ],
-        "x-client-error-reaction": "NullReferenceException or fatal alert: No evo blueprints"
+        }
       }
     },
     "/tuning": {
       "get": {
-        "summary": "Fetch global game and combat balance constants",
+        "summary": "Combat tuning",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client falls back to built-in defaults if empty",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -396,32 +520,655 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
+                      "type": "object",
+                      "description": "tuning dict; values [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
                       "type": "array",
-                      "items": {
-                        "type": "object"
-                      }
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
               }
             }
           }
-        },
-        "x-required-client-fields": [
-          "combat tuning dictionary"
-        ],
-        "x-client-error-reaction": "Silent default tuning values"
+        }
+      }
+    },
+    "/payments/payouts": {
+      "get": {
+        "summary": "Payment payouts",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "shop hides paid offers",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty object [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/performance/profile": {
+      "get": {
+        "summary": "Graphics profile",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client selects a default profile",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "description": "profile dict; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/redeemer/refresh": {
+      "get": {
+        "summary": "Redeemer gifts",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "promo section empty",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/events/refresh": {
+      "get": {
+        "summary": "Events",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "events tab empty",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/offers/getLoginData": {
+      "get": {
+        "summary": "Offers",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "offer showcase empty",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/gamestats/get-login-data": {
+      "get": {
+        "summary": "Game stats",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "stats/achievements empty",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "stats": {
+                          "type": "object",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "achievements": {
+                          "type": "object",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "stats object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/gamestats/check-login-achievements": {
+      "get": {
+        "summary": "Achievement check",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "empty array accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {},
+                      "description": "array [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/push/token": {
+      "get": {
+        "summary": "Push token",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "push disabled if empty",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "websocket": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "status/websocket; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inventory": {
+      "get": {
+        "summary": "Inventory",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "empty inventory accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "items": {
+                          "type": "array",
+                          "items": {},
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "items array; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/chat/data": {
+      "get": {
+        "summary": "Chat channels",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "chat disabled/empty",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/base/active": {
       "get": {
-        "summary": "Fetch active player base mission, map, and tiles",
+        "summary": "Player base",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
+        "x-client-behavior": "missing pathData -> NullReferenceException in PathAnalyzer",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
             "content": {
               "application/json": {
                 "schema": {
@@ -433,44 +1180,1179 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
-                      "required": [
-                        "user",
-                        "userBase"
-                      ],
                       "properties": {
                         "user": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] wrapper observed; Base/map required",
+                          "properties": {
+                            "Base": {
+                              "type": "object",
+                              "description": "[RUN] required by BaseManager"
+                            }
+                          }
                         },
                         "userBase": {
-                          "type": "object"
+                          "type": "object",
+                          "description": "[RUN] alternative wrapper"
+                        },
+                        "map": {
+                          "type": "object",
+                          "description": "[RUN] pathData required",
+                          "properties": {
+                            "pathData": {
+                              "type": "array",
+                              "description": "[RUN] must be non-empty",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "path": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "integer"
+                                        },
+                                        "y": {
+                                          "type": "integer"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
-                      }
+                      },
+                      "description": "base mission; values [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
               }
             }
           }
-        },
-        "x-required-client-fields": [
-          "map.pathData",
-          "map.gridDimension",
-          "map.grid",
-          "summary.theme"
-        ],
-        "x-client-error-reaction": "NullReferenceException in PathAnalyzer.GetPathsFromMap"
+        }
+      }
+    },
+    "/pvp/get-login-data": {
+      "get": {
+        "summary": "PvP season",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "arena unavailable",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/grouprefresh": {
+      "get": {
+        "summary": "Background refresh",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "polled every ~20s; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/gacha/refresh": {
+      "get": {
+        "summary": "AutoRefresh gacha",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/gamestore/refresh": {
+      "get": {
+        "summary": "AutoRefresh gamestore",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/objectives/refresh": {
+      "get": {
+        "summary": "AutoRefresh objectives",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/prizes/refresh": {
+      "get": {
+        "summary": "AutoRefresh prizes",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/message/refresh": {
+      "get": {
+        "summary": "AutoRefresh message",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/kabamsignup/refresh": {
+      "get": {
+        "summary": "AutoRefresh kabamsignup",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/missionsconfig/refresh": {
+      "get": {
+        "summary": "AutoRefresh missionsconfig",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/ads/refresh": {
+      "get": {
+        "summary": "AutoRefresh ads",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/quests/refresh": {
+      "get": {
+        "summary": "AutoRefresh quests",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/ave/refresh": {
+      "get": {
+        "summary": "AutoRefresh ave",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/raid/refresh": {
+      "get": {
+        "summary": "AutoRefresh raid",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/autorefresh/ai/refresh": {
+      "get": {
+        "summary": "AutoRefresh ai",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client re-polls; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "check": {
+                          "type": "string",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "refresh": {
+                          "type": "integer",
+                          "description": "[ASSUMED] stub value, not original"
+                        },
+                        "cache": {
+                          "type": "boolean",
+                          "description": "[ASSUMED] stub value, not original"
+                        }
+                      },
+                      "description": "refresh object; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ds/{uid}/": {
+      "get": {
+        "summary": "DataSync profile",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client sends profile on exit; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "description": "profile dict; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ds/{uid}": {
+      "post": {
+        "summary": "DataSync profile (POST observed)",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client sends profile JSON; empty accepted",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "description": "profile dict; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/tutorial/get-login-data": {
       "post": {
-        "summary": "Fetch user tutorial progress dictionary",
+        "summary": "Tutorial login data",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "all completed -> no tutorial modal; deviation DEV-001",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -482,36 +2364,65 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
-                      "properties": {
-                        "FTE": {
-                          "type": "object"
+                      "description": "tutorial map; bypass [RUN]",
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                          "s": {
+                            "type": "string",
+                            "description": "[RUN] 'completed' bypass"
+                          },
+                          "current_bid": {
+                            "type": "string",
+                            "description": "[RUN] branch id"
+                          }
                         }
                       }
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
               }
             }
           }
-        },
-        "x-required-client-fields": [
-          "s",
-          "current_bid",
-          "branches"
-        ],
-        "x-client-error-reaction": "If FTE not completed, launches FTE combat cutscene"
+        }
       }
     },
     "/tutorial/{action}": {
       "post": {
-        "summary": "Perform tutorial step (start, branch, complete)",
+        "summary": "Tutorial action",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "completed branch returned",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -523,34 +2434,36 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
-                      "type": "object"
+                      "type": "object",
+                      "description": "tutorial state; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "s",
-          "current_bid"
-        ],
-        "x-client-error-reaction": "Client retry loop",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "tid": {
-                    "type": "string"
-                  },
-                  "bid": {
-                    "type": "string"
                   }
                 }
               }
@@ -561,10 +2474,12 @@
     },
     "/quests/quest-list": {
       "get": {
-        "summary": "List available quest chapters and acts",
+        "summary": "Available quest sets",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
+        "x-client-behavior": "array; set keys and summary act/chapter/mission verified; values invented",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
             "content": {
               "application/json": {
                 "schema": {
@@ -576,159 +2491,37 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "array",
-                      "items": {
-                        "type": "object"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "ArrayList of active chapters"
-        ],
-        "x-client-error-reaction": "Quests screen displays empty acts"
-      }
-    },
-    "/quests/quest-active": {
-      "get": {
-        "summary": "Get currently active quest session and board state",
-        "responses": {
-          "200": {
-            "description": "Successful Sparx RPC Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "required": [
-                    "ts",
-                    "result"
-                  ],
-                  "properties": {
-                    "ts": {
-                      "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "items": {},
+                      "description": "array of sets; schema in spec/quest_protocol.md"
                     },
-                    "result": {
+                    "sync": {
                       "type": "object",
-                      "properties": {
-                        "active": {
-                          "type": "object"
-                        },
-                        "battlegroups": {
-                          "type": "array"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "active dictionary or empty object"
-        ],
-        "x-client-error-reaction": "Client assumes no quest in progress"
-      }
-    },
-    "/quests/quest-progression": {
-      "get": {
-        "summary": "Get completion percentages for story acts",
-        "responses": {
-          "200": {
-            "description": "Successful Sparx RPC Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "required": [
-                    "ts",
-                    "result"
-                  ],
-                  "properties": {
-                    "ts": {
-                      "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
                     },
-                    "result": {
-                      "type": "object"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "progression mapping"
-        ],
-        "x-client-error-reaction": "Shows 0% on chapter badges"
-      }
-    },
-    "/matches/activate-match/{matchType}": {
-      "post": {
-        "summary": "Initialize 1v1 battle session and opponent fighter stats",
-        "responses": {
-          "200": {
-            "description": "Successful Sparx RPC Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "required": [
-                    "ts",
-                    "result"
-                  ],
-                  "properties": {
-                    "ts": {
-                      "type": "integer",
-                      "description": "Server epoch timestamp"
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
                     },
-                    "result": {
-                      "type": "object",
-                      "required": [
-                        "matchId",
-                        "fighterData"
-                      ],
-                      "properties": {
-                        "matchId": {
-                          "type": "string"
-                        },
-                        "fighterData": {
-                          "type": "object"
-                        }
-                      }
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-required-client-fields": [
-          "matchId",
-          "fighterData.enemyFighter"
-        ],
-        "x-client-error-reaction": "FightFlow.OnMatchInit error modal, aborts combat",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "hero": {
-                    "type": "string"
-                  },
-                  "qid": {
-                    "type": "string"
                   }
                 }
               }
@@ -737,12 +2530,14 @@
         }
       }
     },
-    "/matches/resolve-match/{matchType}": {
-      "post": {
-        "summary": "Post fight outcome, health, and match stats",
+    "/quests/quest-active": {
+      "get": {
+        "summary": "Active quests",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "empty accepted; active quest not verified",
         "responses": {
           "200": {
-            "description": "Successful Sparx RPC Response",
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
             "content": {
               "application/json": {
                 "schema": {
@@ -754,55 +2549,103 @@
                   "properties": {
                     "ts": {
                       "type": "integer",
-                      "description": "Server epoch timestamp"
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
                       "type": "object",
-                      "required": [
-                        "rewards",
-                        "victory"
-                      ],
                       "properties": {
-                        "rewards": {
-                          "type": "array"
+                        "activeQuests": {
+                          "type": "array",
+                          "items": {}
                         },
-                        "victory": {
-                          "type": "boolean"
-                        },
-                        "xpEarned": {
-                          "type": "integer"
+                        "instances": {
+                          "type": "array",
+                          "items": {}
                         }
-                      }
+                      },
+                      "description": "active quests; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
               }
             }
           }
-        },
-        "x-required-client-fields": [
-          "rewards",
-          "victory"
-        ],
-        "x-client-error-reaction": "Match retry prompt; results discarded",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "matchId": {
-                    "type": "string"
-                  },
-                  "matchResult": {
-                    "type": "integer"
-                  },
-                  "enemyHealth": {
-                    "type": "number"
-                  },
-                  "stats": {
-                    "type": "object"
+        }
+      }
+    },
+    "/quests/quest-progression": {
+      "get": {
+        "summary": "Quest progression",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
+        "x-client-behavior": "applied to QuestSummary.UpdateProgression",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC; [STATIC] dump.cs / stringliterals",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "description": "progression map; [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
                   }
                 }
               }
@@ -814,19 +2657,74 @@
     "/quests/quest-detail/{qid}": {
       "post": {
         "summary": "Quest details",
-        "x-verified": "RUN 2026-10-21",
-        "parameters": [
-          {
-            "name": "qid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client sends {hash,nonce,api,setId}; screen renders; team empty -> START disabled",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "summary",
+                        "map"
+                      ],
+                      "properties": {
+                        "summary": {
+                          "type": "object",
+                          "description": "[RUN] observed 2026-10-21 21:23-21:24 UTC"
+                        },
+                        "map": {
+                          "type": "object",
+                          "description": "[RUN] observed 2026-10-21 21:23-21:24 UTC"
+                        }
+                      },
+                      "description": "summary/map; values [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
             }
           }
-        ],
+        },
         "requestBody": {
-          "required": true,
+          "required": false,
           "content": {
             "application/json": {
               "schema": {
@@ -852,80 +2750,17 @@
               }
             }
           }
-        },
-        "responses": {
-          "200": {
-            "description": "Sparx envelope",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "required": [
-                    "ts",
-                    "result"
-                  ],
-                  "properties": {
-                    "ts": {
-                      "type": "integer"
-                    },
-                    "result": {
-                      "type": "object",
-                      "required": [
-                        "summary",
-                        "map"
-                      ],
-                      "properties": {
-                        "summary": {
-                          "type": "object"
-                        },
-                        "map": {
-                          "type": "object"
-                        }
-                      }
-                    },
-                    "sync": {
-                      "type": "object"
-                    },
-                    "async": {
-                      "type": "array"
-                    },
-                    "error": {
-                      "type": [
-                        "string",
-                        "null"
-                      ]
-                    },
-                    "fatal": {
-                      "type": "boolean"
-                    },
-                    "retry": {
-                      "type": "boolean"
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       }
     },
     "/quests/quest-begin/{qid}": {
       "post": {
-        "summary": "Begin quest (NOT OBSERVED)",
-        "x-verified": "NOT OBSERVED",
-        "parameters": [
-          {
-            "name": "qid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
+        "summary": "Begin quest",
+        "x-evidence": "[NOT OBSERVED]",
+        "x-client-behavior": "not called: roster empty",
         "responses": {
           "200": {
-            "description": "Sparx envelope",
+            "description": "Sparx envelope. [NOT OBSERVED]",
             "content": {
               "application/json": {
                 "schema": {
@@ -936,28 +2771,36 @@
                   ],
                   "properties": {
                     "ts": {
-                      "type": "integer"
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
-                      "type": "object"
+                      "type": "object",
+                      "description": "unknown"
                     },
                     "sync": {
-                      "type": "object"
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
                     },
                     "async": {
-                      "type": "array"
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
                     },
                     "error": {
-                      "type": [
-                        "string",
-                        "null"
-                      ]
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
                     },
                     "fatal": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
                     },
                     "retry": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
@@ -969,21 +2812,12 @@
     },
     "/quests/quest-moveto/{qid}": {
       "post": {
-        "summary": "Move on quest board (NOT OBSERVED)",
-        "x-verified": "NOT OBSERVED",
-        "parameters": [
-          {
-            "name": "qid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
+        "summary": "Move on board",
+        "x-evidence": "[NOT OBSERVED]",
+        "x-client-behavior": "not called",
         "responses": {
           "200": {
-            "description": "Sparx envelope",
+            "description": "Sparx envelope. [NOT OBSERVED]",
             "content": {
               "application/json": {
                 "schema": {
@@ -994,28 +2828,93 @@
                   ],
                   "properties": {
                     "ts": {
-                      "type": "integer"
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
-                      "type": "object"
+                      "type": "object",
+                      "description": "unknown"
                     },
                     "sync": {
-                      "type": "object"
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
                     },
                     "async": {
-                      "type": "array"
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
                     },
                     "error": {
-                      "type": [
-                        "string",
-                        "null"
-                      ]
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
                     },
                     "fatal": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
                     },
                     "retry": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/matches/activate-match/{matchType}": {
+      "post": {
+        "summary": "Activate match",
+        "x-evidence": "[NOT OBSERVED]",
+        "x-client-behavior": "not called",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [NOT OBSERVED]",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "description": "unknown"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
@@ -1027,11 +2926,12 @@
     },
     "/matches/match-loaded/{matchType}/{id}": {
       "post": {
-        "summary": "Signal match loaded (NOT OBSERVED)",
-        "x-verified": "NOT OBSERVED",
+        "summary": "Match loaded",
+        "x-evidence": "[NOT OBSERVED]",
+        "x-client-behavior": "not called",
         "responses": {
           "200": {
-            "description": "Sparx envelope",
+            "description": "Sparx envelope. [NOT OBSERVED]",
             "content": {
               "application/json": {
                 "schema": {
@@ -1042,28 +2942,93 @@
                   ],
                   "properties": {
                     "ts": {
-                      "type": "integer"
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
-                      "type": "object"
+                      "type": "object",
+                      "description": "unknown"
                     },
                     "sync": {
-                      "type": "object"
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
                     },
                     "async": {
-                      "type": "array"
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
                     },
                     "error": {
-                      "type": [
-                        "string",
-                        "null"
-                      ]
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
                     },
                     "fatal": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
                     },
                     "retry": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/matches/resolve-match/{matchType}": {
+      "post": {
+        "summary": "Resolve match",
+        "x-evidence": "[NOT OBSERVED]",
+        "x-client-behavior": "not called",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [NOT OBSERVED]",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "description": "unknown"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }
@@ -1075,11 +3040,12 @@
     },
     "/bcg/getUserData": {
       "get": {
-        "summary": "User roster (NOT OBSERVED; schema experimental)",
-        "x-verified": "NOT OBSERVED",
+        "summary": "User roster",
+        "x-evidence": "[NOT OBSERVED]",
+        "x-client-behavior": "not requested on boot or edit squad; BOTS crashes before fetch",
         "responses": {
           "200": {
-            "description": "Sparx envelope",
+            "description": "Sparx envelope. [NOT OBSERVED]",
             "content": {
               "application/json": {
                 "schema": {
@@ -1090,28 +3056,448 @@
                   ],
                   "properties": {
                     "ts": {
-                      "type": "integer"
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
                     },
                     "result": {
-                      "type": "object"
+                      "type": "object",
+                      "description": "unknown; experimental"
                     },
                     "sync": {
-                      "type": "object"
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
                     },
                     "async": {
-                      "type": "array"
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
                     },
                     "error": {
-                      "type": [
-                        "string",
-                        "null"
-                      ]
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
                     },
                     "fatal": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
                     },
                     "retry": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/userprofile/": {
+      "post": {
+        "summary": "User profile",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "profile card refresh",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/telemetry": {
+      "post": {
+        "summary": "Telemetry",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client ignores response",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/util/ping": {
+      "post": {
+        "summary": "Ping",
+        "x-evidence": "[RUN] earlier runs",
+        "x-client-behavior": "keepalive",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] earlier runs",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/krash": {
+      "post": {
+        "summary": "Crash report",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client posts crash JSON; response ignored",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "description": "status/id [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bugs": {
+      "post": {
+        "summary": "Bug report",
+        "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
+        "x-client-behavior": "client posts bug report; ignored",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty [ASSUMED]"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health check",
+        "x-evidence": "[RUN] debug",
+        "x-client-behavior": "manual test only",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] debug",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {},
+                      "description": "empty"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ws": {
+      "get": {
+        "summary": "WebSocket upgrade",
+        "x-evidence": "[RUN] debug; 400",
+        "x-client-behavior": "client retries; not required for hub",
+        "responses": {
+          "200": {
+            "description": "Sparx envelope. [RUN] debug; 400",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "ts",
+                    "result"
+                  ],
+                  "properties": {
+                    "ts": {
+                      "type": "integer",
+                      "description": "server epoch seconds [RUN] observed 2026-10-21 21:23-21:24 UTC"
+                    },
+                    "result": {
+                      "type": "string",
+                      "description": "not implemented"
+                    },
+                    "sync": {
+                      "type": "object",
+                      "nullable": true,
+                      "description": "[ASSUMED] not used by the verified client flow; Response has no sync field [STATIC] dump.cs / stringliterals"
+                    },
+                    "async": {
+                      "type": "array",
+                      "items": {},
+                      "nullable": true,
+                      "description": "[STATIC] EB.Sparx.Response.async"
+                    },
+                    "error": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "[STATIC] error string or null"
+                    },
+                    "fatal": {
+                      "type": "boolean",
+                      "description": "[STATIC] fatal flag"
+                    },
+                    "retry": {
+                      "type": "boolean",
+                      "description": "[STATIC] retry flag"
                     }
                   }
                 }

@@ -99,7 +99,7 @@
     "acts": [
       {
         "act": 1,
-        "friendlyName": "Act 1: All Fall Down",
+        "friendlyName": "ACT 1",
         "description": "Enter the battlefield on New Quintessa.",
         "image": "act_1_banner",
         "unlocked": true,
@@ -125,7 +125,7 @@
         "potentialCompletionRewards": [],
         "Chapters": [
           {
-            "friendlyName": "Chapter 1: Arrival",
+            "friendlyName": "Chapter 1",
             "description": "Crash landing in the primordial ruins.",
             "image": "chapter_1_banner",
             "unlocked": true,
@@ -229,7 +229,7 @@
       {
         "act": 1,
         "chapter": 1,
-        "friendlyName": "Chapter 1: Arrival",
+        "friendlyName": "Chapter 1",
         "description": "Crash landing in the primordial ruins.",
         "image": "chapter_1_banner",
         "unlocked": true,

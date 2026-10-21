@@ -50,6 +50,12 @@ Observed boot sequence (actual, from requests.jsonl):
 This confirms [RUN] the earlier claim that the client reaches HomeFlow. It does
 NOT confirm that all server payloads are correct; many are [ASSUMED].
 
+## 2b. PLAY NOW (verified)
+`PLAY NOW` is the normal cold-start screen of this build, not an error. On a
+cold launch the client shows splash + PLAY NOW / LOG IN; a tap starts
+`auth/init`. `work/auto_play.py` finds the green button and taps it; tested
+2026-10-22, reaches the hub without manual input. [RUN]
+
 ## 3. Stage 2A — protocol discoveries this session
 ### 3.1 Quest wire format (verified by decompilation + run)
 The blocker that hid chapters was the summary index keys. The client reads
@@ -89,7 +95,13 @@ Quest detail screen renders, but:
   `HeroesScreen.SetFeaturedHeroData` [RUN]
 Cause: the roster is empty. `/bcg/getLoginData` currently contains a catalog
 (`heroes`, `blueprints`, `characters`, ...) but the user roster is not being
-accepted. The exact `userData`/`BCGUserHero` wire keys are not yet verified.
+accepted. New static findings (2026-10-22): `OnBCGData` reads top-level
+`userData`; `HandleUserDataUpdates` reads `activeTeams`, `savedTeams`,
+`inventory.f/bp/max`, `heroes` (array), `heroesScreenList`, `heroes_cta`;
+`BCGUserHeroBase..ctor` reads `entity_type`, `bid`, `rank`, `level`, `sig_lvl`,
+`required_xp`, `max_xp`, `stamina`, `stamina_ts`, `stamina_full_ts`, `stt`,
+`pvpb`, `exc`. Tried dict and array `heroes`, camelCase and snake_case; still
+empty. Details: `spec/bcg_userdata.md`.
 
 ## 4. Files changed in this session (uncommitted at time of writing)
 - `server/data/quest_list.json` — real Act/Chapter/quest structure, act/chapter/

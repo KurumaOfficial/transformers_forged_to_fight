@@ -1,13 +1,8 @@
 {
-  "heroes": {
-    "1": {
-      "entityType": "hero",
-      "blueprint": "bumblebee_cin_dotm_2",
+  "heroes": [
+    {
       "rank": 1,
       "level": 1,
-      "sigLvl": 0,
-      "requiredXP": 0,
-      "maxXP": 100,
       "attributeData": {
         "hpMaxBase": 1000,
         "hpMax": 1000,
@@ -37,15 +32,69 @@
       },
       "stamina": 5,
       "staminaNextGrowthTime": 0,
-      "staminaFullGrowthTime": 0
+      "staminaFullGrowthTime": 0,
+      "entity_type": "hero",
+      "bid": "bumblebee_cin_dotm_2",
+      "sig_lvl": 0,
+      "required_xp": 0,
+      "max_xp": 100,
+      "stamina_ts": 0,
+      "stamina_full_ts": 0,
+      "stt": "",
+      "pvpb": {},
+      "exc": {},
+      "hp": 1000.0,
+      "attack": 120,
+      "armor": 50.0,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "block_proficiency": 0.5,
+      "mana_gain": 1.0,
+      "mana_start": 0,
+      "resist_magic": 0.0,
+      "resist_physical": 0.0,
+      "stun_time": 0,
+      "stun_chance": 0.0,
+      "special_attacks": 3,
+      "hero_rating_hp": 50,
+      "hero_rating_attack": 50,
+      "id": "1",
+      "uid": "1",
+      "hero": "bumblebee_cin_dotm_2",
+      "blueprint": "bumblebee_cin_dotm_2",
+      "modes": [
+        "Story",
+        "PvE",
+        "AvA",
+        "AvE"
+      ],
+      "modesAvail": [
+        "Story",
+        "PvE",
+        "AvA",
+        "AvE"
+      ],
+      "team_types": [
+        "Story",
+        "PvE"
+      ],
+      "teamTypes": [
+        "Story",
+        "PvE"
+      ]
     }
-  },
+  ],
   "entities": {},
   "evoBlueprints": {},
-  "savedTeams": {},
-  "activeTeams": {},
+  "savedTeams": [],
+  "activeTeams": [],
   "blueprintsMax": 50,
   "teamSizeMax": 3,
   "teamCountMax": 3,
-  "evoFragments": {}
+  "evoFragments": {},
+  "inventory": {
+    "f": {},
+    "bp": {},
+    "max": {}
+  }
 }

@@ -48,9 +48,15 @@ NullReferenceException
 ```
 
 Причина: не восстановлен точный формат `BCGUserData.heroes` /
-`BCGUserHero` (ключи `userData`, `heroes`, `blueprint`, `rank`, `level`,
-`attributeData`, ...). Экспериментальный блок `userData` в
-`bcg_login_data.json` клиентом не принят. `[RUN]`
+`BCGUserHero`. Статически найдено (2026-10-22): `OnBCGData` читает
+top-level `userData`; `HandleUserDataUpdates` читает `activeTeams`,
+`savedTeams`, `inventory.f/bp/max`, `heroes` (**массив**),
+`heroesScreenList`, `heroes_cta`; `BCGUserHeroBase..ctor` читает
+`entity_type`, `bid`, `rank`, `level`, `sig_lvl`, `required_xp`, `max_xp`,
+`stamina`, `stamina_ts`, `stamina_full_ts`, `stt`, `pvpb`, `exc`.
+Проверены варианты: `heroes` словарь и массив, camelCase и snake_case,
+с дополнительными `id/uid/hero/blueprint/modes`. Все — `EDIT SQUAD` пуст.
+Подробности: `spec/bcg_userdata.md`. `[STATIC]` + `[RUN]`
 
 ## 4. Честная таблица верности среза
 

@@ -234,62 +234,51 @@ GET  /autorefresh/grouprefresh       (фоновый поллинг)
 логирует каждый запрос в `server/requests.jsonl` с `flush`; на неизвестные пути
 отдаёт пустой `result`.
 
-## 7. Инструкция по установке, запуску и снятию логов
+## 7. Инструкция по запуску на эмуляторе (актуальная)
 
-### Шаг 1. Подготовка телефона
-1. Телефон подключен по USB к ПК.
-2. Включена "Отладка по USB" (USB Debugging).
-3. Проверка подключения в PowerShell / cmd:
-   ```powershell
-   adb devices
-   ```
-   (Должно отображаться `device`, а не `unauthorized` или `offline`).
+Проверено на `TFTF_AVD` (Pixel 4, API 30, x86_64, AEHD).
 
-### Шаг 2. Настройка перенаправления сети
-Направляем трафик с порта 8080 телефона на порт 8080 вашего ПК:
+### Шаг 1. Эмулятор
 ```powershell
+$env:ANDROID_SDK_ROOT="C:\Users\gameg\Desktop\TFTF\work\android-sdk"
+& "$env:ANDROID_SDK_ROOT\emulator\emulator.exe" -avd TFTF_AVD -no-boot-anim -gpu auto
+adb wait-for-device
+adb shell getprop ro.product.cpu.abilist
+```
+Ожидается строка, содержащая `arm64-v8a` (трансляция ARM64 на x86_64).
+
+### Шаг 2. Сервер и reverse
+```powershell
+python server\stub_server.py 8080
 adb reverse tcp:8080 tcp:8080
 ```
 
-### Шаг 3. Запуск сервера-заглушки на ПК
-В отдельном окне терминала запустите сервер:
+### Шаг 3. Установка патченного APK
 ```powershell
-python server\stub_server.py 8080
+adb install -r --no-incremental "work\patched_build\tftf_patched_v9.2.0.apk"
 ```
-Сервер начнет слушать порт 8080 и выводить каждый входящий запрос.
+Оригинальный APK не изменяется; патч только в копии.
 
-### Шаг 4. Установка пропатченного APK
+### Шаг 4. Запуск и автоматический тап PLAY NOW
 ```powershell
-adb install -r "work\patched_build\tftf_patched_v9.2.0.apk"
+adb shell am force-stop com.kabam.bigrobot
+adb shell monkey -p com.kabam.bigrobot -c android.intent.category.LAUNCHER 1
+# подождать сплэш ~55 с, затем:
+python work\auto_play.py
 ```
+`auto_play.py` находит зелёную кнопку PLAY NOW по цвету и тапает её.
+PLAY NOW — обычный стартовый экран этой сборки на холодном запуске, не ошибка.
+Если данные приложения сохранены, экран может не появиться; скрипт тогда
+завершится с кодом 2, и тап не нужен.
 
-### Шаг 5. Запуск клиента и сбор логов
-1. В отдельном окне терминала запустите сбор `logcat`:
-   ```powershell
-   adb logcat -c
-   adb logcat -v threadtime > work\logcat_full.txt
-   ```
-2. Запустите игру на телефоне:
-   ```powershell
-   adb shell monkey -p com.kabam.bigrobot -c android.intent.category.LAUNCHER 1
-   ```
-3. Дождитесь появления экрана загрузки.
-4. В терминале сервера отобразятся входящие запросы клиента, а файл `server/requests.jsonl` заполнится реальными телами запросов.
-5. Пришлите мне содержимое `server/requests.jsonl` и файл `work/logcat.txt` для анализа.
+### Шаг 5. Полный logcat
+```powershell
+adb logcat -c
+adb logcat -v threadtime > work\logcat_full.txt
+```
+Без фильтров. Для этапа 1 уже снят `work/stage1_logcat_full_final.txt`.
 
----
-
-## 8. Доказательства этапа 1 (сессия 2026-10-21) `[RUN]`
-
-| Что | Файл / команда | Результат |
-|---|---|---|
-| Полный logcat без фильтров | `work/stage1_logcat_full_final.txt` | 136 КБ, от старта процесса до HomeFlow |
-| Лог запросов | `server/requests.jsonl` | 44 запроса, последовательность выше |
-| 3D-база (HomeFlow) | `work/FINAL_hub.png` | BASE/BOTS/FIGHT/…, кнопка FIGHT активна |
-| Story → Act 1 → Chapter 1 | `work/FINAL_story_chapters.png` | «ACT 1», «Chapter 1: Arrival», тайл «1.1 Landing Site» |
-| ABI эмулятора | `adb shell getprop ro.product.cpu.abilist` | `x86_64,x86,arm64-v8a,armeabi-v7a,armeabi` |
-| Патч endpoint | `work/patched_build/tftf_patched_v9.2.0.apk` | внутри `{"Default":{"Prod":"http://127.0.0.1:8080"}}`, файл 4164 байта |
-| Версия клиента | `adb shell dumpsys package com.kabam.bigrobot` | 9.2.0 / 123129100 / targetSdk 30 |
-
-Скриншот хаба был получен после ручного тапа `PLAY NOW` на холодном старте;
-автоматического входа в этом прогоне не было.
+### Шаг 6. Проверка
+- `server/requests.jsonl` — последовательность запросов;
+- `work/FINAL_hub.png` — хаб;
+- `work/FINAL_story_chapters.png` — Story → Act 1 → Chapter 1.
