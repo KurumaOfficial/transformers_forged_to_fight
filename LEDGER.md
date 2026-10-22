@@ -180,3 +180,21 @@ ecommendedMinLevel |
 | Bumblebee 100 (rank 1, level 1, статы 1000 HP / 120 ATK / rating 100) | [ASSUMED] | `server/data/bcg_login_data.json` |
 | Ресурсы (gold/energon/shards/ore) и уровень командира | [ASSUMED] | `server/data/account_data.json` |
 | Карта 3×3, названия Act/Chapter/Quest, награды | [ASSUMED] | `server/data/quest_*.json` |
+
+---
+
+## 11. Боевой тайл: три варианта (2026-10-22)
+
+| Вариант | Состав | Результат | Вывод |
+|---|---|---|---|
+| 1 | `scaledBossTable.enemy1` + tile entity `{entityType:"boss",boss:"enemy1",type:"boss"}`; `characters,rank,level,sig_lvl,flvl,aiType,aiString,aiPer,mapOverride,todIndex` | `Error deserializing EB.Missions.Entity (bossTableId = enemy1, type = boss)`, затем NRE в `MapTile.Deserialize` | запись босса неполная |
+| 2 | + `uid,key,hi,type,baseType` | ошибка Entity исчезла, NRE в `MapTile.Deserialize` остался | не хватает полей тайла/сущности |
+| 3 | + `bg:false,bt:[],ab:[],sockets:{}` на всех тайлах | NRE в `MapTile.Deserialize` остался | не хватает чего-то ещё; `/matches/*` не вызван |
+
+Память после обычного хода (без entity): `ActiveQuests` = 1
+(`story_act1_ch1_m1`), `pendingProgressionCount = 0`, `progression.version = 2`,
+`currentPos = (1,0)`, `currentFightId = null`, `currentBattleId = null`.
+[RUN] `work/adb_legacy_quest.py`.
+
+`ActiveQuest.ActivateMatch` (`RVA 0x10A0038`) требует `battleId` + героя;
+обычный `moveto` его не вызывает. [STATIC]

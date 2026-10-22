@@ -223,3 +223,17 @@ STATE.md and commit.
 - Current blocker: battle trigger (`/matches/activate-match`).
 - Added `spec/wire_gotchas.md`, `report/stage2b_roster_and_quest_map.md`.
 - Fidelity table updated (see 6.4).
+
+## 13. v3.1 — боевой тайл (2026-10-22)
+- `ActiveQuest..ctor` (`RVA 0xC38BC8`) reads `scaledBossTable` from the active quest.
+- `MapTile.Deserialize` (`RVA 0x1484C04`) reads `entityType`, `boss` (bossTableId),
+  `links`, `visibleLinks`, `bg`, `bt`, `ab`, `sockets`.
+- `QuestBoss.Deserialize` (`RVA 0xEA3F60`) keys: `isFinalBoss,characters,rank,
+  level,sig_lvl,flvl,aiType,aiString,aiPer,mapOverride,todIndex,...`.
+- `Entity.Deserialize` (`RVA 0x1334A04`) keys: `uid,key,hi`.
+- Three variants (boss table + entity; + uid/key/hi/type/baseType; +
+  bg/bt/ab/sockets) still NRE in `MapTile.Deserialize`; `/matches/*` not called.
+- Memory after normal move: `ActiveQuests=1`, `pendingProgressionCount=0`,
+  `progression.version=2`, `currentPos=(1,0)`, `currentBattleId=null`.
+- Next: dynamic tracing of `MapTile.Deserialize`/`QuestBoss.Deserialize` or a
+  real `scaledBossTable`/tile entity sample. No Frida/gadget without consent.

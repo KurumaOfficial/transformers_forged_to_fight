@@ -230,3 +230,67 @@ no active quest has been verified.
 - `match-activate`, `match-loaded`, `match-resolve` bodies and responses (not
   yet observed in a live run).
 - Real quest ids, act/chapter names, maps and rewards (current content invented).
+
+## 2e. Боевой тайл: статика и три варианта (2026-10-22)
+
+### 2e.1 Как клиент понимает, что на тайле бой
+
+`ActiveQuest..ctor` (`RVA 0xC38BC8`) читает из объекта активного квеста
+`scaledBossTable` (ключ на `0xC38DE8`). Это словарь `bossTableId -> boss data`,
+который передаётся в `Quests.Builder`.
+
+`MapTile.Deserialize` (`RVA 0x1484C04`) для каждого элемента `entities`:
+- читает `entityType` (`0x14857E8`);
+- читает `boss` — это `bossTableId` (`0x14852A4`);
+- ищет `bossTableId` в `scaledBossTable`;
+- проверяет тип записи и создаёт `QuestBoss`/`BCGEntity`;
+- читает `links` (`0x1485B2C`), `visibleLinks` (`0x1485B4C`), `bg`
+  (`0x1485BC4`), `bt` (`0x1485C08`, список Vector2), `ab` (`0x1485C28`),
+  `sockets` (ошибка `Error deserializing EB.Missions.Socket`).
+- при ошибке пишет `Error deserializing EB.Missions.Entity (bossTableId = {0},
+  type = {1})` и затем падает в `MapTile.Deserialize` (NRE). [STATIC]+[RUN]
+
+`Entity.Deserialize` (`RVA 0x1334A04`) читает `uid`, `key`, `hi`.
+`QuestBoss.Deserialize` (`RVA 0xEA3F60`) использует JSONPaths 8589:
+`isFinalBoss`, `characters`, `rank`, `level`, `sig_lvl`, `flvl`, `aiType`,
+`aiString`, `aiPer`, `mapOverride`, `todIndex`, `item01..03` + chances,
+`mapBuffs`/`otherBuffs`, `synergyBonuses`, `userTitle`, `userRank`.
+`BCGEntity.Deserialize` (`RVA 0xC17FEC`) вызывает `QuestBoss.Deserialize` и
+кладёт `builder.quest` в `BCGEntity.quest` (`+0xE8`). [STATIC]
+
+`QuestProgression.currentBattleId` (`+0x40`), `currentFightId` (`+0x38`),
+`currentBattlePos` (`+0x50`) и `QuestActionResult` с `action:"battle"` — поля,
+которые использует предбоевой экран/`ActivateMatch`. `ActiveQuest.ActivateMatch`
+(`RVA 0x10A0038`) требует `battleId` и героя и вызывает
+`MatchManager.ActivateMatch<QuestsMatchData>` → `/matches/activate-match`.
+Обычный `moveto` его не вызывает. [STATIC]
+
+### 2e.2 Проверка запуском: три варианта
+
+Карта: 3×3, бот стартует (0,0), боевая сущность на (1,0).
+`scaledBossTable.enemy1` + tile `entities:[{id,entityType:"boss",boss:"enemy1",
+type:"boss"}]`.
+
+| Вариант | Что добавлено | Результат |
+|---|---|---|
+| 1 | `scaledBossTable.enemy1` + tile entity; поля `characters`, `rank`, `level`, `sig_lvl`, `flvl`, `aiType`, `aiString`, `aiPer`, `mapOverride`, `todIndex` | `Error deserializing EB.Missions.Entity (bossTableId = enemy1, type = boss)`; затем NRE в `MapTile.Deserialize` |
+| 2 | + `uid`, `key`, `hi`, `type`, `baseType` в запись босса | ошибка Entity исчезла, но NRE в `MapTile.Deserialize` остался |
+| 3 | + `bg:false`, `bt:[]`, `ab:[]`, `sockets:{}` на всех тайлах | NRE в `MapTile.Deserialize` остался |
+
+`/matches/*` не вызван ни в одном варианте. [RUN]
+
+### 2e.3 Память после обычного хода (без entity)
+
+После `quest-movedir` (ответ `action:"moveto"`):
+`Legacy.QuestsManager.Instance` -> `QuestDB.ActiveQuests` содержит 1 запись
+`story_act1_ch1_m1`; `pendingProgressionCount = 0`;
+`progression.version = 2`; `currentPos = (1.0, 0.0)`;
+`currentFightId = null`; `currentBattleId = null`; `currentBattlePos = (0,0)`.
+Клиент принял ход, бой не создан. [RUN] `work/adb_legacy_quest.py`.
+
+### 2e.4 Вывод
+
+Боевой тайл требует не только `scaledBossTable`, но и корректной структуры
+`entities`/`MapTile`; после трёх вариантов точное недостающее поле не найдено.
+Дальше — динамическая трассировка `MapTile.Deserialize`/`QuestBoss.Deserialize`
+или поиск реального `scaledBossTable`/tile entity в клиентских ассетах.

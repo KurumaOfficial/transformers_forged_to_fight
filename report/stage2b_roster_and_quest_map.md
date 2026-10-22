@@ -62,3 +62,20 @@ ALLIANCE заблокированы по уровню.
 Разобрать `ActiveQuest.ProcessPendingUpdates` (`RVA 0xC3A820`) и формат
 `sync`/`async` для `movedir`; затем дойти до финального тайла и снять
 `/matches/activate-match`, `/matches/match-loaded`, `/matches/resolve-match`.
+
+## 6. Боевой тайл (2026-10-22)
+
+Статика: `ActiveQuest..ctor` читает `scaledBossTable`; `MapTile.Deserialize`
+читает `entityType`, `boss` (bossTableId), `links`, `visibleLinks`, `bg`, `bt`,
+`ab`, `sockets`; `QuestBoss.Deserialize` использует ключи
+`isFinalBoss,characters,rank,level,sig_lvl,flvl,aiType,aiString,aiPer,...`;
+`Entity.Deserialize` — `uid,key,hi`.
+
+Проверено три варианта (boss table + entity; + uid/key/hi/type/baseType;
++ bg/bt/ab/sockets). Все три дают NRE в `MapTile.Deserialize`; `/matches/*`
+не вызван. Память после обычного хода: `ActiveQuests=1`,
+`pendingProgressionCount=0`, `currentPos=(1,0)`, `currentBattleId=null`.
+[RUN] `work/r83.png`, `spec/quest_protocol.md` §2e, `work/adb_legacy_quest.py`.
+
+Дальше — динамическая трассировка `MapTile.Deserialize`/`QuestBoss.Deserialize`
+или реальный образец `scaledBossTable`/tile entity.

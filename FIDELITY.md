@@ -86,3 +86,15 @@
 Формулировка: клиентская часть — оригинальная; серверная **схема** ростера,
 квеста и хода подтверждена запуском, но **числовые данные** остаются
 синтетическими. Боевая часть не подтверждена.
+
+### DEV-015 — боевой тайл (2026-10-22)
+
+Три варианта `scaledBossTable` + tile entity дали NRE в
+`EB.Missions.MapTile.Deserialize`; `/matches/activate-match` не вызван.
+Память после обычного хода: `ActiveQuests=1`, `pendingProgressionCount=0`,
+`currentPos=(1,0)`, `currentBattleId=null`. [RUN]
+`work/r83.png`, `spec/quest_protocol.md` §2e, `work/adb_legacy_quest.py`.
+
+Бой по-прежнему **0% подтверждён**. Это не ошибка клиента: не найдена
+валидная структура `scaledBossTable`/`entities`; нужна динамическая
+трассировка или реальный образец.

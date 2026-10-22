@@ -55,7 +55,11 @@
               "x": 0,
               "y": 1
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         },
         {
           "position": {
@@ -85,7 +89,11 @@
               "x": 1,
               "y": 1
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         },
         {
           "position": {
@@ -107,7 +115,11 @@
               "x": 2,
               "y": 1
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         }
       ],
       [
@@ -139,7 +151,11 @@
               "x": 0,
               "y": 2
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         },
         {
           "position": {
@@ -169,7 +185,11 @@
               "x": 1,
               "y": 2
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         },
         {
           "position": {
@@ -191,7 +211,11 @@
               "x": 2,
               "y": 2
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         }
       ],
       [
@@ -215,7 +239,11 @@
               "x": 1,
               "y": 2
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         },
         {
           "position": {
@@ -237,7 +265,11 @@
               "x": 2,
               "y": 2
             }
-          ]
+          ],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         },
         {
           "position": {
@@ -249,7 +281,11 @@
           "walkable": true,
           "barrier": "",
           "links": [],
-          "visibleLinks": []
+          "visibleLinks": [],
+          "bg": false,
+          "bt": [],
+          "ab": [],
+          "sockets": {}
         }
       ]
     ],
@@ -327,5 +363,27 @@
         ]
       }
     ]
+  },
+  "scaledBossTable": {
+    "enemy1": {
+      "isFinalBoss": false,
+      "characters": [
+        "bumblebee_cin_dotm_2"
+      ],
+      "rank": 1,
+      "level": 1,
+      "sig_lvl": 0,
+      "flvl": 0,
+      "aiType": 1,
+      "aiString": "default",
+      "aiPer": "aggressive",
+      "mapOverride": "",
+      "todIndex": 0,
+      "uid": "enemy1",
+      "key": "enemy1",
+      "hi": [],
+      "type": "boss",
+      "baseType": "boss"
+    }
   }
 }

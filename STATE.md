@@ -83,14 +83,23 @@ is a battle tile/entity (`BCGEntity`) or `progression.currentBattleId`, not a
 plain move. RAIDS is disabled by the client ("Raids are temporarily disabled."),
 SPECIAL/ARENAS/ALLIANCE are level-locked. [RUN]
 
-Next:
-1. Build a valid battle action/entity: inspect `BCGEntity.Deserialize`
-   (`RVA 0xC17FEC`) and `QuestBoss` keys; use a blueprint that exists in the
-   catalog (e.g. Bumblebee) as the enemy.
-2. Or set `progression.currentBattleId`/`currentFightId` + `localPlayer` so the
-   map exposes a fight node.
-3. Then capture `/matches/activate-match`, `/matches/match-loaded`,
-   `/matches/resolve-match`.
+Battle tile static/runtime (2026-10-22):
+- ActiveQuest..ctor (RVA 0xC38BC8) reads scaledBossTable from the active quest.
+- MapTile.Deserialize (RVA 0x1484C04) reads tile entityType, oss
+  (bossTableId), links, isibleLinks, g, t, b, sockets.
+- QuestBoss.Deserialize (RVA 0xEA3F60) uses JSONPaths 8589:
+  isFinalBoss,characters,rank,level,sig_lvl,flvl,aiType,aiString,aiPer,
+  mapOverride,todIndex,....
+- Entity.Deserialize (RVA 0x1334A04) reads uid,key,hi.
+- Three variants tried (boss table + entity; + uid/key/hi/type/baseType;
+  + bg/bt/ab/sockets). All still NRE in MapTile.Deserialize; no /matches/*.
+  [RUN] work/r83.png, spec/quest_protocol.md §2e.
+- Memory after a normal move: ActiveQuests=1, pendingProgressionCount=0,
+  progression.version=2, currentPos=(1,0), currentBattleId=null.
+  [RUN] work/adb_legacy_quest.py.
+
+Next: dynamic tracing of MapTile.Deserialize/QuestBoss.Deserialize or a real
+scaledBossTable/tile entity sample. No Frida/gadget without user consent.
 
 ## 5. What is NOT verified / must not be claimed
 - Battle did not start. No `match-*` request was observed.
