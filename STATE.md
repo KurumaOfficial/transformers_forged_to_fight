@@ -1,6 +1,6 @@
-# STATE — Transformers: Forged to Fight 9.2.0 offline revival
+﻿# STATE вЂ” Transformers: Forged to Fight 9.2.0 offline revival
 
-Updated: 2026-10-22 18:45 UTC (local ~21:45 22.10.2026)
+Updated: 2026-10-22 18:50 UTC (local ~21:50 22.10.2026)
 
 ## 0. What this file is
 Checkpoint against context loss. Only verified facts are recorded.
@@ -24,7 +24,7 @@ Tags: [RUN] executed and observed, [STATIC] read in code/data, [DERIVED],
 2. **Quest detail + START.** Quest 1.1 shows Bumblebee, `TOTAL 100`,
    `RECOMMENDED 100-200`, START active. [RUN] `work/r38.png`.
 3. **Quest begin + map.** START calls `POST /quests/quest-begin/story_act1_ch1_m1`
-   and the 3×3 map loads with the bot on the start tile. [RUN] `work/r47.png`,
+   and the 3Г—3 map loads with the bot on the start tile. [RUN] `work/r47.png`,
    `work/r51.png`; requests 18:20.
 4. **Movement request observed.** Tapping a tile sends
    `POST /quests/quest-movedir/story_act1_ch1_m1/1/0`. [RUN] requests 18:22,
@@ -59,7 +59,7 @@ Tags: [RUN] executed and observed, [STATIC] read in code/data, [DERIVED],
   `{quitExisting,hash,api,setId,tm0..tm3}`.
   Response must be `{"activeQuests":{qid:{...,"teamData":<BCG wrapper>}}}`.
   `teamData` is passed to `BCGManager.UpdateUserData`. [RUN]
-- Active map `grid` must be square `gridDimension × gridDimension`; a 3×1 row
+- Active map `grid` must be square `gridDimension Г— gridDimension`; a 3Г—1 row
   crashes `EB.Missions.Map.Deserialize` with ArgumentOutOfRangeException. [RUN]
 - Map tiles must not contain invented `entities`; unknown boss ids crash
   `MapTile.Deserialize` with NullReferenceException. Removed for now. [RUN]
@@ -71,15 +71,20 @@ Tags: [RUN] executed and observed, [STATIC] read in code/data, [DERIVED],
 
 ## 4. Current blocker (next step)
 `quest-movedir` response is not committed by the client: bot stays on the start
-tile and the map ignores further tile taps (pending progression). Need to
-determine the exact response fields / result action that ends the pending move.
-Candidate work:
-1. Inspect `ActiveQuest.AddActionResultsAndUpdateProgression` (`RVA 0xC3A278`)
-   and `QuestProgression..ctor` (`RVA 0xCA5684`) for the `results` item schema.
-2. Compare with a real Kabam `movedir` capture if one can be obtained.
-3. Check whether the client expects `progression.currentPos` as a different
-   vector shape or a `results` action (e.g. move/loot).
-4. Only after movement works: tap the final tile, observe
+tile and the map ignores further tile taps (pending progression). Tried:
+`progression` with `version` 1/2, `currentPos`, `cleared`, both old and new key
+spellings, top-level `currentPosition`/`playerPosition`, and a `results` entry
+with `actionType: 1 (MOVE_TO)`, `actionPos`, `actionTile`, `cleared`. None moved
+the bot; no exception is logged. [RUN]
+
+Hypothesis: the move is committed through a Sparx `sync`/`async` message (the
+client calls `BeginPendingProgression`/`EndPendingProgression`), not only through
+the HTTP `result`. Next:
+1. Inspect `ActiveQuest.AddActionResultsAndUpdateProgression` (`RVA 0xC3A278`),
+   `QuestProgression..ctor` (`RVA 0xCA5684`) and `ProcessPendingUpdates`
+   (`RVA 0xC3A820`) for the sync-message schema.
+2. Capture a real Kabam `movedir` response if possible.
+3. Only after movement works: tap the final tile, observe
    `/matches/activate-match`, `/matches/match-loaded`, `/matches/resolve-match`.
 
 ## 5. What is NOT verified / must not be claimed
@@ -91,24 +96,25 @@ Candidate work:
 - FIDELITY.md legacy percentages are invalid.
 
 ## 6. Files changed this session
-- `server/stub_server.py` — `/bcg/getBaseHeroData`, `/bcg/setSavedTeam`,
+- `server/stub_server.py` вЂ” `/bcg/getBaseHeroData`, `/bcg/setSavedTeam`,
   `/quests/quest-begin`, `/quests/quest-movedir`, `/quests/quest-quit` fallback.
-- `server/data/bcg_login_data.json` — id keys, rank 4/5, userData wrapper,
+- `server/data/bcg_login_data.json` вЂ” id keys, rank 4/5, userData wrapper,
   bot entity, saved/active team arrays.
-- `server/data/account_data.json` — `featuredhero`.
-- `server/data/login_response.json` — `featuredhero` (kept for completeness).
-- `server/data/quest_begin_response.json`, `quest_detail.json` — square 3×3 map,
+- `server/data/account_data.json` вЂ” `featuredhero`.
+- `server/data/login_response.json` вЂ” `featuredhero` (kept for completeness).
+- `server/data/quest_begin_response.json`, `quest_detail.json` вЂ” square 3Г—3 map,
   entities removed.
-- `server/data/redeemer_data.json` — nextrefresh moved to 2030 (stops the loop).
-- `spec/bcg_userdata.md`, `spec/quest_protocol.md` — updated.
-- `LEDGER.md`, `FIDELITY.md`, `STATE.md` — updated.
+- `server/data/redeemer_data.json` вЂ” nextrefresh moved to 2030 (stops the loop).
+- `spec/bcg_userdata.md`, `spec/quest_protocol.md` вЂ” updated.
+- `LEDGER.md`, `FIDELITY.md`, `STATE.md` вЂ” updated.
 - Work scripts: `map_addr.py`, `build_rva_map.py`, `disasm_calls.py`, `xref.py`,
   `scan_jsonpaths.py`, `adb_live.py`, `adb_mem_featured.py`.
 
 ## 7. Evidence index
-- `work/r13.png` — BOTS roster.
-- `work/r38.png` — quest detail with team, START active.
-- `work/r47.png`, `work/r51.png` — quest map loaded.
-- `work/r52.png`–`work/r67.png` — movement attempts.
-- `work/run_logcat_8.txt` — clean BOTS run.
-- `server/requests.jsonl` — full request log (2026-10-22 17:41–18:31).
+- `work/r13.png` вЂ” BOTS roster.
+- `work/r38.png` вЂ” quest detail with team, START active.
+- `work/r47.png`, `work/r51.png` вЂ” quest map loaded.
+- `work/r52.png`вЂ“`work/r67.png` вЂ” movement attempts.
+- `work/run_logcat_8.txt` вЂ” clean BOTS run.
+- `server/requests.jsonl` вЂ” full request log (2026-10-22 17:41вЂ“18:31).
+

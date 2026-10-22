@@ -401,6 +401,11 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 },
                 "deletes": {}
             }
+            qd = load_data_json("quest_detail.json")
+            try:
+                tile = qd["map"]["grid"][new["y"]][new["x"]]
+            except Exception:
+                tile = {"position": new, "walkable": True}
             self.send_sparx({
                 "progression": {
                     "version": 2,
@@ -417,9 +422,18 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 "currentPosition": new,
                 "playerPosition": new,
                 "currentTile": new,
-                "results": [],
+                "results": [{
+                    "qid": qid,
+                    "actionType": 1,
+                    "actionPos": new,
+                    "actionTile": tile,
+                    "cleared": [{"x": 0, "y": 0}, new],
+                    "visibleClearedCount": 2,
+                    "walkableCount": 9,
+                    "visibleWalkableCount": 9
+                }],
                 "teamData": wrapper
-            }, assumed_label="[CLIENT: /quests/quest-movedir/ progression+teamData]")
+            }, assumed_label="[CLIENT: /quests/quest-movedir/ progression+results+teamData]")
             return
 
         # 12f. Matches: Activate Match [STATIC: loaded from server/data/match_activate_response.json]

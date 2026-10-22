@@ -148,3 +148,7 @@ ecommendedMinLevel |
 | карта 3×1 при `gridDimension:3` | `ArgumentOutOfRangeException` в `Map.Deserialize` | сетка квадратная |
 | выдуманный entity в тайле | `NullReferenceException` в `MapTile.Deserialize` | убрать entities до реальных boss id |
 | `quest-movedir` -> `{}` | бот стоит, pending-состояние | нужен `progression` + `teamData`; схема ещё уточняется |
+| `quest-movedir` -> `progression` + `results[actionType=1]` + `teamData` | запрос уходит, бот не двигается, исключений нет | клиент, вероятно, ждёт sync/async-сообщение, а не только HTTP result |
+
+### Локализация: 7 869 против 7 994
+Текущий экстрактор (`work/extract_all_localization.py`) находит **7 869 уникальных ключей** `k` в 240 файлах `assets/bin/Data` (117 923 сырых вхождения, много языковых копий). Цифра 7 994 взята из старого `REPORT.md`/`generate_final_report.py` и текущим экстрактором не воспроизводится. Разница 125 не объяснена; вероятные причины — другой regex/набор файлов или учёт дублей/пустых значений в старом отчёте. [STATIC] для 7 869; 7 994 — [ASSUMED]/legacy.
