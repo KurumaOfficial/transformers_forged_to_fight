@@ -87,5 +87,26 @@
         "resource": "en_tutorials_2f9fc5ddb7c79131dfa396bdd5da7f659e1b6b88.json"
       }
     ]
+  },
+  "featuredhero": {
+    "cdn": "http://127.0.0.1:8080/cdn",
+    "orderType": "Random",
+    "heroes": [
+      {
+        "id": "optimus_c_tf_t3",
+        "gacha": "",
+        "gachaCTA": "",
+        "pvp": "",
+        "pvpCTA": "",
+        "questset": "",
+        "questsetCTA": "",
+        "store": "",
+        "storeCTA": "",
+        "synergies": [],
+        "abilities": [],
+        "image": "",
+        "images3": false
+      }
+    ]
   }
 }

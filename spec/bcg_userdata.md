@@ -1,87 +1,143 @@
-# BCG userData / roster — partial findings
+# BCG userData / roster — verified wire schema
 
-Status: **blocked**. The client does not show a bot in `EDIT SQUAD` yet.
-Everything below is either [STATIC] (read in `dump.cs`/disassembly) or [RUN]
-(observed on the emulator). No original roster dump was available.
+Status: **roster works** in a live run (2026-10-22). BOTS shows the bot and
+`EDIT SQUAD` reaches `TOTAL 100`. Values (stats, ranks, ids) are still
+[ASSUMED]; the *schema* below is [STATIC] from `dump.cs` plus [RUN].
+
+Evidence:
+- `work/r13.png` — BOTS screen with Bumblebee 100 (no crash).
+- `work/r38.png` — quest detail with Bumblebee 100, `TOTAL 100`, START active.
+- `work/run_logcat_8.txt` — no `HeroesScreen.SetFeaturedHeroData` exception.
+- `server/requests.jsonl` 2026-10-22 18:20 — `setSavedTeam`, `quest-begin`.
 
 ## 1. Where the client reads it
 
-`BCGManagerBase.OnBCGData` (`RVA 0x168C7C4`) reads the top-level key
-**`userData`** from the `/bcg/getLoginData` result and calls two virtual
-handlers (`0x1690134`, `0x169016c`). [STATIC]
+`BCGManagerBase.OnBCGData` (`RVA 0x168C7C4`) reads top-level `userData` from the
+`/bcg/getLoginData` result. `BCGManagerBase.UpdateUserData` (`RVA 0x1695AA8`)
+expects this wrapper:
 
-`BCGManagerBase.HandleUserDataUpdates` (`RVA 0x1695CC0`) reads: [STATIC]
-
-- `activeTeams`
-- `savedTeams`
-- `inventory.f`
-- `inventory.bp`
-- `inventory.max`
-- `heroes` — **array** (`Dot.Array`), each item is passed to `BCGUserHero..ctor`
-- `heroesScreenList`
-- `heroes_cta`
-
-## 2. Hero item keys
-
-`BCGUserHeroBase..ctor` (`RVA 0xA62348`) reads `JSONPaths` fields. The field
-names at the offsets used by the constructor: [STATIC]
-
-| JSONPaths field | Wire key | Used for |
-|---|---|---|
-| `entity_type` | `entity_type` | "hero" |
-| `bid` | `bid` | blueprint id |
-| `rank` | `rank` | rank |
-| `level` | `level` | level |
-| `sig_lvl` | `sig_lvl` | signature level |
-| `required_xp` | `required_xp` | XP |
-| `max_xp` | `max_xp` | XP cap |
-| `stamina` | `stamina` | stamina |
-| `stamina_ts` | `stamina_ts` | stamina timer |
-| `stamina_full_ts` | `stamina_full_ts` | stamina timer |
-| `stt` | `stt` | special team flag |
-| `pvpb` | `pvpb` | PvP points boost |
-| `exc` | `exc` | character exclusivity expiry |
-
-The constructor then looks up `bid` in `BCGManager.Instance` blueprint data and
-builds `BCGAttributeData`. If the blueprint is missing it logs
-`HeroData.Create - blueprint '...' does not exist in BCG data`. [STATIC]
-
-## 3. What was tried [RUN]
-
-Payloads placed under `/bcg/getLoginData.result.userData`:
-
-1. `heroes` as a dictionary keyed `"1"`, camelCase keys (`entityType`,
-   `blueprint`, `rank`, `level`, ...) — `EDIT SQUAD` empty.
-2. `heroes` as an array, snake_case keys (`entity_type`, `bid`, `rank`, ...) —
-   `EDIT SQUAD` empty.
-3. Same array plus `id`, `uid`, `hero`, `blueprint`, `modes`, `modesAvail`,
-   `team_types` — `EDIT SQUAD` empty.
-
-`/bcg/getUserData` was **not requested** on boot or in `EDIT SQUAD`. Opening
-BOTS crashes before any roster fetch:
-
-```text
-NullReferenceException
-  at HeroesScreen.SetFeaturedHeroData(Boolean state)
-  at HeroesScreen.WindowEnter(Boolean isFirstEntry)
+```json
+{
+  "userData": { "blueprintsMax": 50, "teamSizeMax": 3, "teamCountMax": 3 },
+  "updates": {
+    "heroes": [ ... ],
+    "savedTeams": [ ... ],
+    "activeTeams": [ ... ],
+    "inventory": { "f": {}, "bp": {}, "max": {} }
+  },
+  "deletes": {}
+}
 ```
 
-## 4. Hypotheses (all [ASSUMED] until proven)
+`updates` is passed to `HandleUserDataUpdates` (`RVA 0x1695CC0`). A flat
+`userData` block (without the wrapper) is ignored for the roster. [RUN]
 
-- The `heroes` array items need an extra wrapper key (e.g. `"hero"` or `"data"`)
-  that `BCGUserHero..ctor` unwraps.
-- `userData` is applied only through a **sync/update** message, not through
-  `getLoginData`, and the login payload must carry it in a different envelope.
-- `HeroData.GetHeroes(modes)` filters the parsed hero out because the blueprint
-  lacks a mode/team-type field; the roster is populated but invisible.
-- `BCGManager.UserData` is populated, but `EditTeamModel` reads a different
-  collection (`heroesScreenList`/`activeTeams`).
+## 2. Hero item (`updates.heroes[]`)
 
-## 5. Next diagnostic
+`BCGUserHeroBase..ctor` (`RVA 0xA62348`) reads these keys:
 
-1. Fix the BOTS crash by supplying `featuredhero` data, then see whether BOTS
-   calls `/bcg/getUserData` and renders the roster.
-2. Or inspect `BCGManager.Instance.UserData.heroes.Count` at runtime via
-   `/proc/<pid>/mem` / Frida after login.
-3. Decode the `x27` key in `HandleUserDataUpdates` (`0x1695F60`); it selects the
-   hero sub-object from each array item.
+| Wire key | Type | Notes |
+|---|---|---|
+| `entity_type` | string | must be **`bot`** for `BCGHelper.GetHeroes`; `GetEntities("bot")` |
+| `bid` | string | blueprint id |
+| `rank` | int | |
+| `level` | int | |
+| `sig_lvl` | int | |
+| `required_xp` | int | |
+| `max_xp` | int | |
+| `stamina` | int | |
+| `stamina_ts` | int | |
+| `stamina_full_ts` | int | |
+| `stt` | string | special team flag |
+| `pvpb` | object | |
+| `exc` | object | |
+| `id` | string | optional; entity id |
+| `max_hp`, `attack`, `rating`, `rating_hp`, `rating_attack`, `rating_hp_base`, `rating_attack_base`, `special_attacks` | numbers | optional precomputed attributes |
+
+The client adds the hero to `UserData.heroes[bid]` and
+`UserData.entities[entity_type][bid]`. `BCGHelper.GetHeroes` reads
+`entities["bot"]`; with `entity_type: "hero"` the bot is invisible. [STATIC]+[RUN]
+
+## 3. Teams
+
+`BCGUserData.savedTeams` and `activeTeams` are **arrays** parsed with
+`Dot.Array`; do not send objects keyed by id.
+
+`activeTeams[]` item (`BCGUserActiveTeam..ctor`, `RVA 0xA610F0`):
+
+```json
+{"aid":"story_act1_ch1_m1","type":"story","modes":["Story"],"expire":0,
+ "heroes":{"bumblebee_cin_dotm_2": { "bid":"...", "rank":1, "level":1, ... }}}
+```
+
+`heroes` inside an active team is an **object** keyed by blueprint id.
+`savedTeams[]` item (`BCGUserSavedTeam..ctor`, `RVA 0xA635C4`):
+
+```json
+{"sid":"0","heroes":[ { "bid":"...", "rank":1, "level":1, ... } ]}
+```
+
+## 4. Catalog keys (not userData)
+
+`BCGBlueprintBase..ctor` (`RVA 0xC15708`) reads the blueprint id from key
+**`id`**, not `blueprint`. `BCGHeroBaseCommon..ctor` (`RVA 0xC21EA0`) also reads
+`id`, plus `rank`, `max_level`, `stamina`. Sending only `blueprint` makes
+`BCGHelper.GetBlueprint` fail and produces
+`HeroData.CreateForDisplay - blueprint '...' does not exist in BCG data`.
+
+`BCGBlueprintBase` also reads `et` (entity type), `character`, `m`, `r`, `a`,
+`t`, `n`, `imgID`, `s3img`, `gachaImgID`, `mdl`, `evo_blueprint`, `map_asset`,
+`hero_colour`, `max_rank`, `rarity`, `class`, `attribute_base_type`,
+`gachaReveal`, `base_damage`, `base_ranged_damage`, `s1..s3`, `msa`,
+`attack_bonus`, `synergy_bonuses`, `tags`, `redeemer_base`. [STATIC]
+
+## 5. `/bcg/getBaseHeroData`
+
+Request (observed):
+
+```json
+{"heroes":[{"level":1,"sig_lvl":0,"flvl":0,"rank":5,"bid":"optimus_c_tf_t3"}],
+ "nonce":"...","api":6}
+```
+
+Response is a **JSON array** of `BCGHeroDetails` dictionaries. Keys read by
+`BCGHeroDetails..ctor` (`RVA 0xA5AA14`): `bid`, `rank`, `level`, `sig_lvl`,
+`rating_hp`, `max_hp`, `rating_attack`, `attack`, `special_attacks`, `pvpb`,
+`synergyBonuses`, `user_owned`. Current values are [ASSUMED]. [CLIENT]+[RUN]
+
+## 6. `/bcg/setSavedTeam`
+
+Request (observed):
+
+```json
+{"heroes":["bumblebee_cin_dotm_2"],"api":6,"nonce":"...","teamID":"0"}
+```
+
+The client applies the response through the same BCG parser. Return the full
+catalog with `userData` set to the wrapper from §1 (and the updated
+`updates.savedTeams`). A flat userData or `{}` makes the team revert. [RUN]
+
+## 7. Featured hero (BOTS screen)
+
+`HeroesScreen.SetFeaturedHeroData` (`RVA 0xC59748`) calls
+`GameUtil.GetFeaturedHero` and dereferences the result. `FeaturedHeroManager`
+reads `featuredhero` from `LoginManager.LoginData`; in this build the effective
+login-data source is **`/account/data`**, not `/auth/login`.
+
+`/account/data` must contain:
+
+```json
+{"featuredhero":{"cdn":"http://127.0.0.1:8080/cdn","orderType":"Random",
+ "heroes":[{"id":"optimus_c_tf_t3","gacha":"","gachaCTA":"","pvp":"","pvpCTA":"",
+            "questset":"","questsetCTA":"","store":"","storeCTA":"",
+            "synergies":[],"abilities":[],"image":"","images3":false}]}}
+```
+
+Without it, `FeaturedHeroManager.Heroes.Count == 0` and BOTS throws
+`NullReferenceException` in `SetFeaturedHeroData`. [STATIC]+[RUN]
+
+## 8. Open items
+
+- Real hero ids/stats/ranks from Kabam (currently invented).
+- Real `featuredhero` rotation.
+- Battle-side BCG fields (`BCGAttributeDataBase`, tuning) and their formulas.

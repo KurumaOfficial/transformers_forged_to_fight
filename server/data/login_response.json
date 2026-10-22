@@ -703,5 +703,26 @@
     "device": "http://127.0.0.1:8080"
   },
   "endpoint": {},
-  "features": {}
+  "features": {},
+  "featuredhero": {
+    "cdn": "http://127.0.0.1:8080/cdn",
+    "orderType": "Random",
+    "heroes": [
+      {
+        "id": "optimus_c_tf_t3",
+        "gacha": "",
+        "gachaCTA": "",
+        "pvp": "",
+        "pvpCTA": "",
+        "questset": "",
+        "questsetCTA": "",
+        "store": "",
+        "storeCTA": "",
+        "synergies": [],
+        "abilities": [],
+        "image": "",
+        "images3": false
+      }
+    ]
+  }
 }

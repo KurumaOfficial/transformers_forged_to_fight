@@ -10,6 +10,7 @@ from datetime import datetime
 PORT = 8080
 LOG_FILE = os.path.join(os.path.dirname(__file__), "requests.jsonl")
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+ACTIVE_POS = {}
 
 def load_data_json(filename, default=None):
     """Load JSON data payload from server/data/<filename>."""
@@ -173,21 +174,104 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             self.send_sparx(data, assumed_label="[STATIC: /bcg/getLoginData loaded from data/bcg_login_data.json]")
             return
 
-        # 9. BCG base hero data [STATIC: BCGAPI]
+        # 9. BCG base hero data [STATIC: BCGAPI request body {heroes:[{bid,rank,level,sig_lvl,flvl}],api,nonce}]
+        # Response is a JSON array of BCGHeroDetails. Attribute values below are [ASSUMED]
+        # placeholders (the original Kabam server computed them); schema is [CLIENT].
         if path == "/bcg/getBaseHeroData":
-            self.send_sparx({
-                "heroes": {},
-                "blueprints": {},
-                "growth": {},
-                "classes": {},
-                "rarity": {}
-            }, assumed_label="[STATIC: /bcg/getBaseHeroData]")
+            heroes_req = []
+            if isinstance(body, dict):
+                heroes_req = body.get("heroes") or []
+            details = []
+            for h in heroes_req:
+                if not isinstance(h, dict):
+                    continue
+                bid = h.get("bid", "")
+                rank = int(h.get("rank", 1) or 1)
+                level = int(h.get("level", 1) or 1)
+                sig = int(h.get("sig_lvl", 0) or 0)
+                hp = 800 + rank * 200 + level * 50
+                atk = 80 + rank * 30 + level * 5
+                rating_hp = int(hp * 0.1)
+                rating_attack = int(atk * 0.5)
+                details.append({
+                    "bid": bid,
+                    "rank": rank,
+                    "level": level,
+                    "sig_lvl": sig,
+                    "max_hp": hp,
+                    "attack": atk,
+                    "rating": rating_hp + rating_attack,
+                    "rating_hp": rating_hp,
+                    "rating_attack": rating_attack,
+                    "rating_hp_base": rating_hp,
+                    "rating_attack_base": rating_attack,
+                    "special_attacks": 3,
+                    "pvpb": {},
+                    "synergyBonuses": [],
+                    "user_owned": True
+                })
+            self.send_sparx(details, assumed_label="[ASSUMED: /bcg/getBaseHeroData computed details]")
             return
 
         # 10. BCG user data (roster) [STATIC: loaded from data/bcg_user_data.json]
         if path == "/bcg/getUserData":
             data = load_data_json("bcg_user_data.json")
             self.send_sparx(data, assumed_label="[STATIC: /bcg/getUserData loaded from data/bcg_user_data.json]")
+            return
+
+        # 10b. BCG set saved team [CLIENT: POST /bcg/setSavedTeam {teamID, heroes:[bid]}]
+        # The client expects a userData-like payload back. Attributes are [ASSUMED].
+        if path == "/bcg/setSavedTeam":
+            base = load_data_json("bcg_login_data.json")
+            ud = json.loads(json.dumps(base.get("userData", {})))
+            team_id = "0"
+            hero_ids = []
+            if isinstance(body, dict):
+                team_id = str(body.get("teamID", "0"))
+                hero_ids = body.get("heroes") or []
+            details = []
+            for bid in hero_ids:
+                hero = next((h for h in ud.get("heroes", []) if h.get("bid") == bid), None)
+                rank = int(hero.get("rank", 1)) if hero else 1
+                level = int(hero.get("level", 1)) if hero else 1
+                hp = 800 + rank * 200 + level * 50
+                atk = 80 + rank * 30 + level * 5
+                details.append({
+                    "bid": bid, "rank": rank, "level": level, "sig_lvl": 0,
+                    "max_hp": hp, "attack": atk,
+                    "rating": int(hp * 0.1) + int(atk * 0.5),
+                    "rating_hp": int(hp * 0.1), "rating_attack": int(atk * 0.5),
+                    "rating_hp_base": int(hp * 0.1), "rating_attack_base": int(atk * 0.5),
+                    "special_attacks": 3, "pvpb": {},
+                    "synergyBonuses": [], "user_owned": True
+                })
+            saved = ud.get("savedTeams")
+            if not isinstance(saved, list):
+                saved = []
+            saved = [t for t in saved if not (isinstance(t, dict) and str(t.get("sid")) == team_id)]
+            saved.append({"sid": team_id, "heroes": details})
+            ud["savedTeams"] = saved
+            # Same envelope shape as /bcg/getLoginData.result.userData (verified to parse):
+            # { userData:{...}, updates:{heroes,...}, deletes:{} }
+            wrapper = {
+                "userData": {
+                    "blueprintsMax": ud.get("blueprintsMax", 50),
+                    "teamSizeMax": ud.get("teamSizeMax", 3),
+                    "teamCountMax": ud.get("teamCountMax", 3)
+                },
+                "updates": {
+                    "heroes": ud.get("heroes", []),
+                    "savedTeams": ud.get("savedTeams", []),
+                    "activeTeams": ud.get("activeTeams", []),
+                    "inventory": ud.get("inventory", {"f": {}, "bp": {}, "max": {}}),
+                    "heroesScreenList": [],
+                    "heroes_cta": {}
+                },
+                "deletes": {}
+            }
+            payload = json.loads(json.dumps(base))
+            payload["userData"] = wrapper
+            self.send_sparx(payload, assumed_label="[ASSUMED: /bcg/setSavedTeam full BCG payload + userData wrapper]")
             return
 
         # 11. AutoRefresh endpoints [STATIC: loaded from server/data/missions_config.json or generic envelope]
@@ -224,10 +308,60 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             self.send_sparx(data, assumed_label="[STATIC: /quests/quest-detail/ loaded from data/quest_detail.json]")
             return
 
-        # 12d. Quests: Begin Quest [STATIC: loaded from server/data/quest_begin_response.json]
+        # 12d. Quests: Begin Quest [CLIENT: QuestsManager callback reads
+        # result.activeQuests[qid].teamData and passes it to UpdateUserData]
         if path.startswith("/quests/quest-begin/") or path == "/quests/begin-quest":
-            data = load_data_json("quest_begin_response.json")
-            self.send_sparx(data, assumed_label="[STATIC: /quests/quest-begin/ loaded from data/quest_begin_response.json]")
+            quest = load_data_json("quest_begin_response.json")
+            qid = path.rstrip("/").rsplit("/", 1)[-1] if "/" in path else quest.get("qid", "")
+            if qid and qid != "begin-quest":
+                quest["qid"] = qid
+                if isinstance(quest.get("data"), dict):
+                    quest["data"]["id"] = qid
+            team = []
+            if isinstance(body, dict):
+                for key in ("tm0", "tm1", "tm2", "tm3"):
+                    if body.get(key):
+                        team.append(body[key])
+            if team:
+                quest["team"] = team
+            base = load_data_json("bcg_login_data.json")
+            ud = json.loads(json.dumps(base.get("userData", {})))
+            hero_details = []
+            for bid in team:
+                hero = next((h for h in ud.get("heroes", []) if h.get("bid") == bid), None)
+                rank = int(hero.get("rank", 1)) if hero else 1
+                level = int(hero.get("level", 1)) if hero else 1
+                hero_details.append({
+                    "bid": bid, "rank": rank, "level": level, "sig_lvl": 0,
+                    "max_hp": 800 + rank * 200 + level * 50,
+                    "attack": 80 + rank * 30 + level * 5,
+                    "rating": 100, "rating_hp": 50, "rating_attack": 50,
+                    "rating_hp_base": 50, "rating_attack_base": 50,
+                    "special_attacks": 3, "pvpb": {},
+                    "synergyBonuses": [], "user_owned": True
+                })
+            active_teams = [t for t in (ud.get("activeTeams") or []) if isinstance(t, dict) and t.get("aid") != qid]
+            active_teams.append({
+                "aid": qid, "type": "story", "modes": ["Story"], "expire": 0,
+                "heroes": {d["bid"]: d for d in hero_details}
+            })
+            quest["teamData"] = {
+                "userData": {
+                    "blueprintsMax": ud.get("blueprintsMax", 50),
+                    "teamSizeMax": ud.get("teamSizeMax", 3),
+                    "teamCountMax": ud.get("teamCountMax", 3)
+                },
+                "updates": {
+                    "heroes": ud.get("heroes", []),
+                    "savedTeams": ud.get("savedTeams", []),
+                    "activeTeams": active_teams,
+                    "inventory": ud.get("inventory", {"f": {}, "bp": {}, "max": {}})
+                },
+                "deletes": {}
+            }
+            self.send_sparx({"activeQuests": {qid: quest}},
+                            assumed_label="[CLIENT: /quests/quest-begin/ activeQuests wrapper + teamData]")
+            ACTIVE_POS[qid] = {"x": 0, "y": 0}
             return
 
         # 12e. Quests: Move To [STATIC: loaded from server/data/quest_begin_response.json]
@@ -237,6 +371,55 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 data["currentPosition"] = {"x": body["x"], "y": body["y"]}
                 data["playerPosition"] = {"x": body["x"], "y": body["y"]}
             self.send_sparx(data, assumed_label="[STATIC: /quests/quest-moveto/]")
+            return
+
+        # 12e. Quests: Move direction [CLIENT: /quests/quest-movedir/{qid}/{dx}/{dy}]
+        if path.startswith("/quests/quest-movedir/"):
+            parts = path.rstrip("/").split("/")
+            qid = parts[3] if len(parts) > 3 else ""
+            try:
+                dx = int(parts[4]); dy = int(parts[5])
+            except Exception:
+                dx = dy = 0
+            cur = ACTIVE_POS.get(qid, {"x": 0, "y": 0})
+            new = {"x": cur["x"] + dx, "y": cur["y"] + dy}
+            ACTIVE_POS[qid] = new
+            base = load_data_json("bcg_login_data.json")
+            ud = json.loads(json.dumps(base.get("userData", {})))
+            team = next((t for t in (ud.get("activeTeams") or []) if isinstance(t, dict) and t.get("aid") == qid), None)
+            wrapper = {
+                "userData": {
+                    "blueprintsMax": ud.get("blueprintsMax", 50),
+                    "teamSizeMax": ud.get("teamSizeMax", 3),
+                    "teamCountMax": ud.get("teamCountMax", 3)
+                },
+                "updates": {
+                    "heroes": ud.get("heroes", []),
+                    "savedTeams": ud.get("savedTeams", []),
+                    "activeTeams": ud.get("activeTeams", []),
+                    "inventory": ud.get("inventory", {"f": {}, "bp": {}, "max": {}})
+                },
+                "deletes": {}
+            }
+            self.send_sparx({
+                "progression": {
+                    "version": 2,
+                    "currentPos": new,
+                    "cleared": [{"x": 0, "y": 0}, new],
+                    "previouslyCleared": [],
+                    "revealed": [],
+                    "currentPosition": new,
+                    "playerPosition": new,
+                    "currentTile": new,
+                    "clearedTiles": [{"x": 0, "y": 0}, new],
+                    "percentComplete": 22
+                },
+                "currentPosition": new,
+                "playerPosition": new,
+                "currentTile": new,
+                "results": [],
+                "teamData": wrapper
+            }, assumed_label="[CLIENT: /quests/quest-movedir/ progression+teamData]")
             return
 
         # 12f. Matches: Activate Match [STATIC: loaded from server/data/match_activate_response.json]

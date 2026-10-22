@@ -1,142 +1,114 @@
 # STATE — Transformers: Forged to Fight 9.2.0 offline revival
 
-Updated: 2026-10-21 21:30 UTC (local ~00:30 22.10.2026)
+Updated: 2026-10-22 18:45 UTC (local ~21:45 22.10.2026)
 
 ## 0. What this file is
-Checkpoint against context loss. It records only what was verified in this session.
-Evidence tags: [RUN] executed and observed, [STATIC] read in code/data, [DERIVED] inferred
-from verified facts, [ASSUMED] guess.
+Checkpoint against context loss. Only verified facts are recorded.
+Tags: [RUN] executed and observed, [STATIC] read in code/data, [DERIVED],
+[ASSUMED] guess.
 
 ## 1. Environment (verified this session)
 - Project root: `C:\Users\gameg\Desktop\TFTF`
-- Original APK SHA-256: `77D2E9DD833C3789DB541E04AF08082547603B5815BE28CF5F5D0C68173763CB` [RUN]
-- Patched APK: `work/patched_build/tftf_patched_v9.2.0.apk`, SHA-256
-  `2777927F84E3DE3456446E5D83C787F6EC1009877F29B7067BF627B2019D442B` [RUN]
-- Endpoint patch inside patched APK:
-  `{"Default":{"Prod":"http://127.0.0.1:8080"}}` (4164-byte SerializedFile) [RUN]
-- Emulator `TFTF_AVD` (Pixel 4, API 30, x86_64) started from
-  `work/android-sdk/emulator/emulator.exe`; AEHD operational [RUN]
-- `adb shell getprop ro.product.cpu.abilist` =
-  `x86_64,x86,arm64-v8a,armeabi-v7a,armeabi` [RUN]
-- App installed: `com.kabam.bigrobot` 9.2.0, versionCode 123129100, targetSdk 30 [RUN]
-- `adb reverse tcp:8080 tcp:8080` was set for the final run [RUN]
-- Note: `adb root` was used to inspect `/data/data`; it restarts adbd and kills
-  running `adb logcat` sessions. Use `adb logcat` again after `adb root`.
+- Emulator `TFTF_AVD` (Pixel 4, API 30, x86_64) running; adb device `emulator-5554`
+- `adb reverse tcp:8080 tcp:8080` set; stub server on `127.0.0.1:8080`
+- App `com.kabam.bigrobot` 9.2.0 installed
+- Original APK SHA-256: `77D2E9DD...68173763CB`; patched APK in
+  `work/patched_build/tftf_patched_v9.2.0.apk`
+- Note: `adb root` restarts adbd and clears `adb reverse`; re-add it.
+- Note: server reads JSON per request; Python code changes need a server restart.
 
-## 2. Stage 1 — re-verified to the Home hub
-Final clean run: requests 2026-10-21 21:23:13 → 21:24:45 UTC, 44 requests.
-Evidence:
-- `work/stage1_logcat_full_final.txt` — full `adb logcat -v threadtime`, no filters
-- `server/requests.jsonl` — clean request log for that run
-- `work/FINAL_hub.png` — 3D base hub (FIGHT menu visible)
-- `work/FINAL_story_chapters.png` — Story → Act 1 → Chapter 1 → quest tile
-- `work/stage1_logcat_full.txt` — earlier full run incl. login/tutorial
-- `work/stage2_logcat_full.txt` — debug run, includes quest UI work
+## 2. Verified milestones this session
+1. **Roster fixed.** BOTS screen opens without the `SetFeaturedHeroData` NRE and
+   shows Bumblebee 100; `EDIT SQUAD` shows `TOTAL 100`. Evidence:
+   `work/r13.png`, `work/r38.png`, `work/run_logcat_8.txt`.
+2. **Quest detail + START.** Quest 1.1 shows Bumblebee, `TOTAL 100`,
+   `RECOMMENDED 100-200`, START active. [RUN] `work/r38.png`.
+3. **Quest begin + map.** START calls `POST /quests/quest-begin/story_act1_ch1_m1`
+   and the 3×3 map loads with the bot on the start tile. [RUN] `work/r47.png`,
+   `work/r51.png`; requests 18:20.
+4. **Movement request observed.** Tapping a tile sends
+   `POST /quests/quest-movedir/story_act1_ch1_m1/1/0`. [RUN] requests 18:22,
+   18:31.
+5. **Quit quest** sends `POST /quests/quest-quit/story_act1_ch1_m1`. [RUN]
+   18:31.
 
-Observed boot sequence (actual, from requests.jsonl):
-1. `POST /auth/init` (anonymous)
-2. `POST /auth/enumerate` → server returns `[]`
-3. `POST /auth/prelogin` → `salt: ""`
-4. `POST /auth/login` → `auth.device: true`, stoken
-5. parallel subsystem login: `/account/data`, `/bcg/getLoginData`, `/tuning`,
-   `/payments/payouts`, `/autorefresh/*`, `/performance/profile`,
-   `/redeemer/refresh`, `/events/refresh`, `/ds/10001/`,
-   `/tutorial/get-login-data`, `/gamestats/*`, `/offers/getLoginData`,
-   `/push/token`, `/inventory`, `/quests/quest-list`, `/quests/quest-active`,
-   `/base/active`, `/pvp/get-login-data`, `/quests/quest-progression`,
-   `/chat/data`, `/telemetry`, `/userprofile/`
-6. HomeFlow (3D base) renders. `PLAY NOW` tap was required on a cold start.
+## 3. Key wire schema (verified)
+### 3.1 BCG userData
+`/bcg/getLoginData.result.userData` must be the wrapper:
+`{userData:{blueprintsMax,teamSizeMax,teamCountMax}, updates:{heroes[],savedTeams[],activeTeams[],inventory{f,bp,max}}, deletes:{}}`.
+- `heroes[]` item keys: `entity_type` (must be `"bot"`), `bid`, `rank`,
+  `level`, `sig_lvl`, `required_xp`, `max_xp`, `stamina`, `stamina_ts`,
+  `stamina_full_ts`, `stt`, `pvpb`, `exc`, optional `max_hp`, `attack`,
+  `rating*`, `special_attacks`.
+- `savedTeams` and `activeTeams` are **arrays**. Active team:
+  `{aid,type,modes,expire,heroes:{bid:details}}`. Saved team:
+  `{sid,heroes:[details]}`.
+- Catalog blueprints use key **`id`** (not `blueprint`); hero rank entries also
+  use `id` + `rank`. `et` is the blueprint entity type.
+- `/bcg/getBaseHeroData` request `{heroes:[{bid,rank,level,sig_lvl,flvl}],api,nonce}`;
+  response is a **JSON array** of `BCGHeroDetails`.
+- `/bcg/setSavedTeam` request `{teamID,heroes[]}`; response must be the full BCG
+  catalog with `userData` set to the wrapper above.
+- `featuredhero` must be in **`/account/data`** (not only `/auth/login`):
+  `{cdn,orderType,heroes:[{id,gacha,gachaCTA,pvp,pvpCTA,questset,questsetCTA,
+  store,storeCTA,synergies,abilities,image,images3}]}`.
+- Details: `spec/bcg_userdata.md`.
 
-This confirms [RUN] the earlier claim that the client reaches HomeFlow. It does
-NOT confirm that all server payloads are correct; many are [ASSUMED].
+### 3.2 Quests
+- `POST /quests/quest-begin/{qid}` request:
+  `{quitExisting,hash,api,setId,tm0..tm3}`.
+  Response must be `{"activeQuests":{qid:{...,"teamData":<BCG wrapper>}}}`.
+  `teamData` is passed to `BCGManager.UpdateUserData`. [RUN]
+- Active map `grid` must be square `gridDimension × gridDimension`; a 3×1 row
+  crashes `EB.Missions.Map.Deserialize` with ArgumentOutOfRangeException. [RUN]
+- Map tiles must not contain invented `entities`; unknown boss ids crash
+  `MapTile.Deserialize` with NullReferenceException. Removed for now. [RUN]
+- `POST /quests/quest-movedir/{qid}/{dx}/{dy}` response currently
+  `{progression:{version,currentPos,cleared,previouslyCleared,revealed},
+  results:[],teamData:<wrapper>}`. The request is observed, but the bot does not
+  visually move; client likely stays in pending progression. [RUN]
+- Details: `spec/quest_protocol.md`.
 
-## 2b. PLAY NOW (verified)
-`PLAY NOW` is the normal cold-start screen of this build, not an error. On a
-cold launch the client shows splash + PLAY NOW / LOG IN; a tap starts
-`auth/init`. `work/auto_play.py` finds the green button and taps it; tested
-2026-10-22, reaches the hub without manual input. [RUN]
-
-## 3. Stage 2A — protocol discoveries this session
-### 3.1 Quest wire format (verified by decompilation + run)
-The blocker that hid chapters was the summary index keys. The client reads
-`act`, `chapter`, `mission` on each quest summary, NOT `actIndex`,
-`chapterIndex`, `missionIndex`.
-
-Set-level keys used by `Legacy.QuestSet.AddQuestSummarys` [STATIC, RVA 0x10381F0]:
-`hash`, `setId`, `setName`, `expiry`, `timeLimit`, `timeLimitGrace`, `showUI`,
-`group`, `difficulty`, `difficulty_color`, `difficulty_color_bg`,
-`difficulty_label`, `minLevel`, `recommendMinLevel`, `cdn`, `use_ui_color`,
-`ui_color`, `hasProgression`, `tags`, `actCount`, `chapterCount`,
-`availableQuests`, `acts`, `chapters`.
-- `chapterCount` is a 1-based array: `[0, 1]` means Act 1 has one chapter.
-  Sending `[1]` crashes `BuildSummaryTable` with ArgumentOutOfRangeException
-  (observed in logcat). [RUN]
-- `availableQuests` is an array of Summary objects. Each Summary needs
-  `id`, `category`, `act`, `chapter`, `mission` (all ≥1). [RUN]
-- `acts` and `chapters` are overlay arrays with `act` / `chapter` indices and
-  presentation fields (`friendlyName`, `description`, `image`, ...). [STATIC]
-- `QuestSummarys` is built from `availableQuests`; `QuestMaps` is separate. [STATIC]
-
-After changing the summary keys to `act/chapter/mission`, the chapter panel
-rendered and the quest tile opened `/quests/quest-detail/story_act1_ch1_m1`. [RUN]
-
-### 3.2 Observed quest-detail call
-`POST /quests/quest-detail/{qid}` body:
-`{"hash":"v1","nonce":"...","api":11,"setId":"story_act_1"}` [RUN]
-Response `quest_detail.json` is currently [ASSUMED] except for the keys above.
-
-### 3.3 Observed next blocker (Stage 2B)
-Quest detail screen renders, but:
-- `TOTAL 0 / RECOMMENDED 100-200`
-- `START` is disabled
-- `EDIT SQUAD` has empty slots
-- no `/bcg/getUserData` request is made
-- opening BOTS crashes with `NullReferenceException` in
-  `HeroesScreen.SetFeaturedHeroData` [RUN]
-Cause: the roster is empty. `/bcg/getLoginData` currently contains a catalog
-(`heroes`, `blueprints`, `characters`, ...) but the user roster is not being
-accepted. New static findings (2026-10-22): `OnBCGData` reads top-level
-`userData`; `HandleUserDataUpdates` reads `activeTeams`, `savedTeams`,
-`inventory.f/bp/max`, `heroes` (array), `heroesScreenList`, `heroes_cta`;
-`BCGUserHeroBase..ctor` reads `entity_type`, `bid`, `rank`, `level`, `sig_lvl`,
-`required_xp`, `max_xp`, `stamina`, `stamina_ts`, `stamina_full_ts`, `stt`,
-`pvpb`, `exc`. Tried dict and array `heroes`, camelCase and snake_case; still
-empty. Details: `spec/bcg_userdata.md`.
-
-## 4. Files changed in this session (uncommitted at time of writing)
-- `server/data/quest_list.json` — real Act/Chapter/quest structure, act/chapter/
-  mission keys, `chapterCount [0,1]`, expiry/showUI/group keys. Values still
-  [ASSUMED] except the schema.
-- `server/data/quest_detail.json` — summary indices and team size 0 for testing.
-- `server/data/quest_progression.json` — existing [ASSUMED] progression.
-- `server/data/bcg_login_data.json` — added an experimental `userData` block
-  (not yet accepted by the client; do not treat as working).
-- `server/data/bcg_user_data.json` — new experimental roster payload.
-- `server/stub_server.py` — `/bcg/getUserData` now loads the file; quest routes
-  added earlier in the session.
-- `work/disasm_strings.py` — RVA/ELF disassembler with string-literal key
-  resolution; useful for further protocol work.
-- Evidence PNG/logs listed in §2.
+## 4. Current blocker (next step)
+`quest-movedir` response is not committed by the client: bot stays on the start
+tile and the map ignores further tile taps (pending progression). Need to
+determine the exact response fields / result action that ends the pending move.
+Candidate work:
+1. Inspect `ActiveQuest.AddActionResultsAndUpdateProgression` (`RVA 0xC3A278`)
+   and `QuestProgression..ctor` (`RVA 0xCA5684`) for the `results` item schema.
+2. Compare with a real Kabam `movedir` capture if one can be obtained.
+3. Check whether the client expects `progression.currentPos` as a different
+   vector shape or a `results` action (e.g. move/loot).
+4. Only after movement works: tap the final tile, observe
+   `/matches/activate-match`, `/matches/match-loaded`, `/matches/resolve-match`.
 
 ## 5. What is NOT verified / must not be claimed
-- The roster / `userData` schema is NOT working.
-- `match_activate_response.json` and `match_resolve_response.json` are
-  [ASSUMED]; no battle has been started or resolved.
-- No fight has been observed in this session.
-- `quest_list` content (Act 1 "All Fall Down", "Landing Site", rewards, map)
-  is invented for the vertical slice, not original Kabam data.
-- `account_data` resources/level, starter roster, tuning values are [ASSUMED].
-- The old `REPORT.md` figures (100% combat, 85-90%, 50-55%) are not evidence.
+- Battle did not start. No `match-*` request was observed.
+- Roster stats, ranks, hero ids, quest names, map layout, rewards, account
+  level/resources are [ASSUMED] / invented.
+- Tutorials still all `"s": "completed"` (deliberate deviation).
+- `quest-movedir` success is NOT confirmed; only the request is observed.
+- FIDELITY.md legacy percentages are invalid.
 
-## 6. Next step
+## 6. Files changed this session
+- `server/stub_server.py` — `/bcg/getBaseHeroData`, `/bcg/setSavedTeam`,
+  `/quests/quest-begin`, `/quests/quest-movedir`, `/quests/quest-quit` fallback.
+- `server/data/bcg_login_data.json` — id keys, rank 4/5, userData wrapper,
+  bot entity, saved/active team arrays.
+- `server/data/account_data.json` — `featuredhero`.
+- `server/data/login_response.json` — `featuredhero` (kept for completeness).
+- `server/data/quest_begin_response.json`, `quest_detail.json` — square 3×3 map,
+  entities removed.
+- `server/data/redeemer_data.json` — nextrefresh moved to 2030 (stops the loop).
+- `spec/bcg_userdata.md`, `spec/quest_protocol.md` — updated.
+- `LEDGER.md`, `FIDELITY.md`, `STATE.md` — updated.
+- Work scripts: `map_addr.py`, `build_rva_map.py`, `disasm_calls.py`, `xref.py`,
+  `scan_jsonpaths.py`, `adb_live.py`, `adb_mem_featured.py`.
 
-Milestone commit: `5dcc0c4` (stage1+2a). Stage 2B partial report:
-`report/stage2b_vertical_slice.md`.
-
-1. Fix roster: determine the exact `BCGUserHero` / `BCGUserData` wire keys
-   (start from `BCGUserHeroBase..ctor` RVA 0xA62348 and `OnBCGData` RVA
-   0x168C7C4), or find a real `userData` dump. Then make one hero appear in
-   `EDIT SQUAD`.
-2. Once a team exists, tap START and capture `/quests/quest-begin/...` and
-   `/matches/activate-match/...`; build the 1v1 battle slice.
-3. Only after 2B, expand to other systems.
+## 7. Evidence index
+- `work/r13.png` — BOTS roster.
+- `work/r38.png` — quest detail with team, START active.
+- `work/r47.png`, `work/r51.png` — quest map loaded.
+- `work/r52.png`–`work/r67.png` — movement attempts.
+- `work/run_logcat_8.txt` — clean BOTS run.
+- `server/requests.jsonl` — full request log (2026-10-22 17:41–18:31).

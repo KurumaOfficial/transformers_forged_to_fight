@@ -107,3 +107,44 @@ ecommendedMinLevel |
 | Act/Chapter/quest names, map, rewards | выдуманы | [ASSUMED] | quest_list.json |
 | /quests/quest-progression values | выдуманы | [ASSUMED] | quest_progression.json |
 | /bcg/getUserData / userData | эксперимент, не принят | [ASSUMED] | cg_user_data.json |
+
+---
+
+## 8. BCG roster, featured hero и quest-begin (2026-10-22)
+
+| Поле / запрос | Значение | Источник | Доказательство |
+|---|---|---|---|
+| `/bcg/getLoginData` -> `userData` | обёртка `{userData:{...}, updates:{...}, deletes:{}}` | `[CLIENT]` + `[RUN]` | `UpdateUserData` RVA 0x1695AA8; ростер появился только с обёрткой |
+| `updates.heroes[]` | массив словарей героев | `[CLIENT]` + `[RUN]` | `HandleUserDataUpdates` RVA 0x1695CC0; `BCGUserHeroBase..ctor` RVA 0xA62348 |
+| `entity_type` героя | `"bot"` (не `"hero"`) | `[CLIENT]` + `[RUN]` | `BCGHelper.GetHeroes` -> `GetEntities("bot")` RVA 0xC1F41C/0xC210D4 |
+| `bid` | `bumblebee_cin_dotm_2` | `[CLIENT]` (id из ассетов) | BOTS/EDIT SQUAD |
+| `savedTeams` / `activeTeams` | **массивы**, не словари | `[CLIENT]` + `[RUN]` | `Dot.Array` в `HandleUserDataUpdates`; dict вызвал пустой ростер |
+| `activeTeams[]` | `aid,type,modes,expire,heroes{bid:details}` | `[CLIENT]` + `[RUN]` | `BCGUserActiveTeam..ctor` RVA 0xA610F0; TOTAL 100 |
+| `savedTeams[]` | `sid,heroes[]` | `[CLIENT]` | `BCGUserSavedTeam..ctor` RVA 0xA635C4 |
+| id blueprint в каталоге | ключ **`id`**, не `blueprint` | `[CLIENT]` + `[RUN]` | `BCGBlueprintBase..ctor` RVA 0xC15708; без `id` — «does not exist in BCG data» |
+| `featuredhero` | в `/account/data`, `{cdn,orderType,heroes[]}` | `[CLIENT]` + `[RUN]` | `FeaturedHeroManager.Connect` RVA 0xB565B4; BOTS перестал падать |
+| `/bcg/getBaseHeroData` | ответ — массив `BCGHeroDetails` | `[CLIENT]` + `[RUN]` | `BCGAPI.GetHeroBaseAttributes` RVA 0xC120F4; запрос rank 5 |
+| `/bcg/setSavedTeam` | запрос `{teamID,heroes[]}`; ответ — полный BCG + обёртка userData | `[CLIENT]` + `[RUN]` | requests.jsonl 2026-10-22 18:20 |
+| `/quests/quest-begin/{qid}` | запрос `{quitExisting,hash,api,setId,tm0..}`; ответ `{activeQuests:{qid:{...,teamData}}}` | `[CLIENT]` + `[RUN]` | `QuestsManager.BeginQuest` callback RVA 0xCDD210; карта загрузилась |
+| map grid | квадратная `gridDimension × gridDimension` | `[CLIENT]` + `[RUN]` | `EB.Missions.Map.Deserialize`; 3×1 -> ArgumentOutOfRange |
+| map entities | нельзя выдумывать | `[CLIENT]` + `[RUN]` | `MapTile.Deserialize`; неизвестный boss -> NullReference |
+| `/quests/quest-movedir/{qid}/{dx}/{dy}` | запрос наблюдён; ответ `progression` + `teamData` | `[CLIENT]` + `[RUN]` | requests.jsonl 2026-10-22 18:22, 18:31; бот пока не двигается |
+| `/quests/quest-quit/{qid}` | запрос наблюдён | `[RUN]` | requests.jsonl 2026-10-22 18:31 |
+
+### Отрицательные результаты (2026-10-22)
+
+| Вариант | Результат | Вывод |
+|---|---|---|
+| `userData.heroes` плоским блоком | ростер пуст | нужна обёртка `{userData,updates,deletes}` |
+| `heroes` словарём / camelCase / с `id`,`uid`,`modes` | ростер пуст | ключи и обёртка важнее дополнительных полей |
+| `entity_type: "hero"` | ростер пуст | `GetHeroes` читает `entities["bot"]` |
+| `savedTeams`/`activeTeams` словарями | команда не сохраняется | клиент читает массивы |
+| каталог с ключом `blueprint` вместо `id` | `HeroData.CreateForDisplay ... does not exist` | id blueprint = `id` |
+| `featuredhero` только в `/auth/login` | BOTS NRE | эффективный источник — `/account/data` |
+| `/bcg/getBaseHeroData` -> `{}` | NRE в callback | нужен массив `BCGHeroDetails` |
+| `setSavedTeam` -> `{}` / плоский userData / полный каталог без обёртки | команда откатывается | нужен полный каталог + обёртка userData |
+| `quest-begin` -> объект квеста без `activeQuests` | ошибка «unknown error» | нужен `{activeQuests:{qid:...}}` |
+| `quest-begin` -> `activeQuests` без `teamData` | команда не применяется | `teamData` обязателен |
+| карта 3×1 при `gridDimension:3` | `ArgumentOutOfRangeException` в `Map.Deserialize` | сетка квадратная |
+| выдуманный entity в тайле | `NullReferenceException` в `MapTile.Deserialize` | убрать entities до реальных boss id |
+| `quest-movedir` -> `{}` | бот стоит, pending-состояние | нужен `progression` + `teamData`; схема ещё уточняется |

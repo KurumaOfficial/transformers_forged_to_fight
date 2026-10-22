@@ -89,8 +89,88 @@ Observed request body:
 `hash` and `setId` come from the quest-list set; `qid` is the summary `id`. [RUN]
 
 Response shape currently used by the stub (not verified against Kabam):
-`{"summary": {...}, "map": {...}}`. The client accepts it far enough to render
-the quest-detail screen, but the roster is empty, so START is disabled. [RUN]
+`{"summary": {...}, "map": {...}}`. The client accepts it and renders the quest
+screen. [RUN] The `map` must be a square `gridDimension × gridDimension` matrix
+(`grid[y][x]`); a 3×1 row with `gridDimension: 3` crashes the active-quest map
+with `ArgumentOutOfRangeException` in `EB.Missions.Map.Deserialize`. [RUN]
+
+The roster must be present in `userData` (see `spec/bcg_userdata.md`), otherwise
+START stays disabled.
+
+## 2b. `POST /quests/quest-begin/{qid}`
+
+Observed request:
+
+```json
+{"quitExisting":true,"nonce":"...","hash":"v1","api":11,
+ "setId":"story_act_1","tm0":"bumblebee_cin_dotm_2"}
+```
+
+`tm0..tm3` are the selected team blueprint ids. [RUN]
+
+The client callback (`QuestsManager.<>c__DisplayClass65_0.<BeginQuest>b__0`,
+`RVA 0xCDD210`) reads:
+
+```
+result.activeQuests[qid].teamData
+result.activeQuests
+```
+
+So the response must be:
+
+```json
+{"activeQuests": {
+  "<qid>": {
+    "qid": "<qid>", "category": "Story", "mode": "story",
+    "team": ["bumblebee_cin_dotm_2"],
+    "data": { ... }, "map": { ... },
+    "progression": { ... },
+    "teamData": {
+      "userData": {"blueprintsMax":50,"teamSizeMax":3,"teamCountMax":3},
+      "updates": {"heroes":[...],"activeTeams":[...],"savedTeams":[...],
+                  "inventory":{"f":{},"bp":{},"max":{}}},
+      "deletes": {}
+    }
+  }
+}}
+```
+
+`teamData` is passed to `BCGManager.UpdateUserData` (`RVA 0xD65F38`). [RUN]
+
+Map tiles must not contain invented `entities`: an unknown boss/entity id makes
+`MapTile.Deserialize` throw `NullReferenceException`. Remove `entities` until a
+real boss table id is available. [RUN]
+
+## 2c. `POST /quests/quest-movedir/{qid}/{dx}/{dy}`
+
+Observed request (from the start tile, direction right):
+
+```json
+{"api":11,"nonce":"..."}
+```
+
+The response is passed to `ActiveQuest.AddActionResultsAndUpdateProgression`
+(`RVA 0xC3A278`), which reads `result.progression` and `result.results`, and to
+`QuestsManager.UpdateActiveTeam(result.teamData)`. `QuestProgression..ctor`
+(`RVA 0xCA5684`) reads `version`, `currentPos`, `cleared`, `previouslyCleared`,
+`revealed`, `cfid`, `currentBattleId`, `currentBattlePos`, etc. [STATIC]
+
+Current stub response:
+
+```json
+{"progression":{"version":2,"currentPos":{"x":1,"y":0},
+  "cleared":[{"x":0,"y":0},{"x":1,"y":0}],"previouslyCleared":[],"revealed":[]},
+ "results":[],"teamData":{...}}
+```
+
+Status: the request is observed, but the bot does not visibly move yet; the
+client appears to stay in a pending-progression state. This is the next blocker.
+[RUN]
+
+## 2d. `POST /quests/quest-quit/{qid}`
+
+Observed when the red exit button is confirmed. The stub has no dedicated
+route; the client returns to mode select. [RUN]
 
 ## 3. `GET /quests/quest-progression`
 
@@ -112,10 +192,15 @@ no active quest has been verified.
 | summary missing `act/chapter/mission` | no chapter/quest tiles; no exception |
 | quest-detail 200 but empty team | quest screen renders; START disabled |
 | empty roster | `EDIT SQUAD` shows empty slots; BOTS screen NRE in `HeroesScreen.SetFeaturedHeroData` |
+| `userData` flat (no wrapper) | roster stays empty, no exception |
+| `entity_type: "hero"` | hero parsed but `GetHeroes` (`entities["bot"]`) returns none |
+| non-square active map grid | `ArgumentOutOfRangeException` in `EB.Missions.Map.Deserialize` |
+| invented map entity | `NullReferenceException` in `MapTile.Deserialize` |
 
 ## 6. Open questions
 
-- Exact `BCGUserData` / `BCGUserHero` wire keys for the roster.
-- `quest-begin`, `match-activate`, `match-loaded`, `match-resolve` bodies and
-  responses (not yet observed in a live run).
+- Exact `quest-movedir` response fields that make the client commit the move
+  (current stub returns `progression` + `teamData` but the bot stays at start).
+- `match-activate`, `match-loaded`, `match-resolve` bodies and responses (not
+  yet observed in a live run).
 - Real quest ids, act/chapter names, maps and rewards (current content invented).
