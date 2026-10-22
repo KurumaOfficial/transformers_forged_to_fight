@@ -1,7 +1,7 @@
 # Stage 2B — ростер, вход в квест и карта (2026-10-22)
 
-Статус: **частично завершено**. Ростер и вход в квест работают; движение по
-карте отправляет запрос, но клиент не фиксирует ход. Бой не начат.
+Статус: **ростер, вход в квест и ход по карте работают**; бой не начат.
+Движение подтверждено: бот перешёл на (1,0), HUD 11% -> 22% EXPLORED.
 
 ## 1. Что проверено запуском [RUN]
 
@@ -12,7 +12,7 @@
 | EDIT SQUAD, TOTAL 100 | работает | `work/r38.png` |
 | quest-detail 1.1, START активен | работает | `work/r38.png` |
 | `POST /quests/quest-begin/story_act1_ch1_m1` | принят, карта 3×3 загружена | `work/r47.png`, `work/r51.png` |
-| `POST /quests/quest-movedir/.../1/0` | запрос уходит | `server/requests.jsonl` 18:22, 18:31, 18:40, 18:46 |
+| `POST /quests/quest-movedir/.../1/0` | запрос уходит, бот переходит на (1,0), 22% | `work/r75.png`, requests 18:55 |
 | `POST /quests/quest-quit/...` | запрос уходит | 18:31 |
 
 ## 2. Причины прошлого блокера и исправления
@@ -37,17 +37,22 @@
 
 ## 3. Текущий блокер
 
-`quest-movedir` возвращает `progression` (version 1/2, currentPos, cleared),
-`results` с `actionType: 1 (MOVE_TO)`, `actionTile` и `teamData`. Клиент не
-двигает бота и не логирует исключение. Похоже, ход фиксируется через
-`sync`/`async`-сообщение Sparx, а не только через HTTP `result`
-(`BeginPendingProgression`/`EndPendingProgression`).
+Ход работает: результат `/quests/quest-movedir` должен содержать
+`results:[{"action":"moveto","moveto":{"x":..,"y":..}}]` плюс `progression` и
+`teamData`. Варианты с `actionType:1`, `actionPos`, top-level position и
+version 1/2 без `moveto` не двигали бота (см. LEDGER).
+
+Бой не запущен. `battle`-действие с минимальным `battleEnemy` не вызвало
+`/matches/activate-match`. Нужен валидный battle-tile/entity (`BCGEntity`,
+`QuestBoss`) или `progression.currentBattleId`/`currentFightId` + `localPlayer`.
+RAIDS отключён клиентом («Raids are temporarily disabled.»), SPECIAL/ARENAS/
+ALLIANCE заблокированы по уровню.
 
 ## 4. Честная верность
 
 - Клиент (APK, ассеты, UI, рендер) — оригинальный.
-- Схема ростера, `getBaseHeroData`, `setSavedTeam`, `quest-begin`, карты —
-  подтверждена запуском.
+- Схема ростера, `getBaseHeroData`, `setSavedTeam`, `quest-begin`, карты и
+  `quest-movedir` — подтверждена запуском.
 - Числовые данные (статы, ранги, ID, карта, награды, уровень/ресурсы) —
   синтетические [ASSUMED].
 - Бой — не наблюдался.

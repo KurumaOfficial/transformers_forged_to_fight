@@ -160,12 +160,38 @@ Current stub response:
 ```json
 {"progression":{"version":2,"currentPos":{"x":1,"y":0},
   "cleared":[{"x":0,"y":0},{"x":1,"y":0}],"previouslyCleared":[],"revealed":[]},
- "results":[],"teamData":{...}}
+ "results":[{"action":"moveto","moveto":{"x":1,"y":0}}],
+ "teamData":{...}}
 ```
 
-Status: the request is observed, but the bot does not visibly move yet; the
-client appears to stay in a pending-progression state. This is the next blocker.
-[RUN]
+**Verified working.** The key is `results[].action = "moveto"` with a `moveto`
+sub-object containing `x`/`y`. `actionType: 1` / `actionPos` / `actionTile` are
+ignored. The bot moved from (0,0) to (1,0); HUD changed 11% -> 22% EXPLORED.
+[RUN] `work/r75.png`, requests 18:55.
+
+`QuestActionResult..ctor` (`RVA 0xEA28BC`) reads the `action` string and then the
+sub-object with the same name (`moveto`, `teleport`, `battle`, ...). `moveto`
+reads `x`/`y`; `isFinalBoss` and battle entities come from the same sub-object.
+[STATIC]
+
+### 2c.1 Battle trigger (not yet reached)
+
+A `battle` action with a minimal `battleEnemy` did not call
+`/matches/activate-match`. `ActiveQuest.ActivateMatch` (`RVA 0x10A0038`) requires
+a `battleId` and a hero and calls `MatchManager.ActivateMatch<QuestsMatchData>`.
+The normal trigger is a battle tile/entity (`BCGEntity.Deserialize`,
+`RVA 0xC17FEC`) or `progression.currentBattleId`/`currentFightId` + `localPlayer`.
+RAIDS is disabled by the client ("Raids are temporarily disabled."), SPECIAL/
+ARENAS/ALLIANCE are level-locked. [RUN]
+
+### 2c.2 Sparx `async` envelope
+
+Async messages are `{component, message, payload, id, channel}`. `HttpEndPoint`
+dispatches them via `PushManager.HandleMessage` (`RVA 0x12FE17C`) to the manager
+named by `component`; `QuestsManager.Async` (`RVA 0xD65038`) handles
+`avx-update`, `sync`, `match-activated`, `match-resolved`, `refresh`, etc.
+For `avx-update` it calls `AvxQuestsSync.OnAsyncUpdate`. The HTTP `result` alone
+is enough for `moveto`; `async` is not required for that step. [STATIC]+[RUN]
 
 ## 2d. `POST /quests/quest-quit/{qid}`
 

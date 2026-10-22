@@ -152,3 +152,31 @@ ecommendedMinLevel |
 
 ### Локализация: 7 869 против 7 994
 Текущий экстрактор (`work/extract_all_localization.py`) находит **7 869 уникальных ключей** `k` в 240 файлах `assets/bin/Data` (117 923 сырых вхождения, много языковых копий). Цифра 7 994 взята из старого `REPORT.md`/`generate_final_report.py` и текущим экстрактором не воспроизводится. Разница 125 не объяснена; вероятные причины — другой regex/набор файлов или учёт дублей/пустых значений в старом отчёте. [STATIC] для 7 869; 7 994 — [ASSUMED]/legacy.
+
+---
+
+## 9. Movedir: отрицательные и положительный результат (2026-10-22)
+
+| Вариант ответа `/quests/quest-movedir` | Результат | Вывод |
+|---|---|---|
+| `progression` version 1 + `currentPos` + `cleared` | бот стоит, 11% | недостаточно |
+| `progression` version 2 + `currentPos` + `cleared` | бот стоит, 11% | версия не решает |
+| `progression` + top-level `currentPosition`/`playerPosition`/`currentTile` | бот стоит, 11% | top-level поля игнорируются |
+| `progression` + `clearedTiles`/`percentComplete` | бот стоит, 11% | старые ключи не читаются |
+| `results: [{actionType:1, actionPos, actionTile}]` | бот стоит, 11% | `actionType` не тот ключ |
+| `results: [{action:"moveto", moveto:{x,y}}]` + `progression` | **бот перешёл на (1,0), 22% EXPLORED** | **рабочая схема** [RUN] work/r75.png |
+| `results` + `battle` action с минимальным `battleEnemy` | ход есть, `/matches/activate-match` не вызван | battle-action требует валидного entity/полей |
+
+Источник схемы: `QuestActionResult..ctor` (`RVA 0xEA28BC`) читает строку `action`
+и под-объект с тем же именем (`moveto`, `teleport`, `battle`, ...); `moveto`
+читает `x`/`y`. `progression` применяется `ActiveQuest.UpdateProgress`
+(`RVA 0xC3A478`). [STATIC]+[RUN]
+
+## 10. Явно [ASSUMED] значения
+
+| Значение | Статус | Где |
+|---|---|---|
+| featured hero Optimus (`optimus_c_tf_t3`, rank 4/5, level 40) | [ASSUMED] | `server/data/account_data.json`, `bcg_login_data.json` |
+| Bumblebee 100 (rank 1, level 1, статы 1000 HP / 120 ATK / rating 100) | [ASSUMED] | `server/data/bcg_login_data.json` |
+| Ресурсы (gold/energon/shards/ore) и уровень командира | [ASSUMED] | `server/data/account_data.json` |
+| Карта 3×3, названия Act/Chapter/Quest, награды | [ASSUMED] | `server/data/quest_*.json` |

@@ -1,6 +1,6 @@
 ﻿# STATE вЂ” Transformers: Forged to Fight 9.2.0 offline revival
 
-Updated: 2026-10-22 18:50 UTC (local ~21:50 22.10.2026)
+Updated: 2026-10-22 19:05 UTC (local ~22:05 22.10.2026)
 
 ## 0. What this file is
 Checkpoint against context loss. Only verified facts are recorded.
@@ -70,22 +70,27 @@ Tags: [RUN] executed and observed, [STATIC] read in code/data, [DERIVED],
 - Details: `spec/quest_protocol.md`.
 
 ## 4. Current blocker (next step)
-`quest-movedir` response is not committed by the client: bot stays on the start
-tile and the map ignores further tile taps (pending progression). Tried:
-`progression` with `version` 1/2, `currentPos`, `cleared`, both old and new key
-spellings, top-level `currentPosition`/`playerPosition`, and a `results` entry
-with `actionType: 1 (MOVE_TO)`, `actionPos`, `actionTile`, `cleared`. None moved
-the bot; no exception is logged. [RUN]
+Movement is **solved**: `/quests/quest-movedir` must return
+`results:[{action:"moveto", moveto:{x,y}}]` plus `progression` and `teamData`.
+The bot moved from (0,0) to (1,0); the HUD changed from 11% to 22% EXPLORED.
+[RUN] `work/r75.png`, requests 18:55.
 
-Hypothesis: the move is committed through a Sparx `sync`/`async` message (the
-client calls `BeginPendingProgression`/`EndPendingProgression`), not only through
-the HTTP `result`. Next:
-1. Inspect `ActiveQuest.AddActionResultsAndUpdateProgression` (`RVA 0xC3A278`),
-   `QuestProgression..ctor` (`RVA 0xCA5684`) and `ProcessPendingUpdates`
-   (`RVA 0xC3A820`) for the sync-message schema.
-2. Capture a real Kabam `movedir` response if possible.
-3. Only after movement works: tap the final tile, observe
-   `/matches/activate-match`, `/matches/match-loaded`, `/matches/resolve-match`.
+The next blocker is the **battle trigger**. A `battle` action with a minimal
+`battleEnemy` did not call `/matches/activate-match`; no `/matches/*` request was
+observed. `ActiveQuest.ActivateMatch` (`RVA 0x10A0038`) requires a `battleId` and
+a hero and calls `MatchManager.ActivateMatch<QuestsMatchData>`. The normal trigger
+is a battle tile/entity (`BCGEntity`) or `progression.currentBattleId`, not a
+plain move. RAIDS is disabled by the client ("Raids are temporarily disabled."),
+SPECIAL/ARENAS/ALLIANCE are level-locked. [RUN]
+
+Next:
+1. Build a valid battle action/entity: inspect `BCGEntity.Deserialize`
+   (`RVA 0xC17FEC`) and `QuestBoss` keys; use a blueprint that exists in the
+   catalog (e.g. Bumblebee) as the enemy.
+2. Or set `progression.currentBattleId`/`currentFightId` + `localPlayer` so the
+   map exposes a fight node.
+3. Then capture `/matches/activate-match`, `/matches/match-loaded`,
+   `/matches/resolve-match`.
 
 ## 5. What is NOT verified / must not be claimed
 - Battle did not start. No `match-*` request was observed.
@@ -117,4 +122,5 @@ the HTTP `result`. Next:
 - `work/r52.png`вЂ“`work/r67.png` вЂ” movement attempts.
 - `work/run_logcat_8.txt` вЂ” clean BOTS run.
 - `server/requests.jsonl` вЂ” full request log (2026-10-22 17:41вЂ“18:31).
+
 

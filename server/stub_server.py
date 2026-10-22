@@ -423,14 +423,24 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 "playerPosition": new,
                 "currentTile": new,
                 "results": [{
-                    "qid": qid,
-                    "actionType": 1,
-                    "actionPos": new,
-                    "actionTile": tile,
+                    "action": "moveto",
+                    "moveto": {"x": new["x"], "y": new["y"]},
                     "cleared": [{"x": 0, "y": 0}, new],
                     "visibleClearedCount": 2,
                     "walkableCount": 9,
                     "visibleWalkableCount": 9
+                }, {
+                    "action": "battle",
+                    "battle": {
+                        "battleId": "b1",
+                        "enemyHealth": 1000,
+                        "isFinalBoss": False,
+                        "battleEnemy": {
+                            "id": "enemy1", "entityType": "boss",
+                            "bid": "bumblebee_cin_dotm_2",
+                            "level": 1, "rank": 1, "team": "enemy"
+                        }
+                    }
                 }],
                 "teamData": wrapper
             }, assumed_label="[CLIENT: /quests/quest-movedir/ progression+results+teamData]")
