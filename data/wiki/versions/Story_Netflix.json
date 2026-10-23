@@ -1,0 +1,40 @@
+{
+ "page": "Story/Netflix",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Story/Netflix",
+ "latest_revid": 10770,
+ "latest_timestamp": "2023-05-11T04:36:21Z",
+ "as_of_revid": null,
+ "as_of_timestamp": null,
+ "created_after_cutoff": true,
+ "changed": true,
+ "headings_added": [
+  "A Slow Learner",
+  "Chapter 1 Collision",
+  "Chapter 2 Revelation",
+  "Chapter 3 Assault",
+  "Chapter 4 Control",
+  "High Speed Chase",
+  "In With a Boom",
+  "Me Have Mod",
+  "Old Friends",
+  "The Way of the Blade",
+  "[[Awaken and Corrupt]]",
+  "[[Emergence]]",
+  "[[Eternity Box]]",
+  "[[Learning Curve]]",
+  "[[Meet Your Makers]]",
+  "[[Out of Time]]"
+ ],
+ "headings_removed": [],
+ "new_interesting_lines": [],
+ "as_of_content": "",
+ "latest_content": "With the Netflix relaunch, the main story campaign was reworked with six Acts, accounting for no Cinematic Bots.\n\n==[[Meet Your Makers]]==\n[[File:Act 1 Meet Your Makers Netflix.jpg|thumb]]\nAvailable right at launch on May 10th, 2023.\n\n===Chapter 1 Collision===\n\n====In With a Boom====\n\n====A Slow Learner====\n\n====Me Have Mod====\n\n====High Speed Chase====\n\n====The Way of the Blade====\n\n====Old Friends====\n\n===Chapter 2 Revelation===\n\n===Chapter 3 Assault===\n\n===Chapter 4 Control===\n\n==[[Learning Curve]]==\n[[File:Act_2_Learning_Curve.jpg|none|thumb]]\n\n==[[Out of Time]]==\n[[File:Act 3 Out of Time.jpg|thumb|none]]\n==[[Emergence]]==\n[[File:Act 4 Emergence.jpg|thumb|none]]\n==[[Awaken and Corrupt]]==\n[[File:Act 5 Awaken and Corrupt.jpg|thumb|none]]\n==[[Eternity Box]]==\n[[File:Awaken and Corrupt.jpg|thumb|none]]",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "file",
+   "as_of": null,
+   "latest": "Act 1 Meet Your Makers Netflix.jpg|thumb"
+  }
+ ]
+}

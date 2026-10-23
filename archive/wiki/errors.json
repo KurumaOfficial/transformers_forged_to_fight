@@ -118,5 +118,930 @@
   "file": "23376356_189518801609868_6058695352862655587_n.jpg",
   "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/ad/23376356_189518801609868_6058695352862655587_n.jpg/revision/latest?cb=20171120063622",
   "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "A_Bad_Name_2.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/5c/A_Bad_Name_2.jpg/revision/latest?cb=20221229202129",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "A_Bad_Name_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/80/A_Bad_Name_newsfeed.jpg/revision/latest?cb=20221229202130",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "A_Glass_Darkly_header.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/88/A_Glass_Darkly_header.png/revision/latest?cb=20221226205202",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "A_Glass_Darkly_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/d1/A_Glass_Darkly_mail.jpg/revision/latest?cb=20221226205202",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "A_Glass_Darkly_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b9/A_Glass_Darkly_newsfeed.jpg/revision/latest?cb=20221226205203",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "A_Lesson_Learned_in_Time_header.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/53/A_Lesson_Learned_in_Time_header.png/revision/latest?cb=20230106063112",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Absolute_Power_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/e2/Absolute_Power_mail.jpg/revision/latest?cb=20180111145647",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Act_1.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/74/Act_1.jpg/revision/latest?cb=20180411063610",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Act_3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/1/1d/Act_3.jpg/revision/latest?cb=20180411064618",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Act_3_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/a2/Act_3_newsfeed.jpg/revision/latest?cb=20180411064622",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Aerial_Assault_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/1/1c/Aerial_Assault_Crystal_banner.jpg/revision/latest?cb=20190506045858",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Airhead_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/4/4b/Airhead_Crystal_banner.jpg/revision/latest?cb=20171205032009",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Airhead_Crystal_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b6/Airhead_Crystal_mail.jpg/revision/latest?cb=20180331052259",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Alliance-Energy.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/e8/Alliance-Energy.png/revision/latest?cb=20171211034606",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Alliance_Crystal.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/00/Alliance_Crystal.png/revision/latest?cb=20170831123651",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Alliance_Crystal_banner_v3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/f3/Alliance_Crystal_banner_v3.jpg/revision/latest?cb=20171218074719",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Alliance_Icon.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/8c/Alliance_Icon.png/revision/latest?cb=20230110145409",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Allspark.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/90/Allspark.jpg/revision/latest?cb=20170928053704",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Allspark_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/01/Allspark_Icon.jpg/revision/latest?cb=20190112042821",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Ancient_Sanctum_Crystal.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/d6/Ancient_Sanctum_Crystal.png/revision/latest?cb=20180112081001",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Ancient_Sanctum_Crystal_Shard.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/52/Ancient_Sanctum_Crystal_Shard.png/revision/latest?cb=20180122090353",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Anniversary_Celebration_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/4/40/Anniversary_Celebration_mail.jpg/revision/latest?cb=20180404080037",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Arcee_Avatar_forums.jpeg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/06/Arcee_Avatar_forums.jpeg/revision/latest?cb=20180122131546",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Arcee_Icon_New.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/39/Arcee_Icon_New.jpg/revision/latest?cb=20170830131842",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Arcee_Icon_v3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/22/Arcee_Icon_v3.jpg/revision/latest?cb=20180111144141",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Arcee_featured.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/fc/Arcee_featured.png/revision/latest?cb=20170830133131",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Arcee_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/96/Arcee_portrait.png/revision/latest?cb=20170831005200",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Arcee_portrait_v2.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/d2/Arcee_portrait_v2.png/revision/latest?cb=20170828030412",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Arcee_portrait_v3.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/96/Arcee_portrait_v3.png/revision/latest?cb=20180111144141",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Armor_Buff.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/dc/Armor_Buff.png/revision/latest?cb=20260801190214",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Armored_Arachnid_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/68/Armored_Arachnid_Crystal_banner.jpg/revision/latest?cb=20181112132135",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Awaken_and_Corrupt_icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/21/Awaken_and_Corrupt_icon.jpg/revision/latest?cb=20191007081352",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Awaken_and_Corrupt_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/34/Awaken_and_Corrupt_mail.jpg/revision/latest?cb=20191007081352",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Awaken_and_Corrupt_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/c8/Awaken_and_Corrupt_newsfeed.jpg/revision/latest?cb=20191007081353",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Awaken_and_Corrupt_newsfeed.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b1/Awaken_and_Corrupt_newsfeed.png/revision/latest?cb=20191007081353",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Awakening_Program.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/3f/Awakening_Program.png/revision/latest?cb=20171023021943",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Awakening_Programs_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/ab/Awakening_Programs_mail.jpg/revision/latest?cb=20171023021804",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "BB_DOTM.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/ca/BB_DOTM.jpg/revision/latest?cb=20210501185544",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Barricade_Icon_v3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/6f/Barricade_Icon_v3.jpg/revision/latest?cb=20180111144142",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Barricade_KIA.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/e1/Barricade_KIA.jpg/revision/latest?cb=20230512142023",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Barricade_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/9f/Barricade_portrait.png/revision/latest?cb=20170831005201",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Battlegroup_2.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b0/Battlegroup_2.jpg/revision/latest?cb=20171208043257",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Battlegroup_3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/0d/Battlegroup_3.jpg/revision/latest?cb=20171208043306",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Beast_Wars_Bounty_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/dd/Beast_Wars_Bounty_mail.jpg/revision/latest?cb=20180309142053",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Beast_Wars_Bounty_newsfeed_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/db/Beast_Wars_Bounty_newsfeed_banner.jpg/revision/latest?cb=20180309142052",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Beast_Wars_Chip.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/f8/Beast_Wars_Chip.png/revision/latest?cb=20230111003925",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bee.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/34/Bee.jpg/revision/latest?cb=20200430070717",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Betrayal_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/ce/Betrayal_Crystal_banner.jpg/revision/latest?cb=20181102145602",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Betrayal_Crystal_store.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/ed/Betrayal_Crystal_store.jpg/revision/latest?cb=20181004141043",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Betrayal_Greater_Power_Crystal.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/a0/Betrayal_Greater_Power_Crystal.png/revision/latest?cb=20181004141043",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Big_Boy_Bundle_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/66/Big_Boy_Bundle_newsfeed.jpg/revision/latest?cb=20180224041838",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Big_Boy_Bundle_store.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/a1/Big_Boy_Bundle_store.jpg/revision/latest?cb=20180224041840",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Big_Boy_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/3c/Big_Boy_Crystal_banner.jpg/revision/latest?cb=20180209040559",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Big_Boy_Crystal_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/ff/Big_Boy_Crystal_mail.jpg/revision/latest?cb=20180209040600",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Blaster_Chip_Energon_Bundle_store_1.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/d3/Blaster_Chip_Energon_Bundle_store_1.jpg/revision/latest?cb=20180413080029",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Blaster_Chip_Energon_Bundle_store_5.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/2b/Blaster_Chip_Energon_Bundle_store_5.jpg/revision/latest?cb=20180413080031",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Blaster_Chip_Energon_Bundles_newsfeed.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/de/Blaster_Chip_Energon_Bundles_newsfeed.png/revision/latest?cb=20180413080028",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Blaster_Relic_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/7a/Blaster_Relic_Icon.jpg/revision/latest?cb=20180413083917",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Blaster_featured.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/3d/Blaster_featured.png/revision/latest?cb=20180413073744",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bludgeon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/4/49/Bludgeon.jpg/revision/latest?cb=20170827231822",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bludgeon_Icon_v2.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/20/Bludgeon_Icon_v2.jpg/revision/latest?cb=20170828030410",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bludgeon_Icon_v4.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/09/Bludgeon_Icon_v4.jpg/revision/latest?cb=20180111144143",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bludgeon_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/0b/Bludgeon_portrait.png/revision/latest?cb=20170831005201",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bluedgeon_portrait_New.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/bc/Bluedgeon_portrait_New.png/revision/latest?cb=20170831005202",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Boncrusher_KIA.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/ba/Boncrusher_KIA.jpg/revision/latest?cb=20230512142437",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bonecrusher.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/c3/Bonecrusher.jpg/revision/latest?cb=20170827232737",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bonecrusher_Avatar_forums.jpeg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/51/Bonecrusher_Avatar_forums.jpeg/revision/latest?cb=20180122131110",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bonecrusher_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/e1/Bonecrusher_Icon.jpg/revision/latest?cb=20170830131846",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bonecrusher_Icon_v3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b7/Bonecrusher_Icon_v3.jpg/revision/latest?cb=20180111144145",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bonecrusher_featured_Beta.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/67/Bonecrusher_featured_Beta.png/revision/latest?cb=20170927075142",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bonecrusher_portrait_New.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b3/Bonecrusher_portrait_New.png/revision/latest?cb=20170831005203",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bonecrusher_portrait_v3.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/bf/Bonecrusher_portrait_v3.png/revision/latest?cb=20180111144145",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Boom_Box_Crystal_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/70/Boom_Box_Crystal_mail.jpg/revision/latest?cb=20180413073748",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Boom_Box_Crystal_newsfeed.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/20/Boom_Box_Crystal_newsfeed.png/revision/latest?cb=20180413073749",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Boom_Box_Crystal_newsfeed_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/26/Boom_Box_Crystal_newsfeed_banner.jpg/revision/latest?cb=20180413073748",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Boost_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/7c/Boost_Crystal_banner.jpg/revision/latest?cb=20171218125807",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Boss-Icon.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/05/Boss-Icon.png/revision/latest?cb=20170920133143",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Chip.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/1/12/Bot_Chip.png/revision/latest?cb=20190108124132",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Chips_news.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/fa/Bot_Chips_news.jpg/revision/latest?cb=20200430070721",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Crystal_banner_beta.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/4/48/Bot_Crystal_banner_beta.jpg/revision/latest?cb=20180901120640",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Level_and_Rank_Up_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/70/Bot_Level_and_Rank_Up_mail.jpg/revision/latest?cb=20180307050207",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Bumblebee",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/8b/Bot_Showcase_-_Bumblebee/revision/latest?cb=20171222034058",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Dinobot",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/5c/Bot_Showcase_-_Dinobot/revision/latest?cb=20171220102001",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Drift_Transformers_Forged_to_Fight",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/bd/Bot_Showcase_-_Drift_Transformers_Forged_to_Fight/revision/latest?cb=20171220101730",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Galvatron",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/08/Bot_Showcase_-_Galvatron/revision/latest?cb=20171220101944",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Grimlock_Transformers_Forged_to_Fight",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/c4/Bot_Showcase_-_Grimlock_Transformers_Forged_to_Fight/revision/latest?cb=20171220101818",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Megatron",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/3c/Bot_Showcase_-_Megatron/revision/latest?cb=20171220102038",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Optimus_Primal",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/d0/Bot_Showcase_-_Optimus_Primal/revision/latest?cb=20180106024541",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Prowl_Transformers_Forged_to_Fight",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/c3/Bot_Showcase_-_Prowl_Transformers_Forged_to_Fight/revision/latest?cb=20171220101643",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Shockwave",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/ac/Bot_Showcase_-_Shockwave/revision/latest?cb=20171220101833",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Starscream",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/fb/Bot_Showcase_-_Starscream/revision/latest?cb=20171220101851",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bot_Showcase_-_Waspinator_Transformers_Forged_to_Fight",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/8a/Bot_Showcase_-_Waspinator_Transformers_Forged_to_Fight/revision/latest?cb=20171220101550",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Branding_Iron_1.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/5d/Branding_Iron_1.jpg/revision/latest?cb=20221229205539",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Branding_Iron_2.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/e0/Branding_Iron_2.jpg/revision/latest?cb=20221229205539",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Branding_Iron_3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/c9/Branding_Iron_3.jpg/revision/latest?cb=20221229205539",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Branding_Iron_4.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/62/Branding_Iron_4.jpg/revision/latest?cb=20221229205539",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Branding_Iron_header.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/ef/Branding_Iron_header.png/revision/latest?cb=20221229205539",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Branding_Iron_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/0c/Branding_Iron_mail.jpg/revision/latest?cb=20221229205538",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Branding_Iron_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/f5/Branding_Iron_newsfeed.jpg/revision/latest?cb=20221229205540",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler-small.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/92/Brawler-small.png/revision/latest?cb=20170920133140",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler_Awakening_Program.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/50/Brawler_Awakening_Program.png/revision/latest?cb=20171024101232",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler_Bash_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/bc/Brawler_Bash_Icon.jpg/revision/latest?cb=20171205084729",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler_Bash_Icon_v2.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b4/Brawler_Bash_Icon_v2.jpg/revision/latest?cb=20180406015853",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler_Bash_banner_v3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/9c/Brawler_Bash_banner_v3.jpg/revision/latest?cb=20180406015854",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler_Bash_banner_v4.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/f3/Brawler_Bash_banner_v4.jpg/revision/latest?cb=20180408124659",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler_Crystal.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/fc/Brawler_Crystal.png/revision/latest?cb=20180111145636",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brawler_Sharkticon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/38/Brawler_Sharkticon.jpg/revision/latest?cb=20260302071601",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bring_the_Noise_Expert.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/c3/Bring_the_Noise_Expert.jpg/revision/latest?cb=20180413080024",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bring_the_Noise_Master.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b8/Bring_the_Noise_Master.jpg/revision/latest?cb=20180413080024",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bring_the_Noise_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/83/Bring_the_Noise_mail.jpg/revision/latest?cb=20180413073753",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Blaster_Relic_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/7e/Bronze_Blaster_Relic_portrait.png/revision/latest?cb=20180511152336",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Cheetor_Relic_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/be/Bronze_Cheetor_Relic_portrait.png/revision/latest?cb=20180608054528",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Galvatron_Relic_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/cf/Bronze_Galvatron_Relic_Icon.jpg/revision/latest?cb=20171007023943",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Hound_Relic_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/84/Bronze_Hound_Relic_Icon.jpg/revision/latest?cb=20180209075946",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Hound_Relic_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/91/Bronze_Hound_Relic_portrait.png/revision/latest?cb=20180308154524",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Jazz_Relic_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/4/42/Bronze_Jazz_Relic_Icon.jpg/revision/latest?cb=20180612075748",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Kickback_Relic_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/6f/Bronze_Kickback_Relic_Icon.jpg/revision/latest?cb=20180316044429",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Kickback_Relic_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/df/Bronze_Kickback_Relic_portrait.png/revision/latest?cb=20180404080039",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Megatron_Relic_G1_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/ad/Bronze_Megatron_Relic_G1_Icon.jpg/revision/latest?cb=20180111150054",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Primal_Relic_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/4/4e/Bronze_Primal_Relic_Icon.jpg/revision/latest?cb=20180111150057",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Primal_Relic_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/c8/Bronze_Primal_Relic_portrait.png/revision/latest?cb=20180217045553",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bronze_Shattered_Disk_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/8e/Bronze_Shattered_Disk_Icon.jpg/revision/latest?cb=20171102151717",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brute_Force_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/23/Brute_Force_newsfeed.jpg/revision/latest?cb=20180726122016",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Brute_Force_newsfeed.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b6/Brute_Force_newsfeed.png/revision/latest?cb=20180726122017",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Armor_Pierce.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/6c/Buff_Armor_Pierce.png/revision/latest?cb=20220530055649",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Attack.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/ec/Buff_Attack.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Crit_Damage.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/59/Buff_Crit_Damage.png/revision/latest?cb=20260111093500",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Dark_Field.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/e0/Buff_Dark_Field.png/revision/latest?cb=20250902085215",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Discipline.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/ee/Buff_Discipline.png/revision/latest?cb=20250911110556",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Energy_Resistance.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/57/Buff_Energy_Resistance.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Evade_Melee.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/85/Buff_Evade_Melee.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Fusion_Cannon.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/f8/Buff_Fusion_Cannon.png/revision/latest?cb=20260111070520",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Melee_Crit_Rate.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/95/Buff_Melee_Crit_Rate.png/revision/latest?cb=20260905093058",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Power_Burn.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/fb/Buff_Power_Burn.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Power_Gain.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/0a/Buff_Power_Gain.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Power_Rate.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/3f/Buff_Power_Rate.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Repair_beta.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/c/cd/Buff_Repair_beta.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Shield.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/aa/Buff_Shield.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Special_Damage.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/98/Buff_Special_Damage.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Trigger_Rate.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/1/10/Buff_Trigger_Rate.png/revision/latest?cb=20220530055650",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Buff_Willpower.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/66/Buff_Willpower.png/revision/latest?cb=20250903082336",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bumblebee.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/ab/Bumblebee.jpg/revision/latest?cb=20170827235621",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bumblebee_G1_Icon_v2.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/f1/Bumblebee_G1_Icon_v2.jpg/revision/latest?cb=20180111144146",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bumblebee_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/4/49/Bumblebee_Icon.jpg/revision/latest?cb=20170830131847",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bumblebee_Icon_v2.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/9f/Bumblebee_Icon_v2.jpg/revision/latest?cb=20180111144147",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bumblebee_SG.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/1/1e/Bumblebee_SG.png/revision/latest?cb=20191004135933",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bumblebee_featured_Beta.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/f/f3/Bumblebee_featured_Beta.png/revision/latest?cb=20170927075143",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bumblebee_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/81/Bumblebee_portrait.png/revision/latest?cb=20170831005203",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bump_in_the_Night_1.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/84/Bump_in_the_Night_1.jpg/revision/latest?cb=20230108023932",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bump_in_the_Night_3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/68/Bump_in_the_Night_3.jpg/revision/latest?cb=20230108023933",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bump_in_the_Night_header.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/02/Bump_in_the_Night_header.png/revision/latest?cb=20230108023932",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bump_in_the_Night_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/03/Bump_in_the_Night_newsfeed.jpg/revision/latest?cb=20230108023932",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Bump_in_the_Night_newsfeed_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/6e/Bump_in_the_Night_newsfeed_banner.jpg/revision/latest?cb=20230108023932",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "CBEFD18F-2540-491D-96CD-8BD9C42EFBFE.jpeg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/1/12/CBEFD18F-2540-491D-96CD-8BD9C42EFBFE.jpeg/revision/latest?cb=20200103185818",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Calamatious_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/87/Calamatious_Crystal_banner.jpg/revision/latest?cb=20200430070734",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Carbot_insignia_silver_200px.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/5c/Carbot_insignia_silver_200px.png/revision/latest?cb=20180805143047",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cassette_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/65/Cassette_Crystal_banner.jpg/revision/latest?cb=20171205030049",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cha_sharkticon_gs_kabam_00_model.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b1/Cha_sharkticon_gs_kabam_00_model.png/revision/latest?cb=20230114165155",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Character_Crystal_2.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/81/Character_Crystal_2.png/revision/latest?cb=20170831124039",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Character_Slot.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/bc/Character_Slot.png/revision/latest?cb=20170919115821",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheator.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/22/Cheator.jpg/revision/latest?cb=20260928030343",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheetor_Bounty_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/21/Cheetor_Bounty_mail.jpg/revision/latest?cb=20180511152207",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheetor_Chip.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/a/a2/Cheetor_Chip.png/revision/latest?cb=20180511152206",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheetor_Chip_Energon_Bundles_mail.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/20/Cheetor_Chip_Energon_Bundles_mail.jpg/revision/latest?cb=20180511152213",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheetor_Chip_Energon_Bundles_newsfeed.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/e/ed/Cheetor_Chip_Energon_Bundles_newsfeed.png/revision/latest?cb=20180511152213",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheetor_Chip_Energon_Bundles_store_3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/52/Cheetor_Chip_Energon_Bundles_store_3.jpg/revision/latest?cb=20180511152216",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheetor_Chip_Energon_Bundles_store_4.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/3c/Cheetor_Chip_Energon_Bundles_store_4.jpg/revision/latest?cb=20180511152216",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cheetor_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/8/88/Cheetor_portrait.png/revision/latest?cb=20180511152206",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Chicago.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/77/Chicago.jpg/revision/latest?cb=20180119120825",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Chromia_gs.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/7/77/Chromia_gs.png/revision/latest?cb=20220529045949",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cinematic_Crystal.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/6/68/Cinematic_Crystal.png/revision/latest?cb=20170831124041",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Class_Clash_Chip.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/2/29/Class_Clash_Chip.png/revision/latest?cb=20230111003644",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Class_Use_Brawler.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/0/0f/Class_Use_Brawler.png/revision/latest?cb=20180119062326",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Class_Use_Demolitions.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/de/Class_Use_Demolitions.png/revision/latest?cb=20180119062328",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Class_Use_Tactician.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/1/1d/Class_Use_Tactician.png/revision/latest?cb=20180119062329",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cliffjump_the_Shark_3.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/55/Cliffjump_the_Shark_3.jpg/revision/latest?cb=20230108054137",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cliffjump_the_Shark_4.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/95/Cliffjump_the_Shark_4.jpg/revision/latest?cb=20230108054137",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cliffjump_the_Shark_header.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/d/de/Cliffjump_the_Shark_header.png/revision/latest?cb=20230108054137",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cliffjump_the_Shark_newsfeed.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/5a/Cliffjump_the_Shark_newsfeed.jpg/revision/latest?cb=20230108054137",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cliffjumper_portrait.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/3/35/Cliffjumper_portrait.png/revision/latest?cb=20220529035234",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Cloaking_Field_Icon.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/b4/Cloaking_Field_Icon.jpg/revision/latest?cb=20180908130920",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Code_of_a_Hero_bundle_icon.png",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/5d/Code_of_a_Hero_bundle_icon.png/revision/latest?cb=20190608073918",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Code_of_a_Hero_reforged_1.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/9/91/Code_of_a_Hero_reforged_1.jpg/revision/latest?cb=20190608073908",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Code_of_a_Hero_reforged_4.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/5/58/Code_of_a_Hero_reforged_4.jpg/revision/latest?cb=20190608073910",
+  "error": "<HTTPError 403: 'Forbidden'>"
+ },
+ {
+  "file": "Combative_Combo_Crystal_banner.jpg",
+  "url": "https://static.wikia.nocookie.net/transformers-forged-to-fight/images/b/be/Combative_Combo_Crystal_banner.jpg/revision/latest?cb=20190608073911",
+  "error": "<HTTPError 403: 'Forbidden'>"
  }
 ]

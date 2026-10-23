@@ -248,18 +248,22 @@ throw-блок (`bl 0x9bb514`). Это происходит до `entityType`, �
 
 ## 12. Wiki archive (Part B, 2026-10-23)
 
-- Fandom: перечислено **3613** страниц = **817 non-File + 2796 File**.
-  Все **817 non-File** сохранены с полной историей ревизий и HTML; ещё 5
-  File-страниц — тоже. Все **2796 File-описаний** сохранены (последняя
-  ревизия). Это подтверждает [DERIVED]: разница 3613−822 — это File и
-  картинки, а не пропущенные текстовые страницы. [RUN]
-- TFWiki: сохранено **8** FTF-страниц с полной историей + HTML.
-- Файлы: **523/2752** бинарников (карты/миссии/UI/таблицы в приоритете);
-  24 ошибки, в основном 403 static.wikia.nocookie.net; без обхода.
-- Manifest: **4983** записи; state: `archive/wiki/state.json`.
-- Cargo нет; Scribunto на Fandom есть, `Module:` (ns 828) — 0.
-- Разбор: **44 бота** (`data/wiki/bots.json`) и **252 страницы**
-  (`data/wiki/pages.json`), каждая с page/revid/url/[WIKI]; 2 страницы
-  в `data/wiki/unparsed/pages.json`. Скрытые статы не выдумывались.
-- OneDrive автора: `isAuthenticated:false`, скачивание не выполнено.
+- Fandom: **3613** страниц = **817 non-File + 2796 File**. Все **817
+  non-File** сохранены с полной историей + HTML; 5 File тоже; все
+  **2796 File-описаний** сохранены (последняя ревизия). [DERIVED]
+  подтверждена. [RUN]
+- TFWiki: **8** FTF-страниц с полной историей + HTML.
+- Картинки: **694/2752**; **209** ошибок (в основном 403, без обхода).
+  Manifest **5154** записи; state продолжается.
+- Разбор: **44 бота** + **252 страницы**. Матрица качества
+  `data/wiki/bot_matrix.json`: 43 — star HP/Attack, 38 — rank/level
+  tables, 38 — abilities, 37 — ability rank tables, 40 — signature,
+  39 — signature tables, 41 — special attacks, 1 — synergy.
+- ID map `data/wiki/id_map.json`: 59 client packs = 52 bot packs + 7
+  Sharkticon variants; 44 wiki stat pages; 5 wiki-only (Chromia, Dead End,
+  Optimus Prime, Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
+- Версии `data/wiki/versions.json` + `versions/`: cutoff
+  `2023-01-13T23:59:59Z`; 296 страниц; 96 изменённых; 11 созданных после
+  cutoff (включая Netflix-страницы). as_of и latest лежат отдельно.
+- OneDrive автора `isAuthenticated:false`; не скачивался.
 - Отчёт: `COVERAGE_WIKI.md`, вопросы: `OPEN_QUESTIONS.md`.

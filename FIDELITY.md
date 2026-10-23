@@ -99,3 +99,10 @@
 даёт NRE в `PrefightScreenPresentation.GetNewScale(HeroData robot)`.
 `/matches/activate-match` не вызван; бой **0% подтверждён**.
 [RUN] `work/read_prefight_state.py`, logcat 14:35/14:46.
+
+**2026-10-23, team:** `QuestUserInfo.team` — словарь, внутри
+`List<QuestUserHero>`; ключ = blueprint, значение: `hp` (float,
+абсолютное), `pi`, `sig_lvl`, `stat_mods`, `sig_mods`. `level/rank/max_hp`
+в `QuestUserHero` нет. `TeamIsKnockedOut` (`0x1181DC8`) при count 0
+возвращает true; память после попытки 3: `currentBattleId=battle1`,
+`localPlayer` есть, `team` count 0. `/matches/activate-match` не вызван.

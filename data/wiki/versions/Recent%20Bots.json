@@ -1,0 +1,26 @@
+{
+ "page": "Recent Bots",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Recent_Bots",
+ "latest_revid": 11261,
+ "latest_timestamp": "2026-02-15T11:00:39Z",
+ "as_of_revid": 8359,
+ "as_of_timestamp": "2021-01-05T05:57:41Z",
+ "created_after_cutoff": false,
+ "changed": true,
+ "headings_added": [],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "Is Transformers: Forged to Fight officially Dead?",
+  "Why Was Transformers Forged To Fight Abandoned?"
+ ],
+ "as_of_content": "they   a good   bots    and   a want to play the game",
+ "latest_content": "Currently there's aren't any new bots for now!\n\nSources:\nIs Transformers: Forged to Fight officially Dead?\nWhy Was Transformers Forged To Fight Abandoned?",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "is transformers",
+   "as_of": null,
+   "latest": "Forged to Fight officially Dead?"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "page": "Tutorial/Getting Started With the Game's Unity Files and Assets",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Tutorial/Getting_Started_With_the_Game%27s_Unity_Files_and_Assets",
+ "latest_revid": 10747,
+ "latest_timestamp": "2023-01-14T03:49:12Z",
+ "as_of_revid": null,
+ "as_of_timestamp": null,
+ "created_after_cutoff": true,
+ "changed": true,
+ "headings_added": [],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "# Download the .APK from any APK website. (I recommend  https://transformers-forged-to-fight.en.uptodown.com/android) Be careful and use common sense and avoid fishy links and sites."
+ ],
+ "as_of_content": "",
+ "latest_content": "The online servers may be gone, but the gigabytes that remain are the source files that the game installer puts onto a device. This basic guide will tell you how to access Unity 3D models and files that make up each Bot, modules and relics, the planet landscape map, and the battle stages.\n\n# Download the .APK from any APK website. (I recommend  https://transformers-forged-to-fight.en.uptodown.com/android) Be careful and use common sense and avoid fishy links and sites.\n# Right click the .apk and rename the file extension .apk to .zip.\n# Extract the .zip file to a folder with an appropriate program.\n# Download the Unity Asset Bundle Extractor (UABE)  https://github.com/SeriousCache/UABE/releases\n# Open \"AssetBundleExtractor.exe\"\n# In the converted apk folder, look for the \"assetpack\" folder, which is in the \"assets\" folder. Depending on the version the location may vary. Version 9.2 has it in the \"default\" folder.\n## The directory string string should like: \\assets\\assetpack\\\n# On the UABE select \"Open\" from the File navbar and find an .assetbundle file in one of the several character and prop-named odr folders. It will then prompt you to \"select a decompression output directory\",\n##Be sure to select the odr folders in the \"assetpack\" folder, The identical-named odr folders outsdie of it have toc.text (Table of Contents)\n# Expand the files and components now in the UABE and select File ID #2.\n# There are hundreds of elements that make up a playable game character, it may be easier to sort them by type by clicking \"Type\" on the top bar.\n# Certain file types can be exported with the \"Plugins\" button into readable files, the easiest thing to do and play with if you don't know anything about Unity programming.\n## \"Mesh\" can be exported as an obj. or .dae file, which can be opened in Blender or even Window computers' default 3D Viewer.\n## \"AudioClip\" can be exported as .wav files, to get those cool sound effects of punching and blasting on the battlefield.\n## \"Texture2D\" can be exported as .png or .tga (True Graphics Adaptor). How to wrap flat images around a gray 3D object is another complicated matter...\n# If you know or are learning Unity game programming, in theory you could code all those pieces together and recreate a Bot's scripted animation sequences as a video or interactive game, or explore the landscape of Chicago or the Sea of Rust to your leisure. The former players would appreciate an expert bringing back a little bit our our childhood mobile gaming.\n# Check out this Unity Modding guide video on YouTube: https://www.youtube.com/watch?v=4sagYiG2ibo",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "check out this unity modding guide video on youtube: https://www.youtube.com/watch?v",
+   "as_of": null,
+   "latest": "4sagYiG2ibo"
+  },
+  {
+   "field": "download the .apk from any apk website. (i recommend  https",
+   "as_of": null,
+   "latest": "//transformers-forged-to-fight.en.uptodown.com/android) Be careful and use common sense and avoid fishy links and sites."
+  },
+  {
+   "field": "download the unity asset bundle extractor (uabe)  https",
+   "as_of": null,
+   "latest": "//github.com/SeriousCache/UABE/releases"
+  },
+  {
+   "field": "the directory string string should like",
+   "as_of": null,
+   "latest": "\\assets\\assetpack\\"
+  }
+ ]
+}

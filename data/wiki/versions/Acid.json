@@ -1,0 +1,25 @@
+{
+ "page": "Acid",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Acid",
+ "latest_revid": 10915,
+ "latest_timestamp": "2024-02-02T00:24:45Z",
+ "as_of_revid": null,
+ "as_of_timestamp": null,
+ "created_after_cutoff": true,
+ "changed": true,
+ "headings_added": [],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "[[Category:Abilities]]"
+ ],
+ "as_of_content": "",
+ "latest_content": "{{Stub}}\n\nAcid is a damaging debuff much like [[Bleed]] and [[Burn]].\n[[Category:Abilities]]",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "category",
+   "as_of": null,
+   "latest": "Abilities"
+  }
+ ]
+}

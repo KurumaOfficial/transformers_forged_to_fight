@@ -1,62 +1,63 @@
 # COVERAGE_WIKI
 
-## Fandom
+## Fandom archive
 
-- Enumerated pages: **3613** (non-File **817** + File **2796**).
-- Saved with full revision history + HTML: **822** = **817 non-File + 5 File**.
-  This confirms the [DERIVED] hypothesis: all non-File pages are saved.
-- Saved File descriptions (latest revision): **2796/2796** in
+- Enumerated: **3613** = **817 non-File + 2796 File**.
+- Full history + HTML: **822** = **817 non-File + 5 File**.
+  The [DERIVED] hypothesis is confirmed: every non-File page is saved.
+- File descriptions (latest revision): **2796/2796** in
   `archive/wiki/raw/fandom/file_descriptions/`.
-- Revisions stored: **8985** (Fandom+TFWiki full-history pages); HTML snapshots: **830**.
+- Revisions stored: **8985**; HTML snapshots: **830**.
 - allredirects=20, allcategories=80, allimages=2752.
-- Image binaries downloaded: **523/2752** (maps, missions, UI, tables first;
-  portraits/icons last). 403s are recorded; 24 total errors.
-- Manifest entries: **4983**; state: `archive/wiki/state.json`.
+- Image binaries: **694/2752**; **209** errors
+  (mostly static.wikia 403, no bypass). Remaining URLs are resumable.
+- Manifest: **5154** entries; state: `archive/wiki/state.json`.
 
-## TFWiki (mirror)
+## TFWiki mirror
 
-- Whole wiki reports 139066 pages; only FTF-related pages were taken.
-- Saved: **8** pages with full history + HTML:
-  `Forged to Fight`, `Transformers: Forged to Fight`, `Crossfire`,
+- 8 FTF pages with full history + HTML: `Forged to Fight`,
+  `Transformers: Forged to Fight`, `Crossfire`,
   `Crossfire (Forged to Fight)`, `Generations`, `Prime Suspect`,
   `Magnus Opus`, `Crossfire (Prime)`.
 
 ## Extensions
 
-- Fandom: Scribunto=yes, Cargo=no. `Module:` (ns 828) has 0 pages.
+- Fandom: Scribunto=yes, Cargo=no; `Module:` (ns 828) = 0 pages.
 - TFWiki: Scribunto=no, Cargo=no.
 
-## Parsed game data (`data/wiki/`)
+## Parsed game data
 
-- **44 bots** in `data/wiki/bots.json`, each with page/revid/url:
-  infobox, star stats, rank/level tables, abilities, signature table,
-  special attacks, synergy.
-- **252 other content pages** in `data/wiki/pages.json` (generic sections + tables):
-  classes, status effects, modules, relics, crystals, currencies, missions,
-  events, story, arena, raids, away missions, etc.
-- Every entry has source page/revid/url and `[WIKI]`.
-- **2 content pages unparsed**:
-  - `Sharkticon` — generic NPC, no numeric stat table;
-  - `Transformers: Forged to Fight Wiki:Layouts/Bot` — layout template.
-  See `data/wiki/unparsed/pages.json`.
-- File/Template/Category/User/Talk/Message Wall/Thread pages are archived but
-  not treated as game data; they are metadata.
+- **44 bots** — `data/wiki/bots.json`: infobox, star HP/Attack/rating,
+  rank/level tables, abilities, signature tables, special attacks,
+  synergy; source page/revid/url/[WIKI].
+- **252 pages** — `data/wiki/pages.json`: classes, status effects, mods,
+  relics, crystals, currencies, missions, events, story, arena, raids,
+  away missions; generic sections/tables with source.
+- **Quality matrix** — `data/wiki/bot_matrix.json`: 44
+  bots; counts: {"star_health_attack": 43, "rank_level_table": 38, "level_values": 38, "abilities": 38, "ability_rank_table": 37, "signature": 40, "signature_table": 39, "special_attacks": 41, "synergy": 1}.
+  Missing lists are in `matrix["missing"]`.
+- **ID map** — `data/wiki/id_map.json`: **59**
+  client packs (**52** bots +
+  **7** Sharkticon variants), **44** wiki
+  stat pages; 0 client packs without a
+  wiki page. Wiki-only: Chromia, Dead End, Optimus Prime, Soundblaster/Tactician, Starscream.
+- **Version sets** — `data/wiki/versions.json` + `versions/<page>.json`:
+  cutoff **2023-01-13T23:59:59Z**; 296 pages analyzed;
+  **96** changed; **11**
+  created after cutoff: Acid, Bots Than Should Be A Different Bot Class Type, Bots That Don't Act Like Their Bot Class Type, Dead End, Progression, Proving Grounds, Showcase, Soundblaster, Story/Netflix, Transformers: Forged to Fight (Netflix), Tutorial/Getting Started With the Game's Unity Files and Assets.
+- **Unparsed** — `data/wiki/unparsed/pages.json`: Sharkticon (no numeric
+  table), layout template, and metadata namespaces. File descriptions are
+  archived but not parsed as game data.
 
-## Not closed / caveats
+## Caveats
 
-- Images: 523/2752 binaries; remaining URLs are resumable. Some static.wikia
-  403s remain; no bypass was used.
-- Hidden base stats (crit, armor, block) are absent from many wiki bot pages;
-  they are **not** invented. Only values present in tables/text are stored.
-- Parser is regex-based; unusual tables may be partial. Raw wikitext remains
-  authoritative and untouched.
-- OneDrive collection link is auth-gated (`isAuthenticated:false`); not downloaded.
+- Hidden base stats (crit/armor/block) are often absent from wiki tables;
+  they are not invented.
+- Regex parser may miss unusual tables; raw wikitext is authoritative.
+- OneDrive collection is auth-gated (`isAuthenticated:false`); not downloaded.
+- Backup ZIP path/hash are below; regenerate after future downloads.
 
 ## Backup
 
 - ZIP: `archive/TFTF_wiki_archive_2026-10-23.zip`
-- Size: `27,355,942` bytes
-- SHA256: `7220eabce902e552ed2bc6d86ca9d55477baeede6802ab9fd656306682be1aaf`
-- Contains the whole `archive/wiki` tree (raw revisions, HTML, File
-  descriptions, 523 image binaries, state, manifest, meta). `data/wiki/*.json`
-  and docs are outside this zip.
+- SHA256: `040255c1d5714b4510493e87de4e323674864f5d54436c776d190c12285d4e18`

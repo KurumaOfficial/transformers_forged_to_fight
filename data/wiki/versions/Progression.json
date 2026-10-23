@@ -1,0 +1,35 @@
+{
+ "page": "Progression",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Progression",
+ "latest_revid": 10861,
+ "latest_timestamp": "2023-06-10T00:39:13Z",
+ "as_of_revid": null,
+ "as_of_timestamp": null,
+ "created_after_cutoff": true,
+ "changed": true,
+ "headings_added": [
+  "Kabam",
+  "Netflix"
+ ],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "'''Progression''' in ''Forged to Fight'' was completely different prior to its second wind on Netflix.",
+  "Exploring [[Story]] missions yielded a lot of XP to reach level 30 by the time you wrapped up Act Two or Three (faster if you've got an XP [[Boosts|boost]].",
+  "[[Gold]] could be earned by progressing through missions, putting Bots on your [[base]], Gold, Daily, 4-Hour, or [[Arena]] [[Crystal]]s, helping your fellow Commanders in your [[Alliance]], Daily Deals, duplicated Bots and Mods, and [[Forge|forging]]."
+ ],
+ "as_of_content": "",
+ "latest_content": "'''Progression''' in ''Forged to Fight'' was completely different prior to its second wind on Netflix.\n\n== Kabam ==\nExploring [[Story]] missions yielded a lot of XP to reach level 30 by the time you wrapped up Act Two or Three (faster if you've got an XP [[Boosts|boost]].\n\n[[Gold]] could be earned by progressing through missions, putting Bots on your [[base]], Gold, Daily, 4-Hour, or [[Arena]] [[Crystal]]s, helping your fellow Commanders in your [[Alliance]], Daily Deals, duplicated Bots and Mods, and [[Forge|forging]].\n\n[[Energon]], while a \"hard currency\" (as in you have to pay real money for them), could still be earned through gameplay.\n\n[[Ore-13]] could be earned through gameplay and forging Bots and [[Spark]]s could either also be obtained through such, or buying bundles with real money.\n\nYou get Bots by spinning [[Crystal/Bot Crystals|Bot Crystal]]s - and most of the time, you wouldn't get the Bot you've wanted. And if you wanted a specific Bot, especially when new, you'd have to drop some real-life money to buy Energon to get those Crystals, and even then, you wouldn't get the Bot anyway. In the 2020s, [[Bot Chip]]s became abundant, eventually becoming the main currency of the game, replacing the single-Bot specific Bot Chips, which were all converted. Then, say hello to [[Titan Fragment]]s, which were currency earned in [[Alliance Mission]]s to get the most exclusive Bots, like [[Megatronus]].\n\nAll that, until...\n\n== Netflix ==\n...Kabam made progression significantly easier* (kinda) in the Netflix release of the game.\n\nThis time, '''you can get Bots all through spending Bot Chips,''' with most Bots being unavailable until a set release (re: ''Beast Wars'' Bots). Working up the order in [[Story/Netflix|Story]] Missions - completing Act One, Chapter Two gives a 2-Star [[Dirge]], Three 2-Star [[Motormaster]], completing that Act gives you a 3-Star [[Dead End]], Act Two, Act Two a 3-Star [[Shockwave]], completing that Act a 4-Star [[Megatron]], the list goes on!\n\nAll T2 and T3 Class Sparks are now obtainable with Energon that you get '''completely through gameplay'''! But Alpha Sparks are still rather difficult to come by.\n\nOre-13 remains obtainable through gameplay, as is Gold.\n[[Category:Gameplay]]",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "category",
+   "as_of": null,
+   "latest": "Gameplay"
+  },
+  {
+   "field": "this time, you can get bots all through spending bot chips, with most bots being unavailable until a set release (re",
+   "as_of": null,
+   "latest": "Beast Wars Bots). Working up the order in Story/Netflix|Story Missions - completing Act One, Chapter Two gives a 2-Star Dirge, Three 2-Star Motormaster, completing that Act gives you a 3-Star Dead End, Act Two, Act Two a 3-Star Shockwave, completing that Act a 4-Star Megatron, the list goes on!"
+  }
+ ]
+}

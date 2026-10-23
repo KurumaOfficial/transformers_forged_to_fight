@@ -1,0 +1,19 @@
+{
+ "page": "Melee Buff",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Melee_Buff",
+ "latest_revid": 11117,
+ "latest_timestamp": "2024-09-27T20:22:32Z",
+ "as_of_revid": 7887,
+ "as_of_timestamp": "2020-09-14T04:50:13Z",
+ "created_after_cutoff": false,
+ "changed": true,
+ "headings_added": [],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "A Melee Buff is an ability that increases the damage of melee attacks. Sometimes it's temporary, circumstantial (See Tanturm), or permanent. They are most commonly found in Brawler bots."
+ ],
+ "as_of_content": "Melee Buff is an ability that...\n\n== Bots with {ability} ==",
+ "latest_content": "A Melee Buff is an ability that increases the damage of melee attacks. Sometimes it's temporary, circumstantial (See Tanturm), or permanent. They are most commonly found in Brawler bots. \n\n== Bots with {ability} ==\n● Ironhide \n\n● Motormaster \n\n● Sunstreaker \n\n● Tantrum\n\n● MV1 (Netflix excluded)\n\n● Grindor (Netiflix Excluded)\n\n● Optimus Primal\n\n● Thundercracker\n\n● Brawler Sharkticon",
+ "tag": "[WIKI]",
+ "changed_values": []
+}

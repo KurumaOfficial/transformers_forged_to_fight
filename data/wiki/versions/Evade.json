@@ -1,0 +1,40 @@
+{
+ "page": "Evade",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Evade",
+ "latest_revid": 10828,
+ "latest_timestamp": "2023-05-16T06:24:56Z",
+ "as_of_revid": 7813,
+ "as_of_timestamp": "2020-08-03T04:18:44Z",
+ "created_after_cutoff": false,
+ "changed": true,
+ "headings_added": [
+  "Bots"
+ ],
+ "headings_removed": [
+  "Bots with this buff"
+ ],
+ "new_interesting_lines": [
+  "'''Evasion''' buffs are abilities that makes a Bot automatically dodge away from attacks. Evade can be attack specific: '''Evade Melee''',  '''Evade''' '''Ranged,''' and '''Evade Special''' , in addition to Evade All. Some bots have instances of Evading instantly without buffs.",
+  "* [[Starscream]] (instant heavy melee, synergy ranged)"
+ ],
+ "as_of_content": "'''Evasion''' buffs are abilities that makes a Bot automatically dodge attacks. Three types of Evade exist: '''Melee Evade''' and '''Ranged Evade''', in addition to a '''general Evade'''.\n\n== Bots with this buff ==\n*All [[Scout]]s have this buff in one way or another.\n* [[Bumblebee (DOTM)]] is the only non-Scout to have an Evade buff.\n[[Category:Buffs]]\n[[Category:Gameplay]]",
+ "latest_content": "[[File:Buff Evade Melee.png|thumb]]\n'''Evasion''' buffs are abilities that makes a Bot automatically dodge away from attacks. Evade can be attack specific: '''Evade Melee''',  '''Evade''' '''Ranged,''' and '''Evade Special''' , in addition to Evade All. Some bots have instances of Evading instantly without buffs.\n\n== Bots ==\n\n* [[Arcee]] (instant ranged)\n* [[Barricade]] (all)\n* [[Bumblebee (DOTM)]] (melee or ranged) \n* [[Bumblebee]] (melee)\n* [[Cheetor]] (ranged)\n* [[Jazz]] (all)\n* [[Kickback]] (instant heavy)\n* [[Prowl]] (all)\n* [[Sideswipe]] (melee)\n* [[Skywarp]] (specials)\n* [[Starscream]] (instant heavy melee, synergy ranged)\n* [[Sunstreaker]] (melee)\n\nSome modules like the [[Nightbird's Mark]] can add evade buff to any bot.\n\n[[Category:Buffs]]\n[[Category:Gameplay]]",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "evasion buffs are abilities that makes a bot automatically dodge attacks. three types of evade exist",
+   "as_of": "Melee Evade and Ranged Evade, in addition to a general Evade.",
+   "latest": null
+  },
+  {
+   "field": "evasion buffs are abilities that makes a bot automatically dodge away from attacks. evade can be attack specific",
+   "as_of": null,
+   "latest": "Evade Melee,  Evade Ranged, and Evade Special , in addition to Evade All. Some bots have instances of Evading instantly without buffs."
+  },
+  {
+   "field": "file",
+   "as_of": null,
+   "latest": "Buff Evade Melee.png|thumb"
+  }
+ ]
+}

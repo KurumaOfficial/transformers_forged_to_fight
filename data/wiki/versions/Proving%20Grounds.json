@@ -1,0 +1,39 @@
+{
+ "page": "Proving Grounds",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Proving_Grounds",
+ "latest_revid": 10859,
+ "latest_timestamp": "2023-06-10T00:18:55Z",
+ "as_of_revid": null,
+ "as_of_timestamp": null,
+ "created_after_cutoff": true,
+ "changed": true,
+ "headings_added": [
+  "Missions",
+  "Set One: [[Cheetor]]"
+ ],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "'''Proving Grounds''' is a set of [[Special Mission]]s in the [[Transformers: Forged to Fight (Netflix)|Netflix release]] of the game. This helps Commanders familiarize - or reacquaint - themselves with the Beast Bots. [[wp:Transformers: Rise of the Beasts|This is definitely appropiate considering this film's concurrent release!]]",
+  "Each mission will consume '''3''' [[File:Energy.png|15px|link=Energy]]. For each, all 5-Star Bots have been ranked up 50/50 with their Sigs at level 100."
+ ],
+ "as_of_content": "",
+ "latest_content": ": ''Not to be confused with the similar'' Beast Wars ''mission [[Proving Fields|Proving '''Fields''']]''\n'''Proving Grounds''' is a set of [[Special Mission]]s in the [[Transformers: Forged to Fight (Netflix)|Netflix release]] of the game. This helps Commanders familiarize - or reacquaint - themselves with the Beast Bots. [[wp:Transformers: Rise of the Beasts|This is definitely appropiate considering this film's concurrent release!]]\n\n== Missions ==\nEach mission will consume '''3''' [[File:Energy.png|15px|link=Energy]]. For each, all 5-Star Bots have been ranked up 50/50 with their Sigs at level 100.\n\nCompletion of each mission will yield 300 [[Bot Chip]]s.\n\n=== Set One: [[Cheetor]] ===\n'''Enemies:'''\n* [[Optimus Primal]]\n* [[Rhinox]]\n* [[Dinobot]]\n\n[[Category:Special Missions]]",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "category",
+   "as_of": null,
+   "latest": "Special Missions"
+  },
+  {
+   "field": "each mission will consume 3 file:energy.png|15px|link",
+   "as_of": null,
+   "latest": "Energy. For each, all 5-Star Bots have been ranked up 50/50 with their Sigs at level 100."
+  },
+  {
+   "field": "proving grounds is a set of special missions in the transformers",
+   "as_of": null,
+   "latest": "Forged to Fight (Netflix)|Netflix release of the game. This helps Commanders familiarize - or reacquaint - themselves with the Beast Bots. wp:Transformers: Rise of the Beasts|This is definitely appropiate considering this film's concurrent release!"
+  }
+ ]
+}

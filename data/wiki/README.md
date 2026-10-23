@@ -14,3 +14,12 @@ untouched).
 
 Missing cells stay missing. Hidden base stats (crit, armor, block) are not
 invented; only values present in the saved wikitext/tables are stored.
+
+## Additional analysis (2026-10-23)
+
+- `bot_matrix.json` — 44 bots x fields, counts and missing lists.
+- `id_map.json` — 59 client packs (52 bots + 7 Sharkticon variants) <-> wiki
+  pages; 44 stat pages; 5 wiki-only.
+- `versions.json` + `versions/<page>.json` — as_of 2023-01-13 and latest
+  revision per page; 96 changed, 11 created after cutoff.
+- `unparsed/pages.json` — pages not structurally parsed.

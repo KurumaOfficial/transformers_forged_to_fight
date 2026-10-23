@@ -1,0 +1,23 @@
+{
+ "page": "Tactician",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Tactician",
+ "latest_revid": 11298,
+ "latest_timestamp": "2026-05-03T16:56:52Z",
+ "as_of_revid": 8712,
+ "as_of_timestamp": "2021-08-01T17:03:35Z",
+ "created_after_cutoff": false,
+ "changed": true,
+ "headings_added": [],
+ "headings_removed": [],
+ "new_interesting_lines": [],
+ "as_of_content": "{{Class_Template|number_of_champions = 8|non-playable = 0|class_bonus = [[Brawler]]|weakness = [[Demolition]]|image1 = File:Class Use Tactician.png}}'''Tactician''' is one of six Bot Classes. It has a Class Bonus against [[Brawler]], but is weak to [[Demolitions]].\n\n==Description==\n''Tactician Bots' strong synergies and master strategies help them adapt during a fight to turn their enemies' strength against them.''\n\n==Class Bonus==\n*Tacticians' anti-Armor abilities like [[Armor Break]] help them when facing [[Brawler]] Bots.\n\n==List of Tactician Bots==\n*[[Optimus Prime]]\n*[[Starscream]]\n*\n*[[Bumblebee (DOTM)]]\n*[[Ultra Magnus]] \n*\n*[[Dinobot]] \n*\n*[[Megatron]]  \n*\n*[[Sharkticon]] \n*[[Cyclonus]] \n*\n*[[Nemesis Prime]] \n*\n*\n[[Category:Class]]\n[[Category:Tactician]]",
+ "latest_content": "{{Class_Template|number_of_champions = 11|non-playable = 0|class_bonus = [[Brawler]]|weakness = [[Demolition]]|image1 = File:Class Use Tactician.png}}'''Tactician''' is one of six Bot Classes. It has a Class Bonus against [[Brawler]], but is weak to [[Demolitions]].\n\n==Description==\n''Tactician Bots' strong synergies and master strategies help them adapt during a fight to turn their enemies' strength against them.''\n\n==Class Bonus==\n*Tacticians' anti-Armor abilities like [[Armor Break]] help them when facing [[Brawler]] Bots.\n\n==List of Tactician Bots==\n*[[Bumblebee (DOTM)]]\n*[[Cyclonus]]\n*[[Dinobot]]\n*[[Megatron]]\n*[[Nemesis Prime]]\n*[[Optimus Prime]]\n*[[Rodimus Prime]]\n*[[Soundblaster/Tactician|Soundblaster]]\n*[[Starscream]]\n*[[Ultra Magnus]]\n*[[Sharkticon#Sharkticon Tactician|Sharkticon Tactician]]\n\n{{Tactician}}\n[[Category:Class]]\n[[Category:Tactician]]\n[[Category:Bots]]",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "{{class_template|number_of_champions",
+   "as_of": "8|non-playable = 0|class_bonus = Brawler|weakness = Demolition|image1 = File:Class Use Tactician.png}}Tactician is one of six Bot Classes. It has a Class Bonus against Brawler, but is weak to Demolitions.",
+   "latest": "11|non-playable = 0|class_bonus = Brawler|weakness = Demolition|image1 = File:Class Use Tactician.png}}Tactician is one of six Bot Classes. It has a Class Bonus against Brawler, but is weak to Demolitions."
+  }
+ ]
+}

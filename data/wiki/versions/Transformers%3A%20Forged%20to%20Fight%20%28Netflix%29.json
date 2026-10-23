@@ -1,0 +1,79 @@
+{
+ "page": "Transformers: Forged to Fight (Netflix)",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Transformers%3A_Forged_to_Fight_%28Netflix%29",
+ "latest_revid": 11299,
+ "latest_timestamp": "2026-05-10T05:29:56Z",
+ "as_of_revid": null,
+ "as_of_timestamp": null,
+ "created_after_cutoff": true,
+ "changed": true,
+ "headings_added": [
+  "Differences",
+  "Discord Announcement",
+  "Similarities"
+ ],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "'''''Transformers: Forged to Fight''''' was made available on the Netflix Games streaming service. There are several key differences between this version of the game and the original at time of closure, and this page will document such changes as they come.",
+  "* [https://forums.transformersforgedtofight.com/discussion/6270/requirements-guide This requirements guide ''should'' apply here.]",
+  "This is a completely new version of Transformers: Forged to Fight, and as such, no progress will be carried over, but we hope that you’ll find excitement in starting your adventure from the start once again!",
+  "This new version of Transformers: Forged to Fight revives the award-winning 3D fighting game that our Commanders knew and loved, with a re-imagined story full of new twists and adventures. The game is included with all Netflix memberships without ads or in-app purchases.",
+  "This new version of the game also introduces two brand new bots with completely new animations and abilities, Dead End and Chromia!",
+  "Transformers Fans, prepare to roll out once again! Transformers: Forged to Fight is returning to mobile devices today, exclusively for Netflix members!"
+ ],
+ "as_of_content": "",
+ "latest_content": "[[File:Netflix Official Game Trailer thumbnail.jpg|thumb|300x300px]]\nOn May 10, 2023,\n\n'''''Transformers: Forged to Fight''''' was made available on the Netflix Games streaming service. There are several key differences between this version of the game and the original at time of closure, and this page will document such changes as they come.\n\n== Discord Announcement ==\nLight our Darkest Hour!\n\nPrepare to return to New Quintessa! \n\nTransformers Fans, prepare to roll out once again! Transformers: Forged to Fight is returning to mobile devices today, exclusively for Netflix members! \n\nJoin Optimus Prime, Bumblebee Marissa Fairborne, and many of your favorite Bots for a new adventure on New Quintessa. \n\nThis new version of Transformers: Forged to Fight revives the award-winning 3D fighting game that our Commanders knew and loved, with a re-imagined story full of new twists and adventures. The game is included with all Netflix memberships without ads or in-app purchases. \n\nThis new version of the game also introduces two brand new bots with completely new animations and abilities, Dead End and Chromia! \n\nNetflix members can download the game today: https://netflix.com/game/81633034 \n\n'''To answer some questions that you may have:''' <br>\n''Will my progress carry over?'' <br>\nThis is a completely new version of Transformers: Forged to Fight, and as such, no progress will be carried over, but we hope that you’ll find excitement in starting your adventure from the start once again! \n\n''If there are no Ads or In-App Purchases, how will I obtain Energon?'' <br>\nYou can earn Energon by playing various modes in-game. \n\n''How do I get Bots?'' <br>\nYou can earn bots by completing content, from Crystals, or by using Bot chips, which you also earn by playing! \n\n''Will every Bot be returning?''<br>\nUnfortunately, not every Bot will be making a comeback in the new game, but keep an eye out for some more old favourites coming back in the future!\n\n== Similarities ==\n* The game seems to be based on the last version of the game before it was delisted.\n* [https://forums.transformersforgedtofight.com/discussion/6270/requirements-guide This requirements guide ''should'' apply here.]\n\n== Differences ==\n* You need an existing Netflix account to play.\n* No progress is carried over.\n* The biggest change yet is the removal of [[:Category:Cinematic|all Cinematic Bots]] due to licensing; for reference, [[Hound|the last Bayverse bot]] was released on February 8, 2018 ('''five''' years ago). Such content will be marked with the appropiate template on their respective pages. However, the Cinematic backdrops are still present.  the bayverse might come back\n* However, the announcement on the F2F Discord seems to suggest more \"old favorites\" popping in.\n* As some [[Story]] elements revolve around the Bayverse Bots, [[Story/Netflix|such will be changed.]] There have been no confirmation whether [[Rulers of Kaon]] and [[Revenge of the King]] will return... yet.\n* No in-app purchases for anything anymore, nor ads. You earn [[Energon]] and [[Bot Chip]]s (this is now the main currency of the game) by playing the game. Think of this progression scheme as a mixture of Definitive Edition ''Marvel's Avengers'' and post-2018 ''Battlefront II''. This means you'll be getting an excess of '''500 Energon!''' after completing Act 1.\n* Daily Crystals no longer give bots\n* Most Bots are obtainable through Bot Chips.\n* So are most Bot upgrade materials. Yes, '''you can get T3 Class and Alpha Sparks with Energon.'''\n* A few of the Bots' Classes were changed to offset balance issues due to the Cinematic Bots being removed: [[Windblade]] is now a [[Warrior]], [[Skywarp]] a [[Scout]], [[Soundblaster]] a [[Demolitions]], and [[Chromia]] a [[Warrior]] (from a Tech bot which was unreleased).",
+ "tag": "[WIKI]",
+ "changed_values": [
+  {
+   "field": "[https",
+   "as_of": null,
+   "latest": "//forums.transformersforgedtofight.com/discussion/6270/requirements-guide This requirements guide should apply here.]"
+  },
+  {
+   "field": "a few of the bots' classes were changed to offset balance issues due to the cinematic bots being removed",
+   "as_of": null,
+   "latest": "Windblade is now a Warrior, Skywarp a Scout, Soundblaster a Demolitions, and Chromia a Warrior (from a Tech bot which was unreleased)."
+  },
+  {
+   "field": "file",
+   "as_of": null,
+   "latest": "Netflix Official Game Trailer thumbnail.jpg|thumb|300x300px"
+  },
+  {
+   "field": "netflix members can download the game today",
+   "as_of": null,
+   "latest": "https://netflix.com/game/81633034"
+  },
+  {
+   "field": "the biggest change yet is the removal of",
+   "as_of": null,
+   "latest": "Category:Cinematic|all Cinematic Bots due to licensing; for reference, Hound|the last Bayverse bot was released on February 8, 2018 (five years ago). Such content will be marked with the appropiate template on their respective pages. However, the Cinematic backdrops are still present.  the bayverse might come back"
+  },
+  {
+   "field": "this is a completely new version of transformers",
+   "as_of": null,
+   "latest": "Forged to Fight, and as such, no progress will be carried over, but we hope that you’ll find excitement in starting your adventure from the start once again!"
+  },
+  {
+   "field": "this new version of transformers",
+   "as_of": null,
+   "latest": "Forged to Fight revives the award-winning 3D fighting game that our Commanders knew and loved, with a re-imagined story full of new twists and adventures. The game is included with all Netflix memberships without ads or in-app purchases."
+  },
+  {
+   "field": "to answer some questions that you may have",
+   "as_of": null,
+   "latest": "<br>"
+  },
+  {
+   "field": "transformers",
+   "as_of": null,
+   "latest": "Forged to Fight was made available on the Netflix Games streaming service. There are several key differences between this version of the game and the original at time of closure, and this page will document such changes as they come."
+  },
+  {
+   "field": "transformers fans, prepare to roll out once again! transformers",
+   "as_of": null,
+   "latest": "Forged to Fight is returning to mobile devices today, exclusively for Netflix members!"
+  }
+ ]
+}

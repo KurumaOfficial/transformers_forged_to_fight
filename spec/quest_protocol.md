@@ -528,3 +528,115 @@ type:"boss"}]`.
 и `hero`; иначе логирует `No battle id!` / `No hero!`. Префайт —
 наблюдаемый путь к этому вызову, но кнопка FIGHT не дошла до него
 из-за пустой команды. [STATIC]+[RUN]
+
+## 2h. `team` и проверка «ALL KNOCKED OUT» (2026-10-23)
+
+### 2h.1 `QuestUserInfo.team`
+
+`QuestUserInfo` (`0x103CFF4`) читает `team` через `Dot.Object`
+(`0x103D5D8`), то есть **JSON-словарь**, и создаёт внутренний
+`List<QuestUserHero>` (`+0x68`). Не массив.
+
+`QuestUserHero..ctor` (`0x103CC70`) получает:
+
+- `x1` — **ключ словаря**, он же blueprint/ID героя (`+0x10`);
+- `x2` — значение-словарь.
+
+Ключи значения (`Dot`):
+
+| Ключ | Поле | Тип |
+|---|---|---|
+| `hp` | `HP` `+0x18` | `float`, абсолютное HP |
+| `pi` | `HeroRating` `+0x1C` | `int` |
+| `sig_lvl` | `SigLvl` `+0x20` | `int` |
+| `stat_mods` | `StatMods` `+0x28` | массив строк |
+| `sig_mods` | `SigMods` `+0x30` | массив строк |
+
+В `QuestUserHero` **нет** полей `level`, `rank`, `max_hp`; максимум HP
+приходит из `TeamData`/`HeroData`. `hp` — абсолютное, не доля: проверка
+ниже сравнивает его с `0.0`.
+
+### 2h.2 «ALL KNOCKED OUT»
+
+`PlayerMarker.TeamIsKnockedOut(List<QuestUserHero>)` — `RVA 0x1181DC8`:
+
+```text
+if list == null or list.Count < 1: return true
+for each hero:
+    if hero.HP > 0.0: return false
+return true
+```
+
+Строка локализации: `ID_UI_PREFIGHT_ALL_BOTS_KNOCKED_OUT`
+(`work/localization_all.json:7024`). Поэтому **count 0 = all knocked out**;
+это объясняет противоречие: память показывала `team` count 0, а экран —
+нокаут. [STATIC]
+
+### 2h.3 Память после попытки 3
+
+Снимок `work/read_prefight_state.py` после ответа с `team`-словарём:
+
+```text
+currentPos=(1,0)
+currentBattleId="battle1"
+localPlayer: name="Commander", strongestHero="bumblebee_cin_dotm"
+localPlayer.team: List, count 0
+```
+
+То есть `currentBattleId` разобран, `localPlayer` создан, но `team`
+остался пустым. Причина — не «нокаут» и не `currentBattleId`, а
+непринятый формат/тип значения `team` (проверка типа значения в
+`0x103D770`). Формат всё ещё не решён; `/matches/activate-match` не
+вызван. [RUN]
+
+### 2h.4 Обработчик FIGHT
+
+- `PreFightScreen.OnFight` — `RVA 0xE397BC`.
+- `PrefightScreenData.OnFight` — `RVA 0xE3E778` (реализация
+  `IPrefightDataProvider.OnFight`, slot 33).
+- `PrefightScreenData.GetCurrentTeam` (`0xE3D188`) и
+  `TeamData.GetHP` (`0x10E1AE4`) — источник HP для префайта;
+  `QuestUserHero` используется для маркера/нокаута, не для выбора
+  отображаемой команды.
+
+`ActiveQuest.ActivateMatch` (`0x10A0038`) прямых `BL` не имеет; вызов
+идёт через UI/делегат. Условия: непустые `progression.localPlayer.
+battleId` и `hero`; иначе `No battle id!` / `No hero!`. [STATIC]
+
+### 2h.5 Заглушка `/matches/activate-match`
+
+Первый вызов ещё не получен. `server/data/match_activate_response.json`
+остаётся **`[ASSUMED]`**: `matchId`, `matchType`, `seed`, `fighterData.
+enemyFighter` и вложенные `attributes`. Статически подтверждены только
+`FighterData` (`Id`, `PlayerName`, `PlayerTag`, `IsBoss`,
+`BaseAttributes`, `Attributes`, `Blueprint`, `SigLevel`, `AttackBonus`,
+`AIProfile`, `OverrideAIPersonality`, `TeamData`) и
+`BCGAttributeDataBase` (`HPMax`, `HPMaxBase`, `HP`, `Attack`,
+`AttackBase`, `Armor`, `CritChance`, `CritDamage`, `PerfectBlockChance`,
+`BlockProficiency`, `ManaGain`, `ManaStart`, `ResistMagic`,
+`ResistPhysical`, `StunTime`, `StunChance`, `HeroRating*`). Точный
+JSON-контракт ответа не подтверждён. [STATIC]+[ASSUMED]
+
+### 2h.6 Статика `match-*` (перед первым вызовом)
+
+- `QuestsMatchData` (`TypeDefIndex 12667`): `qid +0x10`, `battleId
+  +0x18`, `hero +0x20`; `.ctor` `0xD6C27C`; `addToRequest`
+  `0xD6C1C0`.
+- `MatchManager.ActivateMatch<QuestsMatchData>` — `0x11F1FD0`
+  (4-аргументная) / `0x11F1ED4` (3-аргументная); `MatchAPI.
+  ActivateMatch` — `0x11F14F8/0x11F1680`, `ActivateMatchHandler`
+  `0x11F1754`.
+- `FighterData` (`TypeDefIndex 8671`): `Id`, `PlayerName`, `PlayerTag`,
+  `IsBoss`, `BaseAttributes`, `Attributes`, `Blueprint`, `SigLevel`,
+  `AttackBonus`, `AIProfile`, `OverrideAIPersonality`, `TeamData`.
+- `BCGAttributeDataBase` (`TypeDefIndex 8303`): `StatMods`, `SigMods`,
+  `BuffMods`, `SpecialAttackCount`, `HPMax`, `HPMaxBase`, `HP`,
+  `Attack`, `AttackBase`, `Armor`, `CritChance`, `CritDamage`,
+  `PerfectBlockChance`, `BlockProficiency`, `ManaGain`, `ManaStart`,
+  `ResistMagic`, `ResistPhysical`, `StunTime`, `StunChance`,
+  `HeroRating`, `HeroRatingHP`, `HeroRatingAttack`, `HeroRatingHPBase`,
+  `HeroRatingAttackBase`.
+- Точный JSON-контракт ответа `/matches/activate-match` не подтверждён:
+  текущая заглушка в `server/data/match_activate_response.json` помечена
+  `[ASSUMED]`. Ключи `matchId`, `matchType`, `seed`, `fighterData` не
+  доказаны статикой. [STATIC]+[ASSUMED]

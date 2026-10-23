@@ -1,53 +1,47 @@
 # OPEN QUESTIONS
 
-## 1. Коллекция автора (изображения и файлы игры)
-
-Ссылка:
+## 1. Коллекция автора
 
 **https://1drv.ms/u/s!ApD2f3dIXZ_7yjf4KMB9YQzgWQCG?e=jiLxKN**
+(`User:KRBrickBot`, revid 10874).
 
-Источник: `User:KRBrickBot`, Fandom, revid `10874`
-(https://transformers-forged-to-fight.fandom.com/wiki/User:KRBrickBot),
-сохранено в `archive/wiki/meta/author_collection.json`.
+OneDrive отдаёт `isAuthenticated:false`; без входа нет `downloadUrl`.
+Скачивание не выполнено. Ссылка не входит в zip.
 
-OneDrive отдаёт `isAuthenticated:false` и не содержит `downloadUrl` без
-входа. Скачивание **не выполнено**: нужен вход/архив от владельца.
-Ссылка не является частью вики и не входит в zip.
+## 2. Team / prefight / ActivateMatch
 
-## 2. Боевой тайл / префайт
-
-- `battle`-действие — правильный триггер: клиент открыл префайт
-  «SELECT YOUR BOT». [RUN] `work/battle3.png`, `work/pre2.png`.
-- `localPlayer.team` в памяти — `List` с count 0 даже после словаря
-  `team`; «+»/FIGHT падает в
-  `PrefightScreenPresentation.GetNewScale(HeroData robot)`.
-  `/matches/activate-match` не вызван.
-- Неизвестен точный формат `team`/`QuestUserHero`: какие ключи и
-  контейнер ожидает `QuestUserInfo` (`0x103D5D8`, `0x103CC70`), почему
-  `List` остаётся пустым.
-- `ActiveQuest.ActivateMatch` (`0x10A0038`) не имеет прямых BL; вызов
+- `QuestUserInfo.team` — JSON-словарь (`Dot.Object 0x103D5D8`), внутри
+  `List<QuestUserHero>`; ключ = blueprint. Значение: `hp` (float,
+  абсолютное), `pi`, `sig_lvl`, `stat_mods`, `sig_mods`. Полей
+  `level/rank/max_hp` в `QuestUserHero` нет.
+- `TeamIsKnockedOut` (`0x1181DC8`): count 0 -> true; иначе любой HP>0 ->
+  false. Поэтому «ALL KNOCKED OUT» при team count 0 — согласовано.
+- Память после попытки 3: `currentBattleId=battle1`, `localPlayer` есть,
+  `team` List count 0. Словарь с `hp=1000`, `pi=100`, base-blueprint не
+  был принят; тип/формат значения не решён.
+- `PreFightScreen.OnFight` (`0xE397BC`) -> `PrefightScreenData.OnFight`
+  (`0xE3E778`); HP префайта берётся из `TeamData.GetHP` (`0x10E1AE4`),
+  не из `QuestUserHero.HP`.
+- `ActiveQuest.ActivateMatch` (`0x10A0038`) прямых BL не имеет; вызов
   через UI/делегат, требует непустые `battleId` и `hero`.
-- Не проверена небоевая сущность отдельным запуском; фабрика разобрана.
+- `/matches/activate-match` не вызван. `match_activate_response.json` —
+  `[ASSUMED]`; точный JSON-контракт ответа не подтверждён.
+- Frida/gadget/патчи не использовались.
 
-## 3. Вики-архив
+## 3. Wiki
 
-- Fandom: 3613 страниц = 817 non-File + 2796 File. **Все 817 не-File
-  сохранены** с полной историей и HTML; 5 File — тоже; для всех 2796
-  File сохранены описания (последняя ревизия). Это подтверждает
-  [DERIVED]-гипотезу.
-- TFWiki: 8 FTF-страниц с полной историей/HTML.
-- Cargo нет; Scribunto на Fandom есть, `Module:` (ns 828) — 0.
-- Картинки: 523/2752; приоритет — карты, миссии, интерфейс, таблицы.
-  Осталось 2229 (портреты/иконки в последнюю очередь). 24 ошибки,
-  в основном 403 static.wikia.nocookie.net; без обхода блокировок.
-- Разбор: 44 бота (`data/wiki/bots.json`) + 252 страницы
-  (`data/wiki/pages.json`), с page/revid/url и `[WIKI]`.
-  `Sharkticon` и layout-страница — в `data/wiki/unparsed/pages.json`.
-- Скрытые базовые статы (крит, броня, блок) во многих вики-таблицах
-  отсутствуют; не выдумывать.
+- Fandom: 3613 = 817 non-File + 2796 File. Все 817 non-File — full
+  history+HTML; все 2796 File descriptions — latest revision.
+- TFWiki: 8 FTF pages.
+- Cargo нет; Scribunto на Fandom есть, `Module:` = 0.
+- Images: 694/2752; 209 errors (mostly 403). Remaining resumable.
+- Parsed: 44 bots, 252 pages; matrix `bot_matrix.json`; ID map
+  `id_map.json`; versions `versions.json` (cutoff 2023-01-13, 96 changed,
+  11 created after).
+- `Sharkticon` (no numeric table) и layout-шаблон — unparsed.
+- Скрытые статы (crit/armor/block) не выдумывались.
 
-## 4. Атрибуция
+## 4. Attribution
 
-Сохранять URL/revid каждой страницы (есть в raw и manifest), CC BY-SA
-3.0 для TFWiki; Fandom — условия сайта. Архив только для личного
-использования.
+URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — условия
+сайта. Личное использование.

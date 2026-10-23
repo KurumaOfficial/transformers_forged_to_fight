@@ -1,0 +1,19 @@
+{
+ "page": "Brawler",
+ "url": "https://transformers-forged-to-fight.fandom.com/wiki/Brawler",
+ "latest_revid": 10939,
+ "latest_timestamp": "2024-03-16T23:27:34Z",
+ "as_of_revid": 8495,
+ "as_of_timestamp": "2021-02-15T04:31:38Z",
+ "created_after_cutoff": false,
+ "changed": true,
+ "headings_added": [],
+ "headings_removed": [],
+ "new_interesting_lines": [
+  "*Most Brawlers utilize Armor Buffs and [[Melee Buff|Melee Buffs]]. These buffs, however, can be neutralized by Tacticians."
+ ],
+ "as_of_content": "{{Class_Template|number_of_champions = 8|non-playable = 0|class_bonus = [[Warrior]]|weakness = [[Tactician]]|image1 = File:Class Use Brawler.png}}'''Brawler''' is one of six Bot Classes. It has a Class Bonus against [[Warrior]], but is weak to [[Tactician]].\n\n==Description==\n''Brawler Bots are armored allies and furious foes that value strength at any cost.''\n\n==Class Bonus==\n*The low Critical Rate and high attack of [[Brawler]] Bots give them an advantage over [[Warrior]] Bots.\n*Brawlers have a high Health rating.\n*Brawlers love to dash to their opponents.\n*All brawlers rely on melee attacks.\n*Most Brawlers utilize Armor Buffs and [[Melee Buff]]s. These buffs, however, can be neutralized by Tacticians.\n*Some Brawlers take advantage of damaging debuffs, like [[Bleed]].\n\n==List of Brawler Bots==\n*[[Grindor]]\n*[[Motormaster]]\n*[[Optimus Prime (MV1)]]\n*[[Grimlock]]\n*[[Optimus Primal]]\n*[[Sharkticon]] Brawler\n*[[Tantrum]]\n*[[Thundercracker]]\n\n{{Brawler}}\n[[Category:Class]]\n[[Category:Brawler]]\n[[Category:Bots]]",
+ "latest_content": "{{Class_Template|number_of_champions = 8|non-playable = 0|class_bonus = [[Warrior]]|weakness = [[Tactician]]|image1 = File:Class Use Brawler.png}}'''Brawler''' is one of six Bot Classes. It has a Class Bonus against [[Warrior]], but is weak to [[Tactician]].\n\n==Description==\n''Brawler Bots are armored allies and furious foes that value strength at any cost.''\n\n==Class Bonus==\n*The low Critical Rate and high attack of [[Brawler]] Bots give them an advantage over [[Warrior]] Bots.\n*Brawlers have a high Health rating.\n*Brawlers love to dash to their opponents.\n*All brawlers rely on melee attacks.\n*Most Brawlers utilize Armor Buffs and [[Melee Buff|Melee Buffs]]. These buffs, however, can be neutralized by Tacticians.\n*Some Brawlers take advantage of damaging debuffs, like [[Bleed]].\n\n==List of Brawler Bots==\n*[[Grimlock]]\n*[[Grindor]]\n*[[Ironhide]]\n*[[Motormaster]]\n*[[Optimus Primal]]\n*[[Optimus Prime (MV1)]]\n*[[Sunstreaker]]\n*[[Tantrum]]\n*[[Thundercracker]]\n*[[Sharkticon#Sharkticon Brawler|Sharkticon Brawler]]\n\n{{Brawler}}\n[[Category:Class]]\n[[Category:Brawler]]\n[[Category:Bots]]",
+ "tag": "[WIKI]",
+ "changed_values": []
+}

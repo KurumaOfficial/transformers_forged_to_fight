@@ -30,7 +30,7 @@ to fill gaps; hidden base stats (crit, armor, block) may be absent from the wiki
 
 - 3613 Fandom pages enumerated; 817/817 non-File pages saved with full
   history+HTML; 5 File pages too; 2796/2796 File descriptions saved.
-- 523/2752 image binaries saved (priority: maps/missions/UI/tables).
+- 694/2752 image binaries saved (priority: maps/missions/UI/tables).
 - TFWiki: 8 FTF pages with full history+HTML.
 - Backup: `archive/TFTF_wiki_archive_2026-10-23.zip`,
-  SHA256 `7220eabce902e552ed2bc6d86ca9d55477baeede6802ab9fd656306682be1aaf`.
+  SHA256 `040255c1d5714b4510493e87de4e323674864f5d54436c776d190c12285d4e18`.

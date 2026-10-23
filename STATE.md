@@ -123,23 +123,19 @@ required `hp`/`pi`/`sig_lvl`/`mods`), then press FIGHT and capture
 
 ## 4b. Wiki archive (Part B, 2026-10-23)
 
-- Fandom: **3613** pages enumerated = **817 non-File + 2796 File**.
-  All **817 non-File** pages saved with full revision history + HTML; 5
-  File pages too. All **2796 File descriptions** saved (latest revision)
-  in `archive/wiki/raw/fandom/file_descriptions/`. This confirms the
-  [DERIVED] hypothesis (the 3613-822 gap is File pages + images).
-- TFWiki: **8** FTF pages with full history + HTML.
-- Image binaries: **523/2752** (maps/missions/UI/tables first); 24
-  errors (mostly static.wikia 403, no bypass).
-- Manifest: **4983** entries; state: `archive/wiki/state.json`.
-- Extensions: Fandom Scribunto=yes/Cargo=no, `Module:` ns 828 = 0;
-  TFWiki Scribunto=no/Cargo=no.
-- Parsed: **44 bots** (`data/wiki/bots.json`) + **252 pages**
-  (`data/wiki/pages.json`), each with page/revid/url/[WIKI]; 2 content
-  pages in `data/wiki/unparsed/pages.json`.
-- Author collection link is auth-gated (`isAuthenticated:false`); not
-  downloaded. See `OPEN_QUESTIONS.md`.
-- Coverage: `COVERAGE_WIKI.md`; raw excludes git; zip backup done.
+- Fandom: **3613** pages = **817 non-File + 2796 File**. All **817
+  non-File** saved with full history + HTML; 5 File too; all **2796 File
+  descriptions** saved (latest revision). [DERIVED] confirmed.
+- TFWiki: **8** FTF pages full history + HTML.
+- Images: **694/2752**; **209** errors (mostly 403,
+  no bypass). Manifest **5154** entries; state resumable.
+- Parsed: **44 bots** + **252 pages**; quality matrix
+  `data/wiki/bot_matrix.json`; ID map `data/wiki/id_map.json` (59 client
+  packs = 52 + 7 Sharkticon; 44 wiki stat pages); version sets
+  `data/wiki/versions.json` (cutoff 2023-01-13; 96 changed, 11 created
+  after).
+- Unparsed: `data/wiki/unparsed/pages.json`.
+- OneDrive author link auth-gated; not downloaded.
 
 ## 5. What is NOT verified / must not be claimed
 - Battle did not start. No `match-*` request was observed.
@@ -156,13 +152,15 @@ required `hp`/`pi`/`sig_lvl`/`mods`), then press FIGHT and capture
   dictionary; top-level `scaledBossTable`; boss on (1,0).
 - `spec/quest_protocol.md` — §2f (exact NRE, boss table, factory) and §2g
   (`QuestActionResult`/battle schema/prefight).
-- `LEDGER.md`, `FIDELITY.md`, `MASTER_PROMPT.md` — updated (v3.3).
+- `LEDGER.md`, `FIDELITY.md`, `MASTER_PROMPT.md` — updated (v3.4).
 - `OPEN_QUESTIONS.md` — battle blocker, OneDrive auth gate, archive gaps.
 - `COVERAGE_WIKI.md`, `archive/wiki/*.py`, `archive/wiki/README.md`,
   `data/wiki/README.md` — archive, verification, parse.
 - `data/wiki/bots.json` — 44 bots with page/revid/[WIKI].
 - `data/wiki/pages.json` — 252 other content pages (classes, mods, relics,
   missions, events, ...), generic sections/tables.
+- `data/wiki/bot_matrix.json`, `id_map.json`, `versions.json`,
+  `versions/` — quality matrix, client↔wiki IDs, as_of/latest sets.
 - `archive/wiki/raw/fandom/file_descriptions/` — 2796 File descriptions.
 - `archive/TFTF_wiki_archive_2026-10-23.zip` — full archive backup.
 - Work scripts: `disasm_calls.py`, `xref_bl.py`, `read_prefight_state.py`,
@@ -183,7 +181,7 @@ required `hp`/`pi`/`sig_lvl`/`mods`), then press FIGHT and capture
 
 ## 8. Wiki backup zip (2026-10-23)
 
-- `archive/TFTF_wiki_archive_2026-10-23.zip` (27,355,942 bytes)
-- SHA256 `7220eabce902e552ed2bc6d86ca9d55477baeede6802ab9fd656306682be1aaf`
-- Contains `archive/wiki/` (raw + HTML + File descriptions + 523 images +
+- `archive/TFTF_wiki_archive_2026-10-23.zip` (32,513,587 bytes)
+- SHA256 `040255c1d5714b4510493e87de4e323674864f5d54436c776d190c12285d4e18`
+- Contains `archive/wiki/` (raw + HTML + File descriptions + 694 images +
   state/manifest/meta). Parsed `data/wiki/` is outside the zip.
