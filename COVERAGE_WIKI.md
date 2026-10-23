@@ -59,3 +59,25 @@
 
 - ZIP: `archive/TFTF_wiki_archive_2026-10-23.zip`
 - SHA256: `14b714b8e7e1409a2e74c32847ad78c7ee1e4a72cde3debfe97c2892da029c17`
+
+
+## Structured topic sets (W3)
+
+`data/wiki/topics/` — curated page sets with separate `as_of_2023` and
+`latest` records and source URLs:
+
+- `missions_story.json` (11 pages + story/netflix/special-mission headings)
+- `events.json` (7 pages + special-mission headings)
+- `arena.json` (2), `raids.json` (4), `away.json` (3), `mods.json` (2),
+  `relics.json` (14), `crystals.json` (2), `currencies.json` (6),
+  `forge.json` (7), `progression.json` (3), `class_triangle.json` (5),
+  `status_effects.json` (8).
+
+These are page-level structured records, not yet a complete numeric economy
+table; fields absent from the saved wikitext stay absent. [WIKI]
+
+## Client-only / wiki-only (W4)
+
+`data/wiki/client_only.json`: 13 client packs without a parsed wiki stat page,
+7 Sharkticon variants, and 5 wiki-only pages (Chromia, Dead End, Optimus Prime,
+Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]

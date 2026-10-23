@@ -1,0 +1,730 @@
+{
+ "source": "Fandom pages parsed in data/wiki/pages.json; as_of/latest from data/wiki/versions/",
+ "cutoff": "2023-01-13T23:59:59Z",
+ "topic": "currencies",
+ "note": "Curated page set; values only from saved wikitext. as_of uses parsed page when revision <= cutoff, otherwise raw wikitext or null.",
+ "page_count": 6,
+ "pages": {
+  "Gold": {
+   "page": "Gold",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 2666,
+    "timestamp": "2018-01-19T06:03:02Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Gold",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold",
+      "revid": 2666,
+      "timestamp": "2018-01-19T06:03:02Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Gold is the standard currency in the game.\n\nGold is used to upgrade and rank up Bots and Mods, to start Away Missions, to start Arena fights, to start Alliance Missions (formerly), and to upgrade Masteries.\n\nGold can be earned by completing fights and in all game modes, from successfully completing Away Missions, helping other Commanders in an Alliance with help requests, from some Alliance Quests, from certain crystals like the Arena Crystal and the Gold Crystal, Daily Deals, duplicate Bots and Mods, and Forging.\n\nCategory:Items",
+     "sections": []
+    }
+   },
+   "latest": {
+    "revid": 2666,
+    "timestamp": "2018-01-19T06:03:02Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Gold",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold",
+      "revid": 2666,
+      "timestamp": "2018-01-19T06:03:02Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Gold is the standard currency in the game.\n\nGold is used to upgrade and rank up Bots and Mods, to start Away Missions, to start Arena fights, to start Alliance Missions (formerly), and to upgrade Masteries.\n\nGold can be earned by completing fights and in all game modes, from successfully completing Away Missions, helping other Commanders in an Alliance with help requests, from some Alliance Quests, from certain crystals like the Arena Crystal and the Gold Crystal, Daily Deals, duplicate Bots and Mods, and Forging.\n\nCategory:Items",
+     "sections": []
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Energon": {
+   "page": "Energon",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Energon",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 10597,
+    "timestamp": "2023-01-10T14:12:11Z",
+    "raw_wikitext": "[[File:Energon.png|thumb|right]]\n'''Energon''' is the premium currency typical of a freemium mobile game with microtransactions.\n\n== Where to Spend ==\nEnergon can be spent on, among other things:\n* All items in the store other than those in the Raid store.\n* Premium Bot [[Crystal]]s, Premium Mod Crystals, Gold Crystals, and Featured Bot Crystals\n* Refreshing selection of Away Missions (5)\n* Selecting another opponent in [[Raid]]s (2, 6, 10, 14)\n* replenishing a Raid Ticket (10)\n* Changing opponents in [[Arena]]s (5)\n* Cooldown of Bots in Arenas (5, 10, 15, 30)\n* Limited-time 24-hour flash offers, ranging from 100 to 5,000 Energon\n*For the game's final two events. more resources were made available to buy with Energon: (limit 21 for each Spark)\n**T2 Alpha Spark - 80\n**Tier 3 Basic Spark - 40\n**T3 Alpha Spark - 400\n**T4 Basic Spark - 200\n**5-Star Bot Crystal - 500\n**T4 Bot Crystal - 100\n**(seriously none of the highest-end T4 Class and T5 Basics?)\n\n== Obtainment ==\nWithout paying with real money, Energon can be obtained in various ways:\n* Completing Solo and Special Missions; completing a stage will give you 10 Energon, while fully exploring it will give you another 15. (15 and 20 for Prime difficulty respectively)\n* Some Solo Mission crates rarely give 5 Energon.\n* Arena Crystals have a slight chance of giving a small amount of Energon.\n* 10, 20, 30, and 40 Energon can be claimed from the login [[calendar]] on the sixth day of each week.\n* 10 bundles of 20 Energon are sometimes available in the Raid Store for 3,000 Raid Chips each, up to 200 Energon for 30,000 Raid Chips.\n* From v5.0, three ads can be watched to get <s>5</s> 4 Energon per video each day every 12 hours.\n*15 Energon from watching 4 ad videos Daily Objective.\n*10 Energon from completing 7 Daily Objectives.\n\nShould you want to bribe your way to victory, several different amounts of Energon are available in the Energon store to purchase with real money.\n* Soundwave's Superior Stocks - 135 - $6.99 USD\n* Starscream's Embezzled Stores - 275 - $13.99 USD\n* Bumblebee's Trunk - 850 - $39.99 USD\n* Megatron's Spoils of War - 1450 - $69.99 USD\n* King Grimlock's Royal Bounty - 3100 - $129.99 USD\nOccasionally, more Energon and additional items are included with these purchases, such as Energon Daily Cards, Crystals, and Bot Chips, before defaulting to Bot Chip bundles.\n\nOn October 14, 2022, all ads and in-app purchases were removed, per the announcement of the game shutting down and removal from the App Stores.\n\nFrom October 2022 onwards, the 7-Day Calendar gave a consecutive 200 to 800 Energon each day, along with 75~750 Premium Bot Crystal Shards.\n\n==​Energon Store Gallery==\n<gallery>\nSoundwave's Superior Stocks.jpg|Soundwave's Superior Stocks\nStarscream's Embezzled Stores.jpg|Starscream's Embezzled Stores\nBumblebee's Trunk.jpg|Bumblebee's Trunk\nMegatron's Spoils of War.jpg|Megatron's Spoils of War\nKing Grimlock's Royal Bounty.jpg|King Grimlock's Royal Bounty\nEnergon Store 1 Crystal.jpg\nEnergon Store 2 Crystal.jpg\nEnergon Store 3 Crystal.jpg\nEnergon Store 4 Crystal.jpg\nEnergon Store 5 Crystal.jpg\nEnergon Store 1 Galvatron Chips.jpg\nEnergon Store 2 Galvatron Chips.jpg\nEnergon Store 3 Galvatron Chips.jpg\nEnergon Store 4 Galvatron Chips.jpg\nEnergon Store 5 Galvatron Chips.jpg\nEnergon Store 1 Dinobot.jpg\nEnergon Store 2 Dinobot.jpg\nEnergon Store 3 Dinobot.jpg\nEnergon Store 4 Dinobot.jpg\nEnergon Store 5 Dinobot.jpg\n\n\n\n</gallery>\n[[Category:Items]]"
+   },
+   "latest": {
+    "revid": 10849,
+    "timestamp": "2023-05-28T02:35:34Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Energon",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Energon",
+      "revid": 10849,
+      "timestamp": "2023-05-28T02:35:34Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Energon is the premium currency typical of a freemium mobile game with microtransactions.\n\nIn the Netflix cersion of the game",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Where to Spend",
+       "text": "Energon can be spent on, among other things:\n* All items in the store other than those in the Raid store.\n* Premium Bot Crystals, Premium Mod Crystals, Gold Crystals, and Featured Bot Crystals\n* Refreshing selection of Away Missions (5)\n* Selecting another opponent in Raids (2, 6, 10, 14)\n* replenishing a Raid Ticket (10)\n* Changing opponents in Arenas (5)\n* Cooldown of Bots in Arenas (5, 10, 15, 30)\n* Limited-time 24-hour flash offers, ranging from 100 to 5,000 Energon\n*For the game's final two events. more resources were made available to buy with Energon: (limit 21 for each Spark)\n**T2 Alpha Spark - 80\n**Tier 3 Basic Spark - 40\n**T3 Alpha Spark - 400\n**T4 Basic Spark - 200\n**5-Star Bot Crystal - 500\n**T4 Bot Crystal - 100\n**(seriously none of the highest-end T4 Class and T5 Basics?)",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "Without paying with real money, Energon can be obtained in various ways:\n* Completing Solo and Special Missions; completing a stage will give you 10 Energon, while fully exploring it will give you another 15. (15 and 20 for Prime difficulty respectively)\n* Some Solo Mission crates rarely give 5 Energon.\n* Arena Crystals have a slight chance of giving a small amount of Energon.\n* 10, 20, 30, and 40 Energon can be claimed from the login calendar on the sixth day of each week.\n* 10 bundles of 20 Energon are sometimes available in the Raid Store for 3,000 Raid Chips each, up to 200 Energon for 30,000 Raid Chips.\n* From v5.0, three ads can be watched to get 5 4 Energon per video each day every 12 hours.\n*15 Energon from watching 4 ad videos Daily Objective.\n*10 Energon from completing 7 Daily Objectives.\n*A myriad of ways. (Netflix) By the time you've completed Act 1, you'll already have an excess of over 500 Energon.\n\nShould you want to bribe your way to victory, several different amounts of Energon are available in the Energon store to purchase with real money.\n* Soundwave's Superior Stocks - 135 - $6.99 USD\n* Starscream's Embezzled Stores - 275 - $13.99 USD\n* Bumblebee's Trunk - 850 - $39.99 USD\n* Megatron's Spoils of War - 1450 - $69.99 USD\n* King Grimlock's Royal Bounty - 3100 - $129.99 USD\nOccasionally, more Energon and additional items are included with these purchases, such as Energon Daily Cards, Crystals, and Bot Chips, before defaulting to Bot Chip bundles.\n\nOn October 14, 2022, all ads and in-app purchases were removed, per the announcement of the game shutting down and removal from the App Stores.\n\nFrom October 2022 onwards, the 7-Day Calendar gave a consecutive 200 to 800 Energon each day, along with 75~750 Premium Bot Crystal Shards.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "​Energon Store Gallery",
+       "text": "Soundwave's Superior Stocks.jpg|Soundwave's Superior Stocks\nStarscream's Embezzled Stores.jpg|Starscream's Embezzled Stores\nBumblebee's Trunk.jpg|Bumblebee's Trunk\nMegatron's Spoils of War.jpg|Megatron's Spoils of War\nKing Grimlock's Royal Bounty.jpg|King Grimlock's Royal Bounty\nEnergon Store 1 Crystal.jpg\nEnergon Store 2 Crystal.jpg\nEnergon Store 3 Crystal.jpg\nEnergon Store 4 Crystal.jpg\nEnergon Store 5 Crystal.jpg\nEnergon Store 1 Galvatron Chips.jpg\nEnergon Store 2 Galvatron Chips.jpg\nEnergon Store 3 Galvatron Chips.jpg\nEnergon Store 4 Galvatron Chips.jpg\nEnergon Store 5 Galvatron Chips.jpg\nEnergon Store 1 Dinobot.jpg\nEnergon Store 2 Dinobot.jpg\nEnergon Store 3 Dinobot.jpg\nEnergon Store 4 Dinobot.jpg\nEnergon Store 5 Dinobot.jpg\n\nCategory:Items",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  },
+  "Allspark": {
+   "page": "Allspark",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Allspark",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 6870,
+    "timestamp": "2019-10-31T04:01:20Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Allspark",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Allspark",
+      "revid": 6870,
+      "timestamp": "2019-10-31T04:01:20Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Allspark is a special relic introduced January 2019.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A mysterious cube that holds the power to create worlds. Mechanical devices come to life in it's presence, and Deceptions across the Universe crave its power.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "+5% Attack and Health in all game modes.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "20 Relic Tickets",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Allspark.jpg|Beta image\nAllspark Icon.jpg\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 6870,
+    "timestamp": "2019-10-31T04:01:20Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Allspark",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Allspark",
+      "revid": 6870,
+      "timestamp": "2019-10-31T04:01:20Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Allspark is a special relic introduced January 2019.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A mysterious cube that holds the power to create worlds. Mechanical devices come to life in it's presence, and Deceptions across the Universe crave its power.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "+5% Attack and Health in all game modes.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "20 Relic Tickets",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Allspark.jpg|Beta image\nAllspark Icon.jpg\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Arena Chip": {
+   "page": "Arena Chip",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Arena_Chip",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 3320,
+    "timestamp": "2018-04-04T00:59:44Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Arena Chip",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Arena_Chip",
+      "revid": 3320,
+      "timestamp": "2018-04-04T00:59:44Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Arena Chips are a currency used to purchase Arena Crystals. They can be earned from Away Missions, and they were awarded in Arenas, but have been replaced with whole Arena Crystals.\n\nArena Chips originally had more uses; they were described as being able to unlock new arenas, but this mechanic was either dropped or never came to be. They could be donated to an Alliance Treasury for Alliance Missions, but it was later disabled before the Treasury was eventually removed altogether.\n\nAs of v6.0, Arena Chips have been completely removed. They were replaced with Arena Crystals in Away Missions.\n\nCategory:Items",
+     "sections": []
+    }
+   },
+   "latest": {
+    "revid": 3320,
+    "timestamp": "2018-04-04T00:59:44Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Arena Chip",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Arena_Chip",
+      "revid": 3320,
+      "timestamp": "2018-04-04T00:59:44Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Arena Chips are a currency used to purchase Arena Crystals. They can be earned from Away Missions, and they were awarded in Arenas, but have been replaced with whole Arena Crystals.\n\nArena Chips originally had more uses; they were described as being able to unlock new arenas, but this mechanic was either dropped or never came to be. They could be donated to an Alliance Treasury for Alliance Missions, but it was later disabled before the Treasury was eventually removed altogether.\n\nAs of v6.0, Arena Chips have been completely removed. They were replaced with Arena Crystals in Away Missions.\n\nCategory:Items",
+     "sections": []
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Bot Chip": {
+   "page": "Bot Chip",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Bot_Chip",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 10610,
+    "timestamp": "2023-01-11T01:31:00Z",
+    "raw_wikitext": "[[File:Bot Chip.png|thumb|128x128px|We've run out of bots, so have these so we don't have to worry about making more!]]\n'''Bot Chips''' are the primary method of obtaining Featured [[Bot]]s of the month.\n\n== History ==\nBot Chips started out as Raid Event exclusive chips, 1,000 of which could be exchanged for a featured 2-Star Bot. Around 60 chips could be won per raid.\n\n3-Star Featured Bots made their debut with [[Shockwave]], which cost 10,000 Chips and specialized to each Bot.\n\nWith the debut of [[Galvatron]], Bot Chips came to the forefront, introducing many more ways to obtain them. 4-Star Featured Bots were also introduced which cost 100,000 Chips. For Galvatron only, remaining chips could be exchanged for Premium Bot Crystal Shards or 4-Star Bot Crystal Shards.\n\nFor all featured Bots starting from [[Tantrum]], 5-Star Bots were made available for 1,000,000 Chips.\n\nThe debut of [[Cyclonus]] saw a drastic increase in Raid Event and Arena Bot Chips, but the amounts were slightly decreased in raids the following month.\n\nFrom 2019 onwards, the permanent generic Bot Chips can be used for any 3~5-Star Bot featured in the store.\n\nNovember 2022 was the very last month to spend Bot Chips on Motormaster, Windblade, Ultra Magnus, and Barricade. You'd think they could buy Bots galore for the finale events but there were '''''absolutely no provisions. And routine Bot Chip Arenas kept running despite nothing to spend them on!'''''\n\n== Costs ==\nEach event's bot Bot Chip cost in the store will increase for each duplicate of a Bot bought. There is a 21-amount limit for each tier, enough for a bot with a maxed Signature Ability.\n\n*3-Star - 10,000 + 5,000 per purchase\n*4-Star - 100,000 + 40,000 per purchase\n*5-Star - 1,000,000 + 300,000 per purchase\n(The first 3-Star bot is 10K, the 2nd is 15k, the 3rd is 20k, and so on.)\n\n== Obtainment ==\nListed are current ways to obtain Featured Bot Chips:\n* Getting a duplicate 2-Star Bot (100)\n* Getting a duplicate 3-Star Bot (1,000)\n* Getting a duplicate 4-Star Bot (10,000)\n* Getting a duplicate 5-Star Bot (50,000)\n* Rare [[Away Mission]]s\n* Overlord's Favor [[Arena]]s\n* [[Alliance Mission]]s Week 2 and Week 4\n* [[Special Mission|Spotlight Mission]] Exploration Rewards\n* Login [[Calendar]]\n* Monthly [[Objectives]]\n*Fourth Week Raids\n**1,386 (1500~1,999 Medals)\n**1,871 (2,000~2,499 Medals)\n**\n**2,310 (2,500, max)\n* Energon Bundles\n* Message from the Game Team (If there are technical difficulties)\n\n== Strategy ==\nIf you are super casual and only want a 3-Star Bot, you should get more than 25,000 Chips passively.\n\nIf you are a level 40+ Commander who plays regularly, and unwilling to drop money and Energon on Crystals' luck, mastering Spotlight Missions, playing a full arena or two, regularly participating in Alliance Missions, raiding daily, and a couple of bot crystals should get you 100,000 chips and then some for a few 3-Stars. <s>Getting 140,000 chips more is a stretch goal that would involve completing almost all the bot arenas.''' '''</s>Now that Raid Events give nearly 2000 chips per raid for a 1500 Medal-range Commander, you only need to raid regularly 6-9 times a day with no need for arenas to get more than enough chips for a duplicate.\n\n== Specialty Chips ==\nEven after generic Bot Chips, there were a few events with specialized themed Bot Chips.\n\n=== Autobot Chip ===\n[[File:Generations Chips.png|thumb]]\nTF-labeled chips for the September 2019 35th anniversary of ''The Transformers'' brand, and Autobot Week.\n\n=== Class Clash Chip ===\n[[File:Class Clash Chip.png|thumb|128x128px]]\nChips in June 2019 to introduce a new type of [[Arena]].\n\n''A Clash of Classes is coming! Join us for a Special Week-long event where you can participate in special Arenas and Raids every day to earn class-specific rewards, including 4-Star Class Bot crystals and T4 Class Spark Essence! This event kicks off on June 27th, 2019 at 10am PT and runs until July 4th at 10 am PT!''\n\n* ''Each day, one class will be featured in its own special 24 hour arena. You can only enter that Arena with Bots of the same Class or Bots that have a Class Advantage. For example, on Tech Arena Day, you will be able to use both your Tech and Scout Bots to compete.''\n* ''Take on the Class Clash Special Team everyday to earn Extra Points and Class ORE-13! You can also purchase Counter-Class Sparks and ORE-13 in the Store with Class Clash Chips, and Class Premium Bot Crystals for Energon!''\n* ''Note: There are Daily Purchase limits on all of these items, and the items in the Store are for the Class that Counter the Class of the Day.''\n* ''Class Clash Chips?''\n* ''For the duration of the Event, you can earn Class Clash Chips for every successful Raid you complete. Use these Chips in the Store to purchase Class Spark Essence and ORE-13!''\n* ''There will also be a 7-Day Raid Ascent event running alongside the Class Clash Event. This event features the regular rewards for Raid Ascent, but also includes a small amount of Class Clash Chips in the rewards!''\n* ''Raid Event? That Means Quintesson Bases again…''\n* ''We understand that during Raid Events, the amount of Quintesson Bases you run up against might increase quite a bit, but we’ve made some changes!''\n* ''During this event, Raid Chips awarded for Quintesson bases will be increased significantly, and they will now award Medals as well! They still won’t match what you get from Raiding another Commander’s base, but will be more comparable.''\n* ''Which Bots are in the Crystals?''\n* ''We’ve updated the Class Crystals to include all of our regularly available Bots! This means that the only ones not available are Thundercracker, and Bumblebee (Generations), while Bumblebee (DOTM) will be available as a 2 and 3 Star, but not as a 4-Star.''\n* ''This is a 7 Day event but there are only 6 classes…''\n* ''On July 3, a free-for-all Arena will be available featuring all the class special teams. The top rewards for this event will be 6x 4-Star Class Bot Crystals (1x OF EACH CLASS)!''\n* ''This is also your last chance to spend Class Clash Chips on a variety of Class Spark Crystals! This is the only day that the Class Sparks are NOT Class Specific and will be in Crystals!''\n* ''What days will each class be featured?''\n* ''The arena schedule is:''\n** ''• Warrior Clash Arena - June 27''\n** ''• Scout Clash Arena - June 28''\n** ''• Tech Clash Arena - June 29''\n** ''• Demolition Clash Arena - June 30''\n** ''• Tactician Clash Arena - July 1''\n** ''• Brawler Clash Arena - July 2''\n** ''• Free-for-All Clash Arena - July 3''\n* ''**** For clarity purpose: Rank up materials are in the Store for Raid Currency (Class Clash Chips) while the Class Shards for Bot Crystals are Arenas.''\n*Chips after the event were converted 1:1 gold and then Shards remained for future events.\n\n=== Beast Wars Chip ===\n[[File:Beast Wars Chip.png|thumb]]\nChips for a December 2019 Beast Wars event.\n\n''The year is ending and the Beasties are running wild! While timelines and dimensions keep clashing, we take a trip back (or is it forward...and then back again) in time to witness as Dinobot changes from a Predacon to fight with the forces of the Maximals! Will this timeline stay strong, or is it just the start of these Beast Wars?''\n\n* ''This event starts December 19th at 9AM EST and lasts for a total of three weeks!''\n* ''As soon as this kicks off you’ll have the chance to get your hands on Beast Wars Chips by completing various activities and can be used to purchase event specific Bots. These bots are changing daily between Predacons and Maximals and will repeat for a total of 3 times before giving everyone the chance at purchasing Crystals with all 6 Bots in them.''\n* ''How do we earn these chips? There are several ways!''\n* ''[[Proving Fields|PROVING FIELDS]]''\n** ''This entire event starts with a 6-Day mission where you must prove your worth with a specific Beast War bot given to play with. You will be challenged to three fights with varying difficulties of your choice. You’re not going to want to miss this! Each day comes with new and unique dialogue.''\n* ''CHRONO-VECTORS: [[Rebel Raptor|REBEL RAPTOR]]''\n** ''In the second and third week of this event, test your might in our unique story mission centered around Dinobot and his change in loyalty. If you can get through this you will be greatly rewarded with Beast Wars Chips as well as Awakening and Signature Upgrade Programs specific to difficulty chosen. Keep in mind, you’ll only be able to bring a roster of three for this! Choose wisely, Commanders.''\n* ''ARENA''\n** ''In week two, you will get your chance to earn more Beast Wars chips (alongside the usual rewards) by hitting Milestones in Arenas, earning Rank Rewards, and fighting Special Beast Wars teams.''\n* ''OBJECTIVES''\n** ''During the event there will be special objectives put into place. By completing all Objectives you’ll be awarded the 4-5 Star Beast Wars Crystal. By completing eight, you’ll receive the 3-4 Star Beast Wars Crystal. Some objectives can reward you 2-4 Star Featured (BW) Bot Crystal. Don’t worry, you’ll get chips alongside these victories!''\n** ''• Win Arena Fights using specific Bots.''\n** ''• Win Solo Mission Fights using specific Bots.''\n** ''• Complete “PROVING FIELDS” missions.''\n** ''• Complete “REBEL RAPTOR” missions.''\n* ''LOGIN CALENDAR''\n** ''There will be a Special 7-Day Calendar weekly to give you login rewards of Beast Wars Chips. Login in daily so to not miss out!''\n* ''ENERGON PACKS''\n** ''As this event is going on you have the chance to earn Beast War Chips when purchasing Energon Packs!''\n\n=== Faction Chip ===\n[[File:Faction Chip.png|thumb|128x128px]]\nSome 2022 \"sidequest\" [[Special Mission|Spotlight Missions]] had '''Faction Chips''' which can be used to buy faction-specific Bots and crystals. They could be carried over between faction events.\n\nThere were three events featuring Cinematic bots, Generations Autobots, and Beast Wars. Presumably there would have been a Generations Decepticons event ''if the game didn't shut down.''\n\nHow to obtain:\n\n* Objectives\n* 7-day Login Calendar\n* Faction Chip Arena\n* 6-Day Challenge Gauntlet\n*Energon bundles\n\n=== Event Store ===\n\n* 3-Star Bot: 800\n* 4-Star Bot: 4,000\n* 5-Star Bot: 20,000\n**The above prices were halved for the final Faction Chip event.\n* Faction crystal: 300\n*Elite faction crystal: 600\n**The Beast Wars event also had them in 5 and 10 bundles directly from the Store page as well as the Crystals page.\n\n==Gallery==\n<gallery>\nWaspinator Chip.png\nDrift Chip.png\nHot Rod Chip.png\nGrimlock Chip.png\nMegatron Chip.png\nShockwave Chip.png\nStarscream Chip.png\nGalvatron Chip.png\nDinobot Chip.png\nMegatron G1 Chip.png\nOptimus Primal Chip.png\nHound Chip.png\nKickback Chip.png\nBlaster Chip.png\nCheetor Chip.png\nJazz Chip.png\nTantrum Chip.png\nWheeljack Chip.png\nCyclonus Chip.png\nMegatonus Chip.png\nScorponok Chip.png\nJetfire Chip.png\n</gallery>\n[[Category:Items]]"
+   },
+   "latest": {
+    "revid": 10851,
+    "timestamp": "2023-05-28T02:43:18Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Bot Chip",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Bot_Chip",
+      "revid": 10851,
+      "timestamp": "2023-05-28T02:43:18Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Bot Chips are the primary method of obtaining Featured Bots of the month. currency in the game.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "History",
+       "text": "Bot Chips started out as Raid Event exclusive chips, 1,000 of which could be exchanged for a featured 2-Star Bot. Around 60 chips could be won per raid.\n\n3-Star Featured Bots made their debut with Shockwave, which cost 10,000 Chips and specialized to each Bot.\n\nWith the debut of Galvatron, Bot Chips came to the forefront, introducing many more ways to obtain them. 4-Star Featured Bots were also introduced which cost 100,000 Chips. For Galvatron only, remaining chips could be exchanged for Premium Bot Crystal Shards or 4-Star Bot Crystal Shards.\n\nFor all featured Bots starting from Tantrum, 5-Star Bots were made available for 1,000,000 Chips.\n\nThe debut of Cyclonus saw a drastic increase in Raid Event and Arena Bot Chips, but the amounts were slightly decreased in raids the following month.\n\nFrom 2019 onwards, the permanent generic Bot Chips can be used for any 3~5-Star Bot featured in the store.\n\nNovember 2022 was the very last month to spend Bot Chips on Motormaster, Windblade, Ultra Magnus, and Barricade. You'd think they could buy Bots galore for the finale events but there were absolutely no provisions. And routine Bot Chip Arenas kept running despite nothing to spend them on!\n\nWhen Netflix came knocking on Kabam's door, allowing the game a second lease on life, a lot of Bots became available on the store. Not all the Bots, but a majority of them.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Costs",
+       "text": "Each event's bot Bot Chip cost in the store will increase for each duplicate of a Bot bought. There is a 21-amount limit for each tier, enough for a bot with a maxed Signature Ability. The Netflix version removes this.\n\n*1-Star - 100\n*2-Star - 1,000\n*3-Star - 10,000 + 5,000 per purchase\n*4-Star - 100,000 + 40,000 per purchase\n*5-Star - 1,000,000 + 300,000 per purchase\n(The first 3-Star bot is 10K, the 2nd is 15k, the 3rd is 20k, and so on.)",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "Listed are current ways to obtain Featured Bot Chips:\n* Getting a duplicate 1-Star Bot (50?)\n* Getting a duplicate 2-Star Bot (100)\n* Getting a duplicate 3-Star Bot (1,000)\n* Getting a duplicate 4-Star Bot (10,000)\n* Getting a duplicate 5-Star Bot (50,000)\n* Rare Away Missions\n* Overlord's Favor Arenas\n* Alliance Missions Week 2 and Week 4\n* Spotlight Mission Exploration Rewards\n* Login Calendar\n* Monthly Objectives\n*Fourth Week Raids\n**1,386 (1500~1,999 Medals)\n**1,871 (2,000~2,499 Medals)\n**\n**2,310 (2,500, max)\n* Energon Bundles\n* Message from the Game Team (If there are technical difficulties)",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Strategy",
+       "text": "If you are super casual and only want a 3-Star Bot, you should get more than 25,000 Chips passively.\n\nIf you are a level 40+ Commander who plays regularly, and unwilling to drop money and Energon on Crystals' luck, mastering Spotlight Missions, playing a full arena or two, regularly participating in Alliance Missions, raiding daily, and a couple of bot crystals should get you 100,000 chips and then some for a few 3-Stars. Getting 140,000 chips more is a stretch goal that would involve completing almost all the bot arenas. Now that Raid Events give nearly 2000 chips per raid for a 1500 Medal-range Commander, you only need to raid regularly 6-9 times a day with no need for arenas to get more than enough chips for a duplicate.\n\nAs Bot Chips are becoming more commonplace in the game's economy, you'll want to save up eventually.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Specialty Chips",
+       "text": "Even after generic Bot Chips, there were a few events with specialized themed Bot Chips.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Autobot Chip",
+       "text": "TF-labeled chips for the September 2019 35th anniversary of The Transformers brand, and Autobot Week.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Class Clash Chip",
+       "text": "Chips in June 2019 to introduce a new type of Arena.\n\nA Clash of Classes is coming! Join us for a Special Week-long event where you can participate in special Arenas and Raids every day to earn class-specific rewards, including 4-Star Class Bot crystals and T4 Class Spark Essence! This event kicks off on June 27th, 2019 at 10am PT and runs until July 4th at 10 am PT!\n\n* Each day, one class will be featured in its own special 24 hour arena. You can only enter that Arena with Bots of the same Class or Bots that have a Class Advantage. For example, on Tech Arena Day, you will be able to use both your Tech and Scout Bots to compete.\n* Take on the Class Clash Special Team everyday to earn Extra Points and Class ORE-13! You can also purchase Counter-Class Sparks and ORE-13 in the Store with Class Clash Chips, and Class Premium Bot Crystals for Energon!\n* Note: There are Daily Purchase limits on all of these items, and the items in the Store are for the Class that Counter the Class of the Day.\n* Class Clash Chips?\n* For the duration of the Event, you can earn Class Clash Chips for every successful Raid you complete. Use these Chips in the Store to purchase Class Spark Essence and ORE-13!\n* There will also be a 7-Day Raid Ascent event running alongside the Class Clash Event. This event features the regular rewards for Raid Ascent, but also includes a small amount of Class Clash Chips in the rewards!\n* Raid Event? That Means Quintesson Bases again…\n* We understand that during Raid Events, the amount of Quintesson Bases you run up against might increase quite a bit, but we’ve made some changes!\n* During this event, Raid Chips awarded for Quintesson bases will be increased significantly, and they will now award Medals as well! They still won’t match what you get from Raiding another Commander’s base, but will be more comparable.\n* Which Bots are in the Crystals?\n* We’ve updated the Class Crystals to include all of our regularly available Bots! This means that the only ones not available are Thundercracker, and Bumblebee (Generations), while Bumblebee (DOTM) will be available as a 2 and 3 Star, but not as a 4-Star.\n* This is a 7 Day event but there are only 6 classes…\n* On July 3, a free-for-all Arena will be available featuring all the class special teams. The top rewards for this event will be 6x 4-Star Class Bot Crystals (1x OF EACH CLASS)!\n* This is also your last chance to spend Class Clash Chips on a variety of Class Spark Crystals! This is the only day that the Class Sparks are NOT Class Specific and will be in Crystals!\n* What days will each class be featured?\n* The arena schedule is:\n** • Warrior Clash Arena - June 27\n** • Scout Clash Arena - June 28\n** • Tech Clash Arena - June 29\n** • Demolition Clash Arena - June 30\n** • Tactician Clash Arena - July 1\n** • Brawler Clash Arena - July 2\n** • Free-for-All Clash Arena - July 3\n* **** For clarity purpose: Rank up materials are in the Store for Raid Currency (Class Clash Chips) while the Class Shards for Bot Crystals are Arenas.\n*Chips after the event were converted 1:1 gold and then Shards remained for future events.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Beast Wars Chip",
+       "text": "Chips for a December 2019 Beast Wars event.\n\nThe year is ending and the Beasties are running wild! While timelines and dimensions keep clashing, we take a trip back (or is it forward...and then back again) in time to witness as Dinobot changes from a Predacon to fight with the forces of the Maximals! Will this timeline stay strong, or is it just the start of these Beast Wars?\n\n* This event starts December 19th at 9AM EST and lasts for a total of three weeks!\n* As soon as this kicks off you’ll have the chance to get your hands on Beast Wars Chips by completing various activities and can be used to purchase event specific Bots. These bots are changing daily between Predacons and Maximals and will repeat for a total of 3 times before giving everyone the chance at purchasing Crystals with all 6 Bots in them.\n* How do we earn these chips? There are several ways!\n* PROVING FIELDS\n** This entire event starts with a 6-Day mission where you must prove your worth with a specific Beast War bot given to play with. You will be challenged to three fights with varying difficulties of your choice. You’re not going to want to miss this! Each day comes with new and unique dialogue.\n* CHRONO-VECTORS: REBEL RAPTOR\n** In the second and third week of this event, test your might in our unique story mission centered around Dinobot and his change in loyalty. If you can get through this you will be greatly rewarded with Beast Wars Chips as well as Awakening and Signature Upgrade Programs specific to difficulty chosen. Keep in mind, you’ll only be able to bring a roster of three for this! Choose wisely, Commanders.\n* ARENA\n** In week two, you will get your chance to earn more Beast Wars chips (alongside the usual rewards) by hitting Milestones in Arenas, earning Rank Rewards, and fighting Special Beast Wars teams.\n* OBJECTIVES\n** During the event there will be special objectives put into place. By completing all Objectives you’ll be awarded the 4-5 Star Beast Wars Crystal. By completing eight, you’ll receive the 3-4 Star Beast Wars Crystal. Some objectives can reward you 2-4 Star Featured (BW) Bot Crystal. Don’t worry, you’ll get chips alongside these victories!\n** • Win Arena Fights using specific Bots.\n** • Win Solo Mission Fights using specific Bots.\n** • Complete “PROVING FIELDS” missions.\n** • Complete “REBEL RAPTOR” missions.\n* LOGIN CALENDAR\n** There will be a Special 7-Day Calendar weekly to give you login rewards of Beast Wars Chips. Login in daily so to not miss out!\n* ENERGON PACKS\n** As this event is going on you have the chance to earn Beast War Chips when purchasing Energon Packs!",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Faction Chip",
+       "text": "Some 2022 \"sidequest\" Spotlight Missions had Faction Chips which can be used to buy faction-specific Bots and crystals. They could be carried over between faction events.\n\nThere were three events featuring Cinematic bots, Generations Autobots, and Beast Wars. Presumably there would have been a Generations Decepticons event if the game didn't shut down.\n\nHow to obtain:\n\n* Objectives\n* 7-day Login Calendar\n* Faction Chip Arena\n* 6-Day Challenge Gauntlet\n*Energon bundles",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Event Store",
+       "text": "* 3-Star Bot: 800\n* 4-Star Bot: 4,000\n* 5-Star Bot: 20,000\n**The above prices were halved for the final Faction Chip event.\n* Faction crystal: 300\n*Elite faction crystal: 600\n**The Beast Wars event also had them in 5 and 10 bundles directly from the Store page as well as the Crystals page.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Waspinator Chip.png\nDrift Chip.png\nHot Rod Chip.png\nGrimlock Chip.png\nMegatron Chip.png\nShockwave Chip.png\nStarscream Chip.png\nGalvatron Chip.png\nDinobot Chip.png\nMegatron G1 Chip.png\nOptimus Primal Chip.png\nHound Chip.png\nKickback Chip.png\nBlaster Chip.png\nCheetor Chip.png\nJazz Chip.png\nTantrum Chip.png\nWheeljack Chip.png\nCyclonus Chip.png\nMegatonus Chip.png\nScorponok Chip.png\nJetfire Chip.png\n\nCategory:Items",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  },
+  "Spark": {
+   "page": "Spark",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Spark",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 10427,
+    "timestamp": "2023-01-07T22:45:17Z",
+    "raw_wikitext": "[[File:Sparks rtaImage.png|thumb|220x220px]]\n'''Sparks''' are items necessary to Rank Up [[Bots]] and [[Module|Mods]]. They can be purchased, earned, or formed from '''Spark Essence'''.\n\nSparks are stored in your inventory, and if you get Sparks that exceeds your maximum storage, they will be placed in the stash until they expire after 13 days or room is made by using or selling Sparks.\n\n== List of Sparks ==\n{| class=\"article-table\"\n!Spark\n!Image\n!Essence\n!Essence Amount\n![[File:Gold.png|20px]]Gold Value\n!Essence Value\n!Max\n|-\n|Tier 1 Basic Spark\n|[[File:Tier 1 Basic Spark.png]]\n|[[File:Tier 1 Basic Spark Essence.png]]\n|100\n|104\n|20 T2 Basic Essence\n|12\n|-\n|Tier 2 Basic Spark\n|[[File:Tier 2 Basic Spark.png]]\n|[[File:Tier 2 Basic Spark Essence.png]]\n|1000\n|687\n|40 T3 Basic Essence\n|12\n|-\n|Tier 3 Basic Spark\n|[[File:Tier 3 Basic Spark.png]]\n|[[File:Tier 3 Basic Spark Essence.png]]\n|10000\n|4,360\n|60 T4 Basic Essence\n|12\n|-\n|Tier 4 Basic Spark\n|[[File:Tier 4 Basic Spark.png]]\n|[[File:Tier 4 Basic Spark Essence.png]]\n|10000\n|19,840\n|80 T5 Basic Essence\n|12\n|-\n|Tier 5 Basic Spark\n|[[File:Tier 5 Basic Spark.png]]\n|[[File:Tier 5 Basic Spark Essence.png]]\n|10000\n|N/A\n|N/A\n|1\n|-\n|Tier 1 Alpha Spark\n|[[File:Tier 1 Alpha Spark.png]]\n|[[File:Tier 1 Alpha Spark Essence.png]]\n| 10000\n|687\n|100 Tier 2 Alpha Spark Essence\n|12\n|-\n|Tier 2 Alpha Spark\n|[[File:Tier 2 Alpha Spark.png]]\n|[[File:Tier 2 Alpha Spark Essence.png]]\n|10000\n|13,288\n|100 Tier 3 Alpha Essence\n|8\n|-\n|Tier 3 Alpha Spark\n|[[File:Tier 3 Alpha Spark.png]]\n|[[File:Tier_3_Alpha_Essence.png]]\n|10000\n|N/A\n|N/A\n|6\n|-\n|Tier 1 Class Spark\n|[[File:Tier 1 Scout Spark.png]][[File:Tier 1 Tech Spark.png]][[File:Tier 1 Demolitons Spark.png]][[File:Tier 1 Tactician Spark.png]][[File:Tier 1 Brawler Spark.png]][[File:Tier 1 Warrior Spark.png]]\n|[[File:Tier 1 Scout Spark Essence.png]][[File:Tier 1 Tech Spark Essence.png]][[File:Tier 1 Demolitions Spark Essence.png]][[File:Tier 1 Tactician Spark Essence.png]][[File:Tier 1 Brawler Spark Essence.png]][[File:Tier 1 Warrior Spark Essence.png]]\n|100\n|169\n|20 Tier 2 Class Spark Essence\n|12\n|-\n|Tier 2 Class Spark\n|[[File:Tier 2 Scout Spark.png]][[File:Tier 2 Tech Spark.png]][[File:Tier 2 Demolitions Spark.png]][[File:Tier 2 Tactician Spark.png]][[File:Tier 2 Brawler Spark.png]][[File:Tier 2 Warrior Spark.png]]\n|[[File:Tier 2 Scout Spark Essence.png]][[File:Tier 2 Tech Spark Essence.png]][[File:Tier 2 Demolitions Spark Essence.png]][[File:Tier 2 Tactician Spark Essence.png]][[File:Tier 2 Brawler Spark Essence.png]][[File:Tier 2 Warrior Spark Essence.png]]\n|1000\n|1119\n|40 Tier 3 Class Essence\n|12\n|-\n|Tier 3 Class Spark\n|[[File:Tier 3 Scout Spark.png]][[File:Tier 3 Tech Spark.png]][[File:Tier 3 Demolitions Spark.png]][[File:Tier 3 Tactician Spark.png]][[File:Tier 3 Brawler Spark.png]][[File:Tier 3 Warrior Spark.png]]\n|[[File:Tier 3 Scout Spark Essence.png]][[File:Tier 3 Tech Spark Essence.png]][[File:Tier 3 Demolitions Spark Essence.png]][[File:Tier 3 Tactician Spark Essence.png]][[File:Tier 3 Brawler Spark Essence.png]][[File:Tier 3 Warrior Spark Essence.png]]\n|10000\n|21,644\n|60 T4 Class Essence\n|12\n|-\n|Tier 4 Class Spark\n|[[File:Tier 4 Scout Spark.png]][[File:Tier 4 Tech Spark.png]][[File:Tier 4 Demolitions Spark.png]][[File:Tier 4 Tactician Spark.png]][[File:Tier 4 Brawler Spark.png]][[File:Tier 4 Warrior Spark.png]]\n|[[File:Tier 4 Scout Spark Essence.png]][[File:Tier 4 Tech Spark Essence.png]][[File:Tier 4 Demolitions Spark Essence.png]][[File:Tier 4 Tactician Spark Essence.png]][[File:Tier 4 Brawler Spark Essence.png]][[File:Tier 4 Warrior Spark Essence.png]]\n|10000\n|N/A\n|N/A\n|11\n|-\n|Tier 1 Offense Spark\n|[[File:Tier 1 Offense Spark.png]]\n|N/A\n|10000\n|687\n|20 T2 Essence\n|12\n|-\n|Tier 1 Defense Spark\n|[[File:Tier 1 Defense Spark.png]]\n|N/A\n|10000\n|687\n|20 T2 Essence\n|12\n|-\n|Tier 1\nUtility Spark\n|[[File:Tier 1 Utility Spark.png]]\n|N/A\n|10000\n|687\n|20 T2 Essence\n|12\n|-\n|Tier 2 Offense Spark\n|[[File:Tier 2 Offense Spark.png]]\n|[[File:Tier 2 Offense Spark Essence.png]]\n|10000\n|N/A\n|N/A\n|3\n|-\n|Tier 2 Defense Spark\n|[[File:Tier 2 Defense Spark.png]]\n|[[File:Tier 2 Defense Spark Essence.png]]\n|10000\n|N/A\n|N/A\n|3\n|-\n|Tier 2 Utility Spark\n|[[File:Tier 2 Utility Spark.png]]\n|[[File:Tier 2 Utility Spark Essence.png]]\n|10000\n|N/A\n|N/A\n|3\n|}\n===Unreleased===\nThe Tier 3 Mod Sparks are ever so teased at the 4-Star Rank Up 4 screen with no method to obtain them. The rest are only in the game files and remain unreleased. Can you imagine spending ''millions'' on Rank 7 and 8 Bots and Mods??\n{| class=\"article-table\"\n!Spark\n! Image\n!Essence\n|-\n|Tier 4 Alpha Spark\n|[[File:Spk a t4.png]]\n|[[File:Spk a t4 frag.png]]\n|-\n|Tier 5 Alpha Spark\n|[[File:Spk a t5.png]]\n|[[File:Spk a t5 frag.png]]\n|-\n|Tier 5 Class Spark\n|[[File:Spk scout t5.png]][[File:Spk tech t5.png]][[File:Spk demolitions t5.png]][[File:Spk tactician t5.png]][[File:Spk brawler t5.png]][[File:Spk warrior t5.png]]\n|[[File:Spk scout t5 frag.png]][[File:Spk tech t5 frag.png]][[File:Spk demolitions t5 frag.png]][[File:Spk tactician t5 frag.png]][[File:Spk brawler t5 frag.png]][[File:Spk warrior t5 frag.png]]\n|-\n|Tier 3 Offense Spark\n|[[File:Tier_3_Offense_Spark.png]]\n|[[File:Spk off t3 frag.png]]\n|-\n| Tier 3 Defense Spark\n|[[File:Tier_3_Defense_Spark.png]]\n|[[File:Spk def t3 frag.png]]\n|-\n|Tier 3 Utility Spark\n|[[File:Tier 3 Utility Spark.png]]\n|[[File:Spk utl t3 frag.png]]\n|-\n|Tier 4 Offense Spark\n|[[File:Spk off t4.png]]\n|[[File:Spk off t4 frag.png]]\n|-\n|Tier 4 Defense Spark\n|[[File:Spk def t4.png]]\n|[[File:Spk def t4 frag.png]]\n|-\n|Tier 4 Utility Spark\n|[[File:Spk utl t4.png]]\n|[[File:Spk utl t4 frag.png]]\n|-\n|Tier 5 Offense Spark\n|[[File:Spk off t5.png]]\n|[[File:Spk off t5 frag.png]]\n|-\n| Tier 5 Defense Spark\n|[[File:Spk def t5.png]]\n|[[File:Spk def t5 frag.png]]\n|-\n|Tier 5 Utility Spark\n|[[File:Spk utl t5.png]]\n|[[File:Spk utl t5 frag.png]]\n|}\n==Obtainment==\nSpark Essence is primarily earned through the solo [[Daily Mission]]s. There are two maps for Basic Sparks: An easy map for Tier 1 Basic Spark Essence, and a medium map for Tier 2 Basic Spark Essence. For Class Sparks, there are three maps: an easy map for Tier 1 Class Spark, medium map for around 850 Tier 2 Class Spark Essence, and hard map for around 2100 Tier 2 Class Spark Essence.\n\nClass Spark Essence maps Tiers 1-2 are also rotated throughout the week, with Sunday having all six Tier 1 and Tier 2 Class Spark Essence maps. The order of Class throughout the week is:\n*Monday - Crystal Shards\n*Tuesday - Brawler\n*Wednesday - Warrior\n*Thursday - Scout\n*Friday - Tech\n*Saturday - Demolitions\n*Sunday- Tactician\n\nEach day also offers Daily Deals, in-app purchases which are Alpha Spark bundles or Class bundles.\n\n===Tier 1 Basic Sparks===\n*Daily Missions\n*Alliance Quests\n* Free 4-hour Crystal\n\n=== Tier 2 Basic Sparks===\n*Crystals\n*Raid Store (up to 3 for a total of 30,000 Raid Chips per day)\n*Alliance Quests\n*Easy and Medium Spotlight Missions\n\n===Tier 3 Basic Sparks===\n*Sparks - Can be obtained from Medium, Hard, Expert and Master Special Missions and also from Ancient Santum Crystal 2.0\n*Essence - Can be obtained from Hard, Expert and Master Missions, Raids, Rank up Crystal and Alliance Milestones\n\n===Tier 4 Basic Sparks===\n*Spark - Completing [[Revenge of the King]]\n*Essence - Master Special Missions\n**Completion reward: 500 T4 Basic Spark Essence.\n**Exploration reward: 2000 T4 Basic Spark Essence\n*Alliance Missions Ancient Santum:\n**Rank 1-3: 2500 T4 Basic Spark Essence\n**Rank 4-6: 1250 T4 Basic Spark Essence\n** Rank 7-10: 750 T4 Basic Spark Essence\n**Milestones 23-25 rewards 2500 T4 Basic Spark Essence in total\n\n=== Tier 5 Basic Sparks ===\n\n*Selling T4 Basic Sparks (80 essence each)\n*Alliance Mission Milestones 27~28 (65,600K~72,170K points)\n*Alliance Mission Ranks 1-10\n*Prime Difficulty Time-Slide Mission Exploration (2000 essence)\n\n===Tier 1 Alpha Sparks ===\n*Alliance Quests\n*Spotlight Missions\n* up to 5000 Tier 1 Alpha Spark Essence every day in the Raid Store\n\n===Tier 2 Alpha Sparks===\n*Alliance Missions and Alliance Quests\n*Hard and Expert Spotlight Missions\n*Raid Store (total 500 Essence for 28,000 Raid Chips per day)\n*Epic Away Missions\nCan be earned exactly like T1 Alpha Spark but in much fewer amounts.\n\n===Tier 1 Class Sparks===\n*Tier 1 Class Spark Crystal\n*Easy Daily Missions\n\n=== Tier 2 Class Sparks===\n*Tier 2 Class Spark Crystal\n*Tier 2 Essence Crystal\n*Medium and Hard Daily Missions\n\n===Tier 3 Class Sparks===\n\n*Selling Tier 2 Class Sparks (40 T3 Essence each)\n*Ancient Sanctum Crystals 2.0\n*Tier 3 Class Essence Crystal\n* Greater Rank Up Crystal\n*Tier 3 Class Spark Crystal\n*Epic Away Missions\n* Completing Monthly Objective by upgrading the featured 4-Star Bot of that month. Earn maximum of 5000 T3 Class Spark Essence of the same class if the featured 4 Star-Bot is upgraded to rank 5\n*Leveling Up from level 51. Each level rewards 1000 T3 Class Spark Essence of each Class\n* Completing [[Rulers of Kaon]] for a Tier 3 Class Spark Crystal\n*Completing [[Revenge of the King]] for 6 T3 Class Sparks for each class.\n\n*Mastering Expert and Master Special Missions, which reward 2 full T3 Class Spark each month. Exploring Expert for 5000 T3 Class Spark Crystal Shards and exploring Master for a whole T3 Class Spark and 5000 T3 Class Spark Crystal Shards\n\n=== Tier 4 Class Sparks===\n\n* Selling T3 Class Sparks\n* [[Fog of War]] Missions\n* Tier 3 Ore-13 Crystals\n* Bot Battle [[Alliance Quest]]: T4 Essence Crystal, 1,000 T4 Class Spark Crystal shards\n* Prime Special Mission exploration (1,000 shards)\n\n===Tier 1 Mod Sparks ===\n*Base Bounty Arenas\n*Tier 1 Mod Class Spark Crystal\n\n===Tier 2 Mod Sparks ===\n*in-app purchases or special Energon offers\n*Tier 2 Mod Class Spark Crystals, i.e. from completing Master Spotlight Missions\n\n===Tier 2 Mod Sparks===\n\n*The items's description says obtained from Alliance Missions, but has never materialized.\n\n==Rank Recipes==\nListed are the Sparks and Gold needed to Rank Up Bots and Mods according to star rating. The higher the star rating, the more Sparks that are harder to obtain are required.\n\n===Bots===\n*'''1-Star Rank 2: '''1 T1 Basic Spark, 2,000 Gold\n*'''2-Star Rank 2: '''2 T1 Basic Spark, 5,000 Gold\n*'''2-Star Rank 3: '''3 T1 Basic Spark, 1 T1 Class Spark, 9,000 Gold\n*'''3-Star Rank 2: '''1 T2 Basic Spark, 2 T1 Class Spark, 12,500 Gold\n*'''3-Star Rank 3: '''2 T2 Basic Spark, 1 T2 Class Spark, 22,500 Gold\n*'''3-Star Rank 4: '''3 T2 Basic Spark, 2 T2 Class Spark, 1 T1 Alpha Spark, 40,500 Gold\n*'''4-Star Rank 2: '''4 T2 Basic Spark, 3 T2 Class Spark, 2 T1 Alpha Spark, 31,250 Gold\n*'''4-Star Rank 3: '''1 T3 Basic Spark. 4 T2 Class Spark, 3 T1 Alpha Spark, 56,250 Gold\n*'''4-Star Rank 4: '''2 T3 Basic Spark, 5 T2 Class Spark, 1 T2 Alpha Spark, 101,250 Gold\n*'''4-Star Rank 5: '''3 T3 Basic Spark, 1 T3 Class Spark, 2 T2 Alpha Spark, 182,250 Gold\n*'''5-Star Rank 2:''' 4 T3 Basic Spark, 2 T3 Class Spark, 3 T2 Alpha Spark, 109,375 Gold\n*'''5-Star Rank 3:''' 1 T4 Basic Spark, 3 T3 Class Spark, 4 T2 Alpha Spark, 196,875 Gold\n*'''5-Star Rank 4:''' 2 T4 Basic Spark, 4 T3 Class Spark, 1 T3 Alpha Spark, 354,375 Gold\n*'''5-Star Rank 5:''' 3 T4 Basic Spark, 1 T4 Class Spark, 2 T3 Alpha Spark, 637,875 Gold\n*'''5-Star Rank 6:''' 1 T5 Basic Spark, 2 T4 Class Spark, 3 T3 Alpha Spark, 1,148,875 Gold\n\n=== Mods===\n*'''1-Star Rank 2: '''1 T1 Basic Spark, 500 Gold\n*'''2-Star Rank 2: '''1 T1 Basic Spark, 1157 Gold\n*'''2-Star Rank 3: '''2 T1 Basic Spark, 1799 Gold\n*'''3-Star Rank 2: '''3 T1 Basic Spark, 2976 Gold\n*'''3-Star Rank 3: '''1 T2 Basic Spark, 1 T1 Mod Class Spark, 6672 Gold\n*'''3-Star Rank 4: '''2 T2 Basic Spark, 2 T1 Mod Class Spark, 15,078 Gold\n*'''4-Star Rank 2:''' 3 T2 Basic Spark, 3 T1 Mod Spark, 15998 Gold\n*'''4-Star Rank 3:''' 1 T3 Basic Spark, 1 T2 Mod Class Spark, 1 T1 Alpha Spark, 32,545 Gold\n*'''4-Star Rank 4:''' 2 T3 Basic Spark, 1 T3 Mod Class Spark, 2 T1 Alpha Spark, 63291 Gold\n*'''4-Star Rank 5:''' 3 T3 Basic Spark, 1 T4 Mod Class Spark, 3 T1 Alpha Spark (speculated), Unknown price, probably around 127000 gold\n\nOverall, the total sparks that are required to max rank a bot is as follows:\n*'''1-Star Bot:''' 1 T1 Basic Spark\n*'''2-Star Bot:''' 5 T1 Basic Spark, 1 T1 Class Spark\n*'''3-Star Bot:''' 6 T2 Basic Spark, 2 T1 Class Spark, 3 T2 Class Spark, 1 T1 Alpha Spark\n*'''4-Star Bot:''' 4 T2 Basic Spark, 6 T3 Basic Spark, 12 T2 Class Spark, 1 T3 Class Spark, 5 T1 Alpha Spark, 3 T2 Alpha Spark\n*'''5-Star Bot:''' 4 T3 Basic Spark, 6 T4 Basic Spark, 9 T3 Class Spark, 1 T4 Class Spark, 7 T2 Alpha Spark, 3 T3 Alpha Spark\n[[File:23376356 189518801609868 6058695352862655587 n.jpg|thumb|273x273px|List containing rank up requirements, from 411 Infobot]]\n\n==Trivia==\nThe difficulty of obtaining a Spark increases in this following order: Basic -> Class -> Alpha -> Mod. More specifically, this list of difficulty is as follows:\n*T1 Basic -> T1 Class -> T2 Basic -> T2 Class -> T1 Alpha -> T1 Mod -> T3 Basic -> T2 Alpha -> T3 Class -> T4 Basic -> T2 Mod\n\n*The shapes of Sparks are polyhedrons:\n**A T1 Spark's shape is a Platonic (Regular) Tetrahedron\n**A T2 Spark's shape is a Platonic (Regular) Octahedron\n**A T3 Spark's shape is a Archimedean Cuboctahedron\n**A T4 Spark's shape is a Platonic (Regular) Dodecahedron\n**A T5 Spark's shape is a Icosahedron\n\nBasic and Class Spark have silver borders, while Alpha and Mod Spark have black borders.\n[[Category:Items]]"
+   },
+   "latest": {
+    "revid": 10867,
+    "timestamp": "2023-07-13T23:24:36Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Spark",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Spark",
+      "revid": 10867,
+      "timestamp": "2023-07-13T23:24:36Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Sparks are items necessary to Rank Up Bots and Mods. They can be purchased, earned, or formed from Spark Essence.\n\nSparks are stored in your inventory, and if you get Sparks that exceeds your maximum storage, they will be placed in the stash until they expire after 13 days or room is made by using or selling Sparks.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "List of Sparks",
+       "text": "{| class=\"article-table\"\n!Spark\n!Image\n!Essence\n!Essence Amount\n!Gold Value\n!Essence Value\n!Max\n|-\n|Tier 1 Basic Spark\n|\n|\n|100\n|104\n|20 T2 Basic Essence\n|12\n|-\n|Tier 2 Basic Spark\n|\n|\n|1000\n|687\n|40 T3 Basic Essence\n|12\n|-\n|Tier 3 Basic Spark\n|\n|\n|10000\n|4,360\n|60 T4 Basic Essence\n|12\n|-\n|Tier 4 Basic Spark\n|\n|\n|10000\n|19,840\n|80 T5 Basic Essence\n|12\n|-\n|Tier 5 Basic Spark\n|\n|\n|10000\n|N/A\n|N/A\n|1\n|-\n|Tier 1 Alpha Spark\n|\n|\n| 10000\n|687\n|100 Tier 2 Alpha Spark Essence\n|12\n|-\n|Tier 2 Alpha Spark\n|\n|\n|10000\n|13,288\n|100 Tier 3 Alpha Essence\n|8\n|-\n|Tier 3 Alpha Spark\n|\n|\n|10000\n|N/A\n|N/A\n|6\n|-\n|Tier 1 Class Spark\n|\n|\n|100\n|169\n|20 Tier 2 Class Spark Essence\n|12\n|-\n|Tier 2 Class Spark\n|\n|\n|1000\n|1119\n|40 Tier 3 Class Essence\n|12\n|-\n|Tier 3 Class Spark\n|\n|\n|10000\n|21,644\n|60 T4 Class Essence\n|12\n|-\n|Tier 4 Class Spark\n|\n|\n|10000\n|N/A\n|N/A\n|11\n|-\n|Tier 1 Offense Spark\n|\n|N/A\n|10000\n|687\n|20 T2 Essence\n|12\n|-\n|Tier 1 Defense Spark\n|\n|N/A\n|10000\n|687\n|20 T2 Essence\n|12\n|-\n|Tier 1\nUtility Spark\n|\n|N/A\n|10000\n|687\n|20 T2 Essence\n|12\n|-\n|Tier 2 Offense Spark\n|\n|\n|10000\n|N/A\n|N/A\n|3\n|-\n|Tier 2 Defense Spark\n|\n|\n|10000\n|N/A\n|N/A\n|3\n|-\n|Tier 2 Utility Spark\n|\n|\n|10000\n|N/A\n|N/A\n|3\n|}",
+       "tables": [
+        [
+         [
+          "Spark",
+          "Image",
+          "Essence",
+          "Essence Amount",
+          "Gold Value",
+          "Essence Value",
+          "Max"
+         ],
+         [
+          "Tier 1 Basic Spark",
+          "",
+          "",
+          "100",
+          "104",
+          "20 T2 Basic Essence",
+          "12"
+         ],
+         [
+          "Tier 2 Basic Spark",
+          "",
+          "",
+          "1000",
+          "687",
+          "40 T3 Basic Essence",
+          "12"
+         ],
+         [
+          "Tier 3 Basic Spark",
+          "",
+          "",
+          "10000",
+          "4,360",
+          "60 T4 Basic Essence",
+          "12"
+         ],
+         [
+          "Tier 4 Basic Spark",
+          "",
+          "",
+          "10000",
+          "19,840",
+          "80 T5 Basic Essence",
+          "12"
+         ],
+         [
+          "Tier 5 Basic Spark",
+          "",
+          "",
+          "10000",
+          "N/A",
+          "N/A",
+          "1"
+         ],
+         [
+          "Tier 1 Alpha Spark",
+          "",
+          "",
+          "10000",
+          "687",
+          "100 Tier 2 Alpha Spark Essence",
+          "12"
+         ],
+         [
+          "Tier 2 Alpha Spark",
+          "",
+          "",
+          "10000",
+          "13,288",
+          "100 Tier 3 Alpha Essence",
+          "8"
+         ],
+         [
+          "Tier 3 Alpha Spark",
+          "",
+          "",
+          "10000",
+          "N/A",
+          "N/A",
+          "6"
+         ],
+         [
+          "Tier 1 Class Spark",
+          "",
+          "",
+          "100",
+          "169",
+          "20 Tier 2 Class Spark Essence",
+          "12"
+         ],
+         [
+          "Tier 2 Class Spark",
+          "",
+          "",
+          "1000",
+          "1119",
+          "40 Tier 3 Class Essence",
+          "12"
+         ],
+         [
+          "Tier 3 Class Spark",
+          "",
+          "",
+          "10000",
+          "21,644",
+          "60 T4 Class Essence",
+          "12"
+         ],
+         [
+          "Tier 4 Class Spark",
+          "",
+          "",
+          "10000",
+          "N/A",
+          "N/A",
+          "11"
+         ],
+         [
+          "Tier 1 Offense Spark",
+          "",
+          "N/A",
+          "10000",
+          "687",
+          "20 T2 Essence",
+          "12"
+         ],
+         [
+          "Tier 1 Defense Spark",
+          "",
+          "N/A",
+          "10000",
+          "687",
+          "20 T2 Essence",
+          "12"
+         ],
+         [
+          "Tier 1",
+          "",
+          "N/A",
+          "10000",
+          "687",
+          "20 T2 Essence",
+          "12"
+         ],
+         [
+          "Tier 2 Offense Spark",
+          "",
+          "",
+          "10000",
+          "N/A",
+          "N/A",
+          "3"
+         ],
+         [
+          "Tier 2 Defense Spark",
+          "",
+          "",
+          "10000",
+          "N/A",
+          "N/A",
+          "3"
+         ],
+         [
+          "Tier 2 Utility Spark",
+          "",
+          "",
+          "10000",
+          "N/A",
+          "N/A",
+          "3"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Unreleased",
+       "text": "The Tier 3 Mod Sparks are ever so teased at the 4-Star Rank Up 4 screen with no method to obtain them. The rest are only in the game files and remain unreleased. Can you imagine spending millions on Rank 7 and 8 Bots and Mods??\n{| class=\"article-table\"\n!Spark\n! Image\n!Essence\n|-\n|Tier 4 Alpha Spark\n|\n|\n|-\n|Tier 5 Alpha Spark\n|\n|\n|-\n|Tier 5 Class Spark\n|\n|\n|-\n|Tier 3 Offense Spark\n|\n|\n|-\n| Tier 3 Defense Spark\n|\n|\n|-\n|Tier 3 Utility Spark\n|\n|\n|-\n|Tier 4 Offense Spark\n|\n|\n|-\n|Tier 4 Defense Spark\n|\n|\n|-\n|Tier 4 Utility Spark\n|\n|\n|-\n|Tier 5 Offense Spark\n|\n|\n|-\n| Tier 5 Defense Spark\n|\n|\n|-\n|Tier 5 Utility Spark\n|\n|\n|}",
+       "tables": [
+        [
+         [
+          "Spark",
+          "Image",
+          "Essence"
+         ],
+         [
+          "Tier 4 Alpha Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 5 Alpha Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 5 Class Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 3 Offense Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 3 Defense Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 3 Utility Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 4 Offense Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 4 Defense Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 4 Utility Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 5 Offense Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 5 Defense Spark",
+          "",
+          ""
+         ],
+         [
+          "Tier 5 Utility Spark",
+          "",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "Spark Essence is primarily earned through the solo Daily Missions. There are two maps for Basic Sparks: An easy map for Tier 1 Basic Spark Essence, and a medium map for Tier 2 Basic Spark Essence. For Class Sparks, there are three maps: an easy map for Tier 1 Class Spark, medium map for around 850 Tier 2 Class Spark Essence, and hard map for around 2100 Tier 2 Class Spark Essence.\n\nClass Spark Essence maps Tiers 1-2 are also rotated throughout the week, with Sunday having all six Tier 1 and Tier 2 Class Spark Essence maps. The order of Class throughout the week is:\n*Monday - Crystal Shards\n*Tuesday - Brawler\n*Wednesday - Warrior\n*Thursday - Scout\n*Friday - Tech\n*Saturday - Demolitions\n*Sunday- Tactician\n\nEach day also offers Daily Deals, in-app purchases which are Alpha Spark bundles or Class bundles.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 1 Basic Sparks",
+       "text": "*Daily Missions\n*Alliance Quests\n* Free 4-hour Crystal",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 2 Basic Sparks",
+       "text": "*Crystals\n*Raid Store (up to 3 for a total of 30,000 Raid Chips per day)\n*Alliance Quests\n*Easy and Medium Spotlight Missions",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 3 Basic Sparks",
+       "text": "*Sparks - Can be obtained from Medium, Hard, Expert and Master Special Missions and also from Ancient Santum Crystal 2.0\n*Essence - Can be obtained from Hard, Expert and Master Missions, Raids, Rank up Crystal and Alliance Milestones",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 4 Basic Sparks",
+       "text": "*Spark - Completing Revenge of the King\n*Essence - Master Special Missions\n**Completion reward: 500 T4 Basic Spark Essence.\n**Exploration reward: 2000 T4 Basic Spark Essence\n*Alliance Missions Ancient Santum:\n**Rank 1-3: 2500 T4 Basic Spark Essence\n**Rank 4-6: 1250 T4 Basic Spark Essence\n** Rank 7-10: 750 T4 Basic Spark Essence\n**Milestones 23-25 rewards 2500 T4 Basic Spark Essence in total",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 5 Basic Sparks",
+       "text": "*Selling T4 Basic Sparks (80 essence each)\n*Alliance Mission Milestones 27~28 (65,600K~72,170K points)\n*Alliance Mission Ranks 1-10\n*Prime Difficulty Time-Slide Mission Exploration (2000 essence)",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 1 Alpha Sparks",
+       "text": "*Alliance Quests\n*Spotlight Missions\n* up to 5000 Tier 1 Alpha Spark Essence every day in the Raid Store",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 2 Alpha Sparks",
+       "text": "*Alliance Missions and Alliance Quests\n*Hard and Expert Spotlight Missions\n*Raid Store (total 500 Essence for 28,000 Raid Chips per day)\n*Epic Away Missions\nCan be earned exactly like T1 Alpha Spark but in much fewer amounts.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 1 Class Sparks",
+       "text": "*Tier 1 Class Spark Crystal\n*Easy Daily Missions",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 2 Class Sparks",
+       "text": "*Tier 2 Class Spark Crystal\n*Tier 2 Essence Crystal\n*Medium and Hard Daily Missions",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 3 Class Sparks",
+       "text": "*Selling Tier 2 Class Sparks (40 T3 Essence each)\n*Ancient Sanctum Crystals 2.0\n*Tier 3 Class Essence Crystal\n* Greater Rank Up Crystal\n*Tier 3 Class Spark Crystal\n*Epic Away Missions\n* Completing Monthly Objective by upgrading the featured 4-Star Bot of that month. Earn maximum of 5000 T3 Class Spark Essence of the same class if the featured 4 Star-Bot is upgraded to rank 5\n*Leveling Up from level 51. Each level rewards 1000 T3 Class Spark Essence of each Class\n* Completing Rulers of Kaon for a Tier 3 Class Spark Crystal\n*Completing Revenge of the King for 6 T3 Class Sparks for each class.\n\n*Mastering Expert and Master Special Missions, which reward 2 full T3 Class Spark each month. Exploring Expert for 5000 T3 Class Spark Crystal Shards and exploring Master for a whole T3 Class Spark and 5000 T3 Class Spark Crystal Shards",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 4 Class Sparks",
+       "text": "* Selling T3 Class Sparks\n* Fog of War Missions\n* Tier 3 Ore-13 Crystals\n* Bot Battle Alliance Quest: T4 Essence Crystal, 1,000 T4 Class Spark Crystal shards\n* Prime Special Mission exploration (1,000 shards)",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 1 Mod Sparks",
+       "text": "*Base Bounty Arenas\n*Tier 1 Mod Class Spark Crystal",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 2 Mod Sparks",
+       "text": "*in-app purchases or special Energon offers\n*Tier 2 Mod Class Spark Crystals, i.e. from completing Master Spotlight Missions",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Tier 2 Mod Sparks",
+       "text": "*The items's description says obtained from Alliance Missions, but has never materialized.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Rank Recipes",
+       "text": "Listed are the Sparks and Gold needed to Rank Up Bots and Mods according to star rating. The higher the star rating, the more Sparks that are harder to obtain are required.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Bots",
+       "text": "*1-Star Rank 2: 1 T1 Basic Spark, 2,000 Gold\n*2-Star Rank 2: 2 T1 Basic Spark, 5,000 Gold\n*2-Star Rank 3: 3 T1 Basic Spark, 1 T1 Class Spark, 9,000 Gold\n*3-Star Rank 2: 1 T2 Basic Spark, 2 T1 Class Spark, 12,500 Gold\n*3-Star Rank 3: 2 T2 Basic Spark, 1 T2 Class Spark, 22,500 Gold\n*3-Star Rank 4: 3 T2 Basic Spark, 2 T2 Class Spark, 1 T1 Alpha Spark, 40,500 Gold\n*4-Star Rank 2: 4 T2 Basic Spark, 3 T2 Class Spark, 2 T1 Alpha Spark, 31,250 Gold\n*4-Star Rank 3: 1 T3 Basic Spark. 4 T2 Class Spark, 3 T1 Alpha Spark, 56,250 Gold\n*4-Star Rank 4: 2 T3 Basic Spark, 5 T2 Class Spark, 1 T2 Alpha Spark, 101,250 Gold\n*4-Star Rank 5: 3 T3 Basic Spark, 1 T3 Class Spark, 2 T2 Alpha Spark, 182,250 Gold\n*5-Star Rank 2: 4 T3 Basic Spark, 2 T3 Class Spark, 3 T2 Alpha Spark, 109,375 Gold\n*5-Star Rank 3: 1 T4 Basic Spark, 3 T3 Class Spark, 4 T2 Alpha Spark, 196,875 Gold\n*5-Star Rank 4: 2 T4 Basic Spark, 4 T3 Class Spark, 1 T3 Alpha Spark, 354,375 Gold\n*5-Star Rank 5: 3 T4 Basic Spark, 1 T4 Class Spark, 2 T3 Alpha Spark, 637,875 Gold\n*5-Star Rank 6: 1 T5 Basic Spark, 2 T4 Class Spark, 3 T3 Alpha Spark, 1,148,875 Gold",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Mods",
+       "text": "*1-Star Rank 2: 1 T1 Basic Spark, 500 Gold\n*2-Star Rank 2: 1 T1 Basic Spark, 1157 Gold\n*2-Star Rank 3: 2 T1 Basic Spark, 1799 Gold\n*3-Star Rank 2: 3 T1 Basic Spark, 2976 Gold\n*3-Star Rank 3: 1 T2 Basic Spark, 1 T1 Mod Class Spark, 6672 Gold\n*3-Star Rank 4: 2 T2 Basic Spark, 2 T1 Mod Class Spark, 15,078 Gold\n*4-Star Rank 2: 3 T2 Basic Spark, 3 T1 Mod Spark, 15998 Gold\n*4-Star Rank 3: 1 T3 Basic Spark, 1 T2 Mod Class Spark, 1 T1 Alpha Spark, 32,545 Gold\n*4-Star Rank 4: 2 T3 Basic Spark, 1 T3 Mod Class Spark, 2 T1 Alpha Spark, 63291 Gold\n*4-Star Rank 5: 3 T3 Basic Spark, 1 T4 Mod Class Spark, 3 T1 Alpha Spark (speculated), Unknown price, probably around 127000 gold\n\nOverall, the total sparks that are required to max rank a bot is as follows:\n*1-Star Bot: 1 T1 Basic Spark\n*2-Star Bot: 5 T1 Basic Spark, 1 T1 Class Spark\n*3-Star Bot: 6 T2 Basic Spark, 2 T1 Class Spark, 3 T2 Class Spark, 1 T1 Alpha Spark\n*4-Star Bot: 4 T2 Basic Spark, 6 T3 Basic Spark, 12 T2 Class Spark, 1 T3 Class Spark, 5 T1 Alpha Spark, 3 T2 Alpha Spark\n*5-Star Bot: 4 T3 Basic Spark, 6 T4 Basic Spark, 9 T3 Class Spark, 1 T4 Class Spark, 7 T2 Alpha Spark, 3 T3 Alpha Spark",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Netflix",
+       "text": "In the Netflix version the Spark ranking system was significantly modified so that higher class and unused Sparks could see use in lower star ratings. Incidentally Tier 1 Class Sparks are now completely useless apart from selling.\n\n* 1-Star Rank 2: 1 T1 Basic Spark, 2,000 Gold\n* 2-Star Rank 2: 1 T1 Basic Spark, 5,000 Gold\n* 2-Star Rank 3: 2 T3 Basic Spark, 1 T2 Class Spark, 9,000 Gold\n* 3-Star Rank 2: 1 T3 Basic Spark, 12,500 Gold\n* 3-Star Rank 3: 2 T3 Basic Spark, 1 T3 Class Spark 22,500 Gold\n* 3-Star Rank 4: 40,500 Gold\n*4-Star Rank 2: 31,250 Gold\n*4-Star Rank 3: 56,250 Gold\n*4-Star Rank 4: 101,250 Gold\n*4-Star Rank 5: 182,250 Gold\n*5-Star Rank 2: 109,375 Gold\n*5-Star Rank 3: 196,875 Gold\n*5-Star Rank 4: 354,375 Gold\n*5-Star Rank 5: 637,875 Gold\n*5-Star Rank 6: 1,148,875 Gold",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Trivia",
+       "text": "The difficulty of obtaining a Spark increases in this following order: Basic -> Class -> Alpha -> Mod. More specifically, this list of difficulty is as follows:\n*T1 Basic -> T1 Class -> T2 Basic -> T2 Class -> T1 Alpha -> T1 Mod -> T3 Basic -> T2 Alpha -> T3 Class -> T4 Basic -> T2 Mod\n\n*The shapes of Sparks are polyhedrons:\n**A T1 Spark's shape is a Platonic (Regular) Tetrahedron\n**A T2 Spark's shape is a Platonic (Regular) Octahedron\n**A T3 Spark's shape is a Archimedean Cuboctahedron\n**A T4 Spark's shape is a Platonic (Regular) Dodecahedron\n**A T5 Spark's shape is a Icosahedron\n\nBasic and Class Spark have silver borders, while Alpha and Mod Spark have black borders.\nCategory:Items",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  }
+ }
+}

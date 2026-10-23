@@ -118,3 +118,7 @@
 по `ActiveQuest.mode`; mode-клоны добавлены, prefight пуст. `QuestUserInfo.team`
 внутри List, JSON — dict; верхнеуровневый team переведён в dict. Smoke PASS,
 golden regression 9/9 PASS; `/matches` не вызван.
+
+**2026-10-23, wiki/data:** synergy 40/44; 13 topic files with
+as_of/latest; client-only map 13+7+5; manifest 5154/5154 verified
+after 5 stale-hash corrections; C5 catalog 59 packs; C2 formula partial.

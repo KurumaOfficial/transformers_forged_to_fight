@@ -1,0 +1,12 @@
+{
+  "name": "v06_modes_expire",
+  "description": "Type=Story, modes=[story,Story], expire=999999.",
+  "team_extra": {
+    "type": "Story",
+    "modes": [
+      "story",
+      "Story"
+    ],
+    "expire": 999999
+  }
+}

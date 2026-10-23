@@ -1,0 +1,270 @@
+{
+  "source": "data/wiki/id_map.json + work/unpacked/assets (client 9.2.0); no invented stats",
+  "client_only": [
+    {
+      "client_id": "blaster_gs_leader2016",
+      "wiki_page": "Blaster",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/blaster_gs_leader2016_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "bumblebee_cin_dotm",
+      "wiki_page": "Bumblebee (DOTM)",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/bumblebee_cin_dotm_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "cheetor_bw_transmetal",
+      "wiki_page": "Cheetor",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/cheetor_bw_transmetal_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "cyclonus_gs_uw06",
+      "wiki_page": "Cyclonus",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/cyclonus_gs_uw06_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "dinobot_bw_kabam",
+      "wiki_page": "Dinobot",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/dinobot_bw_kabam_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "dirge_gs_deluxe2008",
+      "wiki_page": "Dirge",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/dirge_gs_deluxe2008_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "grimlock_gs_mp08",
+      "wiki_page": "Grimlock",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/grimlock_gs_mp08_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "grindor_cin_rotf",
+      "wiki_page": "Grindor",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/grindor_cin_rotf_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "kickback_gs_kabam",
+      "wiki_page": "Kickback",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/kickback_gs_kabam_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "megatronus_gs_kabam",
+      "wiki_page": "Megatronus",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/megatronus_gs_kabam_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "optimusprimal_bw_mp32",
+      "wiki_page": "Optimus Primal",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/optimusprimal_bw_mp32_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "ratchet_gs_kabam",
+      "wiki_page": "Ratchet",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/ratchet_gs_kabam_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    },
+    {
+      "client_id": "soundwave_gs",
+      "wiki_page": "Soundwave",
+      "wiki_page_exists": true,
+      "pack_dir": "work/unpacked/assets/soundwave_gs_odr",
+      "known_from_client": [
+        "id from prefab/package directory"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no stat page in the saved Fandom set",
+      "tag": "[CLIENT]+[WIKI]"
+    }
+  ],
+  "sharkticon_variants": [
+    {
+      "client_id": "sharkticon_gs_brawler",
+      "pack_dir": "work/unpacked/assets/sharkticon_gs_brawler_odr",
+      "known_from_client": [
+        "variant package"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no separate Sharkticon stat page in saved Fandom set",
+      "tag": "[CLIENT]"
+    },
+    {
+      "client_id": "sharkticon_gs_demolition",
+      "pack_dir": "work/unpacked/assets/sharkticon_gs_demolition_odr",
+      "known_from_client": [
+        "variant package"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no separate Sharkticon stat page in saved Fandom set",
+      "tag": "[CLIENT]"
+    },
+    {
+      "client_id": "sharkticon_gs_kabam",
+      "pack_dir": "work/unpacked/assets/sharkticon_gs_kabam_odr",
+      "known_from_client": [
+        "variant package"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no separate Sharkticon stat page in saved Fandom set",
+      "tag": "[CLIENT]"
+    },
+    {
+      "client_id": "sharkticon_gs_scout",
+      "pack_dir": "work/unpacked/assets/sharkticon_gs_scout_odr",
+      "known_from_client": [
+        "variant package"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no separate Sharkticon stat page in saved Fandom set",
+      "tag": "[CLIENT]"
+    },
+    {
+      "client_id": "sharkticon_gs_tactician",
+      "pack_dir": "work/unpacked/assets/sharkticon_gs_tactician_odr",
+      "known_from_client": [
+        "variant package"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no separate Sharkticon stat page in saved Fandom set",
+      "tag": "[CLIENT]"
+    },
+    {
+      "client_id": "sharkticon_gs_tech",
+      "pack_dir": "work/unpacked/assets/sharkticon_gs_tech_odr",
+      "known_from_client": [
+        "variant package"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no separate Sharkticon stat page in saved Fandom set",
+      "tag": "[CLIENT]"
+    },
+    {
+      "client_id": "sharkticon_gs_warrior",
+      "pack_dir": "work/unpacked/assets/sharkticon_gs_warrior_odr",
+      "known_from_client": [
+        "variant package"
+      ],
+      "known_from_wiki": [],
+      "missing_reason": "no separate Sharkticon stat page in saved Fandom set",
+      "tag": "[CLIENT]"
+    }
+  ],
+  "wiki_without_client": [
+    {
+      "wiki_page": "Chromia",
+      "possible_status": "post-9.2.0 or variant not present as a separate pack",
+      "client_match": null,
+      "tag": "[WIKI]+[ASSUMED]"
+    },
+    {
+      "wiki_page": "Dead End",
+      "possible_status": "post-9.2.0 or variant not present as a separate pack",
+      "client_match": null,
+      "tag": "[WIKI]+[ASSUMED]"
+    },
+    {
+      "wiki_page": "Optimus Prime",
+      "possible_status": "post-9.2.0 or variant not present as a separate pack",
+      "client_match": null,
+      "tag": "[WIKI]+[ASSUMED]"
+    },
+    {
+      "wiki_page": "Soundblaster/Tactician",
+      "possible_status": "post-9.2.0 or variant not present as a separate pack",
+      "client_match": null,
+      "tag": "[WIKI]+[ASSUMED]"
+    },
+    {
+      "wiki_page": "Starscream",
+      "possible_status": "post-9.2.0 or variant not present as a separate pack",
+      "client_match": null,
+      "tag": "[WIKI]+[ASSUMED]"
+    }
+  ],
+  "counts": {
+    "client_only_non_shark": 13,
+    "sharkticon_variants": 7,
+    "wiki_without_client": 5
+  }
+}

@@ -55,3 +55,13 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - A5: `/matches/activate-match` не вызван; тела и `FighterInitData`
   остаются `[ASSUMED]`.
 - A3: harness variants не запускался пакетом 10–20; smoke/golden готовы.
+
+- C1: OpenAPI quest endpoints still `[NOT OBSERVED]`; depth for
+  login/tuning/gacha/shop/etc. is partial. [STATIC]
+- C3: full TuningManager key/default scan not done; only four defaults
+  verified in `server/data/tuning_client_defaults.json`.
+- C4: only 8 `D_STAT` keys found by the JSON-object extractor; full
+  ability localization needs another text-asset extraction path.
+- C2: rating pseudocode partial; need runtime `BCGAttributeData` dump.
+- W3: topic files are curated page sets, not complete numeric tables for
+  every event/relic/crystal chance; values missing where not in wikitext.

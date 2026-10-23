@@ -1,0 +1,516 @@
+{
+ "source": "Fandom pages parsed in data/wiki/pages.json; as_of/latest from data/wiki/versions/",
+ "cutoff": "2023-01-13T23:59:59Z",
+ "topic": "status_effects",
+ "note": "Curated page set; values only from saved wikitext. as_of uses parsed page when revision <= cutoff, otherwise raw wikitext or null.",
+ "page_count": 8,
+ "pages": {
+  "Acid": {
+   "page": "Acid",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Acid",
+   "tag": "[WIKI]",
+   "as_of_2023": null,
+   "latest": {
+    "revid": 10915,
+    "timestamp": "2024-02-02T00:24:45Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Acid",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Acid",
+      "revid": 10915,
+      "timestamp": "2024-02-02T00:24:45Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "{{Stub}}\n\nAcid is a damaging debuff much like Bleed and Burn.\nCategory:Abilities",
+     "sections": []
+    }
+   },
+   "created_after_cutoff": true,
+   "changed_since_cutoff": true
+  },
+  "Armor Break": {
+   "page": "Armor Break",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Break",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 7885,
+    "timestamp": "2020-09-13T12:01:49Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Armor Break",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Break",
+      "revid": 7885,
+      "timestamp": "2020-09-13T12:01:49Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Armor Break is a debuff that amplifies damage from attacks and removes or converts existing Armor Buffs on the opponent. Does not affect Resistance.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Bots",
+       "text": "* Bumblebee - Special 1\n* Dinobot - Blocked Dashes, Special 1\n* Megatron (G1) - Special 1, can be permanently fused\n* Megatronus - Special 1\n* Motormaster - random chance from Heavy Attacks and Special 3\n* Optimus Prime - All Specials, permanent on Special 3\n* Starscream - Special 2\n* Tactician Sharkticon - Signature Special 2\n* Ultra Magnus - All Specials, Special 1 applies one stack regardless of Armor",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Mods",
+       "text": "* Utility Mode: Stagger",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Strategy",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Strong match-ups",
+       "text": "* Utility Mod: Armor\n* Utility Mod: Armor Timed \n* Security Module",
+       "tables": []
+      },
+      {
+       "level": 4,
+       "heading": "Weak match-ups",
+       "text": "* Exo-Filter",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 7885,
+    "timestamp": "2020-09-13T12:01:49Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Armor Break",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Break",
+      "revid": 7885,
+      "timestamp": "2020-09-13T12:01:49Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Armor Break is a debuff that amplifies damage from attacks and removes or converts existing Armor Buffs on the opponent. Does not affect Resistance.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Bots",
+       "text": "* Bumblebee - Special 1\n* Dinobot - Blocked Dashes, Special 1\n* Megatron (G1) - Special 1, can be permanently fused\n* Megatronus - Special 1\n* Motormaster - random chance from Heavy Attacks and Special 3\n* Optimus Prime - All Specials, permanent on Special 3\n* Starscream - Special 2\n* Tactician Sharkticon - Signature Special 2\n* Ultra Magnus - All Specials, Special 1 applies one stack regardless of Armor",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Mods",
+       "text": "* Utility Mode: Stagger",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Strategy",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Strong match-ups",
+       "text": "* Utility Mod: Armor\n* Utility Mod: Armor Timed \n* Security Module",
+       "tables": []
+      },
+      {
+       "level": 4,
+       "heading": "Weak match-ups",
+       "text": "* Exo-Filter",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Armor Buff": {
+   "page": "Armor Buff",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Buff",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8754,
+    "timestamp": "2021-09-22T06:58:01Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Armor Buff",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Buff",
+      "revid": 8754,
+      "timestamp": "2021-09-22T06:58:01Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Reduces amount of damage taken from opponents.",
+     "sections": []
+    }
+   },
+   "latest": {
+    "revid": 8754,
+    "timestamp": "2021-09-22T06:58:01Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Armor Buff",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Buff",
+      "revid": 8754,
+      "timestamp": "2021-09-22T06:58:01Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Reduces amount of damage taken from opponents.",
+     "sections": []
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Bleed": {
+   "page": "Bleed",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Bleed",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 7772,
+    "timestamp": "2020-07-17T07:44:28Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Bleed",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Bleed",
+      "revid": 7772,
+      "timestamp": "2020-07-17T07:44:28Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Bleed is a damaging debuff ability that drains an opponent's health over time for several seconds. The other damaging debuffs are Shock, Burn, and Acid.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Bots with Bleed",
+       "text": "*Arcee (Headshot)\n*Bonecrusher\n*Bludgeon\n*Cheetor (Melee Crit hits and Special Attack 1)\n*Dinobot (Critical Heavy Attacks)\n*Drift\n*Hound (Special Attack 2 & 3)\n*Kickback (Special Attack 2)\n*Necrotronus (20 or more Titan Charges)\n*Optimus Primal (Special Attack 1 and 2)\n*Optimus Prime (Breach signature ability on critical attacks on Armor Break)\n*Optimus Prime (MV1) (Special Attacks)\n*Rhinox\n*Scorponok\n*Windblade",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Mods",
+       "text": "* Harm Accelerator\nCategory:Abilities",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 7772,
+    "timestamp": "2020-07-17T07:44:28Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Bleed",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Bleed",
+      "revid": 7772,
+      "timestamp": "2020-07-17T07:44:28Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Bleed is a damaging debuff ability that drains an opponent's health over time for several seconds. The other damaging debuffs are Shock, Burn, and Acid.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Bots with Bleed",
+       "text": "*Arcee (Headshot)\n*Bonecrusher\n*Bludgeon\n*Cheetor (Melee Crit hits and Special Attack 1)\n*Dinobot (Critical Heavy Attacks)\n*Drift\n*Hound (Special Attack 2 & 3)\n*Kickback (Special Attack 2)\n*Necrotronus (20 or more Titan Charges)\n*Optimus Primal (Special Attack 1 and 2)\n*Optimus Prime (Breach signature ability on critical attacks on Armor Break)\n*Optimus Prime (MV1) (Special Attacks)\n*Rhinox\n*Scorponok\n*Windblade",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Mods",
+       "text": "* Harm Accelerator\nCategory:Abilities",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Burn": {
+   "page": "Burn",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Burn",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 9376,
+    "timestamp": "2022-07-29T01:02:02Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Burn",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Burn",
+      "revid": 9376,
+      "timestamp": "2022-07-29T01:02:02Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Burn is a Damaging Debuff is an ability that deals heat damage over time, as indicated in-game by flames on the affected bot.\n\nShould not be confused with Dark Burn, which inflicts instant debuff damage.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Bots",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Bots with Burn Abilities",
+       "text": "Burns are inflicted by missiles and anything that shoots fire.\n* Grimlock - Heavy Attacks (40~63%), Special 1 and 3\n* Grindor - Critical Heavy Attacks and Special 3\n* Hound - Inferno Ammo shots, Special 1 and 2\n* Ironhide - all missile attacks\n* Mixmaster - Special 2 and 3\n* Ramjet - Special 1 and 2\n* Sideswipe - Special 2 and 3\n* Starscream - Heavy Attacks (20%)\n* Tantrum - Special 1 +10% for each Melee Buff\n* Thundercracker - Heavy Attacks for each debuff purified\n* Ultra Magnus - Heavy, Attack, Special 2 and 3\n* Waspinator - Special 3",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Counter Bots",
+       "text": "* Grimlock\n* Optimus Primal + Beast Purification Synergy\n* Mirage\n* Rhinox (35% Burn and Shock Resistance while Shielded)\n* Jetfire\n* Thundercracker\n* Tantrum",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Mods",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Infliction",
+       "text": "* Transwarp Cell\n* Burn Down\n* Boss Megatronus at Relic of Chaos",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Strong Match-Ups",
+       "text": "* Pyrophobia\n* Burn It",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 9376,
+    "timestamp": "2022-07-29T01:02:02Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Burn",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Burn",
+      "revid": 9376,
+      "timestamp": "2022-07-29T01:02:02Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Burn is a Damaging Debuff is an ability that deals heat damage over time, as indicated in-game by flames on the affected bot.\n\nShould not be confused with Dark Burn, which inflicts instant debuff damage.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Bots",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Bots with Burn Abilities",
+       "text": "Burns are inflicted by missiles and anything that shoots fire.\n* Grimlock - Heavy Attacks (40~63%), Special 1 and 3\n* Grindor - Critical Heavy Attacks and Special 3\n* Hound - Inferno Ammo shots, Special 1 and 2\n* Ironhide - all missile attacks\n* Mixmaster - Special 2 and 3\n* Ramjet - Special 1 and 2\n* Sideswipe - Special 2 and 3\n* Starscream - Heavy Attacks (20%)\n* Tantrum - Special 1 +10% for each Melee Buff\n* Thundercracker - Heavy Attacks for each debuff purified\n* Ultra Magnus - Heavy, Attack, Special 2 and 3\n* Waspinator - Special 3",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Counter Bots",
+       "text": "* Grimlock\n* Optimus Primal + Beast Purification Synergy\n* Mirage\n* Rhinox (35% Burn and Shock Resistance while Shielded)\n* Jetfire\n* Thundercracker\n* Tantrum",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Mods",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Infliction",
+       "text": "* Transwarp Cell\n* Burn Down\n* Boss Megatronus at Relic of Chaos",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Strong Match-Ups",
+       "text": "* Pyrophobia\n* Burn It",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Shock": {
+   "page": "Shock",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Shock",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 9374,
+    "timestamp": "2022-07-29T01:00:30Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Shock",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Shock",
+      "revid": 9374,
+      "timestamp": "2022-07-29T01:00:30Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Shock is a damaging debuff ability which deals Shock damage over time.\n\nNot to be confused with Instant Shock damage.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Characteristics",
+       "text": "Shock damage is characterized as a Bot being shocked with some kind of electricity charge.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Strategies",
+       "text": "Some Brawler Bots work around Bleeds to gain ground, but some don't work around Shocks. Use this to your advantage to take down tough Brawlers.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Bots that inflict Shock damage",
+       "text": "* Thundercracker (Special 3)\n* Scorponok (3 or more Venom Backfires expire)\n* Bumblebee (Shield Break)\n*Kickback (Special 1)\n*Windblade (Special 1)\n*Jetfire (Heavy & Special 3)\n*Wheeljack (Special Attacks)\n*Blaster (Heavy)\n*Shockwave (Heavy, Special 1 & 3)\n*Soundwave (Heavy, Special 2 & 3)\n*Ratchet (Ranged Attacks)\n*Rhinox (From his \"Overclock\" signature)\n*Megatron (Special 3)\n*Bumblebee (DOTM) - (Special 2 & 3)",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 9374,
+    "timestamp": "2022-07-29T01:00:30Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Shock",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Shock",
+      "revid": 9374,
+      "timestamp": "2022-07-29T01:00:30Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Shock is a damaging debuff ability which deals Shock damage over time.\n\nNot to be confused with Instant Shock damage.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Characteristics",
+       "text": "Shock damage is characterized as a Bot being shocked with some kind of electricity charge.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Strategies",
+       "text": "Some Brawler Bots work around Bleeds to gain ground, but some don't work around Shocks. Use this to your advantage to take down tough Brawlers.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Bots that inflict Shock damage",
+       "text": "* Thundercracker (Special 3)\n* Scorponok (3 or more Venom Backfires expire)\n* Bumblebee (Shield Break)\n*Kickback (Special 1)\n*Windblade (Special 1)\n*Jetfire (Heavy & Special 3)\n*Wheeljack (Special Attacks)\n*Blaster (Heavy)\n*Shockwave (Heavy, Special 1 & 3)\n*Soundwave (Heavy, Special 2 & 3)\n*Ratchet (Ranged Attacks)\n*Rhinox (From his \"Overclock\" signature)\n*Megatron (Special 3)\n*Bumblebee (DOTM) - (Special 2 & 3)",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Stun": {
+   "page": "Stun",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Stun",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8753,
+    "timestamp": "2021-09-21T09:26:04Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Stun",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Stun",
+      "revid": 8753,
+      "timestamp": "2021-09-21T09:26:04Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Stun is a debuff that does not do damage but makes you unable to move and attack back.",
+     "sections": []
+    }
+   },
+   "latest": {
+    "revid": 8753,
+    "timestamp": "2021-09-21T09:26:04Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Stun",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Stun",
+      "revid": 8753,
+      "timestamp": "2021-09-21T09:26:04Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Stun is a debuff that does not do damage but makes you unable to move and attack back.",
+     "sections": []
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Evade": {
+   "page": "Evade",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Evade",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 7813,
+    "timestamp": "2020-08-03T04:18:44Z",
+    "raw_wikitext": "'''Evasion''' buffs are abilities that makes a Bot automatically dodge attacks. Three types of Evade exist: '''Melee Evade''' and '''Ranged Evade''', in addition to a '''general Evade'''.\n\n== Bots with this buff ==\n*All [[Scout]]s have this buff in one way or another.\n* [[Bumblebee (DOTM)]] is the only non-Scout to have an Evade buff.\n[[Category:Buffs]]\n[[Category:Gameplay]]"
+   },
+   "latest": {
+    "revid": 10828,
+    "timestamp": "2023-05-16T06:24:56Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Evade",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Evade",
+      "revid": 10828,
+      "timestamp": "2023-05-16T06:24:56Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Evasion buffs are abilities that makes a Bot automatically dodge away from attacks. Evade can be attack specific: Evade Melee, Evade Ranged, and Evade Special , in addition to Evade All. Some bots have instances of Evading instantly without buffs.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Bots",
+       "text": "* Arcee (instant ranged)\n* Barricade (all)\n* Bumblebee (DOTM) (melee or ranged) \n* Bumblebee (melee)\n* Cheetor (ranged)\n* Jazz (all)\n* Kickback (instant heavy)\n* Prowl (all)\n* Sideswipe (melee)\n* Skywarp (specials)\n* Starscream (instant heavy melee, synergy ranged)\n* Sunstreaker (melee)\n\nSome modules like the Nightbird's Mark can add evade buff to any bot.\n\nCategory:Buffs\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  }
+ }
+}

@@ -1,0 +1,1173 @@
+{
+ "source": "Fandom pages parsed in data/wiki/pages.json; as_of/latest from data/wiki/versions/",
+ "cutoff": "2023-01-13T23:59:59Z",
+ "topic": "relics",
+ "note": "Curated page set; values only from saved wikitext. as_of uses parsed page when revision <= cutoff, otherwise raw wikitext or null.",
+ "page_count": 14,
+ "pages": {
+  "Blaster Relic": {
+   "page": "Blaster Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Blaster_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8840,
+    "timestamp": "2022-01-09T16:58:45Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Blaster Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Blaster_Relic",
+      "revid": 8840,
+      "timestamp": "2022-01-09T16:58:45Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Blaster Relics are rewarded for mastering the Bring the Noise Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "An award to celebrate the good times that have been had mastering the Blaster Special Missions.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +2% Health in Raids when attacking.\n* Bronze: +3%\n* Silver: +4%\n* Gold: +5%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Blaster Relic Icon.jpg\nBronze Blaster Relic Icon.jpg\nSilver Blaster Relic Icon.jpg\nGold Blaster Relic Icon.jpg\nBlaster Relic portrait.png\nBronze Blaster Relic portrait.png\nSilver Blaster Relic portrait.png\nGold Blaster Relic potrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8840,
+    "timestamp": "2022-01-09T16:58:45Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Blaster Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Blaster_Relic",
+      "revid": 8840,
+      "timestamp": "2022-01-09T16:58:45Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Blaster Relics are rewarded for mastering the Bring the Noise Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "An award to celebrate the good times that have been had mastering the Blaster Special Missions.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +2% Health in Raids when attacking.\n* Bronze: +3%\n* Silver: +4%\n* Gold: +5%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Blaster Relic Icon.jpg\nBronze Blaster Relic Icon.jpg\nSilver Blaster Relic Icon.jpg\nGold Blaster Relic Icon.jpg\nBlaster Relic portrait.png\nBronze Blaster Relic portrait.png\nSilver Blaster Relic portrait.png\nGold Blaster Relic potrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Cheetor Relic": {
+   "page": "Cheetor Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Cheetor_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8841,
+    "timestamp": "2022-01-09T16:59:06Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Cheetor Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Cheetor_Relic",
+      "revid": 8841,
+      "timestamp": "2022-01-09T16:59:06Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Cheetor Relics are rewarded for mastering the Feral Phenomena Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "An ancient artifact mutated by quantum energy. Awarded for Mastery of the Cheetor Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +1% Attack Rating in Raids when attacking.\n* Bronze: +2%\n* Silver: +3%\n* Gold: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Cheetor Relic Icon.jpg\nBronze Cheetor Relic Icon.jpg\nSilver Cheetor Relic Icon.jpg\nGold Cheetor Relic Icon.jpg\nCheetor Relic portrait.png\nBronze Cheetor Relic portrait.png\nSilver Cheetor Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8841,
+    "timestamp": "2022-01-09T16:59:06Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Cheetor Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Cheetor_Relic",
+      "revid": 8841,
+      "timestamp": "2022-01-09T16:59:06Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Cheetor Relics are rewarded for mastering the Feral Phenomena Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "An ancient artifact mutated by quantum energy. Awarded for Mastery of the Cheetor Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +1% Attack Rating in Raids when attacking.\n* Bronze: +2%\n* Silver: +3%\n* Gold: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Cheetor Relic Icon.jpg\nBronze Cheetor Relic Icon.jpg\nSilver Cheetor Relic Icon.jpg\nGold Cheetor Relic Icon.jpg\nCheetor Relic portrait.png\nBronze Cheetor Relic portrait.png\nSilver Cheetor Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Galvatron Relic": {
+   "page": "Galvatron Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Galvatron_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8842,
+    "timestamp": "2022-01-13T13:46:08Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Galvatron Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Galvatron_Relic",
+      "revid": 8842,
+      "timestamp": "2022-01-13T13:46:08Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Galvatron Relics are Relics awarded by completely exploring the Galvatron Rising Special Missions. Unlike previous Relics, each tier has its own name and appearance.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A tribute to a Bot more violent than Megatron who plots to lead the Decepticons. Awarded for mastery of the Easy/Medium/Hard/Expert Galvatron Rising Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Green): +1% Attack and Health in Alliance Missions\n* Bronze:  +2%\n* Silver:    +3%\n* Gold:     +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Galvatron Relic Icon.jpg|Galvatron Relic\nBronze Galvatron Relic Icon.jpg|Bronze Galvatron Relic\nSilver Galvatron Relic Icon.jpg|Silver Galvatron Relic\nGold Galvatron Relic Icon.jpg|Gold Galvatron Relic\nGalvatron Relic.png|Bronze Galvatron Relic\nBronze Galvatron Relic.png|Bronze Galvatron Relic\nSilver Galvatron Relic.png|Silver Galvatron Relic\nGold Galvatron Relic portrait.png|Gold Galvatron Relic\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8842,
+    "timestamp": "2022-01-13T13:46:08Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Galvatron Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Galvatron_Relic",
+      "revid": 8842,
+      "timestamp": "2022-01-13T13:46:08Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Galvatron Relics are Relics awarded by completely exploring the Galvatron Rising Special Missions. Unlike previous Relics, each tier has its own name and appearance.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A tribute to a Bot more violent than Megatron who plots to lead the Decepticons. Awarded for mastery of the Easy/Medium/Hard/Expert Galvatron Rising Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Green): +1% Attack and Health in Alliance Missions\n* Bronze:  +2%\n* Silver:    +3%\n* Gold:     +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Galvatron Relic Icon.jpg|Galvatron Relic\nBronze Galvatron Relic Icon.jpg|Bronze Galvatron Relic\nSilver Galvatron Relic Icon.jpg|Silver Galvatron Relic\nGold Galvatron Relic Icon.jpg|Gold Galvatron Relic\nGalvatron Relic.png|Bronze Galvatron Relic\nBronze Galvatron Relic.png|Bronze Galvatron Relic\nSilver Galvatron Relic.png|Silver Galvatron Relic\nGold Galvatron Relic portrait.png|Gold Galvatron Relic\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Gold Bee Relic": {
+   "page": "Gold Bee Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold_Bee_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8843,
+    "timestamp": "2022-01-13T13:46:30Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Gold Bee Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold_Bee_Relic",
+      "revid": 8843,
+      "timestamp": "2022-01-13T13:46:30Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Gold Bee Relic is a relic.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A trophy commemorating the feats and trials of the diminutive Autobot Bumblebee. This is the award granted to those who master the Bumblebee GS Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "+10% Gold Generation",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "The description implies that this relic was intended to be the reward for a Bumblebee Special mission or Bee's Gauntlet, but ultimately did not come to pass. Instead the gold relic was given to Commanders who had logged in the game's first anniversary during v8.0 and the second anniversary.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Gold Bee Relic Icon.jpg\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8843,
+    "timestamp": "2022-01-13T13:46:30Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Gold Bee Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold_Bee_Relic",
+      "revid": 8843,
+      "timestamp": "2022-01-13T13:46:30Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Gold Bee Relic is a relic.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A trophy commemorating the feats and trials of the diminutive Autobot Bumblebee. This is the award granted to those who master the Bumblebee GS Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "+10% Gold Generation",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "The description implies that this relic was intended to be the reward for a Bumblebee Special mission or Bee's Gauntlet, but ultimately did not come to pass. Instead the gold relic was given to Commanders who had logged in the game's first anniversary during v8.0 and the second anniversary.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Gold Bee Relic Icon.jpg\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Hot Rod Relic": {
+   "page": "Hot Rod Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Hot_Rod_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 1368,
+    "timestamp": "2017-10-31T09:00:27Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Hot Rod Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Hot_Rod_Relic",
+      "revid": 1368,
+      "timestamp": "2017-10-31T09:00:27Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A loyal Autobot warrior, noble guardian, and protector of the innocent. The ancients carved his likeness to keep watch over their city and protect them from harm. Awarded for conquering the \"A Question of Loyalty\" Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Boost",
+       "text": "*Tier 1: +1% Attack and Health in Special Missions\n*Tier 2: +2%\n*Tier 3: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "File:Hot Rod Relic Icon.jpg\n\nCategory: Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 1368,
+    "timestamp": "2017-10-31T09:00:27Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Hot Rod Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Hot_Rod_Relic",
+      "revid": 1368,
+      "timestamp": "2017-10-31T09:00:27Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A loyal Autobot warrior, noble guardian, and protector of the innocent. The ancients carved his likeness to keep watch over their city and protect them from harm. Awarded for conquering the \"A Question of Loyalty\" Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Boost",
+       "text": "*Tier 1: +1% Attack and Health in Special Missions\n*Tier 2: +2%\n*Tier 3: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "File:Hot Rod Relic Icon.jpg\n\nCategory: Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Hound Relic": {
+   "page": "Hound Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Hound_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8845,
+    "timestamp": "2022-01-17T13:46:01Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Hound Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Hound_Relic",
+      "revid": 8845,
+      "timestamp": "2022-01-17T13:46:01Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A symbol of  bravery and endurance that would make Hound himself swell with pride. This is awarded to those who master the Hound Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "*(Tier 1:) +1% Gold generation in Special Missions\n*Bronze: +3%\n*Silver: +5%\n*Gold: +10%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Hound Relic Icon.jpg\nBronze Hound Relic Icon.jpg\nSilver Hound Relic Icon.jpg\nGold Hound Relic Icon.jpg\nHound Relic portrait.png\nBronze Hound Relic portrait.png\nSilver Hound Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8845,
+    "timestamp": "2022-01-17T13:46:01Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Hound Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Hound_Relic",
+      "revid": 8845,
+      "timestamp": "2022-01-17T13:46:01Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A symbol of  bravery and endurance that would make Hound himself swell with pride. This is awarded to those who master the Hound Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "*(Tier 1:) +1% Gold generation in Special Missions\n*Bronze: +3%\n*Silver: +5%\n*Gold: +10%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Hound Relic Icon.jpg\nBronze Hound Relic Icon.jpg\nSilver Hound Relic Icon.jpg\nGold Hound Relic Icon.jpg\nHound Relic portrait.png\nBronze Hound Relic portrait.png\nSilver Hound Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Jazz Relic": {
+   "page": "Jazz Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Jazz_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8846,
+    "timestamp": "2022-01-17T13:46:26Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Jazz Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Jazz_Relic",
+      "revid": 8846,
+      "timestamp": "2022-01-17T13:46:26Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Jazz Relics are rewarded for mastering the Missing Beats Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A groovy symbol of one Autobot's faith in his teammates. Awarded for mastery of the Jazz Special Missions.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +1% Health in Alliance Missions\n* Bronze: +2%\n* Silver: +3%\n* Gold: +6%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Jazz Relic Icon.jpg\nBronze Jazz Relic Icon.jpg\nSilver Jazz Relic Icon.jpg\nGold Jazz Relic Icon.jpg\nJazz Relic portrait.png\nBronze Jazz Relic portrait.png\nSilver Jazz Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8846,
+    "timestamp": "2022-01-17T13:46:26Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Jazz Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Jazz_Relic",
+      "revid": 8846,
+      "timestamp": "2022-01-17T13:46:26Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Jazz Relics are rewarded for mastering the Missing Beats Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A groovy symbol of one Autobot's faith in his teammates. Awarded for mastery of the Jazz Special Missions.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +1% Health in Alliance Missions\n* Bronze: +2%\n* Silver: +3%\n* Gold: +6%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Jazz Relic Icon.jpg\nBronze Jazz Relic Icon.jpg\nSilver Jazz Relic Icon.jpg\nGold Jazz Relic Icon.jpg\nJazz Relic portrait.png\nBronze Jazz Relic portrait.png\nSilver Jazz Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Kickack Relic": {
+   "page": "Kickack Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Kickack_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 3454,
+    "timestamp": "2018-04-07T11:33:38Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Kickack Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Kickack_Relic",
+      "revid": 3454,
+      "timestamp": "2018-04-07T11:33:38Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "#REDIRECT Kickback Relic",
+     "sections": []
+    }
+   },
+   "latest": {
+    "revid": 3454,
+    "timestamp": "2018-04-07T11:33:38Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Kickack Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Kickack_Relic",
+      "revid": 3454,
+      "timestamp": "2018-04-07T11:33:38Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "#REDIRECT Kickback Relic",
+     "sections": []
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Kickback Relic": {
+   "page": "Kickback Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Kickback_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 5226,
+    "timestamp": "2019-01-10T00:49:30Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Kickback Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Kickback_Relic",
+      "revid": 5226,
+      "timestamp": "2019-01-10T00:49:30Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Kickback Relics are rewarded for mastering the Weapon of Mass Consumption Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A trophy to reward your skills of cunning and deception. This is awarded to those who master the Kickback Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "*(Tier 1): +1% to Raid Chip rewards\n*Bronze: +2%\n*Silver: +3%\n*Gold: +5%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Kickback Relic Icon.jpg\nBronze Kickback Relic Icon.jpg\nSilver Kickback Relic Icon.jpg\nGold Kickback Relic Icon.jpg\nKickback Relic portrait.png\nBronze Kickback Relic portrait.png\nSilver Kickback Relic portrait.png\nGold Kickback Relic.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 5226,
+    "timestamp": "2019-01-10T00:49:30Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Kickback Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Kickback_Relic",
+      "revid": 5226,
+      "timestamp": "2019-01-10T00:49:30Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Kickback Relics are rewarded for mastering the Weapon of Mass Consumption Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A trophy to reward your skills of cunning and deception. This is awarded to those who master the Kickback Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "*(Tier 1): +1% to Raid Chip rewards\n*Bronze: +2%\n*Silver: +3%\n*Gold: +5%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Kickback Relic Icon.jpg\nBronze Kickback Relic Icon.jpg\nSilver Kickback Relic Icon.jpg\nGold Kickback Relic Icon.jpg\nKickback Relic portrait.png\nBronze Kickback Relic portrait.png\nSilver Kickback Relic portrait.png\nGold Kickback Relic.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Megatron Relic (G1)": {
+   "page": "Megatron Relic (G1)",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Megatron_Relic_%28G1%29",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8839,
+    "timestamp": "2022-01-06T14:36:49Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Megatron Relic (G1)",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Megatron_Relic_%28G1%29",
+      "revid": 8839,
+      "timestamp": "2022-01-06T14:36:49Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "This article is about the Relics based on G1 Megatron. You may be looking for the other Megatron Relic.\n\nThe Megatron Relics are earned by completing the I Still Function Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A symbol of victory over Megatron, adorned with the terrifying visage of the Decepticon Leader himself. Awarded for mastery of the G1 Megatron Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +2% Attack in Arenas.\n* Bronze: +3%\n* Silver: +4%\n* Gold: +5%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Megatron Relic G1 Icon.jpg\nBronze Megatron Relic G1 Icon.jpg\nSilver Megatron Relic G1 Icon.jpg\nGold Megatron Relic G1 Icon.jpg\nMegatron Relic G1 portrait.png\nBronze Megatron Relic G1 portrait.png\nSilver Megatron G1 Relic portrait.png\nGold Megatron Relic G1 portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8839,
+    "timestamp": "2022-01-06T14:36:49Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Megatron Relic (G1)",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Megatron_Relic_%28G1%29",
+      "revid": 8839,
+      "timestamp": "2022-01-06T14:36:49Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "This article is about the Relics based on G1 Megatron. You may be looking for the other Megatron Relic.\n\nThe Megatron Relics are earned by completing the I Still Function Spotlight Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A symbol of victory over Megatron, adorned with the terrifying visage of the Decepticon Leader himself. Awarded for mastery of the G1 Megatron Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +2% Attack in Arenas.\n* Bronze: +3%\n* Silver: +4%\n* Gold: +5%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Megatron Relic G1 Icon.jpg\nBronze Megatron Relic G1 Icon.jpg\nSilver Megatron Relic G1 Icon.jpg\nGold Megatron Relic G1 Icon.jpg\nMegatron Relic G1 portrait.png\nBronze Megatron Relic G1 portrait.png\nSilver Megatron G1 Relic portrait.png\nGold Megatron Relic G1 portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Megatron Relic": {
+   "page": "Megatron Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Megatron_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8838,
+    "timestamp": "2022-01-06T14:36:19Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Megatron Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Megatron_Relic",
+      "revid": 8838,
+      "timestamp": "2022-01-06T14:36:19Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "An ancient interpretation of the Decepticon tyrant that razed Cybertron to a ruined wasteland and spawned a war that still rages across the galaxy.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boost",
+       "text": "*Tier 1: +1% Attack and Health in Alliance Missions\n*Tier 2: +2%\n*Tier 3: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "Mastery of the Size Matters Special Missions.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "File:Megatron Relic Icon.jpg",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "* This Relic depicts Megatron in his form from the The Last Knight film.\nCategory: Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8838,
+    "timestamp": "2022-01-06T14:36:19Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Megatron Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Megatron_Relic",
+      "revid": 8838,
+      "timestamp": "2022-01-06T14:36:19Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "An ancient interpretation of the Decepticon tyrant that razed Cybertron to a ruined wasteland and spawned a war that still rages across the galaxy.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boost",
+       "text": "*Tier 1: +1% Attack and Health in Alliance Missions\n*Tier 2: +2%\n*Tier 3: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "Mastery of the Size Matters Special Missions.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "File:Megatron Relic Icon.jpg",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "* This Relic depicts Megatron in his form from the The Last Knight film.\nCategory: Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Primal Relic": {
+   "page": "Primal Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Primal_Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 3004,
+    "timestamp": "2018-02-19T03:01:06Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Primal Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Primal_Relic",
+      "revid": 3004,
+      "timestamp": "2018-02-19T03:01:06Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Primal Relics are earned from completing the Well, That's Just Primal Special Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A mighty artifact from a long forgotten age. Awarded for Mastery of the Optimus Primal Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +1% Attack and Health in Story Missions.\n* Bronze: +2%\n* Silver: +3%\n* Gold: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Primal Relic Icon.jpg\nBronze Primal Relic Icon.jpg\nSilver Primal Relic Icon.jpg\nGold Primal Relic Icon.jpg\nPrimal Relic portrait.png\nBronze Primal Relic portrait.png\nSilver Primal Relic portrait.png\nGold Primal Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 3004,
+    "timestamp": "2018-02-19T03:01:06Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Primal Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Primal_Relic",
+      "revid": 3004,
+      "timestamp": "2018-02-19T03:01:06Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The Primal Relics are earned from completing the Well, That's Just Primal Special Missions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "A mighty artifact from a long forgotten age. Awarded for Mastery of the Optimus Primal Special Mission.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "* (Tier 1): +1% Attack and Health in Story Missions.\n* Bronze: +2%\n* Silver: +3%\n* Gold: +4%",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Primal Relic Icon.jpg\nBronze Primal Relic Icon.jpg\nSilver Primal Relic Icon.jpg\nGold Primal Relic Icon.jpg\nPrimal Relic portrait.png\nBronze Primal Relic portrait.png\nSilver Primal Relic portrait.png\nGold Primal Relic portrait.png\n\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Relic": {
+   "page": "Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8982,
+    "timestamp": "2022-05-29T19:26:24Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Relic",
+      "revid": 8982,
+      "timestamp": "2022-05-29T19:26:24Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Relics are rare collectible items that give a small permanent boost when placed on the Commander's Base. Up to four Relics can be placed in a Base. They can be acquired in Story and Special Missions, or purchased in the Raid Store in exchange of currencies like Chips or Relic Tickets. They can be sold for a mere 500 Gold.\n\nStarting from Tantrum's Spotlight Missions in July 2018, selections of previous Special Mission Relics are available to purchase for two months at at time with Raid Tickets earned by mastering Spotlight Missions. Tier 1 Relics cost two tickets, Tier 2 three tickets, Tier 3 four tickets, Tier 4 five tickets, and a special, rare relic for 20 tickets. Only one of each can ever be bought, so you'll end up with a huge stack of unusable tickets.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "List of Relics",
+       "text": "Note there is no official class categorization for Relics, this is primarily categorized by obtainment method.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Story Relics",
+       "text": "Obtained by exploring Story Missions and Legends of Cybertron missions.\n\nFile:Covenant of the Primus v2.png|Covenant of Primus|link=Covenant of Primus\nFile:Dark Energon Orb v2.png|Dark Energon Orb|link=Dark Energon Orb\nFile:Effigy of Solus Prime portrait.png|Effigy of Solus Prime|link=Effigy of Solus Prime\nFile:Fallen Titan Hand portrait v3.png|Fallen Titan Hand|link=Fallen Titan Hand\nFile:Stable Nucleon Core portrait.png|Stable Nucleon Core|link=Stable Nucleon Core",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Special Mission Relics",
+       "text": "Character-themed relics in four tiers. Initially obtained from each corresponding bot's debut special missions, but can now be bought from the Raid Store in cycles.\n\nFile:Hot Rod Relic.png|Hot Rod Relic|link=Hot Rod Relic\nFile:Megatron Relic.png|Megatron Relic|link=Megatron Relic\nFile:Gold Galvatron Relic portrait.png|Galvatron Relic|link=Galvatron Relic\nFile:Unstable Energon Cube v2.png|Unstable Energon Cube (Shockwave)|link=Unstable Energon Cube\nFile:Gold Shattered Disk portrait.png|Shattered Disk|link=Shattered Disk\nFile:Gold Megatron Relic G1 portrait.png|Megatron Relic (GS)|link=Megatron Relic (G1)\nFile:Gold Bee Relic portrait.png|Bee Relic|link=Gold Bee Relic\nFile:Gold Blaster Relic potrait.png|Blaster Relic|link=Blaster Relic\nFile:Gold Primal Relic portrait.png|Primal Relic|link=Primal Relic\nFile:Gold Hound Relic portrait.png|Hound Relic|link=Hound Relic\nFile:Gold Kickback Relic.png|Kickback Relic|link=Kickback Relic\nFile:Gold Jazz Relic portrait.png|Jazz Relic|link=Jazz Relic",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Special Relics",
+       "text": "File:Matrix of Leadership.png|Matrix of Leadership|link=Matrix of Leadership\nFile:The Matrix of Leadership portrait.png|Matrix of Leadership (G1)|link=Matrix of Leadership (G1)\nFile:Immobilizer portrait.png|Immobilizer|link=Immobilizer\nFile:Star Saber portrait.png|The Star Saber|link=Star Saber\nFile:Portrait relic raid t4 large.png|Gold Raid Trophy|link=Gold Raid Trophy\nFile:Cloaking Field portrait.png|Cloaking Field|link=Cloaking Field\nFile:Golden Disk portrait.png|Golden Disk|link=Golden Disk\nFile:Allspark portrait.png|Allspark|link=Allspark",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Unreleased",
+       "text": "A few Relics have existed in the game files since the Beta even to the latest version, but have yet to be added.\n\nFile:Portrait ancient tablet large.png|Ancient Tablet\nFile:Portrait ancienthead large.png|Ancient Head\nFile:Portrait ironmaiden large.png|Iron Maiden\nFile:Portrait origin matrix large.png|Origin Matrix\nFile:Portrait solar generator large.png|Solar Generator\nFile:Portrait solus forge large.png|Solus Forge\nFile:Portrait statue op c large.png|Optimus Prime Statue Relic\nFile:Portrait relic ave t1 large.png|Tier 1 {Ave Relic}\nFile:Portrait relic ave t2 large.png|Tier 2 {Ave Relic}\nFile:Portrait relic ave t3 large.png|Tier 3 {Ave Relic}\nFile:Portrait relic ave t4 large.png|Tier 4 {Ave Relic}\nFile:portrait_relic_raid_t1_large.png|Tier 1 Raid Relic\nFile:portrait_relic_raid_t2_large.png|Bronze Raid Relic\nFile:portrait_relic_raid_t3_large.png|Silver Raid Relic",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Relics newsfeed banner.jpg\nRelics mail.jpg\n\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 8982,
+    "timestamp": "2022-05-29T19:26:24Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Relic",
+      "revid": 8982,
+      "timestamp": "2022-05-29T19:26:24Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Relics are rare collectible items that give a small permanent boost when placed on the Commander's Base. Up to four Relics can be placed in a Base. They can be acquired in Story and Special Missions, or purchased in the Raid Store in exchange of currencies like Chips or Relic Tickets. They can be sold for a mere 500 Gold.\n\nStarting from Tantrum's Spotlight Missions in July 2018, selections of previous Special Mission Relics are available to purchase for two months at at time with Raid Tickets earned by mastering Spotlight Missions. Tier 1 Relics cost two tickets, Tier 2 three tickets, Tier 3 four tickets, Tier 4 five tickets, and a special, rare relic for 20 tickets. Only one of each can ever be bought, so you'll end up with a huge stack of unusable tickets.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "List of Relics",
+       "text": "Note there is no official class categorization for Relics, this is primarily categorized by obtainment method.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Story Relics",
+       "text": "Obtained by exploring Story Missions and Legends of Cybertron missions.\n\nFile:Covenant of the Primus v2.png|Covenant of Primus|link=Covenant of Primus\nFile:Dark Energon Orb v2.png|Dark Energon Orb|link=Dark Energon Orb\nFile:Effigy of Solus Prime portrait.png|Effigy of Solus Prime|link=Effigy of Solus Prime\nFile:Fallen Titan Hand portrait v3.png|Fallen Titan Hand|link=Fallen Titan Hand\nFile:Stable Nucleon Core portrait.png|Stable Nucleon Core|link=Stable Nucleon Core",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Special Mission Relics",
+       "text": "Character-themed relics in four tiers. Initially obtained from each corresponding bot's debut special missions, but can now be bought from the Raid Store in cycles.\n\nFile:Hot Rod Relic.png|Hot Rod Relic|link=Hot Rod Relic\nFile:Megatron Relic.png|Megatron Relic|link=Megatron Relic\nFile:Gold Galvatron Relic portrait.png|Galvatron Relic|link=Galvatron Relic\nFile:Unstable Energon Cube v2.png|Unstable Energon Cube (Shockwave)|link=Unstable Energon Cube\nFile:Gold Shattered Disk portrait.png|Shattered Disk|link=Shattered Disk\nFile:Gold Megatron Relic G1 portrait.png|Megatron Relic (GS)|link=Megatron Relic (G1)\nFile:Gold Bee Relic portrait.png|Bee Relic|link=Gold Bee Relic\nFile:Gold Blaster Relic potrait.png|Blaster Relic|link=Blaster Relic\nFile:Gold Primal Relic portrait.png|Primal Relic|link=Primal Relic\nFile:Gold Hound Relic portrait.png|Hound Relic|link=Hound Relic\nFile:Gold Kickback Relic.png|Kickback Relic|link=Kickback Relic\nFile:Gold Jazz Relic portrait.png|Jazz Relic|link=Jazz Relic",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Special Relics",
+       "text": "File:Matrix of Leadership.png|Matrix of Leadership|link=Matrix of Leadership\nFile:The Matrix of Leadership portrait.png|Matrix of Leadership (G1)|link=Matrix of Leadership (G1)\nFile:Immobilizer portrait.png|Immobilizer|link=Immobilizer\nFile:Star Saber portrait.png|The Star Saber|link=Star Saber\nFile:Portrait relic raid t4 large.png|Gold Raid Trophy|link=Gold Raid Trophy\nFile:Cloaking Field portrait.png|Cloaking Field|link=Cloaking Field\nFile:Golden Disk portrait.png|Golden Disk|link=Golden Disk\nFile:Allspark portrait.png|Allspark|link=Allspark",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Unreleased",
+       "text": "A few Relics have existed in the game files since the Beta even to the latest version, but have yet to be added.\n\nFile:Portrait ancient tablet large.png|Ancient Tablet\nFile:Portrait ancienthead large.png|Ancient Head\nFile:Portrait ironmaiden large.png|Iron Maiden\nFile:Portrait origin matrix large.png|Origin Matrix\nFile:Portrait solar generator large.png|Solar Generator\nFile:Portrait solus forge large.png|Solus Forge\nFile:Portrait statue op c large.png|Optimus Prime Statue Relic\nFile:Portrait relic ave t1 large.png|Tier 1 {Ave Relic}\nFile:Portrait relic ave t2 large.png|Tier 2 {Ave Relic}\nFile:Portrait relic ave t3 large.png|Tier 3 {Ave Relic}\nFile:Portrait relic ave t4 large.png|Tier 4 {Ave Relic}\nFile:portrait_relic_raid_t1_large.png|Tier 1 Raid Relic\nFile:portrait_relic_raid_t2_large.png|Bronze Raid Relic\nFile:portrait_relic_raid_t3_large.png|Silver Raid Relic",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Relics newsfeed banner.jpg\nRelics mail.jpg\n\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Transformers: Forged to Fight Wiki:Layouts/Relic": {
+   "page": "Transformers: Forged to Fight Wiki:Layouts/Relic",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Transformers%3A_Forged_to_Fight_Wiki%3ALayouts/Relic",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 5257,
+    "timestamp": "2019-01-12T04:31:39Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Transformers: Forged to Fight Wiki:Layouts/Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Transformers%3A_Forged_to_Fight_Wiki%3ALayouts/Relic",
+      "revid": 5257,
+      "timestamp": "2019-01-12T04:31:39Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The {Relic} is a relic...",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Category:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 5257,
+    "timestamp": "2019-01-12T04:31:39Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Transformers: Forged to Fight Wiki:Layouts/Relic",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Transformers%3A_Forged_to_Fight_Wiki%3ALayouts/Relic",
+      "revid": 5257,
+      "timestamp": "2019-01-12T04:31:39Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "The {Relic} is a relic...",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Category:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  }
+ }
+}

@@ -1,0 +1,1289 @@
+{
+ "source": "Fandom pages parsed in data/wiki/pages.json; as_of/latest from data/wiki/versions/",
+ "cutoff": "2023-01-13T23:59:59Z",
+ "topic": "raids",
+ "note": "Curated page set; values only from saved wikitext. as_of uses parsed page when revision <= cutoff, otherwise raw wikitext or null.",
+ "page_count": 4,
+ "pages": {
+  "Raid": {
+   "page": "Raid",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 5163,
+    "timestamp": "2018-12-31T08:26:59Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Raid",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid",
+      "revid": 5163,
+      "timestamp": "2018-12-31T08:26:59Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Raids is a versus Game mode in which players attack other players' Bases to win Raid Chips and Medals.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "System",
+       "text": "Raids are unlocked at player level 7. To start a Raid, you need to spend 1 Raid Ticket, which you have up to three at a time. Each ticket takes an hour to recharge, but you can buy another ticket for 10 Energon each.\n\nInitially, you were presented with 3 Commander you could choose to raid within one minute. Should you wish to change the selection, you had to spend another Raid Ticket. In version 3.0, this system was revamped: You are now presented one Commander according to your current amount of Medals, and selecting another base costs 2, 6, or 10 Energon, depending on the presented base's total rating.\n\nYou have 20 minutes (originally 15) to defeat the opponent Bots before time runs out or your Bots are all knocked out.\n\nAfter a Bot is used for raiding, he/she cannot be placed on your Base for a period of time. Listed are cooldown times for each star rating:\n* 1-Star: 5 minutes\n* 2-Star: 20 minutes\n* 3-Star: 2 hours\n* 4- and 5-star: 4 hours\nYou can view your attacks and the attacks on your Base in the Raid Center. Should the raider win, you will lose about 30 Medals and 10% of your current amount of Raid Chips. Should your defense be successful, you will earn about 15-30 Medals and about 500 Raid chips.\n\nRaid Shields can protect your base from being attacked for a period of time. But you cannot raid yourself while a shield is active, or else the shield will be removed.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Revenge",
+       "text": "When you are attacked, you have the opportunity to attack the player back, even if the attack was a failure. The same rules for raiding apply for revenge; it costs one raid ticket, and you are able to steal raid chips from the player. The opportunity to revenge expires after a period of time, usually 24 hours. But often the base attacker is unavailable to be raided.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Raid Events",
+       "text": "There are regular week-long special Raid Events when you can win Bot Chips in addition to the normal rewards. They are also accompanied with a Raid Ascent Alliance Quest. The more Medals you have, the more Chips you can earn. If you fail a raid, you will still receive half the potential amount of Bot Chips.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Early Raid Events",
+       "text": "The first raid events with Bot Chips (all-or-nothing 60-90 Chips per Raid) were available in Raids for 2-Star Bots released at the time. Each 2-Star Bot cost 1000 Chips, but Shockwave's Raid Event introduced the 3-Star version available for 10000 Chips.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Last Knight",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Featured Bot Raid Events",
+       "text": "Starting from October, there is a Raid Event for each month's Featured Bot on the third week of the Bot's debut.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Throwback Week",
+       "text": "Running from March 8th at 10 AM to March 15th at 10 AM Pacific Time, Commanders could earn Exclusive 2-Star Bot Chips from Raids to purchase exclusive 2-Star Bots of all Bots released after launch. (586 Chips per Raid in the 1250~ Medal range) 2 to 3 Bots were available for two days in the Raid Store each day, which could be bought for 2000 Chips each, maximum 5 for each Bot. The final days of the event offered 12 x500 bundles of 2-Star Exclusive Chips for 20 Energon each, and had all 16 Bots available at once.",
+       "tables": []
+      },
+      {
+       "level": 4,
+       "heading": "Gallery",
+       "text": "Exclusive 2-Star Chip.png\nThrowback Week mail.jpg\nExclusive 2-Star Raid Event newsfeed.jpg\nExclusive 2-Star Raid Event.jpg\nExclusive 2-Star Raid Event mail.jpg",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 5163,
+    "timestamp": "2018-12-31T08:26:59Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Raid",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid",
+      "revid": 5163,
+      "timestamp": "2018-12-31T08:26:59Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Raids is a versus Game mode in which players attack other players' Bases to win Raid Chips and Medals.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "System",
+       "text": "Raids are unlocked at player level 7. To start a Raid, you need to spend 1 Raid Ticket, which you have up to three at a time. Each ticket takes an hour to recharge, but you can buy another ticket for 10 Energon each.\n\nInitially, you were presented with 3 Commander you could choose to raid within one minute. Should you wish to change the selection, you had to spend another Raid Ticket. In version 3.0, this system was revamped: You are now presented one Commander according to your current amount of Medals, and selecting another base costs 2, 6, or 10 Energon, depending on the presented base's total rating.\n\nYou have 20 minutes (originally 15) to defeat the opponent Bots before time runs out or your Bots are all knocked out.\n\nAfter a Bot is used for raiding, he/she cannot be placed on your Base for a period of time. Listed are cooldown times for each star rating:\n* 1-Star: 5 minutes\n* 2-Star: 20 minutes\n* 3-Star: 2 hours\n* 4- and 5-star: 4 hours\nYou can view your attacks and the attacks on your Base in the Raid Center. Should the raider win, you will lose about 30 Medals and 10% of your current amount of Raid Chips. Should your defense be successful, you will earn about 15-30 Medals and about 500 Raid chips.\n\nRaid Shields can protect your base from being attacked for a period of time. But you cannot raid yourself while a shield is active, or else the shield will be removed.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Revenge",
+       "text": "When you are attacked, you have the opportunity to attack the player back, even if the attack was a failure. The same rules for raiding apply for revenge; it costs one raid ticket, and you are able to steal raid chips from the player. The opportunity to revenge expires after a period of time, usually 24 hours. But often the base attacker is unavailable to be raided.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Raid Events",
+       "text": "There are regular week-long special Raid Events when you can win Bot Chips in addition to the normal rewards. They are also accompanied with a Raid Ascent Alliance Quest. The more Medals you have, the more Chips you can earn. If you fail a raid, you will still receive half the potential amount of Bot Chips.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Early Raid Events",
+       "text": "The first raid events with Bot Chips (all-or-nothing 60-90 Chips per Raid) were available in Raids for 2-Star Bots released at the time. Each 2-Star Bot cost 1000 Chips, but Shockwave's Raid Event introduced the 3-Star version available for 10000 Chips.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Last Knight",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Featured Bot Raid Events",
+       "text": "Starting from October, there is a Raid Event for each month's Featured Bot on the third week of the Bot's debut.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Throwback Week",
+       "text": "Running from March 8th at 10 AM to March 15th at 10 AM Pacific Time, Commanders could earn Exclusive 2-Star Bot Chips from Raids to purchase exclusive 2-Star Bots of all Bots released after launch. (586 Chips per Raid in the 1250~ Medal range) 2 to 3 Bots were available for two days in the Raid Store each day, which could be bought for 2000 Chips each, maximum 5 for each Bot. The final days of the event offered 12 x500 bundles of 2-Star Exclusive Chips for 20 Energon each, and had all 16 Bots available at once.",
+       "tables": []
+      },
+      {
+       "level": 4,
+       "heading": "Gallery",
+       "text": "Exclusive 2-Star Chip.png\nThrowback Week mail.jpg\nExclusive 2-Star Raid Event newsfeed.jpg\nExclusive 2-Star Raid Event.jpg\nExclusive 2-Star Raid Event mail.jpg",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Raid Chip": {
+   "page": "Raid Chip",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid_Chip",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 9685,
+    "timestamp": "2022-11-04T05:28:22Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Raid Chip",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid_Chip",
+      "revid": 9685,
+      "timestamp": "2022-11-04T05:28:22Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Raid Chips are a currency used to purchase items in the Raid Store. They are primarily earned through Raids, but they can be also earned through Away Missions and Alliance Quests.\n\nYour Raid Chip stash, unlike other currencies, is fluid, as they can be stolen from your Base by other Commanders. A successful attack an a base gives a Commander 10% of the opponent Commander's current amount of chips. A successful base defense gives a Commander around 500-600 Raid Chips. Defeating a Base Defender also gives a small amount of Raid Chips; the higher the Bot's rating, the more chips awarded.\n\nIt is recommended to leave Raid Chips earned in Alliance Quests unclaimed as a temporary untouchable stash so you can later use them if you are a few chips short from getting a certain item.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Raid Store",
+       "text": "Listed are items that are always in the Raid Store. There is a max limit of how much of each item can be purchased per day. The price per unit increases or decreases with each purchase.\n{| class=\"article-table\"\n!Item\n!Image\n!Price per unit\n!Limit\n!Notes\n|-\n|Tier 2 Ore-13\n|\n|500, 700, 900, 1100, 1300\n|5\n|\n|-\n|Tier 3 Ore-13\n|\n|3000, 4000, 5000\n|3\n|\n|-\n|Tier 4 Ore-13\n|\n|8,000 x3\n|3\n|v7.1\n|-\n|Tier 1 Basic Spark\n|\n|500, 700, 900, 1100, 1300\n|5\n|\n|-\n|Tier 2 Basic Spark\n|\n|9000, 10000, 11000\n|3\n|v6.0\n|-\n|x1000 Tier 1 Alpha Spark Essence\n|\n|5500, 4500, 3500, 2500\n|5\n|v6.0\n|-\n|x500 Tier 3 Basic Essence\n|\n|12,000, 10,000\n|2\n|v6.0\n|-\n|x250 Tier 2 Alpha Essence\n|\n|15,000, 13,000\n|2\n|v6.0\n1200 Medals\n|-\n|Gold Raid Trophy\n|\n|1,000,000\n|1\n|v6.0\n1500 Medals\n|-\n|3-Star Superconductor 1000\n|\n|100,000 \n|1\n|v6.0\n1200 Medals\n|-\n|Tier 3 Essence Crystal\n|\n|75,000\n|1\n|v7.1\n1700 Medals\n|-\n|Tier 1 Ore-13\n|\n|50, ?, ?, ?, ?\n|5\n|Removed\n|-\n|Standard Mod Crystal\n|\n|2,500\n|\n|Removed\n|-\n|2-Star Superconductor 1000\n|\n|75,000\n|1\n|Removed\n|-\n|2-Star Superconductor 2000\n|\n|75,000\n|1\n|Removed\n1000 Medals\n|-\n|Star Saber\n|\n|2,000,000\n|1\n|Removed\n|-\n|x250 Tier 2 Basic Spark Essence\n|\n|4000, 3400, 2800, 2200\n|4\n|Replaced in v6.0\n|-\n|x500 Tier 1 Alpha Spark Essence\n|\n|15000, 13000, 11000, 9000\n|4\n|Replaced\n|}\n\nIn version 4.0, rotating items were introduced, offering randomized, different items each day. Throwback Week had pairs or groups of items offered on the same day before this was made permanent in v6.0.\n{| class=\"article-table\"\n!Pair\n!Item\n!Image\n!Price per unit\n!Limit\n!Notes\n|-\n| rowspan=\"2\" |M\n|Premium Bot Crystal\n|\n|3,000\n|2\n|was 7,000\n|-\n|Tier 3 Essence Crystal\n|\n|50,000\n|2\n|v6.0\n|-\n| rowspan=\"3\" |T\n|Boost Crystal\n|\n|4,000\n|5\n|\n|-\n|Tier 1 Alliance Mission Squad Revive Kit\n|\n|6000\n|2\n|Was Tier 2\n|-\n|Tier 3 Alliance Mission Squad Repair Kit\n|\n|6000\n|2\n|\n|-\n| rowspan=\"3\" |\n|Gold Crystal\n|\n|2,000\n|5\n|\n|-\n|Tier 1 Alliance Mission Squad Revive Kit\n|\n|6000\n|2\n|\n|-\n|Tier 3 Alliance Mission Squad Repair Kit\n|\n|6000\n|2\n|\n|-\n| rowspan=\"2\" |\n|2-Star Sharkticon Crystal\n|\n|12,000\n|3\n|v6.0\n|-\n|Tier 1 Alpha Spark\n|\n|25,000\n|2\n|\n|-\n| rowspan=\"2\" |W\n|2-Star Sharkticon Crystal\n|\n|12,000\n|3\n|\n|-\n|Superior Signature Crystal\n|\n|8,000\n|3\n|v6.0\n|-\n| rowspan=\"2\" |Sa\n|x1250 Tier 2 Alpha Spark Essence\n|\n|60,000\n|2\n|\n|-\n|Tier 2 Class Spark Crystal\n|\n|10,000\n|3\n|\n|-\n| rowspan=\"2\" |\n|Tier 1 Alpha Spark\n|\n|25,000\n|2\n|\n|-\n|Premium Mod Crystal\n|\n|2,000\n|3\n|v6.0\n|-\n| rowspan=\"2\" |\n|Premium Mod Crystal\n|\n|2,000\n|3\n|v6.0\n|-\n|Tier 1 Mod Class Spark Crystal\n|\n|15,000\n|3\n|\n|-\n| rowspan=\"2\" |Sa\n|2-Star Exclusive Bot Crystal\n|\n|12,000\n|3\n|v6.0\n|-\n|x2000 T3 Basic Spark Essence\n|\n|20,000\n|5\n|was 35,000\n|-\n| rowspan=\"2\" |\n|x250 Tier 4 Basic Spark Essence\n|\n|40,000\n|2\n|v7.0\n|-\n|x2000 T3 Basic Spark Essence\n|\n|20,000\n|5\n|\n|-\n| rowspan=\"3\" |\n|Boost Crystal\n|\n|4,000\n|5\n|\n|-\n|Tier 2 Alliance Mission Squad Revive Kit\n|\n|10,000\n|1\n|was old Tier 3\n|-\n|Tier 4 Alliance Mission Squad Repair Kit\n|\n|10,000\n|1\n|\n|-\n| rowspan=\"5\" |Th\n|Tier 1 Knight Crystal\n| rowspan=\"4\" |\n|6,000\n|3\n|was limit 1\n|-\n|Tier 2 Knight Crystal\n|15,000\n|2\n|was limit 1\n|-\n|Tier 3 Knight Crystal\n|40,000\n|1\n|\n|-\n|Tier 4 Knight Crystal\n|110,000\n|1\n|v7.1\n|-\n|Tier 1 Class Spark Crystal\n|\n|5,000\n|5\n|v6.0\n|-\n| rowspan=\"2\" |\n|x100 4-Star Bot Crystal Shards\n|\n|25,000\n|5\n|\n|-\n|Gold Crystal\n|\n|2,000\n|5\n|\n|-\n| rowspan=\"2\" |\n|Rank Up Crystal\n|\n|4,000\n|5\n|\n|-\n|x20 Energon\n|\n|3,000\n|10\n|\n|-\n| rowspan=\"2\" |\n|x100 Tier 3 Class Spark Crystal Shards\n|\n|15,000\n|5\n|v6.0\n|-\n|Rank Up Crystal\n|\n|4,000\n|5\n|\n|-\n| rowspan=\"2\" |\n|3-Star Bot Crystal\n|\n|40,000\n|1\n|v6.0\n|-\n|3-Star Class Signature Upgrade\n|\n\n|5,000\n|5\n|All classes\n|-\n| rowspan=\"2\" |F\n|4-Star Class Signature Upgrades\n|\n|20,000\n|5\n|v7.0, one class\n|-\n|x500 Tier 3 Class Spark Essence\n|\n|35,000\n|4\n|v7.0, one class\n|-\n| rowspan=\"2\" |\n|Premium Bot Crystal\n|\n|3,000\n|2\n|old sprite\n|-\n|Greater Rank Up Crystal\n|\n|35,000\n|2\n|v7.0\n|}\nCategory:Items",
+       "tables": [
+        [
+         [
+          "Item",
+          "Image",
+          "Price per unit",
+          "Limit",
+          "Notes"
+         ],
+         [
+          "Tier 2 Ore-13",
+          "",
+          "500, 700, 900, 1100, 1300",
+          "5",
+          ""
+         ],
+         [
+          "Tier 3 Ore-13",
+          "",
+          "3000, 4000, 5000",
+          "3",
+          ""
+         ],
+         [
+          "Tier 4 Ore-13",
+          "",
+          "8,000 x3",
+          "3",
+          "v7.1"
+         ],
+         [
+          "Tier 1 Basic Spark",
+          "",
+          "500, 700, 900, 1100, 1300",
+          "5",
+          ""
+         ],
+         [
+          "Tier 2 Basic Spark",
+          "",
+          "9000, 10000, 11000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "x1000 Tier 1 Alpha Spark Essence",
+          "",
+          "5500, 4500, 3500, 2500",
+          "5",
+          "v6.0"
+         ],
+         [
+          "x500 Tier 3 Basic Essence",
+          "",
+          "12,000, 10,000",
+          "2",
+          "v6.0"
+         ],
+         [
+          "x250 Tier 2 Alpha Essence",
+          "",
+          "15,000, 13,000",
+          "2",
+          "v6.0"
+         ],
+         [
+          "Gold Raid Trophy",
+          "",
+          "1,000,000",
+          "1",
+          "v6.0"
+         ],
+         [
+          "3-Star Superconductor 1000",
+          "",
+          "100,000",
+          "1",
+          "v6.0"
+         ],
+         [
+          "Tier 3 Essence Crystal",
+          "",
+          "75,000",
+          "1",
+          "v7.1"
+         ],
+         [
+          "Tier 1 Ore-13",
+          "",
+          "50, ?, ?, ?, ?",
+          "5",
+          "Removed"
+         ],
+         [
+          "Standard Mod Crystal",
+          "",
+          "2,500",
+          "",
+          "Removed"
+         ],
+         [
+          "2-Star Superconductor 1000",
+          "",
+          "75,000",
+          "1",
+          "Removed"
+         ],
+         [
+          "2-Star Superconductor 2000",
+          "",
+          "75,000",
+          "1",
+          "Removed"
+         ],
+         [
+          "Star Saber",
+          "",
+          "2,000,000",
+          "1",
+          "Removed"
+         ],
+         [
+          "x250 Tier 2 Basic Spark Essence",
+          "",
+          "4000, 3400, 2800, 2200",
+          "4",
+          "Replaced in v6.0"
+         ],
+         [
+          "x500 Tier 1 Alpha Spark Essence",
+          "",
+          "15000, 13000, 11000, 9000",
+          "4",
+          "Replaced"
+         ]
+        ],
+        [
+         [
+          "Pair",
+          "Item",
+          "Image",
+          "Price per unit",
+          "Limit",
+          "Notes"
+         ],
+         [
+          "rowspan=\"2\" |M",
+          "Premium Bot Crystal",
+          "",
+          "3,000",
+          "2",
+          "was 7,000"
+         ],
+         [
+          "Tier 3 Essence Crystal",
+          "",
+          "50,000",
+          "2",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"3\" |T",
+          "Boost Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "Tier 1 Alliance Mission Squad Revive Kit",
+          "",
+          "6000",
+          "2",
+          "Was Tier 2"
+         ],
+         [
+          "Tier 3 Alliance Mission Squad Repair Kit",
+          "",
+          "6000",
+          "2",
+          ""
+         ],
+         [
+          "rowspan=\"3\" |",
+          "Gold Crystal",
+          "",
+          "2,000",
+          "5",
+          ""
+         ],
+         [
+          "Tier 1 Alliance Mission Squad Revive Kit",
+          "",
+          "6000",
+          "2",
+          ""
+         ],
+         [
+          "Tier 3 Alliance Mission Squad Repair Kit",
+          "",
+          "6000",
+          "2",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "2-Star Sharkticon Crystal",
+          "",
+          "12,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "Tier 1 Alpha Spark",
+          "",
+          "25,000",
+          "2",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |W",
+          "2-Star Sharkticon Crystal",
+          "",
+          "12,000",
+          "3",
+          ""
+         ],
+         [
+          "Superior Signature Crystal",
+          "",
+          "8,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"2\" |Sa",
+          "x1250 Tier 2 Alpha Spark Essence",
+          "",
+          "60,000",
+          "2",
+          ""
+         ],
+         [
+          "Tier 2 Class Spark Crystal",
+          "",
+          "10,000",
+          "3",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Tier 1 Alpha Spark",
+          "",
+          "25,000",
+          "2",
+          ""
+         ],
+         [
+          "Premium Mod Crystal",
+          "",
+          "2,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Premium Mod Crystal",
+          "",
+          "2,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "Tier 1 Mod Class Spark Crystal",
+          "",
+          "15,000",
+          "3",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |Sa",
+          "2-Star Exclusive Bot Crystal",
+          "",
+          "12,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "x2000 T3 Basic Spark Essence",
+          "",
+          "20,000",
+          "5",
+          "was 35,000"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "x250 Tier 4 Basic Spark Essence",
+          "",
+          "40,000",
+          "2",
+          "v7.0"
+         ],
+         [
+          "x2000 T3 Basic Spark Essence",
+          "",
+          "20,000",
+          "5",
+          ""
+         ],
+         [
+          "rowspan=\"3\" |",
+          "Boost Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "Tier 2 Alliance Mission Squad Revive Kit",
+          "",
+          "10,000",
+          "1",
+          "was old Tier 3"
+         ],
+         [
+          "Tier 4 Alliance Mission Squad Repair Kit",
+          "",
+          "10,000",
+          "1",
+          ""
+         ],
+         [
+          "rowspan=\"5\" |Th",
+          "Tier 1 Knight Crystal",
+          "rowspan=\"4\" |",
+          "6,000",
+          "3",
+          "was limit 1"
+         ],
+         [
+          "Tier 2 Knight Crystal",
+          "15,000",
+          "2",
+          "was limit 1"
+         ],
+         [
+          "Tier 3 Knight Crystal",
+          "40,000",
+          "1",
+          ""
+         ],
+         [
+          "Tier 4 Knight Crystal",
+          "110,000",
+          "1",
+          "v7.1"
+         ],
+         [
+          "Tier 1 Class Spark Crystal",
+          "",
+          "5,000",
+          "5",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "x100 4-Star Bot Crystal Shards",
+          "",
+          "25,000",
+          "5",
+          ""
+         ],
+         [
+          "Gold Crystal",
+          "",
+          "2,000",
+          "5",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Rank Up Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "x20 Energon",
+          "",
+          "3,000",
+          "10",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "x100 Tier 3 Class Spark Crystal Shards",
+          "",
+          "15,000",
+          "5",
+          "v6.0"
+         ],
+         [
+          "Rank Up Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "3-Star Bot Crystal",
+          "",
+          "40,000",
+          "1",
+          "v6.0"
+         ],
+         [
+          "3-Star Class Signature Upgrade",
+          "",
+          "5,000",
+          "5",
+          "All classes"
+         ],
+         [
+          "rowspan=\"2\" |F",
+          "4-Star Class Signature Upgrades",
+          "",
+          "20,000",
+          "5",
+          "v7.0, one class"
+         ],
+         [
+          "x500 Tier 3 Class Spark Essence",
+          "",
+          "35,000",
+          "4",
+          "v7.0, one class"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Premium Bot Crystal",
+          "",
+          "3,000",
+          "2",
+          "old sprite"
+         ],
+         [
+          "Greater Rank Up Crystal",
+          "",
+          "35,000",
+          "2",
+          "v7.0"
+         ]
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 9685,
+    "timestamp": "2022-11-04T05:28:22Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Raid Chip",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid_Chip",
+      "revid": 9685,
+      "timestamp": "2022-11-04T05:28:22Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Raid Chips are a currency used to purchase items in the Raid Store. They are primarily earned through Raids, but they can be also earned through Away Missions and Alliance Quests.\n\nYour Raid Chip stash, unlike other currencies, is fluid, as they can be stolen from your Base by other Commanders. A successful attack an a base gives a Commander 10% of the opponent Commander's current amount of chips. A successful base defense gives a Commander around 500-600 Raid Chips. Defeating a Base Defender also gives a small amount of Raid Chips; the higher the Bot's rating, the more chips awarded.\n\nIt is recommended to leave Raid Chips earned in Alliance Quests unclaimed as a temporary untouchable stash so you can later use them if you are a few chips short from getting a certain item.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Raid Store",
+       "text": "Listed are items that are always in the Raid Store. There is a max limit of how much of each item can be purchased per day. The price per unit increases or decreases with each purchase.\n{| class=\"article-table\"\n!Item\n!Image\n!Price per unit\n!Limit\n!Notes\n|-\n|Tier 2 Ore-13\n|\n|500, 700, 900, 1100, 1300\n|5\n|\n|-\n|Tier 3 Ore-13\n|\n|3000, 4000, 5000\n|3\n|\n|-\n|Tier 4 Ore-13\n|\n|8,000 x3\n|3\n|v7.1\n|-\n|Tier 1 Basic Spark\n|\n|500, 700, 900, 1100, 1300\n|5\n|\n|-\n|Tier 2 Basic Spark\n|\n|9000, 10000, 11000\n|3\n|v6.0\n|-\n|x1000 Tier 1 Alpha Spark Essence\n|\n|5500, 4500, 3500, 2500\n|5\n|v6.0\n|-\n|x500 Tier 3 Basic Essence\n|\n|12,000, 10,000\n|2\n|v6.0\n|-\n|x250 Tier 2 Alpha Essence\n|\n|15,000, 13,000\n|2\n|v6.0\n1200 Medals\n|-\n|Gold Raid Trophy\n|\n|1,000,000\n|1\n|v6.0\n1500 Medals\n|-\n|3-Star Superconductor 1000\n|\n|100,000 \n|1\n|v6.0\n1200 Medals\n|-\n|Tier 3 Essence Crystal\n|\n|75,000\n|1\n|v7.1\n1700 Medals\n|-\n|Tier 1 Ore-13\n|\n|50, ?, ?, ?, ?\n|5\n|Removed\n|-\n|Standard Mod Crystal\n|\n|2,500\n|\n|Removed\n|-\n|2-Star Superconductor 1000\n|\n|75,000\n|1\n|Removed\n|-\n|2-Star Superconductor 2000\n|\n|75,000\n|1\n|Removed\n1000 Medals\n|-\n|Star Saber\n|\n|2,000,000\n|1\n|Removed\n|-\n|x250 Tier 2 Basic Spark Essence\n|\n|4000, 3400, 2800, 2200\n|4\n|Replaced in v6.0\n|-\n|x500 Tier 1 Alpha Spark Essence\n|\n|15000, 13000, 11000, 9000\n|4\n|Replaced\n|}\n\nIn version 4.0, rotating items were introduced, offering randomized, different items each day. Throwback Week had pairs or groups of items offered on the same day before this was made permanent in v6.0.\n{| class=\"article-table\"\n!Pair\n!Item\n!Image\n!Price per unit\n!Limit\n!Notes\n|-\n| rowspan=\"2\" |M\n|Premium Bot Crystal\n|\n|3,000\n|2\n|was 7,000\n|-\n|Tier 3 Essence Crystal\n|\n|50,000\n|2\n|v6.0\n|-\n| rowspan=\"3\" |T\n|Boost Crystal\n|\n|4,000\n|5\n|\n|-\n|Tier 1 Alliance Mission Squad Revive Kit\n|\n|6000\n|2\n|Was Tier 2\n|-\n|Tier 3 Alliance Mission Squad Repair Kit\n|\n|6000\n|2\n|\n|-\n| rowspan=\"3\" |\n|Gold Crystal\n|\n|2,000\n|5\n|\n|-\n|Tier 1 Alliance Mission Squad Revive Kit\n|\n|6000\n|2\n|\n|-\n|Tier 3 Alliance Mission Squad Repair Kit\n|\n|6000\n|2\n|\n|-\n| rowspan=\"2\" |\n|2-Star Sharkticon Crystal\n|\n|12,000\n|3\n|v6.0\n|-\n|Tier 1 Alpha Spark\n|\n|25,000\n|2\n|\n|-\n| rowspan=\"2\" |W\n|2-Star Sharkticon Crystal\n|\n|12,000\n|3\n|\n|-\n|Superior Signature Crystal\n|\n|8,000\n|3\n|v6.0\n|-\n| rowspan=\"2\" |Sa\n|x1250 Tier 2 Alpha Spark Essence\n|\n|60,000\n|2\n|\n|-\n|Tier 2 Class Spark Crystal\n|\n|10,000\n|3\n|\n|-\n| rowspan=\"2\" |\n|Tier 1 Alpha Spark\n|\n|25,000\n|2\n|\n|-\n|Premium Mod Crystal\n|\n|2,000\n|3\n|v6.0\n|-\n| rowspan=\"2\" |\n|Premium Mod Crystal\n|\n|2,000\n|3\n|v6.0\n|-\n|Tier 1 Mod Class Spark Crystal\n|\n|15,000\n|3\n|\n|-\n| rowspan=\"2\" |Sa\n|2-Star Exclusive Bot Crystal\n|\n|12,000\n|3\n|v6.0\n|-\n|x2000 T3 Basic Spark Essence\n|\n|20,000\n|5\n|was 35,000\n|-\n| rowspan=\"2\" |\n|x250 Tier 4 Basic Spark Essence\n|\n|40,000\n|2\n|v7.0\n|-\n|x2000 T3 Basic Spark Essence\n|\n|20,000\n|5\n|\n|-\n| rowspan=\"3\" |\n|Boost Crystal\n|\n|4,000\n|5\n|\n|-\n|Tier 2 Alliance Mission Squad Revive Kit\n|\n|10,000\n|1\n|was old Tier 3\n|-\n|Tier 4 Alliance Mission Squad Repair Kit\n|\n|10,000\n|1\n|\n|-\n| rowspan=\"5\" |Th\n|Tier 1 Knight Crystal\n| rowspan=\"4\" |\n|6,000\n|3\n|was limit 1\n|-\n|Tier 2 Knight Crystal\n|15,000\n|2\n|was limit 1\n|-\n|Tier 3 Knight Crystal\n|40,000\n|1\n|\n|-\n|Tier 4 Knight Crystal\n|110,000\n|1\n|v7.1\n|-\n|Tier 1 Class Spark Crystal\n|\n|5,000\n|5\n|v6.0\n|-\n| rowspan=\"2\" |\n|x100 4-Star Bot Crystal Shards\n|\n|25,000\n|5\n|\n|-\n|Gold Crystal\n|\n|2,000\n|5\n|\n|-\n| rowspan=\"2\" |\n|Rank Up Crystal\n|\n|4,000\n|5\n|\n|-\n|x20 Energon\n|\n|3,000\n|10\n|\n|-\n| rowspan=\"2\" |\n|x100 Tier 3 Class Spark Crystal Shards\n|\n|15,000\n|5\n|v6.0\n|-\n|Rank Up Crystal\n|\n|4,000\n|5\n|\n|-\n| rowspan=\"2\" |\n|3-Star Bot Crystal\n|\n|40,000\n|1\n|v6.0\n|-\n|3-Star Class Signature Upgrade\n|\n\n|5,000\n|5\n|All classes\n|-\n| rowspan=\"2\" |F\n|4-Star Class Signature Upgrades\n|\n|20,000\n|5\n|v7.0, one class\n|-\n|x500 Tier 3 Class Spark Essence\n|\n|35,000\n|4\n|v7.0, one class\n|-\n| rowspan=\"2\" |\n|Premium Bot Crystal\n|\n|3,000\n|2\n|old sprite\n|-\n|Greater Rank Up Crystal\n|\n|35,000\n|2\n|v7.0\n|}\nCategory:Items",
+       "tables": [
+        [
+         [
+          "Item",
+          "Image",
+          "Price per unit",
+          "Limit",
+          "Notes"
+         ],
+         [
+          "Tier 2 Ore-13",
+          "",
+          "500, 700, 900, 1100, 1300",
+          "5",
+          ""
+         ],
+         [
+          "Tier 3 Ore-13",
+          "",
+          "3000, 4000, 5000",
+          "3",
+          ""
+         ],
+         [
+          "Tier 4 Ore-13",
+          "",
+          "8,000 x3",
+          "3",
+          "v7.1"
+         ],
+         [
+          "Tier 1 Basic Spark",
+          "",
+          "500, 700, 900, 1100, 1300",
+          "5",
+          ""
+         ],
+         [
+          "Tier 2 Basic Spark",
+          "",
+          "9000, 10000, 11000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "x1000 Tier 1 Alpha Spark Essence",
+          "",
+          "5500, 4500, 3500, 2500",
+          "5",
+          "v6.0"
+         ],
+         [
+          "x500 Tier 3 Basic Essence",
+          "",
+          "12,000, 10,000",
+          "2",
+          "v6.0"
+         ],
+         [
+          "x250 Tier 2 Alpha Essence",
+          "",
+          "15,000, 13,000",
+          "2",
+          "v6.0"
+         ],
+         [
+          "Gold Raid Trophy",
+          "",
+          "1,000,000",
+          "1",
+          "v6.0"
+         ],
+         [
+          "3-Star Superconductor 1000",
+          "",
+          "100,000",
+          "1",
+          "v6.0"
+         ],
+         [
+          "Tier 3 Essence Crystal",
+          "",
+          "75,000",
+          "1",
+          "v7.1"
+         ],
+         [
+          "Tier 1 Ore-13",
+          "",
+          "50, ?, ?, ?, ?",
+          "5",
+          "Removed"
+         ],
+         [
+          "Standard Mod Crystal",
+          "",
+          "2,500",
+          "",
+          "Removed"
+         ],
+         [
+          "2-Star Superconductor 1000",
+          "",
+          "75,000",
+          "1",
+          "Removed"
+         ],
+         [
+          "2-Star Superconductor 2000",
+          "",
+          "75,000",
+          "1",
+          "Removed"
+         ],
+         [
+          "Star Saber",
+          "",
+          "2,000,000",
+          "1",
+          "Removed"
+         ],
+         [
+          "x250 Tier 2 Basic Spark Essence",
+          "",
+          "4000, 3400, 2800, 2200",
+          "4",
+          "Replaced in v6.0"
+         ],
+         [
+          "x500 Tier 1 Alpha Spark Essence",
+          "",
+          "15000, 13000, 11000, 9000",
+          "4",
+          "Replaced"
+         ]
+        ],
+        [
+         [
+          "Pair",
+          "Item",
+          "Image",
+          "Price per unit",
+          "Limit",
+          "Notes"
+         ],
+         [
+          "rowspan=\"2\" |M",
+          "Premium Bot Crystal",
+          "",
+          "3,000",
+          "2",
+          "was 7,000"
+         ],
+         [
+          "Tier 3 Essence Crystal",
+          "",
+          "50,000",
+          "2",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"3\" |T",
+          "Boost Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "Tier 1 Alliance Mission Squad Revive Kit",
+          "",
+          "6000",
+          "2",
+          "Was Tier 2"
+         ],
+         [
+          "Tier 3 Alliance Mission Squad Repair Kit",
+          "",
+          "6000",
+          "2",
+          ""
+         ],
+         [
+          "rowspan=\"3\" |",
+          "Gold Crystal",
+          "",
+          "2,000",
+          "5",
+          ""
+         ],
+         [
+          "Tier 1 Alliance Mission Squad Revive Kit",
+          "",
+          "6000",
+          "2",
+          ""
+         ],
+         [
+          "Tier 3 Alliance Mission Squad Repair Kit",
+          "",
+          "6000",
+          "2",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "2-Star Sharkticon Crystal",
+          "",
+          "12,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "Tier 1 Alpha Spark",
+          "",
+          "25,000",
+          "2",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |W",
+          "2-Star Sharkticon Crystal",
+          "",
+          "12,000",
+          "3",
+          ""
+         ],
+         [
+          "Superior Signature Crystal",
+          "",
+          "8,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"2\" |Sa",
+          "x1250 Tier 2 Alpha Spark Essence",
+          "",
+          "60,000",
+          "2",
+          ""
+         ],
+         [
+          "Tier 2 Class Spark Crystal",
+          "",
+          "10,000",
+          "3",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Tier 1 Alpha Spark",
+          "",
+          "25,000",
+          "2",
+          ""
+         ],
+         [
+          "Premium Mod Crystal",
+          "",
+          "2,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Premium Mod Crystal",
+          "",
+          "2,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "Tier 1 Mod Class Spark Crystal",
+          "",
+          "15,000",
+          "3",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |Sa",
+          "2-Star Exclusive Bot Crystal",
+          "",
+          "12,000",
+          "3",
+          "v6.0"
+         ],
+         [
+          "x2000 T3 Basic Spark Essence",
+          "",
+          "20,000",
+          "5",
+          "was 35,000"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "x250 Tier 4 Basic Spark Essence",
+          "",
+          "40,000",
+          "2",
+          "v7.0"
+         ],
+         [
+          "x2000 T3 Basic Spark Essence",
+          "",
+          "20,000",
+          "5",
+          ""
+         ],
+         [
+          "rowspan=\"3\" |",
+          "Boost Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "Tier 2 Alliance Mission Squad Revive Kit",
+          "",
+          "10,000",
+          "1",
+          "was old Tier 3"
+         ],
+         [
+          "Tier 4 Alliance Mission Squad Repair Kit",
+          "",
+          "10,000",
+          "1",
+          ""
+         ],
+         [
+          "rowspan=\"5\" |Th",
+          "Tier 1 Knight Crystal",
+          "rowspan=\"4\" |",
+          "6,000",
+          "3",
+          "was limit 1"
+         ],
+         [
+          "Tier 2 Knight Crystal",
+          "15,000",
+          "2",
+          "was limit 1"
+         ],
+         [
+          "Tier 3 Knight Crystal",
+          "40,000",
+          "1",
+          ""
+         ],
+         [
+          "Tier 4 Knight Crystal",
+          "110,000",
+          "1",
+          "v7.1"
+         ],
+         [
+          "Tier 1 Class Spark Crystal",
+          "",
+          "5,000",
+          "5",
+          "v6.0"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "x100 4-Star Bot Crystal Shards",
+          "",
+          "25,000",
+          "5",
+          ""
+         ],
+         [
+          "Gold Crystal",
+          "",
+          "2,000",
+          "5",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Rank Up Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "x20 Energon",
+          "",
+          "3,000",
+          "10",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "x100 Tier 3 Class Spark Crystal Shards",
+          "",
+          "15,000",
+          "5",
+          "v6.0"
+         ],
+         [
+          "Rank Up Crystal",
+          "",
+          "4,000",
+          "5",
+          ""
+         ],
+         [
+          "rowspan=\"2\" |",
+          "3-Star Bot Crystal",
+          "",
+          "40,000",
+          "1",
+          "v6.0"
+         ],
+         [
+          "3-Star Class Signature Upgrade",
+          "",
+          "5,000",
+          "5",
+          "All classes"
+         ],
+         [
+          "rowspan=\"2\" |F",
+          "4-Star Class Signature Upgrades",
+          "",
+          "20,000",
+          "5",
+          "v7.0, one class"
+         ],
+         [
+          "x500 Tier 3 Class Spark Essence",
+          "",
+          "35,000",
+          "4",
+          "v7.0, one class"
+         ],
+         [
+          "rowspan=\"2\" |",
+          "Premium Bot Crystal",
+          "",
+          "3,000",
+          "2",
+          "old sprite"
+         ],
+         [
+          "Greater Rank Up Crystal",
+          "",
+          "35,000",
+          "2",
+          "v7.0"
+         ]
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Raid Shield": {
+   "page": "Raid Shield",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid_Shield",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 9806,
+    "timestamp": "2022-12-10T07:23:23Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Raid Shield",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid_Shield",
+      "revid": 9806,
+      "timestamp": "2022-12-10T07:23:23Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {
+      "12h": "40 Energon (max 3)",
+      "24h": "75 Energon (max 1)|sell = N/A"
+     },
+     "lead": "{{Infobox_item|title = Raid Shield|image = Raid Shield New.png|type = Protection|effects = Protection Against Raids|source = StoreLog-In CalendarsRaider's Bounty ArenaAlliance Quest Rank Rewards|buy = 4h = 15 Energon (max 6 every 12 hours)\n12h = 40 Energon (max 3)\n24h = 75 Energon (max 1)|sell = N/A}}The Raid Shield is used to protect your Base from incoming Raids from other Commanders. \n\nAttempting to start a Raid while any Raid shield is active will remove it if confirmed.\n\nThey are mainly bought from the Store, but some could be earned through the Raider's Bounty arenas, or top 30 rewards in 3-day Alliance Quests.\n\nThere are three different kinds with different durations, Unlike other items, excess inventory Raid Shields last 2 days when most last 6 or 13 days. \n{| class=\"fandom-table\"\n!\n!Energon\n!Daily Purchase Limit\n!Limit recharge\n!Max Inventory\n|-\n|4-Hour\n|15\n|5\n|12 hours\n|5\n|-\n|12-Hour\n|40\n|3\n|24 hours\n|3\n|-\n|24-Hour\n|75\n|1\n|24 hours\n|1\n|}",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Raid Shield.png|The old Raid Shield",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "* The Raid Shield used to emerge from the middle of a Base's Bot nodes while active. In v2.0, it was relocated to the top of the Battle Center.\n* Raiding Bundles were available at one point which offered Tier 1 Raid Repair and Revive Kits in addition to a 4-hour shield.\nCategory:Items",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 9806,
+    "timestamp": "2022-12-10T07:23:23Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Raid Shield",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Raid_Shield",
+      "revid": 9806,
+      "timestamp": "2022-12-10T07:23:23Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {
+      "12h": "40 Energon (max 3)",
+      "24h": "75 Energon (max 1)|sell = N/A"
+     },
+     "lead": "{{Infobox_item|title = Raid Shield|image = Raid Shield New.png|type = Protection|effects = Protection Against Raids|source = StoreLog-In CalendarsRaider's Bounty ArenaAlliance Quest Rank Rewards|buy = 4h = 15 Energon (max 6 every 12 hours)\n12h = 40 Energon (max 3)\n24h = 75 Energon (max 1)|sell = N/A}}The Raid Shield is used to protect your Base from incoming Raids from other Commanders. \n\nAttempting to start a Raid while any Raid shield is active will remove it if confirmed.\n\nThey are mainly bought from the Store, but some could be earned through the Raider's Bounty arenas, or top 30 rewards in 3-day Alliance Quests.\n\nThere are three different kinds with different durations, Unlike other items, excess inventory Raid Shields last 2 days when most last 6 or 13 days. \n{| class=\"fandom-table\"\n!\n!Energon\n!Daily Purchase Limit\n!Limit recharge\n!Max Inventory\n|-\n|4-Hour\n|15\n|5\n|12 hours\n|5\n|-\n|12-Hour\n|40\n|3\n|24 hours\n|3\n|-\n|24-Hour\n|75\n|1\n|24 hours\n|1\n|}",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Raid Shield.png|The old Raid Shield",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "* The Raid Shield used to emerge from the middle of a Base's Bot nodes while active. In v2.0, it was relocated to the top of the Battle Center.\n* Raiding Bundles were available at one point which offered Tier 1 Raid Repair and Revive Kits in addition to a 4-hour shield.\nCategory:Items",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Gold Raid Trophy": {
+   "page": "Gold Raid Trophy",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold_Raid_Trophy",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 10605,
+    "timestamp": "2023-01-10T22:55:31Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Gold Raid Trophy",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold_Raid_Trophy",
+      "revid": 10605,
+      "timestamp": "2023-01-10T22:55:31Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "Respected by Autobots and Decepticons alike and earned only through the hardships of battle, this relic is considered a warning sign to intruders that no offense will go without retaliation.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "*+4% Attack and Health in Raids.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "Introduced in v6.0, this high-end Relic can be bought if the Commander has 1,500 Medals and 1,000,000 Raid Chips. (Limit 1 in 7 days)",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "File:Portrait relic raid t1 small.jpg|Unreleased Tier 1 Raid Relic\nFile:Portrait relic raid t1 large.png|Unreleased Tier 1 Raid Relic portrait\nFile:Portrait relic raid t2 small.jpg|Unreleased Tier 2 Raid Relic\nFile:Portrait relic raid t2 large.png|Unreleased Tier 2 Raid Relic portrait\nFile:Portrait relic raid t3 small.jpg|Unreleased Tier 3 Raid Relic\nFile:Portrait relic raid t3 large.png|Unreleased Tier 3 Raid Relic portrait\nFile:Gold Raid Trophy icon.jpg\nFile:Portrait relic raid t4 large.png",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "*This Relic is similar to the early Star Saber in exclusivity and cost.\n*There are four tiers of this relic in the game files, but only the gold highest-tier one is in the game.\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 10605,
+    "timestamp": "2023-01-10T22:55:31Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Gold Raid Trophy",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Gold_Raid_Trophy",
+      "revid": 10605,
+      "timestamp": "2023-01-10T22:55:31Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "Respected by Autobots and Decepticons alike and earned only through the hardships of battle, this relic is considered a warning sign to intruders that no offense will go without retaliation.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Relic Boosts",
+       "text": "*+4% Attack and Health in Raids.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Obtainment",
+       "text": "Introduced in v6.0, this high-end Relic can be bought if the Commander has 1,500 Medals and 1,000,000 Raid Chips. (Limit 1 in 7 days)",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "File:Portrait relic raid t1 small.jpg|Unreleased Tier 1 Raid Relic\nFile:Portrait relic raid t1 large.png|Unreleased Tier 1 Raid Relic portrait\nFile:Portrait relic raid t2 small.jpg|Unreleased Tier 2 Raid Relic\nFile:Portrait relic raid t2 large.png|Unreleased Tier 2 Raid Relic portrait\nFile:Portrait relic raid t3 small.jpg|Unreleased Tier 3 Raid Relic\nFile:Portrait relic raid t3 large.png|Unreleased Tier 3 Raid Relic portrait\nFile:Gold Raid Trophy icon.jpg\nFile:Portrait relic raid t4 large.png",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "*This Relic is similar to the early Star Saber in exclusivity and cost.\n*There are four tiers of this relic in the game files, but only the gold highest-tier one is in the game.\nCategory:Relics",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  }
+ }
+}

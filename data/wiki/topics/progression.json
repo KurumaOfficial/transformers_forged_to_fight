@@ -1,0 +1,3951 @@
+{
+ "source": "Fandom pages parsed in data/wiki/pages.json; as_of/latest from data/wiki/versions/",
+ "cutoff": "2023-01-13T23:59:59Z",
+ "topic": "progression",
+ "note": "Curated page set; values only from saved wikitext. as_of uses parsed page when revision <= cutoff, otherwise raw wikitext or null.",
+ "page_count": 3,
+ "pages": {
+  "Progression": {
+   "page": "Progression",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Progression",
+   "tag": "[WIKI]",
+   "as_of_2023": null,
+   "latest": {
+    "revid": 10861,
+    "timestamp": "2023-06-10T00:39:13Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Progression",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Progression",
+      "revid": 10861,
+      "timestamp": "2023-06-10T00:39:13Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Progression in Forged to Fight was completely different prior to its second wind on Netflix.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Kabam",
+       "text": "Exploring Story missions yielded a lot of XP to reach level 30 by the time you wrapped up Act Two or Three (faster if you've got an XP boost.\n\nGold could be earned by progressing through missions, putting Bots on your base, Gold, Daily, 4-Hour, or Arena Crystals, helping your fellow Commanders in your Alliance, Daily Deals, duplicated Bots and Mods, and forging.\n\nEnergon, while a \"hard currency\" (as in you have to pay real money for them), could still be earned through gameplay.\n\nOre-13 could be earned through gameplay and forging Bots and Sparks could either also be obtained through such, or buying bundles with real money.\n\nYou get Bots by spinning Bot Crystals - and most of the time, you wouldn't get the Bot you've wanted. And if you wanted a specific Bot, especially when new, you'd have to drop some real-life money to buy Energon to get those Crystals, and even then, you wouldn't get the Bot anyway. In the 2020s, Bot Chips became abundant, eventually becoming the main currency of the game, replacing the single-Bot specific Bot Chips, which were all converted. Then, say hello to Titan Fragments, which were currency earned in Alliance Missions to get the most exclusive Bots, like Megatronus.\n\nAll that, until...",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Netflix",
+       "text": "...Kabam made progression significantly easier* (kinda) in the Netflix release of the game.\n\nThis time, you can get Bots all through spending Bot Chips, with most Bots being unavailable until a set release (re: Beast Wars Bots). Working up the order in Story Missions - completing Act One, Chapter Two gives a 2-Star Dirge, Three 2-Star Motormaster, completing that Act gives you a 3-Star Dead End, Act Two, Act Two a 3-Star Shockwave, completing that Act a 4-Star Megatron, the list goes on!\n\nAll T2 and T3 Class Sparks are now obtainable with Energon that you get completely through gameplay! But Alpha Sparks are still rather difficult to come by.\n\nOre-13 remains obtainable through gameplay, as is Gold.\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": true,
+   "changed_since_cutoff": true
+  },
+  "Masteries": {
+   "page": "Masteries",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Masteries",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 10664,
+    "timestamp": "2023-01-12T06:51:45Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Masteries",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Masteries",
+      "revid": 10664,
+      "timestamp": "2023-01-12T06:51:45Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Commander Masteries, introduced in Version 3.0, are a selection of offensive and defensive bonuses that apply to your entire roster of Bots. Commander Masteries provide you with permanent bonuses to all Bots; at all times, though some may be restricted or modified based on the game mode, Bot, or other situational criteria.\n\nMasteries can be accessed through the base or the Commander profile. By the point a Commander reaches level 60, they will have 43 mastery points to allocate.\n\nThe bonuses provided by Commander Masteries can range from enhancing your damage output through various means, to providing you with a stronger defense by raising the armor rating of your Bots. Prefer utilizing ranged attacks? Build up your mastery of dodging and counterattacking. Are you an aggressive attacker? There are Commander Masteries that will enhance your damage output! Get hit often? There are Commander Masteries that will raise your armor!\n\nThere are plenty of different strategies you can utilize when building out your Commander Masteries, but they all have one thing in common… They’re here to bolster your team in a fight!\n\nCommander Masteries are separated into two different categories: Offensive and Defensive; which bolster your damage output or your ability to negate or minimize damage respectively. Additionally, Commander Masteries may have multiple ranks for you to unlock, each of which will power up the benefits you receive from that Commander Mastery, or unlock additional benefits.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Utilizing Commander Masteries",
+       "text": ". (Max 10)]]\n\nMastery Points are a unique resource that determine how many Commander Masteries and Ranks of Commander Masteries you can have active at any given time. You gain Mastery Points by raising your Commander Level, starting at Level 18. This means that at this time, the most points any Commander can have is 33. Commanders that are Level 18 and higher will retroactively be awarded Mastery Points based on their current level.\n\nNext, you have to unlock the Commander Mastery that you would like to utilize. Most Commander Masteries will have a prerequisite that must be met before you are able to activate it. This could mean having unlocked the Commander Mastery that comes before it, having placed enough Mastery Points in the Offensive or Defensive category before being able to unlock its benefits, or having reached a high enough Commander Level.\n\nSome Commander Masteries have a cost to unlock it. This comes in the form of Mastery Cores. Mastery Cores are rare items that can be purchased in the game, or won through different events or Missions. There will be some Commander Masteries that require different kinds of Mastery Cores to unlock, and will require additional Mastery Cores to unlock the next level.\n\nEach Commander Mastery also has an activation cost after unlocking. For most of Commander Masteries, it will be a Gold cost, but some of the higher tier Commander Masteries will require small amounts of Energon to rank up. \n\n* Tier 1 (green) have no core unlocks\n*#Rank 1: 50 Gold\n*#Rank 2: 100 Gold\n*# Rank 3: 150 Gold\n*#Rank 4: 200 Gold\n*#Rank 5: 250 Gold\n*Tier 2 (blue)\n*#Rank 1: 1 T1 Core, 200 Gold\n*#Rank 2: 1 T1 Core, 400 Gold\n*#Rank 3: 2 T1 Cores, 600 Gold\n*#Rank 4: 2 T1 Cores, 800 Gold\n*#Rank 5: 3 T1 Cores, 1000 Gold\n*Tier 3 (gold)\n*#Rank 1: 1 T2 Core, 2 Energon\n*#Rank 2: 1 T2 Core, 4 Energon\n*#Rank 3: 2 T2 Cores, 6 Energon\n*#Rank 4: 2 T2 Cores, 8 Energon\n*#Rank 5: 3 T2 Cores, 10 Energon\n**",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Resetting Commander Masteries Build",
+       "text": "You can reset your Commander Mastery Build at any time! When you choose to reset your Masteries in a certain category, all Commander Masteries in that category are disabled, and your Mastery Points are returned to you for reinvestment! Any Commander Masteries you have unlocked will remain unlocked. There is no cost to reset your Commander Masteries, but there will be a cost to activate your Commander Masteries again.\n\nSome Commander Masteries are more effective in certain modes of the game, while they may be less effective in others. The option to reset your choices allows you customize a build for whatever challenge that you choose to focus on!",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Offensive Masteries",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Damage",
+       "text": "Increases the Attack Rating of all Bots by +5~20 plus an additional +1% of their Base Attack Rating. \n\n(Each Bot's base Attack Rating is determined by their Rank and Level)\n{| class=\"fandom-table article-table\"\n!Rank\n!Cmdr lvl.\n!Attack Rating\n!\n|-\n|1\n|18 \n|+5 \n|50\n|-\n|2\n| 19\n|+10\n|100\n|-\n|3\n|20\n|+15\n|150\n|-\n|4\n|21\n|+20\n|200\n|}",
+       "tables": [
+        [
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Attack Rating",
+          ""
+         ],
+         [
+          "1",
+          "18",
+          "+5",
+          "50"
+         ],
+         [
+          "2",
+          "19",
+          "+10",
+          "100"
+         ],
+         [
+          "3",
+          "20",
+          "+15",
+          "150"
+         ],
+         [
+          "4",
+          "21",
+          "+20",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Sequencer",
+       "text": "Special Attacks activated immediately after ending a combo deal 3-9% damage. (A combo is a sequence five basic attacks such as three lights then two mediums)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Damage Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!+Damage\n!\n|-\n|1\n|19\n|+3%\n|50\n|-\n| 2\n|20\n|+4%\n|100\n|-\n|3\n|21\n|+6%\n|150\n|-\n|4\n|22\n|+9%\n|200\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Damage Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "+Damage",
+          ""
+         ],
+         [
+          "1",
+          "19",
+          "+3%",
+          "50"
+         ],
+         [
+          "2",
+          "20",
+          "+4%",
+          "100"
+         ],
+         [
+          "3",
+          "21",
+          "+6%",
+          "150"
+         ],
+         [
+          "4",
+          "22",
+          "+9%",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Courage",
+       "text": "Increase the Attack of all Bots by +5.5%~17.5% Attack Buff while they're below 50% Health during a fight. This amount is doubled while below 10% Health.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Sequencer Rank 1\n|-\n!Rank\n!Cmdr Lvl.\n!Attack\n!\n|-\n|1\n|20\n|5.5%\n|200\n|-\n|2\n|22\n|8%\n|400\n|-\n|3\n|24\n|10.5%\n|600\n|-\n|4\n|26\n|13%\n|800\n|-\n|5\n|28\n|17.5%\n|1000\n|}\n(This buff can be nullified.)",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Sequencer Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "20",
+          "5.5%",
+          "200"
+         ],
+         [
+          "2",
+          "22",
+          "8%",
+          "400"
+         ],
+         [
+          "3",
+          "24",
+          "10.5%",
+          "600"
+         ],
+         [
+          "4",
+          "26",
+          "13%",
+          "800"
+         ],
+         [
+          "5",
+          "28",
+          "17.5%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Counterpunch",
+       "text": "After successfully sidestepping a Dash or melee Special, attacking within 1.2~2.5 seconds adds +8-18% Attack Rating to your next attack.\n{| class=\"fandom-table article-table\"\n| colspan=\"5\" |Req: Courage Rank 1\n|-\n!Rank\n!Cmdr lvl.\n! Seconds\n!Attack\n!\n|-\n|1\n|21 \n|1.2\n|8%\n|50\n|-\n|2\n|22\n|1.4\n|10%\n|100\n|-\n| 3\n|23\n|1.7\n|12%\n|150\n|-\n| 4\n|24\n|2\n|15%\n|200\n|-\n|5\n|25\n|2.5\n|18%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Req: Courage Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Seconds",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "1.2",
+          "8%",
+          "50"
+         ],
+         [
+          "2",
+          "22",
+          "1.4",
+          "10%",
+          "100"
+         ],
+         [
+          "3",
+          "23",
+          "1.7",
+          "12%",
+          "150"
+         ],
+         [
+          "4",
+          "24",
+          "2",
+          "15%",
+          "200"
+         ],
+         [
+          "5",
+          "25",
+          "2.5",
+          "18%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Sniper",
+       "text": "The farther away your bots are from their opponent, the higher the damage and block penetration of their basic ranged attacks, up to 8-16% when at maximum distance.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Sequencer Rank 1 \n|-\n! Rank\n!Cmdr Lvl.\n!Attack\n!\n|-\n|1\n|20\n|8%\n|200\n|-\n|2\n|22\n|10%\n|400\n|-\n|3\n|24\n| 12%\n|600\n|-\n|4\n| 26\n|14%\n|800\n|-\n| 5\n|28\n|16%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Sequencer Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "20",
+          "8%",
+          "200"
+         ],
+         [
+          "2",
+          "22",
+          "10%",
+          "400"
+         ],
+         [
+          "3",
+          "24",
+          "12%",
+          "600"
+         ],
+         [
+          "4",
+          "26",
+          "14%",
+          "800"
+         ],
+         [
+          "5",
+          "28",
+          "16%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Gunslinger",
+       "text": "After successfully sidestepping a projectile, attacking within 1.2 seconds grants an Attack Buff that adds +6~16% Attack Rating to your next attack\n{| class=\"fandom-table article-table\"\n| colspan=\"5\" |Req: Sniper Rank 1\n|-\n!Rank\n!Cmdr lvl.\n! Seconds\n!Attack\n!\n|-\n|1\n|21 \n|1.2\n|6%\n|50\n|-\n|2\n|22\n|1.5\n|8%\n|100\n|-\n| 3\n|23\n|1.9\n|10%\n|150\n|-\n| 4\n|24\n|2.4\n|13%\n|200\n|-\n|5\n|25\n|3\n|16%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Req: Sniper Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Seconds",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "1.2",
+          "6%",
+          "50"
+         ],
+         [
+          "2",
+          "22",
+          "1.5",
+          "8%",
+          "100"
+         ],
+         [
+          "3",
+          "23",
+          "1.9",
+          "10%",
+          "150"
+         ],
+         [
+          "4",
+          "24",
+          "2.4",
+          "13%",
+          "200"
+         ],
+         [
+          "5",
+          "25",
+          "3",
+          "16%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Pierce Armor",
+       "text": "Critical Hits from your bots ignore 2%~14% percentage of enemies' armor. (Armor penetration has no effect against enemies with zero Armor or less.)\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Sequencer Rank 1 \n|-\n! Rank\n!Cmdr Lvl.\n!Pierce\n!\n|-\n|1\n|21\n|2%\n|200\n|-\n|2\n|23\n|5%\n|400\n|-\n|3\n|25\n| 8%\n|600\n|-\n|4\n| 27\n|11%\n|800\n|-\n| 5\n|29\n|14%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Sequencer Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Pierce",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "2%",
+          "200"
+         ],
+         [
+          "2",
+          "23",
+          "5%",
+          "400"
+         ],
+         [
+          "3",
+          "25",
+          "8%",
+          "600"
+         ],
+         [
+          "4",
+          "27",
+          "11%",
+          "800"
+         ],
+         [
+          "5",
+          "29",
+          "14%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Critical Rate",
+       "text": "Increases the Critical Rate of all bots by +0.9%~4.5%. (Critical Rate is reduced by enemy Critical Rate Resistance.)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Pierce Armor Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!Crit Rate\n!\n|-\n|1\n|23 \n|0.9%\n|50\n|-\n|2\n|24\n|1.8%\n|100\n|-\n| 3\n|25\n|2.7%\n|150\n|-\n| 4\n|26\n|3.6%\n|200\n|-\n|5\n|27\n|4.5%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Pierce Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Crit Rate",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "0.9%",
+          "50"
+         ],
+         [
+          "2",
+          "24",
+          "1.8%",
+          "100"
+         ],
+         [
+          "3",
+          "25",
+          "2.7%",
+          "150"
+         ],
+         [
+          "4",
+          "26",
+          "3.6%",
+          "200"
+         ],
+         [
+          "5",
+          "27",
+          "4.5%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Critical Damage",
+       "text": "Increases the Critical Damage of all bots by +6%~15%. (Critical Damage is reduced by enemy Critical Damage Resistance.)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Pierce Armor Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!Crit Rate\n!\n|-\n|1\n|23 \n|6%\n|50\n|-\n|2\n|24\n|8%\n|100\n|-\n| 3\n|25\n|10%\n|150\n|-\n| 4\n|26\n|12%\n|200\n|-\n|5\n|27\n|15%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Pierce Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Crit Rate",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "6%",
+          "50"
+         ],
+         [
+          "2",
+          "24",
+          "8%",
+          "100"
+         ],
+         [
+          "3",
+          "25",
+          "10%",
+          "150"
+         ],
+         [
+          "4",
+          "26",
+          "12%",
+          "200"
+         ],
+         [
+          "5",
+          "27",
+          "15%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Star Seeker",
+       "text": "The Attack Rating of your Bots increases exponentially based on their current Combo Meter count, up to a maximum of 24~80% after 100 hits. \n\n{| class=\"article-table\"\n! colspan=\"5\" | Req: 10 Offensive Points spent\n|-\n!Rank \n!Cmdr lvl.\n|Attack Rating\n!\n! \n|-\n|1\n|23\n|24% \n| 1\n|2\n|-\n|2\n|26\n|35%\n|1\n|4\n|-\n| 3\n|29\n|46% \n|2\n|6\n|-\n|4\n|32\n|60%\n|2\n|8\n|-\n|5\n|35\n| 80%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" | Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Attack Rating",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "24%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "26",
+          "35%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "29",
+          "46%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "32",
+          "60%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "35",
+          "80%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Unfazed",
+       "text": "When an enemy Evades, your Bots have a 16~50% chance to become Unstoppable for 1.0 seconds and add +17.5~85% Attack Rating to their next hit. While your Bots are Unstoppable, their Combo Meter is not reset.\n\n{| class=\"article-table\"\n! colspan=\"6\" | Req: Star Seeker Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl,\n!Unstoppable Chance\n|Attack Rating\n!\n! \n|-\n|1\n|24\n|16%\n|17.5% \n| 1\n|2\n|-\n|2\n|27\n|20% \n|25%\n|1\n|4\n|-\n| 3\n|30\n|25%\n|35% \n|2\n|6\n|-\n|4\n|33\n|33%\n|55%\n|2\n|8\n|-\n|5\n|36\n|50%\n| 85%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: Star Seeker Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl,",
+          "Unstoppable Chance",
+          "Attack Rating",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "24",
+          "16%",
+          "17.5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "27",
+          "20%",
+          "25%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "30",
+          "25%",
+          "35%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "33",
+          "33%",
+          "55%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "36",
+          "50%",
+          "85%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Glass Cannon",
+       "text": "Increases the attack of all bots by 2.4~7.2%, but reduces their maximum Bealth by the same amount.\n\n{| class=\"article-table\"\n! colspan=\"5\" |Star Seeker Rank 1, 10 Offensive Points spent\n|-\n!Rank\n!Cmdr Lvl, \n!+Attack and -Health\n!\n!\n|-\n|1\n|24\n|2.4%\n|1\n|300\n|-\n|2\n|26\n|4.8%\n|2\n|600\n|-\n|3\n|28\n|7.2%\n|3\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Star Seeker Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl,",
+          "+Attack and -Health",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "24",
+          "2.4%",
+          "1",
+          "300"
+         ],
+         [
+          "2",
+          "26",
+          "4.8%",
+          "2",
+          "600"
+         ],
+         [
+          "3",
+          "28",
+          "7.2%",
+          "3",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Double Edge",
+       "text": "Increase the attack of all bots by 8-18%, but up to 9-27% health is lost by inflicting Bleed over 5-15 seconds.\n\n{| class=\"article-table\"\n! colspan=\"7\" | Req: Glass Cannon Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl.\n|Seconds\n!Attack Rating\n|Health Bleed\n!\n! \n|-\n|1\n|25\n|5\n|8%\n|9% \n| 1\n|2\n|-\n|2\n|28\n|7\n|8.4% \n|12.6%\n|1\n|4\n|-\n| 3\n|31\n|9\n|10.8%\n|16.2% \n|2\n|6\n|-\n|4\n|34\n|12\n|14.4%\n|21.6%\n|2\n|8\n|-\n|5\n|37\n|15\n|18%\n| 27%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"7\" | Req: Glass Cannon Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Seconds",
+          "Attack Rating",
+          "Health Bleed",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "25",
+          "5",
+          "8%",
+          "9%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "28",
+          "7",
+          "8.4%",
+          "12.6%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "31",
+          "9",
+          "10.8%",
+          "16.2%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "34",
+          "12",
+          "14.4%",
+          "21.6%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "37",
+          "15",
+          "18%",
+          "27%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Despair",
+       "text": "Each debuff on enemies reduces their healing and repair effects by 5~10~20%.\n\n{| class=\"article-table\"\n! colspan=\"4\" | Req: 10 Offensive Points spent\n|-\n!Rank \n|Despair\n!\n! \n|-\n|1\n|5% \n| 1\n|2\n|-\n|2\n|10%\n|1\n|6\n|-\n| 3\n|20% \n|2\n|10\n|}Useful against Mission bots with Repair Timed and Last Ditch Repair mods, so any debuff skillset Bot can prevent them from out-healing damage.",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" | Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Despair",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "10%",
+          "1",
+          "6"
+         ],
+         [
+          "3",
+          "20%",
+          "2",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Suppression",
+       "text": "Opponents trigger 10~45% fewer abilities and Repair 20~90% less Health while Stunned.\n{| class=\"article-table\"\n! colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl.\n!-Trigger\n| -Repair\n!\n! \n|-\n|1\n|25\n|10%\n|20% \n| 1\n|2\n|-\n|2\n|28\n|16% \n|33%\n|1\n|4\n|-\n| 3\n|31\n|25%\n|50% \n|2\n|6\n|-\n|4\n|34\n|33%\n|66%\n|2\n|8\n|-\n|5\n|37\n|45%\n| 90%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "-Trigger",
+          "-Repair",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "25",
+          "10%",
+          "20%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "28",
+          "16%",
+          "33%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "31",
+          "25%",
+          "50%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "34",
+          "33%",
+          "66%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "37",
+          "45%",
+          "90%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Stupefy",
+       "text": "When your bots inflict Stun, it lasts for 0.1-0.8 additional seconds. This amount is doubled when your bots are controlled by AI on defense.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Suppression Rank 1, 10 Offensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Seconds\n!\n|-\n|1\n|27\n|0.1\n|200\n|-\n|2\n|29\n|0.2\n|400\n|-\n|3\n|31\n| 0.4\n|600\n|-\n|4\n| 33\n|0.6\n|800\n|-\n| 5\n|35\n|0.8\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Suppression Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Seconds",
+          ""
+         ],
+         [
+          "1",
+          "27",
+          "0.1",
+          "200"
+         ],
+         [
+          "2",
+          "29",
+          "0.2",
+          "400"
+         ],
+         [
+          "3",
+          "31",
+          "0.4",
+          "600"
+         ],
+         [
+          "4",
+          "33",
+          "0.6",
+          "800"
+         ],
+         [
+          "5",
+          "35",
+          "0.8",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Deep Wounds",
+       "text": "Bleeds your bots inflict last 10~30% longer. If they have more health points than their target, Bleed also strikes down an additional 0,6~1,4% of max health from enemies instantly.\n\n{| class=\"article-table\"\n! colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl.\n!Duration\n|Health debuff\n!\n! \n|-\n|1\n|25\n|10%\n|0.6% \n| 1\n|2\n|-\n|2\n|28\n|15% \n|0.8%\n|1\n|4\n|-\n| 3\n|31\n|20%\n|1% \n|2\n|6\n|-\n|4\n|34\n|25%\n|1.2%\n|2\n|8\n|-\n|5\n|37\n|30%\n| 1.4%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Duration",
+          "Health debuff",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "25",
+          "10%",
+          "0.6%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "28",
+          "15%",
+          "0.8%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "31",
+          "20%",
+          "1%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "34",
+          "25%",
+          "1.2%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "37",
+          "30%",
+          "1.4%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Stand Together",
+       "text": "In Solo and Alliance Missions, your Bots have +3.5~6% Attack against the final boss for each team member that hasn't been knocked out.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: 10 Offensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Attack\n!\n|-\n|1\n|23\n|3.5%\n|200\n|-\n|2\n|25\n|4%\n|400\n|-\n|3\n|27\n| 4.5%\n|600\n|-\n|4\n| 29\n|5%\n|800\n|-\n| 5\n|31\n|6%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "3.5%",
+          "200"
+         ],
+         [
+          "2",
+          "25",
+          "4%",
+          "400"
+         ],
+         [
+          "3",
+          "27",
+          "4.5%",
+          "600"
+         ],
+         [
+          "4",
+          "29",
+          "5%",
+          "800"
+         ],
+         [
+          "5",
+          "31",
+          "6%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Assassin",
+       "text": "Against enemies below 18% Health, your Bots gain 16~40% Attack and decrease enemies' defensive ability Trigger Rate by 5-25%. If enemies start the fight below 18%, your Bots also gain 10-25% offensive ability Trigger rate.\n{| class=\"fandom-table\"\n| colspan=\"6\" |Req: 10 Offensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Attack\n!-Trigger Rate\n!Trigger Rate\n!\n|-\n|1\n|23\n|10%\n|16%\n|5%\n|200\n|-\n|2\n|25\n|15%\n|20%\n|10%\n|400\n|-\n|3\n|27\n| 20%\n|25%\n|15%\n|600\n|-\n|4\n| 29\n|25%\n|32%\n|20%\n|800\n|-\n| 5\n|31\n|30%\n|40%\n|25%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" |Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          "-Trigger Rate",
+          "Trigger Rate",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "10%",
+          "16%",
+          "5%",
+          "200"
+         ],
+         [
+          "2",
+          "25",
+          "15%",
+          "20%",
+          "10%",
+          "400"
+         ],
+         [
+          "3",
+          "27",
+          "20%",
+          "25%",
+          "15%",
+          "600"
+         ],
+         [
+          "4",
+          "29",
+          "25%",
+          "32%",
+          "20%",
+          "800"
+         ],
+         [
+          "5",
+          "31",
+          "30%",
+          "40%",
+          "25%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 2,
+       "heading": "Defensive Masteries",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Health",
+       "text": "Increases the maximum Health of all Bots by +140-280 plus an additional +2% of their base Health. \n\n(Each Bot's base Health is determined by their Rank and Level)\n{| class=\"fandom-table article-table\"\n|-\n!Rank\n!Cmdr lvl.\n!Health\n!\n|-\n|1\n|18\n|70\n|50\n|-\n| 2\n|19\n|140\n|100\n|-\n|3\n|20\n|210\n|150\n|-\n|4\n|21\n|280\n|200\n|}",
+       "tables": [
+        [
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Health",
+          ""
+         ],
+         [
+          "1",
+          "18",
+          "70",
+          "50"
+         ],
+         [
+          "2",
+          "19",
+          "140",
+          "100"
+         ],
+         [
+          "3",
+          "20",
+          "210",
+          "150"
+         ],
+         [
+          "4",
+          "21",
+          "280",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Armor",
+       "text": "Increases the Armor Rating of your bots, reducing damage from attacks in order to survive 1-4% longer.\n\n(Some abilities pierce Armor or ignore it altogether.)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Health Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!Armor\n!\n|-\n|1\n|19\n|1%\n|50\n|-\n| 2\n|20\n|2%\n|100\n|-\n|3\n|21\n|3%\n|150\n|-\n|4\n|22\n|4%\n|200\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Health Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Armor",
+          ""
+         ],
+         [
+          "1",
+          "19",
+          "1%",
+          "50"
+         ],
+         [
+          "2",
+          "20",
+          "2%",
+          "100"
+         ],
+         [
+          "3",
+          "21",
+          "3%",
+          "150"
+         ],
+         [
+          "4",
+          "22",
+          "4%",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Full Mettle",
+       "text": "While your bots are above 95~85% health, they are protected by an armor buff that reduces attack damage by 6~10%.\n{| class=\"article-table\"\n! colspan=\"6\" |Req: Armor Rank 1\n|-\n!Rank\n! Level\n!Health\n! Armor\n!\n!\n|-\n|1\n|20\n|95% \n|6%\n|1\n|200\n|-\n| 2\n|22\n|90%\n|8%\n|2\n|400\n|-\n|3\n|24\n|85%\n|10%\n| 3\n| 600\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" |Req: Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Level",
+          "Health",
+          "Armor",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "20",
+          "95%",
+          "6%",
+          "1",
+          "200"
+         ],
+         [
+          "2",
+          "22",
+          "90%",
+          "8%",
+          "2",
+          "400"
+         ],
+         [
+          "3",
+          "24",
+          "85%",
+          "10%",
+          "3",
+          "600"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Resist Melee",
+       "text": "Your bots take 1-5% less damage in melee from close-range weapons like fists or swords.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Armor Rank 1\n|-\n!Rank\n!Cmdr Lvl.\n!Resistance\n!\n|-\n|1\n|21\n|1%\n|200\n|-\n|2\n|23\n|2%\n|400\n|-\n|3\n|25\n|3%\n|600\n|-\n|4\n|27\n|4%\n|800\n|-\n|5\n|29\n|5%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Resistance",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "1%",
+          "200"
+         ],
+         [
+          "2",
+          "23",
+          "2%",
+          "400"
+         ],
+         [
+          "3",
+          "25",
+          "3%",
+          "600"
+         ],
+         [
+          "4",
+          "27",
+          "4%",
+          "800"
+         ],
+         [
+          "5",
+          "29",
+          "5%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Critical Resistance",
+       "text": "Enemies deal -0.9%…4.5% fewer Critical Hits against your Bots.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Critical Damage Resistance",
+       "text": "Enemies deal -6%…15% less Critical Damage against your Bots.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Resist Ranged",
+       "text": "Increases passive Ranged Resistance in order to endure 1.5%…8% more Ranged Damage.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Energy Resistance",
+       "text": "Increases passive Energy Resistance in order to endure 2%… 6% more Energy Damage.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Enhanced Block",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Recalibration",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Last Stand",
+       "text": "While your Bots are below 5-14% Health, their Block is no longer broken by enemy Heavy Attacks.\n{| class=\"fandom-table article-table\"\n| colspan=\"5\" | Req: 10 Defensive Points spent,\nEnhanced Block Rank 1,\n\nRecalibration Rank 1\n|-\n!Rank \n!Cmdr lvl.\n!Health point\n!\n! \n|-\n|1\n|32\n|5% \n| 1\n|2\n|-\n|2\n|35\n|7%\n|1\n|4\n|-\n| 3\n|38\n|9% \n|2\n|6\n|-\n|4\n|41\n|11%\n|2\n|8\n|-\n|5\n|44\n| 14%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" | Req: 10 Defensive Points spent,"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Health point",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "32",
+          "5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "35",
+          "7%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "38",
+          "9%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "41",
+          "11%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "44",
+          "14%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Perfect Block",
+       "text": "While Blocking, your Bots have a 2-8% chance to reduce all incoming damage to zero, This chance is halved against Special Attacks.\n{| class=\"fandom-table\"\n| colspan=\"5\" |Req: Last Stand Rank 1, 10 Defensive Points spent\n|-\n!Rank\n!Cmdr Lvl.\n!Resistance\n!\n!\n|-\n|1\n|31\n|2%\n|1\n|250\n|-\n|2\n|33\n|4%\n|1\n|500\n|-\n|3\n|35\n|6%\n|2\n|750\n|-\n|4\n|37\n|8%\n|3\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Req: Last Stand Rank 1, 10 Defensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Resistance",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "31",
+          "2%",
+          "1",
+          "250"
+         ],
+         [
+          "2",
+          "33",
+          "4%",
+          "1",
+          "500"
+         ],
+         [
+          "3",
+          "35",
+          "6%",
+          "2",
+          "750"
+         ],
+         [
+          "4",
+          "37",
+          "8%",
+          "3",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Nano-Repair",
+       "text": "With the help of nanotechnology, your Bots automatically recover some health over 40-60 seconds each fight.\n\n{| class=\"article-table\"\n! colspan=\"6\" |10 Defensive Points spent\n|-\n!Rank\n!Level \n! Recovery Rate\n!Seconds\n!\n!\n|-\n|1\n|27\n|80\n|40\n|1\n|300\n|-\n|2\n|29\n|200\n|50\n|2\n|600\n|-\n|3\n|31\n|400\n|60\n|3\n|1000\n|-\n|}\nThis Mastery is especially useful with an awakened Wheeljack.",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" |10 Defensive Points spent"
+         ],
+         [
+          "Rank",
+          "Level",
+          "Recovery Rate",
+          "Seconds",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "27",
+          "80",
+          "40",
+          "1",
+          "300"
+         ],
+         [
+          "2",
+          "29",
+          "200",
+          "50",
+          "2",
+          "600"
+         ],
+         [
+          "3",
+          "31",
+          "400",
+          "60",
+          "3",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Feeding Frenzy",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Willpower",
+       "text": "Whenever your Bots attack while suffering from Bleed, Burn, Shock or Acid effects, they recover Health equal to 3~9% of the damage they inflict. Does not stack with other Willpower abilities.\n\n{| class=\"article-table\"\n! colspan=\"5\" |Nano-Repair Rank 1, 10 Defensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Health\n!\n! \n|-\n|1\n|29\n|3% \n|1\n|2\n|-\n|2\n|32\n|3.9%\n|1\n|4\n|-\n|3\n|35\n| 5.1%\n|2\n|6\n|-\n|4\n|38\n|6.8%\n|2\n| 8\n|-\n|5\n|41\n|9%\n|3\n|10\n|-\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Nano-Repair Rank 1, 10 Defensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Health",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "29",
+          "3%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "32",
+          "3.9%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "35",
+          "5.1%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "38",
+          "6.8%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "41",
+          "9%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Bleed Resistance",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Silica Plating",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Shock Resistance",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Capacitor",
+       "text": "Whenever your Bots take damage from Shock Debuffs, they generate Power. This amount is increased to x if your Bots take instant Shock damage.\n{| class=\"fandom-table article-table\"\n| colspan=\"6\" | Req: 10 Defensive Points spent,\nShock Resistance Rank 1,\n|-\n!Rank \n!Cmdr lvl.\n!Power\n!Instant Power\n!\n! \n|-\n|1\n|32\n|0.3% \n|1.5%\n| 1\n|2\n|-\n|2\n|35\n|0.5%\n|3%\n|1\n|4\n|-\n| 3\n|38\n|0.8% \n|4.5%\n|2\n|6\n|-\n|4\n|41\n|1%\n|6%\n|2\n|8\n|-\n|5\n|44\n| 1.3%\n|7.5%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: 10 Defensive Points spent,"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Power",
+          "Instant Power",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "32",
+          "0.3%",
+          "1.5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "35",
+          "0.5%",
+          "3%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "38",
+          "0.8%",
+          "4.5%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "41",
+          "1%",
+          "6%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "44",
+          "1.3%",
+          "7.5%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Inhibitor",
+       "text": "Enemies suffering from stun or shock have their power rate reduced by up to a specific percentage depending on the debuff applied. (Power rate governs the amount of power gained from attacking or being attacked.)",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "COPY",
+       "text": "Your bots reduce enemy critical rate.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 RESIST MELEE\n\nSummoner Lvl 23\n\nSummoner Lvl 24\n\nSummoner Lvl 25\n\nSummoner Lvl 26\n\nSummoner Lvl 27\n| colspan=\"1\" rowspan=\"1\" |\n\nCritical Rate -0.9%\n\nCritical Rate -1.8%\n\nCritical Rate -2.7%\n\nCritical Rate -3.6%\n\nCritical Rate -4.5%\n| colspan=\"1\" rowspan=\"1\" |\n\n50 Gold\n\n100 Gold\n\n150 Gold\n\n200 Gold\n\n250 Gold\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "CRITICAL DAMAGE RESISTANCE:",
+       "text": "Your bots take less critical damage from enemies.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 RESIST MELEE\n\nSummoner Lvl 23\n\nSummoner Lvl 24\n\nSummoner Lvl 25\n\nSummoner Lvl 26\n\nSummoner Lvl 27\n| colspan=\"1\" rowspan=\"1\" |\n\nCritical Damage -6%\n\nCritical Damage -8%\n\nCritical Damage -10%\n\nCritical Damage -12%\n\nCritical Damage -15%\n| colspan=\"1\" rowspan=\"1\" |\n\n50 Gold\n\n100 Gold\n\n150 Gold\n\n200 Gold\n\n250 Gold\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "RESIST RANGED:",
+       "text": "Your bots take less damage from projectile weapons like lasers or guns.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 ARMOR\n\nSummoner Lvl 20\n\nSummoner Lvl 22\n\nSummoner Lvl 24\n\nSummoner Lvl 26\n\nSummoner Lvl 28\n| colspan=\"1\" rowspan=\"1\" |\n\nDamage -1.5%\n\nDamage -3%\n\nDamage -4.5%\n\nDamage -6%\n\nDamage -8%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "ENERGY RESISTANCE:",
+       "text": "Increases energy resistance for all bots. This reduces damage from attacks like lasers or beams.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 RESIST RANGED\n\nSummoner Lvl 22\n\nSummoner Lvl 23\n\nSummoner Lvl 24\n\nSummoner Lvl 25\n\nSummoner Lvl 26\n| colspan=\"1\" rowspan=\"1\" |\n\nEnergy Resistance +2%\n\nEnergy Resistance +3%\n\nEnergy Resistance +4%\n\nEnergy Resistance +5%\n\nEnergy Resistance +6%\n| colspan=\"1\" rowspan=\"1\" |\n\n50 Gold\n\n100 Gold\n\n150 Gold\n\n200 Gold\n\n250 Gold\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "ENHANCED BLOCK:",
+       "text": "Increase the block proficiency of your bots, reducing the damage they take while blocking by an additional percentage.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nCommander Lvl 27\n\nCommander Lvl 29\n\nCommander Lvl 31\n\nCommander Lvl 33\n\nCommander Lvl 35\n| colspan=\"1\" rowspan=\"1\" |\n\nDamage Reduction +5%\n\nDamage Reduction +7%\n\nDamage Reduction +9%\n\nDamage Reduction +11%\n\nDamage Reduction +14%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "RECALIBRATION:",
+       "text": "Each time your bots are stunned, they reduce the duration of the next stun they receive by a percentage, up to a set maximum.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nCommander Lvl 27\n\nCommander Lvl 29\n\nCommander Lvl 31\n\nCommander Lvl 33\n\nCommander Lvl 35\n| colspan=\"1\" rowspan=\"1\" |\n\nStun +5%, max +45%\n\nStun +10%, max +50%\n\nStun +12.5%, max +50%\n\nStun +25%, max +50%\n\nStun +55%, max +55%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "NANO-REPAIR:",
+       "text": "With the help of nanotechnology, your bots automatically recover some health over a few seconds each fight.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nCommander Lvl 27\n\nCommander Lvl 29\n\nCommander Lvl 31\n| colspan=\"1\" rowspan=\"1\" |\n\n80 HP over 40 second(s)\n\n200 HP over 50 second(s)\n\n400 HP over 60 second(s)\n| colspan=\"1\" rowspan=\"1\" |\n\n300 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "FEEDING FRENZY:",
+       "text": "Your bots recover health equal to a percentage of the damage they inflict against Sharkticon enemies in alliance missions and another percentage in solo missions.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 NANO-REPAIR\n\nCommander Lvl 28\n\nCommander Lvl 30\n\nCommander Lvl 32\n\nCommander Lvl 34\n\nCommander Lvl 36\n| colspan=\"1\" rowspan=\"1\" |\n\nAlliance 1.5% / Solo 4%\n\nAlliance 1.9% / Solo 5%\n\nAlliance 2.6% / Solo 6.5%\n\nAlliance 3.4% / Solo 8%\n\nAlliance 4.5% / Solo 10%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "WILLPOWER:",
+       "text": "Whenever your bots attack while suffering from bleed, burn, shock, or acid effects, they recover health equal to a percentage of the damage they inflict. Does not stack with other willpower abilities.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 NANO-REPAIR\n\nCommander Lvl 29\n\nCommander Lvl 32\n\nCommander Lvl 35\n\nCommander Lvl 38\n\nCommander Lvl 41\n| colspan=\"1\" rowspan=\"1\" |\n\nHealth +3%\n\nHealth +3.9%\n\nHealth +5.1%\n\nHealth +6.8%\n\nHealth +9%\n| colspan=\"1\" rowspan=\"1\" |\n\n2 Energon, 1 Tier 2 Core\n\n4 Energon, 1 Tier 2 Core\n\n6 Energon, 2 Tier 2 Core\n\n8 Energon, 2 Tier 2 Core\n\n10 Energon, 3 Tier 2 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "BLEED RESISTANCE:",
+       "text": "Increases bleed resistance for all your bots, reducing the damage dealt by bleed effects.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 WILLPOWER\n\nCommander Lvl 30\n\nCommander Lvl 32\n\nCommander Lvl 34\n\nCommander Lvl 36\n\nCommander Lvl 38\n| colspan=\"1\" rowspan=\"1\" |\n\nBleed Resistance +14%\n\nBleed Resistance +16%\n\nBleed Resistance +20%\n\nBleed Resistance +25%\n\nBleed Resistance +33%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "SILICA PLATING:",
+       "text": "Borosilicate armor plating increases heat resistance for all bots. Heat resistance reduces damage from fire, explosions, and burn debuffs.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 WILLPOWER\n\nCommander Lvl 30\n\nCommander Lvl 32\n\nCommander Lvl 34\n\nCommander Lvl 36\n\nCommander Lvl 38\n| colspan=\"1\" rowspan=\"1\" |\n\nShock Resistance +5%\n\nShock Resistance +10%\n\nShock Resistance +15%\n\nShock Resistance +20%\n\nShock Resistance +33%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "SHOCK RESISTANCE:",
+       "text": "Increases shock resistance for all bots. Shock Resistance reduces damage from electric attacks and shock debuffs.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 WILLPOWER\n\nCommander Lvl 31\n\nCommander Lvl 34\n\nCommander Lvl 37\n\nCommander Lvl 40\n\nCommander Lvl 43\n| colspan=\"1\" rowspan=\"1\" |\n\nShock Resistance +5%\n\nShock Resistance +10%\n\nShock Resistance +15%\n\nShock Resistance +20%\n\nShock Resistance +33%\n| colspan=\"1\" rowspan=\"1\" |\n\n2 Energon, 1 Tier 2 Core\n\n4 Energon, 1 Tier 2 Core\n\n6 Energon, 2 Tier 2 Core\n\n8 Energon, 2 Tier 2 Core\n\n10 Energon, 3 Tier 2 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "INHIBITOR:",
+       "text": "{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 SHOCK RESISTANCE\n\nCommander Lvl 33\n\nCommander Lvl 36\n\nCommander Lvl 39\n\nCommander Lvl 42\n\nCommander Lvl 45\n| colspan=\"1\" rowspan=\"1\" |\n\nStun -20% / Shock -2%\n\nStun -25% / Shock -4%\n\nStun -33% / Shock -6%\n\nStun -50% / Shock -8%\n\nStun -66% / Shock -10%\n| colspan=\"1\" rowspan=\"1\" |\n\n2 Energon, 1 Tier 2 Core\n\n4 Energon, 1 Tier 2 Core\n\n6 Energon, 2 Tier 2 Core\n\n8 Energon, 2 Tier 2 Core\n\n10 Energon, 3 Tier 2 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "*Tier 1 Cores can be sold for a measly 750 Gold, and Tier 2 Cores for 3,500.\n*A few mastery trees were added after the fact in v3.1: Stand Together, Assassin, Capacitor, Last Stand, and Perfect Block.\n*The Kabam guide has an offensive tier 2 Firmware Upgrade mastery, but was never implemented in game.\n*The game files have a Tier 4 Mastery Core, implying plans for even stronger Masteries. Bizarrely, there is no Tier 3 Mastery Core image.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "External References",
+       "text": "*(TFTF 411 Bot in Line app) Activation and rank up costs of all masteries: https://docs.google.com/spreadsheets/d/1DN28yZTOygqJ9z1CB0gg4kEg6C4hsQaErARtjGzQ0Ac/htmlview\n\n*https://help.kabamsupport.com/hc/en-us/articles/360048589492-Mastery-Tree-Offense\n*https://help.kabamsupport.com/hc/en-us/articles/360045081872-Mastery-Tree-Defense\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 10664,
+    "timestamp": "2023-01-12T06:51:45Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Masteries",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Masteries",
+      "revid": 10664,
+      "timestamp": "2023-01-12T06:51:45Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Commander Masteries, introduced in Version 3.0, are a selection of offensive and defensive bonuses that apply to your entire roster of Bots. Commander Masteries provide you with permanent bonuses to all Bots; at all times, though some may be restricted or modified based on the game mode, Bot, or other situational criteria.\n\nMasteries can be accessed through the base or the Commander profile. By the point a Commander reaches level 60, they will have 43 mastery points to allocate.\n\nThe bonuses provided by Commander Masteries can range from enhancing your damage output through various means, to providing you with a stronger defense by raising the armor rating of your Bots. Prefer utilizing ranged attacks? Build up your mastery of dodging and counterattacking. Are you an aggressive attacker? There are Commander Masteries that will enhance your damage output! Get hit often? There are Commander Masteries that will raise your armor!\n\nThere are plenty of different strategies you can utilize when building out your Commander Masteries, but they all have one thing in common… They’re here to bolster your team in a fight!\n\nCommander Masteries are separated into two different categories: Offensive and Defensive; which bolster your damage output or your ability to negate or minimize damage respectively. Additionally, Commander Masteries may have multiple ranks for you to unlock, each of which will power up the benefits you receive from that Commander Mastery, or unlock additional benefits.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Utilizing Commander Masteries",
+       "text": ". (Max 10)]]\n\nMastery Points are a unique resource that determine how many Commander Masteries and Ranks of Commander Masteries you can have active at any given time. You gain Mastery Points by raising your Commander Level, starting at Level 18. This means that at this time, the most points any Commander can have is 33. Commanders that are Level 18 and higher will retroactively be awarded Mastery Points based on their current level.\n\nNext, you have to unlock the Commander Mastery that you would like to utilize. Most Commander Masteries will have a prerequisite that must be met before you are able to activate it. This could mean having unlocked the Commander Mastery that comes before it, having placed enough Mastery Points in the Offensive or Defensive category before being able to unlock its benefits, or having reached a high enough Commander Level.\n\nSome Commander Masteries have a cost to unlock it. This comes in the form of Mastery Cores. Mastery Cores are rare items that can be purchased in the game, or won through different events or Missions. There will be some Commander Masteries that require different kinds of Mastery Cores to unlock, and will require additional Mastery Cores to unlock the next level.\n\nEach Commander Mastery also has an activation cost after unlocking. For most of Commander Masteries, it will be a Gold cost, but some of the higher tier Commander Masteries will require small amounts of Energon to rank up. \n\n* Tier 1 (green) have no core unlocks\n*#Rank 1: 50 Gold\n*#Rank 2: 100 Gold\n*# Rank 3: 150 Gold\n*#Rank 4: 200 Gold\n*#Rank 5: 250 Gold\n*Tier 2 (blue)\n*#Rank 1: 1 T1 Core, 200 Gold\n*#Rank 2: 1 T1 Core, 400 Gold\n*#Rank 3: 2 T1 Cores, 600 Gold\n*#Rank 4: 2 T1 Cores, 800 Gold\n*#Rank 5: 3 T1 Cores, 1000 Gold\n*Tier 3 (gold)\n*#Rank 1: 1 T2 Core, 2 Energon\n*#Rank 2: 1 T2 Core, 4 Energon\n*#Rank 3: 2 T2 Cores, 6 Energon\n*#Rank 4: 2 T2 Cores, 8 Energon\n*#Rank 5: 3 T2 Cores, 10 Energon\n**",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Resetting Commander Masteries Build",
+       "text": "You can reset your Commander Mastery Build at any time! When you choose to reset your Masteries in a certain category, all Commander Masteries in that category are disabled, and your Mastery Points are returned to you for reinvestment! Any Commander Masteries you have unlocked will remain unlocked. There is no cost to reset your Commander Masteries, but there will be a cost to activate your Commander Masteries again.\n\nSome Commander Masteries are more effective in certain modes of the game, while they may be less effective in others. The option to reset your choices allows you customize a build for whatever challenge that you choose to focus on!",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Offensive Masteries",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Damage",
+       "text": "Increases the Attack Rating of all Bots by +5~20 plus an additional +1% of their Base Attack Rating. \n\n(Each Bot's base Attack Rating is determined by their Rank and Level)\n{| class=\"fandom-table article-table\"\n!Rank\n!Cmdr lvl.\n!Attack Rating\n!\n|-\n|1\n|18 \n|+5 \n|50\n|-\n|2\n| 19\n|+10\n|100\n|-\n|3\n|20\n|+15\n|150\n|-\n|4\n|21\n|+20\n|200\n|}",
+       "tables": [
+        [
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Attack Rating",
+          ""
+         ],
+         [
+          "1",
+          "18",
+          "+5",
+          "50"
+         ],
+         [
+          "2",
+          "19",
+          "+10",
+          "100"
+         ],
+         [
+          "3",
+          "20",
+          "+15",
+          "150"
+         ],
+         [
+          "4",
+          "21",
+          "+20",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Sequencer",
+       "text": "Special Attacks activated immediately after ending a combo deal 3-9% damage. (A combo is a sequence five basic attacks such as three lights then two mediums)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Damage Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!+Damage\n!\n|-\n|1\n|19\n|+3%\n|50\n|-\n| 2\n|20\n|+4%\n|100\n|-\n|3\n|21\n|+6%\n|150\n|-\n|4\n|22\n|+9%\n|200\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Damage Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "+Damage",
+          ""
+         ],
+         [
+          "1",
+          "19",
+          "+3%",
+          "50"
+         ],
+         [
+          "2",
+          "20",
+          "+4%",
+          "100"
+         ],
+         [
+          "3",
+          "21",
+          "+6%",
+          "150"
+         ],
+         [
+          "4",
+          "22",
+          "+9%",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Courage",
+       "text": "Increase the Attack of all Bots by +5.5%~17.5% Attack Buff while they're below 50% Health during a fight. This amount is doubled while below 10% Health.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Sequencer Rank 1\n|-\n!Rank\n!Cmdr Lvl.\n!Attack\n!\n|-\n|1\n|20\n|5.5%\n|200\n|-\n|2\n|22\n|8%\n|400\n|-\n|3\n|24\n|10.5%\n|600\n|-\n|4\n|26\n|13%\n|800\n|-\n|5\n|28\n|17.5%\n|1000\n|}\n(This buff can be nullified.)",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Sequencer Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "20",
+          "5.5%",
+          "200"
+         ],
+         [
+          "2",
+          "22",
+          "8%",
+          "400"
+         ],
+         [
+          "3",
+          "24",
+          "10.5%",
+          "600"
+         ],
+         [
+          "4",
+          "26",
+          "13%",
+          "800"
+         ],
+         [
+          "5",
+          "28",
+          "17.5%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Counterpunch",
+       "text": "After successfully sidestepping a Dash or melee Special, attacking within 1.2~2.5 seconds adds +8-18% Attack Rating to your next attack.\n{| class=\"fandom-table article-table\"\n| colspan=\"5\" |Req: Courage Rank 1\n|-\n!Rank\n!Cmdr lvl.\n! Seconds\n!Attack\n!\n|-\n|1\n|21 \n|1.2\n|8%\n|50\n|-\n|2\n|22\n|1.4\n|10%\n|100\n|-\n| 3\n|23\n|1.7\n|12%\n|150\n|-\n| 4\n|24\n|2\n|15%\n|200\n|-\n|5\n|25\n|2.5\n|18%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Req: Courage Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Seconds",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "1.2",
+          "8%",
+          "50"
+         ],
+         [
+          "2",
+          "22",
+          "1.4",
+          "10%",
+          "100"
+         ],
+         [
+          "3",
+          "23",
+          "1.7",
+          "12%",
+          "150"
+         ],
+         [
+          "4",
+          "24",
+          "2",
+          "15%",
+          "200"
+         ],
+         [
+          "5",
+          "25",
+          "2.5",
+          "18%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Sniper",
+       "text": "The farther away your bots are from their opponent, the higher the damage and block penetration of their basic ranged attacks, up to 8-16% when at maximum distance.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Sequencer Rank 1 \n|-\n! Rank\n!Cmdr Lvl.\n!Attack\n!\n|-\n|1\n|20\n|8%\n|200\n|-\n|2\n|22\n|10%\n|400\n|-\n|3\n|24\n| 12%\n|600\n|-\n|4\n| 26\n|14%\n|800\n|-\n| 5\n|28\n|16%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Sequencer Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "20",
+          "8%",
+          "200"
+         ],
+         [
+          "2",
+          "22",
+          "10%",
+          "400"
+         ],
+         [
+          "3",
+          "24",
+          "12%",
+          "600"
+         ],
+         [
+          "4",
+          "26",
+          "14%",
+          "800"
+         ],
+         [
+          "5",
+          "28",
+          "16%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Gunslinger",
+       "text": "After successfully sidestepping a projectile, attacking within 1.2 seconds grants an Attack Buff that adds +6~16% Attack Rating to your next attack\n{| class=\"fandom-table article-table\"\n| colspan=\"5\" |Req: Sniper Rank 1\n|-\n!Rank\n!Cmdr lvl.\n! Seconds\n!Attack\n!\n|-\n|1\n|21 \n|1.2\n|6%\n|50\n|-\n|2\n|22\n|1.5\n|8%\n|100\n|-\n| 3\n|23\n|1.9\n|10%\n|150\n|-\n| 4\n|24\n|2.4\n|13%\n|200\n|-\n|5\n|25\n|3\n|16%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Req: Sniper Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Seconds",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "1.2",
+          "6%",
+          "50"
+         ],
+         [
+          "2",
+          "22",
+          "1.5",
+          "8%",
+          "100"
+         ],
+         [
+          "3",
+          "23",
+          "1.9",
+          "10%",
+          "150"
+         ],
+         [
+          "4",
+          "24",
+          "2.4",
+          "13%",
+          "200"
+         ],
+         [
+          "5",
+          "25",
+          "3",
+          "16%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Pierce Armor",
+       "text": "Critical Hits from your bots ignore 2%~14% percentage of enemies' armor. (Armor penetration has no effect against enemies with zero Armor or less.)\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Sequencer Rank 1 \n|-\n! Rank\n!Cmdr Lvl.\n!Pierce\n!\n|-\n|1\n|21\n|2%\n|200\n|-\n|2\n|23\n|5%\n|400\n|-\n|3\n|25\n| 8%\n|600\n|-\n|4\n| 27\n|11%\n|800\n|-\n| 5\n|29\n|14%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Sequencer Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Pierce",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "2%",
+          "200"
+         ],
+         [
+          "2",
+          "23",
+          "5%",
+          "400"
+         ],
+         [
+          "3",
+          "25",
+          "8%",
+          "600"
+         ],
+         [
+          "4",
+          "27",
+          "11%",
+          "800"
+         ],
+         [
+          "5",
+          "29",
+          "14%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Critical Rate",
+       "text": "Increases the Critical Rate of all bots by +0.9%~4.5%. (Critical Rate is reduced by enemy Critical Rate Resistance.)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Pierce Armor Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!Crit Rate\n!\n|-\n|1\n|23 \n|0.9%\n|50\n|-\n|2\n|24\n|1.8%\n|100\n|-\n| 3\n|25\n|2.7%\n|150\n|-\n| 4\n|26\n|3.6%\n|200\n|-\n|5\n|27\n|4.5%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Pierce Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Crit Rate",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "0.9%",
+          "50"
+         ],
+         [
+          "2",
+          "24",
+          "1.8%",
+          "100"
+         ],
+         [
+          "3",
+          "25",
+          "2.7%",
+          "150"
+         ],
+         [
+          "4",
+          "26",
+          "3.6%",
+          "200"
+         ],
+         [
+          "5",
+          "27",
+          "4.5%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Critical Damage",
+       "text": "Increases the Critical Damage of all bots by +6%~15%. (Critical Damage is reduced by enemy Critical Damage Resistance.)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Pierce Armor Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!Crit Rate\n!\n|-\n|1\n|23 \n|6%\n|50\n|-\n|2\n|24\n|8%\n|100\n|-\n| 3\n|25\n|10%\n|150\n|-\n| 4\n|26\n|12%\n|200\n|-\n|5\n|27\n|15%\n|250\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Pierce Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Crit Rate",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "6%",
+          "50"
+         ],
+         [
+          "2",
+          "24",
+          "8%",
+          "100"
+         ],
+         [
+          "3",
+          "25",
+          "10%",
+          "150"
+         ],
+         [
+          "4",
+          "26",
+          "12%",
+          "200"
+         ],
+         [
+          "5",
+          "27",
+          "15%",
+          "250"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Star Seeker",
+       "text": "The Attack Rating of your Bots increases exponentially based on their current Combo Meter count, up to a maximum of 24~80% after 100 hits. \n\n{| class=\"article-table\"\n! colspan=\"5\" | Req: 10 Offensive Points spent\n|-\n!Rank \n!Cmdr lvl.\n|Attack Rating\n!\n! \n|-\n|1\n|23\n|24% \n| 1\n|2\n|-\n|2\n|26\n|35%\n|1\n|4\n|-\n| 3\n|29\n|46% \n|2\n|6\n|-\n|4\n|32\n|60%\n|2\n|8\n|-\n|5\n|35\n| 80%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" | Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Attack Rating",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "24%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "26",
+          "35%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "29",
+          "46%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "32",
+          "60%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "35",
+          "80%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Unfazed",
+       "text": "When an enemy Evades, your Bots have a 16~50% chance to become Unstoppable for 1.0 seconds and add +17.5~85% Attack Rating to their next hit. While your Bots are Unstoppable, their Combo Meter is not reset.\n\n{| class=\"article-table\"\n! colspan=\"6\" | Req: Star Seeker Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl,\n!Unstoppable Chance\n|Attack Rating\n!\n! \n|-\n|1\n|24\n|16%\n|17.5% \n| 1\n|2\n|-\n|2\n|27\n|20% \n|25%\n|1\n|4\n|-\n| 3\n|30\n|25%\n|35% \n|2\n|6\n|-\n|4\n|33\n|33%\n|55%\n|2\n|8\n|-\n|5\n|36\n|50%\n| 85%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: Star Seeker Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl,",
+          "Unstoppable Chance",
+          "Attack Rating",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "24",
+          "16%",
+          "17.5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "27",
+          "20%",
+          "25%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "30",
+          "25%",
+          "35%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "33",
+          "33%",
+          "55%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "36",
+          "50%",
+          "85%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Glass Cannon",
+       "text": "Increases the attack of all bots by 2.4~7.2%, but reduces their maximum Bealth by the same amount.\n\n{| class=\"article-table\"\n! colspan=\"5\" |Star Seeker Rank 1, 10 Offensive Points spent\n|-\n!Rank\n!Cmdr Lvl, \n!+Attack and -Health\n!\n!\n|-\n|1\n|24\n|2.4%\n|1\n|300\n|-\n|2\n|26\n|4.8%\n|2\n|600\n|-\n|3\n|28\n|7.2%\n|3\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Star Seeker Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl,",
+          "+Attack and -Health",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "24",
+          "2.4%",
+          "1",
+          "300"
+         ],
+         [
+          "2",
+          "26",
+          "4.8%",
+          "2",
+          "600"
+         ],
+         [
+          "3",
+          "28",
+          "7.2%",
+          "3",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Double Edge",
+       "text": "Increase the attack of all bots by 8-18%, but up to 9-27% health is lost by inflicting Bleed over 5-15 seconds.\n\n{| class=\"article-table\"\n! colspan=\"7\" | Req: Glass Cannon Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl.\n|Seconds\n!Attack Rating\n|Health Bleed\n!\n! \n|-\n|1\n|25\n|5\n|8%\n|9% \n| 1\n|2\n|-\n|2\n|28\n|7\n|8.4% \n|12.6%\n|1\n|4\n|-\n| 3\n|31\n|9\n|10.8%\n|16.2% \n|2\n|6\n|-\n|4\n|34\n|12\n|14.4%\n|21.6%\n|2\n|8\n|-\n|5\n|37\n|15\n|18%\n| 27%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"7\" | Req: Glass Cannon Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Seconds",
+          "Attack Rating",
+          "Health Bleed",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "25",
+          "5",
+          "8%",
+          "9%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "28",
+          "7",
+          "8.4%",
+          "12.6%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "31",
+          "9",
+          "10.8%",
+          "16.2%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "34",
+          "12",
+          "14.4%",
+          "21.6%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "37",
+          "15",
+          "18%",
+          "27%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Despair",
+       "text": "Each debuff on enemies reduces their healing and repair effects by 5~10~20%.\n\n{| class=\"article-table\"\n! colspan=\"4\" | Req: 10 Offensive Points spent\n|-\n!Rank \n|Despair\n!\n! \n|-\n|1\n|5% \n| 1\n|2\n|-\n|2\n|10%\n|1\n|6\n|-\n| 3\n|20% \n|2\n|10\n|}Useful against Mission bots with Repair Timed and Last Ditch Repair mods, so any debuff skillset Bot can prevent them from out-healing damage.",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" | Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Despair",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "10%",
+          "1",
+          "6"
+         ],
+         [
+          "3",
+          "20%",
+          "2",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Suppression",
+       "text": "Opponents trigger 10~45% fewer abilities and Repair 20~90% less Health while Stunned.\n{| class=\"article-table\"\n! colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl.\n!-Trigger\n| -Repair\n!\n! \n|-\n|1\n|25\n|10%\n|20% \n| 1\n|2\n|-\n|2\n|28\n|16% \n|33%\n|1\n|4\n|-\n| 3\n|31\n|25%\n|50% \n|2\n|6\n|-\n|4\n|34\n|33%\n|66%\n|2\n|8\n|-\n|5\n|37\n|45%\n| 90%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "-Trigger",
+          "-Repair",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "25",
+          "10%",
+          "20%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "28",
+          "16%",
+          "33%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "31",
+          "25%",
+          "50%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "34",
+          "33%",
+          "66%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "37",
+          "45%",
+          "90%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Stupefy",
+       "text": "When your bots inflict Stun, it lasts for 0.1-0.8 additional seconds. This amount is doubled when your bots are controlled by AI on defense.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Suppression Rank 1, 10 Offensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Seconds\n!\n|-\n|1\n|27\n|0.1\n|200\n|-\n|2\n|29\n|0.2\n|400\n|-\n|3\n|31\n| 0.4\n|600\n|-\n|4\n| 33\n|0.6\n|800\n|-\n| 5\n|35\n|0.8\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Suppression Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Seconds",
+          ""
+         ],
+         [
+          "1",
+          "27",
+          "0.1",
+          "200"
+         ],
+         [
+          "2",
+          "29",
+          "0.2",
+          "400"
+         ],
+         [
+          "3",
+          "31",
+          "0.4",
+          "600"
+         ],
+         [
+          "4",
+          "33",
+          "0.6",
+          "800"
+         ],
+         [
+          "5",
+          "35",
+          "0.8",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Deep Wounds",
+       "text": "Bleeds your bots inflict last 10~30% longer. If they have more health points than their target, Bleed also strikes down an additional 0,6~1,4% of max health from enemies instantly.\n\n{| class=\"article-table\"\n! colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent\n|-\n!Rank \n!Cmdr Lvl.\n!Duration\n|Health debuff\n!\n! \n|-\n|1\n|25\n|10%\n|0.6% \n| 1\n|2\n|-\n|2\n|28\n|15% \n|0.8%\n|1\n|4\n|-\n| 3\n|31\n|20%\n|1% \n|2\n|6\n|-\n|4\n|34\n|25%\n|1.2%\n|2\n|8\n|-\n|5\n|37\n|30%\n| 1.4%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: Despair Rank 1, 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Duration",
+          "Health debuff",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "25",
+          "10%",
+          "0.6%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "28",
+          "15%",
+          "0.8%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "31",
+          "20%",
+          "1%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "34",
+          "25%",
+          "1.2%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "37",
+          "30%",
+          "1.4%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Stand Together",
+       "text": "In Solo and Alliance Missions, your Bots have +3.5~6% Attack against the final boss for each team member that hasn't been knocked out.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: 10 Offensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Attack\n!\n|-\n|1\n|23\n|3.5%\n|200\n|-\n|2\n|25\n|4%\n|400\n|-\n|3\n|27\n| 4.5%\n|600\n|-\n|4\n| 29\n|5%\n|800\n|-\n| 5\n|31\n|6%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "3.5%",
+          "200"
+         ],
+         [
+          "2",
+          "25",
+          "4%",
+          "400"
+         ],
+         [
+          "3",
+          "27",
+          "4.5%",
+          "600"
+         ],
+         [
+          "4",
+          "29",
+          "5%",
+          "800"
+         ],
+         [
+          "5",
+          "31",
+          "6%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Assassin",
+       "text": "Against enemies below 18% Health, your Bots gain 16~40% Attack and decrease enemies' defensive ability Trigger Rate by 5-25%. If enemies start the fight below 18%, your Bots also gain 10-25% offensive ability Trigger rate.\n{| class=\"fandom-table\"\n| colspan=\"6\" |Req: 10 Offensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Attack\n!-Trigger Rate\n!Trigger Rate\n!\n|-\n|1\n|23\n|10%\n|16%\n|5%\n|200\n|-\n|2\n|25\n|15%\n|20%\n|10%\n|400\n|-\n|3\n|27\n| 20%\n|25%\n|15%\n|600\n|-\n|4\n| 29\n|25%\n|32%\n|20%\n|800\n|-\n| 5\n|31\n|30%\n|40%\n|25%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" |Req: 10 Offensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Attack",
+          "-Trigger Rate",
+          "Trigger Rate",
+          ""
+         ],
+         [
+          "1",
+          "23",
+          "10%",
+          "16%",
+          "5%",
+          "200"
+         ],
+         [
+          "2",
+          "25",
+          "15%",
+          "20%",
+          "10%",
+          "400"
+         ],
+         [
+          "3",
+          "27",
+          "20%",
+          "25%",
+          "15%",
+          "600"
+         ],
+         [
+          "4",
+          "29",
+          "25%",
+          "32%",
+          "20%",
+          "800"
+         ],
+         [
+          "5",
+          "31",
+          "30%",
+          "40%",
+          "25%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 2,
+       "heading": "Defensive Masteries",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Health",
+       "text": "Increases the maximum Health of all Bots by +140-280 plus an additional +2% of their base Health. \n\n(Each Bot's base Health is determined by their Rank and Level)\n{| class=\"fandom-table article-table\"\n|-\n!Rank\n!Cmdr lvl.\n!Health\n!\n|-\n|1\n|18\n|70\n|50\n|-\n| 2\n|19\n|140\n|100\n|-\n|3\n|20\n|210\n|150\n|-\n|4\n|21\n|280\n|200\n|}",
+       "tables": [
+        [
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Health",
+          ""
+         ],
+         [
+          "1",
+          "18",
+          "70",
+          "50"
+         ],
+         [
+          "2",
+          "19",
+          "140",
+          "100"
+         ],
+         [
+          "3",
+          "20",
+          "210",
+          "150"
+         ],
+         [
+          "4",
+          "21",
+          "280",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Armor",
+       "text": "Increases the Armor Rating of your bots, reducing damage from attacks in order to survive 1-4% longer.\n\n(Some abilities pierce Armor or ignore it altogether.)\n{| class=\"fandom-table article-table\"\n| colspan=\"4\" |Req: Health Rank 1\n|-\n!Rank\n!Cmdr lvl.\n!Armor\n!\n|-\n|1\n|19\n|1%\n|50\n|-\n| 2\n|20\n|2%\n|100\n|-\n|3\n|21\n|3%\n|150\n|-\n|4\n|22\n|4%\n|200\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Health Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Armor",
+          ""
+         ],
+         [
+          "1",
+          "19",
+          "1%",
+          "50"
+         ],
+         [
+          "2",
+          "20",
+          "2%",
+          "100"
+         ],
+         [
+          "3",
+          "21",
+          "3%",
+          "150"
+         ],
+         [
+          "4",
+          "22",
+          "4%",
+          "200"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Full Mettle",
+       "text": "While your bots are above 95~85% health, they are protected by an armor buff that reduces attack damage by 6~10%.\n{| class=\"article-table\"\n! colspan=\"6\" |Req: Armor Rank 1\n|-\n!Rank\n! Level\n!Health\n! Armor\n!\n!\n|-\n|1\n|20\n|95% \n|6%\n|1\n|200\n|-\n| 2\n|22\n|90%\n|8%\n|2\n|400\n|-\n|3\n|24\n|85%\n|10%\n| 3\n| 600\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" |Req: Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Level",
+          "Health",
+          "Armor",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "20",
+          "95%",
+          "6%",
+          "1",
+          "200"
+         ],
+         [
+          "2",
+          "22",
+          "90%",
+          "8%",
+          "2",
+          "400"
+         ],
+         [
+          "3",
+          "24",
+          "85%",
+          "10%",
+          "3",
+          "600"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Resist Melee",
+       "text": "Your bots take 1-5% less damage in melee from close-range weapons like fists or swords.\n{| class=\"fandom-table\"\n| colspan=\"4\" |Req: Armor Rank 1\n|-\n!Rank\n!Cmdr Lvl.\n!Resistance\n!\n|-\n|1\n|21\n|1%\n|200\n|-\n|2\n|23\n|2%\n|400\n|-\n|3\n|25\n|3%\n|600\n|-\n|4\n|27\n|4%\n|800\n|-\n|5\n|29\n|5%\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"4\" |Req: Armor Rank 1"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Resistance",
+          ""
+         ],
+         [
+          "1",
+          "21",
+          "1%",
+          "200"
+         ],
+         [
+          "2",
+          "23",
+          "2%",
+          "400"
+         ],
+         [
+          "3",
+          "25",
+          "3%",
+          "600"
+         ],
+         [
+          "4",
+          "27",
+          "4%",
+          "800"
+         ],
+         [
+          "5",
+          "29",
+          "5%",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Critical Resistance",
+       "text": "Enemies deal -0.9%…4.5% fewer Critical Hits against your Bots.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Critical Damage Resistance",
+       "text": "Enemies deal -6%…15% less Critical Damage against your Bots.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Resist Ranged",
+       "text": "Increases passive Ranged Resistance in order to endure 1.5%…8% more Ranged Damage.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Energy Resistance",
+       "text": "Increases passive Energy Resistance in order to endure 2%… 6% more Energy Damage.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Enhanced Block",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Recalibration",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Last Stand",
+       "text": "While your Bots are below 5-14% Health, their Block is no longer broken by enemy Heavy Attacks.\n{| class=\"fandom-table article-table\"\n| colspan=\"5\" | Req: 10 Defensive Points spent,\nEnhanced Block Rank 1,\n\nRecalibration Rank 1\n|-\n!Rank \n!Cmdr lvl.\n!Health point\n!\n! \n|-\n|1\n|32\n|5% \n| 1\n|2\n|-\n|2\n|35\n|7%\n|1\n|4\n|-\n| 3\n|38\n|9% \n|2\n|6\n|-\n|4\n|41\n|11%\n|2\n|8\n|-\n|5\n|44\n| 14%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" | Req: 10 Defensive Points spent,"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Health point",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "32",
+          "5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "35",
+          "7%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "38",
+          "9%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "41",
+          "11%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "44",
+          "14%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Perfect Block",
+       "text": "While Blocking, your Bots have a 2-8% chance to reduce all incoming damage to zero, This chance is halved against Special Attacks.\n{| class=\"fandom-table\"\n| colspan=\"5\" |Req: Last Stand Rank 1, 10 Defensive Points spent\n|-\n!Rank\n!Cmdr Lvl.\n!Resistance\n!\n!\n|-\n|1\n|31\n|2%\n|1\n|250\n|-\n|2\n|33\n|4%\n|1\n|500\n|-\n|3\n|35\n|6%\n|2\n|750\n|-\n|4\n|37\n|8%\n|3\n|1000\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Req: Last Stand Rank 1, 10 Defensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Resistance",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "31",
+          "2%",
+          "1",
+          "250"
+         ],
+         [
+          "2",
+          "33",
+          "4%",
+          "1",
+          "500"
+         ],
+         [
+          "3",
+          "35",
+          "6%",
+          "2",
+          "750"
+         ],
+         [
+          "4",
+          "37",
+          "8%",
+          "3",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Nano-Repair",
+       "text": "With the help of nanotechnology, your Bots automatically recover some health over 40-60 seconds each fight.\n\n{| class=\"article-table\"\n! colspan=\"6\" |10 Defensive Points spent\n|-\n!Rank\n!Level \n! Recovery Rate\n!Seconds\n!\n!\n|-\n|1\n|27\n|80\n|40\n|1\n|300\n|-\n|2\n|29\n|200\n|50\n|2\n|600\n|-\n|3\n|31\n|400\n|60\n|3\n|1000\n|-\n|}\nThis Mastery is especially useful with an awakened Wheeljack.",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" |10 Defensive Points spent"
+         ],
+         [
+          "Rank",
+          "Level",
+          "Recovery Rate",
+          "Seconds",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "27",
+          "80",
+          "40",
+          "1",
+          "300"
+         ],
+         [
+          "2",
+          "29",
+          "200",
+          "50",
+          "2",
+          "600"
+         ],
+         [
+          "3",
+          "31",
+          "400",
+          "60",
+          "3",
+          "1000"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Feeding Frenzy",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Willpower",
+       "text": "Whenever your Bots attack while suffering from Bleed, Burn, Shock or Acid effects, they recover Health equal to 3~9% of the damage they inflict. Does not stack with other Willpower abilities.\n\n{| class=\"article-table\"\n! colspan=\"5\" |Nano-Repair Rank 1, 10 Defensive Points spent \n|-\n! Rank\n!Cmdr Lvl.\n!Health\n!\n! \n|-\n|1\n|29\n|3% \n|1\n|2\n|-\n|2\n|32\n|3.9%\n|1\n|4\n|-\n|3\n|35\n| 5.1%\n|2\n|6\n|-\n|4\n|38\n|6.8%\n|2\n| 8\n|-\n|5\n|41\n|9%\n|3\n|10\n|-\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"5\" |Nano-Repair Rank 1, 10 Defensive Points spent"
+         ],
+         [
+          "Rank",
+          "Cmdr Lvl.",
+          "Health",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "29",
+          "3%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "32",
+          "3.9%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "35",
+          "5.1%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "38",
+          "6.8%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "41",
+          "9%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Bleed Resistance",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Silica Plating",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Shock Resistance",
+       "text": "",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Capacitor",
+       "text": "Whenever your Bots take damage from Shock Debuffs, they generate Power. This amount is increased to x if your Bots take instant Shock damage.\n{| class=\"fandom-table article-table\"\n| colspan=\"6\" | Req: 10 Defensive Points spent,\nShock Resistance Rank 1,\n|-\n!Rank \n!Cmdr lvl.\n!Power\n!Instant Power\n!\n! \n|-\n|1\n|32\n|0.3% \n|1.5%\n| 1\n|2\n|-\n|2\n|35\n|0.5%\n|3%\n|1\n|4\n|-\n| 3\n|38\n|0.8% \n|4.5%\n|2\n|6\n|-\n|4\n|41\n|1%\n|6%\n|2\n|8\n|-\n|5\n|44\n| 1.3%\n|7.5%\n|3\n|10\n|}",
+       "tables": [
+        [
+         [
+          "colspan=\"6\" | Req: 10 Defensive Points spent,"
+         ],
+         [
+          "Rank",
+          "Cmdr lvl.",
+          "Power",
+          "Instant Power",
+          "",
+          ""
+         ],
+         [
+          "1",
+          "32",
+          "0.3%",
+          "1.5%",
+          "1",
+          "2"
+         ],
+         [
+          "2",
+          "35",
+          "0.5%",
+          "3%",
+          "1",
+          "4"
+         ],
+         [
+          "3",
+          "38",
+          "0.8%",
+          "4.5%",
+          "2",
+          "6"
+         ],
+         [
+          "4",
+          "41",
+          "1%",
+          "6%",
+          "2",
+          "8"
+         ],
+         [
+          "5",
+          "44",
+          "1.3%",
+          "7.5%",
+          "3",
+          "10"
+         ]
+        ]
+       ]
+      },
+      {
+       "level": 3,
+       "heading": "Inhibitor",
+       "text": "Enemies suffering from stun or shock have their power rate reduced by up to a specific percentage depending on the debuff applied. (Power rate governs the amount of power gained from attacking or being attacked.)",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "COPY",
+       "text": "Your bots reduce enemy critical rate.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 RESIST MELEE\n\nSummoner Lvl 23\n\nSummoner Lvl 24\n\nSummoner Lvl 25\n\nSummoner Lvl 26\n\nSummoner Lvl 27\n| colspan=\"1\" rowspan=\"1\" |\n\nCritical Rate -0.9%\n\nCritical Rate -1.8%\n\nCritical Rate -2.7%\n\nCritical Rate -3.6%\n\nCritical Rate -4.5%\n| colspan=\"1\" rowspan=\"1\" |\n\n50 Gold\n\n100 Gold\n\n150 Gold\n\n200 Gold\n\n250 Gold\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "CRITICAL DAMAGE RESISTANCE:",
+       "text": "Your bots take less critical damage from enemies.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 RESIST MELEE\n\nSummoner Lvl 23\n\nSummoner Lvl 24\n\nSummoner Lvl 25\n\nSummoner Lvl 26\n\nSummoner Lvl 27\n| colspan=\"1\" rowspan=\"1\" |\n\nCritical Damage -6%\n\nCritical Damage -8%\n\nCritical Damage -10%\n\nCritical Damage -12%\n\nCritical Damage -15%\n| colspan=\"1\" rowspan=\"1\" |\n\n50 Gold\n\n100 Gold\n\n150 Gold\n\n200 Gold\n\n250 Gold\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "RESIST RANGED:",
+       "text": "Your bots take less damage from projectile weapons like lasers or guns.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 ARMOR\n\nSummoner Lvl 20\n\nSummoner Lvl 22\n\nSummoner Lvl 24\n\nSummoner Lvl 26\n\nSummoner Lvl 28\n| colspan=\"1\" rowspan=\"1\" |\n\nDamage -1.5%\n\nDamage -3%\n\nDamage -4.5%\n\nDamage -6%\n\nDamage -8%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "ENERGY RESISTANCE:",
+       "text": "Increases energy resistance for all bots. This reduces damage from attacks like lasers or beams.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |Level 1 RESIST RANGED\n\nSummoner Lvl 22\n\nSummoner Lvl 23\n\nSummoner Lvl 24\n\nSummoner Lvl 25\n\nSummoner Lvl 26\n| colspan=\"1\" rowspan=\"1\" |\n\nEnergy Resistance +2%\n\nEnergy Resistance +3%\n\nEnergy Resistance +4%\n\nEnergy Resistance +5%\n\nEnergy Resistance +6%\n| colspan=\"1\" rowspan=\"1\" |\n\n50 Gold\n\n100 Gold\n\n150 Gold\n\n200 Gold\n\n250 Gold\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "ENHANCED BLOCK:",
+       "text": "Increase the block proficiency of your bots, reducing the damage they take while blocking by an additional percentage.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nCommander Lvl 27\n\nCommander Lvl 29\n\nCommander Lvl 31\n\nCommander Lvl 33\n\nCommander Lvl 35\n| colspan=\"1\" rowspan=\"1\" |\n\nDamage Reduction +5%\n\nDamage Reduction +7%\n\nDamage Reduction +9%\n\nDamage Reduction +11%\n\nDamage Reduction +14%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "RECALIBRATION:",
+       "text": "Each time your bots are stunned, they reduce the duration of the next stun they receive by a percentage, up to a set maximum.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nCommander Lvl 27\n\nCommander Lvl 29\n\nCommander Lvl 31\n\nCommander Lvl 33\n\nCommander Lvl 35\n| colspan=\"1\" rowspan=\"1\" |\n\nStun +5%, max +45%\n\nStun +10%, max +50%\n\nStun +12.5%, max +50%\n\nStun +25%, max +50%\n\nStun +55%, max +55%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "NANO-REPAIR:",
+       "text": "With the help of nanotechnology, your bots automatically recover some health over a few seconds each fight.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nCommander Lvl 27\n\nCommander Lvl 29\n\nCommander Lvl 31\n| colspan=\"1\" rowspan=\"1\" |\n\n80 HP over 40 second(s)\n\n200 HP over 50 second(s)\n\n400 HP over 60 second(s)\n| colspan=\"1\" rowspan=\"1\" |\n\n300 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "FEEDING FRENZY:",
+       "text": "Your bots recover health equal to a percentage of the damage they inflict against Sharkticon enemies in alliance missions and another percentage in solo missions.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 NANO-REPAIR\n\nCommander Lvl 28\n\nCommander Lvl 30\n\nCommander Lvl 32\n\nCommander Lvl 34\n\nCommander Lvl 36\n| colspan=\"1\" rowspan=\"1\" |\n\nAlliance 1.5% / Solo 4%\n\nAlliance 1.9% / Solo 5%\n\nAlliance 2.6% / Solo 6.5%\n\nAlliance 3.4% / Solo 8%\n\nAlliance 4.5% / Solo 10%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "WILLPOWER:",
+       "text": "Whenever your bots attack while suffering from bleed, burn, shock, or acid effects, they recover health equal to a percentage of the damage they inflict. Does not stack with other willpower abilities.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 NANO-REPAIR\n\nCommander Lvl 29\n\nCommander Lvl 32\n\nCommander Lvl 35\n\nCommander Lvl 38\n\nCommander Lvl 41\n| colspan=\"1\" rowspan=\"1\" |\n\nHealth +3%\n\nHealth +3.9%\n\nHealth +5.1%\n\nHealth +6.8%\n\nHealth +9%\n| colspan=\"1\" rowspan=\"1\" |\n\n2 Energon, 1 Tier 2 Core\n\n4 Energon, 1 Tier 2 Core\n\n6 Energon, 2 Tier 2 Core\n\n8 Energon, 2 Tier 2 Core\n\n10 Energon, 3 Tier 2 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "BLEED RESISTANCE:",
+       "text": "Increases bleed resistance for all your bots, reducing the damage dealt by bleed effects.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 WILLPOWER\n\nCommander Lvl 30\n\nCommander Lvl 32\n\nCommander Lvl 34\n\nCommander Lvl 36\n\nCommander Lvl 38\n| colspan=\"1\" rowspan=\"1\" |\n\nBleed Resistance +14%\n\nBleed Resistance +16%\n\nBleed Resistance +20%\n\nBleed Resistance +25%\n\nBleed Resistance +33%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "SILICA PLATING:",
+       "text": "Borosilicate armor plating increases heat resistance for all bots. Heat resistance reduces damage from fire, explosions, and burn debuffs.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 WILLPOWER\n\nCommander Lvl 30\n\nCommander Lvl 32\n\nCommander Lvl 34\n\nCommander Lvl 36\n\nCommander Lvl 38\n| colspan=\"1\" rowspan=\"1\" |\n\nShock Resistance +5%\n\nShock Resistance +10%\n\nShock Resistance +15%\n\nShock Resistance +20%\n\nShock Resistance +33%\n| colspan=\"1\" rowspan=\"1\" |\n\n200 Gold, 1 Tier 1 Core\n\n400 Gold, 1 Tier 1 Core\n\n600 Gold, 2 Tier 1 Core\n\n800 Gold, 2 Tier 1 Core\n\n1000 Gold, 3 Tier 1 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "SHOCK RESISTANCE:",
+       "text": "Increases shock resistance for all bots. Shock Resistance reduces damage from electric attacks and shock debuffs.\n{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 WILLPOWER\n\nCommander Lvl 31\n\nCommander Lvl 34\n\nCommander Lvl 37\n\nCommander Lvl 40\n\nCommander Lvl 43\n| colspan=\"1\" rowspan=\"1\" |\n\nShock Resistance +5%\n\nShock Resistance +10%\n\nShock Resistance +15%\n\nShock Resistance +20%\n\nShock Resistance +33%\n| colspan=\"1\" rowspan=\"1\" |\n\n2 Energon, 1 Tier 2 Core\n\n4 Energon, 1 Tier 2 Core\n\n6 Energon, 2 Tier 2 Core\n\n8 Energon, 2 Tier 2 Core\n\n10 Energon, 3 Tier 2 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "INHIBITOR:",
+       "text": "{| class=\"fandom-table\"\n| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "RANK",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "REQUIREMENTS",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "EFFECT",
+       "text": "| colspan=\"1\" rowspan=\"1\" |",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "COST",
+       "text": "|-\n| colspan=\"1\" rowspan=\"1\" |Main\n\nRank 1\n\nRank 2\n\nRank 3\n\nRank 4\n\nRank 5\n| colspan=\"1\" rowspan=\"1\" |10 Defensive points\n\nLvl 1 SHOCK RESISTANCE\n\nCommander Lvl 33\n\nCommander Lvl 36\n\nCommander Lvl 39\n\nCommander Lvl 42\n\nCommander Lvl 45\n| colspan=\"1\" rowspan=\"1\" |\n\nStun -20% / Shock -2%\n\nStun -25% / Shock -4%\n\nStun -33% / Shock -6%\n\nStun -50% / Shock -8%\n\nStun -66% / Shock -10%\n| colspan=\"1\" rowspan=\"1\" |\n\n2 Energon, 1 Tier 2 Core\n\n4 Energon, 1 Tier 2 Core\n\n6 Energon, 2 Tier 2 Core\n\n8 Energon, 2 Tier 2 Core\n\n10 Energon, 3 Tier 2 Core\n|}",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Notes",
+       "text": "*Tier 1 Cores can be sold for a measly 750 Gold, and Tier 2 Cores for 3,500.\n*A few mastery trees were added after the fact in v3.1: Stand Together, Assassin, Capacitor, Last Stand, and Perfect Block.\n*The Kabam guide has an offensive tier 2 Firmware Upgrade mastery, but was never implemented in game.\n*The game files have a Tier 4 Mastery Core, implying plans for even stronger Masteries. Bizarrely, there is no Tier 3 Mastery Core image.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "External References",
+       "text": "*(TFTF 411 Bot in Line app) Activation and rank up costs of all masteries: https://docs.google.com/spreadsheets/d/1DN28yZTOygqJ9z1CB0gg4kEg6C4hsQaErARtjGzQ0Ac/htmlview\n\n*https://help.kabamsupport.com/hc/en-us/articles/360048589492-Mastery-Tree-Offense\n*https://help.kabamsupport.com/hc/en-us/articles/360045081872-Mastery-Tree-Defense\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Signature Ability": {
+   "page": "Signature Ability",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Signature_Ability",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 10595,
+    "timestamp": "2023-01-10T08:21:24Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Signature Ability",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Signature_Ability",
+      "revid": 10595,
+      "timestamp": "2023-01-10T08:21:24Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "A Bot's and Mod's Signature Ability is a unique ability that is awakened and powered up by getting duplicate Bots and Mods of the same star rating (excluding 1-Stars). Each duplicate of a Bot or Mod increases its signature level by 5, up to the max level of 100. See individual articles for each Bot's and Mod's Signature Ability.\n\nBlue stars indicate an unawakened bot or mod, and white stars indicate an awakened bot or mod.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Awakening Programs and Signature Upgrades",
+       "text": "In version 4.0, Awakening Programs and Signature Upgrades were introduced, providing an alternative to unlock and upgrade Bots' Signature Abilities. Awakening Programs unlock a Bot's Signature Ability at level 1. Signature Upgrades upgrades a Bot's awakened Signature Ability by 1 level each. They come in various rarities and are either class-specific or work on any class. Up to 99 of each star rating of each type Signature Upgrade, and up to 3 of each Awakening Program can be stored.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Signature Upgrades",
+       "text": "* 2-Star Upgrades:\n** Signature Crystal\n* 3-Star Upgrades:\n** Raid Store: 5 x 5000 Raid Chips (all six classes are available when they appear)\n** Signature Crystal\n** Superior Signature Crystal\n\n* 4-Star Upgrades:\n** Raid Store: 5 x 20,000 Raid Chips (Class-specific that appears alongside T3 Class Spark Essence)\n** Signature Crystal\n** Superior Signature Crystal\n** 16 Monthly Objectives\n\n* 5-Star Upgrades:\n** 5-Star Signature Crystals\n** Rare special Calendars",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Awakening Programs",
+       "text": "Awakening Programs, for the most part, are exclusively available from Objectives and special Energon and IAP offers, which often contain 3, 4, or 5-Star Awakening Crystals for a random pick, or sometimes deals with a choice of class are offered.\n* 3-Star\n** 3-Star Awakening Crystal - offers, Challenge Missions\n** 3-Star Awakening Program - offers\n* 4-Star\n** 4-Star Awakening Crystal - offers, Challenge Missions\n** 4-Star Awakening Program - 26 Monthly Objectives, offers\n* 5-Star\n** 5-Star Awakening Crystal - 30 Monthly Objectives, offers\n** 5-Star Awakening Program - All Monthly Objectives, offers",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Gallery",
+       "text": "4-Star Awakening Program.png|Awakening Program\nBrawler Awakening Program.png|Brawler Awakening Program\n3-Star Warrior Awakening Program.png|Warrior Awakening Program\nScout Awakening Program.png|Scout Awakening Program\nTech Awakening Program.png|Tech Awakening Program\nDemolitions Awakening Program.png|Demolitions Awakening Program\nTactician Awakening Program.png|Tactician Awakening Program\n4-Star Signature Upgrade.png|Signature Upgrade\nBrawler Signature Upgrade.png|Brawler Signature Upgrade\nWarrior Signature Upgrade.png|Warrior Signature Upgrade\nScout Signature Upgrade.png|Scout Signature Upgrade\nTech Signature Upgrade.png|Tech Signature Upgrade\nDemolitions Signature Upgrade.png|Demolitions Signature Upgrade\nTactician Signature Upgrade.png|Tactician Signature Upgrade\n\nCategory:Abilities\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 10595,
+    "timestamp": "2023-01-10T08:21:24Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Signature Ability",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Signature_Ability",
+      "revid": 10595,
+      "timestamp": "2023-01-10T08:21:24Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "A Bot's and Mod's Signature Ability is a unique ability that is awakened and powered up by getting duplicate Bots and Mods of the same star rating (excluding 1-Stars). Each duplicate of a Bot or Mod increases its signature level by 5, up to the max level of 100. See individual articles for each Bot's and Mod's Signature Ability.\n\nBlue stars indicate an unawakened bot or mod, and white stars indicate an awakened bot or mod.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Awakening Programs and Signature Upgrades",
+       "text": "In version 4.0, Awakening Programs and Signature Upgrades were introduced, providing an alternative to unlock and upgrade Bots' Signature Abilities. Awakening Programs unlock a Bot's Signature Ability at level 1. Signature Upgrades upgrades a Bot's awakened Signature Ability by 1 level each. They come in various rarities and are either class-specific or work on any class. Up to 99 of each star rating of each type Signature Upgrade, and up to 3 of each Awakening Program can be stored.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Signature Upgrades",
+       "text": "* 2-Star Upgrades:\n** Signature Crystal\n* 3-Star Upgrades:\n** Raid Store: 5 x 5000 Raid Chips (all six classes are available when they appear)\n** Signature Crystal\n** Superior Signature Crystal\n\n* 4-Star Upgrades:\n** Raid Store: 5 x 20,000 Raid Chips (Class-specific that appears alongside T3 Class Spark Essence)\n** Signature Crystal\n** Superior Signature Crystal\n** 16 Monthly Objectives\n\n* 5-Star Upgrades:\n** 5-Star Signature Crystals\n** Rare special Calendars",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Awakening Programs",
+       "text": "Awakening Programs, for the most part, are exclusively available from Objectives and special Energon and IAP offers, which often contain 3, 4, or 5-Star Awakening Crystals for a random pick, or sometimes deals with a choice of class are offered.\n* 3-Star\n** 3-Star Awakening Crystal - offers, Challenge Missions\n** 3-Star Awakening Program - offers\n* 4-Star\n** 4-Star Awakening Crystal - offers, Challenge Missions\n** 4-Star Awakening Program - 26 Monthly Objectives, offers\n* 5-Star\n** 5-Star Awakening Crystal - 30 Monthly Objectives, offers\n** 5-Star Awakening Program - All Monthly Objectives, offers",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Gallery",
+       "text": "4-Star Awakening Program.png|Awakening Program\nBrawler Awakening Program.png|Brawler Awakening Program\n3-Star Warrior Awakening Program.png|Warrior Awakening Program\nScout Awakening Program.png|Scout Awakening Program\nTech Awakening Program.png|Tech Awakening Program\nDemolitions Awakening Program.png|Demolitions Awakening Program\nTactician Awakening Program.png|Tactician Awakening Program\n4-Star Signature Upgrade.png|Signature Upgrade\nBrawler Signature Upgrade.png|Brawler Signature Upgrade\nWarrior Signature Upgrade.png|Warrior Signature Upgrade\nScout Signature Upgrade.png|Scout Signature Upgrade\nTech Signature Upgrade.png|Tech Signature Upgrade\nDemolitions Signature Upgrade.png|Demolitions Signature Upgrade\nTactician Signature Upgrade.png|Tactician Signature Upgrade\n\nCategory:Abilities\nCategory:Gameplay",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  }
+ }
+}

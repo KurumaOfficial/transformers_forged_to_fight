@@ -1,0 +1,13 @@
+{
+  "name": "v04_hero_details_full",
+  "description": "Hero details с rating_hp/rating_attack/special_attacks/forge_level.",
+  "hero_key": "bumblebee_cin_dotm",
+  "hero_extra": {
+    "rating_hp": 50,
+    "rating_attack": 50,
+    "special_attacks": 3,
+    "user_owned": true,
+    "forge_level": 0,
+    "blueprint": "bumblebee_cin_dotm"
+  }
+}

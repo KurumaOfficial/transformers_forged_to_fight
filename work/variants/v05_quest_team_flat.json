@@ -1,0 +1,13 @@
+{
+  "name": "v05_quest_team_flat",
+  "description": "quest-begin team = dict bid->hp/pi/sig_lvl/stat_mods/sig_mods.",
+  "quest_team": {
+    "bumblebee_cin_dotm": {
+      "hp": 1000.0,
+      "pi": 100,
+      "sig_lvl": 0,
+      "stat_mods": [],
+      "sig_mods": []
+    }
+  }
+}

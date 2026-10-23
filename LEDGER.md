@@ -329,3 +329,42 @@ BCGUserActiveTeam>`, не список. `BCGUserActiveTeam..ctor` (`0xA610F0`)
 Cliffjumper, Ironhide, Soundblaster (у них нет секции/она не буллеты).
 `data/wiki/bots.json` и `bot_matrix.json` перегенерированы; остальные
 счётчики не изменились. [WIKI]
+
+
+### 14. P1 W1–W6 / C2–C5 / P2 I2 (2026-10-23)
+
+- W1: synergy parser fixed; **40/44** bots, matrix regenerated. [WIKI]
+- W2: `notes/wiki_unity_tutorial.md`; page revid 10747, 2023-01-14; APK
+  `assets/assetpack` verified. UABE not installed. [WIKI]+[CLIENT]
+- W3: `data/wiki/topics/*.json` (13 topics) with as_of_2023/latest and
+  curated page sets; no invented values. [WIKI]
+- W4: `data/wiki/client_only.json`: 13 client-only non-Sharkticon, 7
+  Sharkticon variants, 5 wiki-only pages. [CLIENT]+[WIKI]
+- W6: `archive/INTEGRITY.md`; 5154/5154 manifest verified after correcting
+  5 stale hashes; 209 errors all 403; new zip
+  `TFTF_wiki_archive_2026-10-23_210335.zip`, sha256 `0731484c...`.
+- C2: `spec/rating_formula.md`; entry `0xA4814C`, weights
+  `heroRatingAttackWeight`/`heroRatingMaxHPWeight`, formula partial. [STATIC]
+- C3: `server/data/tuning_client_defaults.json` with only four verified
+  defaults; rest intentionally absent.
+- C4: `data/wiki/ability_localization_client.json`; only 8 `D_STAT` keys
+  found by the current extractor — blocked, see OPEN_QUESTIONS.
+- C5: `server/data/bot_catalog_real.json`, 59 packs, class/faction for 59,
+  stars for 39; missing values empty with reasons.
+- I2: `docs/persistence_design.md` (design only).
+
+### 12.2 P0 A3: harness + variants (2026-10-23)
+
+`work/run_variant.py` backs up `bcg_login_data.json` and
+`quest_begin_response.json`, applies a variant, runs `work/smoke_test.py --plus`
+(7 flow screenshots + plus), parses `tests/smoke/latest.json`, appends a result
+row and restores the base data. `work/variants/` has six variants:
+baseline, canonical hero key, mode-only team, full hero fields, flat quest team,
+and modes/expire.
+
+Six client runs (time-boxed; not the requested 10–20): all returned
+`login=true`, `quest_begin=true`, `movedir=true`, `activate_match=false`,
+`plus_error=true`, `memory_team_count=0`. `work/teamfix*`, `tests/smoke/08_plus.png`.
+Conclusion: changing activeTeams/heroes shape within these variants does not
+fill `TeamData`; the blocker is deeper (exact BCGHeroDetails element parsing or
+the active-team object source), not a simple alias. [RUN]

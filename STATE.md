@@ -195,3 +195,11 @@ No Frida/gadget/patches without consent.
 - `QuestUserInfo.team` — List<QuestUserHero>; JSON — dict;
   верхнеуровневый team quest-begin переведён в dict.
 - `/matches/activate-match` по-прежнему не вызван.
+
+
+## 13. P1/P2 data and docs (2026-10-23)
+- W1 synergy 40/44; W3 topics in `data/wiki/topics/`;
+  W4 `data/wiki/client_only.json`; W6 `archive/INTEGRITY.md`.
+- C2 `spec/rating_formula.md`; C3 four verified tuning defaults;
+  C4 only 8 D_STAT keys found; C5 `server/data/bot_catalog_real.json`.
+- C1 OpenAPI remains partial; C4 full localization blocked.

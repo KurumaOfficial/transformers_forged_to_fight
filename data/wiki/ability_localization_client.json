@@ -1,0 +1,17 @@
+{
+  "source": "work/localization_all.json extracted from work/unpacked/assets/bin/Data",
+  "tag": "[CLIENT]",
+  "total_localization_keys": 7869,
+  "d_stat_keys": 8,
+  "note": "Only D_STAT keys found by the JSON-object extractor are listed. Ability descriptions may live in other text assets; this is not a complete ability table.",
+  "entries": {
+    "D_STAT_SYN_JETFIREDRAIN_DESC": "쇼크웨이브는 에너지 충전을 6개 이상 얻을 때마다 {0}%의 생명력을 수리합니다.",
+    "D_STAT_KICKB_GS_CONSUME_R1": "[ffffffff]Verbrauchen 1[-]",
+    "D_STAT_KICKB_GS_CONSUME_R2": "[73EC59ff]Verbrauchen 2[-]",
+    "D_STAT_KICKB_GS_CONSUME_R3": "[F4AA62ff]Verbrauchen 3[-]",
+    "D_STAT_KICKB_GS_CONSUME_R4": "[88E7F7ff]Verbrauchen 4[-]",
+    "D_STAT_KICKB_GS_CONSUME_R5": "[FFFE87ff]Verbrauchen 5[-]",
+    "D_STAT_KICKB_GS_CONSUME_R6": "[8B41ABff]Verbrauchen 6[-]",
+    "D_STAT_KICKB_GS_CONSUME_SHORT": "Während er transformiert ist, kann dieser Bot Schocks und Kraft-Debuffs, die auf ihm selbst lasten, und Kraft-Debuffs, die auf dem Gegner lasten, verbrauchen und sie in Kraft umwandeln."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "reason": "stale manifest hashes after raw archive replacement; files validated before correction",
+  "corrections": [
+    {
+      "path": "raw/fandom/revisions/0/Meet%20Your%20Makers.json",
+      "old_sha256": "987d3ecc2c17e36dfa8a7a053c565af758e79c36bfbd1442d36d033473373d59",
+      "old_size": 18046,
+      "new_sha256": "a85b0c3949daa1b98f0f28948b81507792335a5ef9de7fff1349aa31530bce85",
+      "new_size": 18409,
+      "checked": "2026-10-23T21:03:15.021858+00:00"
+    },
+    {
+      "path": "raw/fandom/html/0/Meet%20Your%20Makers.html",
+      "old_sha256": "a9c2f2a4b10a7110b0fb3367ffa2dc0de3c93f92d5a151b51c62304bfa79b1ba",
+      "old_size": 54970,
+      "new_sha256": "03dfe62ccdef2ec6e9277e323ec5f7f438d8e747e6de28cdc25ff8bdef6455cb",
+      "new_size": 1060,
+      "checked": "2026-10-23T21:03:15.022081+00:00"
+    },
+    {
+      "path": "raw/fandom/revisions/0/Nothing%20And%20Everything.json",
+      "old_sha256": "48d3dded8b78a76bd82f8bd4523680d731babd8f1f528715da75ee6a0e96f0cb",
+      "old_size": 524,
+      "new_sha256": "977ec6fbd51cb447e8bd8241cd83c43a11188ddb14b4224309ffd393dd8cdae6",
+      "new_size": 4269,
+      "checked": "2026-10-23T21:03:15.022299+00:00"
+    },
+    {
+      "path": "raw/fandom/html/0/Nothing%20And%20Everything.html",
+      "old_sha256": "7226a3931616e57ed828d78aa880c9e3e0e6d3b63229fbd25da7be6a0fd6f476",
+      "old_size": 1078,
+      "new_sha256": "5f99507309a89fc5452c812410ea8eed4b45320d004a1b041b0b24b8e0e13207",
+      "new_size": 56124,
+      "checked": "2026-10-23T21:03:15.022565+00:00"
+    },
+    {
+      "path": "raw/fandom/file_descriptions/File%3A3-Star%20Bot%20Crystal%20Shard.png.json",
+      "old_sha256": "88265ff9bb8978e05950935db194a90c3516a29028516d12526c5a7037d47cf2",
+      "old_size": 307,
+      "new_sha256": "8c76670cf0dc0cf42a26f3761c198d9344b14cc81ce5f91bcf07ae35e643d99c",
+      "new_size": 336,
+      "checked": "2026-10-23T21:03:15.022739+00:00"
+    }
+  ]
+}

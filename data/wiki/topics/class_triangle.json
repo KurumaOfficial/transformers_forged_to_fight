@@ -1,0 +1,242 @@
+{
+ "source": "Fandom pages parsed in data/wiki/pages.json; as_of/latest from data/wiki/versions/",
+ "cutoff": "2023-01-13T23:59:59Z",
+ "topic": "class_triangle",
+ "note": "Curated page set; values only from saved wikitext. as_of uses parsed page when revision <= cutoff, otherwise raw wikitext or null.",
+ "page_count": 5,
+ "pages": {
+  "Brawler": {
+   "page": "Brawler",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Brawler",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8495,
+    "timestamp": "2021-02-15T04:31:38Z",
+    "raw_wikitext": "{{Class_Template|number_of_champions = 8|non-playable = 0|class_bonus = [[Warrior]]|weakness = [[Tactician]]|image1 = File:Class Use Brawler.png}}'''Brawler''' is one of six Bot Classes. It has a Class Bonus against [[Warrior]], but is weak to [[Tactician]].\n\n==Description==\n''Brawler Bots are armored allies and furious foes that value strength at any cost.''\n\n==Class Bonus==\n*The low Critical Rate and high attack of [[Brawler]] Bots give them an advantage over [[Warrior]] Bots.\n*Brawlers have a high Health rating.\n*Brawlers love to dash to their opponents.\n*All brawlers rely on melee attacks.\n*Most Brawlers utilize Armor Buffs and [[Melee Buff]]s. These buffs, however, can be neutralized by Tacticians.\n*Some Brawlers take advantage of damaging debuffs, like [[Bleed]].\n\n==List of Brawler Bots==\n*[[Grindor]]\n*[[Motormaster]]\n*[[Optimus Prime (MV1)]]\n*[[Grimlock]]\n*[[Optimus Primal]]\n*[[Sharkticon]] Brawler\n*[[Tantrum]]\n*[[Thundercracker]]\n\n{{Brawler}}\n[[Category:Class]]\n[[Category:Brawler]]\n[[Category:Bots]]"
+   },
+   "latest": {
+    "revid": 10939,
+    "timestamp": "2024-03-16T23:27:34Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Brawler",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Brawler",
+      "revid": 10939,
+      "timestamp": "2024-03-16T23:27:34Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "{{Class_Template|number_of_champions = 8|non-playable = 0|class_bonus = Warrior|weakness = Tactician|image1 = File:Class Use Brawler.png}}Brawler is one of six Bot Classes. It has a Class Bonus against Warrior, but is weak to Tactician.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "Brawler Bots are armored allies and furious foes that value strength at any cost.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Class Bonus",
+       "text": "*The low Critical Rate and high attack of Brawler Bots give them an advantage over Warrior Bots.\n*Brawlers have a high Health rating.\n*Brawlers love to dash to their opponents.\n*All brawlers rely on melee attacks.\n*Most Brawlers utilize Armor Buffs and Melee Buffs. These buffs, however, can be neutralized by Tacticians.\n*Some Brawlers take advantage of damaging debuffs, like Bleed.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "List of Brawler Bots",
+       "text": "*Grimlock\n*Grindor\n*Ironhide\n*Motormaster\n*Optimus Primal\n*Optimus Prime (MV1)\n*Sunstreaker\n*Tantrum\n*Thundercracker\n*Sharkticon Brawler\n\n{{Brawler}}\nCategory:Class\nCategory:Brawler\nCategory:Bots",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  },
+  "Scout": {
+   "page": "Scout",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Scout",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 9314,
+    "timestamp": "2022-07-17T10:41:10Z",
+    "raw_wikitext": "{{Class_Template|number_of_champions = 10|non-playable = 0|class_bonus = [[Tech]]|weakness = [[Warrior]]|image1 = File:Class Use Scout.png}}'''Scout'''s are one of six Bot Classes in ''[[Transformers: Forged to Fight]]''. It has a Class Bonus against [[Tech]]s, but is weak to [[Warrior]]s.\n\n==In-Game Description==\n''Scout Bots quickly eliminate opponents with frequent Special Attacks and a high Critical Rate.''\n*Frequent critical attacks and damaging debuffs from [[Scout]] Bots are effective against the high base attributes of [[Tech]] bots.\n*Most Scouts have [[Evade]] abilities that help them automatically avoid attacks.\n*Scouts have a high critical rate, but low Health rating.\n*Scouts' abilities can neutralize Tech Bots' abilities like Power buffs and shields.\n\n== Strategies ==\nScouts are speedy and critical in their movements and attacks. They love Critical Hits to the point a Commander can count them as fast as they can beat story Act 1. They also love Special Attacks, and their Evasion buffs mask their low health rating. They're also able to find a way around [[Tech]] bots' abilities like defensive shields and power gains, so expect the mighty [[Shockwave]] to tremble against Generations [[Bumblebee]] in a match-up. And as stated above, Scouts, like their [[Warrior|worst nightmares]], love Critical ''Hit''s, but never increase their critical ''damage''.\n\nScouts are somewhat annoying to fight due to their scouty slipperiness expected from the typical scout Bot, so while any other class type works, a Warrior can neutralize their evasion, making sure they're forged not to evade, but to be stuck without evasion.\n\n==List of Scout Bots==\n*[[Windblade]]\n*[[Sideswipe]]\n*[[Barricade]]\n*[[Prowl]]\n*[[Bumblebee]]\n*[[Kickback]]\n*[[Sharkticon]] Scout\n*[[Cheetor]]\n*[[Jazz]]\n*[[S-1000]] (when obtained by the player)\n*[[Slipstream]]\n[[Category:Class]]\n[[Category:Scout]]\n[[Category:Bots]]"
+   },
+   "latest": {
+    "revid": 11126,
+    "timestamp": "2024-10-01T02:11:00Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Scout",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Scout",
+      "revid": 11126,
+      "timestamp": "2024-10-01T02:11:00Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "{{Class_Template|number_of_champions = 10|non-playable = 0|class_bonus = Tech|weakness = Warrior|image1 = File:Class Use Scout.png}}Scouts are one of six Bot Classes in Transformers: Forged to Fight. It has a Class Bonus against Techs, but is weak to Warriors.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "In-Game Description",
+       "text": "Scout Bots quickly eliminate opponents with frequent Special Attacks and a high Critical Rate.\n*Frequent critical attacks and damaging debuffs from Scout Bots are effective against the high base attributes of Tech bots.\n*Most Scouts have Evade abilities that help them automatically avoid attacks.\n*Scouts have a high critical rate, but low Health rating.\n*Scouts' abilities can neutralize Tech Bots' abilities like Power buffs and shields.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Strategies",
+       "text": "Scouts are speedy and critical in their movements and attacks. They love Critical Hits to the point a Commander can count them as fast as they can beat story Act 1. They also love Special Attacks, and their Evasion buffs mask their low health rating. They're also able to find a way around Tech bots' abilities like defensive shields and power gains, so expect the mighty Shockwave to tremble against Generations Bumblebee in a match-up. And as stated above, Scouts, like their worst nightmares, love Critical Hits, but never increase their critical damage. (Except the Red Speedster)\n\nScouts are somewhat annoying to fight due to their scouty slipperiness expected from the typical scout Bot, so while any other class type works, a Warrior can neutralize their evasion, making sure they're forged not to evade, but to be stuck without evasion.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "List of Scout Bots",
+       "text": "*Barricade\n*Bumblebee\n*Cheetor\n*Jazz\n*Kickback\n*Prowl\n*Sideswipe\n*Slipstream\n*S-1000 (when obtained by the player)\n*Sharkticon Scout\n\n{{Scout}}\nCategory:Class\nCategory:Scout\nCategory:Bots",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  },
+  "Warrior": {
+   "page": "Warrior",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Warrior",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 9311,
+    "timestamp": "2022-07-17T10:28:46Z",
+    "raw_wikitext": "{{Class_Template|number_of_champions = 10|non-playable = 0|class_bonus = [[Scout]]|weakness = [[Brawler]]|image1 = File:Class Use Warrior.png}}'''Warrior'''s are one of the six Bot Classes in ''[[Transformers: Forged to Fight]]''. It has a Class Bonus against [[Scout]]s, but is weak to [[Brawler]]s.\n\n==In-Game Description==\n''Warrior Bots have deadly accuracy and love bleeding Energon from their opponents.''\n*The tracking systems of [[Warrior]] Bots give them an advantage over the evasive [[Scout]] Bots.\n*Most Warriors can inflict [[Bleed]] debuffs.\n*Warriors' Buffs such as [[Precision]] can counter [[Evade]] abilities.\n\n== Strategies ==\nAlmost all Warriors specialize in anti-evasion and Bleeds, though some may incorporate one or the other, or both. For example, [[Hot Rod]] never Bleeds but specializes in anti-evasion, [[Bludgeon]] specializes in Bleeds and [[Arcee]] specializes in both.\n\nWarriors, much like the class they're meant to counter, the [[Scout]]s, like to score Critical Hits and may have buffs related to those. They are also [[Arcee|usu]][[Hot Rod|al]][[Hound|ly]] close-range, usually fighting with a melee weapon of some sort. However, this reliance on close-range attacks turns out to also be their downfall, as [[Brawler]]s have abilities that counter these kinds of attacks.\n\n==List of Warrior Bots==\n*[[Bludgeon]]\n*[[Arcee]]\n*[[Bonecrusher]]\n*[[Drift]]\n*[[Hot Rod]]\n*[[Hound]]\n*[[Sharkticon]] Warrior\n*[[Scorponok]]\n*[[Necrotronus]]\n*[[Dirge]]\n\n[[Category:Class]]\n[[Category:Warrior]]"
+   },
+   "latest": {
+    "revid": 10948,
+    "timestamp": "2024-03-16T23:55:53Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Warrior",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Warrior",
+      "revid": 10948,
+      "timestamp": "2024-03-16T23:55:53Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "{{Class_Template|number_of_champions = 10|non-playable = 0|class_bonus = Scout|weakness = Brawler|image1 = File:Class Use Warrior.png}}Warriors are one of the six Bot Classes in Transformers: Forged to Fight. It has a Class Bonus against Scouts, but is weak to Brawlers.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "In-Game Description",
+       "text": "Warrior Bots have deadly accuracy and love bleeding Energon from their opponents.\n*The tracking systems of Warrior Bots give them an advantage over the evasive Scout Bots.\n*Most Warriors can inflict Bleed debuffs.\n*Warriors' Buffs such as Precision can counter Evade abilities.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Strategies",
+       "text": "Almost all Warriors specialize in anti-evasion and Bleeds, though some may incorporate one or the other, or both. For example, Hot Rod never Bleeds but specializes in anti-evasion, Bludgeon specializes in Bleeds and Arcee specializes in both.\n\nWarriors, much like the class they're meant to counter, the Scouts, like to score Critical Hits and may have buffs related to those. They are also usually close-range, usually fighting with a melee weapon of some sort. However, this reliance on close-range attacks turns out to also be their downfall, as Brawlers have abilities that counter these kinds of attacks.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "List of Warrior Bots",
+       "text": "*Arcee\n*Bludgeon\n*Bonecrusher\n*Chromia\n*Dirge\n*Drift\n*Hot Rod\n*Hound\n*Necrotronus\n*Scorponok\n*Windblade\n*Sharkticon Warrior\n\n{{Warrior}}\nCategory:Class\nCategory:Warrior\nCategory:Bots",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  },
+  "Tactician": {
+   "page": "Tactician",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Tactician",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8712,
+    "timestamp": "2021-08-01T17:03:35Z",
+    "raw_wikitext": "{{Class_Template|number_of_champions = 8|non-playable = 0|class_bonus = [[Brawler]]|weakness = [[Demolition]]|image1 = File:Class Use Tactician.png}}'''Tactician''' is one of six Bot Classes. It has a Class Bonus against [[Brawler]], but is weak to [[Demolitions]].\n\n==Description==\n''Tactician Bots' strong synergies and master strategies help them adapt during a fight to turn their enemies' strength against them.''\n\n==Class Bonus==\n*Tacticians' anti-Armor abilities like [[Armor Break]] help them when facing [[Brawler]] Bots.\n\n==List of Tactician Bots==\n*[[Optimus Prime]]\n*[[Starscream]]\n*\n*[[Bumblebee (DOTM)]]\n*[[Ultra Magnus]] \n*\n*[[Dinobot]] \n*\n*[[Megatron]]  \n*\n*[[Sharkticon]] \n*[[Cyclonus]] \n*\n*[[Nemesis Prime]] \n*\n*\n[[Category:Class]]\n[[Category:Tactician]]"
+   },
+   "latest": {
+    "revid": 11298,
+    "timestamp": "2026-05-03T16:56:52Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Tactician",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Tactician",
+      "revid": 11298,
+      "timestamp": "2026-05-03T16:56:52Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "{{Class_Template|number_of_champions = 11|non-playable = 0|class_bonus = Brawler|weakness = Demolition|image1 = File:Class Use Tactician.png}}Tactician is one of six Bot Classes. It has a Class Bonus against Brawler, but is weak to Demolitions.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Description",
+       "text": "Tactician Bots' strong synergies and master strategies help them adapt during a fight to turn their enemies' strength against them.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Class Bonus",
+       "text": "*Tacticians' anti-Armor abilities like Armor Break help them when facing Brawler Bots.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "List of Tactician Bots",
+       "text": "*Bumblebee (DOTM)\n*Cyclonus\n*Dinobot\n*Megatron\n*Nemesis Prime\n*Optimus Prime\n*Rodimus Prime\n*Soundblaster\n*Starscream\n*Ultra Magnus\n*Sharkticon Tactician\n\n{{Tactician}}\nCategory:Class\nCategory:Tactician\nCategory:Bots",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  },
+  "Class": {
+   "page": "Class",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Class",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 8358,
+    "timestamp": "2021-01-05T05:56:07Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Class",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Class",
+      "revid": 8358,
+      "timestamp": "2021-01-05T05:56:07Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": []
+    }
+   },
+   "latest": {
+    "revid": 8358,
+    "timestamp": "2021-01-05T05:56:07Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Class",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Class",
+      "revid": 8358,
+      "timestamp": "2021-01-05T05:56:07Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "",
+     "sections": []
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  }
+ }
+}

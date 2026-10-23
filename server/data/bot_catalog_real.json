@@ -1,0 +1,2157 @@
+{
+ "source": "client package dirs (9.2.0) + data/wiki/id_map.json + data/wiki/bots.json + data/wiki/pages.json",
+ "note": "No fabricated class/faction/generation; empty strings + missing reasons where wiki data is absent. Sharkticon variant names are client IDs; class mapping is not asserted.",
+ "count": 59,
+ "rows": [
+  {
+   "client_id": "arcee_gs_deluxe2014",
+   "pack_dir": "work/unpacked/assets/arcee_gs_deluxe2014_odr",
+   "wiki_page": "Arcee",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "855",
+     "attack": "104",
+     "max_rating": "256"
+    },
+    "2": {
+     "health": "1557",
+     "attack": "173",
+     "max_rating": "548"
+    },
+    "3": {
+     "health": "3,943",
+     "attack": "381",
+     "max_rating": "1,231"
+    },
+    "4": {
+     "health": "9,936",
+     "attack": "959",
+     "max_rating": "3,129"
+    }
+   },
+   "max_rating": {
+    "1": "256",
+    "2": "548",
+    "3": "1,231",
+    "4": "3,129"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "barricade_cin_dotm",
+   "pack_dir": "work/unpacked/assets/barricade_cin_dotm_odr",
+   "wiki_page": "Barricade",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Decepticon",
+   "generation": "Cinematic",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "826",
+     "attack": "106",
+     "max_rating": "260"
+    },
+    "2": {
+     "health": "1,505",
+     "attack": "176",
+     "max_rating": "552"
+    },
+    "3": {
+     "health": "3,694",
+     "attack": "372",
+     "max_rating": "1,174"
+    },
+    "4": {
+     "health": "9,601",
+     "attack": "967",
+     "max_rating": "3,402"
+    }
+   },
+   "max_rating": {
+    "1": "260",
+    "2": "552",
+    "3": "1,174",
+    "4": "3,402"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "blaster_gs_leader2016",
+   "pack_dir": "work/unpacked/assets/blaster_gs_leader2016_odr",
+   "wiki_page": "Blaster",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "April 12th, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "bludgeon_gs_rd20",
+   "pack_dir": "work/unpacked/assets/bludgeon_gs_rd20_odr",
+   "wiki_page": "Bludgeon",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "2": {
+     "health": "1,788",
+     "attack": "157",
+     "max_rating": "533"
+    },
+    "3": {
+     "health": "4,496",
+     "attack": "354",
+     "max_rating": "1,247"
+    },
+    "4": {
+     "health": "11,276",
+     "attack": "893",
+     "max_rating": "3,041"
+    },
+    "5": {
+     "health": "27,375",
+     "attack": "2,167",
+     "max_rating": "6,869"
+    }
+   },
+   "max_rating": {
+    "2": "533",
+    "3": "1,247",
+    "4": "3,041",
+    "5": "6,869"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "bonecrusher_cin_rotf",
+   "pack_dir": "work/unpacked/assets/bonecrusher_cin_rotf_odr",
+   "wiki_page": "Bonecrusher",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Decepticon",
+   "generation": "Cinematic",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "970",
+     "attack": "93",
+     "max_rating": "248"
+    },
+    "2": {
+     "health": "1786",
+     "attack": "157",
+     "max_rating": "544"
+    },
+    "3": {
+     "health": "4,339",
+     "attack": "331",
+     "max_rating": "1,287"
+    },
+    "4": {
+     "health": "11,276",
+     "attack": "860",
+     "max_rating": "3432"
+    }
+   },
+   "max_rating": {
+    "1": "248",
+    "2": "544",
+    "3": "1,287",
+    "4": "3432"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "bumblebee_cin_dotm",
+   "pack_dir": "work/unpacked/assets/bumblebee_cin_dotm_odr",
+   "wiki_page": "Bumblebee (DOTM)",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Autobot",
+   "generation": "Cinematic",
+   "release": "Launch",
+   "stars": {
+    "2": {
+     "health": "1417",
+     "attack": "151",
+     "max_rating": "566"
+    },
+    "3": {
+     "health": "3480",
+     "attack": "318",
+     "max_rating": "1299"
+    },
+    "4": {
+     "health": "9043",
+     "attack": "827",
+     "max_rating": "3499"
+    }
+   },
+   "max_rating": {
+    "2": "566",
+    "3": "1299",
+    "4": "3499"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": []
+  },
+  {
+   "client_id": "bumblebee_gs_kabam",
+   "pack_dir": "work/unpacked/assets/bumblebee_gs_kabam_odr",
+   "wiki_page": "Bumblebee",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "December 21th, 2017",
+   "stars": {
+    "2": {
+     "health": "1417",
+     "attack": "151",
+     "max_rating": "566"
+    },
+    "3": {
+     "health": "3480",
+     "attack": "318",
+     "max_rating": "1299"
+    },
+    "4": {
+     "health": "9043",
+     "attack": "827",
+     "max_rating": "3499"
+    }
+   },
+   "max_rating": {
+    "2": "566",
+    "3": "1299",
+    "4": "3499"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "cheetor_bw_transmetal",
+   "pack_dir": "work/unpacked/assets/cheetor_bw_transmetal_odr",
+   "wiki_page": "Cheetor",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Maximal",
+   "generation": "Beast Wars",
+   "release": "May 10, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "cliffjumper_gs_kabam",
+   "pack_dir": "work/unpacked/assets/cliffjumper_gs_kabam_odr",
+   "wiki_page": "Cliffjumper",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "April 29, 2021",
+   "stars": {
+    "2": {
+     "health": "1,749",
+     "attack": "165",
+     "max_rating": "493"
+    },
+    "3": {
+     "health": "4,274",
+     "attack": "347",
+     "max_rating": "1,312"
+    },
+    "4": {
+     "health": "11,108",
+     "attack": "901",
+     "max_rating": "3,573"
+    },
+    "5": {
+     "health": "31,000",
+     "attack": "2,513",
+     "max_rating": "10,490"
+    }
+   },
+   "max_rating": {
+    "2": "493",
+    "3": "1,312",
+    "4": "3,573",
+    "5": "10,490"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "cyclonus_gs_uw06",
+   "pack_dir": "work/unpacked/assets/cyclonus_gs_uw06_odr",
+   "wiki_page": "Cyclonus",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "September 6, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "dinobot_bw_kabam",
+   "pack_dir": "work/unpacked/assets/dinobot_bw_kabam_odr",
+   "wiki_page": "Dinobot",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Maximal",
+   "generation": "Beast Wars",
+   "release": "November 2, 2017",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "dirge_gs_deluxe2008",
+   "pack_dir": "work/unpacked/assets/dirge_gs_deluxe2008_odr",
+   "wiki_page": "Dirge",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "December 21, 2021",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "drift_cin_aoe",
+   "pack_dir": "work/unpacked/assets/drift_cin_aoe_odr",
+   "wiki_page": "Drift",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Autobot",
+   "generation": "Cinematic",
+   "release": "June 15, 2017",
+   "stars": {
+    "2": {
+     "health": "1,732",
+     "attack": "152",
+     "max_rating": "546"
+    },
+    "3": {
+     "health": "4,253",
+     "attack": "325",
+     "max_rating": "1,307"
+    },
+    "4": {
+     "health": "11,053",
+     "attack": "843",
+     "max_rating": "3,476"
+    }
+   },
+   "max_rating": {
+    "2": "546",
+    "3": "1,307",
+    "4": "3,476"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "galvatron_gs_voyager2016",
+   "pack_dir": "work/unpacked/assets/galvatron_gs_voyager2016_odr",
+   "wiki_page": "Galvatron",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "October 5, 2017",
+   "stars": {
+    "2": {
+     "health": "1,748",
+     "attack": "165",
+     "max_rating": "590"
+    },
+    "3": {
+     "health": "4,291",
+     "attack": "347",
+     "max_rating": "1,352"
+    },
+    "4": {
+     "health": "11,153",
+     "attack": "901",
+     "max_rating": "3,549"
+    }
+   },
+   "max_rating": {
+    "2": "590",
+    "3": "1,352",
+    "4": "3,549"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "grimlock_gs_mp08",
+   "pack_dir": "work/unpacked/assets/grimlock_gs_mp08_odr",
+   "wiki_page": "Grimlock",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "July 27, 2017",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "grindor_cin_rotf",
+   "pack_dir": "work/unpacked/assets/grindor_cin_rotf_odr",
+   "wiki_page": "Grindor",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Decepticon",
+   "generation": "Cinematic",
+   "release": "Launch",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "hotrod_cin_tlk",
+   "pack_dir": "work/unpacked/assets/hotrod_cin_tlk_odr",
+   "wiki_page": "Hot Rod",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Autobot",
+   "generation": "Cinematic",
+   "release": "June 29, 2017",
+   "stars": {
+    "2": {
+     "health": "1697",
+     "attack": "158",
+     "max_rating": "552"
+    },
+    "3": {
+     "health": "4167",
+     "attack": "337",
+     "max_rating": "1313"
+    },
+    "4": {
+     "health": "10829",
+     "attack": "876",
+     "max_rating": "3476"
+    }
+   },
+   "max_rating": {
+    "2": "552",
+    "3": "1313",
+    "4": "3476"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "hound_cin_tlk",
+   "pack_dir": "work/unpacked/assets/hound_cin_tlk_odr",
+   "wiki_page": "Hound",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Autobot",
+   "generation": "Cinematic",
+   "release": "February 8th, 2018",
+   "stars": {
+    "2": {
+     "health": "1,854",
+     "attack": "149",
+     "max_rating": "547"
+    },
+    "3": {
+     "health": "4,553",
+     "attack": "318",
+     "max_rating": "1308"
+    },
+    "4": {
+     "health": "11,839",
+     "attack": "827",
+     "max_rating": "3484"
+    }
+   },
+   "max_rating": {
+    "2": "547",
+    "3": "1308",
+    "4": "3484"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "ironhide_cin_rotf",
+   "pack_dir": "work/unpacked/assets/ironhide_cin_rotf_odr",
+   "wiki_page": "Ironhide (ROTF)",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Autobot",
+   "generation": "Cinematic",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "1,009",
+     "attack": "89",
+     "max_rating": "260"
+    },
+    "2": {
+     "health": "1,837",
+     "attack": "147",
+     "max_rating": "493"
+    },
+    "3": {
+     "health": "4,765",
+     "attack": "327",
+     "max_rating": "1,376"
+    },
+    "4": {
+     "health": "11,722",
+     "attack": "802",
+     "max_rating": "2,869"
+    }
+   },
+   "max_rating": {
+    "1": "260",
+    "2": "493",
+    "3": "1,376",
+    "4": "2,869"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "ironhide_gs_kabam",
+   "pack_dir": "work/unpacked/assets/ironhide_gs_kabam_odr",
+   "wiki_page": "Ironhide",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "March 31, 2022|heavy=Melee",
+   "stars": {
+    "2": {
+     "health": "1,959",
+     "attack": "171",
+     "max_rating": "468"
+    },
+    "3": {
+     "health": "4,811",
+     "attack": "363",
+     "max_rating": "1,101"
+    },
+    "4": {
+     "health": "12,504",
+     "attack": "942",
+     "max_rating": "3,327"
+    },
+    "5": {
+     "health": "33,602",
+     "attack": "2,531",
+     "max_rating": "9,765"
+    }
+   },
+   "max_rating": {
+    "2": "468",
+    "3": "1,101",
+    "4": "3,327",
+    "5": "9,765"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "jazz_gs_twm05",
+   "pack_dir": "work/unpacked/assets/jazz_gs_twm05_odr",
+   "wiki_page": "Jazz",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "June 7, 2018",
+   "stars": {
+    "2": {
+     "health": "1575",
+     "attack": "175",
+     "max_rating": "561"
+    },
+    "3": {
+     "health": "3866",
+     "attack": "369",
+     "max_rating": "1304"
+    },
+    "4": {
+     "health": "10048",
+     "attack": "959",
+     "max_rating": "3519"
+    }
+   },
+   "max_rating": {
+    "2": "561",
+    "3": "1304",
+    "4": "3519"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "jetfire_gs_leader2014",
+   "pack_dir": "work/unpacked/assets/jetfire_gs_leader2014_odr",
+   "wiki_page": "Jetfire",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "December 7, 2018",
+   "stars": {
+    "2": {
+     "health": "1,627",
+     "attack": "149"
+    },
+    "3": {
+     "health": "3995"
+    }
+   },
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "kickback_gs_kabam",
+   "pack_dir": "work/unpacked/assets/kickback_gs_kabam_odr",
+   "wiki_page": "Kickback",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "March 15, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "megatron_cin_rotf",
+   "pack_dir": "work/unpacked/assets/megatron_cin_rotf_odr",
+   "wiki_page": "Megatron (ROTF)",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Decepticon",
+   "generation": "Cinematic",
+   "release": "July 13, 2017",
+   "stars": {
+    "2": {
+     "health": "1924",
+     "attack": "146",
+     "max_rating": "555"
+    },
+    "3": {
+     "health": "4725",
+     "attack": "306",
+     "max_rating": "1312"
+    },
+    "4": {
+     "health": "12281",
+     "attack": "794",
+     "max_rating": "3543"
+    }
+   },
+   "max_rating": {
+    "2": "555",
+    "3": "1312",
+    "4": "3543"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "megatron_gs_leader2015",
+   "pack_dir": "work/unpacked/assets/megatron_gs_leader2015_odr",
+   "wiki_page": "Megatron",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "November 30, 2017",
+   "stars": {
+    "2": {
+     "health": "1732",
+     "attack": "158",
+     "max_rating": "537"
+    },
+    "3": {
+     "health": "4253",
+     "attack": "334",
+     "max_rating": "1270"
+    },
+    "4": {
+     "health": "11053",
+     "attack": "868",
+     "max_rating": "3485"
+    }
+   },
+   "max_rating": {
+    "2": "537",
+    "3": "1270",
+    "4": "3485"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "megatronus_gs_kabam",
+   "pack_dir": "work/unpacked/assets/megatronus_gs_kabam_odr",
+   "wiki_page": "Megatronus",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "September 28, 2018 (Crystal preview packs)",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "mirage_gs_deluxe2016",
+   "pack_dir": "work/unpacked/assets/mirage_gs_deluxe2016_odr",
+   "wiki_page": "Mirage",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "874",
+     "attack": "85",
+     "max_rating": "248"
+    },
+    "2": {
+     "health": "1592",
+     "attack": "141",
+     "max_rating": "535"
+    },
+    "3": {
+     "health": "3,909",
+     "attack": "296",
+     "max_rating": "1,227"
+    },
+    "4": {
+     "health": "10,461",
+     "attack": "792",
+     "max_rating": "3,094"
+    }
+   },
+   "max_rating": {
+    "1": "248",
+    "2": "535",
+    "3": "1,227",
+    "4": "3,094"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "mixmaster_cin_rotf",
+   "pack_dir": "work/unpacked/assets/mixmaster_cin_rotf_odr",
+   "wiki_page": "Mixmaster",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Decepticon",
+   "generation": "Cinematic",
+   "release": "April 6, 2017",
+   "stars": {
+    "1": {
+     "health": "1,009",
+     "attack": "70",
+     "max_rating": "243"
+    },
+    "2": {
+     "health": "1,837",
+     "attack": "117",
+     "max_rating": "526"
+    },
+    "3": {
+     "health": "4,510",
+     "attack": "245",
+     "max_rating": "1273"
+    },
+    "4": {
+     "health": "8,966",
+     "attack": "487",
+     "max_rating": "2606"
+    }
+   },
+   "max_rating": {
+    "1": "243",
+    "2": "526",
+    "3": "1273",
+    "4": "2606"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "motormaster_gs_voyager2015",
+   "pack_dir": "work/unpacked/assets/motormaster_gs_voyager2015_odr",
+   "wiki_page": "Motormaster",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "1,076",
+     "attack": "103",
+     "max_rating": "249"
+    },
+    "2": {
+     "health": "1,959",
+     "attack": "171",
+     "max_rating": "532"
+    },
+    "3": {
+     "health": "4,811",
+     "attack": "363",
+     "max_rating": "1213"
+    },
+    "4": {
+     "health": "12,504",
+     "attack": "942",
+     "max_rating": "6,918"
+    },
+    "5": {
+     "health": "30,356",
+     "attack": "2,287",
+     "max_rating": "6,918"
+    }
+   },
+   "max_rating": {
+    "1": "249",
+    "2": "532",
+    "3": "1213",
+    "4": "6,918",
+    "5": "6,918"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "necrotronus_gs_kabam",
+   "pack_dir": "work/unpacked/assets/necrotronus_gs_kabam_odr",
+   "wiki_page": "Necrotronus",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Decepticon",
+   "generation": "Generation 1 (Game Original)",
+   "release": "April 2nd, 2020",
+   "stars": {
+    "2": {
+     "health": "1,942",
+     "attack": "161",
+     "max_rating": "475"
+    },
+    "3": {
+     "health": "4,768",
+     "attack": "344",
+     "max_rating": "1,386"
+    },
+    "4": {
+     "health": "12,392",
+     "attack": "893",
+     "max_rating": "3,668"
+    },
+    "5": {
+     "health": "30,085",
+     "attack": "2,167",
+     "max_rating": "8,890"
+    }
+   },
+   "max_rating": {
+    "2": "475",
+    "3": "1,386",
+    "4": "3,668",
+    "5": "8,890"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "nemesisprime_gs_voyager2015",
+   "pack_dir": "work/unpacked/assets/nemesisprime_gs_voyager2015_odr",
+   "wiki_page": "Nemesis Prime",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "July 11, 2019",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "optimusprimal_bw_mp32",
+   "pack_dir": "work/unpacked/assets/optimusprimal_bw_mp32_odr",
+   "wiki_page": "Optimus Primal",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Maximal",
+   "generation": "Beast Wars",
+   "release": "January 4, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "optimusprime_cin_tf",
+   "pack_dir": "work/unpacked/assets/optimusprime_cin_tf_odr",
+   "wiki_page": "Optimus Prime (MV1)",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Autobot",
+   "generation": "Cinematic",
+   "release": "Launch",
+   "stars": {
+    "2": {
+     "health": "1,981",
+     "attack": "173",
+     "max_rating": "546"
+    },
+    "3": {
+     "health": "4,900",
+     "attack": "370",
+     "max_rating": "1,236"
+    },
+    "4": {
+     "health": "12,504",
+     "attack": "942",
+     "max_rating": "3536"
+    }
+   },
+   "max_rating": {
+    "2": "546",
+    "3": "1,236",
+    "4": "3536"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "prowl_gs_deluxe2016",
+   "pack_dir": "work/unpacked/assets/prowl_gs_deluxe2016_odr",
+   "wiki_page": "Prowl",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "May 18, 2017",
+   "stars": {
+    "2": {
+     "health": "1714",
+     "attack": "152",
+     "max_rating": "557"
+    },
+    "3": {
+     "health": "4210",
+     "attack": "322",
+     "max_rating": "1308"
+    },
+    "4": {
+     "health": "10941",
+     "attack": "835",
+     "max_rating": "3488"
+    }
+   },
+   "max_rating": {
+    "2": "557",
+    "3": "1308",
+    "4": "3488"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "ramjet_gs_deluxe2008",
+   "pack_dir": "work/unpacked/assets/ramjet_gs_deluxe2008_odr",
+   "wiki_page": "Ramjet",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "September 21, 2017",
+   "stars": {
+    "2": {
+     "health": "1,854",
+     "attack": "147",
+     "max_rating": "554"
+    },
+    "3": {
+     "health": "4,553",
+     "attack": "309",
+     "max_rating": "1300"
+    },
+    "4": {
+     "health": "11,834",
+     "attack": "802",
+     "max_rating": "3436"
+    },
+    "5": {
+     "health": "28,730",
+     "attack": "1,946"
+    }
+   },
+   "max_rating": {
+    "2": "554",
+    "3": "1300",
+    "4": "3436"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "ratchet_gs_kabam",
+   "pack_dir": "work/unpacked/assets/ratchet_gs_kabam_odr",
+   "wiki_page": "Ratchet",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "rhinox_gs_voyager2014",
+   "pack_dir": "work/unpacked/assets/rhinox_gs_voyager2014_odr",
+   "wiki_page": "Rhinox",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Maximal",
+   "generation": "Beast Wars",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "951",
+     "attack": "81",
+     "max_rating": "256"
+    },
+    "2": {
+     "health": "1,750",
+     "attack": "137",
+     "max_rating": "555"
+    },
+    "3": {
+     "health": "4,253",
+     "attack": "283",
+     "max_rating": "1,281"
+    },
+    "4": {
+     "health": "11,053",
+     "attack": "736",
+     "max_rating": "3,071"
+    }
+   },
+   "max_rating": {
+    "1": "256",
+    "2": "555",
+    "3": "1,281",
+    "4": "3,071"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "rodimusprime_gs_mp09",
+   "pack_dir": "work/unpacked/assets/rodimusprime_gs_mp09_odr",
+   "wiki_page": "Rodimus Prime",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "June 23, 2022",
+   "stars": {
+    "3": {
+     "health": "4,768",
+     "attack": "322",
+     "max_rating": "1,171"
+    },
+    "4": {
+     "health": "12,392",
+     "attack": "835",
+     "max_rating": "3,136"
+    },
+    "5": {
+     "health": "34,583",
+     "attack": "2,329",
+     "max_rating": "9,225"
+    }
+   },
+   "max_rating": {
+    "3": "1,171",
+    "4": "3,136",
+    "5": "9,225"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "scorponok_bw_kabam",
+   "pack_dir": "work/unpacked/assets/scorponok_bw_kabam_odr",
+   "wiki_page": "Scorponok",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Predacon",
+   "generation": "Beast Wars",
+   "release": "November 1, 2018",
+   "stars": {
+    "2": {
+     "health": "1,907",
+     "attack": "146",
+     "max_rating": "524"
+    },
+    "3": {
+     "health": "4,682",
+     "attack": "312",
+     "max_rating": "1,309"
+    },
+    "4": {
+     "health": "12,169",
+     "attack": "810",
+     "max_rating": "3,523"
+    },
+    "5": {
+     "health": "29,543",
+     "attack": "1,966",
+     "max_rating": "8,551"
+    }
+   },
+   "max_rating": {
+    "2": "524",
+    "3": "1,309",
+    "4": "3,523",
+    "5": "8,551"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "sharkticon_gs_brawler",
+   "pack_dir": "work/unpacked/assets/sharkticon_gs_brawler_odr",
+   "wiki_page": "Sharkticon",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": true,
+   "class": "Warrior • Scout • Tech • Demolitions • Tactician • Brawler",
+   "faction": "none",
+   "generation": "Generation 1 (Game Original)",
+   "release": "February 1, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "sharkticon_gs_demolition",
+   "pack_dir": "work/unpacked/assets/sharkticon_gs_demolition_odr",
+   "wiki_page": "Sharkticon",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": true,
+   "class": "Warrior • Scout • Tech • Demolitions • Tactician • Brawler",
+   "faction": "none",
+   "generation": "Generation 1 (Game Original)",
+   "release": "February 1, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "sharkticon_gs_kabam",
+   "pack_dir": "work/unpacked/assets/sharkticon_gs_kabam_odr",
+   "wiki_page": "Sharkticon",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": true,
+   "class": "Warrior • Scout • Tech • Demolitions • Tactician • Brawler",
+   "faction": "none",
+   "generation": "Generation 1 (Game Original)",
+   "release": "February 1, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "sharkticon_gs_scout",
+   "pack_dir": "work/unpacked/assets/sharkticon_gs_scout_odr",
+   "wiki_page": "Sharkticon",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": true,
+   "class": "Warrior • Scout • Tech • Demolitions • Tactician • Brawler",
+   "faction": "none",
+   "generation": "Generation 1 (Game Original)",
+   "release": "February 1, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "sharkticon_gs_tactician",
+   "pack_dir": "work/unpacked/assets/sharkticon_gs_tactician_odr",
+   "wiki_page": "Sharkticon",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": true,
+   "class": "Warrior • Scout • Tech • Demolitions • Tactician • Brawler",
+   "faction": "none",
+   "generation": "Generation 1 (Game Original)",
+   "release": "February 1, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "sharkticon_gs_tech",
+   "pack_dir": "work/unpacked/assets/sharkticon_gs_tech_odr",
+   "wiki_page": "Sharkticon",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": true,
+   "class": "Warrior • Scout • Tech • Demolitions • Tactician • Brawler",
+   "faction": "none",
+   "generation": "Generation 1 (Game Original)",
+   "release": "February 1, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "sharkticon_gs_warrior",
+   "pack_dir": "work/unpacked/assets/sharkticon_gs_warrior_odr",
+   "wiki_page": "Sharkticon",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": true,
+   "class": "Warrior • Scout • Tech • Demolitions • Tactician • Brawler",
+   "faction": "none",
+   "generation": "Generation 1 (Game Original)",
+   "release": "February 1, 2018",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "shockwave_gs",
+   "pack_dir": "work/unpacked/assets/shockwave_gs_odr",
+   "wiki_page": "Shockwave",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "August 10, 2017",
+   "stars": {
+    "2": {
+     "health": "1767",
+     "attack": "129",
+     "max_rating": "557"
+    },
+    "3": {
+     "health": "4339",
+     "attack": "271",
+     "max_rating": "1317"
+    },
+    "4": {
+     "health": "11276",
+     "attack": "703",
+     "max_rating": "3547"
+    }
+   },
+   "max_rating": {
+    "2": "557",
+    "3": "1317",
+    "4": "3547"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "sideswipe_gs",
+   "pack_dir": "work/unpacked/assets/sideswipe_gs_odr",
+   "wiki_page": "Sideswipe",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "826",
+     "attack": "106",
+     "max_rating": "271"
+    },
+    "2": {
+     "health": "1,505",
+     "attack": "177",
+     "max_rating": "577"
+    },
+    "3": {
+     "health": "3,810",
+     "attack": "384",
+     "max_rating": "1,348"
+    },
+    "4": {
+     "health": "9,601",
+     "attack": "967",
+     "max_rating": "3,254"
+    }
+   },
+   "max_rating": {
+    "1": "271",
+    "2": "577",
+    "3": "1,348",
+    "4": "3,254"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "skywarp_gs_leader2015",
+   "pack_dir": "work/unpacked/assets/skywarp_gs_leader2015_odr",
+   "wiki_page": "Skywarp",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "February 24, 2022",
+   "stars": {
+    "2": {
+     "health": "1,942",
+     "attack": "129",
+     "max_rating": "483"
+    },
+    "3": {
+     "health": "4,768",
+     "attack": "271",
+     "max_rating": "1,364"
+    },
+    "4": {
+     "health": "12,392",
+     "attack": "703",
+     "max_rating": "3,591"
+    },
+    "5": {
+     "health": "34,583",
+     "attack": "1,960",
+     "max_rating": "10,310"
+    }
+   },
+   "max_rating": {
+    "2": "483",
+    "3": "1,364",
+    "4": "3,591",
+    "5": "10,310"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "slipstream_gs",
+   "pack_dir": "work/unpacked/assets/slipstream_gs_odr",
+   "wiki_page": "Slipstream",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Scout",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "May 19, 2022",
+   "stars": {
+    "2": {
+     "health": "1,679",
+     "attack": "175",
+     "max_rating": "491"
+    },
+    "3": {
+     "health": "4,124",
+     "attack": "369",
+     "max_rating": "1,125"
+    },
+    "4": {
+     "health": "10,718",
+     "attack": "959",
+     "max_rating": "2,977"
+    },
+    "5": {
+     "health": "29,910",
+     "attack": "2,265",
+     "max_rating": "8,509"
+    }
+   },
+   "max_rating": {
+    "2": "491",
+    "3": "1,125",
+    "4": "2,977",
+    "5": "8,509"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "soundblaster_gs_mp13b",
+   "pack_dir": "work/unpacked/assets/soundblaster_gs_mp13b_odr",
+   "wiki_page": "Soundblaster",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "May 10, 2023",
+   "stars": {
+    "1": {
+     "health": "1.009",
+     "attack": "70",
+     "max_rating": "262"
+    }
+   },
+   "max_rating": {
+    "1": "262"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "soundwave_gs",
+   "pack_dir": "work/unpacked/assets/soundwave_gs_odr",
+   "wiki_page": "Soundwave",
+   "wiki_page_exists": true,
+   "in_bots_stats": false,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "May 4, 2017",
+   "stars": {},
+   "max_rating": {},
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": ""
+   },
+   "missing": []
+  },
+  {
+   "client_id": "sunstreaker_gs_deluxe2008",
+   "pack_dir": "work/unpacked/assets/sunstreaker_gs_deluxe2008_odr",
+   "wiki_page": "Sunstreaker",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "July 27, 2022 (update)August 11, 2022 (Bot)",
+   "stars": {
+    "3": {
+     "health": "4,768",
+     "attack": "385",
+     "max_rating": "1,070"
+    },
+    "4": {
+     "health": "12,392",
+     "attack": "1000",
+     "max_rating": "2,881"
+    },
+    "5": {
+     "health": "34,583",
+     "attack": "2,790",
+     "max_rating": "8,399"
+    }
+   },
+   "max_rating": {
+    "3": "1,070",
+    "4": "2,881",
+    "5": "8,399"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "tantrum_gs_kabam",
+   "pack_dir": "work/unpacked/assets/tantrum_gs_kabam_odr",
+   "wiki_page": "Tantrum",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "July 13, 2018",
+   "stars": {
+    "2": {
+     "health": "1,942",
+     "attack": "181",
+     "max_rating": "533"
+    },
+    "3": {
+     "health": "4,768",
+     "attack": "385",
+     "max_rating": "1292"
+    },
+    "4": {
+     "health": "12,392",
+     "attack": "1000",
+     "max_rating": "3484"
+    }
+   },
+   "max_rating": {
+    "2": "533",
+    "3": "1292",
+    "4": "3484"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "thundercracker_gs_leader2015",
+   "pack_dir": "work/unpacked/assets/thundercracker_gs_leader2015_odr",
+   "wiki_page": "Thundercracker",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Brawler",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "April 18, 2019",
+   "stars": {
+    "2": {
+     "health": "1,924",
+     "attack": "175",
+     "max_rating": "469"
+    },
+    "3": {
+     "health": "4,725",
+     "attack": "371",
+     "max_rating": "1,367"
+    },
+    "4": {
+     "health": "12,281",
+     "attack": "963",
+     "max_rating": "3,646"
+    },
+    "5": {
+     "health": "29,814",
+     "attack": "2,337",
+     "max_rating": "8,847"
+    }
+   },
+   "max_rating": {
+    "2": "469",
+    "3": "1,367",
+    "4": "3,646",
+    "5": "8,847"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "ultramagnus_gs_leader",
+   "pack_dir": "work/unpacked/assets/ultramagnus_gs_leader_odr",
+   "wiki_page": "Ultra Magnus",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "2": {
+     "health": "1,819",
+     "attack": "150",
+     "max_rating": "595"
+    },
+    "3": {
+     "health": "4,594",
+     "attack": "327",
+     "max_rating": "1,432"
+    },
+    "4": {
+     "health": "11,611",
+     "attack": "827",
+     "max_rating": "3,364"
+    }
+   },
+   "max_rating": {
+    "2": "595",
+    "3": "1,432",
+    "4": "3,364"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "waspinator_gs_deluxe",
+   "pack_dir": "work/unpacked/assets/waspinator_gs_deluxe_odr",
+   "wiki_page": "Waspinator",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Demolitions",
+   "faction": "Predacon",
+   "generation": "Beast Wars",
+   "release": "April 20, 2017",
+   "stars": {
+    "2": {
+     "health": "1662",
+     "attack": "144",
+     "max_rating": "571"
+    },
+    "3": {
+     "health": "4081",
+     "attack": "302",
+     "max_rating": "1326"
+    },
+    "4": {
+     "health": "10606",
+     "attack": "785",
+     "max_rating": "3524"
+    }
+   },
+   "max_rating": {
+    "2": "571",
+    "3": "1326",
+    "4": "3524"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "wheeljack_gs_mp20",
+   "pack_dir": "work/unpacked/assets/wheeljack_gs_mp20_odr",
+   "wiki_page": "Wheeljack",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tech",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "August 9, 2018",
+   "stars": {
+    "1": {
+     "health": "855",
+     "attack": "82",
+     "max_rating": "265"
+    },
+    "2": {
+     "health": "1557",
+     "attack": "137",
+     "max_rating": "562"
+    },
+    "3": {
+     "health": "3,823",
+     "attack": "287",
+     "max_rating": "1,309"
+    },
+    "4": {
+     "health": "9,936",
+     "attack": "744",
+     "max_rating": "3,525"
+    },
+    "5": {
+     "health": "24,123",
+     "attack": "1,806",
+     "max_rating": "7,041"
+    }
+   },
+   "max_rating": {
+    "1": "265",
+    "2": "562",
+    "3": "1,309",
+    "4": "3,525",
+    "5": "7,041"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "windblade_gs",
+   "pack_dir": "work/unpacked/assets/windblade_gs_odr",
+   "wiki_page": "Windblade",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Warrior",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "826",
+     "attack": "102",
+     "max_rating": "264"
+    },
+    "2": {
+     "health": "1527",
+     "attack": "172",
+     "max_rating": "600"
+    },
+    "3": {
+     "health": "3,694",
+     "attack": "356",
+     "max_rating": "1,260"
+    },
+    "4": {
+     "health": "9601",
+     "attack": "926",
+     "max_rating": "3376"
+    },
+    "5": {
+     "health": "23,310",
+     "attack": "2,247",
+     "max_rating": "6,787"
+    }
+   },
+   "max_rating": {
+    "1": "264",
+    "2": "600",
+    "3": "1,260",
+    "4": "3376",
+    "5": "6,787"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]"
+   },
+   "missing": [
+    "no parsed wiki page"
+   ]
+  }
+ ]
+}

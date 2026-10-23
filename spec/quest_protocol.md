@@ -738,3 +738,24 @@ Dictionary<string, BCGUserActiveTeam>`. То есть JSON `activeTeams` — **�
 Вывод: префайт и map-marker используют разные представления команды;
 блокер prefight — не `QuestUserInfo.team`, а `BCGUserActiveTeam`/
 `TeamData.RefreshHeroData` либо id, которым `GetActiveTeam` ищет mode.
+
+
+## 2k. A6: жизненный цикл квеста (статика)
+
+| Шаг | Запрос/ответ | Что читает клиент | Статус |
+|---|---|---|---|
+| begin | `POST /quests/quest-begin/{qid}` body `tm0..tm3` | `activeQuests[qid].teamData` -> `BCGManager.UpdateUserData`; `team` | [RUN] |
+| detail | `POST /quests/quest-detail/{qid}` | `map`, `builder.summary.bossTable`, `scaledBossTable`, `tiles` | [RUN] |
+| move | `POST /quests/quest-movedir/{qid}/{x}/{y}` body `{}` | `results[]` `QuestActionResult`; `progression`; `localPlayer` | [RUN] |
+| quit | `POST /quests/quest-quit/{qid}` | expected progression/result; not reached | [ASSUMED] |
+| battle action | `results[].action.battle` | `x`,`y`,`isFinalBoss`,`battleEnemy`,`battleTower`; opens prefight | [RUN] |
+| activate | `/matches/activate-match/{matchType}` | `QuestsMatchData`, `FighterData`; not reached | [ASSUMED] |
+
+Action table (from `QuestActionResult..ctor` `0xEA28BC`): `moveto`=1,
+`teleport`=2, `battle`=3, `ambush`=4, `battlecomplete`=5, `fightlost`=6,
+`questcomplete`=7, `chaptercomplete`=8, `actcomplete`=9,
+`barrierBlocked`=10, `outOfEnergy`=11. For non-`battle` actions only the
+type is proven; their field keys and client reactions are not yet observed.
+`battlecomplete`/`fightlost`/`questcomplete`/`chaptercomplete`/`actcomplete`
+are the post-match progression actions; they should be emitted in the movedir
+or match-resolve result after a fight, but no fight completed. [STATIC]

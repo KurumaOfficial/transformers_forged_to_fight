@@ -1,0 +1,9 @@
+{
+  "name": "v02_canonical_hero_key",
+  "description": "Ключ героя без _2: bumblebee_cin_dotm; heroes dict.",
+  "hero_key": "bumblebee_cin_dotm",
+  "hero_extra": {
+    "bid": "bumblebee_cin_dotm",
+    "blueprint": "bumblebee_cin_dotm"
+  }
+}

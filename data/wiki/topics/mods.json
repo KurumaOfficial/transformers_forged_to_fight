@@ -1,0 +1,256 @@
+{
+ "source": "Fandom pages parsed in data/wiki/pages.json; as_of/latest from data/wiki/versions/",
+ "cutoff": "2023-01-13T23:59:59Z",
+ "topic": "mods",
+ "note": "Curated page set; values only from saved wikitext. as_of uses parsed page when revision <= cutoff, otherwise raw wikitext or null.",
+ "page_count": 2,
+ "pages": {
+  "Module": {
+   "page": "Module",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Module",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 9100,
+    "timestamp": "2022-06-05T21:02:58Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Module",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Module",
+      "revid": 9100,
+      "timestamp": "2022-06-05T21:02:58Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Modules, or Mods for short, are devices used on a Commander's base to give their Bots stat boosts and additional abilities to help defend their base from other Raiding Commanders. Mods can be upgraded and forged just like Bots. There are three classes of Mods: Attack, Defense, and Utility.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Attack Mods",
+       "text": "Harm Accelerator New.png|Harm Accelerator|link=Harm Accelerator\nLaser Guidance Module New.png|Laser Guidance Module\nNightbird's Mark New.png|Nightbird's Mark\nRobot Resource New.png|Robot Resource\nScout's Sentry.png|Scout's Sentry|link=Scout's Sentry\nSuperconductor v2.png|Superconductor 1000|link=Superconductor 1000\nSuperconductor v2.png|Superconductor 2000|link=Superconductor 2000",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Defense Mods",
+       "text": "EMI Module New.png|E.M.I. Module|link=E.M.I. Module\nRepair Module New.png|Repair Module\nSecurity Module New.png|Security Module\nStrange Refractor New.png|Strange Refractor\nTech Console.png|Tech Console|link=Tech Console",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Utility Mods",
+       "text": "Exo-Filter New.png|Exo-Filter|link=Exo-Filter\nParalyzer New.png|Paralyzer\nTranswarp Cell.png|Transwarp Cell|link=Transwarp Cell\nPrime Module.png|Prime Module|link=Prime Module",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Unreleased",
+       "text": "These names and portraits were found in the game files and have existed since Beta. They appear to be Class-boosting Mods, but remain unreleased.\n\nFile:Portrait attack large.png|Attack Module\nFile:portrait_health_large.png|Health Module\nFile:Portrait brawlersfury large.png|Brawler's Fury\nFile:Portrait democache large.png|Demo Cache\nFile:Portrait tacticianstrick large.png|Tactician's Trick\nFile:Portrait warriorscall large.png|Warrior's Call",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "See Also",
+       "text": "Not to be confused with Utility Module, the game element for AI-Bots on Solo Missions.",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "latest": {
+    "revid": 9100,
+    "timestamp": "2022-06-05T21:02:58Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Module",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Module",
+      "revid": 9100,
+      "timestamp": "2022-06-05T21:02:58Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Modules, or Mods for short, are devices used on a Commander's base to give their Bots stat boosts and additional abilities to help defend their base from other Raiding Commanders. Mods can be upgraded and forged just like Bots. There are three classes of Mods: Attack, Defense, and Utility.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "Attack Mods",
+       "text": "Harm Accelerator New.png|Harm Accelerator|link=Harm Accelerator\nLaser Guidance Module New.png|Laser Guidance Module\nNightbird's Mark New.png|Nightbird's Mark\nRobot Resource New.png|Robot Resource\nScout's Sentry.png|Scout's Sentry|link=Scout's Sentry\nSuperconductor v2.png|Superconductor 1000|link=Superconductor 1000\nSuperconductor v2.png|Superconductor 2000|link=Superconductor 2000",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Defense Mods",
+       "text": "EMI Module New.png|E.M.I. Module|link=E.M.I. Module\nRepair Module New.png|Repair Module\nSecurity Module New.png|Security Module\nStrange Refractor New.png|Strange Refractor\nTech Console.png|Tech Console|link=Tech Console",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Utility Mods",
+       "text": "Exo-Filter New.png|Exo-Filter|link=Exo-Filter\nParalyzer New.png|Paralyzer\nTranswarp Cell.png|Transwarp Cell|link=Transwarp Cell\nPrime Module.png|Prime Module|link=Prime Module",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Unreleased",
+       "text": "These names and portraits were found in the game files and have existed since Beta. They appear to be Class-boosting Mods, but remain unreleased.\n\nFile:Portrait attack large.png|Attack Module\nFile:portrait_health_large.png|Health Module\nFile:Portrait brawlersfury large.png|Brawler's Fury\nFile:Portrait democache large.png|Demo Cache\nFile:Portrait tacticianstrick large.png|Tactician's Trick\nFile:Portrait warriorscall large.png|Warrior's Call",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "See Also",
+       "text": "Not to be confused with Utility Module, the game element for AI-Bots on Solo Missions.",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": false
+  },
+  "Utility Module": {
+   "page": "Utility Module",
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Utility_Module",
+   "tag": "[WIKI]",
+   "as_of_2023": {
+    "revid": 10734,
+    "timestamp": "2023-01-13T15:57:16Z",
+    "raw_wikitext": "[[File:Utility_Mod_New.png|right]]\n'''Utility Mods''' are only used by opponents in Missions. They have no specific abilities, as they give any kind of Buffs depending on the Mission.\n\nIt is possible to see the [[Module|Mod]]'s effects on your opponent if you select a Bot's portrait (not the actual node) in the Mission. On the \"Node Info\" screen, you can select \"Local Mod\" to see the Mod's abilities. You can also tap on the Mod's picture in the \"[[Bots|Bot]] Selection\" screen before you start a fight if you want to find out what kind of effects it provides to your opponent.\n\nIt is highly recommended that you view the Mod's effects before you start a hard battle or even go on one of the harder paths when exploring Missions, especially in Challenge Missions like [[The Last Knight Challenge]] and <s>Expert</s> Commander and Prime difficulties in [[Special Mission|Spotlight Missions]], as these Mods give a formidable effect to opponents that must be strategically overcome.\n\nMods can be generally categorized as such:\n* Special 3 Unlocked - Most mission bots have their Special 3 locked by default unless they have this mod. Reserved for bosses and all Master-level bots.\n* Boost - Increase health, attack, both, or add other effects. As these are inherent they cannot be nullified.\n* Permanent Buff - Can be nullified, but they will eventually return.\n* Timed Buff - Much stronger than permanent buffs, but they're on a cycle for 7.5 seconds of activity, then a 15 second recharge.\n* Conditional - Some mods require very specific debuffs or sequences to temporarily nullify them.\n* Player Effect- Some mods affect the Commander's bots instead of the opponent.\n\n==List of Effects==\nThere are at least four tiers for each effect, maximum 6. \"Opponent\" refers to your Bots.\n\n=== Basic Boosts ===\n* '''Attack Boost''' - +25~50~100~200~300~500% Attack (?)\n*'''Health Boost''' - +25~50~100~200~300~500% Health\n* '''Prime Boost '''- 25~50~100~150% Attack and Health\n* '''Special 3 Unlocked''' - Special Attack 3 unlocked. Watch out!\n\n=== Armor/Resistance Control ===\n* '''Armor''' - Gain an Armor Buff, reducing damage from attacks by 15~25~50~75~90%.\n* '''Armor Timed''' - gains an Armor Buff, reducing attack from opponents by 25~50~75~90~% for 7.5 seconds. Recharges in 15 seconds.\n* '''Armor Pierce''' - Attack bypass 15~25~50~75~90% of the opponent's current Armor.\n* '''Armor Pierce Timed''' -  Attacks bypass 25~50~75~90% of the opponent's current Armor for 7.5 seconds. Recharges in 15 seconds.\n* '''Adaptive''' - Cycles between +39~46~55~65~90% Physical or Energy Resistance every 7.5 seconds.\n* '''Cycle Resist''' - Cycles through Melee, Ranged, and Special Damage resistances at 50~75~100~125~150~200% damage resistance.\n* '''Gain Armor''' - When stuck, there's a 6% to gain a 15~<s>25</s>~40~55~60~85% Armor Buff. Additionally, this Buff automatically activates when a Special Attack is activated by the opponent.\n* '''Energon Shield''' - When Energon shield is active, absorb (tier 1)~8~18~30% of opponent's Attack as Health. When Energon Shield is down, all resistances are reduced by -(tier 1)~35~50~65%.\n* '''Physical Resistance''' - Resist 15~25~50~75~90% Physical Damage.\n* '''Energy Resistance''' - Resist 15~25~50~75~90% Energy Damage.\n\n=== Attack Control ===\n* '''Buff Duration''' - Increase the duration of buffs by 25~50~75~100~150~200%.\n* '''Debuff Duration '''- Increase the duration of debuffs by 25~50~75~100~150~200%.\n* '''Enhanced Bleed''' - Bleeds inflicted by this Bot last 25~50~75~100~125% longer.\n* '''Randomizer''' - At the start of the fight and every 18 seconds, activates a random, Attack, Armor, or Resistance Buff. Each buff increases respective attributes by 10-15~20~30%. Buffs stack up to 10 max.\n* '''Relentless Assault''' - Each time an opponent Sidesteps or Dashes an attack this bots gains a 3~6~10~13% Attack Buff. When this bot reaches 10 Attack Buffs it becomes Unstoppable for 4 seconds and consumes all Attack Buffs when the Unstoppable ability ends. (Originally, it was ''every time'' the opponent dodges.)\n* '''Replicate''' - When the opponent receives a buff, activate a Buff with a matching effect that lasts 4 seconds. Once activated, Replicate can only trigger again after 5 seconds.\n\n=== Blocking ===\n* '''Absorb Attacks''' - Blocking 5 attacks provides an Unblockable Special Buff, making Special Attacks Unblockable and increasing Special Damage for 10 seconds.\n* '''Block Proficiency''' - Reduces incoming damage from enemy attacks that are successfully blocked by 7.5~~25~37.5%%\n* '''Heavy Block''' - Block is no longer broken by opponent's Heavy Attack. Gain 0.25~0.5~1~1.5 bars of Power when Blocking an opponent's Heavy Attack.\n* '''Reflect Ranged''' - Reflects incoming ranged attacks while Blocking, dealing 85~100~120~140~170% of their original damage.\n* '''Shock Block''' - Blocked Melee Attacks cause opponents to take 10~25~50~100~150% of opponent's Attack as Shock Damage over 4 seconds.\n\n=== Critical Control ===\n* '''Critical Damage''' - Increase Critical Damage by 25~50~100~150~200%\n* '''Critical Rate''' - Increases Critical Rate by +15~25~50~75~90%\n* '''Critical Damage Timed''' - Increase Critical Damage by +50~100~200~400~600% for 7.5 seconds. Recharges in 15 seconds.\n* '''Critical Rate Timed'''  - Increase Critical Rate by +50~(tier 3-4)~90% for 7.5 seconds. Recharges in 15 seconds.\n* '''Target Vitals '''- Landing 5 Critical Hits grants the next Critical Hit an additional ~110~120~140% of Attack as Bonus Damage and Stuns the opponent for 1.5 seconds.''' '''\n\n=== Evasion ===\n* '''Evade Melee''' - 5~10~15~20% chance to Evade Melee Attacks.\n* '''Evade Ranged''' - 5~10~15~20% chance to Evade Ranged Attacks.\n* '''Evade Melee Timed '''- 10~15~20~25~30% chance to evade Melee attacks for 7.5 seconds. Recharges in 15 seconds.\n* '''Evade Ranged Timed''' - 10~15~20~25~30% chance to evade Ranged attacks for 7.5 seconds. Recharges in 15 seconds.\n* '''Evade Power Gain''' - When Evading a Melee Attack, gain 26~31~36~43~51~60% of a Power Bar.\n\n=== Heavy Attacks ===\n* '''Heavy Attack Stun''' - Heavy Attacks Stun the Opponent for 2~2.5~3~3.5~5 seconds.\n* '''Stagger''' - Heavy Attacks inflict the opponent with a Stun for 1.5~2~2.5~3~3.5~4 seconds, Power Lock for 4~5~7~9~11~13 seconds, or a 25~35~50~65~85~100% Armor Break for 7 seconds. (Also makes the bot much more likely to use Heavy Attacks)\n* '''Battle Tactics''' - Increases Ranged Heavy Damage by 300% and reduces Ranged Heavy Speed by 35%. More likely to use Heavy Attacks. (Introduced with  [[Wheeljack]] on Reforged: [[Code of a Hero]] - Chapter 2 Act 2 on Hard onwards)\n\n=== Melee Damage ===\n* '''Melee Damage - '''Increases Melee damage by 25~50~100~150~200%.\n* '''Melee Timed''' - Increase Melee Damage by 50~100~200~400~600% for 7.5 seconds. Recharges in 15 seconds.\n* '''Melee Bleed''' - On Melee attacks, inflict a stack of Bleed dealing 5~25~50~100% Attack as Bleed damage over 7.5 seconds per stack of Bleed. (Currently, the leveling is mislabeled at 5~100~25~50%)\n* '''Melee Power Burn '''- Basic and Heavy Melee Attacks drain a small amount of Power on hit.\n\n=== Power Control ===\n* '''Power Flow''' - Increases the Power generated from all attacks by 25~50~100~150%.\n* '''Power Flow Timed''' - Increases the Power generated from all attacks by +50~100~200~400~600% for 5 seconds. Recharges in 15 seconds.\n* '''Focus Power Gain''' - Activates a Power Gain Buff when not struck by a melee attack for 6 seconds, generating 3~3.6~4.2% of Max Power per second.\n* '''Defensive Power Gain''' - While Blocking, generates <s>7.5~15~22.5~30%</s> (tier 1)~7.5~11.2~15~18.8% of a Power Bar per second.\n* '''Harness Power''' - Each bar of Power adds an additional effect to successful melee attacks. 1 bar adds Melee Repair, 2 bars add Power Drain, and 3 bars adds Shock Damage.\n* '''Power Charge''' - When hit this bot generates a Power Charge. When this bot reaches 8 Power Charges, the next successful hit (on this bot) within 5 seconds consumes all charges, generating a large amount of Power.\n* '''Power Start''' - Starts with 1 Bar(s) of Power.\n\n=== Ranged Attacks ===\n*'''Ranged Damage''' - Increases Ranged Damage by +25~50~100~150~200~300% and Ranged Speed.\n*'''Ranged Timed''' - Increases Ranged damage and speed by +50~100~200~400~600~1000% for 7.5 seconds. Recharges in 15 seconds.\n*'''Ranged Shock''' - On ranged attacks, inflict a stack of Shock dealing 10~25~50~100~200% Attack as Shock damage over 7.5 seconds per stack of Shock.\n* '''Aim Enhancer''' - Basic Ranged Attacks are Unblockable.\n* '''Improved''' '''Aim Enhancer''' - Basic Attacks are Unblockable.\n*'''Hacked Aim Enhancer''' - Basic Ranged Attacks are Unblockable and ranged speed randomizes throughout the fight.\n*'''Ranged Power Burn''' - Basic and Ranged Heavy Attacks drain a small amount of Power on hit.\n\n=== Repair ===\n* '''Absorb Projectile''' - When struck by Basic Ranged Attacks, Repair 15~25~50~75~100% of opponent's Attack.\n* '''Repair Timed''' - Repair ~6~8~10% Health over 7.5 seconds. Recharges in 15 seconds.\n* '''Focus Repair''' - Activates a repair buff when not struck by a melee attack for 6 seconds, healing 0.3~0.5~0.8~1% of max Health per second.\n*'''Last-Ditch Repair ''' - Once per fight, activates a Repair Buff when below 20% Health, healing 10~15~<s>30</s> 25~40% of max Health over 6 seconds. \n\n=== Special Attacks ===\n* '''Special Damage''' - Increases Special Damage by 25~50~100~150~200~300%.\n* '''Enhanced Special 1''' - Special 1 deals +20% more damage and cannot be Blocked.\n* '''Enhanced Special 2 '''- Special 2 deals +20% more damage and cannot be Blocked.\n* '''Special Attack Stun''' - On the last hit of Special Attacks, Stun the opponent for 2~2.5~3~3.5~4~4.5 seconds.\n* '''Special Damage Timed''' - Increases Special Damage by +50~100~200~400~600% for 7.5 seconds. Recharges in 15 seconds.\n* '''Strike Back''' - When hit by a Special Attack, this enemy gains 1 bar of Power.\n* '''All or Nothing''' - Stores Power until its Special Attack 3 is ready.\n\n=== Nullifiable Buffs ===\nThe bot starts with exceptionally powerful effects which can be temporarily nullified with certain skills. \n* '''Focused Frenzy:''' Focus Frenzy grants Unstoppable for 4~5~8~9 seconds. (1~4) Stacks of Focus Frenzy can be removed by taking hits. If Unstoppable is removed before expiry, the Bot is Stunned for 3 seconds.\n* '''Rampage''' - Start with a Resistance Buff and all Attack Buffs. Each attack Buff adds 25~50~100~150% and is removed when hit by the corresponding attack. When all Attack Buffs are removed, the Resistance Buff is nullified. Buffs return in 20 seconds. (In other words, the opponent is immune to damage until hit by a melee, ranged, and special attack.)\n* '''Pyrophobia''' - Start with an Attack Buff that increases Attack damage by 50~100~150~200% and can be removed with [[Burn]] Debuffs. Attack Buff will return after 10 seconds.\n* '''Hemophobia''' - Start with a Power Gain Buff that generates 1~1.5~1.8~2.1% Max Power every second which can be removed with [[Bleed]] debuffs. Power Gain Buff will return after 10 seconds.\n* '''Electrophobia''' - Start with a 40~60~75~85% All Resist Buff which can be removed with [[Shock]] debuffs. Resist Buff will return after 10 seconds.\n* '''Unstable Energon - '''Inflicts 2.5~5~15~20% of Attack as Shock Damage for 10 seconds. Can be removed by (successful) Heavy Attacks. This effect returns 10~9~8~7 seconds after it is removed or expires.\n\n=== Player Effect ===\nThese affect the Commander's Bot rather than the enemy Bot.\n* '''Attack Barrier''' - Immune to Basic Attack Damage. Opponent's power Rate is increased by t1~t2~100~200%. Opponent's Special 3 Attack is disabled.\n* '''Finesse''' - Opponent starts with Power Rate reduced to 0. Opponents generate t1~t2~15~t4% of Power Bar when sidestepping or dodging an attack. Opponents generate 60% of a Power Bar when Evading an Attack.\n* '''Energon Storm''' - Inflicts Shock Damage based on opponent's power bar. The higher the power level, the more Shock damage inflicted. Opponent's Special 2 Attacks repair 10% of their max Health and Special 3 Attacks repair 25% of their max Health.\n* '''Fatigue''' - Each Dash Back or Sidestep a generates stack of Fatigue that lasts a short duration. Accumulating 5 stacks causes the next Dash Back or Sidestep to inflict Stun for 1.5~2~2.5~3 seconds.\n* '''Power Wipe '''- Every 30~25~20 seconds, the opponent's Power Meter will be fully depleted.\n* '''Life Transfer ''' - This Bot repairs the opponent for 10~20~30% of damage dealt when hit, but passively drains 0.2~0.5~0.8% of the opponent's health.\n* '''Power Conductor''' - This Bot grants ~60~80% more Power when hit, but constantly drains opponent's Power.\n* '''Bleed Out''' - Causes a permanent Bleed on the opponent which deals 0.1~0.2~0.3~0.5% of Max Health.\n* '''Burn Down''' - Causes a permanent Burn on the opponent which deals 0.1~0.2~0.3~0.5% of Max Health.\n*'''Inflict Bleed''' - When successfully landing the first Melee attack, inflicts 100% of the opponent's current health as Bleed damage over 180~150~120~90 seconds.\n*'''Inflict Shock''' - When successfully landing the first Ranged attack, inflicts 100% of the opponent's current health as Shock damage over 180~150~120~90 seconds.\n\n=== Other ===\n*'''Combo Shield''' - The Combo Meter is not reset after being struck by an attack. \n*'''Bleed Immunity''' - Immune to Bleed. \n*'''Debuff Immunity '''- Immune to all debuffs. \n*'''Trigger Rate''' - Increases the Trigger Rate of abilities by +15~25~50~75~90% \n* '''Trigger Rate Timed''' - Increase the Trigger Rate of abilities by +15~25~50~75% for 7.5 seconds. Recharges in 15 seconds.\n\n=== Story ===\nEffects that have appeared exclusively in [[Story]] Mode and Challenge Missions.\n* '''Special 3 Power''' (This is a 1-Star [[Module]]) ''Passive:'' Passive Power Gain over time until Special 3 is activated. Used by Grimlock in Act 1-Ch1-M3.\n* '''T-Cog Disabler''' - Prevents opponent from changing into alt-modes during battle.\n* '''Mega-Rager''' - (Act 2-Ch3-M4) - As the fight goes on, Grimlock becomes increasingly agitated. When struck, there's a 20% chance to gain an Attack Buff, Armor Break Debuff, and becomes more aggressive.\n* '''Shark Frenzy:''' Used by Sharkticons in Act 3 Chapter 3.\n**'''Shark Frenzy: Attack!''' - At 50% health or lower, all successful melee attacks grant 2% bonus Attack stacking indefinitely.\n** '''Shark Frenzy: Heavy Boost '''- At 50% health or lower, taking 3 hits increases damage and speed on the next Heavy Attack.\n** '''Shark Frenzy: Power Rate '''- At 50% health or lower, Power gained from attacking or being attacked is doubled.\n** '''Shark Frenzy: Rend '''- At 50% health or lower, all successful melee attacks cause the opponent to Bleed for 0.5% Attack stacking indefinitely.\n** '''Shark Frenzy: Shock Block '''- At 50% health or lower, blocking Melee attacks causes opponents to take 50% of attack as Shock damage over 4 seconds.\n** '''Shark Frenzy: Unstoppable '''- At 50% health or lower, taking 7 hits grants Unstoppable.\n* '''Damaged''' - This Bot has already taken extensive damage and is in a weakened state. (instant health loss to 5% at level 6) (Act 4-Ch2-M6)\n* '''Temporal Anomalizer'''- Reduces opponent's ranged attack speed. Only appeared in [[A Question of Loyalty]] Missions.\n* '''The Equalizer''' - When the defender takes a Critical Hit, it will be granted a repair, an Armor Up or be inflicted with Shock Damage. These effects can stack. (First appeared in [[What Could Go Wrong?]])\n* '''The Re-Equalizer''' - When the defender takes a Critical Hit, it will be granted a Fury Buff, an Increased Critical Rate Buff or be inflicted with Burn Damage. These effects can stack. \n* '''Megatronic Augmenter '''- ([[Rulers of Kaon]]) [[Megatron (ROTF)|Megatron]] ordered Mixmaster to create an Energon infusing mod which enhances bots linked to him. This unlocks their Special 3 Attack and boosts Health and Attack. As evidenced by the name, Megatron retained naming rights. \n*'''Jurassic Spark''' - ([[Revenge of the King]]) This mods grants a continuously increasing counter that provides buffs at 25, 50, and 75. Each stack of the counter is removed for every 500 damage taken by this bot. At 99 stacks this Bot becomes Enraged. \n**25 Stacks: Melee Fury\n**50 Stacks: Projectile Speed and Damage\n**75 Stacks: Special 3 is Unlocked\n**99 Stacks: Run and duck for cover, because your Opponent is Enraged. They’ll have all the above buffs, plus Power Gain, and they’ll become Unstoppable! You also will not be able to remove any stacks of the counter at this time! So word to the wise… Never let your opponent get to 99!\n*'''Terminus Virus''' - This Bot has been infected by the Terminus Virus! ([[Evil Tread: From Rust 'Til Dawn]])\n** '''Hunger''' - This Bot slowly loses health, but gains health whenever it does damage.\n** '''Revive''' - Bot has a chance to revive, purify all debuffs and heal every time it is defeated. (Reduced chance to revive with less health each time it is defeated.)\n** '''Critical Weakness''' - Bot suffers -45~50~55~65% Armor Break from Critical Hits, but gains 20~30~40~50% Armor Up against non-Critical hits.\n** '''Burn It''' -  High chance to revive, unless it is on fire.\n* '''Metal Monster''' - This Bot features monstrous qualities. ([[Evil Tread: Monster Hunt]])\n** '''Ghosted''' - Bot has phases of intangibility where all regular attacks will miss. (Evade buff)\n** '''Ly-car-thropy''' - Bot heavily favors alternate mode and can only be killed by Critical Ranged attacks.\n** '''Children of the Night''' - Melee attacks by this Bot apply a Bleed that drains Health back to the Bot.\n\n=== Alliance Mission ===\nEffects that are encountered with linked and unlinked Bosses in [[Alliance Mission|Alliance Missions]].\n* '''Lesser Link Shield''' - Shielded by a powerful Linked Node, capping damage from each attack by 10% of their max Health, repairing 10% of their max health per second, and granting immunity to all Debuffs. Wait for an ally to remove the link.\n* '''Greater Link Shield''' - Shielded by a powerful Linked Node, capping damage from each attack by 2% of their max Health, repairing 2% of their max health per second, and granting immunity to all Debuffs. Wait for an ally to remove the link.\n* '''Evolving Power: Phase 1''' - Between 100% - 75% Health, Protection from attacks until opponent maintains a Combo of 15 or higher.\n* '''Evolving Power: Phase 2''' - Between 75% - 50% Health, every 7.5 seconds, cycle between a Melee, Ranged, and Special Attack Buff. Each Attack Buff adds 300%.\n* '''Evolving Power: Phase 3''' - Between 50% - 25% Health, every 10 seconds, cycle through protection from Melee and Ranged Attacks.\n* '''Evolving Power: Phase 4''' - Between 25% - 0% Health, activate a Repair Buff when not struck by a melee attack for 6 seconds. healing 1% of max Health per second. Repair stops at 25% max Health.\n* '''Evolving Power: Phase 5''' - When dropped to 0% Heath, become Enraged for 6 seconds. While Enraged, Attack is increased by 300%, become Unstoppable, and have protection from Attacks.\n\n==Gallery==\n\n<gallery>\nUtility Mod Icon.jpg|Old icon\nUtility Mod.png|Old portrait\nUtility Mod Icon New.jpg|Icon v2.0\nFile:portrait_gen_off_large.png|Offense Mod|Unreleased Offense Mod, likely meant to categorize the type of mod an AI bot has, but dropped in favor of one mod representing all and any mods that don't fit in a trichotomy.\nFile:portrait_gen_off_small.jpg\nFile:portrait_gen_def_large.png|Defense Mod|Unreleased Defense Mod, likely meant to categorize the type of mod an AI bot has, but dropped in favor of one mod representing all and any mods that don't fit in a trichotomy.\nFile:portrait_gen_def_small.jpg\n</gallery>\n\n[[Category:Modules]]"
+   },
+   "latest": {
+    "revid": 11129,
+    "timestamp": "2024-10-04T05:50:15Z",
+    "parsed": {
+     "source": {
+      "wiki": "fandom",
+      "page": "Utility Module",
+      "url": "https://transformers-forged-to-fight.fandom.com/wiki/Utility_Module",
+      "revid": 11129,
+      "timestamp": "2024-10-04T05:50:15Z",
+      "tag": "[WIKI]"
+     },
+     "infobox": {},
+     "lead": "Utility Mods are only used by opponents in Missions. They have no specific abilities, as they give any kind of Buffs depending on the Mission.\n\nIt is possible to see the Mod's effects on your opponent if you select a Bot's portrait (not the actual node) in the Mission. On the \"Node Info\" screen, you can select \"Local Mod\" to see the Mod's abilities. You can also tap on the Mod's picture in the \"Bot Selection\" screen before you start a fight if you want to find out what kind of effects it provides to your opponent.\n\nIt is highly recommended that you view the Mod's effects before you start a hard battle or even go on one of the harder paths when exploring Missions, especially in Challenge Missions like The Last Knight Challenge and Expert Commander and Prime difficulties in Spotlight Missions, as these Mods give a formidable effect to opponents that must be strategically overcome.\n\nMods can be generally categorized as such:\n* Special 3 Unlocked - Most mission bots have their Special 3 locked by default unless they have this mod. Reserved for bosses and all Master-level bots.\n* Boost - Increase health, attack, both, or add other effects. As these are inherent they cannot be nullified.\n* Permanent Buff - Can be nullified and stolen(when using an awakened Megatron) but they will eventually return.\n* Timed Buff - Much stronger than permanent buffs, but they're on a cycle for 7.5 seconds of activity, then a 15 second recharge but this speeds up if you’re using an awakened Megatron.\n* Conditional - Some mods require very specific debuffs or sequences to temporarily nullify them.\n* Player Effect- Some mods affect the Commander's bots instead of the opponent.",
+     "sections": [
+      {
+       "level": 2,
+       "heading": "List of Effects",
+       "text": "There are at least four tiers for each effect, maximum 6. \"Opponent\" refers to your Bots.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Basic Boosts",
+       "text": "* Attack Boost - +25~50~100~200~300~500% Attack (?)\n*Health Boost - +25~50~100~200~300~500% Health\n* Prime Boost - 25~50~100~150% Attack and Health\n* Special 3 Unlocked - Special Attack 3 unlocked. Watch out!",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Armor/Resistance Control",
+       "text": "* Armor - Gain an Armor Buff, reducing damage from attacks by 15~25~50~75~90%.\n* Armor Timed - gains an Armor Buff, reducing attack from opponents by 25~50~75~90~% for 7.5 seconds. Recharges in 15 seconds.\n* Armor Pierce - Attack bypass 15~25~50~75~90% of the opponent's current Armor.\n* Armor Pierce Timed - Attacks bypass 25~50~75~90% of the opponent's current Armor for 7.5 seconds. Recharges in 15 seconds.\n* Adaptive - Cycles between +39~46~55~65~90% Physical or Energy Resistance every 7.5 seconds.\n* Cycle Resist - Cycles through Melee, Ranged, and Special Damage resistances at 50~75~100~125~150~200% damage resistance.\n* Gain Armor - When stuck, there's a 6% to gain a 15~25~40~55~60~85% Armor Buff. Additionally, this Buff automatically activates when a Special Attack is activated by the opponent.\n* Energon Shield - When Energon shield is active, absorb (tier 1)~8~18~30% of opponent's Attack as Health. When Energon Shield is down, all resistances are reduced by -(tier 1)~35~50~65%.\n* Physical Resistance - Resist 15~25~50~75~90% Physical Damage.\n* Energy Resistance - Resist 15~25~50~75~90% Energy Damage.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Attack Control",
+       "text": "* Buff Duration - Increase the duration of buffs by 25~50~75~100~150~200%.\n* Debuff Duration - Increase the duration of debuffs by 25~50~75~100~150~200%.\n* Enhanced Bleed - Bleeds inflicted by this Bot last 25~50~75~100~125% longer.\n* Randomizer - At the start of the fight and every 18 seconds, activates a random, Attack, Armor, or Resistance Buff. Each buff increases respective attributes by 10-15~20~30%. Buffs stack up to 10 max.\n* Relentless Assault - Each time an opponent Sidesteps or Dashes an attack this bots gains a 3~6~10~13% Attack Buff. When this bot reaches 10 Attack Buffs it becomes Unstoppable for 4 seconds and consumes all Attack Buffs when the Unstoppable ability ends. (Originally, it was every time the opponent dodges.)\n* Replicate - When the opponent receives a buff, activate a Buff with a matching effect that lasts 4 seconds. Once activated, Replicate can only trigger again after 5 seconds.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Blocking",
+       "text": "* Absorb Attacks - Blocking 5 attacks provides an Unblockable Special Buff, making Special Attacks Unblockable and increasing Special Damage for 10 seconds.\n* Block Proficiency - Reduces incoming damage from enemy attacks that are successfully blocked by 7.5~~25~37.5%%\n* Heavy Block - Block is no longer broken by opponent's Heavy Attack. Gain 0.25~0.5~1~1.5 bars of Power when Blocking an opponent's Heavy Attack.\n* Reflect Ranged - Reflects incoming ranged attacks while Blocking, dealing 85~100~120~140~170% of their original damage.\n* Shock Block - Blocked Melee Attacks cause opponents to take 10~25~50~100~150% of opponent's Attack as Shock Damage over 4 seconds.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Critical Control",
+       "text": "* Critical Damage - Increase Critical Damage by 25~50~100~150~200%\n* Critical Rate - Increases Critical Rate by +15~25~50~75~90%\n* Critical Damage Timed - Increase Critical Damage by +50~100~200~400~600% for 7.5 seconds. Recharges in 15 seconds.\n* Critical Rate Timed - Increase Critical Rate by +50~(tier 3-4)~90% for 7.5 seconds. Recharges in 15 seconds.\n* Target Vitals - Landing 5 Critical Hits grants the next Critical Hit an additional ~110~120~140% of Attack as Bonus Damage and Stuns the opponent for 1.5 seconds.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Evasion",
+       "text": "* Evade Melee - 5~10~15~20% chance to Evade Melee Attacks.\n* Evade Ranged - 5~10~15~20% chance to Evade Ranged Attacks.\n* Evade Melee Timed - 10~15~20~25~30% chance to evade Melee attacks for 7.5 seconds. Recharges in 15 seconds.\n* Evade Ranged Timed - 10~15~20~25~30% chance to evade Ranged attacks for 7.5 seconds. Recharges in 15 seconds.\n* Evade Power Gain - When Evading a Melee Attack, gain 26~31~36~43~51~60% of a Power Bar.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Heavy Attacks",
+       "text": "* Heavy Attack Stun - Heavy Attacks Stun the Opponent for 2~2.5~3~3.5~5 seconds.\n* Stagger - Heavy Attacks inflict the opponent with a Stun for 1.5~2~2.5~3~3.5~4 seconds, Power Lock for 4~5~7~9~11~13 seconds, or a 25~35~50~65~85~100% Armor Break for 7 seconds. (Also makes the bot much more likely to use Heavy Attacks)\n* Battle Tactics - Increases Ranged Heavy Damage by 300% and reduces Ranged Heavy Speed by 35%. More likely to use Heavy Attacks. (Introduced with Wheeljack on Reforged: Code of a Hero - Chapter 2 Act 2 on Hard onwards)",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Melee Damage",
+       "text": "* Melee Damage - Increases Melee damage by 25~50~100~150~200%.\n* Melee Timed - Increase Melee Damage by 50~100~200~400~600% for 7.5 seconds. Recharges in 15 seconds.\n* Melee Bleed - On Melee attacks, inflict a stack of Bleed dealing 5~25~50~100% Attack as Bleed damage over 7.5 seconds per stack of Bleed. (Currently, the leveling is mislabeled at 5~100~25~50%)\n* Melee Power Burn - Basic and Heavy Melee Attacks drain a small amount of Power on hit.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Power Control",
+       "text": "* Power Flow - Increases the Power generated from all attacks by 25~50~100~150%.\n* Power Flow Timed - Increases the Power generated from all attacks by +50~100~200~400~600% for 5 seconds. Recharges in 15 seconds.\n* Focus Power Gain - Activates a Power Gain Buff when not struck by a melee attack for 6 seconds, generating 3~3.6~4.2% of Max Power per second.\n* Defensive Power Gain - While Blocking, generates 7.5~15~22.5~30% (tier 1)~7.5~11.2~15~18.8% of a Power Bar per second.\n* Harness Power - Each bar of Power adds an additional effect to successful melee attacks. 1 bar adds Melee Repair, 2 bars add Power Drain, and 3 bars adds Shock Damage.\n* Power Charge - When hit this bot generates a Power Charge. When this bot reaches 8 Power Charges, the next successful hit (on this bot) within 5 seconds consumes all charges, generating a large amount of Power.\n* Power Start - Starts with 1~2 Bar(s) of Power.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Ranged Attacks",
+       "text": "*Ranged Damage - Increases Ranged Damage by +25~50~100~150~200~300% and Ranged Speed.\n*Ranged Timed - Increases Ranged damage and speed by +50~100~200~400~600~1000% for 7.5 seconds. Recharges in 15 seconds.\n*Ranged Shock - On ranged attacks, inflict a stack of Shock dealing 10~25~50~100~200% Attack as Shock damage over 7.5 seconds per stack of Shock.\n* Aim Enhancer - Basic Ranged Attacks are Unblockable.\n* Improved Aim Enhancer - Basic Attacks are Unblockable.\n*Hacked Aim Enhancer - Basic Ranged Attacks are Unblockable and ranged speed randomizes throughout the fight.\n*Ranged Power Burn - Basic and Ranged Heavy Attacks drain a small amount of Power on hit.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Repair",
+       "text": "* Absorb Projectile - When struck by Basic Ranged Attacks, Repair 15~25~50~75~100% of opponent's Attack.\n* Repair Timed - Repair ~6~8~10% Health over 7.5 seconds. Recharges in 15 seconds.\n* Focus Repair - Activates a repair buff when not struck by a melee attack for 6 seconds, healing 0.3~0.5~0.8~1% of max Health per second.\n*Last-Ditch Repair - Once per fight, activates a Repair Buff when below 20% Health, healing 10~15~30 25~40% of max Health over 6 seconds.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Special Attacks",
+       "text": "* Special Damage - Increases Special Damage by 25~50~100~150~200~300%.\n* Enhanced Special 1 - Special 1 deals +20% more damage and cannot be Blocked.\n* Enhanced Special 2 - Special 2 deals +20% more damage and cannot be Blocked.\n* Special Attack Stun - On the last hit of Special Attacks, Stun the opponent for 2~2.5~3~3.5~4~4.5 seconds.\n* Special Damage Timed - Increases Special Damage by +50~100~200~400~600% for 7.5 seconds. Recharges in 15 seconds.\n* Strike Back - When hit by a Special Attack, this enemy gains 1 bar of Power.\n* All or Nothing - Stores Power until its Special Attack 3 is ready.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Nullifiable Buffs",
+       "text": "The bot starts with exceptionally powerful effects which can be temporarily nullified with certain skills. \n* Focused Frenzy: Focus Frenzy grants Unstoppable for 4~5~8~9 seconds. (1~4) Stacks of Focus Frenzy can be removed by taking hits. If Unstoppable is removed before expiry, the Bot is Stunned for 3 seconds.\n* Rampage - Start with a Resistance Buff and all Attack Buffs. Each attack Buff adds 25~50~100~150% and is removed when hit by the corresponding attack. When all Attack Buffs are removed, the Resistance Buff is nullified. Buffs return in 20 seconds. (In other words, the opponent is immune to damage until hit by a melee, ranged, and special attack.)\n* Pyrophobia - Start with an Attack Buff that increases Attack damage by 50~100~150~200% and can be removed with Burn Debuffs. Attack Buff will return after 10 seconds.\n* Hemophobia - Start with a Power Gain Buff that generates 1~1.5~1.8~2.1% Max Power every second which can be removed with Bleed debuffs. Power Gain Buff will return after 10 seconds.\n* Electrophobia - Start with a 40~60~75~85% All Resist Buff which can be removed with Shock debuffs. Resist Buff will return after 10 seconds.\n* Unstable Energon - Inflicts 2.5~5~15~20% of Attack as Shock Damage for 10 seconds. Can be removed by (successful) Heavy Attacks. This effect returns 10~9~8~7 seconds after it is removed or expires.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Player Effect",
+       "text": "These affect the Commander's Bot rather than the enemy Bot.\n* Attack Barrier - Immune to Basic Attack Damage. Opponent's power Rate is increased by t1~t2~100~200%. Opponent's Special 3 Attack is disabled.\n* Finesse - Opponent starts with Power Rate reduced to 0. Opponents generate t1~t2~15~t4% of Power Bar when sidestepping or dodging an attack. Opponents generate 60% of a Power Bar when Evading an Attack.\n* Energon Storm - Inflicts Shock Damage based on opponent's power bar. The higher the power level, the more Shock damage inflicted. Opponent's Special 2 Attacks repair 10% of their max Health and Special 3 Attacks repair 25% of their max Health.\n* Fatigue - Each Dash Back or Sidestep a generates stack of Fatigue that lasts a short duration. Accumulating 5 stacks causes the next Dash Back or Sidestep to inflict Stun for 1.5~2~2.5~3 seconds.\n* Power Wipe - Every 30~25~20 seconds, the opponent's Power Meter will be fully depleted.\n* Life Transfer - This Bot repairs the opponent for 10~20~30% of damage dealt when hit, but passively drains 0.2~0.5~0.8% of the opponent's health.\n* Power Conductor - This Bot grants ~60~80% more Power when hit, but constantly drains opponent's Power.\n* Bleed Out - Causes a permanent Bleed on the opponent which deals 0.1~0.2~0.3~0.5% of Max Health.\n* Burn Down - Causes a permanent Burn on the opponent which deals 0.1~0.2~0.3~0.5% of Max Health.\n*Inflict Bleed - When successfully landing the first Melee attack, inflicts 100% of the opponent's current health as Bleed damage over 180~150~120~90 seconds.\n*Inflict Shock - When successfully landing the first Ranged attack, inflicts 100% of the opponent's current health as Shock damage over 180~150~120~90 seconds.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Other",
+       "text": "*Combo Shield - The Combo Meter is not reset after being struck by an attack. \n*Bleed Immunity - Immune to Bleed. \n*Debuff Immunity - Immune to all debuffs. \n*Trigger Rate - Increases the Trigger Rate of abilities by +15~25~50~75~90% \n* Trigger Rate Timed - Increase the Trigger Rate of abilities by +15~25~50~75% for 7.5 seconds. Recharges in 15 seconds.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Story",
+       "text": "Effects that have appeared exclusively in Story Mode and Challenge Missions.\n* Special 3 Power (This is a 1-Star Module) Passive: Passive Power Gain over time until Special 3 is activated. Used by Grimlock in Act 1-Ch1-M3.\n* T-Cog Disabler - Prevents opponent from changing into alt-modes during battle.\n* Mega-Rager - (Act 2-Ch3-M4) - As the fight goes on, Grimlock becomes increasingly agitated. When struck, there's a 20% chance to gain an Attack Buff, Armor Break Debuff, and becomes more aggressive.\n* Shark Frenzy: Used by Sharkticons in Act 3 Chapter 3.\n**Shark Frenzy: Attack! - At 50% health or lower, all successful melee attacks grant 2% bonus Attack stacking indefinitely.\n** Shark Frenzy: Heavy Boost - At 50% health or lower, taking 3 hits increases damage and speed on the next Heavy Attack.\n** Shark Frenzy: Power Rate - At 50% health or lower, Power gained from attacking or being attacked is doubled.\n** Shark Frenzy: Rend - At 50% health or lower, all successful melee attacks cause the opponent to Bleed for 0.5% Attack stacking indefinitely.\n** Shark Frenzy: Shock Block - At 50% health or lower, blocking Melee attacks causes opponents to take 50% of attack as Shock damage over 4 seconds.\n** Shark Frenzy: Unstoppable - At 50% health or lower, taking 7 hits grants Unstoppable.\n* Damaged - This Bot has already taken extensive damage and is in a weakened state. (instant health loss to 5% at level 6) (Act 4-Ch2-M6)\n* Temporal Anomalizer- Reduces opponent's ranged attack speed. Only appeared in A Question of Loyalty Missions.\n* The Equalizer - When the defender takes a Critical Hit, it will be granted a repair, an Armor Up or be inflicted with Shock Damage. These effects can stack. (First appeared in What Could Go Wrong?)\n* The Re-Equalizer - When the defender takes a Critical Hit, it will be granted a Fury Buff, an Increased Critical Rate Buff or be inflicted with Burn Damage. These effects can stack. \n* Megatronic Augmenter - (Rulers of Kaon) Megatron ordered Mixmaster to create an Energon infusing mod which enhances bots linked to him. This unlocks their Special 3 Attack and boosts Health and Attack. As evidenced by the name, Megatron retained naming rights. \n*Jurassic Spark - (Revenge of the King) This mods grants a continuously increasing counter that provides buffs at 25, 50, and 75. Each stack of the counter is removed for every 500 damage taken by this bot. At 99 stacks this Bot becomes Enraged. \n**25 Stacks: Melee Fury\n**50 Stacks: Projectile Speed and Damage\n**75 Stacks: Special 3 is Unlocked\n**99 Stacks: Run and duck for cover, because your Opponent is Enraged. They’ll have all the above buffs, plus Power Gain, and they’ll become Unstoppable! You also will not be able to remove any stacks of the counter at this time! So word to the wise… Never let your opponent get to 99!\n*Terminus Virus - This Bot has been infected by the Terminus Virus! (Evil Tread: From Rust 'Til Dawn)\n** Hunger - This Bot slowly loses health, but gains health whenever it does damage.\n** Revive - Bot has a chance to revive, purify all debuffs and heal every time it is defeated. (Reduced chance to revive with less health each time it is defeated.)\n** Critical Weakness - Bot suffers -45~50~55~65% Armor Break from Critical Hits, but gains 20~30~40~50% Armor Up against non-Critical hits.\n** Burn It - High chance to revive, unless it is on fire.\n* Metal Monster - This Bot features monstrous qualities. (Evil Tread: Monster Hunt)\n** Ghosted - Bot has phases of intangibility where all regular attacks will miss. (Evade buff)\n** Ly-car-thropy - Bot heavily favors alternate mode and can only be killed by Critical Ranged attacks.\n** Children of the Night - Melee attacks by this Bot apply a Bleed that drains Health back to the Bot.",
+       "tables": []
+      },
+      {
+       "level": 3,
+       "heading": "Alliance Mission",
+       "text": "Effects that are encountered with linked and unlinked Bosses in Alliance Missions.\n* Lesser Link Shield - Shielded by a powerful Linked Node, capping damage from each attack by 10% of their max Health, repairing 10% of their max health per second, and granting immunity to all Debuffs. Wait for an ally to remove the link.\n* Greater Link Shield - Shielded by a powerful Linked Node, capping damage from each attack by 2% of their max Health, repairing 2% of their max health per second, and granting immunity to all Debuffs. Wait for an ally to remove the link.\n* Evolving Power: Phase 1 - Between 100% - 75% Health, Protection from attacks until opponent maintains a Combo of 15 or higher.\n* Evolving Power: Phase 2 - Between 75% - 50% Health, every 7.5 seconds, cycle between a Melee, Ranged, and Special Attack Buff. Each Attack Buff adds 300%.\n* Evolving Power: Phase 3 - Between 50% - 25% Health, every 10 seconds, cycle through protection from Melee and Ranged Attacks.\n* Evolving Power: Phase 4 - Between 25% - 0% Health, activate a Repair Buff when not struck by a melee attack for 6 seconds. healing 1% of max Health per second. Repair stops at 25% max Health.\n* Evolving Power: Phase 5 - When dropped to 0% Heath, become Enraged for 6 seconds. While Enraged, Attack is increased by 300%, become Unstoppable, and have protection from Attacks.",
+       "tables": []
+      },
+      {
+       "level": 2,
+       "heading": "Gallery",
+       "text": "Utility Mod Icon.jpg|Old icon\nUtility Mod.png|Old portrait\nUtility Mod Icon New.jpg|Icon v2.0\nFile:portrait_gen_off_large.png|Offense Mod|Unreleased Offense Mod, likely meant to categorize the type of mod an AI bot has, but dropped in favor of one mod representing all and any mods that don't fit in a trichotomy.\nFile:portrait_gen_off_small.jpg\nFile:portrait_gen_def_large.png|Defense Mod|Unreleased Defense Mod, likely meant to categorize the type of mod an AI bot has, but dropped in favor of one mod representing all and any mods that don't fit in a trichotomy.\nFile:portrait_gen_def_small.jpg\n\nCategory:Modules",
+       "tables": []
+      }
+     ]
+    }
+   },
+   "created_after_cutoff": false,
+   "changed_since_cutoff": true
+  }
+ }
+}

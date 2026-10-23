@@ -1,0 +1,11 @@
+{
+  "source": "TuningManager / BCGManagerBase static defaults; only values explicitly present in client data are listed",
+  "tag": "[CLIENT]",
+  "values": {
+    "heroRatingAttackWeight": 1.0,
+    "heroRatingMaxHPWeight": 0.2,
+    "sigLvlMax": 100,
+    "ratingPrecision": 0
+  },
+  "not_verified": "All other TuningManager keys are intentionally absent; do not treat this file as a full tuning table."
+}
