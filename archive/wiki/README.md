@@ -33,4 +33,4 @@ to fill gaps; hidden base stats (crit, armor, block) may be absent from the wiki
 - 694/2752 image binaries saved (priority: maps/missions/UI/tables).
 - TFWiki: 8 FTF pages with full history+HTML.
 - Backup: `archive/TFTF_wiki_archive_2026-10-23.zip`,
-  SHA256 `040255c1d5714b4510493e87de4e323674864f5d54436c776d190c12285d4e18`.
+  SHA256 `14b714b8e7e1409a2e74c32847ad78c7ee1e4a72cde3debfe97c2892da029c17`.

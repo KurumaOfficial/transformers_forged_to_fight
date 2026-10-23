@@ -182,7 +182,7 @@ required `hp`/`pi`/`sig_lvl`/`mods`), then press FIGHT and capture
 
 ## 8. Wiki backup zip (2026-10-23)
 
-- `archive/TFTF_wiki_archive_2026-10-23.zip` (32,513,587 bytes)
-- SHA256 `040255c1d5714b4510493e87de4e323674864f5d54436c776d190c12285d4e18`
+- `archive/TFTF_wiki_archive_2026-10-23.zip` (32,513,591 bytes)
+- SHA256 `14b714b8e7e1409a2e74c32847ad78c7ee1e4a72cde3debfe97c2892da029c17`
 - Contains `archive/wiki/` (raw + HTML + File descriptions + 694 images +
   state/manifest/meta). Parsed `data/wiki/` is outside the zip.
