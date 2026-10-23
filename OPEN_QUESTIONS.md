@@ -48,3 +48,10 @@ OneDrive отдаёт `isAuthenticated:false`; без входа нет `downloa
 
 URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — условия
 сайта. Личное использование.
+
+- A2: `QuestUserInfo.team` JSON принят как dict на верхнем уровне,
+  но memory `localPlayer.team` count 0; точная вложенность (users/localPlayer)
+  не подтверждена. [RUN]
+- A5: `/matches/activate-match` не вызван; тела и `FighterInitData`
+  остаются `[ASSUMED]`.
+- A3: harness variants не запускался пакетом 10–20; smoke/golden готовы.

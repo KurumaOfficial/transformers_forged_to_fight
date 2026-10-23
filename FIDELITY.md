@@ -113,3 +113,8 @@
 `activeTeams`-словарь + `heroes`-словарь с `blueprint/rank/level/hp/max_hp`;
 надпись «ALL KNOCKED OUT» исчезла, но команда всё ещё пустая,
 «+»/FIGHT даёт NRE, `/matches/activate-match` не вызван.
+
+**2026-10-23, A1/A2/S1/S2:** `GetCurrentTeam` ищет active team
+по `ActiveQuest.mode`; mode-клоны добавлены, prefight пуст. `QuestUserInfo.team`
+внутри List, JSON — dict; верхнеуровневый team переведён в dict. Smoke PASS,
+golden regression 9/9 PASS; `/matches` не вызван.

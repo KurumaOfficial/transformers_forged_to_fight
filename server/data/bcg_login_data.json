@@ -729,9 +729,39 @@
             "special_attacks": 3,
             "pvpb": {},
             "synergyBonuses": [],
-            "user_owned": true
+            "user_owned": true,
+            "blueprint": "bumblebee_cin_dotm_2"
           }
         }
+      },
+      {
+        "aid": "story",
+        "type": "story",
+        "modes": [
+          "Story"
+        ],
+        "expire": 0,
+        "heroes": {
+          "bumblebee_cin_dotm_2": {
+            "bid": "bumblebee_cin_dotm_2",
+            "rank": 1,
+            "level": 1,
+            "sig_lvl": 0,
+            "max_hp": 1000.0,
+            "attack": 120,
+            "rating": 100,
+            "rating_hp": 50,
+            "rating_attack": 50,
+            "rating_hp_base": 50,
+            "rating_attack_base": 50,
+            "special_attacks": 3,
+            "pvpb": {},
+            "synergyBonuses": [],
+            "user_owned": true,
+            "blueprint": "bumblebee_cin_dotm_2"
+          }
+        },
+        "activityID": "story"
       }
     ],
     "blueprintsMax": 50,

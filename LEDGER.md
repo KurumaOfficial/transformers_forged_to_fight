@@ -284,3 +284,26 @@ BCGUserActiveTeam>`, не список. `BCGUserActiveTeam..ctor` (`0xA610F0`)
 `PrefightScreenPresentation.GetNewScale(HeroData robot)`;
 `/matches/activate-match` не вызван. [RUN] `work/teamfix4.png`,
 `work/teamfix6.png`.
+
+
+### 12.1 P0 A1/A2 + S1/S2 (2026-10-23, [RUN])
+
+- `PrefightScreenData.GetCurrentTeam`: `_activeQuest+0x50` ->
+  `ActiveQuest.mode+0x18` -> `BCGHelper.GetActiveTeam` (`0xC1FFDC`);
+  lookup идёт по `BCGManager.UserData.activeTeams` с ключом **mode**
+  (`story`). `qid`/`uniqueId` — не тот ключ.
+- Добавлены mode-клоны `aid:"story"`/`"Story"` в login/quest-begin/
+  movedir. Префайт всё равно пуст, NRE `GetNewScale`, `/matches` не
+  вызван. [RUN] `work/mode_team.png`, `mode_team2.png`.
+- `QuestUserInfo.team` — внутренний `List<QuestUserHero>` (+0x68);
+  JSON-вход разбирается `Dot.Object` -> `QuestUserHero..ctor`
+  (`0x103CC70`). Верхнеуровневый `team` quest-begin переведён в
+  словарь `bid -> {hp,pi,sig_lvl,stat_mods,sig_mods}`; memory count
+  всё ещё 0.
+- `work/smoke_test.py`: холодный запуск -> PLAY NOW -> FIGHT -> STORY ->
+  квест -> START -> карта -> боевой тайл; PASS, 7 скриншотов,
+  `tests/smoke/latest.json`. `activate_match=false`, NRE есть.
+- `work/golden_regression.py --record` + check: 9 эталонных запросов
+  (`getLoginData`, account, tuning, quest-list/active/progression/
+  detail/begin/movedir), PASS. `tests/golden/`.
+- [RUN] `npm` не использовался; Frida/gadget/патчи не использовались.

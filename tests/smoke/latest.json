@@ -1,0 +1,103 @@
+{
+  "started": "2026-10-23T19:55:17Z",
+  "finished": "2026-10-23T19:57:24Z",
+  "steps": [
+    {
+      "name": "01_title",
+      "note": "",
+      "screenshot": "C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\01_title.png",
+      "bytes": 2695152
+    },
+    {
+      "name": "02_home",
+      "note": "",
+      "screenshot": "C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\02_home.png",
+      "bytes": 346125
+    },
+    {
+      "name": "03_fight",
+      "note": "",
+      "screenshot": "C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\03_fight.png",
+      "bytes": 794837
+    },
+    {
+      "name": "04_story",
+      "note": "",
+      "screenshot": "C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\04_story.png",
+      "bytes": 272811
+    },
+    {
+      "name": "05_quest",
+      "note": "",
+      "screenshot": "C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\05_quest.png",
+      "bytes": 838570
+    },
+    {
+      "name": "06_map",
+      "note": "",
+      "screenshot": "C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\06_map.png",
+      "bytes": 2136323
+    },
+    {
+      "name": "07_battle_tile",
+      "note": "",
+      "screenshot": "C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\07_battle_tile.png",
+      "bytes": 925710
+    }
+  ],
+  "paths": [
+    "/events/refresh",
+    "/autorefresh/prizes/refresh",
+    "/tutorial/get-login-data",
+    "/autorefresh/message/refresh",
+    "/gamestats/get-login-data",
+    "/ds/10001/",
+    "/offers/getLoginData",
+    "/autorefresh/kabamsignup/refresh",
+    "/autorefresh/missionsconfig/refresh",
+    "/autorefresh/ads/refresh",
+    "/push/token",
+    "/inventory",
+    "/autorefresh/quests/refresh",
+    "/quests/quest-list",
+    "/quests/quest-active",
+    "/autorefresh/ave/refresh",
+    "/autorefresh/raid/refresh",
+    "/base/active",
+    "/pvp/get-login-data",
+    "/autorefresh/ai/refresh",
+    "/gamestats/check-login-achievements",
+    "/quests/quest-progression",
+    "/telemetry",
+    "/chat/data",
+    "/userprofile/",
+    "/userprofile/",
+    "/autorefresh/grouprefresh",
+    "/userprofile/",
+    "/ds/10001",
+    "/quests/quest-detail/story_act1_ch1_m1",
+    "/quests/quest-detail/story_act1_ch1_m1",
+    "/autorefresh/grouprefresh",
+    "/bcg/setSavedTeam",
+    "/quests/quest-begin/story_act1_ch1_m1",
+    "/bcg/getBaseHeroData",
+    "/chat/data",
+    "/quests/quest-detail/story_act1_ch1_m1",
+    "/quests/quest-movedir/story_act1_ch1_m1/1/0",
+    "/autorefresh/grouprefresh",
+    "/telemetry"
+  ],
+  "checks": {
+    "login": true,
+    "quest_begin": true,
+    "movedir": true,
+    "activate_match": false,
+    "bugs": false
+  },
+  "prefight_detected": false,
+  "nre_get_new_scale": false,
+  "memory_team_count": 0,
+  "memory_probe": "QUEST 'story_act1_ch1_m1'\nprogression 0x77987eaf3300\ncfid None\ncbid 'battle1'\ncboss 'enemy1'\nenemyHp 1000.0\nlocalPlayer 0x77986c1233c0 Player\nusers 0x77986c0b6d20 Dictionary`2\nLOCAL PLAYER 0x77986c1233c0 Player\n  uid None name 'Commander' strongest 'bumblebee_cin_dotm'\n  team 0x77986c126720\nusers 0x77986c0b6d20 Dictionary`2\n count 1 entries 0x77986d00aa80\n   0 key None value 0x77986c1233c0 Player\n     uid None\n     name 'Commander'\n     tag 'LOCAL'\n     strongest 'bumblebee_cin_dotm'\n     battleId 'battle1'\n     battleState 0\n     team 0x77986c126720\nlocal team 0x77986c126720 List`1\n count 0 entries 0x100000001\n",
+  "status": "PASS",
+  "note": "PASS means the scripted flow reached the battle tile and produced a screenshot; combat may still be blocked."
+}

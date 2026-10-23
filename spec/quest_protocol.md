@@ -703,3 +703,38 @@ Dictionary<string, BCGUserActiveTeam>`. То есть JSON `activeTeams` — **�
 `BCGHeroDetails`/`TeamData` не получает валидный элемент либо
 `PrefightScreenData` использует другой id/источник. [RUN]
 `work/teamfix8.png`.
+
+
+## 2j. A1/A2: откуда префайт берёт команду (2026-10-23)
+
+`PrefightScreenData.GetCurrentTeam` (`0xE3D188`):
+
+1. `_activeQuest = [PrefightScreenData+0x50]` (`ActiveQuest`).
+2. `x0 = [ActiveQuest+0x18]` — это **`ActiveQuest.mode`**, не `qid` и не
+   `uniqueId`; строка ошибки «Could not get active team for quest id »
+   вводит в заблуждение.
+3. `BCGHelper.GetActiveTeam` (`0xC1FFDC`) берёт
+   `BCGManager.Instance.UserData.activeTeams` (`+0x30` -> `+0x30`),
+   делает `TryGetValue(mode)`; при попадании создаёт
+   `BCGUserActiveTeam` и `TeamData`.
+
+Поэтому активная команда должна существовать под ключом/`aid` = `mode`
+(`story`), а не только под `qid` (`story_act1_ch1_m1`) или `uniqueId`
+(`active_quest_1001`). В `server/data/bcg_login_data.json` добавлен
+клон с `aid:"story"`; в movedir/quest-begin также отправляются клоны.
+Это не сделало префайт непустым: `TeamData`/`TeamHeroes` всё ещё не
+даёт героя. [RUN] `work/mode_team.png`, `work/mode_team2.png`.
+
+`QuestUserInfo` (`0x103D5D8`): поле `team` — `List<QuestUserHero>`
+(`+0x68`), но JSON-источник разбирается через `Dot.Object` и
+`QuestUserHero..ctor` (`0x103CC70`), то есть на входе ожидается
+**словарь**. `currentBattleId` читается как строка (`+0x38`),
+`matchResult` — `+0x58`, `currentBattleState` — `+0x40`.
+В server/data/quest_begin_response.json `team` переведён из массива в
+словарь `bid -> {hp,pi,sig_lvl,stat_mods,sig_mods}`; в памяти
+`localPlayer.team` всё ещё count 0. [RUN]
+`work/read_prefight_state.py`.
+
+Вывод: префайт и map-marker используют разные представления команды;
+блокер prefight — не `QuestUserInfo.team`, а `BCGUserActiveTeam`/
+`TeamData.RefreshHeroData` либо id, которым `GetActiveTeam` ищет mode.

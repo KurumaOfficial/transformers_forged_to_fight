@@ -7,9 +7,15 @@
   "isFinished": false,
   "startTime": 1729000000,
   "expiryTime": 1799000000,
-  "team": [
-    "bot_optimus_prime"
-  ],
+  "team": {
+    "bot_optimus_prime": {
+      "hp": 1000.0,
+      "pi": 100,
+      "sig_lvl": 0,
+      "stat_mods": [],
+      "sig_mods": []
+    }
+  },
   "currentPosition": {
     "x": 0,
     "y": 0

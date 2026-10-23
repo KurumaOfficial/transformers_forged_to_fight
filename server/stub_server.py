@@ -323,7 +323,10 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     if body.get(key):
                         team.append(body[key])
             if team:
-                quest["team"] = team
+                quest["team"] = {
+                    bid: {"hp": 1000.0, "pi": 100, "sig_lvl": 0, "stat_mods": [], "sig_mods": []}
+                    for bid in team
+                }
             base = load_data_json("bcg_login_data.json")
             ud = json.loads(json.dumps(base.get("userData", {})))
             hero_details = []
@@ -341,10 +344,15 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     "synergyBonuses": [], "user_owned": True
                 })
             active_teams = [t for t in (ud.get("activeTeams") or []) if isinstance(t, dict) and t.get("aid") != qid]
-            active_teams.append({
+            team_obj = {
                 "aid": qid, "type": "story", "modes": ["Story"], "expire": 0,
                 "heroes": {d["bid"]: d for d in hero_details}
-            })
+            }
+            active_teams.append(team_obj)
+            mode_team = json.loads(json.dumps(team_obj))
+            mode_team["aid"] = "story"
+            mode_team["activityID"] = "story"
+            active_teams.append(mode_team)
             quest["teamData"] = {
                 "userData": {
                     "blueprintsMax": ud.get("blueprintsMax", 50),
@@ -442,9 +450,22 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     t["activityID"] = aid
                     t["estimatedExpire"] = t.get("expire", t.get("estimatedExpire", 0))
                     fixed[aid] = t
-                    uid = load_data_json("quest_begin_response.json").get("uniqueId")
+                    qbegin = load_data_json("quest_begin_response.json")
+                    uid = qbegin.get("uniqueId")
                     if uid:
                         fixed[uid] = t
+                    mode_key = qbegin.get("mode")
+                    if mode_key:
+                        fixed[mode_key] = t
+                        fixed[str(mode_key).capitalize()] = t
+                    story_team = json.loads(json.dumps(t))
+                    story_team["aid"] = "story"
+                    story_team["activityID"] = "story"
+                    fixed["story"] = story_team
+                    story_upper = json.loads(json.dumps(story_team))
+                    story_upper["aid"] = "Story"
+                    story_upper["activityID"] = "Story"
+                    fixed["Story"] = story_upper
                 wrapper["updates"]["activeTeams"] = fixed
             elif isinstance(ats, dict):
                 for t in ats.values():

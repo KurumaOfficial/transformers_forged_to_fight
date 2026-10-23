@@ -183,3 +183,15 @@ No Frida/gadget/patches without consent.
 - SHA256 `14b714b8e7e1409a2e74c32847ad78c7ee1e4a72cde3debfe97c2892da029c17`
 - Contains `archive/wiki/` (raw + HTML + File descriptions + 694 images +
   state/manifest/meta). Parsed `data/wiki/` is outside the zip.
+
+
+## 12. Verification / P0 A3, S1, S2 (2026-10-23)
+- `work/smoke_test.py` — ADB-сценарий с 7 скриншотами; PASS.
+- `work/golden_regression.py --record` — 9 эталонных запросов;
+  `--check` PASS, `tests/golden/`.
+- `PrefightScreenData.GetCurrentTeam` использует
+  `ActiveQuest.mode`, а не qid/uniqueId; mode-клоны
+  `aid:"story"` добавлены, но prefight пуст.
+- `QuestUserInfo.team` — List<QuestUserHero>; JSON — dict;
+  верхнеуровневый team quest-begin переведён в dict.
+- `/matches/activate-match` по-прежнему не вызван.
