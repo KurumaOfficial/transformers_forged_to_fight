@@ -1,0 +1,5 @@
+{
+  "name": "v10_empty_control",
+  "description": "control: no active teams.",
+  "login_active_teams": []
+}

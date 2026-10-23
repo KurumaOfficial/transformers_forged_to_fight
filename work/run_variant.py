@@ -31,7 +31,8 @@ def apply_variant(v):
     if not isinstance(ats, list):
         ats = list(ats.values())
     if "login_active_teams" in v:
-        ats = json.loads(json.dumps(v["login_active_teams"]))
+        supplied = v["login_active_teams"]
+        ats = json.loads(json.dumps(list(supplied.values()) if isinstance(supplied, dict) else supplied))
     for t in ats:
         if not isinstance(t, dict):
             continue
@@ -44,6 +45,8 @@ def apply_variant(v):
                 if isinstance(h, dict):
                     h.update(v.get("hero_extra") or {})
             t["heroes"] = hv
+        if v.get("heroes_list") and isinstance(t.get("heroes"), dict):
+            t["heroes"] = list(t["heroes"].values())
     ud["activeTeams"] = ats
     if "quest_team" in v:
         quest["team"] = json.loads(json.dumps(v["quest_team"]))

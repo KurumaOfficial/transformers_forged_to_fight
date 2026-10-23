@@ -85,3 +85,8 @@ table; fields absent from the saved wikitext stay absent. [WIKI]
 `data/wiki/client_only.json`: 13 client packs without a parsed wiki stat page,
 7 Sharkticon variants, and 5 wiki-only pages (Chromia, Dead End, Optimus Prime,
 Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
+
+- Image index: `data/wiki/image_index.json` (694 unique files / 698 manifest
+  entries; 209 403 errors; categories maps_quests/items/ui/bots/other).
+- Ability localization: `data/wiki/ability_localization_client.json` (3315
+  D_STAT/ID_STAT entries from binary assets; language and bot mapping open).

@@ -122,3 +122,16 @@ golden regression 9/9 PASS; `/matches` не вызван.
 **2026-10-23, wiki/data:** synergy 40/44; 13 topic files with
 as_of/latest; client-only map 13+7+5; manifest 5154/5154 verified
 after 5 stale-hash corrections; C5 catalog 59 packs; C2 formula partial.
+
+## Updated fidelity table — 2026-10-23
+
+| Area | Level | Basis |
+|---|---|---|
+| Login/session, BCG catalog, quest list/begin/detail/move | good | accepted by client; map and prefight open [RUN] |
+| Prefight roster/team, FIGHT | low | team empty, GetNewScale NRE, no /matches [RUN] |
+| Match protocol | none/assumed | no activate-match capture |
+| Wiki text/history/File descriptions | high | 5154/5154 manifest verified |
+| Wiki images | medium | 694/2752; 209 host 403 |
+| Wiki bot stats/abilities | medium-high | 44 bots, synergy 40/44, some fields missing |
+| Client bot catalog | high for IDs/classes | 59 packs, 59 class/faction, 39 stars |
+| OpenAPI/tuning/localization | partial | C1/C3/C4 open |

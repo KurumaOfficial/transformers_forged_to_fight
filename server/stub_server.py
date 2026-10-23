@@ -282,10 +282,11 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
 
         if path.startswith("/autorefresh/"):
             sub_name = path.split("/")[2] if len(path.split("/")) > 2 else "data"
+            meta = load_data_json("autorefresh_metadata.json")
             self.send_sparx({
-                "check": "check_hash_12345",
-                "refresh": 3600,
-                "cache": False,
+                "check": meta.get("check", "check_hash_12345"),
+                "refresh": meta.get("refresh", 3600),
+                "cache": meta.get("cache", False),
                 sub_name: {}
             }, assumed_label=f"[STATIC: /autorefresh/{sub_name}]")
             return

@@ -368,3 +368,26 @@ Six client runs (time-boxed; not the requested 10–20): all returned
 Conclusion: changing activeTeams/heroes shape within these variants does not
 fill `TeamData`; the blocker is deeper (exact BCGHeroDetails element parsing or
 the active-team object source), not a simple alias. [RUN]
+
+- A3 variant `v07_dict_team`: status=FAIL, activate_match=False, plus_error=True, team_count=None. login activeTeams as dict keyed story.
+
+- A3 variant `v08_heroes_list`: status=PASS, activate_match=False, plus_error=True, team_count=0. active team heroes as list, not dict.
+
+- A3 variant `v09_story_qid_hero`: status=PASS, activate_match=False, plus_error=True, team_count=0. aid story, hero key bumblebee_cin_dotm_2.
+
+- A3 variant `v10_empty_control`: status=PASS, activate_match=False, plus_error=True, team_count=0. control: no active teams.
+
+### 15. A3 10 variants / C4 / W5 index / I1 (2026-10-23)
+
+- A3: six + four variants (v01–v10). v07 dict activeTeams made login fail
+  (`/auth/init` only), confirming the login parser wants a list; v08–v10
+  behaved like baseline. All non-control runs: `activate_match=false`,
+  `plus_error=true`, `team_count=0`. [RUN]
+- C4: binary scan found **3315** `D_STAT`/`ID_STAT` key/value entries;
+  `data/wiki/ability_localization_client.json` regenerated. Values can be
+  German/Italian/English depending on the asset; mapping to bots is open.
+- W5: `data/wiki/image_index.json`: 694 unique files / 698 manifest entries;
+  209 errors all 403; categories maps_quests 143, items 154, ui 54, bots 24,
+  other 323 (present) and corresponding error categories.
+- I1: `server/data/autorefresh_metadata.json` extracted and used by routing;
+  behavior verified by golden regression. Full routing/data split still open.

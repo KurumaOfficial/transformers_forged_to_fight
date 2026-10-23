@@ -65,3 +65,23 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - C2: rating pseudocode partial; need runtime `BCGAttributeData` dump.
 - W3: topic files are curated page sets, not complete numeric tables for
   every event/relic/crystal chance; values missing where not in wikitext.
+
+## 5. Remaining P0/P1/P2 blockers (2026-10-23)
+
+- A4: plus/FIGHT NRE is `GetNewScale` dereferencing null `robot` or
+  `robot+0x48`; roster never opens. [RUN]+[STATIC]
+- A5: `/matches/activate-match` not called; all match bodies `[ASSUMED]`.
+- A3: 10 variants run; none filled TeamData. Harness supports more variants.
+- W5: 209 image errors are all HTTP 403; no bypass.
+- C1: OpenAPI has 54 paths but login/catalog/gacha/shop depth is partial.
+- C3: only four TuningManager defaults verified.
+- C4: only eight D_STAT keys extracted; full localization path unknown.
+- I1: only autorefresh metadata extracted; full routing/data split open.
+
+- C4 (update): 3315 `D_STAT`/`ID_STAT` entries extracted from binary assets;
+  language/mapping to bot ability names still needs a per-language selection
+  and wiki cross-check.
+- W5 (update): `data/wiki/image_index.json`; 694 unique images, 209 403s.
+- A3 (update): 10 variants run; v07 (activeTeams as dict) broke login, so the
+  login parser expects a list. This narrows the next test to team-element
+  contents, not the activeTeams container itself.

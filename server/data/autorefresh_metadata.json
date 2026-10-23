@@ -1,0 +1,5 @@
+{
+  "check": "check_hash_12345",
+  "refresh": 3600,
+  "cache": false
+}

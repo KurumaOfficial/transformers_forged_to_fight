@@ -1,0 +1,34 @@
+{
+  "name": "v09_story_qid_hero",
+  "description": "aid story, hero key bumblebee_cin_dotm_2.",
+  "login_active_teams": [
+    {
+      "aid": "story",
+      "activityID": "story",
+      "type": "story",
+      "modes": [
+        "Story"
+      ],
+      "expire": 0,
+      "heroes": {
+        "bumblebee_cin_dotm_2": {
+          "bid": "bumblebee_cin_dotm_2",
+          "blueprint": "bumblebee_cin_dotm_2",
+          "rank": 1,
+          "level": 1,
+          "sig_lvl": 0,
+          "max_hp": 1000.0,
+          "hp": 1000.0,
+          "attack": 120,
+          "rating_hp": 50,
+          "rating_attack": 50,
+          "special_attacks": 3,
+          "user_owned": true,
+          "pvpb": {},
+          "synergyBonuses": [],
+          "forge_level": 0
+        }
+      }
+    }
+  ]
+}

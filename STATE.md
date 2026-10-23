@@ -204,3 +204,11 @@ No Frida/gadget/patches without consent.
 - C2 `spec/rating_formula.md`; C3 four verified tuning defaults;
   C4 only 8 D_STAT keys found; C5 `server/data/bot_catalog_real.json`.
 - C1 OpenAPI remains partial; C4 full localization blocked.
+
+### 14. C4/W5/I1 updates (2026-10-23)
+- `data/wiki/ability_localization_client.json`: 3315 D_STAT/ID_STAT entries.
+- `data/wiki/image_index.json`: 694 unique images / 698 manifest entries;
+  209 403 errors.
+- `server/data/autorefresh_metadata.json` used by `/autorefresh/*`; golden
+  regression PASS after restart.
+- A3: 10 variants; activeTeams must be a list for login (v07 proved).
