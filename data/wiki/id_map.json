@@ -429,5 +429,10 @@
   "Soundblaster/Tactician",
   "Starscream"
  ],
- "note": "Mapping is by canonical pack prefix + manual variants; confidence is not a pack-by-pack asset proof."
+ "note": "Mapping is by canonical pack prefix + manual variants; confidence is not a pack-by-pack asset proof.",
+ "client_with_stat_page": 39,
+ "client_without_stat_page": 20,
+ "client_without_stat_non_shark": 13,
+ "sharkticon_variants_without_stat": 7,
+ "wiki_stat_pages": 44
 }

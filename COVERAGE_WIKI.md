@@ -36,11 +36,7 @@
 - **Quality matrix** — `data/wiki/bot_matrix.json`: 44
   bots; counts: {"star_health_attack": 43, "rank_level_table": 38, "level_values": 38, "abilities": 38, "ability_rank_table": 37, "signature": 40, "signature_table": 39, "special_attacks": 41, "synergy": 1}.
   Missing lists are in `matrix["missing"]`.
-- **ID map** — `data/wiki/id_map.json`: **59**
-  client packs (**52** bots +
-  **7** Sharkticon variants), **44** wiki
-  stat pages; 0 client packs without a
-  wiki page. Wiki-only: Chromia, Dead End, Optimus Prime, Soundblaster/Tactician, Starscream.
+- **ID map** — `data/wiki/id_map.json`: **59** client packs = **52** bots + **7** Sharkticon variants. **39** non-Sharkticon bots have a wiki stat page; **13** client bots have no stat page; all 7 Sharkticon variants have no separate stat page. Wiki stat pages: **44** = 39 matched + 5 wiki-only (Chromia, Dead End, Optimus Prime, Soundblaster/Tactician, Starscream).
 - **Version sets** — `data/wiki/versions.json` + `versions/<page>.json`:
   cutoff **2023-01-13T23:59:59Z**; 296 pages analyzed;
   **96** changed; **11**

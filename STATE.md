@@ -131,7 +131,8 @@ required `hp`/`pi`/`sig_lvl`/`mods`), then press FIGHT and capture
   no bypass). Manifest **5154** entries; state resumable.
 - Parsed: **44 bots** + **252 pages**; quality matrix
   `data/wiki/bot_matrix.json`; ID map `data/wiki/id_map.json` (59 client
-  packs = 52 + 7 Sharkticon; 44 wiki stat pages); version sets
+  packs = 52 + 7 Sharkticon; 39 matched stat pages, 13 client without,
+  44 wiki stat pages total); version sets
   `data/wiki/versions.json` (cutoff 2023-01-13; 96 changed, 11 created
   after).
 - Unparsed: `data/wiki/unparsed/pages.json`.

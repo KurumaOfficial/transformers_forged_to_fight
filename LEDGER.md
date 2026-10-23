@@ -260,7 +260,8 @@ throw-блок (`bl 0x9bb514`). Это происходит до `entityType`, �
   tables, 38 — abilities, 37 — ability rank tables, 40 — signature,
   39 — signature tables, 41 — special attacks, 1 — synergy.
 - ID map `data/wiki/id_map.json`: 59 client packs = 52 bot packs + 7
-  Sharkticon variants; 44 wiki stat pages; 5 wiki-only (Chromia, Dead End,
+  Sharkticon variants; 39 non-Sharkticon bots have a wiki stat page, 13 do
+  not; 44 wiki stat pages = 39 matched + 5 wiki-only (Chromia, Dead End,
   Optimus Prime, Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
 - Версии `data/wiki/versions.json` + `versions/`: cutoff
   `2023-01-13T23:59:59Z`; 296 страниц; 96 изменённых; 11 созданных после
