@@ -1,9 +1,9 @@
 [
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:02.234121Z",
+      "timestamp": "2026-10-23T21:31:08.566640Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58378,
       "method": "GET",
       "path": "/account/data",
       "query": {
@@ -84,9 +84,12 @@
         ]
       },
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Content-Length": "0",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -151,9 +154,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:02.294043Z",
+      "timestamp": "2026-10-23T21:31:08.586946Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58379,
       "method": "GET",
       "path": "/bcg/getLoginData",
       "query": {
@@ -174,9 +177,12 @@
         ]
       },
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Content-Length": "0",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -967,9 +973,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:02.446829Z",
+      "timestamp": "2026-10-23T21:31:08.604855Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58380,
       "method": "GET",
       "path": "/tuning",
       "query": {
@@ -987,9 +993,12 @@
         ]
       },
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Content-Length": "0",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -1009,9 +1018,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:05.280341Z",
+      "timestamp": "2026-10-23T21:31:08.608952Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58381,
       "method": "GET",
       "path": "/quests/quest-list",
       "query": {
@@ -1032,9 +1041,12 @@
         ]
       },
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Content-Length": "0",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -1208,9 +1220,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:05.359617Z",
+      "timestamp": "2026-10-23T21:31:08.633164Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58382,
       "method": "GET",
       "path": "/quests/quest-active",
       "query": {
@@ -1240,9 +1252,12 @@
         ]
       },
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Content-Length": "0",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -1261,9 +1276,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:06.518337Z",
+      "timestamp": "2026-10-23T21:31:08.644491Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58383,
       "method": "GET",
       "path": "/quests/quest-progression",
       "query": {
@@ -1284,9 +1299,12 @@
         ]
       },
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Content-Length": "0",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -1312,9 +1330,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:49.633984Z",
+      "timestamp": "2026-10-23T21:31:08.668133Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58384,
       "method": "POST",
       "path": "/quests/quest-begin/story_act1_ch1_m1",
       "query": {
@@ -1332,11 +1350,12 @@
         ]
       },
       "headers": {
+        "Accept-Encoding": "identity",
+        "Content-Length": "139",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
         "Content-Type": "application/json",
-        "Content-Length": "128",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Connection": "close"
       },
       "body": {
         "quitExisting": true,
@@ -1437,10 +1456,15 @@
               }
             },
             "startTime": "number",
-            "team": [
-              "list",
-              "string"
-            ],
+            "team": {
+              "bumblebee_cin_dotm_2": {
+                "hp": "...",
+                "pi": "...",
+                "sig_lvl": "...",
+                "sig_mods": "...",
+                "stat_mods": "..."
+              }
+            },
             "teamData": {
               "deletes": {},
               "updates": {
@@ -1464,9 +1488,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:52:53.767980Z",
+      "timestamp": "2026-10-23T21:31:08.690149Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58385,
       "method": "POST",
       "path": "/quests/quest-detail/story_act1_ch1_m1",
       "query": {
@@ -1484,11 +1508,12 @@
         ]
       },
       "headers": {
+        "Accept-Encoding": "identity",
+        "Content-Length": "86",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
         "Content-Type": "application/json",
-        "Content-Length": "79",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Connection": "close"
       },
       "body": {
         "hash": "v1",
@@ -1599,9 +1624,9 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-23T19:53:03.143458Z",
+      "timestamp": "2026-10-23T21:31:08.705572Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62080,
+      "client_port": 58386,
       "method": "POST",
       "path": "/quests/quest-movedir/story_act1_ch1_m1/1/0",
       "query": {
@@ -1619,11 +1644,12 @@
         ]
       },
       "headers": {
+        "Accept-Encoding": "identity",
+        "Content-Length": "48",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
         "Content-Type": "application/json",
-        "Content-Length": "45",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Connection": "close"
       },
       "body": {
         "api": 11,

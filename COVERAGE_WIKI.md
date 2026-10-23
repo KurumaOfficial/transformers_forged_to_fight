@@ -59,6 +59,10 @@
 
 - ZIP: `archive/TFTF_wiki_archive_2026-10-23.zip`
 - SHA256: `14b714b8e7e1409a2e74c32847ad78c7ee1e4a72cde3debfe97c2892da029c17`
+- Integrity re-pack: `archive/TFTF_wiki_archive_2026-10-23_210335.zip`
+  (32,504,603 bytes; SHA256 `0731484c7c26463482488ac08f52ee75881bea7c3910f7cf9f3758da1509d559`).
+  Manifest 5154/5154 verified after five stale-hash corrections; see
+  `archive/INTEGRITY.md`.
 
 
 ## Structured topic sets (W3)

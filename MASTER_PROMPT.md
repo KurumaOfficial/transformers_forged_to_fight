@@ -271,7 +271,7 @@ STATE.md and commit.
   `PrefightScreenPresentation.GetNewScale(HeroData robot)` NRE. No
   `/matches/activate-match`.
 - Wiki: 3613 Fandom pages enumerated; 817 non-File pages saved with full
-  history+HTML, 2796 File descriptions saved, 523 images downloaded.
+  history+HTML, 2796 File descriptions saved, 694 images downloaded (209 403 errors).
   44 bots + 252 pages parsed into `data/wiki/*.json` with [WIKI]/revid.
 - Author OneDrive link is auth-gated; not downloaded.
 
@@ -304,3 +304,18 @@ STATE.md and commit.
   `blueprint/rank/level/hp/max_hp` removed "ALL KNOCKED OUT"; prefight
   still empty, plus/FIGHT gives `GetNewScale` NRE; no
   `/matches/activate-match`.
+
+## 18. v3.5 status after P0/P1/P2 pass (2026-10-23)
+
+- P0 A1/A2: `GetCurrentTeam` uses `ActiveQuest.mode` (`+0x18`), not qid;
+  mode clones added, prefight still empty. `QuestUserInfo.team` is a
+  `List<QuestUserHero>` internally; JSON input is a dictionary.
+- P0 A3: `work/run_variant.py` + 6 variants; all same blocker.
+- P0 A4/A5: plus/FIGHT still NRE; `/matches/activate-match` not called.
+- P0 S1/S2: `work/smoke_test.py` PASS; `work/golden_regression.py` 9/9 PASS.
+- P1 W1: synergy 40/44. W2 notes; W3 13 topic files; W4 client-only map;
+  W6 manifest 5154/5154 verified, new zip sha `0731484c...`.
+- P1 C2 rating partial; C3 four defaults; C4 8 D_STAT keys only;
+  C5 catalog 59 packs (59 class, 39 stars).
+- P2 I1 data layout doc; I2 persistence design; I3 this file.
+- Blockers are recorded in `OPEN_QUESTIONS.md`; no Frida/gadget/patches.
