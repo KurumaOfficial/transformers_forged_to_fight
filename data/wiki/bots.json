@@ -165,21 +165,6 @@
        "150% / 10 sec"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "When Attacked: 13.5-20.7% chance to Evade the opponent's Basic and Special Ranged Attacks."
-     },
-     {
-      "name": "Critical Hits",
-      "description": "Gains 12% of a Power Bar."
-     },
-     {
-      "text": "25.9-49.7% chance to land a Headshot on Ranged Attacks, instantly inflicting 60% Attack and dealing 60% Attack as Bleed Damage over 3 seconds."
-     },
-     {
-      "text": "+30~50% Critical Rate against Dashing opponents. (revealed in v5.1)"
-     }
     ]
    },
    "signature": {
@@ -286,26 +271,13 @@
     "Snipe - There's no use running when she's got you in her sights.",
     "100% chance to land a Headshot, instantly inflicting 88-135% Attack and dealing 88-135% as Bleed Damage over 5.9-9 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Trick Shot - Arcee shows off with a bit of flair; never missing while upside-down in mid-air."
-    },
-    {
-     "text": "Increases Ranged Damage by 35% and Ranged Speed for 6.5 seconds."
-    },
-    {
-     "text": "Femme's Fatality - Slice thrice with unrivaled grace."
-    },
-    {
-     "text": "100% chance to inflict Bleed on Critical Hits, dealing 69.3-108% Attack over 4 seconds."
-    },
-    {
-     "text": "Snipe - There's no use running when she's got you in her sights."
-    },
-    {
-     "text": "100% chance to land a Headshot, instantly inflicting 88-135% Attack and dealing 88-135% as Bleed Damage over 5.9-9 seconds."
-    }
+   "synergy": [
+    "Allies - Ironhide, Prowl, Sideswipe, Bumblebee - +1~2~3~8% Armor.",
+    "Allies - Bumblebee, Blaster - +2~3~8% Armor.",
+    "Sharpshooters - Mirage, Hound - +5~10~20% Critical Rate on ranged attacks.",
+    "Till All Are One - Ultra Magnus - +2~3~8% Attack Rating for Autobots. +6~8~12% Debuff damage for Autobots in Raids.",
+    "Enemies - Tantrum, Cyclonus - +2~3~8% Attack Rating.",
+    "Leadership (5-Star) - Acting as a beacon of leadership for the team, all lower tier teammates gain +10% Critical Damage."
    ]
   },
   "Barricade": {
@@ -464,21 +436,6 @@
        "40%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Melee Attacks - Up to 79-144% Critical Damage based on the opponent's stored Power."
-     },
-     {
-      "name": "When Knocked Down",
-      "description": "52-85% chance to evade basic and special attacks for 3 seconds."
-     },
-     {
-      "text": "26-40% Critical Rate Buff for 6-7.5 seconds."
-     },
-     {
-      "text": "Ranged Attacks: 20% to inflict Backfire for 6 seconds."
-     }
     ]
    },
    "signature": {
@@ -585,26 +542,11 @@
     "Dispatch - Subdue your opponent with nunchakus... permanently.",
     "+25% Critical Rate Buff for 25 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Punishment - You have the right to remain silent."
-    },
-    {
-     "text": "100% to inflict Backfire for 9 seconds."
-    },
-    {
-     "text": "Subjugation - Taze opponents into submission."
-    },
-    {
-     "text": "100% to Power Steal, taking 23-36% of the opponent's Power as your own."
-    },
-    {
-     "text": "Dispatch - Subdue your opponent with nunchakus... permanently."
-    },
-    {
-     "text": "+25% Critical Rate Buff for 25 seconds."
-    }
+   "synergy": [
+    "Enemies - Bumblebee, Prowl, Hot Rod, Hound - +1~2~3~8% Attack Rating.",
+    "Outlaws - Grindor - 100% chance to inflict Power Lock for 3~6~12 seconds when hitting with the first Heavy Attack.",
+    "Forged to Serve - Megatron (ROTF) - Megatron has a 25~50~100% chance to inflict 2 Impair Charges per hit.",
+    "Forged to Lead - Megatron - Megatron's minion's each provide him with a unique ability. In return Megatron provides 2~3~8% Armor."
    ]
   },
   "Bludgeon": {
@@ -764,24 +706,6 @@
        "100%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Blade Attacks: 25% chance to Bleed on Critical Hits, dealing 78~120% Attack over 5 seconds."
-     },
-     {
-      "text": "When Attacked: 45~60% chance to gain an Armor Buff when struck by Critical Hits, reducing damage from attacks by 26~51% for 6~7 seconds."
-     },
-     {
-      "name": "Heavy Attacks",
-      "description": "Renews the duration of Armor Up Buffs when Bludgeon turns into a Tank."
-     },
-     {
-      "text": "19% chance to Stun for 1.5 seconds."
-     },
-     {
-      "text": "Special Attacks: +60% chance to inflict Bleed on Critical Blade Attacks."
-     }
     ]
    },
    "signature": {
@@ -903,23 +827,12 @@
     "Target Practice - The deadliest round of skeet shooting this side of Cybertron. Pull!",
     "59~90% chance to Stun for 3.5 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Way of the Blade - From a crouching position, Bludgeon leaps into a roundhouse to reveal a hidden blade."
-    },
-    {
-     "text": "Aberrance - Those afraid of breaking Metallikato code don't like to win."
-    },
-    {
-     "text": "26~64% chance to Stun for 2.5 seconds."
-    },
-    {
-     "text": "Target Practice - The deadliest round of skeet shooting this side of Cybertron. Pull!"
-    },
-    {
-     "text": "59~90% chance to Stun for 3.5 seconds."
-    }
+   "synergy": [
+    "Allies - Soundwave, Ramjet, Kickback - +2~3~8% Armor.",
+    "Enemies - Optimus Prime - +2~3~8% Attack Rating.",
+    "Enemies - Jazz, Wheeljack - +2~3~8% Attack Rating.",
+    "Swordmasters - Windblade, Drift, Dinobot - 3~4~10% Critical Damage for each Sword Attack that isn't a critical hit until the next Critical Hit. (This does not count hits against opponents with active Crit Resist Buffs or while the Swordmaster bot has active Crit Rate Debuffs.) +6~8~12% more Critical Hits in Solo Missions.",
+    "Leadership (5-Star) - All lower tier teammates gain +10% Critical Damage."
    ]
   },
   "Bonecrusher": {
@@ -1112,20 +1025,6 @@
        "20 seconds"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "When struck by melee critical hits: 59-90% chance to Bleed, dealing 67.2-89.6% Attack over 7 seconds."
-     },
-     {
-      "text": "Passive: Opponents trigger 25% fewer Evades per stack of Bleed."
-     },
-     {
-      "text": "Opponent's Special Attacks: Bonecrusher's hate toward the opponent grows. This raises his Attack by 100% Critical Rating on Heavy and Special Attacks for 8 seconds."
-     },
-     {
-      "text": "Heavy Attacks: - 70% chance to Bleed, dealing 45% attack over 5.6 seconds."
-     }
     ]
    },
    "signature": {
@@ -1232,26 +1131,13 @@
     "No Survivors! - There is no nobility in retreat. No bone will be left uncrushed.",
     "30~45% chance to Bleed, dealing 129~198% Attack over 11-18 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Scorpion Sting - Side effects may include pain, paresthesia, and instant death."
-    },
-    {
-     "text": "59.4~90% chance to Bleed, dealing 105~115% Attack over 2 seconds."
-    },
-    {
-     "text": "Abhornado - A savage pirouette of claws and hatred."
-    },
-    {
-     "text": "71% chance to Bleed, dealing 47~72% Attack over 7 seconds."
-    },
-    {
-     "text": "No Survivors! - There is no nobility in retreat. No bone will be left uncrushed."
-    },
-    {
-     "text": "30~45% chance to Bleed, dealing 129~198% Attack over 11-18 seconds."
-    }
+   "synergy": [
+    "Allies - Barricade - +1~2~3~8% Armor.",
+    "Allies - Grindor, Mixmaster - 1~2~3~8% Armor.",
+    "Enemies - Optimus Prime (MV1) - +1~2~3~8% Attack Rating.",
+    "Forged to Serve - Megatron (ROTF) - Megatron has 20~40~80% chance to Stun his opponent when they reach 20 impair charges.",
+    "Forged to Serve - Megatron - Megatron's minions each provide him with a unique ability. In return Megatron provides +2~3~8% Armor.",
+    "Leadership (5-Star) - Acting as a beacon of leadership for the team, all lower tier teammates gain +10% Critical Damage."
    ]
   },
   "Bumblebee": {
@@ -1405,20 +1291,6 @@
        "22%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Dashing Back",
-      "description": "Grants a 24~32% Melee Evasion Buff that is removed the next time this bot Evades."
-     },
-     {
-      "name": "Sidestepping",
-      "description": "Grants up to 3 Critical Rate Buffs that each increase Critical Rating by 20~28%. These buffs are removed each time this bot lands a hit."
-     },
-     {
-      "name": "Critical Hits",
-      "description": "100% Chance to Break the opponent’s Shielding, completely Nullifying all Shields and inflicting Shock, dealing 50~90% Energy Damage over 5 seconds."
-     }
     ]
    },
    "signature": {
@@ -1536,26 +1408,6 @@
     "Role Models - Optimus Prime, Prowl - Bumblebee gains a new ability and grants 2~3~8% Armor to his role models.",
     "Espionage Specialists - Mirage - 14~24~70% less likely to activate opponent's abilities when hitting with Special 2 or 3.",
     "Leadership (5-Star) - All lower tier teammates gain +10% Critical Rating."
-   ],
-   "special_attack_pairs": [
-    {
-     "text": "Gold Boot - Bumblebee delivers a spinning windmill kick."
-    },
-    {
-     "text": "100% chance to increase Critical Damage by 60% for the duration of this Special Attack."
-    },
-    {
-     "text": "Power Jam - Bumblebee overcharges his pistol to fry his enemy’s systems before knocking them off their feet."
-    },
-    {
-     "text": "100% chance to Power Lock the opponent for 10 seconds."
-    },
-    {
-     "text": "Ticket to Ride - Bumblebee’s wheeled combat comes together with his love of ranged attacks."
-    },
-    {
-     "text": "Grants 20 Critical Rate Buffs that each increase Critical Rating by 20~28%. These buffs are removed each time this bot lands a hit."
-    }
    ]
   },
   "Chromia": {
@@ -1637,32 +1489,6 @@
        ""
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Ranged Attacks"
-     },
-     {
-      "text": "60% chance to inflict Slow for 3.2 seconds."
-     },
-     {
-      "text": "Slow (still reads \"Deceleration\" in game)"
-     },
-     {
-      "text": "Prevents the opponent from Evading attacks and reduces the opponent's Power Flow by x.x% per stack."
-     },
-     {
-      "text": "Melee Attacks"
-     },
-     {
-      "text": "100% chance to gain a Critical Rate Buff for 2.8 seconds when the opponent is under the effect of a Slow Debuff, increasing Critical Hit Rate by x.x%"
-     },
-     {
-      "text": "Critical Heavy Attacks"
-     },
-     {
-      "text": "40% chance to Stun for 1.2 seconds."
-     }
     ]
    },
    "signature": {
@@ -1679,30 +1505,7 @@
     "Axe of Violence - new animation.",
     "Chromia uses her security knowledge, inflicting Slow for 23.6 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Bot on a Mission - reused animation from Ultra Magnus's sp1."
-    },
-    {
-     "text": "100% chance to inflict Bleed, dealing 69.3% Attack over 4 seconds."
-    },
-    {
-     "text": "Good Chop. Bad Chop - reused animation from Motormaster's sp1 ."
-    },
-    {
-     "text": "100% chance to inflict Bleed, dealing 100% Attack over 4 seconds."
-    },
-    {
-     "text": "Inflicts Slow for 9 seconds."
-    },
-    {
-     "text": "Axe of Violence - new animation."
-    },
-    {
-     "text": "Chromia uses her security knowledge, inflicting Slow for 23.6 seconds."
-    }
-   ]
+   "synergy": []
   },
   "Cliffjumper": {
    "source": {
@@ -1797,8 +1600,7 @@
    "abilities": {
     "basic": [],
     "list": [],
-    "tables": [],
-    "pairs": []
+    "tables": []
    },
    "signature": {
     "name": "",
@@ -1806,8 +1608,7 @@
     "tables": []
    },
    "special_attacks": [],
-   "synergy": [],
-   "special_attack_pairs": []
+   "synergy": []
   },
   "Dead End": {
    "source": {
@@ -1885,20 +1686,6 @@
        ""
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Resistance Debuff 4"
-     },
-     {
-      "text": "Resistance Debuffs amplify attack damage."
-     },
-     {
-      "text": "Melee Buff 4"
-     },
-     {
-      "text": "Temporarily increases the damage of Melee Attacks."
-     }
     ]
    },
    "signature": {
@@ -2004,35 +1791,10 @@
     "Gain 9% Melee Up for the rest of the fight [Max Stacks: 3]",
     "Causes Burn, dealing 120% attack over 8 seconds"
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Exhaustive End - Dead End swings like there's not tomorrow."
-    },
-    {
-     "text": "Refresh all Resistance Down Debuffs."
-    },
-    {
-     "text": "9% Melee Up for 5 seconds."
-    },
-    {
-     "text": "Stunt Work - Handle this grenade with care."
-    },
-    {
-     "text": "9% Melee Up for 5 seconds."
-    },
-    {
-     "text": "Causes Burn, dealing 120% attack over 8 seconds."
-    },
-    {
-     "text": "Down the Line - Play a quick game of catch with Dead End."
-    },
-    {
-     "text": "Gain 9% Melee Up for the rest of the fight [Max Stacks: 3]"
-    },
-    {
-     "text": "Causes Burn, dealing 120% attack over 8 seconds"
-    }
+   "synergy": [
+    "Allies - Bots - +2~3~8% Armor.",
+    "Enemies - Bots - +2~3~8% Attack Rating.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10%"
    ]
   },
   "Drift": {
@@ -2181,26 +1943,6 @@
        "65%, 30%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "At 5 hits Drift gains his Focus and gains a Precision Buff that increases Crit Chance by 20~30% and decreases the opponent’s chance to Evade (by 75~85%) until hit next by the opponent."
-     },
-     {
-      "text": "At 10 hits Drift’s Focus improves and grants him a 20~40% Crit Damage Buff in addition to his Precision Buff until hit next by the opponent."
-     },
-     {
-      "text": "61% chance to cause a Bleed for 15~25% of Attack over 2 seconds."
-     },
-     {
-      "text": "10% chance to Evade attacks from Bleeding opponents."
-     },
-     {
-      "text": "Drift becomes 5% more evasive for each active Focus Buff."
-     },
-     {
-      "text": "Drift has a 100% chance to regain his focus Precision Buff."
-     }
     ]
    },
    "signature": {
@@ -2311,26 +2053,12 @@
     "Respect - …enemies conquered.",
     "80% chance to cause up to 2 bleeds to the opponent inflicting 20~40% of attack over 3 seconds. Additionally 80~100% chance to inflict an epic Bleed on opponents for 50~100% of Attack over 10(s)."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Courage - The heat of battle…"
-    },
-    {
-     "text": "80% chance to cause up to 2 bleeds to the opponent inflicting 20~40% of attack over 3 seconds."
-    },
-    {
-     "text": "Discipline - …a flurry of ancient swords…"
-    },
-    {
-     "text": "100% chance to inflict an epic Bleed on opponents for 100% of Attack over 10 seconds."
-    },
-    {
-     "text": "Respect - …enemies conquered."
-    },
-    {
-     "text": "80% chance to cause up to 2 bleeds to the opponent inflicting 20~40% of attack over 3 seconds. Additionally 80~100% chance to inflict an epic Bleed on opponents for 50~100% of Attack over 10(s)."
-    }
+   "synergy": [
+    "Sensei/Allies – Optimus Prime (MV1), Hound - +2~10% Armor.",
+    "Enemies - Mixmaster - +2~3~8% Attack Rating.",
+    "Swordmasters - Windblade, Bludgeon, Dinobot - +2~4~10% Critical Damage for each Sword Attack that isn't a Critical Hit until the next Critical Hit. +4~8~12% more Critical Hits in Solo Missions.",
+    "Medic Support - Hound - 1.3~2.5~7% of base Health Repaired at the start of the fight. +3~4~5% extra Repair in Raids.",
+    "Leadership (5-Star) - Lower tier teammate +10% Critical Damage."
    ]
   },
   "Galvatron": {
@@ -2464,29 +2192,6 @@
        "150%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Galvatron gains a Dark Energy Charge every 0.065 seconds but quickly loses them while not Blocking."
-     },
-     {
-      "text": "If Galvatron reaches 30 Dark Energy Charges he will not lose the charges for 6 seconds, after which he will lose them all."
-     },
-     {
-      "text": "Each Dark Energy Charge increases the damage of Ranged Attacks by 2~5%."
-     },
-     {
-      "text": "+20% Block Proficiency"
-     },
-     {
-      "text": "1.7% chance for each Dark Energy Charge to inflict Dark Burn, instantly dealing 100-150% of Attack as Energy Damage."
-     },
-     {
-      "text": "+2% Critical Damage for each Dark Energy Charge."
-     },
-     {
-      "text": "+50% Critical Chance to the last hit of a Light or Medium Melee Combo."
-     }
     ]
    },
    "signature": {
@@ -2594,29 +2299,12 @@
     "Galvatron channels 30 Dark Energy Charges.",
     "3.3% chance for each Dark Energy Charge to consume all charges and inflict Dark Burn, instantly dealing 100~150% of Attack as Energy Damage."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Particle Acceleration - Galvatron uses his Particle Accelerator to leap forward and bash his opponent."
-    },
-    {
-     "text": "2% chance for each Dark Energy Charge to Stun the opponent for 3 seconds. (At 30 charges, the chance to Stun is 60%.)"
-    },
-    {
-     "text": "Dark Energy Blast - Using vast stores of power, Galvatron fires a blast of super-charged particles."
-    },
-    {
-     "text": "2% chance for each Dark Energy Charge to consume all charges and inflict Dark Burn, instantly dealing 80~100% 100~140% of Attack as Energy Damage."
-    },
-    {
-     "text": "Galvagun Overcharge - Will Galvatron’s enemy withstand the attack? Here’s a hint: Go ask Starscream."
-    },
-    {
-     "text": "Galvatron channels 30 Dark Energy Charges."
-    },
-    {
-     "text": "3.3% chance for each Dark Energy Charge to consume all charges and inflict Dark Burn, instantly dealing 100~150% of Attack as Energy Damage."
-    }
+   "synergy": [
+    "Enemies – Starscream, Ultra Magnus - +2~3~8% Attack Rating.",
+    "Living Weapon – Shockwave - +4~6~16% Damage to Heavy and Special Attack 3.",
+    "Allies - Tantrum, Megatronus - 2-3-8% Armor.",
+    "Hand of Chaos - Cyclonus - All Decepticon Special Attacks gain +2~6~15% Special Attack Damage and +2~6~15% Critical Damage.",
+    "Leadership (5-Star) - +10% Special Damage to all lower tier teammates."
    ]
   },
   "Hot Rod": {
@@ -2766,32 +2454,6 @@
        "18%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Ranged Attacks"
-     },
-     {
-      "text": "Hot Rod’s Time Gun has a 60% chance to inflict Deceleration for 3.2 seconds. Decelerations from Specials are stackable."
-     },
-     {
-      "text": "Deceleration"
-     },
-     {
-      "text": "Prevents the opponent from Evading attacks and reduces the opponent’s Power Flow by 22~37.5% per stack."
-     },
-     {
-      "text": "Melee Attacks"
-     },
-     {
-      "text": "Gains a Critical Rate Buff for 2.8 seconds when the opponent is under the effect of a Deceleration Debuff, increasing Critical Hit Rate by 7.9~18%."
-     },
-     {
-      "text": "Critical Heavy Attacks"
-     },
-     {
-      "text": "40% chance to Stun for 1.2 seconds."
-     }
     ]
    },
    "signature": {
@@ -2909,23 +2571,13 @@
     "Time Bubble Blast - A temporal coup de grâce.",
     "Hot Rod uses the most powerful setting on his Time Gun, inflicting Deceleration for 23.6 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Punishing Pirouette - A flurry of aerial kicks to knockdown the opponent."
-    },
-    {
-     "text": "Time Tampering - Series of acrobatic kicks that ends with a taste of the Time Bubble Gun."
-    },
-    {
-     "text": "A powerful blast from his Time Gun inflicts Deceleration for 9 seconds."
-    },
-    {
-     "text": "Time Bubble Blast - A temporal coup de grâce."
-    },
-    {
-     "text": "Hot Rod uses the most powerful setting on his Time Gun, inflicting Deceleration for 23.6 seconds."
-    }
+   "synergy": [
+    "Code 12: Reckless Driving (Prowl) - +6~9~24% Attack Buff for 3 seconds when using a Heavy Attack. Stacking those buffs refresh the duration of the entire stack.",
+    "Enemies (Barricade) - +2~3~8% Attack Rating.",
+    "Racing Rivals (Mirage) - 8~12~30% Critical Damage.",
+    "Brother in Arms (Bumblebee) - Autobots get +2~3~8% Armor and +4~6~8% Melee Damage in Solo Missions.",
+    "Allies - Bumblebee - 2~3~8% Armor.",
+    "Leadership (5-Star) - All lower tier teammates gain +10% Critical Damage."
    ]
   },
   "Hound": {
@@ -3100,40 +2752,6 @@
        "100%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Ammo Types",
-      "description": "Holding Block at Ranged Distance for 0.9 0.6 seconds will Swap Autobot Hound’s Ammo Types."
-     },
-     {
-      "text": "Inferno Ammo grants Critical Ranged Hits a 100% chance to inflict Burn, dealing 40~60% of Attack as Heat damage over 8~10 seconds."
-     },
-     {
-      "text": "The third hit of a Ranged Combo has a 100% chance to refresh the timer of a Burn Debuff."
-     },
-     {
-      "text": "Precision Ammo grants Ranged Attacks a 30~50% increased Critical Rate and cannot be Evaded and is not affected by abilities that would cause Ranged Attacks to Miss."
-     },
-     {
-      "text": "The second hit of a basic ranged combo has a 60% chance to Nullify a Shield Buff on the opponent."
-     },
-     {
-      "text": "The third hit of a basic ranged combo has an 80% chance to Nullity a Shield Buff on the opponent."
-     },
-     {
-      "text": "Sidestepping with Precision Ammo Purifies all Daze effects."
-     },
-     {
-      "text": "Ranged Attacks: Critical Hits on Burning opponents have 50~% Critical Damage."
-     },
-     {
-      "name": "Heavy Attacks",
-      "description": "100% Chance to gain an Armor Buff, reducing damage from attacks by 10% for 6 seconds."
-     },
-     {
-      "text": "50% Chance to inflict a Critical Resistance Debuff, increasing the chance for Critical Hits against opponents by 20~27.2%? for 6~8 seconds."
-     }
     ]
    },
    "signature": {
@@ -3259,35 +2877,13 @@
     "100% Chance to gain an Armor Buff, reducing damage from attacks by 10% for 30 seconds.",
     "Autobot Hound has a 100% chance to inflict a Critical Resistance Debuff, increasing the chance for Critical Hits against opponents by 40% for 20 seconds and proceeds to fire every gun in his inventory."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Rolling Thunder - Big boy coming through!"
-    },
-    {
-     "text": "While Precision Ammo is equipped the last hit has a 100% Chance to inflict 100% Critical Rate Down for 20 seconds."
-    },
-    {
-     "text": "While Inferno Ammo is equipped this the last hit has a 100% chance to inflict Burn, dealing 60~80% of Attack over 8 seconds."
-    },
-    {
-     "text": "Safeties Off - Nothing makes holes quite like a naval rotary cannon."
-    },
-    {
-     "text": "50% chance per hit to Bleed, dealing 40% of Attack over 5 seconds."
-    },
-    {
-     "text": "The final hit instead has a 50% chance to Burn. dealing 40% Attack over 5 seconds."
-    },
-    {
-     "text": "Full Autobot - You’re not out of time until you’re out of ammo!"
-    },
-    {
-     "text": "100% Chance to gain an Armor Buff, reducing damage from attacks by 10% for 30 seconds."
-    },
-    {
-     "text": "Autobot Hound has a 100% chance to inflict a Critical Resistance Debuff, increasing the chance for Critical Hits against opponents by 40% for 20 seconds and proceeds to fire every gun in his inventory."
-    }
+   "synergy": [
+    "Enemies – Barricade - +2~3~8% Attack Rating.",
+    "Sharpshooters – Mirage, Arcee - +5~10~20% Crit Rate on Ranged Attacks.",
+    "Weapon Specialists – Mixmaster, Ironhide, Rhinox - +3~4~9% duration for all Damaging Debuffs. +2~4~8% Attack Rating in Alliance Missions.",
+    "Medic Support – Optimus Prime (MV1), Drift - 1.3~2.5~7% of base Health Repaired at the start of the fight. +3~4~5% extra Repair in Raids.",
+    "Allies – Optimus Prime MV1, Drift - +2~3~8% Armor.",
+    "Leadership (5-Star) - +10% Critical Damage."
    ]
   },
   "Ironhide (ROTF)": {
@@ -3454,24 +3050,6 @@
        "75%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "When Attacked: 12% chance to increase Critical Damage by 82~126% for 8 seconds."
-     },
-     {
-      "text": "Heavy Attacks: Double Missile Attack has +30% chance to inflict Burn."
-     },
-     {
-      "name": "Missile Attacks",
-      "description": "+100% Critical Rate"
-     },
-     {
-      "text": "70% chance to inflict Burn, dealing heat damage for 47.2~72% over 4 seconds."
-     },
-     {
-      "text": "When inflicting Burn on already burning opponents, extra stacks will be inflicted, each dealing 30% attack."
-     }
     ]
    },
    "signature": {
@@ -3578,26 +3156,14 @@
     "Full Metal Arsenal - Fire everything.",
     "Ironhide gets up close and blasts at point-blank range, with a 30% chance to inflict Burn, and this effect lasts 100% longer."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Feelin' Lucky - He loves to show off his cannons."
-    },
-    {
-     "text": "80% chance to Stun for 2.5 seconds."
-    },
-    {
-     "text": "Standoff Break - Point your weapon at him and he'll tear you apart."
-    },
-    {
-     "text": "54~72% chance to increase Critical Damage by 44-67.5% for 4 seconds."
-    },
-    {
-     "text": "Full Metal Arsenal - Fire everything."
-    },
-    {
-     "text": "Ironhide gets up close and blasts at point-blank range, with a 30% chance to inflict Burn, and this effect lasts 100% longer."
-    }
+   "synergy": [
+    "Allies - Ratchet, Bumblebee - +1~8% Armor.",
+    "Allies - Optimus Prime (MV1), Arcee, Windblade - 2~3~8% Armor.",
+    "Old Friends - Optimus Prime (MV1) - 20~30~70% chance to deal an additional Bleed stack when inflicting Bleed.",
+    "Weapon Specialists - Mixmaster, Rhinox, Hound - +3~4~9% duration for Damaging Debuffs. +2~4~6% Attack Rating in Alliance Missions.",
+    "Brother in Arms - Optimus Prime - 2~3~8% Armor for Autobots. +4~6~8% Melee Damage for Autobots in Solo Missions.",
+    "Medic Support - Ratchet - 1.3~2.5~7% of Base Health Repaired at the start of the fight. +3~4~5% extra Repair in Raids.",
+    "Leadership (5-Star) - +10% Special Damage for all lower tier teammates."
    ]
   },
   "Ironhide": {
@@ -3693,8 +3259,7 @@
    "abilities": {
     "basic": [],
     "list": [],
-    "tables": [],
-    "pairs": []
+    "tables": []
    },
    "signature": {
     "name": "",
@@ -3702,8 +3267,7 @@
     "tables": []
    },
    "special_attacks": [],
-   "synergy": [],
-   "special_attack_pairs": []
+   "synergy": []
   },
   "Jazz": {
    "source": {
@@ -3846,31 +3410,6 @@
        "7.5%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Heavy Attacks",
-      "description": "100% Chance to Confuse the opponent, lowering their Attack Rating by 12~20% and increasing the chance they will use a Special Attack for 6 seconds or until their next Special Attack ends."
-     },
-     {
-      "text": "If the opponent is not already Confused, Heavy Attacks grant 100% less Power to the opponent."
-     },
-     {
-      "text": "Avoiding Special Attacks"
-     },
-     {
-      "text": "If Jazz avoids being struck by the first hit of a Special Attack he gains an Evasion Buff, granting a 36~44% chance to Evade all attacks for 6 seconds."
-     },
-     {
-      "name": "Combo Meter",
-      "description": "Every 5 hits on the Combo Meter, Autobot Jazz gains a Critical Rate Buff, increasing Critical Chance by 5~7% until he is next hit."
-     },
-     {
-      "text": "Critical Hits"
-     },
-     {
-      "text": "Critical Hits have +20% Critical Damage against Stunned opponents."
-     }
     ]
    },
    "signature": {
@@ -3974,29 +3513,16 @@
     "Grapple and Groove - Overwhelming force, with style.",
     "Inflicts a permanent Backfire Debuff, inflicting 100% of Attack as instant Shock damage when the opponent next activates a Special Attack. This Backfire is not removed when the opponent uses a Special Attack."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Windmill - Jazz sets his plans in motion."
-    },
-    {
-     "text": "Each hit against a Confused opponent has a 20% chance to Stun the opponent for 3 seconds."
-    },
-    {
-     "text": "Dazzling Display - Confusion abounds."
-    },
-    {
-     "text": "100% Chance to Confuse the opponent, lowering their Attack Rating by 12~20% and increasing the chance they will use a Special Attack for 6 seconds or until their next Special Attack ends."
-    },
-    {
-     "text": "This attack Locks the opponent’s Special Attack 3 for as long as they are Confused."
-    },
-    {
-     "text": "Grapple and Groove - Overwhelming force, with style."
-    },
-    {
-     "text": "Inflicts a permanent Backfire Debuff, inflicting 100% of Attack as instant Shock damage when the opponent next activates a Special Attack. This Backfire is not removed when the opponent uses a Special Attack."
-    }
+   "synergy": [
+    "Allies – Ratchet, Grimlock - +2~3~8% Armor.",
+    "Enemies – Megatron, Starscream, Bludgeon - +2~3~8% Attack Rating.",
+    "Role Models - Bumblebee - Bumblebee's Heavy Attacks gain a +2~3~5% Attack Buff for each alive team member.",
+    "Role Models - Bumblebee - Bumbelee gains a new ability and grants +2~3~8% Armor to his role models.",
+    "Lieutenants – Optimus Prime - Optimus gains 2~3~8% Attack and Armor and his Lieutenants gain unique abilities.",
+    "Lieutenants – Optimus Prime - Each time Jazz avoids all hits in an opponent’s Special Attack he gains an Attack Buff, increasing his Attack Rating by 2~4~8% for the remainder of the fight.",
+    "Sabotage Specialists - Slipstream - +5~8~12~15% Backfire Damage.",
+    "Magnificent Six - Prowl, Wheeljack, Sunstreaker - When Knocked Down, 5~8~12~15% chance to gain +20% Special Damage for 5 seconds. Increases by 5% after each Knock Down.",
+    "Leadership (5-Star) - +10% Critical Rating."
    ]
   },
   "Jetfire": {
@@ -4151,26 +3677,6 @@
        "47.5%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Well Timed Blocks against Light and Heavy Ranged Attacks activate the Parry Shield, Reflecting those attacks at 80~100% of their original damage."
-     },
-     {
-      "text": "Well Timed Blocks against Basic Melee Hits also activate the Parry Shield, granting +50% Block Proficiency."
-     },
-     {
-      "text": "Each time the Parry Shield activates Jetfire gains 1 Energy Charge(s). Energy Charges each increase Jetfire’s Power Rate by 5%. [Max 10]"
-     },
-     {
-      "text": "100% Chance Jetfire consumes 1 Energy Charge to inflict Shock on the opponent, dealing 70~90% of Attack over 4 seconds."
-     },
-     {
-      "text": "Activating the Parry Shield against Basic Melee Attacks grants a 100% chance to Stun the opponent for 1 second."
-     },
-     {
-      "text": "If Jetfire has no Energy Charges when activating a Special Attack, he gains 1 Energy Charge."
-     }
     ]
    },
    "signature": {
@@ -4280,35 +3786,17 @@
     "Jetfire consumes all Energy Charges to inflict Shock for each Energy Charge consumed this way, each dealing 35~45% of Attack as energy damage over 4 seconds.",
     "At the end of the attack, Jetfire Gains 3 Energy Charges."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Full Power to Weapons - \"Disruptors are often misunderstood decives, allow me to demonstrate their ideal use.\""
-    },
-    {
-     "text": "Jetfire converts all Energy Charges into Ranged Bonus, each increasing Ranged Damage by 10~20% and Projectile Speed by 10% for 20 seconds."
-    },
-    {
-     "text": "If Jetfire converts 5 or more Energy Charges, this attack has a 100% chance to inflict Power Lock, stopping the opponent’s flow of Power for 8 seconds."
-    },
-    {
-     "text": "Reinforce Shields - “Deep space travel requires a powerful defensive system at the best of times.”"
-    },
-    {
-     "text": "Jetfire converts all Energy Charges into Shield Buffs, each Reducing incoming damage by 7~8% for 20 seconds."
-    },
-    {
-     "text": "If Jetfire converts 5 or more Energy Charges, this attack has a 100% chance to inflict Repair Block, preventing the opponent from Repairing for 15 seconds."
-    },
-    {
-     "text": "Fire at Will - “By diverting stray ions created by the engines to the Disruptor Cannons, I have devised a way to deliver a powerful electromagnetic shock to the enemy's systems.”"
-    },
-    {
-     "text": "Jetfire consumes all Energy Charges to inflict Shock for each Energy Charge consumed this way, each dealing 35~45% of Attack as energy damage over 4 seconds."
-    },
-    {
-     "text": "At the end of the attack, Jetfire Gains 3 Energy Charges."
-    }
+   "synergy": [
+    "Allies - Sideswipe , Wheeljack - +2~3~8% Armor Rating.",
+    "Enemies - Kickback , Megatron , Ramjet - +2~3~8% Attack Rating.",
+    "Brain Drain - Shockwave - Shockwave Repairs 2~3~6% Health over 2 seconds each time he gains 6 or more Energy Charges.",
+    "Brain Gain – Shockwave - 10~15~25% increase to Attack Rating against Demolition Bots. Shockwave only benefits from this bonus if all Bots on the team have this Synergy.",
+    "Old Friends – Starscream - Increases the duration of Jetfire's Stun for well-timed Blocks by 0.2~0.3~0.5 seconds.",
+    "Old Friends – Starscream - While Dashing Back, Ranged Attacks miss Starscream, which grants him a 10~15~30% Crit Damage buff for 6 seconds.",
+    "Shieldmasters - Dinobot, Mixmaster - Well-timed Blocks against Melee Attacks have 10% Block Proficiency and drains Power equal to 2~4~8% of the opponent's max Power.",
+    "Sky Assault - Thundercracker - +7~10~25% Anti-Evade.",
+    "Jet Judo - Sunstreaker - +4~6~7~16% Melee Buff against bots with an aerial alternate form.",
+    "Leadership (5-Star) - Acting as a beacon of leadership for the team, all lower tier teammates gain +10% Power Rate."
    ]
   },
   "Megatron (ROTF)": {
@@ -4445,31 +3933,6 @@
        "45%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Passive",
-      "description": "This bot’s naturally tough Cybertronian exterior provides a permanent 10% passive Armor Buff."
-     },
-     {
-      "name": "When Health drops below 80/60/40%",
-      "description": "Megatron becomes Unstoppable for 2.7 ~ 4 seconds."
-     },
-     {
-      "text": "If Megatron misses a Heavy Attack while Unstoppable he has a 100% chance to increase Attack by 40% for 10 seconds."
-     },
-     {
-      "text": "All Attacks"
-     },
-     {
-      "text": "Megatron inflicts an Impair Charge. Impair Charges power-up Megatron’s Tank Cannon, used during Heavy Attacks and Special Attack 3."
-     },
-     {
-      "text": "On Heavy Attacks"
-     },
-     {
-      "text": "Megatron gains +5% Critical Chance for each Impair Charge on the opponent. If Megatron scores a Critical Hit, he consumes those charges and inflicts 2% Critical Damage per stack consumed."
-     }
     ]
    },
    "signature": {
@@ -4573,29 +4036,14 @@
     "Inflicts 20 Impair Charges.",
     "Megatron gains +5% Critical Chance for each Impair Charge on the opponent. If Megatron scores a Critical Hit, he consumes those charges and inflicts 2% Critical Damage per stack consumed."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Overpower - Opponents are relegated to insignificant underlings."
-    },
-    {
-     "text": "Inflicts 10 Impair Charges."
-    },
-    {
-     "text": "Peace and Tyranny - Unification through subjugation."
-    },
-    {
-     "text": "Increases Ranged Attack Damage by 26~40% for 6 seconds."
-    },
-    {
-     "text": "Dark Absolution - Bow to his might and live. Oppose him and meet your end."
-    },
-    {
-     "text": "Inflicts 20 Impair Charges."
-    },
-    {
-     "text": "Megatron gains +5% Critical Chance for each Impair Charge on the opponent. If Megatron scores a Critical Hit, he consumes those charges and inflicts 2% Critical Damage per stack consumed."
-    }
+   "synergy": [
+    "Enemies – Optimus Prime (MV1), Bumblebee (DOTM) - 2~3~8% Attack Rating.",
+    "Forged to Lead – Grindor, Bonecrusher, Barricade - Megatron’s minions each provide him with a unique ability. In return Megatron provides 2~3~8% Armor to each bot.",
+    "Forged to Serve – Grindor - Megatron has a 50~65~100% chance to begin the fight Unstoppable.",
+    "Forged to Serve – Bonecrusher - Megatron gains a 20~40~80% chance to Stun an enemy when they reach 20 Impair Charges.",
+    "Forged to Serve – Barricade - Megatron has a 25~50~100% chance to inflict 2 Impair Charges per hit.",
+    "Leadership (5-Star) - Acting as a beacon of Leadership, all lower tiers teammate gain +10% Special Damage.",
+    "The Fallen - Megatronus - All Decepticons on your team gain +2~3~5% Armor while fighting Decepticons and +5~12~20% Power Rate while fighting Autobots."
    ]
   },
   "Megatron": {
@@ -4743,22 +4191,6 @@
        "46%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Fusion Cannon",
-      "description": "The Fusion Cannon takes 6 seconds to charge 3 Full Power Heavy Attacks that travel significantly faster and deal 20~30% more damage."
-     },
-     {
-      "text": "Full Power Heavy Attacks permanently Fuse a debuff inflicted by Megatron’s Special Attacks to the opponent. Only one debuff of each type can be Fused."
-     },
-     {
-      "name": "Last Hit of a Medium Combo",
-      "description": "100% chance to Refresh the duration of unfused Armor Breaks, Attack Debuffs, and Shocks on the opponent."
-     },
-     {
-      "text": "Knocked Down: Megatron has a 0.7% chance for each percentage of lost Health to become Unstoppable for 3 seconds."
-     }
     ]
    },
    "signature": {
@@ -4870,29 +4302,13 @@
     "100% chance to inflict Shock, dealing Shock Damage for 300% Attack over 20 seconds.",
     "Grants Fusion Overload, allowing unlimited Full Power shots of the Fusion Cannon for the rest of the fight."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Energon Crush - The Energon Flail is perfectly designed to shatter the defenses of even the toughest Bots."
-    },
-    {
-     "text": "100% chance to Armour Break, removing opponent's Armor and applying 26~38% Armor reduction for 10 seconds."
-    },
-    {
-     "text": "Atomic Slug - Megatron initiates the brutality setting on his Fusion Cannon."
-    },
-    {
-     "text": "100% chance to decrease Attack by 32~44% for 10 seconds."
-    },
-    {
-     "text": "All Too Easy - There is no limits to the carnage Megatron is willing to inflict on his foes."
-    },
-    {
-     "text": "100% chance to inflict Shock, dealing Shock Damage for 300% Attack over 20 seconds."
-    },
-    {
-     "text": "Grants Fusion Overload, allowing unlimited Full Power shots of the Fusion Cannon for the rest of the fight."
-    }
+   "synergy": [
+    "Enemies - Optimus Prime, Bumblebee, Jazz, Jetfire - +2~3~8% Attack Rating.",
+    "Till All is Ours - Soundwave - All Decepticons gain +5~10~15% Attack Rating against Autobots.",
+    "Lieutenants - Starscream, Shockwave - Megatron gains new abilities and his Lieutenants gain +2~3~8% Armor and +2~3~8% Attack Rating.",
+    "Lieutenants – Starscream - Megatron’s Special Attacks have a 30~40~70%% chance to Stun the opponent for 3.5 seconds. This effect will only trigger once per fight for each Special Attack and this Stun debuff cannot be Fused.",
+    "Lieutenants – Shockwave - The last hit of Megatron’s Medium Combo has a 20~25~40% chance to inflict a Power Rate Debuff, reducing the opponent’s Power Rate by 30% for 10 seconds. This debuff may be Fused to the opponent.",
+    "The Fallen - Megatronus - All Decepticons on your team gain +2~3~5% Armor while fighting Decepticons and +5~12~20% Power Rate while fighting Autobots."
    ]
   },
   "Mirage": {
@@ -5036,20 +4452,6 @@
        "5%/22 sec"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Heavy Attacks: Mirage shrugs off Ranged Attacks and Burn Debuffs when speeding up as an F1 car."
-     },
-     {
-      "text": "Ranged Attacks: 100% Armor Penetration"
-     },
-     {
-      "text": "Passive: Mirage starts the fight in Power Mode, granting +30% Power Rate. While in this mode, Mirage activates a Shield when the opponent activates a Special Attack. The shield decreases enemy Critical Damage and Ranged Damage by 59-90% until Mirage is knocked down. The shield requires 15 seconds before it may re-activate."
-     },
-     {
-      "text": "Mirage has a chance to return to this mode from other modes when struck by enemy attacks."
-     }
     ]
    },
    "signature": {
@@ -5157,29 +4559,16 @@
     "Pretense - Mirage surprises the opponent with a lesson in inertia and a forceful introduction to the 200MPH club.",
     "Mirage enters Agility Mode, granting 15% Attack for the remainder of the fight when Dodging or Sidestepping opponent attacks."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Jump Start - A quick warm-up to knock the boom glitches out the enemy's brain garage."
-    },
-    {
-     "text": "Mirage enters Disruption Mode, granting Ranged Attacks a 60% chance to drain 6~9% Power while in the mode."
-    },
-    {
-     "text": "Sleight of Hand and Fist - A stealth approach using technology and trickery helps maintain that freshly-waxed shine."
-    },
-    {
-     "text": "Mirage enters Incapacitation Mode, in which Melee Attacks have a 100% chance to inflict a -2.45~4.75% Attack Debuff for 13.5~20 seconds. (Max: 15)"
-    },
-    {
-     "text": "Stun for 1.5 seconds every 7 Attack Debuffs inflicted."
-    },
-    {
-     "text": "Pretense - Mirage surprises the opponent with a lesson in inertia and a forceful introduction to the 200MPH club."
-    },
-    {
-     "text": "Mirage enters Agility Mode, granting 15% Attack for the remainder of the fight when Dodging or Sidestepping opponent attacks."
-    }
+   "synergy": [
+    "Speed Chasers - Sideswipe, Bumblebee (DOTM), Cheetor - +6.5~15~40% Attack on the next hit when dodging opponents' attacks.",
+    "Sharpshooters - Arcee, Hound - +5~10~20% Critical Rate on ranged attacks.",
+    "Espionage Specialists - Bumblebee (DOTM), Bumblebee - 14~24~70% less likely to activate the opponent's abilities when hitting with Special 2 or 3.",
+    "Racing Rivals - Hot Rod - +8~12~30% Critical Damage.",
+    "Shield Amp - Soundwave, Blaster - +2~4~10% damage deduction when Shielded.",
+    "Brain Drain - Shockwave - Shockwave Drains 8~10~25% more Power from Shocked opponents.",
+    "Uneasy Allies - Cliffjumper - +1~2~3~8% Armor.",
+    "Optimus Maximus - Optimus Prime - Start the fight with 10~30~40% Power. Only applies if all Bots on the team have this Synergy.",
+    "Leadership (5-Star) - All lower tier teammates gain +10% Power Rate."
    ]
   },
   "Mixmaster": {
@@ -5336,30 +4725,6 @@
        "147%/22 sec"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Passive",
-      "description": "Gains a Special Damage Buff every 5 seconds, increasing Special Damage by 17.4~27 %. (Max: 6 stacks)."
-     },
-     {
-      "text": "Once Mixmaster finishes generating Special Damage Buffs, he begins generating a Critical Damage Buff every 5 seconds, each adding 13.8~18.9% Critical Damage. (Max: 6 Stacks)"
-     },
-     {
-      "text": "These Buffs are removed after Mixmaster successfully lands the last hit of a Special Attack."
-     },
-     {
-      "text": "Ranged Attacks"
-     },
-     {
-      "text": "20% chance to inflict Acid, dealing 35~60% Attack as chemical damage over 8~10 seconds and corroding 1 Resistance Buff every 1 second(s)."
-     },
-     {
-      "text": "All Attacks"
-     },
-     {
-      "text": "+50% Critical Rate if the opponent is under the effect of a Debuff."
-     }
     ]
    },
    "signature": {
@@ -5462,26 +4827,13 @@
     "70% chance to inflict Burn, dealing Heat Damage for 120% Attack over 8 seconds.",
     "100% chance to inflict Acid, dealing 80-134% Attack as Chemical damage over 12~20 seconds and corroding one Resistance Buff every 1 second(s)."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Recipe for Disaster - Cook up a beatdown with one part rage and two parts unpredictability."
-    },
-    {
-     "text": "Concoction - Mixmaster kicks it up a notch and…bam!"
-    },
-    {
-     "text": "60% chance to inflict Burn, dealing Heat Damage for 100% Attack over 6 8 seconds."
-    },
-    {
-     "text": "Commence Devastation - Mixmaster takes a break from chassis-chasing to take his opponents seriously."
-    },
-    {
-     "text": "70% chance to inflict Burn, dealing Heat Damage for 120% Attack over 8 seconds."
-    },
-    {
-     "text": "100% chance to inflict Acid, dealing 80-134% Attack as Chemical damage over 12~20 seconds and corroding one Resistance Buff every 1 second(s)."
-    }
+   "synergy": [
+    "Allies - Bonecrusher - +2~3~8% Armor.",
+    "Enemies - Drift - +2~3~8% Attack Rating.",
+    "Weapon Specialists - Ironhide, Rhinox, Hound - +3~4~9% duration for damaging debuffs. +2~3~6% Attack Rating in Alliance Missions.",
+    "Weaponsmiths - Waspinator, Grindor - 4~6~15% chance for Heavy Attacks to be a Critical Hit.",
+    "Shieldmasters - Dinobot, Jetfire- Well-timed against Melee Attacks have 10% Block Proficiency and drains Power equal to 1~2~8% of the opponent's max Power.",
+    "Leadership (5-Star) - +10% Special Damage."
    ]
   },
   "Motormaster": {
@@ -5643,23 +4995,6 @@
        "5 seconds"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Dashing: Motormaster charges forward with Unstoppable force, shrugging off the impact of the opponent's attacks."
-     },
-     {
-      "text": "Ram With Heavy Attacks: Inflicts one of three Debuffs when ramming opponents with Heavy Attacks."
-     },
-     {
-      "text": "-14~21.6% Attack for 6 seconds."
-     },
-     {
-      "text": "-19.4~29.7% Armor Break for 6 seconds."
-     },
-     {
-      "text": "-15.9~24.3% Power for 6 seconds."
-     }
     ]
    },
    "signature": {
@@ -5761,23 +5096,13 @@
     "End of the Road - He's both the unstoppable force and the immovable object.",
     "Crashing into the opponent inflicts +150% additional damage and inflicts 6 Ram Debuffs, but at a cost of 90% Attack as Physical Damage to Motormaster."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Ionizer Blade - A blast of vacuum-metalized energy helps opponents become King of the Junkyard."
-    },
-    {
-     "text": "A Master Craft - A quality rig pushed to the maximum and tested for life. It's everyday road rage made better."
-    },
-    {
-     "text": "Motormaster gains an Unstoppable Buff for 3.8-4.5 seconds."
-    },
-    {
-     "text": "End of the Road - He's both the unstoppable force and the immovable object."
-    },
-    {
-     "text": "Crashing into the opponent inflicts +150% additional damage and inflicts 6 Ram Debuffs, but at a cost of 90% Attack as Physical Damage to Motormaster."
-    }
+   "synergy": [
+    "Enemies - Optimus Prime, Grimlock, Wheeljack - +1~2~3~8% Attack Rating.",
+    "Unstoppable Force – Ramjet",
+    "15~20~30% chance Ramjet gains Unstoppable for 3 seconds after the last hit of a special attack.",
+    "15~20~30% chance Motormaster stuns his opponent for 2.5 seconds after the last hit of a special attack.",
+    "Enforcers - Ramjet, Kickback - Debuffs last 20~25~40% longer and cannot be Purified.",
+    "Leadership (5-Star) - +10% Attack Rating."
    ]
   },
   "Necrotronus": {
@@ -5879,8 +5204,7 @@
      "[https://transformers-forged-to-fight.fandom.com/wiki/File:Debuff_Bleed.png Bleed] - Bleeding Energon causes direct damage over time."
     ],
     "list": [],
-    "tables": [],
-    "pairs": []
+    "tables": []
    },
    "signature": {
     "name": "Outrage - Titan Charges have a high maximum and also increase Critical Damage.",
@@ -5989,35 +5313,13 @@
     "85% chance to cause Bleed Debuff, dealing damage for 40% Attack over 7 seconds.",
     "Necrotronus loses 20 Titan Charges."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Fall and Rise Again - We will be eternal."
-    },
-    {
-     "text": "60% Chance to increase Power Rate by +30% for 6 seconds."
-    },
-    {
-     "text": "Necrotronus loses 10 Titan Charges."
-    },
-    {
-     "text": "Two Minds - None can stand in our way."
-    },
-    {
-     "text": "65% Chance to gain +20% Crit Rate for 12 seconds."
-    },
-    {
-     "text": "Necrotronus loses 15 Titan Charges."
-    },
-    {
-     "text": "Master of Timelines - Time is ours to control."
-    },
-    {
-     "text": "85% chance to cause Bleed Debuff, dealing damage for 40% Attack over 7 seconds."
-    },
-    {
-     "text": "Necrotronus loses 20 Titan Charges."
-    }
+   "synergy": [
+    "- Aspiration - Megatronus - Start the fight with 4~6~8~10 Titan Charges.",
+    "- Power Consumed - Megatronus - +2~3~4~5% Critical Chance when Megatronus has more Power than the opponent.",
+    "- Disciples - Nemesis Prime, Bludgeon - +2~3~4~5% Power Gain when your Bot has less Power than the opponent.",
+    "- Cityspeaker - Windblade - +2~3~6~8% Power Gain from Sword Attacks.",
+    "- Titan Hunters - Thundercracker, Waspinator - +2~3~5~6% Armor Pierce.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% critical rate."
    ]
   },
   "Nemesis Prime": {
@@ -6147,44 +5449,6 @@
        "30%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Passive"
-     },
-     {
-      "text": "Nemesis Prime gains a Dark Energy Charge every 12~10 seconds, up to a maximum of 10 charges."
-     },
-     {
-      "text": "At less than 50% health, Nemesis Prime gains a Dark Energy Charge every 7 seconds."
-     },
-     {
-      "text": "At less than 15% health, Nemesis Prime gains a Dark Energy Charge every 5 seconds."
-     },
-     {
-      "text": "+10% Critical Chance against Autobots."
-     },
-     {
-      "text": "+10% Armor Piercing against Decepticons."
-     },
-     {
-      "text": "Opponent Gains a Buff"
-     },
-     {
-      "text": "Whenever the opponents gains a Melee Attack Buff, Nemesis Prime has a 10~25% chance to copy the same buff for the same amount of time. +5% chance for each charge of Dark Energy."
-     },
-     {
-      "text": "Whenever the opponents gains an Armor Buff, Nemesis Prime has a 10~25% chance to copy the same buff for the same amount of time. +5% chance for each charge of Dark Energy."
-     },
-     {
-      "text": "Heavy Attacks"
-     },
-     {
-      "text": "Nullify one Melee Attack Buff or Armor Buff from the opponent."
-     },
-     {
-      "text": "This attack has +5% Attack for each charge of Dark Energy."
-     }
     ]
    },
    "signature": {
@@ -6295,38 +5559,13 @@
     "After the last hit of the attack, basic attacks are Unblockable for 7 seconds plus 0.5 seconds per charge of Dark Energy.",
     "Reduces Dark Energy Charges to 0."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Dark Energon Chop - This dark clone comes complete with a cloned Energon Axe."
-    },
-    {
-     "text": "30% chance to copy each Debuff on Nemesis Prime to the opponent. +3% chance for each charge of Dark Energy."
-    },
-    {
-     "text": "Gain 2 charges of Dark Energy."
-    },
-    {
-     "text": "Axes of Evil - Reverse the polarity of your opponent’s face."
-    },
-    {
-     "text": "50% chance to nullify each Melee Attack Buff on the opponent and apply a 5% Attack Debuff for 4 seconds. +5% chance for each charge of Dark Energy."
-    },
-    {
-     "text": "50% chance to nullify each Armor Buff Buff on the opponent and apply a 5% Armor Break for 4 seconds. +5% chance for each charge of Dark Energy."
-    },
-    {
-     "text": "Reduces Dark Energy Charges by 3 for each Buff nullified."
-    },
-    {
-     "text": "No Matter the Obstacle - Nemesis Prime is on a mission, and nothing will stand in his way."
-    },
-    {
-     "text": "After the last hit of the attack, basic attacks are Unblockable for 7 seconds plus 0.5 seconds per charge of Dark Energy."
-    },
-    {
-     "text": "Reduces Dark Energy Charges to 0."
-    }
+   "synergy": [
+    "Doppelganger – Optimus Prime - Nemesis Prime gains 3~4~5~6% Armor.",
+    "Original Model – Optimus Prime - Armor Break is 3~4~5~6% more effective.",
+    "Dark Energy Fuel – Galvatron - Increase Dark Energy gain by 4~5%.",
+    "Dark Ally – Cyclonus - Increase Dark Burn damage by +4~4~5~5%.",
+    "Intriguing Subject – Shockwave - Increase Power Gain by +3~4~5~6%.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Armor Rating."
    ]
   },
   "Optimus Prime (MV1)": {
@@ -6416,8 +5655,7 @@
      "[https://transformers-forged-to-fight.fandom.com/wiki/File:Buff_Willpower.png Willpower] - Returns damage he deals as Health when Bleeding"
     ],
     "list": [],
-    "tables": [],
-    "pairs": []
+    "tables": []
    },
    "signature": {
     "name": "I'll Take You All On! - Optimus Prime's perseverance changes the tide of the battle, providing increased Armor and three Melee Buffs when at low health. This may occur once per fight.",
@@ -6518,23 +5756,15 @@
     "+30% chance to inflict Bleed.",
     "Strength of the Autobots - Together, stronger. Divided, defeated."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Guardian Slash - Twin swords have opponents seeing double the trouble."
-    },
-    {
-     "text": "This attack deals up to +150% damage based on Health lost."
-    },
-    {
-     "text": "I'll Take You All On! - You'll have to go through a savage sword combo wielded by a strong will to take Optimus on."
-    },
-    {
-     "text": "+30% chance to inflict Bleed."
-    },
-    {
-     "text": "Strength of the Autobots - Together, stronger. Divided, defeated."
-    }
+   "synergy": [
+    "Allies - Ironhide , Bumblebee, Drift, Hound - +1~2~3~8% Armor.",
+    "Enemies - Megatron, Megatronus - +2~3~8% Attack Rating.",
+    "Enemies - Grindor, Bonecrusher - +2~3~8% Attack Rating.",
+    "Sensei - Drift - 2~3~8% Armor.",
+    "Till All Are One - Bumblebee - 2~3~8% Attack Rating for Autobots. 6~8~12% debuff damage for Autobots in Raids.",
+    "Old Friends - Ironhide - 20~40~70% chance to deal an additional Bleed stack when inflicting Bleed.",
+    "Medic Support - Hound - 1.3~2.5~7% of base Health Repaired at the start of the fight. +3~4~5% extra Repair in Raids.",
+    "Leadership (5-Star) - Acting as a beacon of leadership for the team, all lower tier teammates gain +10% Attack Rating."
    ]
   },
   "Optimus Prime": {
@@ -6707,21 +5937,6 @@
        "92% / 35%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Blocking",
-      "description": "When entering the Block stance, Optimus equips an Armor Buff, reducing damage from attacks by 9.7~14.8% for 2.5 seconds."
-     },
-     {
-      "text": "Prime's determination to protect teammates provides +8.8~13.5% Armor per team member against Melee Attacks."
-     },
-     {
-      "text": "Passive: Armor Break effects last 1.5% longer for every hit in the Combo Meter."
-     },
-     {
-      "text": "Heavy Attacks: Rolling Out grants +12.7~24.4% Attack per team member for 7 seconds."
-     }
     ]
    },
    "signature": {
@@ -6829,29 +6044,22 @@
     "No Matter the Cost - One shall stand, one shall fall.",
     "Inflicts a permanent Armor Break, removing enemy armor and applying 35% Armor reduction."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Energon Chop - Optimus delivers a whirling slash with his Energon Axe to subdue his opponent."
-    },
-    {
-     "text": "61~85% chance to Armor Break, removing enemy armor and applying 14.5~20% armor reduction for 3.5 seconds."
-    },
-    {
-     "text": "+20% Attack for 6 seconds. Additionally, Optimus Prime's Attack is increased by +20% Attack per fallen ally in his squad."
-    },
-    {
-     "text": "Axed - Say goodbye to the weakest link with a few chops of sharpened Energon."
-    },
-    {
-     "text": "61.4-85% chance to Armor Break, removing enemy armor and applying 28.3-35% armor reduction for 6 seconds."
-    },
-    {
-     "text": "No Matter the Cost - One shall stand, one shall fall."
-    },
-    {
-     "text": "Inflicts a permanent Armor Break, removing enemy armor and applying 35% Armor reduction."
-    }
+   "synergy": [
+    "Allies - Grimlock, Wheeljack - +1~2~3~8% Armor.",
+    "Enemies - Bludgeon, Motormaster, Megatron, Megatronus - +1~2~3~8% Attack Rating.",
+    "Enemies - Soundwave, Motormaster, Megatron, Megatronus - +1~2~3~8% Attack Rating.",
+    "Brothers in Arms - Ironhide (ROTF), Ratchet - +2~3~8% Armor for Autobots as well as +4~6~9% Melee Damage in Solo Missions.",
+    "Chief Medical Officer - Ratchet - Up to 100% chance based lost Health to Repair 1.5~3~10% of base Health instead of gaining an Attack Buff when Rolling Out.",
+    "Role Models - Bumblebee - Bumblebee's Heavy Attacks gain a +2~3~5% Attack Buff for each alive team member.",
+    "Role Models - Bumblebee - Bumblebee gains a new ability and grants 2~3~8% Armor to his role models.",
+    "Doppelganger - Nemesis Prime - Nemesis Prime gains +3~4~5~6% Armor.",
+    "Original Model - Nemesis Prime - Armor Break is 3~4~5~6% more effective.",
+    "Lieutenants - Prowl, Jazz - Optimus gains 2~3~8% Attack and Armor and his lieutenants gain unique abilities.",
+    "Lieutenants - Prowl - If Prowl Drains the opponent’s Power to 0% of their Max Power, he has a 8~10~40% chance to Stun the opponent for 2.5 seconds.",
+    "Lieutenants - Jazz - Each time Jazz avoids all hits in an opponent’s Special Attack he gains an Attack Buff, increasing his Attack Rating by 2~4~8% for the remainder of the fight.",
+    "Autobot Leaders - Rodimus Prime - All Autobots gain +8-15% Armor Piercing against Decepticons.",
+    "Optimus Maximus - Mirage, Prowl, Ironhide, Sunstreaker - Start the fight with 10~20~30~40% Power. Bots only benefit from this bonus if all Bots on the team have this Synergy.",
+    "Leadership (5-Star) - Acting as a beacon of leadership for the team, all lower tier teammates gain +10% Armor Rating."
    ]
   },
   "Prowl": {
@@ -7007,25 +6215,6 @@
        "50%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "On Dash Back",
-      "description": "Prowl tries to Suppress the opponent. While tension is building up, Prowl prepares for the inevitable fight by charging a Melee Buff every 0.5 seconds for a maximum of 10 stacks."
-     },
-     {
-      "text": "When Prowl is struck or hits towards the opponent, each Melee Buff increases damage by 7.6~11.7% for 6 seconds."
-     },
-     {
-      "text": "35.4~54% chance to automatically Evade the next incoming attack. This interrupts the charging of Melee Buffs."
-     },
-     {
-      "name": "Ranged Attacks",
-      "description": "10% chance to Stun opponents for 1.5 seconds on the first Ranged hit of a combo. (Unlisted)"
-     },
-     {
-      "text": "+70% chance if Prowl is charging his Melee Buffs. (Unlisted)"
-     }
     ]
    },
    "signature": {
@@ -7137,29 +6326,16 @@
     "Ride Shotgun - Riding shotgun with Prowl is a once-in-a-lifetime experience.",
     "100% chance to Power Lock, severing the target’s flow of Power for 16 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Short Circuit - His short fuse and their short circuit."
-    },
-    {
-     "text": "100% chance to Power Burn, consuming up to 23.8~36.4% of the target’s max Power."
-    },
-    {
-     "text": "If the opponent reaches zero Power as a result of this Power Burn, the strength of their Power Gain Buffs is reduced by 15% for the rest of the fight."
-    },
-    {
-     "text": "Gunslinger - Locked, loaded, and he’s quick on the draw. Watch Out!"
-    },
-    {
-     "text": "Increases Ranged Damage by 29.5~45% and Ranged Speed for 6 seconds."
-    },
-    {
-     "text": "Ride Shotgun - Riding shotgun with Prowl is a once-in-a-lifetime experience."
-    },
-    {
-     "text": "100% chance to Power Lock, severing the target’s flow of Power for 16 seconds."
-    }
+   "synergy": [
+    "Allies - Ultra Magnus - 2~3~8% Armor.",
+    "Brothers in Arms - Ultra Magnus - 2~3~8% Armor for Autobots. 4~6~8% Melee Damage for Autobots in Solo Missions.",
+    "Allies - Arcee - 2~3~8% Armor.",
+    "Code 12: Reckless Driving - Sideswipe, Hot Rod, Mirage - 6~9~24% Attack Buff for 3 seconds when using a Heavy Attack. Stacking those buffs refreshes the duration of the entire stack.",
+    "Enemies - Barricade, Kickback - 2~3~8% Attack Rating.",
+    "Role Models - Bumblebee - 2~3~8% Armor.",
+    "Role Models - Bumblebee - Bumblebee's Heavy Attacks gain a 2~3~5% Attack Buff for each alive team member.",
+    "Lieutenants - Optimus Prime - Optimus gains 2~3~8% Attack and Armor and his lieutenants gain unique abilities.",
+    "Lieutenants - Optimus Prime - If Prowl Drains the opponent’s Power to 0% of their Max Power, he has a 8~10~40% chance to Stun the opponent for 2.5 seconds."
    ]
   },
   "Ramjet": {
@@ -7302,18 +6478,6 @@
        "82%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Passive: This bot's naturally tough Cybertronian exterior provides a permanent 10% passive Armor Buff."
-     },
-     {
-      "name": "Ram with Heavy Attacks",
-      "description": "Shrugs off the impact of enemy attacks."
-     },
-     {
-      "text": "100% chance to Stun Burning opponents for 3 seconds."
-     }
     ]
    },
    "signature": {
@@ -7418,32 +6582,15 @@
     "100% chance to Stun the opponent for 4 seconds. (And Ramjet himself for 1 second)",
     "100% chance to inflict a 25% Resistance Debuff for 30 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Missile Volley - Ramjet unleashes a barrage of rockets from his chest."
-    },
-    {
-     "text": "40~60% Chance per hit to inflict up to four Burns that deal 20~35% attack as heat damage over 5 6 seconds."
-    },
-    {
-     "text": "Rocket Blaster - A blast of heat followed by a sudden impact is guaranteed to leave an opponent dizzy."
-    },
-    {
-     "text": "100% Chance per hit to inflict Burn, dealing 50~70% attack as heat damage over 6 seconds."
-    },
-    {
-     "text": "72~80% Chance to cause Stun for 3.5 seconds."
-    },
-    {
-     "text": "Dive Bomb - You can run but you cannot hide from Ramjet’s reckless abandon."
-    },
-    {
-     "text": "100% chance to Stun the opponent for 4 seconds. (And Ramjet himself for 1 second)"
-    },
-    {
-     "text": "100% chance to inflict a 25% Resistance Debuff for 30 seconds."
-    }
+   "synergy": [
+    "Allies – Soundwave, Bludgeon, Starscream - +2~3~8% Armor",
+    "Enemies – Windblade, Jetfire - +2~3~8% Attack Rating",
+    "Unstoppable Force – Motormaster",
+    "15~20~30% chance Ramjet gains Unstoppable for 3 seconds after the last hit of a special attack.",
+    "15~20~30% chance Motormaster stuns his opponent for 2.5 seconds after the last hit of a special attack.",
+    "Starscream's Seekers - Starscream - 5~8~15% Damage and 20~30~75% Armor Piercing for all Decepticon Ranged Attacks.",
+    "Enforcers - Motormaster, Kickback - Debuffs last 20~25~40% longer and cannot be Purified.",
+    "Leadership (5-Star) - +10% Special Damage."
    ]
   },
   "Rhinox": {
@@ -7592,36 +6739,6 @@
        "120%/14 sec"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Shielding Passive"
-     },
-     {
-      "text": "Starts the fight with 6 Shield Buffs each capping damage from one attack to 80% of the opponent's Attack Rating. which are removed each time Rhinox is hit by a Basic or Heavy Melee Attack."
-     },
-     {
-      "text": "While Rhinox's Shield is active, powerful enemy attacks cannot deal more than 80% of the opponent's Attack Rating in a single hit."
-     },
-     {
-      "text": "Shield Buffs recharge in 12-8 seconds. (cooldown on HUD as of December 2019)"
-     },
-     {
-      "text": "+35% Burn and Shock Resistance while Shielded."
-     },
-     {
-      "text": "Basic Melee Attacks: +20% damage against Bleeding targets."
-     },
-     {
-      "text": "Chaingun Ranged Attacks: 30% chance to inflict Bleed, dealing 35-55% Attack over 5 seconds."
-     },
-     {
-      "name": "Rhino Ram Heavy Attack",
-      "description": "90% 100% chance to drain 12% of the target's max Power and inflict Power Lock for 4 seconds."
-     },
-     {
-      "text": "When this ability is triggered, its chance to trigger again is reduced by 70%. This returns to normal after 16 seconds."
-     }
     ]
    },
    "signature": {
@@ -7736,38 +6853,14 @@
     "+10% Damage if Health is above 50%",
     "30% chance to inflict Bleed, dealing 45% Attack over 5 12 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Tactical Gore - A sensible, well-thought-out impaling is an effective way to settle an argument."
-    },
-    {
-     "text": "90% 100% chance to gore the target's weapons systems, Nullifying up to 1 Melee, Ranged, or Special Damage Buffs."
-    },
-    {
-     "text": "100% chance to inflict Bleed for each Buff removed in this way, dealing 100-115% Attack over 13 seconds."
-    },
-    {
-     "text": "Chainguns of Doom - Sometimes you need to become war in order to survive."
-    },
-    {
-     "text": "30% chance to inflict Bleed, dealing 35-55% Attack over 5 8 seconds."
-    },
-    {
-     "text": "A Beast Unleashed - A keen intellect won't solve problems with the small-minded."
-    },
-    {
-     "text": "+55% Damage if Health is above 90%"
-    },
-    {
-     "text": "+25% Damage if Health is above 75%"
-    },
-    {
-     "text": "+10% Damage if Health is above 50%"
-    },
-    {
-     "text": "30% chance to inflict Bleed, dealing 45% Attack over 5 12 seconds."
-    }
+   "synergy": [
+    "- Enemies - Waspinator, Scorponok - +2~3~8% Attack Rating.",
+    "Weapon Specialists - Mixmaster, Ironhide, Hound - Damaging Debuffs lasts +2~4~9% longer. Additionally, Attack Rating is increased by +3~4~6% in Alliance Missions.",
+    "Brain Drain - Shockwave - Shockwave generates 2~4 Energy Charges at the start of the fight and every 25 seconds. Shockwave's Shocks deal 8~10~25% more damage.",
+    "- Allies - Cheetor, Dinobot, Optimus Primal - +2~3~8% Armor.",
+    "Beast Purification - Optimus Primal - Heavy Attacks of Beast Wars characters grant 4~12~20% Attack Rating for 5 seconds and Purify Damaging Debuffs as long as there are 2 or more Beast Wars bots on Primal’s team.",
+    "Beast Ancestor - Tantrum - After each Heavy Attack, this bot gains a Beast Fury buff that grants Attacks a 5~8~15% chance to be Unblockable for 6 seconds.",
+    "Leadership (5-Star) - +10% Power Rate."
    ]
   },
   "Rodimus Prime": {
@@ -7870,44 +6963,6 @@
        "20%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Passive"
-     },
-     {
-      "text": "After being hit by 5 Melee Attacks, Rodimus gains 50% Armor for 4 seconds."
-     },
-     {
-      "text": "When Rodimus Prime has less than 40% health, he is Immune to Stun."
-     },
-     {
-      "text": "Dashing"
-     },
-     {
-      "text": "70% chance to Purify a Debuff from Rodimus Prime."
-     },
-     {
-      "text": "Last Hit of a Melee Combo"
-     },
-     {
-      "text": "25~50% chance to Remove a Melee Buff."
-     },
-     {
-      "text": "25~50% chance to Remove an Armor Up Buff."
-     },
-     {
-      "text": "Heavy Attack"
-     },
-     {
-      "text": "Apply 1 3-15% Armor Break for 7 seconds per Buff on the opponent."
-     },
-     {
-      "text": "Knocked Down"
-     },
-     {
-      "text": "Rodimus Prime has a 0.6% chance for each percentage of lost Health to Repair 13-20% of damage taken over 3 seconds."
-     }
     ]
    },
    "signature": {
@@ -8018,38 +7073,11 @@
     "100% Armor Piercing",
     "If Rodimus has less than 10% health, heal 10% Health over 3 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Dare to Believe - Rodimus Prime holds the future in his hands!"
-    },
-    {
-     "text": "On activation, remove Unstoppable from the opponent."
-    },
-    {
-     "text": "50% chance to Nullify 1 Buff on the opponent."
-    },
-    {
-     "text": "If the opponent has any Buffs when this attack ends, Rodimus Prime gains 50% Physical Resistance for 8 seconds. (Max Stacks: 4)"
-    },
-    {
-     "text": "Take a Stand - When Rodimus Prime takes a stand, you can win!"
-    },
-    {
-     "text": "100% chance to Nullify 1 Melee Buff and 1 Armor Buff."
-    },
-    {
-     "text": "If Rodimus has less than 20% health, Heal 5% health over 3 seconds."
-    },
-    {
-     "text": "Fire in Your Heart - Rodimus Prime's fighting spirit can lighten the darkest hour."
-    },
-    {
-     "text": "100% Armor Piercing"
-    },
-    {
-     "text": "If Rodimus has less than 10% health, heal 10% Health over 3 seconds."
-    }
+   "synergy": [
+    "Enemies - Galvatron - +2~3~8% Attack Rating.",
+    "Autobot Leaders - Optimus Prime, Ultra Magnus - All Autobots gain +8~10~12% Armor Penetration against Decepticons.",
+    "Strange Times - Hot Rod - Increase chance for Deceleration to trigger by 6~8~15%.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Armor Rating."
    ]
   },
   "Scorponok": {
@@ -8213,38 +7241,6 @@
        "26 sec"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "When filling a bar of Power"
-     },
-     {
-      "text": "Gains a Venom charge, granting +20% Attack per charge."
-     },
-     {
-      "text": "Heavy Attack"
-     },
-     {
-      "text": "Scorponok’s poisonous cyber-strikes converts each Venom Charge into a 12 second Backfire Debuff on the opponent."
-     },
-     {
-      "text": "Critical Melee Attacks"
-     },
-     {
-      "text": "30~40% chance to Bleed, dealing 40~60% of Attack over 4 seconds."
-     },
-     {
-      "text": "Venom Backfire"
-     },
-     {
-      "text": "When opponents activate a Special Attack, Backfire is consumed and inflicts 91.8~140% Attack as Shock damage per charge."
-     },
-     {
-      "text": "If the opponent does not use a Special Attack and 2 Backfire charges expire simultaneously, the opponent is also Stunned for 3 seconds."
-     },
-     {
-      "text": "If 3 or more Backfire charges expires simultaneously, the opponent takes Shock Damage equal to 500% of Attack Rating over 4 seconds."
-     }
     ]
    },
    "signature": {
@@ -8368,26 +7364,14 @@
     "Predacon Persecution - There is no stopping the primal calamity that is Scorponok.",
     "Scorponok’s robotic bee Dazes the opponent, causing their Basic Ranged Attacks to Miss 60% of the time and Ranged Special Attacks to Miss 100% of the time for 16~ 24 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Daze and Destroy - The Cyber Bee's toxin viciously attacks the enemy's neural pathways."
-    },
-    {
-     "text": "Scorponok’s robotic bee Dazes the opponent, causing their Basic Ranged Attacks to Miss 60% of the time and Ranged Special Attacks to Miss 100% of the time for 7~ 9 seconds."
-    },
-    {
-     "text": "Tunneling Terror - Scorponok is adapt at forcing the element of surprise."
-    },
-    {
-     "text": "Converts each Venom Charge into a 12 second Backfire Debuff on the opponent."
-    },
-    {
-     "text": "Predacon Persecution - There is no stopping the primal calamity that is Scorponok."
-    },
-    {
-     "text": "Scorponok’s robotic bee Dazes the opponent, causing their Basic Ranged Attacks to Miss 60% of the time and Ranged Special Attacks to Miss 100% of the time for 16~ 24 seconds."
-    }
+   "synergy": [
+    "Allies - Waspinator - +2~3~8% Armor.",
+    "Enemies - All Maximals - +2~3~8% Attack Rating.",
+    "Weaponsmiths - Hound, Ramjet - +4~6~15% chance for Heavy Attacks to be a Critical Hit.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Critical Damage.",
+    "Beast Purification - Optimus Primal - Heavy Attacks of Beast Wars characters grant 4~12~20% Attack Rating for 5 seconds and Purify Damaging Debuffs as long as there are 2 or more Beast Wars bots on Primal’s team.",
+    "Beast Ancestor - Tantrum - After each Heavy Attack, this bot gains a Beast Fury buff that grants Attacks a 5~8~15% chance to be Unblockable for 6 seconds.",
+    "Sabotage Specialists - Slipstream - +5~8~12~15% Backfire Damage."
    ]
   },
   "Shockwave": {
@@ -8542,24 +7526,6 @@
        "13 seconds"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Blocking Ranged Energy Attacks",
-      "description": "Generates up to 3 Energy Charges, each lasting 6 seconds."
-     },
-     {
-      "text": "While Shockwave has less than 3 Energy Charges he gains 100% Block Proficiency against Basic Energy Attacks."
-     },
-     {
-      "text": "On Heavy Attack: - Inflicts Shock damage for 60~85% of Attack per Energy Charge over 4 seconds."
-     },
-     {
-      "text": "Basic Ranged Attacks have a 100% chance to consume a Shock Charge to inflict Shock on the enemy."
-     },
-     {
-      "text": "Shockwave Power Leaks the enemy for 1.5~2.6% of a Power Bar every second for each Shock Debuff on them."
-     }
     ]
    },
    "signature": {
@@ -8678,38 +7644,20 @@
     "100% chance to inflict Repair Block, preventing the target from recovering Health for 7~11 seconds.",
     "Inflicts Shock damage for 60~85% of Attack per Energy Charge over 4 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Shockblast - Logic dictates that a cluster of microchips within a Bot's brain module will fry when exposed to sufficient shock."
-    },
-    {
-     "text": "Generates 3 Energy Charges, each lasting 6 seconds."
-    },
-    {
-     "text": "Inflicts Shock damage for 60~85% of Attack per Energy Charge over 4 seconds."
-    },
-    {
-     "text": "Laser Sweep- If you get hit, it would feel like every molecule in your body is exploding at the speed of light."
-    },
-    {
-     "text": "100% Armor Piercing."
-    },
-    {
-     "text": "100% chance to inflict Repair Block, preventing the target from recovering Health for 6.5 seconds."
-    },
-    {
-     "text": "Little Friend - Say hello to a big gun, a small gun, and one aimed right for your brain module."
-    },
-    {
-     "text": "Generates 5 Energy Charges, each lasting 7 seconds."
-    },
-    {
-     "text": "100% chance to inflict Repair Block, preventing the target from recovering Health for 7~11 seconds."
-    },
-    {
-     "text": "Inflicts Shock damage for 60~85% of Attack per Energy Charge over 4 seconds."
-    }
+   "synergy": [
+    "Brain Gain – All Tech Bots - 10~15~25% increase to Attack Rating against Demolition Bots. Shockwave only benefits from this bonus if all Bots on the team have this Synergy.",
+    "Brain Drain – Soundwave - Shockwave's Shocks last 8~10~25% longer.",
+    "Brain Drain – Ratchet - Shockwave's Energy Charges last 8~10~25% longer.",
+    "Brain Drain – Rhinox - Shockwave's Shocks deal 8~10~25% more damage.",
+    "Brain Drain – Mirage - Shockwave drains 8~10~25% more Power from Shocked opponents.",
+    "Brain Drain – Blaster - Shockwave generates 1~2~3 Energy Charges at the start of the fight and every 25 seconds.",
+    "Brain Drain – Wheeljack - Shockwave has a 10~15~30% chance to inflict Stun for 2 seconds when inflicting 3 or more Shocks simultaneously.",
+    "Brain Drain – Jetfire - Shockwave Repairs 2~3~6% Health over 2 seconds each time he gains 6 or more Energy Charges.",
+    "Brain Drain – Skywarp - 5~10~25% Ranged Evade for 20 seconds at the start of combat.",
+    "Living Weapon - Galvatron - +4~6~16% damage to Heavy Attacks and Special Attack 3.",
+    "Lieutenants - Megatron - Megatron gains new abilities and his lieutenants gain 2~3~8% Armor and Attack Rating.",
+    "Lieutenants - Megatron - The last hit of Megatron’s Medium Combo has a 20~25~40% chance to inflict a Power Rate Debuff, reducing the opponent’s Power Rate by 30% for 10 seconds. This debuff may be Fused to the opponent.",
+    "Intriguing Subject – Nemesis Prime - Increase Power Gain by +3~4%."
    ]
   },
   "Sideswipe": {
@@ -8870,28 +7818,6 @@
        "30%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "When Attacked: After being struck by 7 Basic Attacks, Sideswipe gains a 30-38% Melee Evasion Buff for 4 seconds."
-     },
-     {
-      "name": "Sidestepping",
-      "description": "Gains 13% Power when Sidestepping Ranged Attacks."
-     },
-     {
-      "text": "When Sidestepping an incoming Dash Attack, Sideswipes increases his Critical Damage by 70-108% for 6 seconds."
-     },
-     {
-      "text": "Critical Hits: 100% chance to gain a 2-3.8% Crit Rate Buff. 5 Buffs are lost if Sideswipe is knocked down by opponent Heavy or Special attacks."
-     },
-     {
-      "name": "Heavy Attacks",
-      "description": "Sideswipe purifies all Shock debuffs."
-     },
-     {
-      "text": "Sideswipe refreshes all Critical Damage buffs."
-     }
     ]
    },
    "signature": {
@@ -9002,38 +7928,12 @@
     "Each hit from acrobatic fighting style strikes key systems in his opponents for a 60% chance to Nullify a Buff.",
     "100% chance to inflict Burn, dealing Heat Damage for 100% Attack over 4 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Swagger - A couple of punches do the trick, but look cooler with a flash kick."
-    },
-    {
-     "text": "13.3-25.5% Critical Rate."
-    },
-    {
-     "text": "40% chance to Stun for 2.5 seconds."
-    },
-    {
-     "text": "Kickin' It Old School - Flip the script with a stylish shoulder cannon blast."
-    },
-    {
-     "text": "Sideswipe gains a Melee Evasion Buff for 8 seconds."
-    },
-    {
-     "text": "100% chance to inflict Burn, dealing Heat Damage for 80% Attack over 6 seconds."
-    },
-    {
-     "text": "If Sideswipe has 10 Critical Rate buffs, he gains +50% Critical Damage for 10 seconds."
-    },
-    {
-     "text": "Breakdance Fighting - Knock sense into your opponents with style."
-    },
-    {
-     "text": "Each hit from acrobatic fighting style strikes key systems in his opponents for a 60% chance to Nullify a Buff."
-    },
-    {
-     "text": "100% chance to inflict Burn, dealing Heat Damage for 100% Attack over 4 seconds."
-    }
+   "synergy": [
+    "Allies - Jetfire - +2~3~8% Armor.",
+    "Romance - Windblade - Windblade gets 17.5~35~80% of Power Bar at the start of a fight.",
+    "Speed Chasers - Mirage, Bumblebee (DOTM), Cheetor - 6.5~15~40% Attack on the next hit when dodging opponents' attacks.",
+    "Code 12: Reckless Driving - Prowl - 6~9~24% Attack Buff for 3 seconds when using a Heavy Attack. Stacking those buffs refreshes the duration of the entire stack.",
+    "Leadership (5-Star) - +10% Critical Rating to all lower tier teammates."
    ]
   },
   "Skywarp": {
@@ -9136,8 +8036,7 @@
      "Teleports have a 100% chance to Purify Burn Shock Debuffs."
     ],
     "list": [],
-    "tables": [],
-    "pairs": []
+    "tables": []
    },
    "signature": {
     "name": "Cut and Run - Skywarp can use his teleportation defensively too, dodging away from danger.",
@@ -9247,38 +8146,12 @@
     "100% chance to Power Steal for 25~50% target’s Max Power.",
     "If the opponent reaches 0 Power as a result of this Power Steal, gain a 15% Power Rate Buff for the remainder of the fight (Max stacks: 1)"
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Deceitful Hit - Skywarp always has a trick up his sleeve."
-    },
-    {
-     "text": "If Skywarp has a Teleport Charge, this is a Teleport Attack."
-    },
-    {
-     "text": "Ranged Attacks cause 5~8% Power Burn for 9 seconds."
-    },
-    {
-     "text": "Death from Above - An unexpected assault from the skies."
-    },
-    {
-     "text": "If Skywarp has a Teleport Charge, this is a Teleport Attack."
-    },
-    {
-     "text": "Gain a shield until the next time Skywarp Teleports. This shield reduces Critical Damage by 70%"
-    },
-    {
-     "text": "100% chance to inflict Repair Block on the opponent for 12 seconds."
-    },
-    {
-     "text": "Seeker Strike - Skywarp’s maneuvering leaves even the most experienced bot at a loss."
-    },
-    {
-     "text": "100% chance to Power Steal for 25~50% target’s Max Power."
-    },
-    {
-     "text": "If the opponent reaches 0 Power as a result of this Power Steal, gain a 15% Power Rate Buff for the remainder of the fight (Max stacks: 1)"
-    }
+   "synergy": [
+    "Starscream’s Seekers - Starscream, Thundercracker, Ramjet, Dirge - +5~8~15% Damage and 20~30~75% Armor Piercing for all Decepticon Ranged Attacks.",
+    "Tricky Tech - Mirage - +3~10~12% Special Attack Damage.",
+    "Brain Gain - Shockwave - 10~15~25% increase to Attack Rating against Demolition Bots. Shockwave only benefits from this bonus if all Bots on the team have this Synergy",
+    "Brain Drain - Shockwave - 5~10~25% Ranged evade for 20 seconds at the start of combat.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Power Rate."
    ]
   },
   "Slipstream": {
@@ -9436,60 +8309,6 @@
        "60%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Passive"
-     },
-     {
-      "text": "10% chance to evade Heavy Attacks for each Debuff on the opponent. (Max Evade 90%)"
-     },
-     {
-      "text": "Heavy Attacks"
-     },
-     {
-      "text": "Slipstream is Invulnerable to Ranged Attacks while in her jet mode."
-     },
-     {
-      "text": "+80% 100% chance to gain +15% Critical Damage for 7 seconds."
-     },
-     {
-      "text": "Basic Ranged Attacks"
-     },
-     {
-      "text": "100% chance to Nullify a Shield Buff."
-     },
-     {
-      "text": "30% chance to gain +20% Attack for 5 seconds."
-     },
-     {
-      "text": "2nd Medium Combo Hit/Last hit of a Medium Combo"
-     },
-     {
-      "text": "Purify all Shock Debuffs. If any Shock Debuffs were removed, apply a Shock debuff dealing 60% of Attack over 8 seconds."
-     },
-     {
-      "text": "Gain +10% Critical Rate up for 6 seconds."
-     },
-     {
-      "text": "Backstab"
-     },
-     {
-      "text": "When Slipstream lands a Critical Hit, 25~60% chance for the attack to Backstab. Increase the chance to Backstab by 12% per Power Bar the opponent has."
-     },
-     {
-      "text": "Slipstream cannot perform Backstab while she has any Damaging Debuffs."
-     },
-     {
-      "name": "Backstab cycles between 3 different effects",
-      "description": "20% Crit Resistance Debuff for 8 seconds. (Max Stacks: 1)"
-     },
-     {
-      "text": "30% Power Rate down for 8 seconds. (Max Stacks: 1)"
-     },
-     {
-      "text": "Backfire Debuff for 8 seconds. (Max Stacks: 1)"
-     }
     ]
    },
    "signature": {
@@ -9599,35 +8418,11 @@
     "Apply 3 Backfire debuffs for 15 seconds. These cannot be removed by Purify.",
     "60% chance to Power Leak, consuming 25% of the opponents total power for 12 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Make the First Move - Attack before the opponent can attack you."
-    },
-    {
-     "text": "30% 20% chance for the final hit to Repair Block for 6 seconds. +10% chance for each Debuff on the opponent."
-    },
-    {
-     "text": "On Critical Hit, Repair Block lasts 10 Seconds instead."
-    },
-    {
-     "text": "Don’t Hold Back - Catch the enemy off guard and they won’t stand a chance."
-    },
-    {
-     "text": "+50% chance for the first hit to cause Power Lock for 5 seconds."
-    },
-    {
-     "text": "On Critical Hit, Power Lock lasts 9 Seconds instead."
-    },
-    {
-     "text": "Sonic Strike - Slipstream’s guile is enhanced by an array of weapons."
-    },
-    {
-     "text": "Apply 3 Backfire debuffs for 15 seconds. These cannot be removed by Purify."
-    },
-    {
-     "text": "60% chance to Power Leak, consuming 25% of the opponents total power for 12 seconds."
-    }
+   "synergy": [
+    "Rivals - Windblade - +5~4~6~8% Critical Chance.",
+    "Sabotage Specialists - Barricade, Scorponok, Jazz - +5~8~12~15% Backfire Damage.",
+    "Own the Skies - Starscream, Ramjet, Grindor - +7~9~12~16% Attack against bots with an aerial alternate form.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Critical Rating."
    ]
   },
   "Soundblaster": {
@@ -9710,36 +8505,6 @@
        "21%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "Passive",
-      "description": "Soundblaster Gains a Special Damage Buff every 5 seconds, increasing Special Damage by 17.4~27 %. (Max: 6 stacks)."
-     },
-     {
-      "text": "Once Soundblaster finishes generating Special Damage Buffs, he begins generating a Critical Damage Buff every 3 seconds, each adding 13.8~18.9% Critical Damage. (Max: 6 Stacks)"
-     },
-     {
-      "text": "These Buffs are removed after Soundblaster successfully lands the last hit of a Special Attack."
-     },
-     {
-      "text": "All Attacks"
-     },
-     {
-      "text": "+50% Critical Rate if the opponent is under the effect of a Debuff."
-     },
-     {
-      "text": "Ranged Attacks"
-     },
-     {
-      "text": "30% chance to instantly inflict a 20% Resistance Debuff for 5 seconds."
-     },
-     {
-      "text": "Heavy Attack"
-     },
-     {
-      "text": "Buzzsaw fires 3 shots that track the opponent."
-     }
     ]
    },
    "signature": {
@@ -9755,27 +8520,7 @@
     "70% chance to inflict Shock, dealing Shock Damage for 120% Attack over 8 seconds.",
     "Reduce the duration of enemy Buffs by 50% for 45 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "That Megahertz! - A quick one-two combo to send your opponent flying."
-    },
-    {
-     "text": "Howlback - Howlback is ready to lay down the law."
-    },
-    {
-     "text": "60% chance to inflict Shock, dealing Shock Damage for 100% Attack over 8 seconds."
-    },
-    {
-     "text": "Fatal Feedback - Soundblaster scrambles the opponent’s sensors while Buzzsaw and Howlback run interference."
-    },
-    {
-     "text": "70% chance to inflict Shock, dealing Shock Damage for 120% Attack over 8 seconds."
-    },
-    {
-     "text": "Reduce the duration of enemy Buffs by 50% for 45 seconds."
-    }
-   ]
+   "synergy": []
   },
   "Soundblaster/Tactician": {
    "source": {
@@ -9927,41 +8672,6 @@
        "20%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Passive/Combo Meter"
-     },
-     {
-      "text": "Soundblaster records his Combo success, preventing his Combo Meter from being reset."
-     },
-     {
-      "text": "If Soundblaster is hit by a Special Attack Critical Hit or Ranged Critical Hit, his Combo Meter is immediately reset."
-     },
-     {
-      "text": "Ranged Attacks"
-     },
-     {
-      "text": "Soundblaster’s Ranged Attacks have a 30% chance to Nullify an Armor or Melee Buff on the opponent. Increase chance by 10% for each 5 points of Combo Meter."
-     },
-     {
-      "text": "Heavy Attack"
-     },
-     {
-      "text": "Buzzsaw fires 3 shots that track the opponent."
-     },
-     {
-      "text": "Hitting an Unstoppable enemy causes Stun for 2.5 seconds."
-     },
-     {
-      "text": "Special Attacks"
-     },
-     {
-      "text": "After ending a Special Attack, if Combo meter is even, Soundblaster gains 12~25% Attack Up for 10 seconds."
-     },
-     {
-      "text": "After ending a Special Attack, if Combo meter is odd, the opponent gets a -15~30% Attack Debuff for 10 seconds."
-     }
     ]
    },
    "signature": {
@@ -10071,35 +8781,12 @@
     "Reduce the duration of enemy Buffs by 50% for 45 seconds.",
     "Each hit has a 5% chance to cause 10~20% Armor Break for 20 seconds. Increase chance by 1% for each hit on the Combo Meter."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "That Megahertz! - A quick one-two combo to send your opponent flying."
-    },
-    {
-     "text": "80% chance to 10~20% Armor Break for 8 seconds."
-    },
-    {
-     "text": "Deal +10% damage for every 20 hits on the Combo Meter"
-    },
-    {
-     "text": "Howlback - Howlback is ready to lay down the law."
-    },
-    {
-     "text": "Cause Shock, dealing 120% Attack over 3 seconds."
-    },
-    {
-     "text": "Increase duration of shock by 1 second for every 10 hits on the Combo meter."
-    },
-    {
-     "text": "Fatal Feedback - Soundblaster scrambles the opponent’s sensors while Buzzsaw and Howlback run interference."
-    },
-    {
-     "text": "Reduce the duration of enemy Buffs by 50% for 45 seconds."
-    },
-    {
-     "text": "Each hit has a 5% chance to cause 10~20% Armor Break for 20 seconds. Increase chance by 1% for each hit on the Combo Meter."
-    }
+   "synergy": [
+    "Energon Smuggler - Bumblebee - Ranged Attacks have a 25% chance to Power Steal 5~7~9~11% of the opponent’s Current Power bar.",
+    "Taped Together - Soundwave, Blaster - Increase Heavy Attack Damage by 4~7~10~14%.",
+    "Amplified Dissonance - Dirge - Reduce opponent’s Ranged Damage by 6~8~10~12%. (3-Star erroneously says 1%)",
+    "Meet Your Maker - Shockwave - Increase Special Damage by 10~12~15~18%.",
+    "Leadership (5-Star only) - Acting as a beacon of leadership for the team, all lower tier teammates gain +10% Armor Rating."
    ]
   },
   "Starscream": {
@@ -10252,23 +8939,6 @@
        "90% | 80%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Ranged attacks have 20~30% increase to Critical Chance."
-     },
-     {
-      "text": "Basic Ranged Attacks have a 100% Chance to Nullify an Armor, Melee, or Attack Buff. This does not affect Buffs from Modules or Boosts."
-     },
-     {
-      "text": "When an opponent’s buff is Nullified that bot takes 70~90% of attack as instant Shock Damage."
-     },
-     {
-      "text": "5% chance Starscream Evades Heavy Melee Attacks, because sometimes, cowards do survive."
-     },
-     {
-      "text": "20% Chance to inflict Burn causing 40% of Attack as heat damage over 4 seconds."
-     }
     ]
    },
    "signature": {
@@ -10391,26 +9061,16 @@
     "Null-Ray to Oblivion - Conquest is made of the ashes of one’s enemies.",
     "Nullifies up to 5 Buffs of any kind from the opponent."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Air Superiority Complex - A sycophant’s vengeance at last."
-    },
-    {
-     "text": "80% Chance to increase Ranged Damage by 45~65% and Projectile Speed for 8 seconds."
-    },
-    {
-     "text": "Cunning Treachery - He’s got you now!"
-    },
-    {
-     "text": "72~85% Chance to cause a 50~70% Armor Break for 7 seconds."
-    },
-    {
-     "text": "Null-Ray to Oblivion - Conquest is made of the ashes of one’s enemies."
-    },
-    {
-     "text": "Nullifies up to 5 Buffs of any kind from the opponent."
-    }
+   "synergy": [
+    "Starscream's Seekers - Thundercracker, Skywarp, Ramjet, Dirge - +5~8~15% Damage and 20~30~75% Armor Piercing for all Decepticon Ranged Attacks.",
+    "Sky Assault - Windblade , Waspinator- +7~10~25% Anti-Evade",
+    "Enemies - Galvatron, Jazz - +2~3~8% Attack Rating.",
+    "Lieutenants - Megatron - Megatron gains new abilities and his Lieutenants gain +2~3~8% Armor and +2~3~8% Attack Rating.",
+    "Lieutenants - Megatron - Megatron’s Special Attacks have a 30~40~70%% chance to Stun the opponent for 3.5 seconds. This effect will only trigger once per fight for each Special Attack and this Stun debuff cannot be Fused.",
+    "Old Friends - Jetfire - Increases the duration of Jetfire's Stun for well-timed Blocks by 0.2~0.3~0.5 seconds.",
+    "Old Friends – Jetfire - While Dashing Back, Ranged Attacks miss Starscream, which grants him a 10~15~30% Crit Damage buff for 6 seconds.",
+    "Leadership (5-Star) - Acting as a guard against treachery, all lower tier teammates gain +80% Nullify Resistance.",
+    "Own the Skies - Slipstream - +7~9~12~16% Attack against bots with an Aerial alternate form."
    ]
   },
   "Sunstreaker": {
@@ -10494,35 +9154,6 @@
        "20%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Passive"
-     },
-     {
-      "text": "While at 60% HP and above, Sunstreaker is in Pristine State and gains 10% Melee Evade and 8~20% Armor. Melee Evade is 30% against Melee Critical Hits."
-     },
-     {
-      "text": "While at 40% HP and below, Sunstreaker is in Blemished State and gains 8~20% Melee Buff and goes Unstoppable for 5 seconds."
-     },
-     {
-      "text": "End of a Light or Medium Melee Combo"
-     },
-     {
-      "text": "Gain 5% Power over 1 second."
-     },
-     {
-      "text": "Ranged Attacks"
-     },
-     {
-      "text": "20% chance to Purify a Debuff."
-     },
-     {
-      "text": "Heavy Attacks"
-     },
-     {
-      "text": "30% chance to gain a 14% Melee Buff for 5 seconds."
-     }
     ]
    },
    "signature": {
@@ -10629,26 +9260,12 @@
     "Beautiful Attack - Sunstreaker has the looks and the skills to impress.",
     "Gain Pristine State Buffs and Blemished State Buffs for 6 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Not The Face - Don't scratch Sunstreaker's paint, or you'll be sorry."
-    },
-    {
-     "text": "If in Pristine State, gain Blemished State Buffs for 4 seconds. If in Blemished State, last hit is Unblockable. If Sunstreaker is in neither state, gain both state buffs for 4 seconds."
-    },
-    {
-     "text": "Just Been Chromed - Sunstreaker shows off his flashy moves and new coat."
-    },
-    {
-     "text": "If in Pristine State, last hit is Unblockable. If in Blemished State, gain Pristine State buffs for 6 seconds. If in neither state, gain both state buffs for 6 seconds."
-    },
-    {
-     "text": "Beautiful Attack - Sunstreaker has the looks and the skills to impress."
-    },
-    {
-     "text": "Gain Pristine State Buffs and Blemished State Buffs for 6 seconds."
-    }
+   "synergy": [
+    "Jet Judo - Jetfire - +4~6~7~16% Melee Buff against bots with an aerial alternate form.",
+    "Twin Engines - Sideswipe - Increase Power Gain by 2~3~4~6%.",
+    "{{Syn/In}} Optimus Maximus - Optimus Prime and Ironhide, Prowl, Mirage - Start the fight with 10~20~30~40% Power. Only applies if all Bots on the team have this Synergy.",
+    "{{Syn/In}} Magnificent Six - Jazz - When Knocked Down, 5~8~12~15% chance to gain +20% Special Damage for 5 seconds. Increases by 5% after each Knock Down.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Attack Rating"
    ]
   },
   "Tantrum": {
@@ -10740,8 +9357,7 @@
    "abilities": {
     "basic": [],
     "list": [],
-    "tables": [],
-    "pairs": []
+    "tables": []
    },
    "signature": {
     "name": "",
@@ -10749,8 +9365,11 @@
     "tables": []
    },
    "special_attacks": [],
-   "synergy": [],
-   "special_attack_pairs": []
+   "synergy": [
+    "Allies – Galvatron, Cyclonus - +2~3~8% Armor.",
+    "– Enemies – Blaster, Arcee - +2~3~8% Attack Rating.",
+    "Beast Ancestor – All Beast War Bots - After each Heavy Attack, this bot gains a Beast Fury buff that grants Attacks a 5~8~15% chance to be Unblockable for 6 seconds."
+   ]
   },
   "Thundercracker": {
    "source": {
@@ -10910,71 +9529,6 @@
        "110%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Passive"
-     },
-     {
-      "text": "Whenever a Debuff is Purified, gain a 3~8% Melee Damage Buff for 7 seconds."
-     },
-     {
-      "text": "Unstoppable against basic Melee Attacks while Sidestepping."
-     },
-     {
-      "text": "After knocking the enemy out of their ground vehicle form, gain a 20% Armor and 10% Melee Attack Buff for 7 seconds."
-     },
-     {
-      "text": "All Attacks"
-     },
-     {
-      "text": "+100% Attack when striking a Bot in their ground vehicle form."
-     },
-     {
-      "text": "Thundercracker cannot land Critical Hits."
-     },
-     {
-      "text": "Whenever Thundercracker would increase Critical Damage, he instead increases Attack by 8% of the amount of Critical Damage that would have been added."
-     },
-     {
-      "text": "Successful melee hits refresh all Melee Buffs on Thundercracker."
-     },
-     {
-      "text": "Sidestepping after a melee attack also refreshes all Melee Buffs."
-     },
-     {
-      "text": "Passive"
-     },
-     {
-      "text": "Entering the aerial alternate form Purifies Shock, Burn, Bleed, Backfire, and Daze Debuffs."
-     },
-     {
-      "text": "Heavy Attacks"
-     },
-     {
-      "text": "For each Debuff Purified in this way, this attack inflicts a Burn Debuff causing 80% Attack as heat damage over 7 seconds."
-     },
-     {
-      "text": "Ranged Attacks"
-     },
-     {
-      "text": "Gain a 10% Melee Damage Buff for 0.9 seconds."
-     },
-     {
-      "text": "Blocking"
-     },
-     {
-      "text": "+15% Block Proficiency against melee attacks."
-     },
-     {
-      "text": "An additional +15% Block Proficiency against the melee attacks of ground vehicles."
-     },
-     {
-      "text": "While above 14% Health, Block cannot be broken by attacks from Bots in their ground vehicle form."
-     },
-     {
-      "text": "Well-timed Blocks against ground vehicles grant a 10% Melee Buff for 5 seconds and knock opponents out of their vehicle form."
-     }
     ]
    },
    "signature": {
@@ -11083,32 +9637,10 @@
     "+2% Shock Damage for each active Buff on Thundercracker.",
     "+5% Shock Damage for each active Buff on the opponent."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Inferiority Complexion - Vengence comes to those who fight for it."
-    },
-    {
-     "text": "Each projectile hit grants a 10% Melee Buff for 2 seconds."
-    },
-    {
-     "text": "Brutal Treachery - When your enemies think you're cornered... crush them."
-    },
-    {
-     "text": "+2% additional damage for each active Buff on Thundercracker."
-    },
-    {
-     "text": "Shocking Oblivion - Conquest is made by frying enemy circuits extra-crispy."
-    },
-    {
-     "text": "Inflict a Shock Debuff causing 60~100% Attack as shock damage over 6 seconds."
-    },
-    {
-     "text": "+2% Shock Damage for each active Buff on Thundercracker."
-    },
-    {
-     "text": "+5% Shock Damage for each active Buff on the opponent."
-    }
+   "synergy": [
+    "Starscream's Seekers - Starscream, Ramjet, Dirge, Skywarp - +5~8~15% Damage and 20~30~75% Armor Piercing for all Decepticon Ranged Attacks.",
+    "Sky Assualt - Cyclonus, Grindor, Ramjet, Starscream, Windblade, Jetfire - +7~10~25% Anti-Evade",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Attack Rating."
    ]
   },
   "Ultra Magnus": {
@@ -11257,31 +9789,6 @@
        "25%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "name": "When Attacked",
-      "description": "When struck by Physical Attacks, his Resistance against Physical Attacks goes up by 2.1~3.5% (Max: 10 Stacks). One stack of Energy Resistance is lost."
-     },
-     {
-      "text": "When struck by Energy Attacks, his Resistance against Energy Attacks goes up by 1.1~2.5% (Max: 10 Stacks). One stack of Physical Resistance is lost."
-     },
-     {
-      "name": "Last hit of a light or medium combo",
-      "description": "Each time Ultra Magnus completes a Light Melee Combo, his Resistance against Physical Attacks goes up by 2.1~3.5% (Max: 10 Stacks). One stack of Energy Resistance is lost."
-     },
-     {
-      "text": "Each time Ultra Magnus completes a Medium Melee Combo, his Resistance against Energy Attacks goes up by 1.1~2.5% (Max: 10 Stacks). One stack of Physical Resistance is lost."
-     },
-     {
-      "text": "Ranged Attacks: 100% chance to Nullify an Attack or Melee Buff."
-     },
-     {
-      "text": "Heavy Attacks: 65% chance to inflict Burn, dealing Heat damage for 80% Attack over 6 12 seconds."
-     },
-     {
-      "text": "Special Attacks: Ultra Magnus crushes opponents with his hammer, converting Armor Buffs into Armor Breaks, each applying 14.5~22.5% Armor reduction for 10 seconds."
-     }
     ]
    },
    "signature": {
@@ -11395,35 +9902,13 @@
     "Magnus Opus - Sacrifice without hesitation is a dedicated soldier's greatest legacy.",
     "65% chance to inflict Burn, dealing Heat Damage for 80% Attack over 12 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Gavel Crush - When the hammer strikes, judgment has been made."
-    },
-    {
-     "text": "50% Armor Penetration."
-    },
-    {
-     "text": "100% chance to apply 14.5~22.5% Armor reduction for 10 seconds."
-    },
-    {
-     "text": "One for All - Follow the rules or suffer the consequences."
-    },
-    {
-     "text": "75% Armor Penetration."
-    },
-    {
-     "text": "+5% Melee Bonus for each active Physical Resistance Buff and +5% Ranged Bonus Buff for each active Energy Resistance Buff."
-    },
-    {
-     "text": "65% chance to inflict Burn, dealing Heat Damage for 80% Attack over 12 seconds."
-    },
-    {
-     "text": "Magnus Opus - Sacrifice without hesitation is a dedicated soldier's greatest legacy."
-    },
-    {
-     "text": "65% chance to inflict Burn, dealing Heat Damage for 80% Attack over 12 seconds."
-    }
+   "synergy": [
+    "Till All Are One with Arcee - +2~3~8% Attack Rating for Autobots. +6~8~12% Debuff damage for Autobots in Raids.",
+    "Allies with Grimlock, Blaster - +2~3~8% Armor.",
+    "Allies with Prowl - +2~3~8% Armor.",
+    "Enemies with Galvatron, Cyclonus - +2~3~8% Attack Rating.",
+    "Brothers in Arms with Prowl - +2~3~8% Armor for Autobots. +4~6~8% Melee Damage for Autobots in Solo Missions.",
+    "Leadership (5-Star) - Acting as a beacon of leadership, all lower tier teammates gain +10% Armor Rating."
    ]
   },
   "Waspinator": {
@@ -11562,23 +10047,6 @@
        "30%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "When Waspinator drops below half of his Base Health, he diverts power to his ranged weapons, doubling Projectile Speed by 50% for the remainder of the fight."
-     },
-     {
-      "text": "When Waspinator drops below a quarter of his Base Health, he gains a 15~29% Special Damage Buff for the remainder of the fight."
-     },
-     {
-      "text": "Basic ranged attacks sting the opponent, inflicting a 20~28% Resistance Debuff for 2 seconds after a short delay."
-     },
-     {
-      "text": "100% chance to instantly inflict a 20~28% Resistance Debuff for 5 seconds."
-     },
-     {
-      "text": "100% chance to Nullify a Resistance."
-     }
     ]
    },
    "signature": {
@@ -11706,29 +10174,14 @@
     "Surprise Nuke - Now Waspinator has the giant bomb! Now Waspinator is greatest of Predacons!",
     "This attack has a 100% chance Waspinator Burns the opponent dealing Heat Damage equal to 100% of his attack over 5 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Eye Lasers - Waspinator overloads his optic sensors!"
-    },
-    {
-     "text": "45% chance to gain a Precision Buff, increasing Critical Rate and lowering the opponent’s chance of Evading attacks by 30% for 4 seconds."
-    },
-    {
-     "text": "Unsteady Sting Shot - Waspinator use kick then Waspinator use gun."
-    },
-    {
-     "text": "100% chance to instantly inflict a 20~28% Resistance Debuff for 5 seconds."
-    },
-    {
-     "text": "100% chance to Nullify a Resistance Buff."
-    },
-    {
-     "text": "Surprise Nuke - Now Waspinator has the giant bomb! Now Waspinator is greatest of Predacons!"
-    },
-    {
-     "text": "This attack has a 100% chance Waspinator Burns the opponent dealing Heat Damage equal to 100% of his attack over 5 seconds."
-    }
+   "synergy": [
+    "Enemies - Rhinox, Dinobot, Optimus Primal, Cheetor - 2~3~8% Attack Rating.",
+    "Allies - Scorponok - 2~3~8% Armor.",
+    "Sky Assault - Windblade, Starscream - 7~10~25% Anti-Evade",
+    "Weaponsmiths - Mixmaster - 4~6~15% Chance for Heavy Attacks to be a Critical Hit.",
+    "Beast Purification - Optimus Primal - Heavy Attacks: Beast Wars Characters gain 4~12~20% Attack for 5 seconds and Purify Damaging Debuffs as long as there are two or more other Beast Wars bots on the team with Optimus.",
+    "Beast Ancestor - Tantrum - After each Heavy Attack, this bot gains a Beast Fury buff that grants Attacks a 5~8~15% chance to be Unblockable for 6 seconds.",
+    "Leadership (5-Star) - All lower tier teammates gain +10% Special Damage."
    ]
   },
   "Wheeljack": {
@@ -11904,38 +10357,6 @@
        "40%"
       ]
      ]
-    ],
-    "pairs": [
-     {
-      "text": "Construction"
-     },
-     {
-      "text": "Each time Wheeljack Transforms he begins to Construct a random Upgrade for 4 seconds. [Max 3 Upgrades]"
-     },
-     {
-      "text": "If Wheeljack Is struck by a Critical Melee Hit while Constructing, the Construction Fails and the Upgrade is lost."
-     },
-     {
-      "text": "If Wheeljack is hit with a critical heavy attack or a critical special attack, the Upgrade is destroyed and the upgrade is lost."
-     },
-     {
-      "text": "Upgrades"
-     },
-     {
-      "text": "Defensive Upgrade: 10~20% Damage Resistance and increases to the chance Special Attacks will inflict Stun by 20%."
-     },
-     {
-      "text": "Offensive Upgrade: 15~30% Attack Rating and increases the chance Special Attacks will inflict Shock by 20%."
-     },
-     {
-      "text": "Power Upgrade: 10~20% Power Rate and increases the chance Special Attacks will inflict Power Leak by 20%."
-     },
-     {
-      "text": "If Wheeljack is struck by a Melee Critical Hit from a Special or Heavy Attack the newest Upgrade constructed will be removed."
-     },
-     {
-      "text": "Success: If Wheeljack Constructs 3 of the same Upgrade type he randomly Repairs between 10-20% of Max Health."
-     }
     ]
    },
    "signature": {
@@ -12055,29 +10476,13 @@
     "All Upgrades become the same type as the first Upgrade.",
     "60% Chance to inflict Shock, 30% chance to inflict Power Leak, and 10% chance to inflict Stun."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "60% Chance to inflict Shock, dealing Shock for 60~140% Attack over 6 seconds."
-    },
-    {
-     "text": "30% Chance to Power Leak , consuming 25~35% of a Power Bar for 3 seconds."
-    },
-    {
-     "text": "10% Chance to Stun for 3 seconds."
-    },
-    {
-     "text": "Randomly Replaces all Upgrades."
-    },
-    {
-     "text": "60% Chance to inflict Shock, 30% chance to inflict Power Leak, and 10% chance to inflict Stun."
-    },
-    {
-     "text": "All Upgrades become the same type as the first Upgrade."
-    },
-    {
-     "text": "60% Chance to inflict Shock, 30% chance to inflict Power Leak, and 10% chance to inflict Stun."
-    }
+   "synergy": [
+    "Allies – Optimus Prime, Grimlock, Jetfire - 2~3~8% Armor.",
+    "Enemies - Bludgeon, Motormaster - +2~3~8% Attack Rating.",
+    "Upgrades – Bumblebee, Jazz - Wheeljack provides all Autobot team members a random Passive Upgrade each fight. Upgrades grant either +2~3~8% Attack Rating, +5~6~10% Damage Resistance, or +5~6~15% Power Rate for the duration of the fight.",
+    "Brain Gain – Shockwave - Shockwave has a 10~15~30% chance to inflict Stun for 2 seconds when inflicting 3 or more Shocks simultaneously.",
+    "Brain Drain – Shockwave - 10~15~25% Increase to Attack against Demolition Bots. Shockwave only gets this benefit if all bots on his team have this synergy.",
+    "Leadership (5-Star) - Acting as a beacon of leadership for the team, all lower tier Bots gain +10% Power Rate."
    ]
   },
   "Windblade": {
@@ -12190,18 +10595,7 @@
      "Stormfall Blast",
      "Armor Pierce"
     ],
-    "tables": [],
-    "pairs": [
-     {
-      "text": "Bleed"
-     },
-     {
-      "text": "Stormfall Blast"
-     },
-     {
-      "text": "Armor Pierce"
-     }
-    ]
+    "tables": []
    },
    "signature": {
     "name": "Resolution",
@@ -12307,26 +10701,14 @@
     "Strafing Run - Blow them apart from every direction.",
     "35% chance to Stun for 3 seconds."
    ],
-   "synergy": [],
-   "special_attack_pairs": [
-    {
-     "text": "Circuit Slicer - An experiment to see what kinds of shockwaves enemies make as they're slammed to the ground."
-    },
-    {
-     "text": "Inflicts Shock damage for 20~60% Attack over 2~6 seconds. If the opponent has an active Power Gain effect or would activate one while Shocked, Power Failure will activate, Neutralizing and instant 90% attack will be inflicted as instant Shock Damage."
-    },
-    {
-     "text": "Sword Dance - They'll be awe-struck, and sword-struck."
-    },
-    {
-     "text": "Attacks Armor Pierce 100% of the opponent's current Armor for 2~6 seconds."
-    },
-    {
-     "text": "Strafing Run - Blow them apart from every direction."
-    },
-    {
-     "text": "35% chance to Stun for 3 seconds."
-    }
+   "synergy": [
+    "Allies with Ironhide - +1~2~3~8% Armor.",
+    "Enemies with Ramjet - +2~3~8% Attack Rating.",
+    "Swordmasters with Bludgeon, Drift, Dinobot - 3~4~10% 6~12~30% Critical Damage for each Sword Attack that isn't a critical hit until the next Critical Hit. (This does not count hits against opponents with active Crit Resist Buffs or while the Swordmaster bot has active Crit Rate Debuffs.) +6~8~12% more Critical Hits in Solo Missions.",
+    "Sky Assault with Waspinator and Starscream - 7~10~25% anti-evade.",
+    "Romance with Sideswipe - Windblade starts the fight with 17.5~35~80% of a Power bar.",
+    "Rivals with Slipstream - +5~4~8% Critical Chance.",
+    "Leadership (5-Star) - +10% Critical Rating"
    ]
   }
  }

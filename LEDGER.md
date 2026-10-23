@@ -307,3 +307,25 @@ BCGUserActiveTeam>`, не список. `BCGUserActiveTeam..ctor` (`0xA610F0`)
   (`getLoginData`, account, tuning, quest-list/active/progression/
   detail/begin/movedir), PASS. `tests/golden/`.
 - [RUN] `npm` не использовался; Frida/gadget/патчи не использовались.
+
+- A3 variant `v01_baseline`: status=PASS, activate_match=False, plus_error=True, team_count=0. Текущая база: activeTeams list, story clone, heroes dict.
+
+- A3 variant `v03_mode_team_only`: status=PASS, activate_match=False, plus_error=True, team_count=0. Одна active team с aid=story и полными hero fields.
+
+- A3 variant `v04_hero_details_full`: status=PASS, activate_match=False, plus_error=True, team_count=0. Hero details с rating_hp/rating_attack/special_attacks/forge_level.
+
+- A3 variant `v02_canonical_hero_key`: status=PASS, activate_match=False, plus_error=True, team_count=0. Ключ героя без _2: bumblebee_cin_dotm; heroes dict.
+
+- A3 variant `v05_quest_team_flat`: status=PASS, activate_match=False, plus_error=True, team_count=0. quest-begin team = dict bid->hp/pi/sig_lvl/stat_mods/sig_mods.
+
+- A3 variant `v06_modes_expire`: status=PASS, activate_match=False, plus_error=True, team_count=0. Type=Story, modes=[story,Story], expire=999999.
+
+### 13. W1: synergy parser (2026-10-23)
+
+Причина 1/44: `parse_bots.py` искал только `==Synergy Bonuses==`, а в
+сыром викитексте 64 страницы используют `===Synergy Bonuses===` и
+встречается `Common Synergies`. Добавлен `section_any` (2–4 знака `=`).
+Повторный разбор: synergy у **40/44** ботов; missing: Chromia,
+Cliffjumper, Ironhide, Soundblaster (у них нет секции/она не буллеты).
+`data/wiki/bots.json` и `bot_matrix.json` перегенерированы; остальные
+счётчики не изменились. [WIKI]
