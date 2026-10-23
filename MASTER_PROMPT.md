@@ -108,7 +108,7 @@ detail, START, `quest-begin`, the quest map, and a confirmed move.
 1. `/bcg/getLoginData.result.userData` is the wrapper
    `{userData:{...}, updates:{heroes,savedTeams,activeTeams,inventory}, deletes:{}}`.
 2. Hero `entity_type` must be `"bot"` (`GetHeroes` reads `entities["bot"]`).
-3. `savedTeams` / `activeTeams` are **arrays**; active team = `{aid,type,modes,expire,heroes:{bid:details}}`.
+3. `activeTeams` is a **dictionary keyed by `aid`** (`BCGUserActiveTeamDict`), not an array; active team = `{aid,type,modes,expire,heroes:{bid:details}}` (`heroes` is a dictionary). `savedTeams` uses `BCGUserSavedTeamDict` too; don't assume arrays.
 4. Catalog blueprints use key **`id`**, not `blueprint`; rank entries also use `id` + `rank`.
 5. `featuredhero` must be in **`/account/data`**, not only `/auth/login`.
 6. `/bcg/getBaseHeroData` returns a **JSON array** of `BCGHeroDetails`.
@@ -290,3 +290,17 @@ STATE.md and commit.
 - Wiki: 3613 = 817 non-File + 2796 File; all non-File full history/HTML;
   all File descriptions; 694/2752 images; 44 bots + 252 pages parsed;
   matrix/ID map/version sets in `data/wiki/`.
+
+
+## 17. v3.5 — activeTeams dict / prefight (2026-10-23)
+- `BCGUserActiveTeamDict` is a dictionary keyed by activityID, not a list.
+- `BCGUserActiveTeam..ctor` (`0xA610F0`) reads `aid`, `type`, `modes`,
+  `expire`, `heroes`; `heroes` is a dictionary parsed into
+  `TeamHeroes` (`List<BCGHeroDetails>`).
+- `BCGHeroDetails` uses `blueprint`, `rank`, `level`, `sig_lvl`,
+  `HPRating`, `HPMax`, `AttackRating`, `Attack`, `AttributeData`,
+  `ForgeLevel`.
+- Sending `activeTeams` dictionary + `heroes` dictionary with
+  `blueprint/rank/level/hp/max_hp` removed "ALL KNOCKED OUT"; prefight
+  still empty, plus/FIGHT gives `GetNewScale` NRE; no
+  `/matches/activate-match`.

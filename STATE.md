@@ -40,9 +40,12 @@ Tags: [RUN] executed and observed, [STATIC] read in code/data, [DERIVED],
   `level`, `sig_lvl`, `required_xp`, `max_xp`, `stamina`, `stamina_ts`,
   `stamina_full_ts`, `stt`, `pvpb`, `exc`, optional `max_hp`, `attack`,
   `rating*`, `special_attacks`.
-- `savedTeams` and `activeTeams` are **arrays**. Active team:
-  `{aid,type,modes,expire,heroes:{bid:details}}`. Saved team:
-  `{sid,heroes:[details]}`.
+- `activeTeams` is a **dictionary keyed by `aid`** (`BCGUserActiveTeamDict`),
+  not an array. Active team value:
+  `{aid,type,modes,expire,heroes:{bid:details}}`; `heroes` is a dictionary
+  parsed into `TeamHeroes` (`List<BCGHeroDetails>`).
+  `savedTeams` schema remains less certain (`BCGUserSavedTeamDict` in the
+  dump); do not assume an array.
 - Catalog blueprints use key **`id`** (not `blueprint`); hero rank entries also
   use `id` + `rank`. `et` is the blueprint entity type.
 - `/bcg/getBaseHeroData` request `{heroes:[{bid,rank,level,sig_lvl,flvl}],api,nonce}`;
@@ -85,41 +88,35 @@ SPECIAL/ARENAS/ALLIANCE are level-locked. [RUN]
 
 Battle tile static/runtime (2026-10-23):
 - Exact NRE: `MapTile.Deserialize` reads `entities` via `Dot.Object`
-  (`0x1485094`); `0x1485098 cbz x0,#0x1486508` jumps to the common
-  null-reference throw block. A JSON array is not an `IDictionary`;
-  `entities:{"enemy1":{...}}` fixed it.
-- `MapTile` reads `builder.summary.bossTable` (`builder+0x28`,
-  `summary+0x98`). `ActiveQuest..ctor` reads top-level `scaledBossTable`
-  (`0xC39038/0xC39044`) and passes it to `Quests.Builder..ctor`
-  (`0xC393E4`, `0xEF2D04`, field `+0x18`).
+  (`0x1485094`); `0x1485098 cbz x0,#0x1486508` jumps to the common throw
+  block. A JSON array is not an `IDictionary`; `entities:{"enemy1":{...}}`
+  fixed it.
+- `MapTile` reads `builder.summary.bossTable` (`+0x28`/`+0x98`);
+  `ActiveQuest..ctor` reads top-level `scaledBossTable` and passes it to
+  `Quests.Builder..ctor` (`+0x18`).
 - Factory by `baseType`: `bcg|boss|tower` -> `BCGEntity`; `building` ->
   `Building`; `generator` -> `Generator`; else generic `Entity`.
-  `characters` is `Dot.StringList` -> `List<string>`.
 - Boss rendered (6★, 8888). [RUN] r86/r95/r117.
-- **`battle` action is the right trigger.** `QuestActionResult..ctor`
-  (`0xEA28BC`) reads `data["action"]` as IDictionary; `battle` fields:
-  `x`, `y`, `isFinalBoss`, `battleEnemy` (id + BCGEntity/QuestBoss
-  fields), optional `battleTower`. Action types 0..11 documented in
-  `spec/quest_protocol.md` §2g.
-- Live: after `quest-movedir/1/0`, the client opened the **prefight
-  screen** “SELECT YOUR BOT” from the battle action. [RUN] battle3/pre2/s5.
-- But local `team` is empty: `localPlayer.team` is a `List` with count 0
-  in memory, even after sending `team` as a dictionary. Tapping “+”/FIGHT
-  crashes in `PrefightScreenPresentation.GetNewScale(HeroData robot)` ->
-  `NullReferenceException`; after base-blueprint change the screen says
-  “YOUR BOTS ARE ALL KNOCKED OUT”. `/matches/activate-match` still not
-  called. [RUN] work/read_prefight_state.py, logcat 14:35/14:46.
-- `ActiveQuest.ActivateMatch` (`0x10A0038`) has no direct BL (0 hits);
-  called via UI/delegate. It requires non-empty `progression.localPlayer.
-  battleId` and `hero` (`No battle id!`/`No hero!`).
-- Memory after response: version 3, currentPos (1,0), currentBattleId
-  `battle1`, `localPlayer` exists, `localPlayer.team` count 0.
-- Asset/portrait: `bumblebee_cin_dotm_2` accepted by roster; base asset
-  pack is `bumblebee_cin_dotm`; prefight still loads `portrait_unknown.png`.
+- `battle` action is the right trigger (`QuestActionResult..ctor
+  0xEA28BC`); it opened the prefight screen. [RUN] battle3/pre2.
+- `QuestUserInfo.team` is a JSON dictionary (`Dot.Object 0x103D5D8`):
+  key = blueprint; value `hp` (float absolute), `pi`, `sig_lvl`,
+  `stat_mods`, `sig_mods`. No level/rank/max in `QuestUserHero`.
+- `TeamIsKnockedOut` (`0x1181DC8`): empty list -> true; any `HP>0` ->
+  false. Memory after attempt 3: `battleId=battle1`, localPlayer exists,
+  team count 0. [RUN] work/read_prefight_state.py.
+- `BCGUserActiveTeamDict` is a dictionary; `BCGUserActiveTeam..ctor`
+  (`0xA610F0`) reads `aid/type/modes/expire/heroes`; `heroes` is a
+  dictionary parsed into `TeamHeroes` (`List<BCGHeroDetails>`).
+- Sending `activeTeams` dictionary + `heroes` dictionary with
+  `blueprint/rank/level/hp/max_hp` removed «ALL KNOCKED OUT», but the
+  prefight team is still empty; «+»/FIGHT gives
+  `PrefightScreenPresentation.GetNewScale(HeroData robot)` NRE.
+  `/matches/activate-match` not called. [RUN] teamfix4/teamfix6.
 
-Next: fix the `team`/`QuestUserHero` container (dictionary shape and
-required `hp`/`pi`/`sig_lvl`/`mods`), then press FIGHT and capture
-`/matches/activate-match`. Do not use Frida/gadget/patches without consent.
+Next: exact `BCGHeroDetails` element fields/keys and the id used by
+`PrefightScreenData.GetCurrentTeam` (`BCGHelper.GetActiveTeam`).
+No Frida/gadget/patches without consent.
 
 ## 4b. Wiki archive (Part B, 2026-10-23)
 

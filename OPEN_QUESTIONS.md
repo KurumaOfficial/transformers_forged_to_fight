@@ -22,6 +22,9 @@ OneDrive отдаёт `isAuthenticated:false`; без входа нет `downloa
 - `PreFightScreen.OnFight` (`0xE397BC`) -> `PrefightScreenData.OnFight`
   (`0xE3E778`); HP префайта берётся из `TeamData.GetHP` (`0x10E1AE4`),
   не из `QuestUserHero.HP`.
+- `activeTeams` — словарь по `activityID` (`BCGUserActiveTeamDict`),
+  `BCGUserActiveTeam.heroes` — словарь. После перевода на эту форму
+  «ALL KNOCKED OUT» исчез, но команда пустая, «+»/FIGHT — NRE.
 - `ActiveQuest.ActivateMatch` (`0x10A0038`) прямых BL не имеет; вызов
   через UI/делегат, требует непустые `battleId` и `hero`.
 - `/matches/activate-match` не вызван. `match_activate_response.json` —

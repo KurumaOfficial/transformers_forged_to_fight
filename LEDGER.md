@@ -268,3 +268,19 @@ throw-блок (`bl 0x9bb514`). Это происходит до `entityType`, �
   cutoff (включая Netflix-страницы). as_of и latest лежат отдельно.
 - OneDrive автора `isAuthenticated:false`; не скачивался.
 - Отчёт: `COVERAGE_WIKI.md`, вопросы: `OPEN_QUESTIONS.md`.
+
+### 11.5 `activeTeams` — словарь, `TeamHeroes` — список (2026-10-23)
+
+`BCGUserData.activeTeams` — `BCGUserActiveTeamDict : Dictionary<string,
+BCGUserActiveTeam>`, не список. `BCGUserActiveTeam..ctor` (`0xA610F0`)
+читает `aid`, `type`, `modes`, `expire`, `heroes`; `heroes` — `Dot.Object`
+(словарь), из которого строится `TeamHeroes` (`List<BCGHeroDetails>`).
+`BCGHeroDetails` использует `blueprint`, `rank`, `level`, `sig_lvl`,
+`HPRating`, `HPMax`, `AttackRating`, `Attack`, `AttributeData`, `ForgeLevel`.
+
+Ответ переведён на `activeTeams`-словарь и `heroes`-словарь с
+`blueprint/rank/level/hp/max_hp`. Экран «ALL KNOCKED OUT» исчез, но
+префайт всё ещё пустой; «+»/FIGHT даёт NRE в
+`PrefightScreenPresentation.GetNewScale(HeroData robot)`;
+`/matches/activate-match` не вызван. [RUN] `work/teamfix4.png`,
+`work/teamfix6.png`.

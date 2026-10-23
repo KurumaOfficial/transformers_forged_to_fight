@@ -417,20 +417,41 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             def fill_hp(h):
                 if isinstance(h, dict):
                     h["hp"] = 1000.0
+                    h["max_hp"] = 1000.0
                     h["pi"] = 100
                     h.setdefault("sig_lvl", 0)
                     h.setdefault("stat_mods", [])
                     h.setdefault("sig_mods", [])
+                    h.setdefault("blueprint", h.get("bid") or h.get("id") or h.get("hero") or "")
+                    h.setdefault("rank", 1)
+                    h.setdefault("level", 1)
             for h in wrapper["updates"].get("heroes", []):
                 fill_hp(h)
-            for t in wrapper["updates"].get("activeTeams", []):
-                hv = t.get("heroes", {})
-                if isinstance(hv, dict):
-                    for h in hv.values():
-                        fill_hp(h)
-                elif isinstance(hv, list):
-                    for h in hv:
-                        fill_hp(h)
+            ats = wrapper["updates"].get("activeTeams", [])
+            if isinstance(ats, list):
+                fixed = {}
+                for t in ats:
+                    hv = t.get("heroes", {})
+                    if isinstance(hv, dict):
+                        for h in hv.values():
+                            fill_hp(h)
+                    elif isinstance(hv, list):
+                        for h in hv:
+                            fill_hp(h)
+                    aid = t.get("aid") or t.get("activityID") or qid
+                    t["activityID"] = aid
+                    t["estimatedExpire"] = t.get("expire", t.get("estimatedExpire", 0))
+                    fixed[aid] = t
+                wrapper["updates"]["activeTeams"] = fixed
+            elif isinstance(ats, dict):
+                for t in ats.values():
+                    hv = t.get("heroes", {})
+                    if isinstance(hv, dict):
+                        for h in hv.values():
+                            fill_hp(h)
+                    elif isinstance(hv, list):
+                        for h in hv:
+                            fill_hp(h)
             qd = load_data_json("quest_detail.json")
             try:
                 tile = qd["map"]["grid"][new["y"]][new["x"]]

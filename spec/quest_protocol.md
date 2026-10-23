@@ -640,3 +640,59 @@ JSON-контракт ответа не подтверждён. [STATIC]+[ASSUME
   текущая заглушка в `server/data/match_activate_response.json` помечена
   `[ASSUMED]`. Ключи `matchId`, `matchType`, `seed`, `fighterData` не
   доказаны статикой. [STATIC]+[ASSUMED]
+
+## 2i. `teamData.activeTeams`: словарь и `TeamHeroes` (2026-10-23)
+
+`BCGUserData.activeTeams` имеет тип `BCGUserActiveTeamDict :
+Dictionary<string, BCGUserActiveTeam>`. То есть JSON `activeTeams` — **словарь
+по activityID**, не список.
+
+`BCGUserActiveTeam..ctor(IDictionary)` — `RVA 0xA610F0`:
+
+| Ключ | Поле | Тип |
+|---|---|---|
+| `aid` | `ActivityID` `+0x10` | string |
+| `type` | `Type` `+0x18` | string |
+| `modes` | `Modes` `+0x20` | List<string> |
+| `expire` | `EstimatedExpire` `+0x30` | int |
+| `heroes` | `TeamHeroes` `+0x28` | `Dot.Object` -> `BCGHeroDetailsList` |
+
+`BCGHeroDetails` (`ctor 0xA5AA14`) / `BCGHeroDetailsBase`:
+
+- `Blueprint +0x10`, `Rank +0x18`, `Level +0x1C`, `SigLevel +0x20`,
+  `HPRating +0x24`, `HPMax +0x28`, `AttackRating +0x2C`,
+  `Attack +0x30`, `Special +0x34`, `UserOwned +0x38`,
+  `AttributeData +0x40`, `ForgeLevel +0x58`.
+
+`TeamData.RefreshHeroData` (`0x10DE4D0`) берёт `mActiveTeam +0x28`
+(`TeamHeroes`); если список пуст — команда пустая. `TeamData.GetHP`
+(`0x10E1AE4`) читает `HeroData +0x40` -> `+0x34`.
+
+### Проверка
+
+Ответ теперь содержит:
+
+```json
+"activeTeams": {
+  "story_act1_ch1_m1": {
+    "aid": "story_act1_ch1_m1",
+    "type": "story",
+    "modes": ["Story"],
+    "heroes": {
+      "bumblebee_cin_dotm": {
+        "blueprint": "bumblebee_cin_dotm",
+        "rank": 1, "level": 1, "hp": 1000.0, "max_hp": 1000.0
+      }
+    }
+  }
+}
+```
+
+Префайт перестал писать «ALL KNOCKED OUT», но всё ещё показывает пустую
+команду; «+»/FIGHT падает в `PrefightScreenPresentation.GetNewScale
+(HeroData robot)`. `/matches/activate-match` не вызван. [RUN]
+`work/teamfix4.png`, `work/teamfix6.png`.
+
+Следующий подозреваемый — точный тип/поля элементов `heroes` для
+`BCGHeroDetails` (не только `blueprint`, но и `hpMax`/`attack`/`attributeData`)
+либо id, которым `PrefightScreenData.GetCurrentTeam` ищет active team.

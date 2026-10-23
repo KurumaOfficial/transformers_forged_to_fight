@@ -106,3 +106,10 @@
 в `QuestUserHero` нет. `TeamIsKnockedOut` (`0x1181DC8`) при count 0
 возвращает true; память после попытки 3: `currentBattleId=battle1`,
 `localPlayer` есть, `team` count 0. `/matches/activate-match` не вызван.
+
+**2026-10-23, activeTeams:** `BCGUserActiveTeamDict` — словарь по
+`activityID`, `BCGUserActiveTeam.heroes` — словарь, из которого
+строится `TeamHeroes` (`List<BCGHeroDetails>`). Ответ переведён на
+`activeTeams`-словарь + `heroes`-словарь с `blueprint/rank/level/hp/max_hp`;
+надпись «ALL KNOCKED OUT» исчезла, но команда всё ещё пустая,
+«+»/FIGHT даёт NRE, `/matches/activate-match` не вызван.
