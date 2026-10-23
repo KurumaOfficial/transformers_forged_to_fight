@@ -88,10 +88,10 @@ def main():
     rows = select(load_rows())
     if not rows:
         raise SystemExit("no golden flow requests found")
-    (GOLD / "quest_flow.jsonl").write_text(
-        "\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8"
-    )
     if args.record:
+        (GOLD / "quest_flow.jsonl").write_text(
+            "\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8"
+        )
         expected = []
         for row in rows:
             try:
