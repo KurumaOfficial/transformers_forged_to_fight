@@ -373,7 +373,7 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             self.send_sparx(data, assumed_label="[STATIC: /quests/quest-moveto/]")
             return
 
-        # 12e. Quests: Move direction [CLIENT: /quests/quest-movedir/{qid}/{dx}/{dy}]
+        # 12e. Quests: Move direction (battle action is experimental; prefight opens) [CLIENT: /quests/quest-movedir/{qid}/{dx}/{dy}]
         if path.startswith("/quests/quest-movedir/"):
             parts = path.rstrip("/").split("/")
             qid = parts[3] if len(parts) > 3 else ""
@@ -401,64 +401,102 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 },
                 "deletes": {}
             }
+            # The prefight asset database is keyed by the base blueprint id.
+            # The roster uses a synthetic _2 id; rebase only the battle teamData.
+            base_bp = "bumblebee_cin_dotm"
+            def rebase(obj):
+                if isinstance(obj, dict):
+                    return {(base_bp if k == "bumblebee_cin_dotm_2" else k): rebase(v)
+                            for k, v in obj.items()}
+                if isinstance(obj, list):
+                    return [rebase(v) for v in obj]
+                if obj == "bumblebee_cin_dotm_2":
+                    return base_bp
+                return obj
+            wrapper = rebase(wrapper)
+            def fill_hp(h):
+                if isinstance(h, dict):
+                    h["hp"] = 1000.0
+                    h["pi"] = 100
+                    h.setdefault("sig_lvl", 0)
+                    h.setdefault("stat_mods", [])
+                    h.setdefault("sig_mods", [])
+            for h in wrapper["updates"].get("heroes", []):
+                fill_hp(h)
+            for t in wrapper["updates"].get("activeTeams", []):
+                hv = t.get("heroes", {})
+                if isinstance(hv, dict):
+                    for h in hv.values():
+                        fill_hp(h)
+                elif isinstance(hv, list):
+                    for h in hv:
+                        fill_hp(h)
             qd = load_data_json("quest_detail.json")
             try:
                 tile = qd["map"]["grid"][new["y"]][new["x"]]
             except Exception:
                 tile = {"position": new, "walkable": True}
+            qb = load_data_json("quest_begin_response.json")
+            boss = json.loads(json.dumps(
+                (qb.get("scaledBossTable") or {}).get("enemy1") or {}
+            ))
+            boss["id"] = "enemy1"
+            local_uid = "10001"
+            local_user = {
+                "uid": local_uid,
+                "name": "Commander",
+                "tag": "LOCAL",
+                "strongestHero": base_bp,
+                "currentPos": {"x": 0, "y": 0},
+                "currentBattleId": "battle1",
+                "currentBattleState": 2,
+                "currentBattlePos": new,
+                "usedConsumableCount": 0,
+                "battleLockExpiry": 0,
+                "state": 1,
+                "team": {
+                    base_bp: {
+                        "hp": 1000.0,
+                        "pi": 100,
+                        "sig_lvl": 0,
+                        "stat_mods": [],
+                        "sig_mods": []
+                    }
+                }
+            }
             self.send_sparx({
                 "progression": {
-                    "version": 2,
+                    "version": 3,
                     "currentPos": new,
                     "cleared": [{"x": 0, "y": 0}, new],
                     "previouslyCleared": [],
                     "revealed": [],
-                    "currentPosition": new,
-                    "playerPosition": new,
-                    "currentTile": new,
-                    "clearedTiles": [{"x": 0, "y": 0}, new],
-                    "percentComplete": 22,
                     "currentFightId": "fight1",
                     "currentBattleId": "battle1",
                     "currentBattleBossId": "enemy1",
                     "currentBattlePos": new,
                     "currentBattleEnemyHealth": 1000,
-                    "localPlayer": {
-                        "uid": "local",
-                        "name": "Local",
-                        "tag": "LOCAL",
-                        "strongestHero": "bumblebee_cin_dotm",
-                        "currentPos": {"x": 0, "y": 0},
-                        "currentBattleId": "battle1",
-                        "currentBattleState": 2,
-                        "currentBattlePos": new,
-                        "usedConsumableCount": 0,
-                        "battleLockExpiry": 0,
-                        "state": 1,
-                        "team": [{
-                            "id": "bumblebee_cin_dotm",
-                            "bid": "bumblebee_cin_dotm",
-                            "hero": "bumblebee_cin_dotm",
-                            "level": 1,
-                            "rank": 1,
-                            "sig_lvl": 0,
-                            "flvl": 0
-                        }]
-                    }
+                    "currentBattleEnemy": boss,
+                    "users": {local_uid: local_user},
+                    "currentPosition": new,
+                    "playerPosition": new,
+                    "currentTile": new,
+                    "clearedTiles": [{"x": 0, "y": 0}, new],
+                    "percentComplete": 22
                 },
                 "currentPosition": new,
                 "playerPosition": new,
                 "currentTile": new,
-                "results": [{
-                    "action": "moveto",
-                    "moveto": {"x": new["x"], "y": new["y"]},
-                    "cleared": [{"x": 0, "y": 0}, new],
-                    "visibleClearedCount": 2,
-                    "walkableCount": 9,
-                    "visibleWalkableCount": 9
-                }],
+                "results": [
+                    {"action": {"moveto": {"x": new["x"], "y": new["y"]}}},
+                    {"action": {"battle": {
+                        "x": new["x"], "y": new["y"],
+                        "isFinalBoss": False,
+                        "battleEnemy": boss
+                    }}}
+                ],
                 "teamData": wrapper
-            }, assumed_label="[CLIENT: /quests/quest-movedir/ progression+results+teamData]")
+            }, assumed_label="[CLIENT: /quests/quest-movedir/ battle action + progression]")
             return
 
         # 12f. Matches: Activate Match [STATIC: loaded from server/data/match_activate_response.json]

@@ -30,3 +30,6 @@ archive/wiki/files/
 archive/wiki/*.err
 archive/wiki/*.log
 archive/wiki/meta/allimages_tfwiki.json
+
+# Backup archives (keep on disk, not in git)
+archive/*.zip

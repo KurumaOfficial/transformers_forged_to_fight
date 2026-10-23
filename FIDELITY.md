@@ -87,21 +87,15 @@
 квеста и хода подтверждена запуском, но **числовые данные** остаются
 синтетическими. Боевая часть не подтверждена.
 
-### DEV-015 — боевой тайл (2026-10-23)
+### DEV-015 — боевой тайл и префайт (2026-10-23)
 
-Точная NRE-ветка: `MapTile.Deserialize` читает `entities` через
-`Dot.Object` (`0x1485094`); `0x1485098 cbz x0,#0x1486508` — общий throw.
-Массив не является `IDictionary`; словарь `entities:{"enemy1":{...}}`
-проходит. [STATIC]+[RUN]
+Точная NRE-ветка: `entities` — словарь, а не массив
+(`MapTile.Deserialize 0x1485094/0x1485098`). Босс рендерится (6★, 8888).
+`battle`-действие (`QuestActionResult..ctor 0xEA28BC`) — правильный
+триггер: после movedir клиент открыл префайт «SELECT YOUR BOT».
+[RUN] `work/battle3.png`, `work/pre2.png`.
 
-`MapTile` берёт таблицу из `builder.summary.bossTable` (`builder+0x28`,
-`summary+0x98`); верхнеуровневый `scaledBossTable` передаётся в
-`Quests.Builder..ctor` (`0xC393E4`, `0xEF2D04`, `+0x18`). `baseType`
-`bcg|boss|tower` -> `BCGEntity`; `characters` — `List<string>`.
-Босс рендерится (6★, 8888). [RUN] `work/r86.png`, `work/r95.png`,
-`work/r117.png`.
-
-Ход на тайл с боссом: movedir уходит, бот остаётся на (0,0), HUD 11%.
-Дешёвый опыт с `currentBattleId + localPlayer` в `progression` —
-**отрицательный**, `/matches/activate-match` не вызван. [RUN]
-`work/r119.png`, 05:41:47Z. Бой по-прежнему **0% подтверждён**.
+Локальная команда пустая: `localPlayer.team` — `List` count 0; «+»/FIGHT
+даёт NRE в `PrefightScreenPresentation.GetNewScale(HeroData robot)`.
+`/matches/activate-match` не вызван; бой **0% подтверждён**.
+[RUN] `work/read_prefight_state.py`, logcat 14:35/14:46.

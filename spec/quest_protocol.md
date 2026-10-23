@@ -451,3 +451,80 @@ type:"boss"}]`.
 `ActiveQuest.ActivateMatch` (`RVA 0x10A0038`) статически требует
 непустые `battleId` (из `progression.currentBattleId` / `Player.battleId`)
 и `hero`; иначе логирует `No battle id!` / `No hero!`. [STATIC]
+
+## 2g. `battle` action и префайт (2026-10-23)
+
+### 2g.1 `QuestActionResult..ctor` (RVA 0xEA28BC)
+
+Конструктор читает `data["action"]` как `IDictionary` (`0xEA2BA4`).
+Под-объекты перебираются в порядке и задают `Action.Type`:
+
+| Ключ | Тип | Значение |
+|---|---|---|
+| `moveto` | MOVE_TO | 1 |
+| `teleport` | TELEPORT | 2 |
+| `battle` | BATTLE | 3 |
+| `ambush` | AMBUSH | 4 |
+| `battlecomplete` | BATTLE_COMPLETE | 5 |
+| `fightlost` | FIGHT_LOST | 6 |
+| `questcomplete` | QUEST_COMPLETE | 7 |
+| `chaptercomplete` | CHAPTER_COMPLETE | 8 |
+| `actcomplete` | ACT_COMPLETE | 9 |
+| `barrierBlocked` | BARRIER_BLOCKED | 10 |
+| `outOfEnergy` | OUT_OF_ENERGY | 11 |
+
+`battle` (тип 3) читает:
+
+- `x` — `Dot.Integer`, `y` — `Dot.Integer` (`0xEA2E44/0xEA2E68`);
+- `isFinalBoss` — `Dot.Bool` (`0xEA2E90`);
+- `battleEnemy` — `Dot.Object` (`0xEA2ED8`), обязательный `id` (`0xEA2F18`);
+  далее `BCGEntity..ctor` (`0xC17F64`) + `Deserialize`;
+- `battleTower` — необязательный `Dot.Object` (`0xEA30B0`);
+- `actionTile = activeQuest.map.GetTile(x,y)` (`0x12EDA98`).
+
+`BCGEntity` наследует `QuestBoss`; `battleEnemy` использует те же поля,
+что `scaledBossTable` (`characters`, `rank`, `level`, `sig_lvl`,
+`flvl`, `aiType`, `isFinalBoss`, ...). [STATIC]
+
+### 2g.2 Проверка на живом клиенте
+
+После `quest-movedir/1/0` сервер вернул:
+
+```json
+"results": [
+  {"action": {"moveto": {"x": 1, "y": 0}}},
+  {"action": {"battle": {
+     "x": 1, "y": 0, "isFinalBoss": false,
+     "battleEnemy": { "id": "enemy1", "characters": ["bumblebee_cin_dotm_2"], "...": "..." }
+  }}}
+]
+```
+
+Клиент **открыл префайт-экран** «SELECT YOUR BOT» — это главный
+положительный результат: `battle`-действие является правильным
+триггером. [RUN] `work/battle3.png`, `work/pre2.png`, `work/s5.png`.
+
+Но локальная команда пустая:
+- при нажатии «+»/FIGHT: `NullReferenceException` в
+  `PrefightScreenPresentation.GetNewScale(HeroData robot)` из
+  `TweenCharacterOut` (`work/battle6.png`, logcat 14:35:40Z/14:46:15Z);
+- после добавления `team`-словаря и base-blueprint: сообщение
+  «YOUR BOTS ARE ALL KNOCKED OUT» (`work/s5.png`).
+
+Память `ActiveQuest.progression` после ответа:
+`version=3`, `currentPos=(1,0)`, `currentBattleId="battle1"`,
+`localPlayer` существует, `name="Commander"`, но `localPlayer.team`
+имеет `List` count 0. То есть `team` всё ещё не разобран, хотя
+`QuestUserInfo` читает его через `Dot.Object` (`0x103D5D8`) и создаёт
+`QuestUserHero` (`0x103CC70`). Формат team остаётся нерешённым;
+`/matches/activate-match` не вызван. [RUN] `work/read_prefight_state.py`.
+
+### 2g.3 Вызовы `ActivateMatch`
+
+`ActiveQuest.ActivateMatch` (`0x10A0038`) не имеет прямых `BL`:
+поиск по коду дал 0 вызовов; метод-указатель встречается в данных
+(`0x569620`, `0x2CE5140`), то есть вызов идёт через UI/делегат.
+`ActivateMatch` требует `progression.localPlayer.battleId` (непустой)
+и `hero`; иначе логирует `No battle id!` / `No hero!`. Префайт —
+наблюдаемый путь к этому вызову, но кнопка FIGHT не дошла до него
+из-за пустой команды. [STATIC]+[RUN]

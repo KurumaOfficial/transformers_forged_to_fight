@@ -1,8 +1,16 @@
 ﻿# data/wiki
 
-Parsed game data from the wiki has **not** been generated yet. The raw archive
-is in `archive/wiki/raw/`; every saved page is listed in
-`archive/wiki/unparsed/pages.json` with the reason "parser pass not run".
+Parsed from `archive/wiki/raw/fandom/revisions/0/` (raw is authoritative and
+untouched).
 
-No invented or assumed values are placed here. Hidden base stats (crit, armor,
-block) are not claimed unless a source page states them.
+- `bots.json` — 44 bot pages: infobox, star stats, rank/level tables,
+  abilities, signature tables, special attacks, synergy. Each entry carries
+  `source.page`, `source.revid`, `source.url`, `[WIKI]`.
+- `pages.json` — 252 other content pages (classes, status effects, modules,
+  relics, crystals, currencies, missions, events, story, arena, raids, away
+  missions, ...) with generic sections/tables and the same source metadata.
+- `unparsed/pages.json` — content not represented structurally (Sharkticon,
+  layout template) and metadata-only namespaces.
+
+Missing cells stay missing. Hidden base stats (crit, armor, block) are not
+invented; only values present in the saved wikitext/tables are stored.

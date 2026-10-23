@@ -1,0 +1,29 @@
+{
+ "note": "Content pages not represented as structured game data; raw files remain untouched.",
+ "items": [
+  {
+   "page": "Sharkticon",
+   "reason": "generic NPC; no numeric stat/rank table in saved wikitext",
+   "source": "Fandom",
+   "revid": null
+  },
+  {
+   "page": "Transformers: Forged to Fight Wiki:Layouts/Bot",
+   "reason": "layout template, not game data",
+   "source": "Fandom",
+   "revid": null
+  },
+  {
+   "page": "File:* (2796 pages)",
+   "reason": "File description text saved; not parsed into game data",
+   "source": "Fandom",
+   "revid": null
+  },
+  {
+   "page": "Template/Category/User/Talk/Message Wall/Thread",
+   "reason": "archive metadata, not game data",
+   "source": "Fandom",
+   "revid": null
+  }
+ ]
+}

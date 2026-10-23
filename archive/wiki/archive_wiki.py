@@ -194,7 +194,7 @@ def download_file(url, wiki, name, budget_end):
     fn = os.path.join(outdir, safe_name(name))
     for attempt in range(3):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36", "Referer": "https://transformers-forged-to-fight.fandom.com/"})
+            req = urllib.request.Request(url, headers={"User-Agent": "TFTF-offline-archive/0.1 (personal preservation; polite; contact: local-user)", "Referer": "https://transformers-forged-to-fight.fandom.com/"})
             with urllib.request.urlopen(req, timeout=120) as r:
                 b = r.read()
             with open(fn, "wb") as f:
