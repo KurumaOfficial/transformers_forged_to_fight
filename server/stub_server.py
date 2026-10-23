@@ -442,6 +442,9 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     t["activityID"] = aid
                     t["estimatedExpire"] = t.get("expire", t.get("estimatedExpire", 0))
                     fixed[aid] = t
+                    uid = load_data_json("quest_begin_response.json").get("uniqueId")
+                    if uid:
+                        fixed[uid] = t
                 wrapper["updates"]["activeTeams"] = fixed
             elif isinstance(ats, dict):
                 for t in ats.values():

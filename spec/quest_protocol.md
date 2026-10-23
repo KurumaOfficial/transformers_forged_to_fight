@@ -696,3 +696,10 @@ Dictionary<string, BCGUserActiveTeam>`. То есть JSON `activeTeams` — **�
 Следующий подозреваемый — точный тип/поля элементов `heroes` для
 `BCGHeroDetails` (не только `blueprint`, но и `hpMax`/`attack`/`attributeData`)
 либо id, которым `PrefightScreenData.GetCurrentTeam` ищет active team.
+
+После этого ответ содержал activeTeams и по `qid`, и по `uniqueId`
+(`active_quest_1001`). Префайт всё равно пустой; «+»/FIGHT — тот же
+`GetNewScale` NRE. Значит, проблема не только в ключе active team:
+`BCGHeroDetails`/`TeamData` не получает валидный элемент либо
+`PrefightScreenData` использует другой id/источник. [RUN]
+`work/teamfix8.png`.
