@@ -1,4 +1,4 @@
-# LEDGER: Учёт источников данных и значений сервера эмуляции
+﻿# LEDGER: Учёт источников данных и значений сервера эмуляции
 ## Transformers: Forged to Fight (com.kabam.bigrobot v9.2.0)
 
 Каждое значение, поле и массив, отдаваемые сервером `stub_server.py`, строго фиксируются в данном реестре с указанием источника происхождения.
@@ -198,3 +198,71 @@ ecommendedMinLevel |
 
 `ActiveQuest.ActivateMatch` (`RVA 0x10A0038`) требует `battleId` + героя;
 обычный `moveto` его не вызывает. [STATIC]
+
+### 11.1 Точная причина NRE и положительный результат
+
+`MapTile.Deserialize` читает `entities` через `Dot.Object` (IDictionary), не
+`Dot.Array`. Массив `entities:[...]` → NRE. Словарь
+`entities:{"enemy1":{...}}` → `quest-begin` проходит, босс рендерится
+(6★, 8888). [RUN] `work/r86.png`, `work/r95.png`.
+
+`scaledBossTable` лежит в объекте активного квеста
+(`activeQuests[qid].scaledBossTable`), читается `ActiveQuest..ctor` (`RVA
+0xC38BC8`, ключ `0xC38DE8`). `entityType:"boss"` + `characters:["bumblebee_cin_dotm_2"]`
+приняты. [STATIC]+[RUN]
+
+Поиск образца в ассетах: 3201 файл, совпадения только в `global-metadata.dat`;
+реального JSON-образца нет. [STATIC]
+
+Ход на тайл с боссом: `moveto` уходит, бот остаётся на месте, `/matches/*` нет.
+Нужен `battle`-action/battleId. [RUN] `work/r96.png`.
+
+### 11.2 Точная NRE-инструкция и отрицательный опыт (2026-10-23)
+
+`MapTile.Deserialize` читает `entities` через `Dot.Object` (`0x1485094`);
+`0x1485098 cbz x0,#0x1486508` — это и есть падающая ветка: массив не
+является `IDictionary`, `Dot.Object` возвращает null, `0x1486508` — общий
+throw-блок (`bl 0x9bb514`). Это происходит до `entityType`, поэтому поля
+сущности не помогали. Словарь `entities:{"enemy1":{...}}` проходит.
+
+`MapTile` читает таблицу из `builder.summary.bossTable` (`builder+0x28`,
+`summary+0x98`). `ActiveQuest..ctor` читает верхнеуровневый
+`scaledBossTable` (`0xC39038/0xC39044`) и передаёт его в
+`Quests.Builder..ctor` (`0xC393E4`, `0xEF2D04`), который кладёт его в
+`+0x18`. Поэтому таблица должна быть в верхнем уровне `activeQuests[qid]`.
+
+Фабрика: `Quests.Builder.NewEntity` (`0xEF28CC`) по **baseType**:
+`bcg|boss|tower` -> `BCGEntity`; `building` -> `Building`;
+`generator` -> `Generator`; иначе generic `Entity`. `characters` —
+`Dot.StringList` (`0x1464E0C`) -> `List<string>`.
+
+Дешёвый опыт: в movedir-ответ добавлены `currentFightId`,
+`currentBattleId`, `localPlayer` и др. Клиент отправил
+`/quests/quest-movedir/.../1/0`, но бот остался на (0,0), HUD 11%,
+`/matches/activate-match` не вызван. **Отрицательно**: progression-only
+недостаточно; нужен battle-action/триггер `ActivateMatch(hero)`.
+[RUN] `work/r119.png`, `server/requests.jsonl` 05:41:47Z.
+
+
+
+
+## 12. Wiki archive (Part B, 2026-10-23)
+
+- Fandom: перечислено 3613 страниц (35 пространств), сохранено **822**
+  страниц с полной историей ревизий и HTML; 1782 записей в
+  manifest; 8985 ревизий. allredirects=20, allcategories=80,
+  allimages=2752. [RUN]
+- TFWiki: сохранено **8** FTF-страниц (полная история + HTML), включая
+  `Forged to Fight`, `Transformers: Forged to Fight`, `Crossfire`,
+  `Generations`, `Prime Suspect`, `Magnus Opus`. [RUN]
+- Файлы: **118** из 2752 скачано; остальные URL в
+  `archive/wiki/meta/allimages_fandom.json`, state продолжается. [RUN]
+- Cargo нет; Scribunto на Fandom есть, но `Module:` (ns 828) — 0 страниц.
+- Разбор `data/wiki/`: **0**; всё сырое, список неразобранного —
+  `archive/wiki/unparsed/pages.json`. Выдуманных значений нет.
+- Ошибки: 24 (в основном HTTP 403 static.wikia.nocookie.net;
+  с browser UA/Referer часть качается).
+- Ссылка автора на коллекцию:
+  `https://1drv.ms/u/s!ApD2f3dIXZ_7yjf4KMB9YQzgWQCG?e=jiLxKN`
+  (`User:KRBrickBot`, revid 10874). Это внешний OneDrive, не скачивался.
+- Отчёт: `COVERAGE_WIKI.md`, вопросы: `OPEN_QUESTIONS.md`.

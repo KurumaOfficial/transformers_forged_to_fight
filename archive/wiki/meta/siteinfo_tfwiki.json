@@ -1,0 +1,440 @@
+{
+ "batchcomplete": true,
+ "query": {
+  "general": {
+   "mainpage": "Main Page",
+   "base": "https://tfwiki.duckdns.org/index.php/Main_Page",
+   "sitename": "MediaWiki",
+   "mainpageisdomainroot": false,
+   "logo": "https://tfwiki.duckdns.org/images2/d/d8/Wikilogo_noteletraan.png",
+   "generator": "MediaWiki 1.45.3",
+   "phpversion": "8.3.31",
+   "phpsapi": "apache2handler",
+   "dbtype": "mysql",
+   "dbversion": "10.6.26-MariaDB-ubu2204",
+   "imagewhitelistenabled": false,
+   "langconversion": true,
+   "linkconversion": true,
+   "titleconversion": true,
+   "linkprefixcharset": "",
+   "linkprefix": "",
+   "linktrail": "/^([a-z]+)(.*)$/sD",
+   "legaltitlechars": " %!\"$&'()*,\\-.\\/0-9:;=?@A-Z\\\\^_`a-z~\\x80-\\xFF+",
+   "invalidusernamechars": "@:>=",
+   "allunicodefixes": false,
+   "case": "first-letter",
+   "lang": "en",
+   "fallback": [],
+   "rtl": false,
+   "fallback8bitEncoding": "windows-1252",
+   "readonly": false,
+   "writeapi": true,
+   "maxarticlesize": 2097152,
+   "timezone": "UTC",
+   "timeoffset": 0,
+   "articlepath": "/index.php/$1",
+   "scriptpath": "",
+   "script": "/index.php",
+   "variantarticlepath": false,
+   "server": "https://tfwiki.duckdns.org",
+   "servername": "tfwiki.duckdns.org",
+   "wikiid": "wikidb",
+   "time": "2026-10-22T22:07:36Z",
+   "misermode": false,
+   "uploadsenabled": true,
+   "maxuploadsize": 104857600,
+   "minuploadchunksize": 1024,
+   "galleryoptions": {
+    "imagesPerRow": 0,
+    "imageWidth": 120,
+    "imageHeight": 120,
+    "captionLength": true,
+    "showBytes": true,
+    "showDimensions": true,
+    "mode": "traditional"
+   },
+   "thumblimits": {
+    "0": 120,
+    "1": 150,
+    "2": 180,
+    "3": 200,
+    "4": 250,
+    "5": 300
+   },
+   "imagelimits": {
+    "0": {
+     "width": 320,
+     "height": 240
+    },
+    "1": {
+     "width": 640,
+     "height": 480
+    },
+    "2": {
+     "width": 800,
+     "height": 600
+    },
+    "3": {
+     "width": 1024,
+     "height": 768
+    },
+    "4": {
+     "width": 1280,
+     "height": 1024
+    },
+    "5": {
+     "width": 2560,
+     "height": 2048
+    }
+   },
+   "favicon": "https://tfwiki.duckdns.org/favicon.ico",
+   "centralidlookupprovider": "local",
+   "allcentralidlookupproviders": [
+    "local"
+   ],
+   "interwikimagic": true,
+   "magiclinks": {
+    "ISBN": false,
+    "PMID": false,
+    "RFC": false
+   },
+   "categorycollation": "uppercase",
+   "nofollowlinks": true,
+   "nofollownsexceptions": [],
+   "nofollowdomainexceptions": [
+    "mediawiki.org"
+   ],
+   "externallinktarget": false,
+   "citeresponsivereferences": true
+  },
+  "namespaces": {
+   "-2": {
+    "id": -2,
+    "case": "first-letter",
+    "name": "Media",
+    "subpages": false,
+    "canonical": "Media",
+    "content": false,
+    "nonincludable": false
+   },
+   "-1": {
+    "id": -1,
+    "case": "first-letter",
+    "name": "Special",
+    "subpages": false,
+    "canonical": "Special",
+    "content": false,
+    "nonincludable": false
+   },
+   "0": {
+    "id": 0,
+    "case": "first-letter",
+    "name": "",
+    "subpages": false,
+    "content": true,
+    "nonincludable": false
+   },
+   "1": {
+    "id": 1,
+    "case": "first-letter",
+    "name": "Talk",
+    "subpages": true,
+    "canonical": "Talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "2": {
+    "id": 2,
+    "case": "first-letter",
+    "name": "User",
+    "subpages": true,
+    "canonical": "User",
+    "content": false,
+    "nonincludable": false
+   },
+   "3": {
+    "id": 3,
+    "case": "first-letter",
+    "name": "User talk",
+    "subpages": true,
+    "canonical": "User talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "4": {
+    "id": 4,
+    "case": "first-letter",
+    "name": "MediaWiki",
+    "subpages": true,
+    "canonical": "Project",
+    "content": false,
+    "nonincludable": false
+   },
+   "5": {
+    "id": 5,
+    "case": "first-letter",
+    "name": "MediaWiki talk",
+    "subpages": true,
+    "canonical": "Project talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "6": {
+    "id": 6,
+    "case": "first-letter",
+    "name": "File",
+    "subpages": false,
+    "canonical": "File",
+    "content": false,
+    "nonincludable": false
+   },
+   "7": {
+    "id": 7,
+    "case": "first-letter",
+    "name": "File talk",
+    "subpages": true,
+    "canonical": "File talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "8": {
+    "id": 8,
+    "case": "first-letter",
+    "name": "MediaWiki",
+    "subpages": true,
+    "canonical": "MediaWiki",
+    "content": false,
+    "nonincludable": false,
+    "namespaceprotection": "editinterface"
+   },
+   "9": {
+    "id": 9,
+    "case": "first-letter",
+    "name": "MediaWiki talk",
+    "subpages": true,
+    "canonical": "MediaWiki talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "10": {
+    "id": 10,
+    "case": "first-letter",
+    "name": "Template",
+    "subpages": true,
+    "canonical": "Template",
+    "content": false,
+    "nonincludable": false
+   },
+   "11": {
+    "id": 11,
+    "case": "first-letter",
+    "name": "Template talk",
+    "subpages": true,
+    "canonical": "Template talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "12": {
+    "id": 12,
+    "case": "first-letter",
+    "name": "Help",
+    "subpages": true,
+    "canonical": "Help",
+    "content": false,
+    "nonincludable": false
+   },
+   "13": {
+    "id": 13,
+    "case": "first-letter",
+    "name": "Help talk",
+    "subpages": true,
+    "canonical": "Help talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "14": {
+    "id": 14,
+    "case": "first-letter",
+    "name": "Category",
+    "subpages": false,
+    "canonical": "Category",
+    "content": false,
+    "nonincludable": false
+   },
+   "15": {
+    "id": 15,
+    "case": "first-letter",
+    "name": "Category talk",
+    "subpages": true,
+    "canonical": "Category talk",
+    "content": false,
+    "nonincludable": false
+   }
+  },
+  "namespacealiases": [
+   {
+    "id": 6,
+    "alias": "Image"
+   },
+   {
+    "id": 7,
+    "alias": "Image talk"
+   }
+  ],
+  "extensions": [
+   {
+    "type": "skin",
+    "name": "MonoBook",
+    "namemsg": "skinname-monobook",
+    "descriptionmsg": "monobook-desc",
+    "author": "Gabriel Wicke, Isarra Yos, ...",
+    "url": "https://www.mediawiki.org/wiki/Skin:MonoBook",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/MonoBook"
+   },
+   {
+    "type": "skin",
+    "name": "Vector",
+    "namemsg": "vector-specialversion-name",
+    "descriptionmsg": "vector-skin-desc",
+    "author": "[https://www.mediawiki.org/wiki/Readers/Web/Team Readers Web Team], Trevor Parscal, Roan Kattouw, Alex Hollender, Bernard Wang, Clare Ming, Jan Drewniak, Jon Robson, Nick Ray, Sam Smith, Stephen Niedzielski, Volker E.",
+    "url": "https://www.mediawiki.org/wiki/Skin:Vector",
+    "version": "1.0.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/Vector"
+   },
+   {
+    "type": "skin",
+    "name": "Timeless",
+    "namemsg": "skinname-timeless",
+    "descriptionmsg": "timeless-desc",
+    "author": "Isarra Yos",
+    "url": "https://www.mediawiki.org/wiki/Skin:Timeless",
+    "version": "0.9.1",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/Timeless"
+   },
+   {
+    "type": "skin",
+    "name": "MonacoBook",
+    "namemsg": "skinname-monacobook",
+    "descriptionmsg": "monacobook-desc",
+    "author": "...",
+    "url": "https://tfwiki.net/wiki/Main_Page",
+    "license-name": "CC-BY-SA",
+    "license": "/index.php/Special:Version/License/MonacoBook"
+   },
+   {
+    "type": "parserhook",
+    "name": "ParserFunctions",
+    "descriptionmsg": "pfunc_desc",
+    "author": "Tim Starling, Robert Rohde, Ross McClure, Juraj Simlovic",
+    "url": "https://www.mediawiki.org/wiki/Extension:ParserFunctions",
+    "version": "1.6.1",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/ParserFunctions"
+   },
+   {
+    "type": "parserhook",
+    "name": "ImageMap",
+    "descriptionmsg": "imagemap_desc",
+    "author": "Tim Starling, Arlo Breault",
+    "url": "https://www.mediawiki.org/wiki/Extension:ImageMap",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/ImageMap"
+   },
+   {
+    "type": "parserhook",
+    "name": "Cite",
+    "descriptionmsg": "cite-desc",
+    "author": "Ævar Arnfjörð Bjarmason, Andrew Garrett, Brion Vibber, Ed Sanders, Marius Hoch, Steve Sanbeg, Trevor Parscal, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:Cite",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/Cite",
+    "credits": "/index.php/Special:Version/Credits/Cite"
+   },
+   {
+    "type": "parserhook",
+    "name": "InputBox",
+    "descriptionmsg": "inputbox-desc",
+    "author": "Erik Moeller, Leonardo Pimenta, Rob Church, Trevor Parscal, DaSch",
+    "url": "https://www.mediawiki.org/wiki/Extension:InputBox",
+    "version": "0.3.0",
+    "license-name": "MIT",
+    "license": "/index.php/Special:Version/License/InputBox"
+   },
+   {
+    "type": "parserhook",
+    "name": "RandomSelection",
+    "descriptionmsg": "randomselection-desc",
+    "author": "Ross McClure, Jack Phoenix, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:RandomSelection",
+    "version": "2.3.0",
+    "vcs-system": "git",
+    "vcs-version": "6046fa43710745cb690e6f199398d640c2ad5dd3",
+    "vcs-url": false,
+    "vcs-date": "2026-05-07T02:06:07Z",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/RandomSelection"
+   },
+   {
+    "type": "antispam",
+    "name": "ConfirmEdit",
+    "descriptionmsg": "captcha-desc",
+    "author": "Brion Vibber, Florian Schmidt, Sam Reed, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:ConfirmEdit",
+    "version": "1.6.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/ConfirmEdit",
+    "credits": "/index.php/Special:Version/Credits/ConfirmEdit"
+   },
+   {
+    "type": "antispam",
+    "name": "SpamBlacklist",
+    "descriptionmsg": "spam-blacklist-desc",
+    "author": "Tim Starling, John Du Hart, Daniel Kinzler",
+    "url": "https://www.mediawiki.org/wiki/Extension:SpamBlacklist",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/SpamBlacklist"
+   },
+   {
+    "type": "specialpage",
+    "name": "Nuke",
+    "descriptionmsg": "nuke-desc",
+    "author": "Brion Vibber, Jeroen De Dauw",
+    "url": "https://www.mediawiki.org/wiki/Extension:Nuke",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/Nuke"
+   },
+   {
+    "type": "specialpage",
+    "name": "CheckUser",
+    "descriptionmsg": "checkuser-desc",
+    "author": "Tim Starling, Aaron Schulz, Dreamy Jazz",
+    "url": "https://www.mediawiki.org/wiki/Extension:CheckUser",
+    "version": "2.5",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/CheckUser"
+   },
+   {
+    "type": "other",
+    "name": "Gadgets",
+    "descriptionmsg": "gadgets-desc",
+    "author": "Daniel Kinzler, Max Semenik, Timo Tijhof, Siddharth VP",
+    "url": "https://www.mediawiki.org/wiki/Extension:Gadgets",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/index.php/Special:Version/License/Gadgets"
+   }
+  ],
+  "statistics": {
+   "pages": 139066,
+   "articles": 32676,
+   "edits": 1944202,
+   "images": 71686,
+   "users": 21323,
+   "activeusers": 239,
+   "admins": 19,
+   "jobs": 0
+  }
+ }
+}

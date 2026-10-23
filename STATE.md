@@ -83,23 +83,59 @@ is a battle tile/entity (`BCGEntity`) or `progression.currentBattleId`, not a
 plain move. RAIDS is disabled by the client ("Raids are temporarily disabled."),
 SPECIAL/ARENAS/ALLIANCE are level-locked. [RUN]
 
-Battle tile static/runtime (2026-10-22):
-- ActiveQuest..ctor (RVA 0xC38BC8) reads scaledBossTable from the active quest.
-- MapTile.Deserialize (RVA 0x1484C04) reads tile entityType, oss
-  (bossTableId), links, isibleLinks, g, t, b, sockets.
-- QuestBoss.Deserialize (RVA 0xEA3F60) uses JSONPaths 8589:
-  isFinalBoss,characters,rank,level,sig_lvl,flvl,aiType,aiString,aiPer,
-  mapOverride,todIndex,....
-- Entity.Deserialize (RVA 0x1334A04) reads uid,key,hi.
-- Three variants tried (boss table + entity; + uid/key/hi/type/baseType;
-  + bg/bt/ab/sockets). All still NRE in MapTile.Deserialize; no /matches/*.
-  [RUN] work/r83.png, spec/quest_protocol.md §2e.
-- Memory after a normal move: ActiveQuests=1, pendingProgressionCount=0,
-  progression.version=2, currentPos=(1,0), currentBattleId=null.
-  [RUN] work/adb_legacy_quest.py.
+Battle tile static/runtime (2026-10-23):
+- Exact NRE: `MapTile.Deserialize` reads `entities` via `Dot.Object`
+  (`0x1485094`); `0x1485098 cbz x0,#0x1486508` jumps to the common
+  null-reference throw block. A JSON array is not an `IDictionary`, so
+  `Dot.Object` returns null. `entities:{"enemy1":{...}}` fixed it.
+- `MapTile` reads `builder.summary.bossTable` (`builder+0x28`,
+  `summary+0x98`). `ActiveQuest..ctor` reads top-level `scaledBossTable`
+  (`0xC39038/0xC39044`) and passes it to `Quests.Builder..ctor`
+  (`0xC393E4`, `0xEF2D04`, field `+0x18`). The table must be in the
+  top-level active-quest object, not in `data`/`map`.
+- Entity factory is selected by **baseType**: `bcg|boss|tower` ->
+  `BCGEntity`; `building` -> `Building`; `generator` -> `Generator`;
+  otherwise generic `Entity` (`0xEF28CC`, `0x149B5D4`, `0x149B800`).
+- `characters` is `Dot.StringList` (`0x1464E0C`) -> `List<string>`.
+  `bumblebee_cin_dotm_2` is the accepted roster id; the asset pack is
+  `bumblebee_cin_dotm` (`work/unpacked/assets/.../toc.txt`).
+- Boss rendered on the map (6 stars, 8888). [RUN] work/r86.png,
+  work/r95.png, work/r117.png.
+- Asset scan: 3201 files, no real `scaledBossTable` sample; only metadata.
+- Cheap experiment: added `currentFightId`, `currentBattleId`,
+  `currentBattleBossId`, `currentBattlePos`, `localPlayer` to the movedir
+  response. Client sent `/quests/quest-movedir/.../1/0`, but the bot stayed
+  at (0,0), HUD 11%; `/matches/activate-match` was not called. Negative:
+  progression-only is insufficient. [RUN] work/r119.png, 05:41:47Z.
+- Memory after a normal move (without entity): `ActiveQuests=1`,
+  `pendingProgressionCount=0`, `progression.version=2`, `currentPos=(1,0)`,
+  `currentBattleId=null`. [RUN] work/adb_legacy_quest.py.
 
-Next: dynamic tracing of MapTile.Deserialize/QuestBoss.Deserialize or a real
-scaledBossTable/tile entity sample. No Frida/gadget without user consent.
+Next: a `battle` action with a full `battleEnemy`/`battleId` (or another
+explicit trigger) must be tried; do not guess beyond one variant without
+user approval. No Frida/gadget without consent.
+
+## 4b. Wiki archive (Part B, 2026-10-23)
+
+- Fandom: **3613** pages enumerated in 35 namespaces; **822** saved with
+  full revision history + rendered HTML (1782 manifest entries).
+  allredirects=20, allcategories=80, allimages=2752.
+- TFWiki mirror: **8** FTF pages saved (full history + HTML), selected by
+  search; whole wiki reports 139066 pages but only FTF titles were taken.
+- Image binaries downloaded: **118** of 2752; remaining URLs are in
+  `archive/wiki/meta/allimages_fandom.json`, state is resumable.
+- Extensions: Fandom Scribunto=yes, Cargo=no; TFWiki Scribunto=no, Cargo=no.
+  Fandom `Module:` (ns 828) has 0 pages.
+- Raw: `archive/wiki/raw/` (not in git, large); lists: `archive/wiki/meta/`;
+  state: `archive/wiki/state.json`; manifest: `archive/wiki/manifest.json`;
+  errors: `archive/wiki/errors.json` (24 entries, mostly HTTP 403
+  from static.wikia.nocookie.net; retry with browser UA/Referer works).
+- Parsing: **0 pages** parsed into `data/wiki/`; raw only. Every saved page is
+  listed in `archive/wiki/unparsed/pages.json` with the reason. No invented
+  values; hidden base stats (crit/armor/block) are not claimed.
+- Author collection link: `https://1drv.ms/u/s!ApD2f3dIXZ_7yjf4KMB9YQzgWQCG?e=jiLxKN`
+  from `User:KRBrickBot` revid 10874, see `OPEN_QUESTIONS.md`.
+- Coverage report: `COVERAGE_WIKI.md`.
 
 ## 5. What is NOT verified / must not be claimed
 - Battle did not start. No `match-*` request was observed.
@@ -110,26 +146,28 @@ scaledBossTable/tile entity sample. No Frida/gadget without user consent.
 - FIDELITY.md legacy percentages are invalid.
 
 ## 6. Files changed this session
-- `server/stub_server.py` вЂ” `/bcg/getBaseHeroData`, `/bcg/setSavedTeam`,
-  `/quests/quest-begin`, `/quests/quest-movedir`, `/quests/quest-quit` fallback.
-- `server/data/bcg_login_data.json` вЂ” id keys, rank 4/5, userData wrapper,
-  bot entity, saved/active team arrays.
-- `server/data/account_data.json` вЂ” `featuredhero`.
-- `server/data/login_response.json` вЂ” `featuredhero` (kept for completeness).
-- `server/data/quest_begin_response.json`, `quest_detail.json` вЂ” square 3Г—3 map,
-  entities removed.
-- `server/data/redeemer_data.json` вЂ” nextrefresh moved to 2030 (stops the loop).
-- `spec/bcg_userdata.md`, `spec/quest_protocol.md` вЂ” updated.
-- `LEDGER.md`, `FIDELITY.md`, `STATE.md` вЂ” updated.
-- Work scripts: `map_addr.py`, `build_rva_map.py`, `disasm_calls.py`, `xref.py`,
-  `scan_jsonpaths.py`, `adb_live.py`, `adb_mem_featured.py`.
+- `server/stub_server.py` — `/quests/quest-begin`, `/quests/quest-movedir`
+  (including the one-shot `currentBattleId + localPlayer` experiment).
+- `server/data/quest_begin_response.json`, `quest_detail.json` — `entities`
+  is now a dictionary keyed by entity id; top-level `scaledBossTable`; boss
+  entity on (1,0).
+- `spec/quest_protocol.md` — §2f: exact NRE instruction, `builder.summary.
+  bossTable` chain, entity factory, `characters`, negative experiment.
+- `LEDGER.md`, `FIDELITY.md`, `MASTER_PROMPT.md` — updated (v3.2).
+- `OPEN_QUESTIONS.md` — author OneDrive link, battle-trigger gap, archive gaps.
+- `COVERAGE_WIKI.md`, `archive/wiki/*.py`, `archive/wiki/README.md`,
+  `data/wiki/README.md` — wiki archive and integrity state.
+- `archive/wiki/meta/author_collection.json` — link, revid 10874, source.
+- Work scripts: `disasm_calls.py`, `write_spec_2f.py`, `gen_coverage.py`,
+  `find_tiles_arg.py`, `archive_wiki.py`.
 
 ## 7. Evidence index
-- `work/r13.png` вЂ” BOTS roster.
-- `work/r38.png` вЂ” quest detail with team, START active.
-- `work/r47.png`, `work/r51.png` вЂ” quest map loaded.
-- `work/r52.png`вЂ“`work/r67.png` вЂ” movement attempts.
-- `work/run_logcat_8.txt` вЂ” clean BOTS run.
-- `server/requests.jsonl` вЂ” full request log (2026-10-22 17:41вЂ“18:31).
-
-
+- `work/r13.png` — BOTS roster.
+- `work/r38.png` — quest detail with team, START active.
+- `work/r47.png`, `work/r51.png` — quest map loaded.
+- `work/r86.png`, `work/r95.png`, `work/r117.png` — boss entity rendered
+  (6★, 8888) after the `entities` dictionary fix.
+- `work/r119.png` — movedir accepted, bot stays at 11%, no
+  `/matches/activate-match` after the `currentBattleId + localPlayer` attempt.
+- `server/requests.jsonl` — request log; `05:41:47Z` is the negative attempt.
+- `archive/wiki/state.json`, `manifest.json`, `errors.json` — archive integrity.

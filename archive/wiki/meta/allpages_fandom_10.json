@@ -1,0 +1,532 @@
+[
+ {
+  "pageid": 38,
+  "ns": 10,
+  "title": "Template:!"
+ },
+ {
+  "pageid": 72,
+  "ns": 10,
+  "title": "Template:!!"
+ },
+ {
+  "pageid": 73,
+  "ns": 10,
+  "title": "Template:!!/doc"
+ },
+ {
+  "pageid": 39,
+  "ns": 10,
+  "title": "Template:!/doc"
+ },
+ {
+  "pageid": 935,
+  "ns": 10,
+  "title": "Template:Abilitystub"
+ },
+ {
+  "pageid": 96,
+  "ns": 10,
+  "title": "Template:Announcement"
+ },
+ {
+  "pageid": 521,
+  "ns": 10,
+  "title": "Template:Bot Navbox"
+ },
+ {
+  "pageid": 2461,
+  "ns": 10,
+  "title": "Template:Bots"
+ },
+ {
+  "pageid": 2232,
+  "ns": 10,
+  "title": "Template:Brawler"
+ },
+ {
+  "pageid": 41,
+  "ns": 10,
+  "title": "Template:CC-BY-SA"
+ },
+ {
+  "pageid": 44,
+  "ns": 10,
+  "title": "Template:CC-BY-SA/doc"
+ },
+ {
+  "pageid": 2338,
+  "ns": 10,
+  "title": "Template:CT"
+ },
+ {
+  "pageid": 2339,
+  "ns": 10,
+  "title": "Template:CTA"
+ },
+ {
+  "pageid": 2340,
+  "ns": 10,
+  "title": "Template:CTD"
+ },
+ {
+  "pageid": 2341,
+  "ns": 10,
+  "title": "Template:CTM"
+ },
+ {
+  "pageid": 14,
+  "ns": 10,
+  "title": "Template:Cc-by-sa-3.0"
+ },
+ {
+  "pageid": 25,
+  "ns": 10,
+  "title": "Template:Cc-by-sa-3.0/doc"
+ },
+ {
+  "pageid": 91,
+  "ns": 10,
+  "title": "Template:Class Template"
+ },
+ {
+  "pageid": 520,
+  "ns": 10,
+  "title": "Template:Contents"
+ },
+ {
+  "pageid": 48,
+  "ns": 10,
+  "title": "Template:Delete"
+ },
+ {
+  "pageid": 47,
+  "ns": 10,
+  "title": "Template:Delete/doc"
+ },
+ {
+  "pageid": 2230,
+  "ns": 10,
+  "title": "Template:Demolitions"
+ },
+ {
+  "pageid": 2375,
+  "ns": 10,
+  "title": "Template:Dia"
+ },
+ {
+  "pageid": 2376,
+  "ns": 10,
+  "title": "Template:DiaC"
+ },
+ {
+  "pageid": 2378,
+  "ns": 10,
+  "title": "Template:DiaCRT"
+ },
+ {
+  "pageid": 2379,
+  "ns": 10,
+  "title": "Template:DiaRT"
+ },
+ {
+  "pageid": 50,
+  "ns": 10,
+  "title": "Template:Disambig"
+ },
+ {
+  "pageid": 49,
+  "ns": 10,
+  "title": "Template:Disambig/doc"
+ },
+ {
+  "pageid": 16,
+  "ns": 10,
+  "title": "Template:Documentation"
+ },
+ {
+  "pageid": 18,
+  "ns": 10,
+  "title": "Template:Documentation/doc"
+ },
+ {
+  "pageid": 2462,
+  "ns": 10,
+  "title": "Template:F2FF"
+ },
+ {
+  "pageid": 1603,
+  "ns": 10,
+  "title": "Template:FacebookFeed"
+ },
+ {
+  "pageid": 4,
+  "ns": 10,
+  "title": "Template:Fairuse"
+ },
+ {
+  "pageid": 22,
+  "ns": 10,
+  "title": "Template:Fairuse/doc"
+ },
+ {
+  "pageid": 45,
+  "ns": 10,
+  "title": "Template:From Wikimedia"
+ },
+ {
+  "pageid": 46,
+  "ns": 10,
+  "title": "Template:From Wikimedia/doc"
+ },
+ {
+  "pageid": 2383,
+  "ns": 10,
+  "title": "Template:Future"
+ },
+ {
+  "pageid": 2284,
+  "ns": 10,
+  "title": "Template:GalleryChapters"
+ },
+ {
+  "pageid": 2282,
+  "ns": 10,
+  "title": "Template:GalleryNoMaster"
+ },
+ {
+  "pageid": 2283,
+  "ns": 10,
+  "title": "Template:GalleryWithMaster"
+ },
+ {
+  "pageid": 86,
+  "ns": 10,
+  "title": "Template:Header"
+ },
+ {
+  "pageid": 13,
+  "ns": 10,
+  "title": "Template:Infobox"
+ },
+ {
+  "pageid": 21,
+  "ns": 10,
+  "title": "Template:Infobox/doc"
+ },
+ {
+  "pageid": 2517,
+  "ns": 10,
+  "title": "Template:InfoboxTest"
+ },
+ {
+  "pageid": 64,
+  "ns": 10,
+  "title": "Template:Infobox album"
+ },
+ {
+  "pageid": 63,
+  "ns": 10,
+  "title": "Template:Infobox album/doc"
+ },
+ {
+  "pageid": 53,
+  "ns": 10,
+  "title": "Template:Infobox book"
+ },
+ {
+  "pageid": 51,
+  "ns": 10,
+  "title": "Template:Infobox book/doc"
+ },
+ {
+  "pageid": 62,
+  "ns": 10,
+  "title": "Template:Infobox character"
+ },
+ {
+  "pageid": 59,
+  "ns": 10,
+  "title": "Template:Infobox character/doc"
+ },
+ {
+  "pageid": 54,
+  "ns": 10,
+  "title": "Template:Infobox episode"
+ },
+ {
+  "pageid": 52,
+  "ns": 10,
+  "title": "Template:Infobox episode/doc"
+ },
+ {
+  "pageid": 74,
+  "ns": 10,
+  "title": "Template:Infobox event"
+ },
+ {
+  "pageid": 75,
+  "ns": 10,
+  "title": "Template:Infobox event/doc"
+ },
+ {
+  "pageid": 57,
+  "ns": 10,
+  "title": "Template:Infobox item"
+ },
+ {
+  "pageid": 56,
+  "ns": 10,
+  "title": "Template:Infobox item/doc"
+ },
+ {
+  "pageid": 61,
+  "ns": 10,
+  "title": "Template:Infobox location"
+ },
+ {
+  "pageid": 60,
+  "ns": 10,
+  "title": "Template:Infobox location/doc"
+ },
+ {
+  "pageid": 58,
+  "ns": 10,
+  "title": "Template:Infobox quest"
+ },
+ {
+  "pageid": 55,
+  "ns": 10,
+  "title": "Template:Infobox quest/doc"
+ },
+ {
+  "pageid": 2344,
+  "ns": 10,
+  "title": "Template:JustReleased"
+ },
+ {
+  "pageid": 2387,
+  "ns": 10,
+  "title": "Template:Main"
+ },
+ {
+  "pageid": 522,
+  "ns": 10,
+  "title": "Template:Mod Navbox"
+ },
+ {
+  "pageid": 66,
+  "ns": 10,
+  "title": "Template:Navbox"
+ },
+ {
+  "pageid": 65,
+  "ns": 10,
+  "title": "Template:Navbox/doc"
+ },
+ {
+  "pageid": 2393,
+  "ns": 10,
+  "title": "Template:NeedsImages"
+ },
+ {
+  "pageid": 103,
+  "ns": 10,
+  "title": "Template:Notice"
+ },
+ {
+  "pageid": 42,
+  "ns": 10,
+  "title": "Template:Other free"
+ },
+ {
+  "pageid": 43,
+  "ns": 10,
+  "title": "Template:Other free/doc"
+ },
+ {
+  "pageid": 3,
+  "ns": 10,
+  "title": "Template:PD"
+ },
+ {
+  "pageid": 26,
+  "ns": 10,
+  "title": "Template:PD/doc"
+ },
+ {
+  "pageid": 2427,
+  "ns": 10,
+  "title": "Template:PageNotice"
+ },
+ {
+  "pageid": 10,
+  "ns": 10,
+  "title": "Template:Permission"
+ },
+ {
+  "pageid": 23,
+  "ns": 10,
+  "title": "Template:Permission/doc"
+ },
+ {
+  "pageid": 2279,
+  "ns": 10,
+  "title": "Template:PrevNext"
+ },
+ {
+  "pageid": 87,
+  "ns": 10,
+  "title": "Template:Quotes"
+ },
+ {
+  "pageid": 2234,
+  "ns": 10,
+  "title": "Template:RedText"
+ },
+ {
+  "pageid": 2235,
+  "ns": 10,
+  "title": "Template:RedText/doc"
+ },
+ {
+  "pageid": 2489,
+  "ns": 10,
+  "title": "Template:Rewards"
+ },
+ {
+  "pageid": 2229,
+  "ns": 10,
+  "title": "Template:Scout"
+ },
+ {
+  "pageid": 11,
+  "ns": 10,
+  "title": "Template:Self"
+ },
+ {
+  "pageid": 24,
+  "ns": 10,
+  "title": "Template:Self/doc"
+ },
+ {
+  "pageid": 3629,
+  "ns": 10,
+  "title": "Template:Sharkticon"
+ },
+ {
+  "pageid": 2254,
+  "ns": 10,
+  "title": "Template:Special Missions"
+ },
+ {
+  "pageid": 101,
+  "ns": 10,
+  "title": "Template:Spoiler Warning"
+ },
+ {
+  "pageid": 2332,
+  "ns": 10,
+  "title": "Template:StoryArc"
+ },
+ {
+  "pageid": 3632,
+  "ns": 10,
+  "title": "Template:StructuredQuote"
+ },
+ {
+  "pageid": 929,
+  "ns": 10,
+  "title": "Template:Stub"
+ },
+ {
+  "pageid": 2995,
+  "ns": 10,
+  "title": "Template:Syn/Both"
+ },
+ {
+  "pageid": 2994,
+  "ns": 10,
+  "title": "Template:Syn/In"
+ },
+ {
+  "pageid": 2993,
+  "ns": 10,
+  "title": "Template:Syn/Out"
+ },
+ {
+  "pageid": 36,
+  "ns": 10,
+  "title": "Template:T"
+ },
+ {
+  "pageid": 19,
+  "ns": 10,
+  "title": "Template:T/doc"
+ },
+ {
+  "pageid": 37,
+  "ns": 10,
+  "title": "Template:T/piece"
+ },
+ {
+  "pageid": 20,
+  "ns": 10,
+  "title": "Template:T/piece/doc"
+ },
+ {
+  "pageid": 2293,
+  "ns": 10,
+  "title": "Template:TFWiki-BW"
+ },
+ {
+  "pageid": 2292,
+  "ns": 10,
+  "title": "Template:TFWiki-G1"
+ },
+ {
+  "pageid": 2294,
+  "ns": 10,
+  "title": "Template:TFWiki-MV"
+ },
+ {
+  "pageid": 2231,
+  "ns": 10,
+  "title": "Template:Tactician"
+ },
+ {
+  "pageid": 2228,
+  "ns": 10,
+  "title": "Template:Tech"
+ },
+ {
+  "pageid": 1605,
+  "ns": 10,
+  "title": "Template:TwitterFeed"
+ },
+ {
+  "pageid": 2356,
+  "ns": 10,
+  "title": "Template:USERNAME"
+ },
+ {
+  "pageid": 2355,
+  "ns": 10,
+  "title": "Template:Unconfirmed"
+ },
+ {
+  "pageid": 100,
+  "ns": 10,
+  "title": "Template:User Info"
+ },
+ {
+  "pageid": 2301,
+  "ns": 10,
+  "title": "Template:WIP"
+ },
+ {
+  "pageid": 2233,
+  "ns": 10,
+  "title": "Template:Warrior"
+ }
+]

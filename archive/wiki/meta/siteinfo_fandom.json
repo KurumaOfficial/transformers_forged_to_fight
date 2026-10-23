@@ -1,0 +1,2249 @@
+{
+ "batchcomplete": true,
+ "query": {
+  "general": {
+   "mainpage": "Transformers: Forged to Fight Wiki",
+   "base": "https://transformers-forged-to-fight.fandom.com/wiki/Transformers:_Forged_to_Fight_Wiki",
+   "sitename": "Transformers: Forged to Fight Wiki",
+   "mainpageisdomainroot": false,
+   "logo": "https://images.wikia.com/transformers-forged-to-fight/images/b/bc/Wiki.png",
+   "generator": "MediaWiki 1.43.9",
+   "phpversion": "8.3.36",
+   "phpsapi": "fpm-fcgi",
+   "dbtype": "mysql",
+   "dbversion": "8.0.44-35",
+   "imagewhitelistenabled": false,
+   "externalimages": [
+    "https://images.wikia.com/",
+    "https://images.wikia.com",
+    "https://static.wikia.com",
+    "https://static.wikia.nocookie.net",
+    "https://img.wikia.nocookie.net",
+    "https://img1.wikia.nocookie.net",
+    "https://img2.wikia.nocookie.net",
+    "https://img3.wikia.nocookie.net",
+    "https://img4.wikia.nocookie.net",
+    "https://img5.wikia.nocookie.net",
+    "https://images.wikia.nocookie.net",
+    "https://images1.wikia.nocookie.net",
+    "https://images2.wikia.nocookie.net",
+    "https://images3.wikia.nocookie.net",
+    "https://images4.wikia.nocookie.net",
+    "https://images5.wikia.nocookie.net",
+    "https://vignette.wikia.nocookie.net",
+    "https://vignette1.wikia.nocookie.net",
+    "https://vignette2.wikia.nocookie.net",
+    "https://vignette3.wikia.nocookie.net",
+    "https://vignette4.wikia.nocookie.net",
+    "https://vignette5.wikia.nocookie.net"
+   ],
+   "langconversion": true,
+   "linkconversion": true,
+   "titleconversion": true,
+   "linkprefixcharset": "",
+   "linkprefix": "",
+   "linktrail": "/^([a-z]+)(.*)$/sD",
+   "legaltitlechars": " %!\"$&'()*,\\-.\\/0-9:;=?@A-Z\\\\^_`a-z~\\x80-\\xFF+",
+   "invalidusernamechars": "@:>=",
+   "allunicodefixes": false,
+   "fixarabicunicode": true,
+   "fixmalayalamunicode": true,
+   "case": "first-letter",
+   "lang": "en",
+   "fallback": [],
+   "rtl": false,
+   "fallback8bitEncoding": "windows-1252",
+   "readonly": false,
+   "writeapi": true,
+   "maxarticlesize": 2097152,
+   "timezone": "UTC",
+   "timeoffset": 0,
+   "articlepath": "/wiki/$1",
+   "scriptpath": "",
+   "script": "/index.php",
+   "variantarticlepath": false,
+   "server": "https://transformers-forged-to-fight.fandom.com",
+   "servername": "transformers-forged-to-fight.fandom.com",
+   "wikiid": "transformersforgedtofight421",
+   "time": "2026-10-22T22:07:09Z",
+   "misermode": true,
+   "uploadsenabled": true,
+   "maxuploadsize": 10485760,
+   "minuploadchunksize": 1024,
+   "galleryoptions": {
+    "imagesPerRow": 0,
+    "imageWidth": 120,
+    "imageHeight": 120,
+    "captionLength": true,
+    "showBytes": true,
+    "showDimensions": true,
+    "mode": "traditional"
+   },
+   "thumblimits": {
+    "0": 120,
+    "1": 150,
+    "2": 180,
+    "3": 200,
+    "4": 250,
+    "5": 300
+   },
+   "imagelimits": {
+    "0": {
+     "width": 320,
+     "height": 240
+    },
+    "1": {
+     "width": 640,
+     "height": 480
+    },
+    "2": {
+     "width": 800,
+     "height": 600
+    },
+    "3": {
+     "width": 1024,
+     "height": 768
+    },
+    "4": {
+     "width": 1280,
+     "height": 1024
+    },
+    "5": {
+     "width": 2560,
+     "height": 2048
+    }
+   },
+   "favicon": "https://transformers-forged-to-fight.fandom.com/favicon.ico",
+   "centralidlookupprovider": "local",
+   "allcentralidlookupproviders": [
+    "local"
+   ],
+   "interwikimagic": true,
+   "magiclinks": {
+    "ISBN": true,
+    "PMID": false,
+    "RFC": false
+   },
+   "categorycollation": "uppercase",
+   "nofollowlinks": true,
+   "nofollownsexceptions": [],
+   "nofollowdomainexceptions": [
+    "fanatical.com",
+    "fandom.com",
+    "gamepedia.com",
+    "muthead.com",
+    "wikia.com",
+    "wikia.org",
+    "wowpedia.org"
+   ],
+   "externallinktarget": "_blank",
+   "citeresponsivereferences": true,
+   "anonwallpost": "false",
+   "gamepedia": "false",
+   "mobileserver": "https://transformers-forged-to-fight.fandom.com"
+  },
+  "namespaces": {
+   "-2": {
+    "id": -2,
+    "case": "first-letter",
+    "name": "Media",
+    "subpages": false,
+    "canonical": "Media",
+    "content": false,
+    "nonincludable": false
+   },
+   "-1": {
+    "id": -1,
+    "case": "first-letter",
+    "name": "Special",
+    "subpages": false,
+    "canonical": "Special",
+    "content": false,
+    "nonincludable": false
+   },
+   "0": {
+    "id": 0,
+    "case": "first-letter",
+    "name": "",
+    "subpages": true,
+    "content": true,
+    "nonincludable": false
+   },
+   "1": {
+    "id": 1,
+    "case": "first-letter",
+    "name": "Talk",
+    "subpages": true,
+    "canonical": "Talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "2": {
+    "id": 2,
+    "case": "first-letter",
+    "name": "User",
+    "subpages": true,
+    "canonical": "User",
+    "content": false,
+    "nonincludable": false
+   },
+   "3": {
+    "id": 3,
+    "case": "first-letter",
+    "name": "User talk",
+    "subpages": true,
+    "canonical": "User talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "4": {
+    "id": 4,
+    "case": "first-letter",
+    "name": "Transformers Forged to Fight Wiki",
+    "subpages": true,
+    "canonical": "Project",
+    "content": false,
+    "nonincludable": false
+   },
+   "5": {
+    "id": 5,
+    "case": "first-letter",
+    "name": "Transformers Forged to Fight Wiki talk",
+    "subpages": true,
+    "canonical": "Project talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "6": {
+    "id": 6,
+    "case": "first-letter",
+    "name": "File",
+    "subpages": true,
+    "canonical": "File",
+    "content": false,
+    "nonincludable": false
+   },
+   "7": {
+    "id": 7,
+    "case": "first-letter",
+    "name": "File talk",
+    "subpages": true,
+    "canonical": "File talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "8": {
+    "id": 8,
+    "case": "first-letter",
+    "name": "MediaWiki",
+    "subpages": true,
+    "canonical": "MediaWiki",
+    "content": false,
+    "nonincludable": false,
+    "namespaceprotection": "editinterface"
+   },
+   "9": {
+    "id": 9,
+    "case": "first-letter",
+    "name": "MediaWiki talk",
+    "subpages": true,
+    "canonical": "MediaWiki talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "10": {
+    "id": 10,
+    "case": "first-letter",
+    "name": "Template",
+    "subpages": true,
+    "canonical": "Template",
+    "content": false,
+    "nonincludable": false,
+    "namespaceprotection": "edittemplates"
+   },
+   "11": {
+    "id": 11,
+    "case": "first-letter",
+    "name": "Template talk",
+    "subpages": true,
+    "canonical": "Template talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "12": {
+    "id": 12,
+    "case": "first-letter",
+    "name": "Help",
+    "subpages": true,
+    "canonical": "Help",
+    "content": false,
+    "nonincludable": false
+   },
+   "13": {
+    "id": 13,
+    "case": "first-letter",
+    "name": "Help talk",
+    "subpages": true,
+    "canonical": "Help talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "14": {
+    "id": 14,
+    "case": "first-letter",
+    "name": "Category",
+    "subpages": true,
+    "canonical": "Category",
+    "content": false,
+    "nonincludable": false
+   },
+   "15": {
+    "id": 15,
+    "case": "first-letter",
+    "name": "Category talk",
+    "subpages": true,
+    "canonical": "Category talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "110": {
+    "id": 110,
+    "case": "first-letter",
+    "name": "Forum",
+    "subpages": false,
+    "canonical": "Forum",
+    "content": false,
+    "nonincludable": false
+   },
+   "111": {
+    "id": 111,
+    "case": "first-letter",
+    "name": "Forum talk",
+    "subpages": false,
+    "canonical": "Forum talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "420": {
+    "id": 420,
+    "case": "first-letter",
+    "name": "GeoJson",
+    "subpages": false,
+    "canonical": "GeoJson",
+    "content": false,
+    "nonincludable": false,
+    "defaultcontentmodel": "GeoJSON"
+   },
+   "421": {
+    "id": 421,
+    "case": "first-letter",
+    "name": "GeoJson talk",
+    "subpages": true,
+    "canonical": "GeoJson talk",
+    "content": false,
+    "nonincludable": false,
+    "defaultcontentmodel": "wikitext"
+   },
+   "500": {
+    "id": 500,
+    "case": "first-letter",
+    "name": "User blog",
+    "subpages": true,
+    "canonical": "User blog",
+    "content": false,
+    "nonincludable": false
+   },
+   "501": {
+    "id": 501,
+    "case": "first-letter",
+    "name": "User blog comment",
+    "subpages": true,
+    "canonical": "User blog comment",
+    "content": false,
+    "nonincludable": false
+   },
+   "502": {
+    "id": 502,
+    "case": "first-letter",
+    "name": "Blog",
+    "subpages": true,
+    "canonical": "Blog",
+    "content": false,
+    "nonincludable": false
+   },
+   "503": {
+    "id": 503,
+    "case": "first-letter",
+    "name": "Blog talk",
+    "subpages": true,
+    "canonical": "Blog talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "828": {
+    "id": 828,
+    "case": "first-letter",
+    "name": "Module",
+    "subpages": true,
+    "canonical": "Module",
+    "content": false,
+    "nonincludable": false
+   },
+   "829": {
+    "id": 829,
+    "case": "first-letter",
+    "name": "Module talk",
+    "subpages": true,
+    "canonical": "Module talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "1200": {
+    "id": 1200,
+    "case": "first-letter",
+    "name": "Message Wall",
+    "subpages": false,
+    "canonical": "Message Wall",
+    "content": false,
+    "nonincludable": false
+   },
+   "1201": {
+    "id": 1201,
+    "case": "first-letter",
+    "name": "Thread",
+    "subpages": true,
+    "canonical": "Thread",
+    "content": false,
+    "nonincludable": false
+   },
+   "1202": {
+    "id": 1202,
+    "case": "first-letter",
+    "name": "Message Wall Greeting",
+    "subpages": false,
+    "canonical": "Message Wall Greeting",
+    "content": false,
+    "nonincludable": false
+   },
+   "1203": {
+    "id": 1203,
+    "case": "first-letter",
+    "name": "Message Wall Greeting Talk",
+    "subpages": false,
+    "canonical": "Message Wall Greeting Talk",
+    "content": false,
+    "nonincludable": false
+   },
+   "2000": {
+    "id": 2000,
+    "case": "first-letter",
+    "name": "Board",
+    "subpages": false,
+    "canonical": "Board",
+    "content": false,
+    "nonincludable": false
+   },
+   "2001": {
+    "id": 2001,
+    "case": "first-letter",
+    "name": "Board Thread",
+    "subpages": false,
+    "canonical": "Board Thread",
+    "content": false,
+    "nonincludable": false
+   },
+   "2002": {
+    "id": 2002,
+    "case": "first-letter",
+    "name": "Topic",
+    "subpages": false,
+    "canonical": "Topic",
+    "content": false,
+    "nonincludable": false
+   },
+   "2900": {
+    "id": 2900,
+    "case": "first-letter",
+    "name": "Map",
+    "subpages": false,
+    "canonical": "Map",
+    "content": true,
+    "nonincludable": false,
+    "namespaceprotection": "editinteractivemap",
+    "defaultcontentmodel": "interactivemap"
+   },
+   "2901": {
+    "id": 2901,
+    "case": "first-letter",
+    "name": "Map talk",
+    "subpages": false,
+    "canonical": "Map talk",
+    "content": false,
+    "nonincludable": false
+   }
+  },
+  "namespacealiases": [
+   {
+    "id": 6,
+    "alias": "Image"
+   },
+   {
+    "id": 7,
+    "alias": "Image talk"
+   }
+  ],
+  "extensions": [
+   {
+    "type": "other",
+    "name": "FandomIncludes",
+    "description": "Core Fandom Includes",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomIncludes"
+   },
+   {
+    "type": "other",
+    "name": "FrontEndBuildUtils",
+    "description": "FrontEndBuildUtils",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FrontEndBuildUtils"
+   },
+   {
+    "type": "other",
+    "name": "DatabaseMigrationLogFixer",
+    "description": "Extension that normalizes entries in migration log table entries",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DatabaseMigrationLogFixer"
+   },
+   {
+    "type": "other",
+    "name": "NotAValidWiki",
+    "description": "Renders not a valid wiki page for users when they access wiki that do not exists",
+    "author": "Fandom, Inc."
+   },
+   {
+    "type": "other",
+    "name": "UserPreferencesV2",
+    "descriptionmsg": "preferences-v2-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UserPreferencesV2"
+   },
+   {
+    "type": "other",
+    "name": "Failover",
+    "description": "Logic related to datacenter failover",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Failover"
+   },
+   {
+    "type": "other",
+    "name": "LegalImageReporting",
+    "descriptionmsg": "imagereportingcsam-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ImageReportingCsam"
+   },
+   {
+    "type": "other",
+    "name": "CLDR",
+    "descriptionmsg": "cldr-desc",
+    "author": "Niklas Laxström, Siebrand Mazeland, Ryan Kaldari, Sam Reed",
+    "url": "https://www.mediawiki.org/wiki/Extension:CLDR",
+    "version": "4.15.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/CLDR"
+   },
+   {
+    "type": "other",
+    "name": "Disambiguator",
+    "descriptionmsg": "disambig-desc",
+    "author": "Ryan Kaldari",
+    "url": "https://www.mediawiki.org/wiki/Extension:Disambiguator",
+    "version": "1.4",
+    "license-name": "MIT",
+    "license": "/wiki/Special:Version/License/Disambiguator"
+   },
+   {
+    "type": "other",
+    "name": "FandomQuizzes",
+    "description": "Quizzes configuration module",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomQuizzes"
+   },
+   {
+    "type": "other",
+    "name": "Context",
+    "description": "Fandom's context",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Context"
+   },
+   {
+    "type": "other",
+    "name": "Track",
+    "description": "Various tracking solutions",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Track"
+   },
+   {
+    "type": "other",
+    "name": "Parsoid",
+    "description": "The Parsoid extension enables the REST API for Parsoid. This is needed to support VisualEditor.",
+    "url": "https://www.mediawiki.org/wiki/Parsoid/PHP",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Parsoid"
+   },
+   {
+    "type": "other",
+    "name": "MessageWall",
+    "description": "User MessageWall pages",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MessageWall"
+   },
+   {
+    "type": "other",
+    "name": "CoppaTool global tasks",
+    "description": "Coppa Tool global tasks",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CoppaTool"
+   },
+   {
+    "type": "other",
+    "name": "MessageCachePerformance",
+    "description": "Avoid redundant MessageCache lookups",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/MessageCachePerformance",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/MessageCachePerformance"
+   },
+   {
+    "type": "other",
+    "name": "FandomVisualEditor",
+    "description": "Fandom's improvements to the MediaWiki VisualEditor",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomVisualEditor",
+    "version": "1.0.0"
+   },
+   {
+    "type": "other",
+    "name": "MapsTracking",
+    "descriptionmsg": "tracks usage of googlemaps from Maps extension",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MapsTracking"
+   },
+   {
+    "type": "other",
+    "name": "FandomScripts"
+   },
+   {
+    "type": "other",
+    "name": "FandomStyles"
+   },
+   {
+    "type": "other",
+    "name": "Nirvana",
+    "description": "Fandom's MVC framework",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Nirvana"
+   },
+   {
+    "type": "other",
+    "name": "ImageServing",
+    "description": "Image serving",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ImageServing"
+   },
+   {
+    "type": "other",
+    "name": "Email",
+    "description": "Email integration",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Email"
+   },
+   {
+    "type": "other",
+    "name": "SilverSurferLoader",
+    "description": "Minimal loader for SilverSurfer.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SilverSurferLoader"
+   },
+   {
+    "type": "other",
+    "name": "MonetizationStatus",
+    "description": "Manages per-article monetization status, its admin tooling and the monetization-status service integration",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MonetizationStatus"
+   },
+   {
+    "type": "other",
+    "name": "AdEngine",
+    "description": "Fandom's engine for displaying ads",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/AdEngine"
+   },
+   {
+    "type": "other",
+    "name": "Morpheus",
+    "description": "Morpheus platform integration - injects the video engine script",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Morpheus"
+   },
+   {
+    "type": "other",
+    "name": "AgeDeclaration",
+    "description": "Fandom's AgeDeclaration extension",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/AgeDeclaration"
+   },
+   {
+    "type": "other",
+    "name": "KidWikiChangeObserver",
+    "description": "Fandom's Kid Wiki Change Observer",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/KidWikiChangeObserver"
+   },
+   {
+    "type": "other",
+    "name": "AnalyticsEngine",
+    "description": "Fandom's engine for analytics partners",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/AnalyticsEngine"
+   },
+   {
+    "type": "other",
+    "name": "GlobalCSSJS",
+    "description": "Loads user's global custom CSS/JS from community central.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GlobalCSSJS"
+   },
+   {
+    "type": "other",
+    "name": "StaffPowers",
+    "description": "Makes staff members unblockable",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/StaffPowers"
+   },
+   {
+    "type": "other",
+    "name": "SpecialCSS",
+    "description": "Redirects Special:CSS to MediaWiki:Common.css in edit mode",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SpecialCSS"
+   },
+   {
+    "type": "other",
+    "name": "FandomAuth",
+    "description": "Fandom Auth authentication",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomAuth"
+   },
+   {
+    "type": "other",
+    "name": "CategoryBlueLinks",
+    "descriptionmsg": "categorybluelinks-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CategoryBlueLinks"
+   },
+   {
+    "type": "other",
+    "name": "CategorySelect",
+    "descriptionmsg": "categoryselect-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CategorySelect"
+   },
+   {
+    "type": "other",
+    "name": "Auth",
+    "description": "Fandom authentication utils",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Auth"
+   },
+   {
+    "type": "other",
+    "name": "FounderEmails",
+    "descriptionmsg": "founderemails-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/app/tree/dev/extensions/wikia/FounderEmails"
+   },
+   {
+    "type": "other",
+    "name": "FandomImageReview",
+    "description": "Publishes events for image status changes, exposes a resource to block an image.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomImageReview"
+   },
+   {
+    "type": "other",
+    "name": "FandomVideo",
+    "description": "Integration with external video providers",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomVideo"
+   },
+   {
+    "type": "other",
+    "name": "Banner Notifications",
+    "descriptionmsg": "bannernotifications-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/BannerNotifications",
+    "version": "1.0.0"
+   },
+   {
+    "type": "other",
+    "name": "Collections",
+    "description": "Save wiki articles to personal collections",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Collections"
+   },
+   {
+    "type": "other",
+    "name": "GlobalUserGroups",
+    "description": "Handles loading global user groups from our shared database.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GlobalUserGroups"
+   },
+   {
+    "type": "other",
+    "name": "DesignSystem",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DesignSystem"
+   },
+   {
+    "type": "other",
+    "name": "License",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/License"
+   },
+   {
+    "type": "other",
+    "name": "Paginator",
+    "descriptionmsg": "paginator-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Paginator"
+   },
+   {
+    "type": "other",
+    "name": "SeoLinkHrefLang",
+    "description": "Adds hreflang links pointing to language wikis to the main page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SeoLinkHrefLang"
+   },
+   {
+    "type": "other",
+    "name": "AutoMainPageFixer",
+    "description": "Keeps MediaWiki:Mainpage up-to-date when the main page is moved",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/AutoMainPageFixer"
+   },
+   {
+    "type": "other",
+    "name": "TemplateClassification",
+    "descriptionmsg": "template-classification-description",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/TemplateClassification"
+   },
+   {
+    "type": "other",
+    "name": "WikiaBar",
+    "descriptionmsg": "Toolbar fixed to the bottom of the viewport",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/WikiaBar"
+   },
+   {
+    "type": "other",
+    "name": "WikiDescription",
+    "descriptionmsg": "Allow to specify wiki description",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/WikiDescription"
+   },
+   {
+    "type": "other",
+    "name": "ArticleMetaDescription",
+    "description": "Adds the meta description tag to pages containing a snippet from the page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ArticleMetaDescription"
+   },
+   {
+    "type": "other",
+    "name": "Sitemap",
+    "descriptionmsg": "sitemap.xml generation",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Sitemap"
+   },
+   {
+    "type": "other",
+    "name": "CanonicalHref",
+    "description": "",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CanonicalHref"
+   },
+   {
+    "type": "other",
+    "name": "InterwikiDispatcher",
+    "description": "Creates full urls for interwiki links to external wikis.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/InterwikiDispatcher"
+   },
+   {
+    "type": "other",
+    "name": "Piggyback",
+    "description": "Adds the a link to Piggyback a user to the contributions page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Piggyback"
+   },
+   {
+    "type": "other",
+    "name": "SeoTweaks",
+    "description": "Some SEO related tweaks",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SeoTweaks"
+   },
+   {
+    "type": "other",
+    "name": "UnifiedRedirectHandling",
+    "description": "Consolidated handling for page/wiki-level redirects",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UnifiedRedirectHandling"
+   },
+   {
+    "type": "other",
+    "name": "HTTPSSupport",
+    "description": "",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/HTTPSSupport"
+   },
+   {
+    "type": "other",
+    "name": "GlobalLuaModules",
+    "description": "Supports global Lua modules in Scribunto and provides shared Lua library implementations",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GlobalLuaModules"
+   },
+   {
+    "type": "other",
+    "name": "Listusers",
+    "description": "Lists users on Fandom",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Listusers"
+   },
+   {
+    "type": "other",
+    "name": "NetworkErrorLogging",
+    "description": "Log browser network errors",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/NetworkErrorLogging"
+   },
+   {
+    "type": "other",
+    "name": "PrivacyRights",
+    "descriptionmsg": "privacyrights-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/PrivacyRights"
+   },
+   {
+    "type": "other",
+    "name": "UncrawlableUrl",
+    "description": "Handles elements with uncrawlable url attribute",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UncrawlableUrl"
+   },
+   {
+    "type": "other",
+    "name": "NSDefine",
+    "description": "This extension can be used to define namespaces when their extension is undefined or disabled",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/NSDefine"
+   },
+   {
+    "type": "other",
+    "name": "Privacy",
+    "description": "Privacy extension",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Privacy"
+   },
+   {
+    "type": "other",
+    "name": "UserProfile",
+    "description": "User profile pages",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UserProfile"
+   },
+   {
+    "type": "other",
+    "name": "GlobalComponents",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GlobalComponents"
+   },
+   {
+    "type": "other",
+    "name": "ExternalLinkBlacklist",
+    "description": "",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ExternalLinkBlacklist"
+   },
+   {
+    "type": "other",
+    "name": "Lightbox",
+    "description": "lightbox-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Lightbox"
+   },
+   {
+    "type": "other",
+    "name": "GlobalWatchlist",
+    "description": "Sending weekly digest email witch watchlisted pages on all wikis",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GlobalWatchlist"
+   },
+   {
+    "type": "other",
+    "name": "TimeAgoMessaging",
+    "descriptionmsg": "timeagomessaging-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/TimeAgoMessaging"
+   },
+   {
+    "type": "other",
+    "name": "Pages",
+    "description": "Update global entry for pages",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Pages"
+   },
+   {
+    "type": "other",
+    "name": "CityList",
+    "description": "Update a wiki's city_last_timestamp value in the wikicities database when a page is modified",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CityList"
+   },
+   {
+    "type": "other",
+    "name": "QuickTools",
+    "descriptionmsg": "quicktools-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/QuickTools"
+   },
+   {
+    "type": "other",
+    "name": "Content Security Policy",
+    "description": "Sets Content-Security-Policy to upgrade-insecure-requests",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ContentSecurityPolicy"
+   },
+   {
+    "type": "other",
+    "name": "DataWarehouse",
+    "description": "Support for sending events to AWS Kinesis",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DataWarehouse"
+   },
+   {
+    "type": "other",
+    "name": "DataReplication",
+    "description": "Integrates with the data-replication service using the transactional outbox pattern to replicate content changes.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DataReplication"
+   },
+   {
+    "type": "other",
+    "name": "MultiTasks",
+    "description": "Extension provides staff tools for performing actions across many wikis, like finding or deleting pages.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform"
+   },
+   {
+    "type": "other",
+    "name": "MessageOverrides",
+    "description": "Tools to override core MW messages with our custom ones",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MessageOverrides"
+   },
+   {
+    "type": "other",
+    "name": "StablePageIdStorage",
+    "description": "Provides a 3 factor identifier for articles based on their namespace, title and deleted state",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/StablePageIdStorage",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/StablePageIdStorage"
+   },
+   {
+    "type": "other",
+    "name": "Thumbnails",
+    "descriptionmsg": "thumbnails-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Thumbnails"
+   },
+   {
+    "type": "other",
+    "name": "Announcements",
+    "descriptionmsg": "announcements-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Announcements"
+   },
+   {
+    "type": "other",
+    "name": "GoogleTagManager",
+    "description": "Enables Google Tag Manager",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GoogleTagManager"
+   },
+   {
+    "type": "other",
+    "name": "FounderProgressBar",
+    "descriptionmsg": "founderprogressbar-credits",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FounderProgressBar"
+   },
+   {
+    "type": "other",
+    "name": "ForumRedirect",
+    "description": "Redirects migrated legacy forum content to Feeds",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ForumRedirect"
+   },
+   {
+    "type": "other",
+    "name": "FilePageRedirect",
+    "description": "Redirects for file pages",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FilePageRedirect"
+   },
+   {
+    "type": "other",
+    "name": "AbuseFilterBypass",
+    "descriptionmsg": "abusefilterbypass-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/AbuseFilterBypass"
+   },
+   {
+    "type": "other",
+    "name": "ArticleComments",
+    "description": "Commenting system that can be plugged into articles from predefined Mediawiki namespaces",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ArticleComments",
+    "version": "1.0.1",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/ArticleComments"
+   },
+   {
+    "type": "other",
+    "name": "ThemeDesignerNext",
+    "description": "Advanced editor to customize wiki theme",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ThemeDesignerNext"
+   },
+   {
+    "type": "other",
+    "name": "MobileFrontend",
+    "descriptionmsg": "mobile-frontend-desc",
+    "author": "Patrick Reilly, Max Semenik, Jon Robson, Arthur Richards, Brion Vibber, Juliusz Gonera, Ryan Kaldari, Florian Schmidt, Rob Moen, Sam Smith",
+    "url": "https://www.mediawiki.org/wiki/Extension:MobileFrontend",
+    "version": "2.4.1",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/MobileFrontend",
+    "credits": "/wiki/Special:Version/Credits/MobileFrontend"
+   },
+   {
+    "type": "other",
+    "name": "Reverb",
+    "descriptionmsg": "reverb_description",
+    "author": "Hydra Wiki Platform Team",
+    "version": "0.0.1",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Reverb"
+   },
+   {
+    "type": "other",
+    "name": "Twiggy",
+    "descriptionmsg": "twiggy_description",
+    "author": "Hydra Wiki Platform Team",
+    "version": "0.0.1",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Twiggy"
+   },
+   {
+    "type": "other",
+    "name": "SharedHelp",
+    "description": "Update Help: links to point to proper pages on Community Central",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SharedHelp"
+   },
+   {
+    "type": "other",
+    "name": "SoftwareVersion",
+    "description": "Handles display of Fandom specific versions.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SoftwareVersion",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/SoftwareVersion"
+   },
+   {
+    "type": "other",
+    "name": "UpdateSpecialPagesScheduler",
+    "description": "Adds form to Statistics page and handles scheduling updateSpecialPages script.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UpdateSpecialPagesScheduler",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/UpdateSpecialPagesScheduler"
+   },
+   {
+    "type": "other",
+    "name": "InterwikiEdit",
+    "description": "Allows to manage linked Interwikis",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/InterwikiEdit",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/InterwikiEdit"
+   },
+   {
+    "type": "other",
+    "name": "ArticleInterlang",
+    "descriptionmsg": "Provides links for given article in other languages",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ArticleInterlang"
+   },
+   {
+    "type": "other",
+    "name": "PerformanceMonitoring",
+    "descriptionmsg": "Collects performance metrics",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/PerformanceMonitoring",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/PerformanceMonitoring"
+   },
+   {
+    "type": "other",
+    "name": "GlobalShortcuts",
+    "description": "Platform-wide keyboard shortcuts",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GlobalShortcuts"
+   },
+   {
+    "type": "other",
+    "name": "EmailMarketing",
+    "description": "Interaction with the Email Marketing API through Pandora's email-service",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/EmailMarketing"
+   },
+   {
+    "type": "other",
+    "name": "ArticleVideo",
+    "description": "Featured video extension",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ArticleVideo"
+   },
+   {
+    "type": "other",
+    "name": "Sitenotice",
+    "description": "Sitenotice is a message at the bottom-left of all pages and is useful for notifying the whole community of a wiki",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Sitenotice"
+   },
+   {
+    "type": "other",
+    "name": "CategoryPage",
+    "description": "Custom category page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CategoryPage"
+   },
+   {
+    "type": "other",
+    "name": "FandomGrants",
+    "descriptionmsg": "fandomgrants-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomGrants"
+   },
+   {
+    "type": "other",
+    "name": "FallbackFontAdjustments",
+    "description": "Adjustments to fallback fonts",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FallbackFontAdjustments"
+   },
+   {
+    "type": "other",
+    "name": "WatchedPage",
+    "description": "Watch page notifications",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/WatchedPage"
+   },
+   {
+    "type": "other",
+    "name": "HighlightToAction",
+    "description": "HighlightToAction To Action",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/HighlightToAction"
+   },
+   {
+    "type": "other",
+    "name": "Fancentral",
+    "descriptionmsg": "fancentral-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Fancentral",
+    "license-name": "Apache 2.0",
+    "license": "/wiki/Special:Version/License/Fancentral"
+   },
+   {
+    "type": "other",
+    "name": "WikiArchive",
+    "description": "Extension offers maintenance scripts related with Archiving closed Wikis",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/WikiArchive",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/WikiArchive"
+   },
+   {
+    "type": "other",
+    "name": "LongLivedTask",
+    "description": "Allow to run long asynchronous tasks, which may take long time to complete",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/LongLivedTask",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/LongLivedTask"
+   },
+   {
+    "type": "other",
+    "name": "CloseDeadWiki",
+    "description": "Provides functionality for closure of dead wikis",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CloseDeadWiki"
+   },
+   {
+    "type": "other",
+    "name": "CreatorMetrics",
+    "description": "Micro extension that exposes metrics related to creator actions",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CreatorMetrics"
+   },
+   {
+    "type": "other",
+    "name": "CookiesMonitoring",
+    "description": "Track cookies size to prevent blank pages for users",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CookiesMonitoring"
+   },
+   {
+    "type": "other",
+    "name": "Sentry",
+    "description": "Sentry integration for Fandom",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Sentry"
+   },
+   {
+    "type": "other",
+    "name": "Taxonomy",
+    "description": "Fandom's Taxonomy extension",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Taxonomy"
+   },
+   {
+    "type": "other",
+    "name": "EditorsExperienceTools",
+    "description": "EditorsExperienceTools aims to increase number of loyal editor",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/EditorsExperienceTools"
+   },
+   {
+    "type": "other",
+    "name": "ContentFootprint",
+    "author": "Fandom Inc.",
+    "version": "1.0.0"
+   },
+   {
+    "type": "other",
+    "name": "BrandSafetyReview",
+    "author": "Fandom Inc.",
+    "version": "1.0.0"
+   },
+   {
+    "type": "other",
+    "name": "KeywordsExclusion",
+    "author": "Fandom Inc.",
+    "version": "1.0.0"
+   },
+   {
+    "type": "other",
+    "name": "BrandSafeCollections",
+    "descriptionmsg": "brandsafecollections-desc",
+    "author": "Fandom Inc.",
+    "version": "1.0.0"
+   },
+   {
+    "type": "other",
+    "name": "WidgetSelection",
+    "description": "Fandom's Widget Selection extension",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/WidgetSelection"
+   },
+   {
+    "type": "other",
+    "name": "CodesNotifier",
+    "descriptionmsg": "codesnotifier-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CodesNotifier",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/CodesNotifier"
+   },
+   {
+    "type": "other",
+    "name": "FandomConnectNotifier",
+    "descriptionmsg": "fandomconnectnotifier-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomConnectNotifier",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/FandomConnectNotifier"
+   },
+   {
+    "type": "other",
+    "name": "BloxFruitsStockNotifier",
+    "descriptionmsg": "bloxfruitsstocknotifier-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/BloxFruitsStockNotifier",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/BloxFruitsStockNotifier"
+   },
+   {
+    "type": "other",
+    "name": "MetacriticScorePredictions",
+    "descriptionmsg": "metacriticscorepredictions-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MetacriticScorePredictions",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/MetacriticScorePredictions"
+   },
+   {
+    "type": "other",
+    "name": "RobloxGameNotifications",
+    "descriptionmsg": "robloxgamenotifications-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/RobloxGameNotifications",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/RobloxGameNotifications"
+   },
+   {
+    "type": "other",
+    "name": "Pretty Error Pages",
+    "description": "Handles displaying (or not) pretty error pages for Fandom wikis.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/PrettyErrorPages"
+   },
+   {
+    "type": "other",
+    "name": "PageRestrictions",
+    "description": "Controls which pages are available for anonymous users or require a login",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/PageRestrictions"
+   },
+   {
+    "type": "other",
+    "name": "UserActivityTags",
+    "author": "Fandom Inc.",
+    "version": "1.0.0"
+   },
+   {
+    "type": "other",
+    "name": "DiscordInterceptor",
+    "descriptionmsg": "discord-interceptor-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DiscordInterceptor"
+   },
+   {
+    "type": "other",
+    "name": "GameUtility",
+    "descriptionmsg": "game-utility-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/GameUtility"
+   },
+   {
+    "type": "other",
+    "name": "Maestro",
+    "descriptionmsg": "maestro-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Maestro"
+   },
+   {
+    "type": "other",
+    "name": "SocialPlatform",
+    "description": "Integrates the new Social Platform discussion app into Fandom wikis.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SocialPlatform"
+   },
+   {
+    "type": "specialpage",
+    "name": "DatacenterPreference",
+    "descriptionmsg": "Extension that allows to select the preferred datacenter",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DatacenterPreference"
+   },
+   {
+    "type": "specialpage",
+    "name": "NewInfoboxBuilder",
+    "descriptionmsg": "Extension that you can create infoboxes with.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/NewInfoboxBuilder"
+   },
+   {
+    "type": "specialpage",
+    "name": "CheckUser",
+    "descriptionmsg": "checkuser-desc",
+    "author": "Tim Starling, Aaron Schulz, Dreamy Jazz",
+    "url": "https://www.mediawiki.org/wiki/Extension:CheckUser",
+    "version": "2.5",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/CheckUser"
+   },
+   {
+    "type": "specialpage",
+    "name": "FandomProtectSite",
+    "descriptionmsg": "protectsite-desc",
+    "author": "Fandom Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomProtectSite"
+   },
+   {
+    "type": "specialpage",
+    "name": "TagsReport",
+    "description": "Tags Report features",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/TagsReport"
+   },
+   {
+    "type": "specialpage",
+    "name": "Unsubscribe",
+    "description": "Unsubscribe from e-mails",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Unsubscribe"
+   },
+   {
+    "type": "specialpage",
+    "name": "LookupUser",
+    "description": "LookupUser allows staff members to view information about a user's account",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/LookupUser"
+   },
+   {
+    "type": "specialpage",
+    "name": "MultiLookup",
+    "description": "MultiLookup extension allows to get a list of all the wikis where edits was made from selected IP address",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MultiLookup"
+   },
+   {
+    "type": "specialpage",
+    "name": "LookupContribs",
+    "description": "LookupContribs extension allows staff and SOAP members to get a list of all the wikis where a user has edited",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/LookupContribs"
+   },
+   {
+    "type": "specialpage",
+    "name": "UserRights",
+    "description": "Handles loading global user groups from our shared database.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UserRights",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/UserRights"
+   },
+   {
+    "type": "specialpage",
+    "name": "ListGlobalUsers",
+    "description": "List users who are members of one or more global groups",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ListGlobalUsers"
+   },
+   {
+    "type": "specialpage",
+    "name": "LocalSitemapPage",
+    "description": "Creates an easily crawlable and viewable local HTML sitemap.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/LocalSitemapPage"
+   },
+   {
+    "type": "specialpage",
+    "name": "CreateNewWiki",
+    "description": "Extension which allows to create new wikis",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CreateNewWiki",
+    "version": "1.0.1"
+   },
+   {
+    "type": "specialpage",
+    "name": "ContentReview",
+    "description": "Content review for js files",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ContentReview"
+   },
+   {
+    "type": "specialpage",
+    "name": "CloseMyAccount",
+    "description": "Closing Fandom accounts",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CloseMyAccount"
+   },
+   {
+    "type": "specialpage",
+    "name": "DownloadYourData",
+    "description": "Download your data functionality",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DownloadYourData"
+   },
+   {
+    "type": "specialpage",
+    "name": "UnifiedSearch",
+    "description": "Search features",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UnifiedSearch"
+   },
+   {
+    "type": "specialpage",
+    "name": "UserRename",
+    "description": "User rename functionality",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UserRename"
+   },
+   {
+    "type": "specialpage",
+    "name": "WikiAnalytics",
+    "description": "Adds a Special:Analytics Page, with statistics and charts about activity on the wiki",
+    "author": "Brent Copeland, Alexia E. Smith, Hydra Wiki Platform Team, Data Engineering Fandom Team, Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/WikiAnalytics",
+    "version": "2.3.1",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/WikiAnalytics"
+   },
+   {
+    "type": "specialpage",
+    "name": "UserProfileActivity",
+    "description": "User Profile Activity",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UserProfileActivity"
+   },
+   {
+    "type": "specialpage",
+    "name": "CreatePage",
+    "description": "Initialize creating articles",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CreatePage"
+   },
+   {
+    "type": "specialpage",
+    "name": "SpecialWithoutimages",
+    "descriptionmsg": "withoutimages-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SpecialWithoutimages"
+   },
+   {
+    "type": "specialpage",
+    "name": "AdminDashboard",
+    "descriptionmsg": "admindashboard-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/AdminDashboard"
+   },
+   {
+    "type": "specialpage",
+    "name": "Activity",
+    "description": "Displays recent activity from Feeds, Article Comments and Message Wall. Adds activity tabs header to activity special pages.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Activity"
+   },
+   {
+    "type": "specialpage",
+    "name": "Nuke",
+    "descriptionmsg": "nuke-desc",
+    "author": "Brion Vibber, Jeroen De Dauw",
+    "url": "https://www.mediawiki.org/wiki/Extension:Nuke",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Nuke"
+   },
+   {
+    "type": "specialpage",
+    "name": "SpecialUpload",
+    "descriptionmsg": "Addons for MW Special:Upload page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SpecialUpload"
+   },
+   {
+    "type": "specialpage",
+    "name": "SpecialBlock",
+    "descriptionmsg": "Addons for MW Special:Block page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SpecialBlock"
+   },
+   {
+    "type": "specialpage",
+    "name": "FandomAPI",
+    "description": "Extend core MediaWiki API",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FandomAPI",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/FandomAPI"
+   },
+   {
+    "type": "specialpage",
+    "name": "CommunityPage",
+    "description": "Special:Community page - a place for new editors to start their adventure as contributors",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CommunityPage",
+    "version": "1.0.1"
+   },
+   {
+    "type": "specialpage",
+    "name": "Insights",
+    "descriptionmsg": "Extension that displays insights",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Insights"
+   },
+   {
+    "type": "specialpage",
+    "name": "SocialLogs",
+    "descriptionmsg": "Extension that displays logs",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SocialLogs"
+   },
+   {
+    "type": "specialpage",
+    "name": "DiscussionsAbuseFilter",
+    "description": "DiscussionsAbuseFilter",
+    "author": "Fandom, Inc., Noreplyz, DUHsoALEX",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DiscussionsAbuseFilter",
+    "version": "1.0.0"
+   },
+   {
+    "type": "specialpage",
+    "name": "Alcatraz",
+    "description": "Extension helps put wikis in Jail",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Alcatraz",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/Alcatraz"
+   },
+   {
+    "type": "specialpage",
+    "name": "WikiConfig",
+    "descriptionmsg": "Extension for configuring wikis",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/WikiConfig"
+   },
+   {
+    "type": "specialpage",
+    "name": "WidgetPlayground",
+    "descriptionmsg": "Special Page for widget testing. This page will allow us to visualise how the components will look in a platform like MW.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SpecialWidgetPlayground"
+   },
+   {
+    "type": "parserhook",
+    "name": "Cite",
+    "descriptionmsg": "cite-desc",
+    "author": "Ævar Arnfjörð Bjarmason, Andrew Garrett, Brion Vibber, Ed Sanders, Marius Hoch, Steve Sanbeg, Trevor Parscal, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:Cite",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Cite",
+    "credits": "/wiki/Special:Version/Credits/Cite"
+   },
+   {
+    "type": "parserhook",
+    "name": "CategoryTree",
+    "descriptionmsg": "categorytree-desc",
+    "author": "Daniel Kinzler",
+    "url": "https://www.mediawiki.org/wiki/Extension:CategoryTree",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/CategoryTree"
+   },
+   {
+    "type": "parserhook",
+    "name": "CharInsert",
+    "descriptionmsg": "charinsert-desc",
+    "author": "Brion Vibber",
+    "url": "https://www.mediawiki.org/wiki/Extension:CharInsert",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/CharInsert"
+   },
+   {
+    "type": "parserhook",
+    "name": "InputBox",
+    "descriptionmsg": "inputbox-desc",
+    "author": "Erik Moeller, Leonardo Pimenta, Rob Church, Trevor Parscal, DaSch",
+    "url": "https://www.mediawiki.org/wiki/Extension:InputBox",
+    "version": "0.3.0",
+    "license-name": "MIT",
+    "license": "/wiki/Special:Version/License/InputBox"
+   },
+   {
+    "type": "parserhook",
+    "name": "LabeledSectionTransclusion",
+    "namemsg": "lst-extensionname",
+    "descriptionmsg": "lst-desc",
+    "author": "Steve Sanbeg",
+    "url": "https://www.mediawiki.org/wiki/Extension:Labeled_Section_Transclusion",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/LabeledSectionTransclusion"
+   },
+   {
+    "type": "parserhook",
+    "name": "Math",
+    "descriptionmsg": "math-desc",
+    "author": "Tomasz Wegrzanowski, Brion Vibber, Moritz Schubotz, Derk-Jan Hartman, André Greiner-Petter, Johannes Stegmüller",
+    "url": "https://www.mediawiki.org/wiki/Extension:Math",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Math"
+   },
+   {
+    "type": "parserhook",
+    "name": "ParserFunctions",
+    "descriptionmsg": "pfunc_desc",
+    "author": "Tim Starling, Robert Rohde, Ross McClure, Juraj Simlovic",
+    "url": "https://www.mediawiki.org/wiki/Extension:ParserFunctions",
+    "version": "1.6.1",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/ParserFunctions"
+   },
+   {
+    "type": "parserhook",
+    "name": "Poem",
+    "descriptionmsg": "poem-desc",
+    "author": "Nikola Smolenski, Brion Vibber, Steve Sanbeg",
+    "url": "https://www.mediawiki.org/wiki/Extension:Poem",
+    "license-name": "CC0-1.0",
+    "license": "/wiki/Special:Version/License/Poem"
+   },
+   {
+    "type": "parserhook",
+    "name": "RandomImage",
+    "descriptionmsg": "randomimage-desc",
+    "author": "Rob Church",
+    "url": "https://www.mediawiki.org/wiki/Extension:RandomImage",
+    "version": "1.5.1"
+   },
+   {
+    "type": "parserhook",
+    "name": "RandomSelection",
+    "descriptionmsg": "randomselection-desc",
+    "author": "Ross McClure, Jack Phoenix, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:RandomSelection",
+    "version": "2.3.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/RandomSelection"
+   },
+   {
+    "type": "parserhook",
+    "name": "Scribunto",
+    "descriptionmsg": "scribunto-desc",
+    "author": "Victor Vasiliev, Tim Starling, Brad Jorsch",
+    "url": "https://www.mediawiki.org/wiki/Extension:Scribunto",
+    "license-name": "GPL-2.0-or-later AND MIT",
+    "license": "/wiki/Special:Version/License/Scribunto"
+   },
+   {
+    "type": "parserhook",
+    "name": "SyntaxHighlight",
+    "descriptionmsg": "syntaxhighlight-desc",
+    "author": "Brion Vibber, Tim Starling, Rob Church, Niklas Laxström, Ori Livneh, Ed Sanders",
+    "url": "https://www.mediawiki.org/wiki/Extension:SyntaxHighlight",
+    "version": "2.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/SyntaxHighlight"
+   },
+   {
+    "type": "parserhook",
+    "name": "RSS Pie",
+    "descriptionmsg": "rsspie_description",
+    "author": "Alexia E. Smith, Hydra Wiki Platform Team",
+    "version": "2.2.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/RSS_Pie"
+   },
+   {
+    "type": "parserhook",
+    "name": "ServerSideExperiments",
+    "descriptionmsg": "Extension for server side experiments",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ServerSideExperiments"
+   },
+   {
+    "type": "parserhook",
+    "name": "Tabber",
+    "descriptionmsg": "tabber-desc",
+    "author": "Eric Fortin, Alexia E. Smith",
+    "url": "https://www.mediawiki.org/wiki/Extension:Tabber",
+    "version": "2.4.5",
+    "license-name": "GPL-3.0-only",
+    "license": "/wiki/Special:Version/License/Tabber"
+   },
+   {
+    "type": "parserhook",
+    "name": "ImageMap",
+    "descriptionmsg": "imagemap_desc",
+    "author": "Tim Starling, Arlo Breault",
+    "url": "https://www.mediawiki.org/wiki/Extension:ImageMap",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/ImageMap"
+   },
+   {
+    "type": "parserhook",
+    "name": "DPLforum",
+    "descriptionmsg": "dplforum-desc",
+    "author": "Ross McClure",
+    "url": "https://www.mediawiki.org/wiki/Extension:DPLforum",
+    "version": "3.7.2"
+   },
+   {
+    "type": "parserhook",
+    "name": "Maps",
+    "descriptionmsg": "maps-desc",
+    "author": "[https://EntropyWins.wtf/mediawiki Jeroen De Dauw], [https://professional.wiki/ Professional Wiki]",
+    "url": "https://maps.extension.wiki",
+    "version": "15.0.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Maps"
+   },
+   {
+    "type": "parserhook",
+    "name": "MsUpload",
+    "descriptionmsg": "msu-desc",
+    "author": "[mailto:wiki@ratin.de Martin Schwindl], [mailto:wiki@keyler-consult.de Martin Keyler], [https://www.mediawiki.org/wiki/User:Sophivorus Felipe Schenone]",
+    "url": "https://www.mediawiki.org/wiki/Extension:MsUpload",
+    "version": "14.2",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/MsUpload"
+   },
+   {
+    "type": "parserhook",
+    "name": "FacebookTags",
+    "description": "Backwards-compatibilty hooks for old ActivityFeed extension",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FacebookTags"
+   },
+   {
+    "type": "parserhook",
+    "name": "StaffSig",
+    "description": "Adds <nowiki><staff /></nowiki> and <nowiki><helper/></nowiki> parser hooks rendering as @fandom signatures",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/StaffSig"
+   },
+   {
+    "type": "parserhook",
+    "name": "MainPageTag",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MainPageTag"
+   },
+   {
+    "type": "parserhook",
+    "name": "PortableInfobox",
+    "descriptionmsg": "portable-infobox-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/PortableInfobox"
+   },
+   {
+    "type": "parserhook",
+    "name": "TwitterCards",
+    "descriptionmsg": "This extension adds Twitter meta tags to the page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/TwitterCards"
+   },
+   {
+    "type": "parserhook",
+    "name": "Twitter Tag",
+    "descriptionmsg": "twitter-tag-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/TwitterTag"
+   },
+   {
+    "type": "parserhook",
+    "name": "Experiments",
+    "descriptionmsg": "Extension for experiments",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Experiments"
+   },
+   {
+    "type": "parserhook",
+    "name": "PhotoGallery",
+    "description": "Photo gallery widget",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/PhotoGallery"
+   },
+   {
+    "type": "parserhook",
+    "name": "Slider",
+    "description": "Photo gallery slider mode",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Slider"
+   },
+   {
+    "type": "parserhook",
+    "name": "MobileImageGallery",
+    "description": "Image gallery for fandommobile skin",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MobileImageGallery"
+   },
+   {
+    "type": "parserhook",
+    "name": "OpenGraphMeta",
+    "descriptionmsg": "opengraphmeta-desc",
+    "author": "[http://danf.ca/mw/ Daniel Friesen], Southparkfan, Owen Davis, Jacek Jursza",
+    "url": "https://www.mediawiki.org/wiki/Extension:OpenGraphMeta",
+    "version": "0.5.6",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/OpenGraphMeta"
+   },
+   {
+    "type": "parserhook",
+    "name": "TemplateData",
+    "descriptionmsg": "templatedata-desc",
+    "author": "Timo Tijhof, Moriel Schottlender, James D. Forrester, Trevor Parscal, Bartosz Dziewoński, Marielle Volz, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:TemplateData",
+    "version": "0.1.2",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/TemplateData"
+   },
+   {
+    "type": "parserhook",
+    "name": "EmbedVideo",
+    "descriptionmsg": "embedvideo_description",
+    "author": "Jim R. Wilson, Andrew Whitworth, Alexia E. Smith, Cameron M. Chunn",
+    "url": "https://www.mediawiki.org/wiki/Extension:EmbedVideo",
+    "version": "2.9.0",
+    "license-name": "MIT",
+    "license": "/wiki/Special:Version/License/EmbedVideo"
+   },
+   {
+    "type": "parserhook",
+    "name": "Hide",
+    "description": "Extensions for 'hiding' tags and magic words by rendering them as empty strings",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Hide"
+   },
+   {
+    "type": "parserhook",
+    "name": "SpotifyTag",
+    "description": "Adds <nowiki><spotify /></nowiki> parser hooks rendering spotify widgets",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/SpotifyTag"
+   },
+   {
+    "type": "parserhook",
+    "name": "EasyTimeline",
+    "descriptionmsg": "timeline-desc",
+    "author": "Erik Zachte",
+    "url": "https://www.mediawiki.org/wiki/Extension:EasyTimeline",
+    "license-name": "GPL-2.0-only",
+    "license": "/wiki/Special:Version/License/EasyTimeline"
+   },
+   {
+    "type": "parserhook",
+    "name": "InteractiveMaps",
+    "description": "Interactive maps content type",
+    "version": "0.1.0"
+   },
+   {
+    "type": "parserhook",
+    "name": "StructuredContent",
+    "descriptionmsg": "structured-content-ext-desc",
+    "author": "Fandom Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/StructuredContent",
+    "version": "1.0.2"
+   },
+   {
+    "type": "parserhook",
+    "name": "TemplateStyles",
+    "namemsg": "templatestyles",
+    "descriptionmsg": "templatestyles-desc",
+    "author": "Brad Jorsch, Marc A. Pelletier",
+    "url": "https://www.mediawiki.org/wiki/Extension:TemplateStyles",
+    "version": "1.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/TemplateStyles"
+   },
+   {
+    "type": "parserhook",
+    "name": "BrandSafetyTagging",
+    "descriptionmsg": "Extension for Brand Safety mechanisms",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/BrandSafetyTagging"
+   },
+   {
+    "type": "parserhook",
+    "name": "ProgressTracking",
+    "description": "Interactive content tracking",
+    "version": "0.1.0"
+   },
+   {
+    "type": "antispam",
+    "name": "TitleBlacklist",
+    "descriptionmsg": "titleblacklist-desc",
+    "author": "Victor Vasiliev, Fran Rogers",
+    "url": "https://www.mediawiki.org/wiki/Extension:TitleBlacklist",
+    "version": "1.5.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/TitleBlacklist"
+   },
+   {
+    "type": "antispam",
+    "name": "ConfirmEdit",
+    "descriptionmsg": "captcha-desc",
+    "author": "Brion Vibber, Florian Schmidt, Sam Reed, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:ConfirmEdit",
+    "version": "1.6.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/ConfirmEdit",
+    "credits": "/wiki/Special:Version/Credits/ConfirmEdit"
+   },
+   {
+    "type": "antispam",
+    "name": "ReCaptchaNoCaptcha",
+    "descriptionmsg": "renocaptcha-desc",
+    "author": "Florian Schmidt",
+    "url": "https://www.mediawiki.org/wiki/Extension:ConfirmEdit#ReCaptcha_(NoCaptcha)",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/ReCaptchaNoCaptcha"
+   },
+   {
+    "type": "antispam",
+    "name": "Phalanx",
+    "description": "Phalanx integration",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/Phalanx"
+   },
+   {
+    "type": "antispam",
+    "name": "Abuse Filter",
+    "descriptionmsg": "abusefilter-desc",
+    "author": "Andrew Garrett, [https://www.mediawiki.org/wiki/User:Daimona_Eaytoy Daimona Eaytoy], Marius Hoch, River Tarnell, Victor Vasiliev",
+    "url": "https://www.mediawiki.org/wiki/Extension:AbuseFilter",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/Abuse_Filter"
+   },
+   {
+    "type": "editor",
+    "name": "VisualEditor",
+    "descriptionmsg": "visualeditor-desc",
+    "author": "Alex Monk, Bartosz Dziewoński, C. Scott Ananian, Christian Williams, David Lynch, Ed Sanders, Inez Korczyński, James D. Forrester, Moriel Schottlender, Roan Kattouw, Rob Moen, Subramanya Sastry, Thalia Chan, Timo Tijhof, Trevor Parscal, ...",
+    "url": "https://www.mediawiki.org/wiki/Extension:VisualEditor",
+    "license-name": "MIT",
+    "license": "/wiki/Special:Version/License/VisualEditor",
+    "credits": "/wiki/Special:Version/Credits/VisualEditor"
+   },
+   {
+    "type": "editor",
+    "name": "WikiEditor",
+    "descriptionmsg": "wikieditor-desc",
+    "author": "Derk-Jan Hartman, Trevor Parscal, Roan Kattouw, Nimish Gautam, Adam Miller",
+    "url": "https://www.mediawiki.org/wiki/Extension:WikiEditor",
+    "version": "0.5.4",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/WikiEditor"
+   },
+   {
+    "type": "editor",
+    "name": "CodeEditor",
+    "descriptionmsg": "codeeditor-desc",
+    "author": "Brion Vibber, Derk-Jan Hartman",
+    "url": "https://www.mediawiki.org/wiki/Extension:CodeEditor",
+    "license-name": "GPL-2.0-or-later AND BSD-3-Clause",
+    "license": "/wiki/Special:Version/License/CodeEditor"
+   },
+   {
+    "type": "editor",
+    "name": "CodeMirror",
+    "descriptionmsg": "codemirror-desc",
+    "author": "[https://www.mediawiki.org/wiki/User:Pastakhov Pavel Astakhov], [https://www.mediawiki.org/wiki/User:Florianschmidtwelzow Florian Schmidt], Marijn Haverbeke, MusikAnimal, Bhsd, [https://raw.githubusercontent.com/codemirror/CodeMirror/master/AUTHORS CodeMirror contributors]",
+    "url": "https://www.mediawiki.org/wiki/Extension:CodeMirror",
+    "version": "6.0.0",
+    "license-name": "GPL-2.0-or-later",
+    "license": "/wiki/Special:Version/License/CodeMirror"
+   },
+   {
+    "type": "special",
+    "name": "ContactPageRedirects",
+    "description": "Redirects Special:Contact and Special:DMCARequest to Zendesk contact page",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ContactPageRedirects"
+   },
+   {
+    "type": "api",
+    "name": "FeedsAndPosts",
+    "description": "API endpoints to obtain data relevant for feeds and posts application",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/FeedsAndPosts"
+   },
+   {
+    "type": "api",
+    "name": "MercuryApi",
+    "description": "API endpoints to obtain data relevant mobile-wiki application",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/MercuryApi"
+   },
+   {
+    "type": "api",
+    "name": "CuratedContent",
+    "description": "API endpoints with some wiki relevant data",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/CuratedContent"
+   },
+   {
+    "type": "api",
+    "name": "RobotsTxt",
+    "descriptionmsg": "robotstxt-desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/RobotsTxt",
+    "license-name": "Apache-2.0",
+    "license": "/wiki/Special:Version/License/RobotsTxt"
+   },
+   {
+    "type": "api",
+    "name": "RecommendationTiles",
+    "description": "Images for recommendations",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/RecommendationTiles"
+   },
+   {
+    "type": "api",
+    "name": "UploadNewImages",
+    "description": "desc",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/UploadNewImages"
+   },
+   {
+    "type": "api",
+    "name": "ArticleExporter",
+    "description": "Methods for getting and processing article data.",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/ArticleExporter"
+   },
+   {
+    "type": "api",
+    "name": "DiscussionPermissions",
+    "description": "Permission manager for feeds/comments/wall related operations",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DiscussionPermissions"
+   },
+   {
+    "type": "api",
+    "name": "DiscussionModeration",
+    "description": "API endpoints to obtain data relevant for reported page on feeds",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DiscussionModeration"
+   },
+   {
+    "type": "api",
+    "name": "DiscussionMaintenance",
+    "description": "Discussion service maintenance utils",
+    "author": "Fandom, Inc.",
+    "url": "https://github.com/Wikia/unified-platform/tree/master/extensions/fandom/DiscussionMaintenance"
+   },
+   {
+    "type": "skin",
+    "name": "FandomDesktop",
+    "description": "Fandom Desktop skin",
+    "author": "Fandom, Inc.",
+    "version": "1.0"
+   }
+  ],
+  "statistics": {
+   "pages": 3613,
+   "articles": 278,
+   "edits": 11358,
+   "images": 2752,
+   "users": 43786222,
+   "activeusers": 2,
+   "admins": 4,
+   "jobs": 0
+  }
+ }
+}

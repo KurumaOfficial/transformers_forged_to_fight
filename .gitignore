@@ -23,3 +23,10 @@ server/data/*.pre_*.json
 Thumbs.db
 .vscode/
 .idea/
+
+# Wiki archive raw payloads (large; scripts/meta/manifest stay in git)
+archive/wiki/raw/
+archive/wiki/files/
+archive/wiki/*.err
+archive/wiki/*.log
+archive/wiki/meta/allimages_tfwiki.json

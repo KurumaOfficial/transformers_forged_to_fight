@@ -417,7 +417,34 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     "playerPosition": new,
                     "currentTile": new,
                     "clearedTiles": [{"x": 0, "y": 0}, new],
-                    "percentComplete": 22
+                    "percentComplete": 22,
+                    "currentFightId": "fight1",
+                    "currentBattleId": "battle1",
+                    "currentBattleBossId": "enemy1",
+                    "currentBattlePos": new,
+                    "currentBattleEnemyHealth": 1000,
+                    "localPlayer": {
+                        "uid": "local",
+                        "name": "Local",
+                        "tag": "LOCAL",
+                        "strongestHero": "bumblebee_cin_dotm",
+                        "currentPos": {"x": 0, "y": 0},
+                        "currentBattleId": "battle1",
+                        "currentBattleState": 2,
+                        "currentBattlePos": new,
+                        "usedConsumableCount": 0,
+                        "battleLockExpiry": 0,
+                        "state": 1,
+                        "team": [{
+                            "id": "bumblebee_cin_dotm",
+                            "bid": "bumblebee_cin_dotm",
+                            "hero": "bumblebee_cin_dotm",
+                            "level": 1,
+                            "rank": 1,
+                            "sig_lvl": 0,
+                            "flvl": 0
+                        }]
+                    }
                 },
                 "currentPosition": new,
                 "playerPosition": new,
@@ -429,18 +456,6 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     "visibleClearedCount": 2,
                     "walkableCount": 9,
                     "visibleWalkableCount": 9
-                }, {
-                    "action": "battle",
-                    "battle": {
-                        "battleId": "b1",
-                        "enemyHealth": 1000,
-                        "isFinalBoss": False,
-                        "battleEnemy": {
-                            "id": "enemy1", "entityType": "boss",
-                            "bid": "bumblebee_cin_dotm_2",
-                            "level": 1, "rank": 1, "team": "enemy"
-                        }
-                    }
                 }],
                 "teamData": wrapper
             }, assumed_label="[CLIENT: /quests/quest-movedir/ progression+results+teamData]")

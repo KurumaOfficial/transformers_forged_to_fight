@@ -93,7 +93,19 @@
           "bg": false,
           "bt": [],
           "ab": [],
-          "sockets": {}
+          "sockets": {},
+          "entities": {
+            "enemy1": {
+              "id": "enemy1",
+              "uid": "enemy1",
+              "key": "enemy1",
+              "entityType": "boss",
+              "boss": "enemy1",
+              "type": "boss",
+              "baseType": "boss",
+              "hi": []
+            }
+          }
         },
         {
           "position": {
