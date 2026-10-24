@@ -179,3 +179,24 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - C1/C3: partial; C4 explained.
 - W4/W5: not re-run.
 - I1/I2: partial/design only.
+
+## 11. A1 runtime dump blocked (2026-10-24)
+
+- `PreFightScreen_TypeInfo` (`ScriptMetadata` Address `0x2D0D108`) contains a
+  **metadata usage token** (`0x200086F7`), not an `Il2CppClass*`. The same is
+  true for `WindowManager_TypeInfo` (`0x2D15FF8` -> `0x2000DD0F`).
+- The class struct for `PreFightScreen` was not found by scanning the
+  libil2cpp mappings for a pointer to the resolved `"PreFightScreen"` string
+  (two metadata string occurrences tested). The class is therefore in a
+  metadata-heap mapping, not in libil2cpp's r--/rw segments; a whole-process
+  scan was too slow and timed out.
+- Consequence: the read-only probe cannot yet dump `_model`, `_config`,
+  `_presentationSCI`, `_presentation` and the window flags. Resolving the
+  `Il2CppMetadataUsage` table (token -> class/type) or a targeted
+  WindowManager instance is required. Frida is not allowed.
+- What **is** proven: `CacheReferences` is called from `PreFightScreen.SetupWindow`
+  (`0xE38E24`), and the only provider source is `Get<IPrefightDataProvider>`
+  (`0x11E7640`); entry 69 is default-only. The null is a runtime type/`ContainsKey`
+  or `Activator.CreateInstance` issue, not a missing implementation.
+- `QuestboardHud is inactive` was observed once at 16:35:21; it is not present
+  in every run and cannot yet be tied to the provider.

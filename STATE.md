@@ -375,3 +375,12 @@ OBJECTIVES opens `[0/0] COMPLETE`, STORE is level-locked.
 default fallback, so the null points to a type-identity/ContainsKey or
 call-site-interface mismatch. `IAdsProvider` is the only tform entry. BOTS is
 not an injector consumer. No provider error in logcat before the NRE.
+
+## 19. 2026-10-24: runtime prefight dump attempt
+
+Read-only attempts to locate the live `PreFightScreen` instance failed:
+`PreFightScreen_TypeInfo` and `WindowManager_TypeInfo` are metadata usage
+tokens (`0x2000...`), not class pointers; the class struct is in a
+metadata-heap mapping and a full scan timed out. `CacheReferences` is called
+from `SetupWindow`; provider entry 69 is default-only. No Frida. See
+`OPEN_QUESTIONS.md` §11.
