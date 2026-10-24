@@ -357,3 +357,8 @@ No Frida/gadget/patches without consent.
   confidence; 8 ambiguous, 7 none, 12 missing boss strings. Quest 1.1 is
   now "A Beast to Start" with boss Rhinox; map layout/rewards remain
   [ASSUMED]. [WIKI]+[RUN] quest title screenshot.
+
+Final full-smoke note (2026-10-24): repeated after W3; still PASS. The
+post-flow BOTS sub-run hit Home due to a scene-load race, so Windblade INFO
+evidence is `work/final_windblade.jpg` (earlier run), not the latest
+`tests/smoke/10b_bot_info.png`.
