@@ -151,3 +151,31 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - A5/A6: not yet run; A5 must test the boss-tile trigger and map/prefight
   registry snapshots; A6 variants cannot alter a static registry, only the
   trigger.
+
+## 10. Current queue status (2026-10-24, v4 queues)
+
+- A1/A2/A3/A4: **done enough to localize the null**: entry 69
+  `IPrefightDataProvider` is default-only; `Get` has a default fallback;
+  live tag is `tform`; `ContainsKey`/type-identity or the call-site generic
+  argument is the remaining suspect. See `docs/prefight_flow.md`.
+- A5: **not run** (boss-tile trigger timing/order). Next: tap the boss tile
+  without `battle`, record; then moveto and battle in separate responses;
+  probe registry at map/prefight.
+- A6: **blocked by A1**: the registry is static and variants cannot change
+  it. The 10 variants already run (v01–v10) plus the static registry show
+  why; a 20-run matrix is deferred until the type identity/call-site is
+  resolved.
+- A7: blocked until FIGHT reaches ActivateMatch.
+- A8: arena/special unlock not done; account level still displays 0.
+- A9: `docs/frida_plan.md` updated; no Frida.
+- S1: known_issues/xfail added to smoke.
+- S2: golden diff + baseline tag + changelog added; 9/9 PASS.
+- S3: 59-bot auto sweep not run; single Windblade evidence exists.
+- S4: `work/check_all.ps1` added; unittests 14/14 PASS.
+- R1: 59 bots, 12/59 wiki stats; 47 assumed.
+- R2/R3/R4/R5/R6: open/partial as in report.
+- Q1/Q2/Q3: `data/quests_real.json`; only 1.1 wired; full 66-mission
+  quest-list and map generator not done.
+- C1/C3: partial; C4 explained.
+- W4/W5: not re-run.
+- I1/I2: partial/design only.
