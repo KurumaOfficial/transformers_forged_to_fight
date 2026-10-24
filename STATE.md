@@ -296,3 +296,43 @@ No Frida/gadget/patches without consent.
 - `resume.ps1` added: checks adb device, `adb reverse`, starts the stub
   server if needed, verifies the installed package and APK hash, then
   optionally runs smoke/golden.
+
+## 17. 2026-10-24: R1 full roster (59 client bot packs)
+
+- `work/build_full_catalog.py` adds **all 59 client bot packs** to
+  `server/data/bcg_login_data.json`:
+  - 57 new bots + the existing Bumblebee (`bumblebee_cin_dotm_2`) and
+    Optimus (`optimus_c_tf_t3`);
+  - `blueprints`, `heroes` rank entries (1..max_rank), `characters`,
+    `userData.heroes`, `userData.entities.bot`, `updates.heroes`;
+  - all six `heroClasses` with the wiki class triangle
+    (Brawler>Warrior>Scout>Tech>Demolition>Tactician>Brawler;
+    four edges [WIKI], Tech/Demolition [DERIVED]);
+  - Autobot/Decepticon/Maximal/Predacon synergies; Sharkticon variants
+    use their per-variant class and no faction synergy.
+- **Source rule:** class/faction/generation from
+  `server/data/bot_catalog_real.json` ([CLIENT] ids + [WIKI]); star-1
+  HP/ATK/rating only for the 12 bots that have a parsed wiki star table;
+  the other 47 use `[ASSUMED]` 1000 HP / 120 ATK / 100 rating. The
+  catalog is explicitly marked as a test grant (original server returns
+  only owned bots).
+- [RUN] `smoke_test.py --full`: BOTS shows the full roster (Windblade,
+  Wheeljack, Waspinator, Ultra Magnus, Thundercracker, Tantrum, ...),
+  Windblade popup and INFO screen open with `LEVEL 1/10`, `RANK 1/5`,
+  `ATK 826`, `102`, `ABILITIES: NO ABILITIES`, SPECIAL ATTACKS, Synergy
+  Bonuses. No NRE. Evidence: `tests/smoke/09_bots.png`,
+  `tests/smoke/10_bot_details.png`, `tests/smoke/10b_bot_info.png`.
+- Team size set to **1** (`teamSizeMax`) to match the synthetic 1.1
+  quest and avoid the client's "ADD MORE BOTS?" auto-fill prompt. The
+  START prompt is still handled by the smoke when it appears.
+- [RUN] Full smoke PASS: `quest_begin=true`, `movedir=true`,
+  `prefight_detected=true`, `nre_prefight_model=true`,
+  `memory_team_count=1`; golden 9/9 PASS after re-record.
+- R2/R3/R4 remain open:
+  - the BOTS card shows **300** for Windblade while the wiki star-1 max
+    rating is **264** -> the client's `CalculateModifiedHeroRating`
+    inputs are still not matched (R2);
+  - ABILITIES shows `NO ABILITIES`; SPECIAL ATTACKS show raw
+    `M1_SPECIAL_ATTACK_NAMEID_*` keys, not localized names (R3/R4);
+  - Synergy Bonuses box is empty for Windblade despite the Autobot
+    synergy entry (R4).

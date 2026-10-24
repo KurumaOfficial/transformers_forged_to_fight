@@ -93,6 +93,44 @@ def screen_is_home():
     return g > 58 and g > r + 6 and g > b + 6
 
 
+def green_button_in_region(y0, y1):
+    """Return True if a green UI button is present in the given y band."""
+    try:
+        im = Image.open(shot("_probe")).convert("RGB")
+    except Exception:
+        return False
+    w, h = im.size
+    px = im.load()
+    n = 0
+    for y in range(max(0, int(y0)), min(h, int(y1)), 3):
+        for x in range(0, w, 3):
+            r, g, b = px[x, y]
+            if g > 130 and r < 120 and b < 140 and g > r + 40 and g > b + 30:
+                n += 1
+                if n > 120:
+                    return True
+    return False
+
+
+def screen_has_prefight_bar():
+    """The prefight screen has a red/orange VS bar near the centre."""
+    try:
+        im = Image.open(shot("_probe")).convert("RGB")
+    except Exception:
+        return False
+    w, h = im.size
+    px = im.load()
+    n = 0
+    for y in range(int(h * 0.38), int(h * 0.62), 2):
+        for x in range(int(w * 0.38), int(w * 0.62), 2):
+            r, g, b = px[x, y]
+            if r > 140 and g < 110 and b < 110 and r > g + 50:
+                n += 1
+                if n > 30:
+                    return True
+    return False
+
+
 def wait_title_then_home(timeout=180):
     """Wait for PLAY NOW, tap it, then wait for new login/home requests."""
     deadline = time.time() + timeout
@@ -181,12 +219,20 @@ def main():
         step("04_story")
         tap(1436, 405, 8)
         step("05_quest")
-        if args.full:
-            tap(618, 980, 7)
-            step("05b_edit_squad")
-            tap(100, 1028, 7)
-            step("05c_after_accept")
-        tap(2126, 946, 15)
+        # EDIT SQUAD is captured separately: with a large roster the client
+        # prompts "ADD MORE BOTS?" and auto-fills the team, which changes the
+        # quest flow.  Manual evidence: work/edit2.png (TOTAL 100, ACCEPT).
+        tap(2097, 1003, 4)
+        # START with fewer bots than the roster may prompt "ADD MORE BOTS?".
+        # Only tap CONTINUE when the prompt's green buttons are visible;
+        # otherwise the tap would hit the map and open NODE INFO.
+        for _ in range(3):
+            if green_button_in_region(450, 720):
+                tap(1339, 550, 8)
+                break
+            time.sleep(3)
+        else:
+            time.sleep(4)
         step("06_map")
         # The left-lower neighbour of the start tile is the (1,0) battle tile.
         tap(850, 732, 14)
@@ -206,9 +252,8 @@ def main():
     new_paths = paths_since(rows, start)
     lc = logcat()
     prefight = bool(re.search(r"SELECT YOUR BOT|PrefightScreen", lc, re.I))
-    btn = screen_green_button()
-    prefight_by_button = bool(btn and btn[1] > 750)
-    prefight = prefight or prefight_by_button
+    prefight_bar = screen_has_prefight_bar()
+    prefight = prefight or prefight_bar
     model_nre = "PreFightScreen.OnFight" in lc
     scale_nre = "GetNewScale" in lc
     key = {
@@ -233,7 +278,8 @@ def main():
         step("09_bots")
         tap(260, 551, 8)
         step("10_bot_details")
-        tap(1140, 727, 8)
+        tap(1138, 705, 3)
+        tap(1138, 705, 8)
         step("10b_bot_info")
         adb("shell", "input", "keyevent", "4")
         time.sleep(3)
@@ -252,11 +298,11 @@ def main():
         "finished": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "mode": "full" if args.full else "fast",
         "steps": steps,
-        "notes": notes,
+        "notes": notes + (["edit_squad_manual=work/edit2.png"] if args.full else []),
         "paths": new_paths[-40:],
         "checks": key,
         "prefight_detected": prefight,
-        "prefight_by_button": prefight_by_button,
+        "prefight_bar": prefight_bar,
         "nre_get_new_scale": scale_nre,
         "nre_prefight_model": model_nre,
         "plus_clicked": bool(args.plus),

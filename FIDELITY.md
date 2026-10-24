@@ -149,3 +149,13 @@ all but entry 0 default-only. The current roster/team probes show
 variants cannot fix the prefight until the provider is resolved.
 [RUN] `work/read_bcg_memory.py`, `work/read_tag.py`,
 `work/read_injector.py`; [STATIC] `0xE397BC`, `0xE38E4C`, `0x11E7640`.
+
+**2026-10-24, R1 roster:** All 59 client bot packs are granted and listed
+in BOTS (`tests/smoke/09_bots.png`); a non-Bumblebee details screen
+(Windblade) opens without NRE (`10b_bot_info.png`). Class/faction from
+`bot_catalog_real.json`; only 12 bots have wiki star-1 HP/ATK, the other
+47 use [ASSUMED] 1000/120. The card shows rating 300 vs wiki 264 for
+Windblade, so R2 is still open. Abilities are `NO ABILITIES`, special
+attack names are raw `M1_SPECIAL_ATTACK_NAMEID_*` keys, and the synergy
+box is empty for Windblade (R3/R4 open). `teamSizeMax=1` is a deliberate
+deviation for the 1-bot test quest.

@@ -117,3 +117,16 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - A5 (arena/special unlock) remains open: the UI still shows Lvl 0 and
   the account level is not applied; the prefight provider blocker would
   also apply to those modes unless they use a different provider.
+
+## 7. R1/R2/R3/R4 (2026-10-24)
+
+- R1: 59 client bots are in the catalog and BOTS; Windblade details/INFO
+  open without NRE. [RUN]
+- R2: display rating 300 vs wiki 264 for Windblade; the client formula
+  inputs are not matched. [RUN]+[WIKI]
+- R3: details show `ABILITIES: NO ABILITIES`; special attack names are
+  raw `M1_SPECIAL_ATTACK_NAMEID_*` keys. Need the ability catalog and
+  localization mapping. [RUN]
+- R4: synergy box is empty for Windblade even though `syn_autobots`
+  exists; need the client's synergy eligibility/tag rule. [RUN]
+- Data gap: 47/59 bots have [ASSUMED] rank-1 stats (no wiki star table).

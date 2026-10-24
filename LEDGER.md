@@ -423,3 +423,21 @@ the active-team object source), not a simple alias. [RUN]
   The same pointer read as a List has count 1. Fixed; the harness now
   reports 1. [RUN]
 - Full smoke PASS + golden 9/9 PASS after re-record. [RUN]
+
+### 18. R1 roster and wiki attribution (2026-10-24)
+
+- Roster: **59** bots in `userData.heroes` / `entities.bot`;
+  **60** blueprints (59 bots + the existing Optimus rank catalog).
+  The 57 new bots use the client pack id as `bid`/`modelId`/`character`
+  and the wiki page name as `friendly_name`. [CLIENT]+[WIKI]
+- Star-1 HP/ATK/rating: **12/59** from wiki tables; **47/59** are
+  `[ASSUMED]` (1000 HP / 120 ATK / 100 rating). No hidden crit/armor/
+  block values were invented.
+- Class bit mapping: Brawler=1, Tactician=2, Scout=4, Demolition=8,
+  Warrior=16, Tech=32. Sharkticon variant ids are mapped per variant;
+  `Demolitions` is normalized to `Demolition`. [STATIC]
+- `teamSizeMax=1` is a deliberate deviation for the synthetic 1.1 quest;
+  `teamCountMax` remains 3. [ASSUMED]
+- [RUN] BOTS + Windblade details/INFO screens open without NRE; the
+  displayed rating is 300, while wiki star-1 Windblade says 264.
+  Rating formula/inputs remain unresolved (R2).
