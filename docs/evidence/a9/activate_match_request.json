@@ -1,0 +1,35 @@
+{
+ "timestamp": "2026-10-24T22:21:32.494201Z",
+ "client_ip": "127.0.0.1",
+ "client_port": 54447,
+ "method": "POST",
+ "path": "/matches/activate-match/quests_fight",
+ "query": {
+  "sig": [
+   "EwQicEFgdPYenkGZlJEm+wwKps8="
+  ],
+  "stoken": [
+   "sess_tf_stub_token_12345"
+  ],
+  "sver": [
+   "3"
+  ],
+  "ts": [
+   "1792880491"
+  ]
+ },
+ "headers": {
+  "Content-Type": "application/json",
+  "Content-Length": "121",
+  "Host": "127.0.0.1",
+  "Accept-Encoding": "gzip",
+  "User-Agent": "Sparx/1.0"
+ },
+ "body": {
+  "hero": "bumblebee_cin_dotm_2",
+  "api": 3,
+  "nonce": "6add2f6b6911bc4d4ccb0013",
+  "qid": "story_act1_ch1_m1",
+  "battleId": "battle1"
+ }
+}

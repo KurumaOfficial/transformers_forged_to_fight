@@ -1,439 +1,439 @@
 {
-  "uniqueId": "active_quest_1001",
-  "qid": "story_act1_ch1_m1",
+ "uniqueId": "active_quest_1001",
+ "qid": "story_act1_ch1_m1",
+ "category": "Story",
+ "mode": "story",
+ "phase": 1,
+ "isFinished": false,
+ "startTime": 1729000000,
+ "expiryTime": 1799000000,
+ "team": {
+  "bot_optimus_prime": {
+   "hp": 1000.0,
+   "pi": 100,
+   "sig_lvl": 0,
+   "stat_mods": [],
+   "sig_mods": []
+  }
+ },
+ "currentPosition": {
+  "x": 0,
+  "y": 0
+ },
+ "playerPosition": {
+  "x": 0,
+  "y": 0
+ },
+ "data": {
+  "id": "story_act1_ch1_m1",
   "category": "Story",
-  "mode": "story",
-  "phase": 1,
-  "isFinished": false,
-  "startTime": 1729000000,
-  "expiryTime": 1799000000,
-  "team": {
-    "bot_optimus_prime": {
-      "hp": 1000.0,
-      "pi": 100,
-      "sig_lvl": 0,
-      "stat_mods": [],
-      "sig_mods": []
-    }
-  },
-  "currentPosition": {
-    "x": 0,
-    "y": 0
-  },
-  "playerPosition": {
-    "x": 0,
-    "y": 0
-  },
-  "data": {
-    "id": "story_act1_ch1_m1",
-    "category": "Story",
-    "friendlyName": "1.1 A Beast to Start",
-    "description": "Investigate the crash site and face Rhinox.",
-    "isDetailed": true,
-    "theme": "primordial",
-    "todIndex": 0,
-    "energyPerTile": 1,
-    "minXpPerTile": 20,
-    "maxXpPerTile": 50,
-    "actIndex": 1,
-    "chapterIndex": 1,
-    "missionIndex": 1,
-    "act": 1,
-    "chapter": 1,
-    "mission": 1,
-    "teamSizeMin": 1,
-    "teamSizeMax": 1,
-    "unlocked": true
-  },
-  "map": {
-    "mapHash": "act1_ch1_m1_map",
-    "gridDimension": 3,
-    "walkableCount": 9,
-    "visibleWalkableCount": 9,
-    "grid": [
-      [
-        {
-          "position": {
-            "x": 0,
-            "y": 0
-          },
-          "start": true,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 1,
-              "y": 0
-            },
-            {
-              "x": 0,
-              "y": 1
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 1,
-              "y": 0
-            },
-            {
-              "x": 0,
-              "y": 1
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        },
-        {
-          "position": {
-            "x": 1,
-            "y": 0
-          },
-          "start": false,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 2,
-              "y": 0
-            },
-            {
-              "x": 1,
-              "y": 1
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 2,
-              "y": 0
-            },
-            {
-              "x": 1,
-              "y": 1
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {},
-          "entities": {
-            "enemy1": {
-              "id": "enemy1",
-              "uid": "enemy1",
-              "key": "enemy1",
-              "entityType": "boss",
-              "boss": "enemy1",
-              "type": "boss",
-              "baseType": "boss",
-              "hi": []
-            }
-          }
-        },
-        {
-          "position": {
-            "x": 2,
-            "y": 0
-          },
-          "start": false,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 2,
-              "y": 1
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 2,
-              "y": 1
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        }
-      ],
-      [
-        {
-          "position": {
-            "x": 0,
-            "y": 1
-          },
-          "start": false,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 1,
-              "y": 1
-            },
-            {
-              "x": 0,
-              "y": 2
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 1,
-              "y": 1
-            },
-            {
-              "x": 0,
-              "y": 2
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        },
-        {
-          "position": {
-            "x": 1,
-            "y": 1
-          },
-          "start": false,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 2,
-              "y": 1
-            },
-            {
-              "x": 1,
-              "y": 2
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 2,
-              "y": 1
-            },
-            {
-              "x": 1,
-              "y": 2
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        },
-        {
-          "position": {
-            "x": 2,
-            "y": 1
-          },
-          "start": false,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 2,
-              "y": 2
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 2,
-              "y": 2
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        }
-      ],
-      [
-        {
-          "position": {
-            "x": 0,
-            "y": 2
-          },
-          "start": false,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 1,
-              "y": 2
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 1,
-              "y": 2
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        },
-        {
-          "position": {
-            "x": 1,
-            "y": 2
-          },
-          "start": false,
-          "final": false,
-          "walkable": true,
-          "barrier": "",
-          "links": [
-            {
-              "x": 2,
-              "y": 2
-            }
-          ],
-          "visibleLinks": [
-            {
-              "x": 2,
-              "y": 2
-            }
-          ],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        },
-        {
-          "position": {
-            "x": 2,
-            "y": 2
-          },
-          "start": false,
-          "final": true,
-          "walkable": true,
-          "barrier": "",
-          "links": [],
-          "visibleLinks": [],
-          "bg": false,
-          "bt": [],
-          "ab": [],
-          "sockets": {}
-        }
-      ]
-    ],
-    "pathData": [
-      {
-        "path": [
-          {
-            "x": 0,
-            "y": 0
-          },
-          {
-            "x": 1,
-            "y": 0
-          },
-          {
-            "x": 2,
-            "y": 0
-          },
-          {
-            "x": 2,
-            "y": 1
-          },
-          {
-            "x": 2,
-            "y": 2
-          }
-        ]
-      }
-    ],
-    "paths": [
-      {
-        "path": [
-          {
-            "x": 0,
-            "y": 0
-          },
-          {
-            "x": 1,
-            "y": 0
-          },
-          {
-            "x": 2,
-            "y": 0
-          },
-          {
-            "x": 2,
-            "y": 1
-          },
-          {
-            "x": 2,
-            "y": 2
-          }
-        ],
-        "tiles": [
-          {
-            "x": 0,
-            "y": 0
-          },
-          {
-            "x": 1,
-            "y": 0
-          },
-          {
-            "x": 2,
-            "y": 0
-          },
-          {
-            "x": 2,
-            "y": 1
-          },
-          {
-            "x": 2,
-            "y": 2
-          }
-        ]
-      }
-    ]
-  },
-  "progression": {
-    "clearedTiles": [
-      {
-        "x": 0,
-        "y": 0
-      }
-    ],
-    "currentTile": {
+  "friendlyName": "1.1 A Beast to Start",
+  "description": "Investigate the crash site and face Rhinox.",
+  "isDetailed": true,
+  "theme": "primordial",
+  "todIndex": 0,
+  "energyPerTile": 1,
+  "minXpPerTile": 20,
+  "maxXpPerTile": 50,
+  "actIndex": 1,
+  "chapterIndex": 1,
+  "missionIndex": 1,
+  "act": 1,
+  "chapter": 1,
+  "mission": 1,
+  "teamSizeMin": 1,
+  "teamSizeMax": 1,
+  "unlocked": true
+ },
+ "map": {
+  "mapHash": "act1_ch1_m1_map",
+  "gridDimension": 3,
+  "walkableCount": 9,
+  "visibleWalkableCount": 9,
+  "grid": [
+   [
+    {
+     "position": {
       "x": 0,
       "y": 0
+     },
+     "start": true,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 1,
+       "y": 0
+      },
+      {
+       "x": 0,
+       "y": 1
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 1,
+       "y": 0
+      },
+      {
+       "x": 0,
+       "y": 1
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
     },
-    "percentComplete": 0
-  },
-  "scaledBossTable": {
-    "enemy1": {
-      "isFinalBoss": false,
-      "characters": [
-        "rhinox_gs_voyager2014"
-      ],
-      "rank": 1,
-      "level": 1,
-      "sig_lvl": 0,
-      "flvl": 0,
-      "aiType": 1,
-      "aiString": "default",
-      "aiPer": "aggressive",
-      "mapOverride": "",
-      "todIndex": 0,
-      "uid": "enemy1",
-      "key": "enemy1",
-      "hi": [],
-      "type": "boss",
-      "baseType": "boss"
+    {
+     "position": {
+      "x": 1,
+      "y": 0
+     },
+     "start": false,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 2,
+       "y": 0
+      },
+      {
+       "x": 1,
+       "y": 1
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 2,
+       "y": 0
+      },
+      {
+       "x": 1,
+       "y": 1
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {},
+     "entities": {
+      "enemy1": {
+       "id": "enemy1",
+       "uid": "enemy1",
+       "key": "enemy1",
+       "entityType": "boss",
+       "boss": "enemy1",
+       "type": "boss",
+       "baseType": "boss",
+       "hi": []
+      }
+     }
+    },
+    {
+     "position": {
+      "x": 2,
+      "y": 0
+     },
+     "start": false,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 2,
+       "y": 1
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 2,
+       "y": 1
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
     }
+   ],
+   [
+    {
+     "position": {
+      "x": 0,
+      "y": 1
+     },
+     "start": false,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 1,
+       "y": 1
+      },
+      {
+       "x": 0,
+       "y": 2
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 1,
+       "y": 1
+      },
+      {
+       "x": 0,
+       "y": 2
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
+    },
+    {
+     "position": {
+      "x": 1,
+      "y": 1
+     },
+     "start": false,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 2,
+       "y": 1
+      },
+      {
+       "x": 1,
+       "y": 2
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 2,
+       "y": 1
+      },
+      {
+       "x": 1,
+       "y": 2
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
+    },
+    {
+     "position": {
+      "x": 2,
+      "y": 1
+     },
+     "start": false,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 2,
+       "y": 2
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 2,
+       "y": 2
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
+    }
+   ],
+   [
+    {
+     "position": {
+      "x": 0,
+      "y": 2
+     },
+     "start": false,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 1,
+       "y": 2
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 1,
+       "y": 2
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
+    },
+    {
+     "position": {
+      "x": 1,
+      "y": 2
+     },
+     "start": false,
+     "final": false,
+     "walkable": true,
+     "barrier": "",
+     "links": [
+      {
+       "x": 2,
+       "y": 2
+      }
+     ],
+     "visibleLinks": [
+      {
+       "x": 2,
+       "y": 2
+      }
+     ],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
+    },
+    {
+     "position": {
+      "x": 2,
+      "y": 2
+     },
+     "start": false,
+     "final": true,
+     "walkable": true,
+     "barrier": "",
+     "links": [],
+     "visibleLinks": [],
+     "bg": false,
+     "bt": [],
+     "ab": [],
+     "sockets": {}
+    }
+   ]
+  ],
+  "pathData": [
+   {
+    "path": [
+     {
+      "x": 0,
+      "y": 0
+     },
+     {
+      "x": 1,
+      "y": 0
+     },
+     {
+      "x": 2,
+      "y": 0
+     },
+     {
+      "x": 2,
+      "y": 1
+     },
+     {
+      "x": 2,
+      "y": 2
+     }
+    ]
+   }
+  ],
+  "paths": [
+   {
+    "path": [
+     {
+      "x": 0,
+      "y": 0
+     },
+     {
+      "x": 1,
+      "y": 0
+     },
+     {
+      "x": 2,
+      "y": 0
+     },
+     {
+      "x": 2,
+      "y": 1
+     },
+     {
+      "x": 2,
+      "y": 2
+     }
+    ],
+    "tiles": [
+     {
+      "x": 0,
+      "y": 0
+     },
+     {
+      "x": 1,
+      "y": 0
+     },
+     {
+      "x": 2,
+      "y": 0
+     },
+     {
+      "x": 2,
+      "y": 1
+     },
+     {
+      "x": 2,
+      "y": 2
+     }
+    ]
+   }
+  ]
+ },
+ "progression": {
+  "clearedTiles": [
+   {
+    "x": 0,
+    "y": 0
+   }
+  ],
+  "currentTile": {
+   "x": 0,
+   "y": 0
+  },
+  "percentComplete": 0
+ },
+ "scaledBossTable": {
+  "enemy1": {
+   "isFinalBoss": false,
+   "characters": [
+    "rhinox_gs_voyager2014"
+   ],
+   "rank": 1,
+   "level": 1,
+   "sig_lvl": 0,
+   "flvl": 0,
+   "aiType": 1,
+   "aiString": "default",
+   "aiPer": "aggressive",
+   "mapOverride": "",
+   "todIndex": 0,
+   "uid": "enemy1",
+   "key": "rhinox_gs_voyager2014",
+   "hi": [],
+   "type": "boss",
+   "baseType": "boss"
   }
+ }
 }

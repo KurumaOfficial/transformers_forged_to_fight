@@ -130,3 +130,88 @@ the prefight call-site type/`ContainsKey` identity is the root cause.
 4. A6: variants cannot change a static registry; they can only change the
    trigger. Run a reduced matrix (battleEnemy/isFinalBoss/battleTower,
    progression fields, tile entity forms) and record provider presence.
+
+## 12. A8/A9: prefight provider found and FIGHT now activates a match (2026-10-25)
+
+**The earlier claim "`PreFightScreen._model` is null" was wrong.** A live dump of the
+`PreFightScreen` object found through `WindowManager.windowStacks` shows all four
+fields filled after `SetupWindow`/`WindowEnter`:
+
+| field | value | class |
+|---|---|---|
+| `+0x88 _config` | non-null | `PreFightParams` |
+| `+0x90 _presentationSCI` | non-null | `SharedComponentInstance` |
+| `+0x98 _model` | non-null | `PrefightScreenData` |
+| `+0xA0 _presentation` | non-null | `PrefightScreenPresentation` |
+
+`CacheReferences` (`0xE38E4C`) has no early exit before
+`Get<IPrefightDataProvider>` (`0xE38F08`); it stores the result at `+0x98`, then
+only checks `_presentationSCI` for null. `SetupWindow` (`0xE38E24`) calls
+`CacheReferences` unconditionally and then the base `Window.SetupWindow`.
+`WindowEnter` (`0xE3915C`) runs the `InitializeData` coroutine, which calls
+`_model.Init(config, this, callbacks)`; that call also succeeded.
+
+**Actual cause of the OnFight NRE:** `PrefightScreenData.InitEnemy` (`0xE3CE64`)
+builds the enemy hero from `QuestBoss.character`, and `QuestBoss.get_character`
+(`0xEA469C`) returns `Entity.key` (`+0x30`), also comparable to `BCGEntity.key`.
+Our `scaledBossTable.enemy1` had `"key": "enemy1"` while the blueprint was in
+`"characters": ["rhinox_gs_voyager2014"]`. The BCG lookup therefore asked for
+`enemy1`, returned no hero, left `_model._enemy` null, and `GetHeroDataForSide(1)`
+returned null; `OnFight` dereferenced it.
+
+**Data fix:** `server/data/quest_begin_response.json` (and the map copy in
+`quest_detail.json`) now set `"key"` to the first entry of `"characters"`.
+No client patch.
+
+**Result [RUN]:** FIGHT is enabled; the screen shows Bumblebee 100 vs Rhinox 200,
+both 1,050/1,050 HP. Pressing FIGHT sends
+`POST /matches/activate-match/quests_fight` with
+`{"hero":"bumblebee_cin_dotm_2","qid":"story_act1_ch1_m1","battleId":"battle1"}`.
+This is the first captured `/matches/*` request; the body is in
+`docs/evidence/a9/activate_match_request.json`.
+
+**New blocker [RUN]:** the fight scene loads, then
+`BattleArbiterInitState.InitPlayer` throws `NullReferenceException`; no
+`/matches/match-loaded` request follows. Live `FightFlow.FightInitInfo` has both
+`playerFighter` and `enemyFighter` non-null, both have `Blueprint`; the enemy
+fighter's `TeamData` is null (player's is not). This is a separate battle-scene
+init issue, not the prefight provider.
+
+**QuestboardHud (1.3):** at prefight the `QuestboardHud` window is still present
+in the same `WindowManager` layer stack below `PreFightScreen`; no
+"Coroutine couldn't be started because ... QuestboardHud is inactive" warning
+was produced in the successful runs. The one-off warning is therefore not
+causal to the provider/FIGHT failure.
+
+## 13. A5: default-only providers under tag `tform` (2026-10-25)
+
+- Settings (`ISettingsScreenDataProvider` entry 73, default-only): **works**.
+  ACCOUNT, SOUND and STORY tabs render; screenshots in
+  `docs/evidence/a5/settings_*.png`.
+- Objectives (`IGoalsModel` entry 58, default-only): screen opens with
+  `[0/0] COMPLETE`; the screen is not NRE, only the server payload is empty.
+- BOTS -> UPGRADE (`IUpgradeScreenModelBase` entry 77, default-only): screen
+  opens; later NRE is in `BCGHeroBaseCommon.SetXPCurve` because the
+  `/bcg/getHeroXPCurve` stub payload is empty, not because the provider is
+  missing.
+- Quest select/details and edit-squad paths use their default-only models and
+  open (details available; edit-squad can NRE when the active team is empty).
+- Profile (`IPlayerProfileDataProvider` entry 39) is not reachable in the
+  current home build: the commander block is not wired, chat/friends are empty,
+  and the gear opens Settings/account, not the profile popup.
+
+Conclusion: the `default` fallback in `Get<T>` works under tag `tform` for
+several independent interfaces. The prefight defect was **not** the tag or the
+fallback; it was the enemy-key data described above.
+
+## 14. A6: movement and battle are one request, not two (2026-10-25)
+
+The client has no separate "battle" request. One `POST
+/quests/quest-movedir/{qid}/{dx}/{dy}` is sent per move; the response's
+`results[]` array may contain a `moveto` action and/or a `battle` action.
+With a `moveto`-only response the character moves (11% -> 22% -> 33% -> 44% ->
+55% explored) and tapping the final tile again sends nothing and never opens
+prefight. The prefight is opened only when the server includes
+`{"action":{"battle":...}}`; the client does not check that the tile is a boss
+tile. This was reproduced with the runtime switch
+`/__control?movedir_actions=moveto|battle|both`.

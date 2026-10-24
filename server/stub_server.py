@@ -11,6 +11,9 @@ PORT = 8080
 LOG_FILE = os.path.join(os.path.dirname(__file__), "requests.jsonl")
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 ACTIVE_POS = {}
+# Runtime experiment switches, for black-box protocol probes only.
+# GET /__control?movedir_actions=moveto|battle|both
+EXPERIMENT = {"movedir_actions": "both"}
 
 def load_data_json(filename, default=None):
     """Load JSON data payload from server/data/<filename>."""
@@ -115,6 +118,17 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
 
     def dispatch(self, path, query, headers, body):
         now = int(time.time())
+
+        # Experiment control (black-box probes; not part of the game protocol).
+        if path == "/__control":
+            if "movedir_actions" in query:
+                val = query["movedir_actions"][0]
+                if val in ("moveto", "battle", "both"):
+                    EXPERIMENT["movedir_actions"] = val
+            if "reset" in query:
+                EXPERIMENT["movedir_actions"] = "both"
+            self.send_sparx(dict(EXPERIMENT), assumed_label="[RUN: __control]")
+            return
 
         # 1. Auth Init [RUN: confirmed in device test]
         if path == "/auth/init":
@@ -516,6 +530,19 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     }
                 }
             }
+            results = [
+                {"action": {"moveto": {"x": new["x"], "y": new["y"]}}},
+                {"action": {"battle": {
+                    "x": new["x"], "y": new["y"],
+                    "isFinalBoss": False,
+                    "battleEnemy": boss
+                }}},
+            ]
+            mode = EXPERIMENT.get("movedir_actions", "both")
+            if mode == "moveto":
+                results = results[:1]
+            elif mode == "battle":
+                results = results[1:]
             self.send_sparx({
                 "progression": {
                     "version": 3,
@@ -539,14 +566,7 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 "currentPosition": new,
                 "playerPosition": new,
                 "currentTile": new,
-                "results": [
-                    {"action": {"moveto": {"x": new["x"], "y": new["y"]}}},
-                    {"action": {"battle": {
-                        "x": new["x"], "y": new["y"],
-                        "isFinalBoss": False,
-                        "battleEnemy": boss
-                    }}}
-                ],
+                "results": results,
                 "teamData": wrapper
             }, assumed_label="[CLIENT: /quests/quest-movedir/ battle action + progression]")
             return
