@@ -1,3 +1,14 @@
+"""Cold-boot smoke test for the TFTF offline server.
+
+Modes:
+  fast (default): title -> home -> FIGHT -> STORY -> quest -> START -> map ->
+                  battle tile (prefight) -> optional + tap -> memory probe.
+  full (--full):  the same, plus BOTS, bot details, and EDIT SQUAD screens.
+
+The flow uses generous waits and a small green-button detector instead of the
+old fixed 38 s boot sleep.  PASS means the scripted UI flow reached the battle
+tile; combat may still be blocked (see STATE.md).
+"""
 import argparse
 import json
 import re
@@ -6,6 +17,8 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+
+from PIL import Image
 
 ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
 ADB = ROOT / "work" / "platform-tools" / "adb.exe"
@@ -17,12 +30,12 @@ ACT = "com.kabam.bigrobot/com.explodingbarrel.Activity"
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
-def run(*args, timeout=120):
+def run(*args, timeout=180):
     p = subprocess.run([str(a) for a in args], capture_output=True, text=True, timeout=timeout)
     return p.returncode, (p.stdout or "") + (p.stderr or "")
 
 
-def adb(*args, timeout=120):
+def adb(*args, timeout=180):
     return run(ADB, *args, timeout=timeout)
 
 
@@ -31,13 +44,74 @@ def tap(x, y, wait=1.0):
     time.sleep(wait)
 
 
-def shot(name):
+def shot(name, note=""):
     OUT.mkdir(parents=True, exist_ok=True)
     remote = f"/sdcard/smoke_{name}.png"
     local = OUT / f"{name}.png"
     adb("shell", "screencap", "-p", remote)
     adb("pull", remote, str(local))
     return local
+
+
+def screen_green_button():
+    """Return the largest green-button centre on the current screen, or None."""
+    try:
+        im = Image.open(shot("_probe")).convert("RGB")
+    except Exception:
+        return None
+    w, h = im.size
+    px = im.load()
+    pts = []
+    for y in range(0, h, 4):
+        for x in range(0, w, 4):
+            r, g, b = px[x, y]
+            if g > 135 and r < 115 and b < 140 and g > r + 45 and g > b + 35:
+                pts.append((x, y))
+    if len(pts) < 40:
+        return None
+    xs = sorted(p[0] for p in pts)
+    ys = sorted(p[1] for p in pts)
+    return xs[len(xs) // 2], ys[len(ys) // 2]
+
+
+def screen_is_home():
+    """Heuristic: the home base has a large green lower half."""
+    try:
+        im = Image.open(shot("_probe")).convert("RGB")
+    except Exception:
+        return False
+    w, h = im.size
+    px = im.load()
+    rs = gs = bs = n = 0
+    for y in range(int(h * 0.62), int(h * 0.92), 8):
+        for x in range(int(w * 0.12), int(w * 0.88), 8):
+            r, g, b = px[x, y]
+            rs += r; gs += g; bs += b; n += 1
+    if not n:
+        return False
+    r, g, b = rs / n, gs / n, bs / n
+    return g > 58 and g > r + 6 and g > b + 6
+
+
+def wait_title_then_home(timeout=180):
+    """Wait for PLAY NOW, tap it, then wait for new login/home requests."""
+    deadline = time.time() + timeout
+    tapped = False
+    base_count = len(read_requests())
+    while time.time() < deadline:
+        if not tapped:
+            pos = screen_green_button()
+            if pos:
+                tap(pos[0], pos[1], 2)
+                tapped = True
+        else:
+            rows = read_requests()[base_count:]
+            paths = [r.get("path", "") for r in rows]
+            if any(p == "/quests/quest-list" for p in paths) or any(p == "/base/active" for p in paths):
+                time.sleep(12)
+                return True
+        time.sleep(4)
+    return False
 
 
 def read_requests():
@@ -60,15 +134,18 @@ def logcat():
     return out
 
 
-def memory_probe():
-    script = ROOT / "work" / "read_prefight_state.py"
-    if not script.exists():
-        return ""
-    try:
-        _, out = run(sys.executable, script, timeout=90)
-        return out
-    except Exception as exc:
-        return f"probe failed: {exc}"
+def memory_probes():
+    out = []
+    for name in ("read_bcg_memory.py", "read_prefight_state.py"):
+        script = ROOT / "work" / name
+        if not script.exists():
+            continue
+        try:
+            _, text = run(sys.executable, script, timeout=120)
+            out.append(f"===== {name} =====\n{text}")
+        except Exception as exc:
+            out.append(f"===== {name} =====\nprobe failed: {exc}")
+    return "\n".join(out)
 
 
 def main():
@@ -76,10 +153,13 @@ def main():
     ap.add_argument("--no-launch", action="store_true")
     ap.add_argument("--no-memory", action="store_true")
     ap.add_argument("--plus", action="store_true", help="after the battle tile, tap the + slot")
+    ap.add_argument("--fight", action="store_true", help="after the battle tile, tap FIGHT and capture the NRE")
+    ap.add_argument("--full", action="store_true", help="also capture BOTS, bot details and EDIT SQUAD")
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     start = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     steps = []
+    notes = []
 
     def step(name, note=""):
         p = shot(name)
@@ -91,33 +171,46 @@ def main():
         adb("logcat", "-c")
         time.sleep(2)
         adb("shell", "am", "start", "-n", ACT)
-        time.sleep(38)
+        ok = wait_title_then_home(150)
+        notes.append(f"title_to_home={ok}")
         step("01_title")
-        tap(1138, 892, 25)
         step("02_home")
-        tap(1124, 145, 5)
+        tap(1124, 160, 6)
         step("03_fight")
-        tap(529, 354, 5)
+        tap(671, 449, 8)
         step("04_story")
-        tap(1436, 405, 7)
+        tap(1436, 405, 8)
         step("05_quest")
-        tap(2126, 946, 12)
+        if args.full:
+            tap(618, 980, 7)
+            step("05b_edit_squad")
+            tap(100, 1028, 7)
+            step("05c_after_accept")
+        tap(2126, 946, 15)
         step("06_map")
-        # The tile is the left-lower neighbour of the start tile on act 1 map.
-        tap(850, 732, 16)
+        # The left-lower neighbour of the start tile is the (1,0) battle tile.
+        tap(850, 732, 14)
         step("07_battle_tile")
     else:
         step("07_battle_tile")
 
     if args.plus:
-        tap(1209, 857, 5)
+        tap(1213, 788, 4)
         step("08_plus")
+
+    if args.fight:
+        tap(2024, 991, 5)
+        step("09_fight_click")
 
     rows = read_requests()
     new_paths = paths_since(rows, start)
     lc = logcat()
-    prefight = bool(re.search(r"PrefightScreenPresentation|SELECT YOUR BOT", lc, re.I))
-    nre = "GetNewScale" in lc or "NullReferenceException" in lc
+    prefight = bool(re.search(r"SELECT YOUR BOT|PrefightScreen", lc, re.I))
+    btn = screen_green_button()
+    prefight_by_button = bool(btn and btn[1] > 750)
+    prefight = prefight or prefight_by_button
+    model_nre = "PreFightScreen.OnFight" in lc
+    scale_nre = "GetNewScale" in lc
     key = {
         "login": any(p.endswith("/bcg/getLoginData") for p in new_paths),
         "quest_begin": any("/quests/quest-begin" in p for p in new_paths),
@@ -127,29 +220,56 @@ def main():
     }
     plus_shot = OUT / "08_plus.png"
     plus_error = bool(plus_shot.exists() and plus_shot.stat().st_size < 150_000) or key["bugs"]
-    mem = "" if args.no_memory else memory_probe()
+    mem = "" if args.no_memory else memory_probes()
+
+    if args.full:
+        # Run the BOTS screens after the main flow so a slow BOTS scene load
+        # cannot break the quest navigation.
+        adb("shell", "am", "force-stop", PKG)
+        time.sleep(2)
+        adb("shell", "am", "start", "-n", ACT)
+        wait_title_then_home(150)
+        tap(456, 160, 10)
+        step("09_bots")
+        tap(260, 551, 8)
+        step("10_bot_details")
+        tap(1140, 727, 8)
+        step("10b_bot_info")
+        adb("shell", "input", "keyevent", "4")
+        time.sleep(3)
+        adb("shell", "input", "keyevent", "4")
+        time.sleep(3)
+        step("11_after_bot_details")
+
     team_count = None
-    m = re.search(r"team[^0-9]{0,20}(\d+)", mem, re.I)
+    m = re.search(r"local team[^\n]*count\s+(\d+)", mem, re.I)
+    if not m:
+        m = re.search(r"team[^0-9]{0,20}(\d+)", mem, re.I)
     if m:
         team_count = int(m.group(1))
     result = {
         "started": start,
         "finished": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "mode": "full" if args.full else "fast",
         "steps": steps,
+        "notes": notes,
         "paths": new_paths[-40:],
         "checks": key,
         "prefight_detected": prefight,
-        "nre_get_new_scale": nre,
+        "prefight_by_button": prefight_by_button,
+        "nre_get_new_scale": scale_nre,
+        "nre_prefight_model": model_nre,
         "plus_clicked": bool(args.plus),
+        "fight_clicked": bool(args.fight),
         "plus_error": plus_error,
         "memory_team_count": team_count,
-        "memory_probe": mem[-4000:],
+        "memory_probe": mem[-6000:],
         "status": "PASS" if (key["login"] and key["quest_begin"] and key["movedir"] and steps) else "FAIL",
         "note": "PASS means the scripted flow reached the battle tile and produced a screenshot; combat may still be blocked.",
     }
     report = OUT / "latest.json"
     report.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({k: result[k] for k in ("status", "checks", "prefight_detected", "nre_get_new_scale", "memory_team_count")}, ensure_ascii=False, indent=2))
+    print(json.dumps({k: result[k] for k in ("status", "checks", "prefight_detected", "nre_prefight_model", "memory_team_count")}, ensure_ascii=False, indent=2))
     print(f"[smoke] report: {report}")
 
 

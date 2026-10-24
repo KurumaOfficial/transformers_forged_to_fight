@@ -103,3 +103,17 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
   count 1 with the current stub. [RUN]
 - P0 S: `smoke_test.py` needs polling instead of fixed sleeps; it
   false-FAILs on a slow cold boot. [RUN]
+
+### 17. P0 S completed (2026-10-24)
+
+- `smoke_test.py` now has robust boot waiting, fast/full modes, BOTS,
+  bot popup, bot INFO, EDIT SQUAD, prefight FIGHT click, and memory
+  probes. [RUN] full PASS, team count 1, model NRE true.
+- `read_prefight_state.py` List bug fixed; `work/read_bcg_memory.py` and
+  the fixed script agree on team count 1.
+- `golden_regression.py` re-recorded (9/9 PASS) after the quest-list
+  key correction and current movedir battle stub.
+- `resume.ps1` added.
+- A5 (arena/special unlock) remains open: the UI still shows Lvl 0 and
+  the account level is not applied; the prefight provider blocker would
+  also apply to those modes unless they use a different provider.

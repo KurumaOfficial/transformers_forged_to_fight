@@ -264,3 +264,35 @@ No Frida/gadget/patches without consent.
   `{"action":{"moveto":{"x":1,"y":0}}}` (nested), not
   `{"action":"moveto","moveto":{...}}`. The LEDGER 9 shorthand was
   imprecise; the stub already sends the nested shape.
+
+## 16. 2026-10-24: P0 S smoke harness and golden
+
+- `work/smoke_test.py` rewritten:
+  - fast (default) and `--full` modes;
+  - waits for PLAY NOW via a green-button detector and for the login/home
+    requests (`/quests/quest-list` or `/base/active`) instead of a fixed
+    38 s boot sleep;
+  - steps: title, home, FIGHT, STORY, quest, quest detail, EDIT SQUAD,
+    map, battle tile, `+`, FIGHT click, BOTS, bot popup, bot INFO;
+  - memory probe now runs `read_bcg_memory.py` and the corrected
+    `read_prefight_state.py`; team count is parsed from the List layout.
+- [RUN] Full run: `status=PASS`, `quest_begin=true`, `movedir=true`,
+  `prefight_detected=true`, `nre_prefight_model=true`,
+  `memory_team_count=1`, `/bugs` triggered by the FIGHT click.
+  Screenshots: `tests/smoke/05b_edit_squad.png`,
+  `tests/smoke/07_battle_tile.png`, `tests/smoke/09_fight_click.png`,
+  `tests/smoke/10_bot_details.png`, `tests/smoke/10b_bot_info.png`.
+- [RUN] BOTS screen: Bumblebee, TOTAL 100; bot popup has UPGRADE/INFO;
+  INFO screen shows `LEVEL 1/10`, `RANK 1/5`, `ATK 120`,
+  `ABILITIES: NO ABILITIES`, SPECIAL ATTACKS list, Synergy Bonuses.
+  This confirms the catalog is accepted and that abilities are the next
+  data gap (P1 R3/R4).
+- [RUN] EDIT SQUAD opens from quest detail, shows TOTAL 100 and the
+  Bumblebee slot, ACCEPT returns to quest detail.
+- [RUN] `work/golden_regression.py --record` then default check:
+  9/9 PASS. Re-record was required by the quest-list key correction
+  (`showUI`, `group`, `recommendMinLevel`) and the current movedir
+  battle-action stub.
+- `resume.ps1` added: checks adb device, `adb reverse`, starts the stub
+  server if needed, verifies the installed package and APK hash, then
+  optionally runs smoke/golden.

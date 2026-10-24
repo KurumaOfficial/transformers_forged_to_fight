@@ -411,3 +411,15 @@ the active-team object source), not a simple alias. [RUN]
   the manual flow reaches the prefight. [RUN]
 - `golden_regression.py`: 2 shape changes expected after the quest-list
   key correction and current movedir battle stub; re-record pending. [RUN]
+
+## 17. 2026-10-24: harness and exact NRE
+
+- `PreFightScreen.OnFight` NRE confirmed by `smoke_test.py --fight`:
+  `NullReferenceException` at `PreFightScreen.OnFight`, `_model` null.
+  The `GetNewScale` NRE belongs to an older experiment and is not the
+  current first failure. [RUN]
+- `read_prefight_state.py` had a List-vs-Dictionary bug: it read a
+  `List<QuestUserHero>` with dictionary offsets and printed count 0.
+  The same pointer read as a List has count 1. Fixed; the harness now
+  reports 1. [RUN]
+- Full smoke PASS + golden 9/9 PASS after re-record. [RUN]
