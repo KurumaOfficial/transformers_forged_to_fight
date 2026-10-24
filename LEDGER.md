@@ -509,3 +509,16 @@ the active-team object source), not a simple alias. [RUN]
 - Conclusion: growth is a curve/table, not a linear plane. Do not derive the
   47 no-table bots from this fit. See `spec/stat_growth_fit.md`,
   `data/wiki/stat_growth_fit.json`, `work/fit_stat_growth.py`.
+
+### 23. A8/A9 prefight fix (2026-10-25)
+
+- Live dump: `_model`, `_config`, `_presentationSCI`, `_presentation` non-null.
+- Root cause: `QuestBoss.character == Entity.key`; `scaledBossTable.enemy1`
+  had `key=enemy1` instead of `rhinox_gs_voyager2014`. Data fix in
+  `quest_begin_response.json` / `quest_detail.json`.
+- FIGHT is enabled and sends `/matches/activate-match/quests_fight`.
+- New NRE: `BattleArbiterInitState.InitPlayer`; both fighters and blueprints
+  non-null; enemy `TeamData` null. No match-loaded yet.
+- A5: Settings, Objectives, Upgrade screens work with default-only providers
+  under tag `tform`; profile popup unreachable in this build.
+- A6: movement is one movedir request; battle is a server response action.

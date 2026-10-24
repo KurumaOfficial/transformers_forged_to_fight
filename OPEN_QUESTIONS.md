@@ -218,3 +218,14 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - 47 client bots without a star-1 table remain `[ASSUMED]`; do not use the
   fit as wiki data. Next: piecewise per-rank curves and the client
   `curves`/`attributeGrowthDefs`.
+
+## 14. Battle init after activate-match (2026-10-25)
+
+Prefight is fixed by the enemy-key data change; FIGHT sends
+`/matches/activate-match/quests_fight`. The next failure is
+`BattleArbiterInitState.InitPlayer` NRE. `FightFlow.FightInitInfo` has
+`playerFighter` and `enemyFighter` both non-null; the enemy fighter has
+`Blueprint` but `TeamData == null`, the player has both. No match-loaded
+request. Three attempts used: (1) infer null model, (2) live prefight dump,
+(3) live FightInitInfo dump. Next would need the exact asset/component that
+is null in the loaded character prefab, or a real activate-match response.

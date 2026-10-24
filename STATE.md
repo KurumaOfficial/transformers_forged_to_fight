@@ -396,3 +396,33 @@ from `SetupWindow`; provider entry 69 is default-only. No Frida. See
 - S2: `check_all.ps1` now prints `target_checks` and each `known_issues`
   entry, plus whether all xfails are resolved.
 - T5: `MASTER_PROMPT.md` is v4.3 with current facts and the full queue.
+
+## 21. 2026-10-25: prefight unblocked, battle-init blocker
+
+**Corrected fact:** `PreFightScreen._model` is **not** null. A live dump via
+`WindowManager.Instance.windowStacks` shows `_config`, `_presentationSCI`,
+`_model` (`PrefightScreenData`) and `_presentation` all non-null. The earlier
+null claim came from the failed object lookup, not from the object.
+
+Root cause of the OnFight NRE: `PrefightScreenData.InitEnemy` reads
+`QuestBoss.character`, which is `Entity.key` (`0xEA469C` -> `+0x30`). Our
+`scaledBossTable.enemy1` had `key = "enemy1"` and the blueprint only in
+`characters`. The BCG lookup for `enemy1` returned nothing, `_enemy` stayed
+null, `GetHeroDataForSide(1)` returned null and `OnFight` NRE'd.
+
+Data fix (no client patch): `key` is now the first `characters` entry
+(`rhinox_gs_voyager2014`) in `quest_begin_response.json` and
+`quest_detail.json`. Result: Bumblebee vs Rhinox, 1,050/1,050 HP, FIGHT
+enabled. Pressing FIGHT sends `POST /matches/activate-match/quests_fight`
+(body captured in `docs/evidence/a9/activate_match_request.json`).
+
+**New blocker:** the fight scene loads and then
+`BattleArbiterInitState.InitPlayer` NREs; no `/matches/match-loaded` follows.
+Live `FightFlow.FightInitInfo` has both fighters non-null and both blueprints
+non-null; enemy `FighterData.TeamData` is null, player's is non-null. This is
+separate from the prefight provider and needs another pass.
+
+Movement protocol: one `quest-movedir` request per move; `moveto` and
+`battle` are actions in the response, not separate requests. With
+`moveto` only, moving to the final tile does not open prefight; a client-side
+boss-tile tap sends nothing. The server decides when to include `battle`.
