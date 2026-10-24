@@ -90,3 +90,19 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   entries; 209 403 errors; categories maps_quests/items/ui/bots/other).
 - Ability localization: `data/wiki/ability_localization_client.json` (3315
   D_STAT/ID_STAT entries from binary assets; language and bot mapping open).
+
+## 2026-10-24 additions (W1–W3)
+
+- W1: five stale-hash corrections explained; the current bytes match the
+  corrected hashes. Two HTML files are redirect/other-page responses relative
+  to their revision JSON (`Meet Your Makers`, `Nothing And Everything`); raw
+  untouched. See `archive/wiki/MISMATCHES.md`.
+- W2: five wiki-only pages analysed. Only `Optimus Prime` maps to a client
+  pack (`optimusprime_cin_tf`, wiki title "Optimus Prime (MV1)").
+  `Soundblaster/Tactician` is a class variant not in 9.2.0; Chromia, Dead End
+  and Starscream have no 9.2.0 client pack. `data/wiki/id_map.json` updated.
+- W3: `data/quests_real.json`: 66 Story missions in 4 acts from the archived
+  Story page; 24 missions in `Awaken and Corrupt`; 3 each in three other act
+  pages. 39 boss names matched to client ids with high confidence; 8
+  ambiguous, 7 none, 12 missing. Quest 1.1 = "A Beast to Start" / Rhinox.
+- Not done: W4 re-run after id_map update; W5 image retry (209 HTTP 403).

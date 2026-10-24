@@ -1,3 +1,36 @@
+# MASTER_PROMPT v4.1 — status addendum (2026-10-24)
+
+The canonical task/plan is the user's **v4 master prompt** (2026-10-24). This
+addendum supersedes the status text of the v3.x file below.
+
+Read first: `STATE.md` (§15–17), `OPEN_QUESTIONS.md`, `report/FINAL_2026-10-24.md`,
+`docs/memory_probe.md`, `docs/frida_plan.md`, `spec/match_protocol.md`.
+
+Current facts:
+- **Battle blocker is not the team.** `PreFightScreen._model` (`+0x98`) is
+  null; FIGHT NREs in `PreFightScreen.OnFight` (`0xE397BC`). The model comes
+  only from `InterfaceInjector.Get<IPrefightDataProvider>` (`0x11E7640`).
+  Live injector: tag `tform`, 78 interfaces, 1 persistent (ads). Entry 0 has
+  `tform`+`default`; all others `default`-only. Team probes show
+  `TeamHeroes=1` and `localPlayer.team=1`.
+- No `/matches/activate-match` observed. `spec/match_protocol.md` is a static
+  skeleton; the response is `[ASSUMED]`.
+- Smoke full PASS (`quest_begin`, `movedir`, prefight, model NRE, team=1);
+  golden 9/9 PASS after re-record.
+- 59 bots in BOTS; 12 have wiki star-1 stats, 47 are `[ASSUMED]`.
+  Abilities/special names are raw IDs; rating formula is unresolved.
+- W3: real story mission names in `data/quests_real.json`; 1.1 is
+  "A Beast to Start" (Rhinox); map/rewards still `[ASSUMED]`.
+- C4: 7869 localization is correct (7994 includes 127 tuning keys); 3315
+  stat strings exact (3332 legacy, 17 unaccounted).
+- A5/A6/A7: arena/special still locked; match skeleton/plan only; Frida not
+  run and needs the user's decision (ARM64 root preferred).
+
+Next queue: resolve the provider/injector, then capture activate-match and
+implement the match flow; then R2–R6, C1/C3, W4/W5, I1/I2.
+
+---
+
 # MASTER_PROMPT v3 — Transformers: Forged to Fight offline revival
 
 Version 3, 2026-10-22. Restored/updated copy. Canonical source: the user's

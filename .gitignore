@@ -19,3 +19,16 @@ work/android-sdk/
 work/Il2CppDumper*/
 work/*.png
 work/*.jpg
+
+# large generated/IL2CPP artifacts (keep the extractor scripts, not the dumps)
+work/unpacked/
+work/il2cpp_dump/
+work/patched_build/
+work/platform-tools/
+work/android-sdk/
+work/Il2CppDumper/
+work/Il2CppDumper-win/
+work/rva_map.json
+work/all_game_classes.json
+work/*.zip
+tests/screens/
