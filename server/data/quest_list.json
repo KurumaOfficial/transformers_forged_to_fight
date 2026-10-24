@@ -31,8 +31,8 @@
         "minCL": 0,
         "completed": false,
         "mastered": false,
-        "friendlyName": "1.1 Landing Site",
-        "description": "Scout the immediate landing area.",
+        "friendlyName": "1.1 A Beast to Start",
+        "description": "Investigate the crash site and face Rhinox.",
         "theme": "primordial",
         "todIndex": 0,
         "energyPerTile": 1,
@@ -43,7 +43,7 @@
         "sid": "story_act1_ch1_m1",
         "mapHash": "act1_ch1_m1_map",
         "finalBoss": {
-          "id": "barricade",
+          "id": "rhinox_gs_voyager2014",
           "level": 1,
           "rank": 1
         },
@@ -99,8 +99,8 @@
     "acts": [
       {
         "act": 1,
-        "friendlyName": "ACT 1",
-        "description": "Enter the battlefield on New Quintessa.",
+        "friendlyName": "Meet your Makers",
+        "description": "As the Ark crashes, Optimus and Marissa investigate New Quintessa.",
         "image": "act_1_banner",
         "unlocked": true,
         "completed": false,
@@ -125,8 +125,8 @@
         "potentialCompletionRewards": [],
         "Chapters": [
           {
-            "friendlyName": "Chapter 1",
-            "description": "Crash landing in the primordial ruins.",
+            "friendlyName": "Realities Collide",
+            "description": "The first encounters on New Quintessa.",
             "image": "chapter_1_banner",
             "unlocked": true,
             "completed": false,

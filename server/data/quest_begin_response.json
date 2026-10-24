@@ -27,8 +27,8 @@
   "data": {
     "id": "story_act1_ch1_m1",
     "category": "Story",
-    "friendlyName": "1.1 Landing Site",
-    "description": "Scout the immediate landing area.",
+    "friendlyName": "1.1 A Beast to Start",
+    "description": "Investigate the crash site and face Rhinox.",
     "isDetailed": true,
     "theme": "primordial",
     "todIndex": 0,
@@ -418,7 +418,7 @@
     "enemy1": {
       "isFinalBoss": false,
       "characters": [
-        "bumblebee_cin_dotm_2"
+        "rhinox_gs_voyager2014"
       ],
       "rank": 1,
       "level": 1,

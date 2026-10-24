@@ -336,3 +336,24 @@ No Frida/gadget/patches without consent.
     `M1_SPECIAL_ATTACK_NAMEID_*` keys, not localized names (R3/R4);
   - Synergy Bonuses box is empty for Windblade despite the Autobot
     synergy entry (R4).
+
+## 8. C4/W1/W2/W3 (2026-10-24)
+
+- C4 7869 vs 7994: a broad `"k"` scan finds 7996 keys, of which 127 are
+  AI/tuning config (not localization). 7869 is the localization-only
+  count. 3315 D_STAT/ID_STAT is exact (8 D_STAT + 3307 ID_STAT); 3332 is
+  legacy and not reproducible. [RUN]
+- W1: five stale hashes corrected; current bytes match. Two HTML files
+  are redirect/other-page responses relative to their revision JSON
+  (`Meet Your Makers`, `Nothing And Everything`); raw untouched.
+  `archive/wiki/MISMATCHES.md`, `archive/CHANGELOG.md`. [WIKI]
+- W2: five wiki-only pages analysed. Optimus Prime -> `optimusprime_cin_tf`
+  (wiki title "Optimus Prime (MV1)"); Soundblaster/Tactician is a class
+  variant absent from 9.2.0; Chromia/Dead End/Starscream have no 9.2.0
+  client pack. `data/wiki/id_map.json` updated. [CLIENT]+[WIKI]
+- W3: `data/quests_real.json` from the archived Story page + eight act
+  pages: 66 Story missions in 4 acts, 24 in Awaken and Corrupt, 3 each in
+  three other act pages. 39 boss names matched to client ids with high
+  confidence; 8 ambiguous, 7 none, 12 missing boss strings. Quest 1.1 is
+  now "A Beast to Start" with boss Rhinox; map layout/rewards remain
+  [ASSUMED]. [WIKI]+[RUN] quest title screenshot.

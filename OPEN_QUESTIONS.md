@@ -130,3 +130,10 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - R4: synergy box is empty for Windblade even though `syn_autobots`
   exists; need the client's synergy eligibility/tag rule. [RUN]
 - Data gap: 47/59 bots have [ASSUMED] rank-1 stats (no wiki star table).
+
+### C4 update (2026-10-24)
+
+- 7869 is correct for localization; 7994/7996 includes 127 AI/tuning keys.
+- 3315 stat entries are exact; 3332 remains legacy/unreproducible
+  (17 unaccounted). `data/wiki/ability_localization_client.json` is the
+  current authoritative extraction.

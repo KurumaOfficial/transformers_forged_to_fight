@@ -1,0 +1,1729 @@
+{
+  "source": "data/wiki/topics/missions_story.json (archived Fandom wikitext)",
+  "cutoff": "2023-01-13T23:59:59Z",
+  "note": "Only mission names and boss strings present in wikitext; rewards/recommended levels are null unless explicitly present. Boss client ids are best-effort matches to bot_catalog_real.json.",
+  "as_of_2023": {
+    "story_acts": [
+      {
+        "act": 1,
+        "name": "Meet your Makers",
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Realities Collide",
+            "missions": [
+              {
+                "name": "A Beast to Start",
+                "boss": "Rhinox",
+                "boss_client_id": "rhinox_gs_voyager2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "A Slow Learner",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Me Have Mod",
+                "boss": "Grimlock",
+                "boss_client_id": "grimlock_gs_mp08",
+                "boss_match": "high"
+              },
+              {
+                "name": "Good Cop Bad Cop",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "The Way of the Blade",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "name": "Hail Who?",
+                "boss": "Revenge of the Fallen Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Revelations",
+            "missions": [
+              {
+                "name": "In Due Time",
+                "boss": "Revenge of the Fallen Ironhide",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Anger Management",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "name": "Don't Go Judging",
+                "boss": "Sideswipe",
+                "boss_client_id": "sideswipe_gs",
+                "boss_match": "high"
+              },
+              {
+                "name": "A Scout No More",
+                "boss": "Dark of the Moon Bumblebee",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Loyalty Points",
+                "boss": "Arcee",
+                "boss_client_id": "arcee_gs_deluxe2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "The Quintessance",
+                "boss": "Ratchet",
+                "boss_client_id": "ratchet_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "3",
+            "name": "Shark Attack",
+            "missions": [
+              {
+                "name": "We'll Need A Bigger Blaster",
+                "boss": "Sharkticon Scout",
+                "boss_client_id": "sharkticon_gs_scout",
+                "boss_match": "high"
+              },
+              {
+                "name": "Appearing Act",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "Are You Not Entertained?",
+                "boss": "Revenge of the Fallen Ironhide",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "It's In Our DNA",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "Power Seeker",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "School the Sharks",
+                "boss": "Sharkticon Brawler",
+                "boss_client_id": "sharkticon_gs_brawler",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "4",
+            "name": "Under Control",
+            "missions": [
+              {
+                "name": "Voices",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "Hold It Down",
+                "boss": "Sideswipe",
+                "boss_client_id": "sideswipe_gs",
+                "boss_match": "high"
+              },
+              {
+                "name": "Code Violation",
+                "boss": "Prowl",
+                "boss_client_id": "prowl_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "The Long Game",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Optimum Outcome",
+                "boss": "MV1 Optimus Prime",
+                "boss_client_id": "optimusprime_cin_tf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Shackle Me Not",
+                "boss": "Revenge of the Fallen Megatron",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "act": 2,
+        "name": "Dissension and Ascension",
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Secrets",
+            "missions": [
+              {
+                "name": "Echoes",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "name": "Butt Heads",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "name": "Who's Your Master?",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Scout's Honor",
+                "boss": "Rhinox",
+                "boss_client_id": "rhinox_gs_voyager2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "Believe The Mirage",
+                "boss": "Revenge of the Fallen Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Machinations",
+                "boss": "Revenge of the Fallen Ironhide",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Quintessential Quintessons",
+            "missions": [
+              {
+                "name": "Spy Games",
+                "boss": "Revenge of the Fallen Grindor",
+                "boss_client_id": "grindor_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Just An Illusion",
+                "boss": "Ultra Magnus",
+                "boss_client_id": "ultramagnus_gs_leader",
+                "boss_match": "high"
+              },
+              {
+                "name": "T-Cog Probs",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Origins",
+                "boss": "Tech Sharkticon",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Dear Diary",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "name": "History On Repeat",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "3",
+            "name": "Into the Darkness",
+            "missions": [
+              {
+                "name": "Warriors At The Gate",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "name": "Join The Army",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "Miner Relief",
+                "boss": "Revenge of the Fallen Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Insecurities",
+                "boss": "Grimlock",
+                "boss_client_id": "grimlock_gs_mp08",
+                "boss_match": "high"
+              },
+              {
+                "name": "Head Gamezzz",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "No Petty Relic",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "4",
+            "name": "Treacherous Returns",
+            "missions": [
+              {
+                "name": "Are You Not Sentient",
+                "boss": "Demolitions Sharkticon",
+                "boss_client_id": "sharkticon_gs_demolition",
+                "boss_match": "high"
+              },
+              {
+                "name": "By The Blood of Unicron",
+                "boss": "Revenge of the Fallen Grindor",
+                "boss_client_id": "grindor_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Descent Into Depravity",
+                "boss": "Revenge of the Fallen Megatron",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Who's Superior?",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "Assurance",
+                "boss": "Dark of the Moon Bumblebee",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "And Then There Were Five",
+                "boss": "Soundwave",
+                "boss_client_id": "soundwave_gs",
+                "boss_match": "high"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "act": 3,
+        "name": "A Shocking Farewell",
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Council In Crisis",
+            "missions": [
+              {
+                "name": "TCLOG Troublezzz",
+                "boss": "Waspinator",
+                "boss_client_id": "waspinator_gs_deluxe",
+                "boss_match": "high"
+              },
+              {
+                "name": "Cure Seeker",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "Power Shift",
+                "boss": "Revenge of the Fallen Mixmaster",
+                "boss_client_id": "mixmaster_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Certified Kills",
+                "boss": "Arcee",
+                "boss_client_id": "arcee_gs_deluxe2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "Evolution",
+                "boss": "Demolitions Sharkticon",
+                "boss_client_id": "sharkticon_gs_demolition",
+                "boss_match": "high"
+              },
+              {
+                "name": "Proof of Death",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Deadly Alliances",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Showdown",
+            "missions": []
+          },
+          {
+            "chapter": "4",
+            "name": "Shocking Answers",
+            "missions": []
+          }
+        ]
+      },
+      {
+        "act": 4,
+        "name": "Awaken and Corrupt",
+        "chapters": [
+          {
+            "chapter": "I",
+            "name": "Autobots Turn",
+            "missions": [
+              {
+                "name": "Wrong Place, Wrong Time",
+                "boss": null
+              },
+              {
+                "name": "Fight Fire with Fire",
+                "boss": null
+              },
+              {
+                "name": "Blast from the Past",
+                "boss": null
+              },
+              {
+                "name": "Mixed Messages",
+                "boss": null
+              },
+              {
+                "name": "Herald of Destruction",
+                "boss": null
+              },
+              {
+                "name": "Dark Arrival",
+                "boss": null
+              }
+            ]
+          },
+          {
+            "chapter": "II",
+            "name": "Decepticons Burn",
+            "missions": [
+              {
+                "name": "Fuel",
+                "boss": null
+              },
+              {
+                "name": "Fire",
+                "boss": null
+              },
+              {
+                "name": "Desire",
+                "boss": null
+              },
+              {
+                "name": "Burn",
+                "boss": null
+              },
+              {
+                "name": "Face",
+                "boss": null
+              },
+              {
+                "name": "Upon the Chrome",
+                "boss": null
+              }
+            ]
+          },
+          {
+            "chapter": "III",
+            "name": "Hit the Road",
+            "missions": []
+          },
+          {
+            "chapter": "IV",
+            "name": "And I Saw!",
+            "missions": []
+          }
+        ]
+      }
+    ],
+    "story_page": {
+      "revid": 7763,
+      "timestamp": "2020-07-13T07:46:42Z"
+    },
+    "other_act_pages": {
+      "A Bad Name": {
+        "revid": 10131,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "",
+            "missions": [
+              {
+                "index": 1,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 2,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 3,
+                "name": "",
+                "boss": null
+              }
+            ]
+          }
+        ]
+      },
+      "A Glass Darkly": {
+        "revid": 9985,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "",
+            "missions": [
+              {
+                "index": 1,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 2,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 3,
+                "name": "",
+                "boss": null
+              }
+            ]
+          }
+        ]
+      },
+      "A Lesson Learned in Time": {
+        "revid": 10356,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "",
+            "missions": [
+              {
+                "index": 1,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 2,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 3,
+                "name": "",
+                "boss": null
+              }
+            ]
+          }
+        ]
+      },
+      "A Question of Loyalty": {
+        "revid": 7677,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Gone Rouge",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Volatile Reunion",
+            "missions": []
+          },
+          {
+            "chapter": "1",
+            "name": "Gone Rouge",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Volatile Reunion",
+            "missions": []
+          }
+        ]
+      },
+      "A Shocking Farewell": {
+        "revid": 7624,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Council In Crisis",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Deadly Alliances",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Showdown",
+            "missions": []
+          },
+          {
+            "chapter": "4",
+            "name": "Shocking Answers",
+            "missions": []
+          }
+        ]
+      },
+      "A Tale of Two Stingers": {
+        "revid": 7713,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Venom",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Toxin",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Poison",
+            "missions": []
+          }
+        ]
+      },
+      "Awaken and Corrupt": {
+        "revid": 10143,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Autobots Turn:",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Wrong Pace, Wrong Time",
+                "boss": "Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Fight Fire With Fire",
+                "boss": "Jetfire",
+                "boss_client_id": "jetfire_gs_leader2014",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Blast From The Past",
+                "boss": "Bumblebee (DOTM)",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "index": 4,
+                "name": "Mixed Messages",
+                "boss": "Blaster",
+                "boss_client_id": "blaster_gs_leader2016",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Herald Of Destruction",
+                "boss": "Shockwave",
+                "boss_client_id": "shockwave_gs",
+                "boss_match": "high"
+              },
+              {
+                "index": 6,
+                "name": "Dark Arrival",
+                "boss": "Megatronus",
+                "boss_client_id": "megatronus_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Decepticons Burn",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Fuel",
+                "boss": "Cheetor",
+                "boss_client_id": "cheetor_bw_transmetal",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Fire",
+                "boss": "Soundwave",
+                "boss_client_id": "soundwave_gs",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Desire",
+                "boss": "Megatron",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "index": 4,
+                "name": "Burn",
+                "boss": "Thundercracker",
+                "boss_client_id": "thundercracker_gs_leader2015",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Face",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "index": 6,
+                "name": "Upon The Chrome",
+                "boss": "Megatronus",
+                "boss_client_id": "megatronus_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "3",
+            "name": "Hit The Road",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Haste",
+                "boss": "Hound",
+                "boss_client_id": "hound_cin_tlk",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Heated",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Accelerated",
+                "boss": "Sideswipe",
+                "boss_client_id": "sideswipe_gs",
+                "boss_match": "high"
+              },
+              {
+                "index": 4,
+                "name": "Angered",
+                "boss": "Hot Rod",
+                "boss_client_id": "hotrod_cin_tlk",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Velocity",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "index": 6,
+                "name": "Vexed",
+                "boss": "Nemesis Prime",
+                "boss_client_id": "nemesisprime_gs_voyager2015",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "4",
+            "name": "And I Saw",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Horn of Doom",
+                "boss": "Rhinox",
+                "boss_client_id": "rhinox_gs_voyager2014",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Crown of Conquest",
+                "boss": "Kickback",
+                "boss_client_id": "kickback_gs_kabam",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Sword of War",
+                "boss": "Tantrum",
+                "boss_client_id": "tantrum_gs_kabam",
+                "boss_match": "high"
+              },
+              {
+                "index": 4,
+                "name": "Scales of Famine",
+                "boss": "Nemesis Prime",
+                "boss_client_id": "nemesisprime_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Vision of Death",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "index": 6,
+                "name": "Darkness of Eternity",
+                "boss": "Necrotronus",
+                "boss_client_id": "necrotronus_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          }
+        ]
+      },
+      "Bring the Noise": {
+        "revid": 3814,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Noise Disturbance",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Put It on Blast",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Last Dance",
+            "missions": []
+          }
+        ]
+      }
+    }
+  },
+  "latest": {
+    "story_acts": [
+      {
+        "act": 1,
+        "name": "Meet your Makers",
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Realities Collide",
+            "missions": [
+              {
+                "name": "A Beast to Start",
+                "boss": "Rhinox",
+                "boss_client_id": "rhinox_gs_voyager2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "A Slow Learner",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Me Have Mod",
+                "boss": "Grimlock",
+                "boss_client_id": "grimlock_gs_mp08",
+                "boss_match": "high"
+              },
+              {
+                "name": "Good Cop Bad Cop",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "The Way of the Blade",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "name": "Hail Who?",
+                "boss": "Revenge of the Fallen Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Revelations",
+            "missions": [
+              {
+                "name": "In Due Time",
+                "boss": "Revenge of the Fallen Ironhide",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Anger Management",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "name": "Don't Go Judging",
+                "boss": "Sideswipe",
+                "boss_client_id": "sideswipe_gs",
+                "boss_match": "high"
+              },
+              {
+                "name": "A Scout No More",
+                "boss": "Dark of the Moon Bumblebee",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Loyalty Points",
+                "boss": "Arcee",
+                "boss_client_id": "arcee_gs_deluxe2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "The Quintessance",
+                "boss": "Ratchet",
+                "boss_client_id": "ratchet_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "3",
+            "name": "Shark Attack",
+            "missions": [
+              {
+                "name": "We'll Need A Bigger Blaster",
+                "boss": "Sharkticon Scout",
+                "boss_client_id": "sharkticon_gs_scout",
+                "boss_match": "high"
+              },
+              {
+                "name": "Appearing Act",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "Are You Not Entertained?",
+                "boss": "Revenge of the Fallen Ironhide",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "It's In Our DNA",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "Power Seeker",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "School the Sharks",
+                "boss": "Sharkticon Brawler",
+                "boss_client_id": "sharkticon_gs_brawler",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "4",
+            "name": "Under Control",
+            "missions": [
+              {
+                "name": "Voices",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "Hold It Down",
+                "boss": "Sideswipe",
+                "boss_client_id": "sideswipe_gs",
+                "boss_match": "high"
+              },
+              {
+                "name": "Code Violation",
+                "boss": "Prowl",
+                "boss_client_id": "prowl_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "The Long Game",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Optimum Outcome",
+                "boss": "MV1 Optimus Prime",
+                "boss_client_id": "optimusprime_cin_tf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Shackle Me Not",
+                "boss": "Revenge of the Fallen Megatron",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "act": 2,
+        "name": "Dissension and Ascension",
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Secrets",
+            "missions": [
+              {
+                "name": "Echoes",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "name": "Butt Heads",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "name": "Who's Your Master?",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Scout's Honor",
+                "boss": "Rhinox",
+                "boss_client_id": "rhinox_gs_voyager2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "Believe The Mirage",
+                "boss": "Revenge of the Fallen Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Machinations",
+                "boss": "Revenge of the Fallen Ironhide",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Quintessential Quintessons",
+            "missions": [
+              {
+                "name": "Spy Games",
+                "boss": "Revenge of the Fallen Grindor",
+                "boss_client_id": "grindor_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Just An Illusion",
+                "boss": "Ultra Magnus",
+                "boss_client_id": "ultramagnus_gs_leader",
+                "boss_match": "high"
+              },
+              {
+                "name": "T-Cog Probs",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "Origins",
+                "boss": "Tech Sharkticon",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Dear Diary",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "name": "History On Repeat",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "3",
+            "name": "Into the Darkness",
+            "missions": [
+              {
+                "name": "Warriors At The Gate",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "name": "Join The Army",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "Miner Relief",
+                "boss": "Revenge of the Fallen Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Insecurities",
+                "boss": "Grimlock",
+                "boss_client_id": "grimlock_gs_mp08",
+                "boss_match": "high"
+              },
+              {
+                "name": "Head Gamezzz",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "name": "No Petty Relic",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "4",
+            "name": "Treacherous Returns",
+            "missions": [
+              {
+                "name": "Are You Not Sentient",
+                "boss": "Demolitions Sharkticon",
+                "boss_client_id": "sharkticon_gs_demolition",
+                "boss_match": "high"
+              },
+              {
+                "name": "By The Blood of Unicron",
+                "boss": "Revenge of the Fallen Grindor",
+                "boss_client_id": "grindor_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Descent Into Depravity",
+                "boss": "Revenge of the Fallen Megatron",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "Who's Superior?",
+                "boss": "Dark of the Moon Barricade",
+                "boss_client_id": "barricade_cin_dotm",
+                "boss_match": "high"
+              },
+              {
+                "name": "Assurance",
+                "boss": "Dark of the Moon Bumblebee",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "name": "And Then There Were Five",
+                "boss": "Soundwave",
+                "boss_client_id": "soundwave_gs",
+                "boss_match": "high"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "act": 3,
+        "name": "A Shocking Farewell",
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Council In Crisis",
+            "missions": [
+              {
+                "name": "TCLOG Troublezzz",
+                "boss": "Waspinator",
+                "boss_client_id": "waspinator_gs_deluxe",
+                "boss_match": "high"
+              },
+              {
+                "name": "Cure Seeker",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "name": "Power Shift",
+                "boss": "Revenge of the Fallen Mixmaster",
+                "boss_client_id": "mixmaster_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "name": "Certified Kills",
+                "boss": "Arcee",
+                "boss_client_id": "arcee_gs_deluxe2014",
+                "boss_match": "high"
+              },
+              {
+                "name": "Evolution",
+                "boss": "Demolitions Sharkticon",
+                "boss_client_id": "sharkticon_gs_demolition",
+                "boss_match": "high"
+              },
+              {
+                "name": "Proof of Death",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Deadly Alliances",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Showdown",
+            "missions": []
+          },
+          {
+            "chapter": "4",
+            "name": "Shocking Answers",
+            "missions": []
+          }
+        ]
+      },
+      {
+        "act": 4,
+        "name": "Awaken and Corrupt",
+        "chapters": [
+          {
+            "chapter": "I",
+            "name": "Autobots Turn",
+            "missions": [
+              {
+                "name": "Wrong Place, Wrong Time",
+                "boss": null
+              },
+              {
+                "name": "Fight Fire with Fire",
+                "boss": null
+              },
+              {
+                "name": "Blast from the Past",
+                "boss": null
+              },
+              {
+                "name": "Mixed Messages",
+                "boss": null
+              },
+              {
+                "name": "Herald of Destruction",
+                "boss": null
+              },
+              {
+                "name": "Dark Arrival",
+                "boss": null
+              }
+            ]
+          },
+          {
+            "chapter": "II",
+            "name": "Decepticons Burn",
+            "missions": [
+              {
+                "name": "Fuel",
+                "boss": null
+              },
+              {
+                "name": "Fire",
+                "boss": null
+              },
+              {
+                "name": "Desire",
+                "boss": null
+              },
+              {
+                "name": "Burn",
+                "boss": null
+              },
+              {
+                "name": "Face",
+                "boss": null
+              },
+              {
+                "name": "Upon the Chrome",
+                "boss": null
+              }
+            ]
+          },
+          {
+            "chapter": "III",
+            "name": "Hit the Road",
+            "missions": []
+          },
+          {
+            "chapter": "IV",
+            "name": "And I Saw!",
+            "missions": []
+          }
+        ]
+      }
+    ],
+    "story_page": {
+      "revid": 7763,
+      "timestamp": "2020-07-13T07:46:42Z"
+    },
+    "other_act_pages": {
+      "A Bad Name": {
+        "revid": 10131,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "",
+            "missions": [
+              {
+                "index": 1,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 2,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 3,
+                "name": "",
+                "boss": null
+              }
+            ]
+          }
+        ]
+      },
+      "A Glass Darkly": {
+        "revid": 9985,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "",
+            "missions": [
+              {
+                "index": 1,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 2,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 3,
+                "name": "",
+                "boss": null
+              }
+            ]
+          }
+        ]
+      },
+      "A Lesson Learned in Time": {
+        "revid": 10356,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "",
+            "missions": [
+              {
+                "index": 1,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 2,
+                "name": "",
+                "boss": null
+              },
+              {
+                "index": 3,
+                "name": "",
+                "boss": null
+              }
+            ]
+          }
+        ]
+      },
+      "A Question of Loyalty": {
+        "revid": 7677,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Gone Rouge",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Volatile Reunion",
+            "missions": []
+          },
+          {
+            "chapter": "1",
+            "name": "Gone Rouge",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Volatile Reunion",
+            "missions": []
+          }
+        ]
+      },
+      "A Shocking Farewell": {
+        "revid": 7624,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Council In Crisis",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Deadly Alliances",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Showdown",
+            "missions": []
+          },
+          {
+            "chapter": "4",
+            "name": "Shocking Answers",
+            "missions": []
+          }
+        ]
+      },
+      "A Tale of Two Stingers": {
+        "revid": 7713,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Venom",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Toxin",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Poison",
+            "missions": []
+          }
+        ]
+      },
+      "Awaken and Corrupt": {
+        "revid": 10143,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Autobots Turn:",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Wrong Pace, Wrong Time",
+                "boss": "Bonecrusher",
+                "boss_client_id": "bonecrusher_cin_rotf",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Fight Fire With Fire",
+                "boss": "Jetfire",
+                "boss_client_id": "jetfire_gs_leader2014",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Blast From The Past",
+                "boss": "Bumblebee (DOTM)",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "index": 4,
+                "name": "Mixed Messages",
+                "boss": "Blaster",
+                "boss_client_id": "blaster_gs_leader2016",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Herald Of Destruction",
+                "boss": "Shockwave",
+                "boss_client_id": "shockwave_gs",
+                "boss_match": "high"
+              },
+              {
+                "index": 6,
+                "name": "Dark Arrival",
+                "boss": "Megatronus",
+                "boss_client_id": "megatronus_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "2",
+            "name": "Decepticons Burn",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Fuel",
+                "boss": "Cheetor",
+                "boss_client_id": "cheetor_bw_transmetal",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Fire",
+                "boss": "Soundwave",
+                "boss_client_id": "soundwave_gs",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Desire",
+                "boss": "Megatron",
+                "boss_client_id": null,
+                "boss_match": "ambiguous"
+              },
+              {
+                "index": 4,
+                "name": "Burn",
+                "boss": "Thundercracker",
+                "boss_client_id": "thundercracker_gs_leader2015",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Face",
+                "boss": "Starscream",
+                "boss_client_id": null,
+                "boss_match": "none"
+              },
+              {
+                "index": 6,
+                "name": "Upon The Chrome",
+                "boss": "Megatronus",
+                "boss_client_id": "megatronus_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "3",
+            "name": "Hit The Road",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Haste",
+                "boss": "Hound",
+                "boss_client_id": "hound_cin_tlk",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Heated",
+                "boss": "Motormaster",
+                "boss_client_id": "motormaster_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Accelerated",
+                "boss": "Sideswipe",
+                "boss_client_id": "sideswipe_gs",
+                "boss_match": "high"
+              },
+              {
+                "index": 4,
+                "name": "Angered",
+                "boss": "Hot Rod",
+                "boss_client_id": "hotrod_cin_tlk",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Velocity",
+                "boss": "Mirage",
+                "boss_client_id": "mirage_gs_deluxe2016",
+                "boss_match": "high"
+              },
+              {
+                "index": 6,
+                "name": "Vexed",
+                "boss": "Nemesis Prime",
+                "boss_client_id": "nemesisprime_gs_voyager2015",
+                "boss_match": "high"
+              }
+            ]
+          },
+          {
+            "chapter": "4",
+            "name": "And I Saw",
+            "missions": [
+              {
+                "index": 1,
+                "name": "Horn of Doom",
+                "boss": "Rhinox",
+                "boss_client_id": "rhinox_gs_voyager2014",
+                "boss_match": "high"
+              },
+              {
+                "index": 2,
+                "name": "Crown of Conquest",
+                "boss": "Kickback",
+                "boss_client_id": "kickback_gs_kabam",
+                "boss_match": "high"
+              },
+              {
+                "index": 3,
+                "name": "Sword of War",
+                "boss": "Tantrum",
+                "boss_client_id": "tantrum_gs_kabam",
+                "boss_match": "high"
+              },
+              {
+                "index": 4,
+                "name": "Scales of Famine",
+                "boss": "Nemesis Prime",
+                "boss_client_id": "nemesisprime_gs_voyager2015",
+                "boss_match": "high"
+              },
+              {
+                "index": 5,
+                "name": "Vision of Death",
+                "boss": "Bludgeon",
+                "boss_client_id": "bludgeon_gs_rd20",
+                "boss_match": "high"
+              },
+              {
+                "index": 6,
+                "name": "Darkness of Eternity",
+                "boss": "Necrotronus",
+                "boss_client_id": "necrotronus_gs_kabam",
+                "boss_match": "high"
+              }
+            ]
+          }
+        ]
+      },
+      "Bring the Noise": {
+        "revid": 3814,
+        "chapters": [
+          {
+            "chapter": "1",
+            "name": "Noise Disturbance",
+            "missions": []
+          },
+          {
+            "chapter": "2",
+            "name": "Put It on Blast",
+            "missions": []
+          },
+          {
+            "chapter": "3",
+            "name": "Last Dance",
+            "missions": []
+          }
+        ]
+      }
+    }
+  }
+}

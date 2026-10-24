@@ -441,3 +441,23 @@ the active-team object source), not a simple alias. [RUN]
 - [RUN] BOTS + Windblade details/INFO screens open without NRE; the
   displayed rating is 300, while wiki star-1 Windblade says 264.
   Rating formula/inputs remain unresolved (R2).
+
+### 19. C4 localization count reconciliation (2026-10-24)
+
+- Broad scan of `work/unpacked/assets/bin/Data` for any `"k": "..."` key
+  (not requiring the extractor's adjacent `"v"`) finds **7996** unique
+  keys. 127 of them are not in `work/localization_all.json`; they are AI /
+  tuning fields (`Aggressiveness`, `BlockDelayUnderAttack`,
+  `CD_DashCombo_Weight`, numeric strings, etc.), not UI localization.
+- `work/localization_all.json` has **7869** localization keys. The legacy
+  **7994** is within 2 of the broad 7996 count, so the difference is
+  explained by counting those 127 config keys (and two empty/numeric edge
+  keys), not by missing localization text. Do not use 7994 as the
+  localization total.
+- `localization_all.json` and `ability_localization_client.json` agree
+  exactly on **3315** stat strings: 8 `D_STAT` + 3307 `ID_STAT`, no
+  duplicates. The legacy **3332** cannot be reproduced from the current
+  assets; 17 keys are unaccounted. `global-metadata.dat` contains only
+  `D_STATE`/`ID_STATE`, not 17 extra stat strings.
+- Evidence: `work/analyze_localization_count.py`,
+  `work/analyze_stat_count.py`.
