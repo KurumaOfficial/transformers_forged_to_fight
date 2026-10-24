@@ -32,3 +32,4 @@ work/rva_map.json
 work/all_game_classes.json
 work/*.zip
 tests/screens/
+work/*.txt

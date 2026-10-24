@@ -354,6 +354,12 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             mode_team["aid"] = "story"
             mode_team["activityID"] = "story"
             active_teams.append(mode_team)
+            set_id = body.get("setId") if isinstance(body, dict) else None
+            if set_id:
+                set_team = json.loads(json.dumps(team_obj))
+                set_team["aid"] = str(set_id)
+                set_team["activityID"] = str(set_id)
+                active_teams.append(set_team)
             quest["teamData"] = {
                 "userData": {
                     "blueprintsMax": ud.get("blueprintsMax", 50),
