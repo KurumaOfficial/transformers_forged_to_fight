@@ -212,3 +212,55 @@ No Frida/gadget/patches without consent.
 - `server/data/autorefresh_metadata.json` used by `/autorefresh/*`; golden
   regression PASS after restart.
 - A3: 10 variants; activeTeams must be a list for login (v07 proved).
+
+## 15. 2026-10-24: exact prefight blocker is the provider, not the team
+
+- [RUN] The live prefight (TFTF_AVD, 2280x1080) shows `SELECT YOUR BOT`,
+  empty slot, `FIGHT!`. Tapping FIGHT logs
+  `NullReferenceException` at `PreFightScreen.OnFight`, not
+  `PrefightScreenPresentation.GetNewScale`.
+- [STATIC] `PreFightScreen.OnFight` (`0xE397BC`) first does
+  `x20 = [this+0x98]` (`_model`, `IPrefightDataProvider`), `cbz` -> throw.
+  The model is **null**; the rest of the method never runs.
+- [STATIC] `_model` is assigned in `PreFightScreen.CacheReferences`
+  (`0xE38E4C`) at `0xE38F08`:
+  `x0 = [0x2BE2870]` (the `Get<IPrefightDataProvider>` generic method
+  instantiation) -> `InterfaceInjector.Get<IPrefightDataProvider>`
+  (`0x11E7640`) -> store at `this+0x98`.
+- [RUN] Read-only probe (`work/read_injector.py`, `work/read_tag.py`,
+  correct libil2cpp base `rw_start - 0x2AA7000`):
+  - `_currentTag = "tform"`, `_hasBeenInitialized = 1`
+  - `_gameInterfaces` count **78**
+  - `_persistentInterfaces` count **1** =
+    `IAdsProvider -> TFormIronSourceAdsModel`
+  - 78 interface entries: entry 0 has tags `["tform","default"]`; all
+    other 77 entries have only `["default"]`. Under the live tag `tform`
+    only entry 0 resolves.
+  - The tag is already `tform` on HomeFlow after a cold login, so it is
+    not caused by the quest map. This is the current top hypothesis for
+    the null provider; it is not yet proven that the prefight interface
+    is one of the 77 default-only entries.
+- [RUN] Team data is **not** the blocker any more. With the current
+  `bcg_login_data.json` / movedir response:
+  - `BCGManager.UserData.activeTeams` has `story_act1_ch1_m1`, `story`,
+    `story_act_1`, each with `TeamHeroes count=1`
+  - `QuestsManager` active quest mode `story`
+  - `progression.localPlayer.team` is a `List` with **count 1**
+  - `localPlayer.strongestHero = bumblebee_cin_dotm`
+  - prefight UI is still empty because `PreFightScreen._model` is null.
+- [RUN] `work/smoke_test.py` was run this session and returned FAIL only
+  because the fixed sleeps are too short on the current cold boot
+  (screenshot 02 was still the title screen). The flow itself reaches the
+  prefight manually. This is a test-harness timing bug, not a server
+  regression. The script needs screen polling (P0 S).
+- [RUN] `work/golden_regression.py` (default check mode) reports 9 checks,
+  2 shape changes: `/quests/quest-list` (we added the correct
+  `showUI`/`group`/`recommendMinLevel` keys) and
+  `/quests/quest-movedir/...` (current battle-action stub). Re-record
+  after the P0 S flow is stable.
+- [STATIC] `QuestActionResult..ctor` reads `data["action"]` as an
+  **IDictionary** (`0xEA2BA4`), then looks up `moveto`/`battle`/... inside
+  it. The working wire shape is
+  `{"action":{"moveto":{"x":1,"y":0}}}` (nested), not
+  `{"action":"moveto","moveto":{...}}`. The LEDGER 9 shorthand was
+  imprecise; the stub already sends the nested shape.

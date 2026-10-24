@@ -391,3 +391,23 @@ the active-team object source), not a simple alias. [RUN]
   other 323 (present) and corresponding error categories.
 - I1: `server/data/autorefresh_metadata.json` extracted and used by routing;
   behavior verified by golden regression. Full routing/data split still open.
+
+### 16. Prefight provider / injector (2026-10-24)
+
+- `PreFightScreen._model` (`+0x98`) is null at runtime; FIGHT NRE is at
+  `PreFightScreen.OnFight` `0xE397BC` before any team access. [RUN]
+- `CacheReferences` (`0xE38E4C`) obtains the provider exclusively through
+  `InterfaceInjector.Get<IPrefightDataProvider>` (`0x11E7640`). There is
+  no direct `new PrefightScreenData` BL in the binary. [STATIC]
+- Injector runtime state (`work/read_tag.py`): tag `tform`, 78 interface
+  entries, one persistent interface (`IAdsProvider` ->
+  `TFormIronSourceAdsModel`). Entry 0 has `tform`+`default`; entries 1..77
+  have `default` only. [RUN]
+- Therefore changing `activeTeams`, `TeamHeroes`, `teamData`, `team`,
+  `hp`, `pi`, `localPlayer` cannot fill the prefight: those paths are
+  never reached. The earlier "team count 0" was a probe/timing artifact;
+  the current live team count is 1. [RUN]
+- `smoke_test.py` cold-boot timing is too tight (02_title still title);
+  the manual flow reaches the prefight. [RUN]
+- `golden_regression.py`: 2 shape changes expected after the quest-list
+  key correction and current movedir battle stub; re-record pending. [RUN]

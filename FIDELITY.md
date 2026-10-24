@@ -135,3 +135,17 @@ after 5 stale-hash corrections; C5 catalog 59 packs; C2 formula partial.
 | Wiki bot stats/abilities | medium-high | 44 bots, synergy 40/44, some fields missing |
 | Client bot catalog | high for IDs/classes | 59 packs, 59 class/faction, 39 stars |
 | OpenAPI/tuning/localization | partial | C1/C3/C4 open |
+
+### 2026-10-24: prefight provider
+
+The FIGHT NRE is `PreFightScreen.OnFight` (`0xE397BC`) because
+`PreFightScreen._model` (`+0x98`) is null, not because the team is empty.
+The provider is fetched only via
+`InterfaceInjector.Get<IPrefightDataProvider>` (`0x11E7640`) in
+`CacheReferences` (`0xE38F08`). Live injector state: tag `tform`, 78
+interfaces, one persistent (`IAdsProvider -> TFormIronSourceAdsModel`),
+all but entry 0 default-only. The current roster/team probes show
+`TeamHeroes count=1` and `localPlayer.team count=1`, so team-data
+variants cannot fix the prefight until the provider is resolved.
+[RUN] `work/read_bcg_memory.py`, `work/read_tag.py`,
+`work/read_injector.py`; [STATIC] `0xE397BC`, `0xE38E4C`, `0x11E7640`.

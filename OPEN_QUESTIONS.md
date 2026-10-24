@@ -85,3 +85,21 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - A3 (update): 10 variants run; v07 (activeTeams as dict) broke login, so the
   login parser expects a list. This narrows the next test to team-element
   contents, not the activeTeams container itself.
+
+## 6. Prefight provider blocker (2026-10-24)
+
+- `PreFightScreen._model` (`+0x98`) is **null**; FIGHT NRE is
+  `PreFightScreen.OnFight` `0xE397BC`, and no team code is reached. [RUN]
+- Model source: `CacheReferences` `0xE38F08` ->
+  `InterfaceInjector.Get<IPrefightDataProvider>` `0x11E7640`. [STATIC]
+- Live injector: tag `tform`, 78 interfaces, persistent = 1
+  (`IAdsProvider -> TFormIronSourceAdsModel`). Under `tform` only entry 0
+  resolves; the other 77 entries are `default`-only. [RUN]
+- Open: is `IPrefightDataProvider` one of the default-only entries, or
+  missing from the map? Need a runtime resolution of the 78 interface
+  names (RuntimeType handles are Mono-style handles, not Il2CppClass
+  pointers) or a call-site trace.
+- Team is no longer the blocker: active team and `localPlayer.team` both
+  count 1 with the current stub. [RUN]
+- P0 S: `smoke_test.py` needs polling instead of fixed sleeps; it
+  false-FAILs on a slow cold boot. [RUN]

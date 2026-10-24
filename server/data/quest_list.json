@@ -351,6 +351,10 @@
     "recommendMinLevel": 0,
     "timeLimit": 0,
     "timeLimitGrace": 0,
-    "use_ui_color": false
+    "use_ui_color": false,
+    "difficulty_label": "Normal",
+    "tags": [
+      "story"
+    ]
   }
 ]
