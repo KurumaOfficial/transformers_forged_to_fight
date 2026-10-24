@@ -362,3 +362,8 @@ Final full-smoke note (2026-10-24): repeated after W3; still PASS. The
 post-flow BOTS sub-run hit Home due to a scene-load race, so Windblade INFO
 evidence is `work/final_windblade.jpg` (earlier run), not the latest
 `tests/smoke/10b_bot_info.png`.
+
+R5 addendum (2026-10-24): top-left account icon -> KABAM ACCOUNT? ->
+LOGIN OPTIONS (KABAM/GOOGLE PLAY), with `/invites/privacy` and
+`/benchmark/performance`; not the commander profile. CRYSTALS opens empty,
+OBJECTIVES opens `[0/0] COMPLETE`, STORE is level-locked.
