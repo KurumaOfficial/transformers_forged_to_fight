@@ -208,3 +208,13 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - S2 done: check_all prints target checks and xfail state.
 - T5 done: MASTER_PROMPT v4.3.
 - Next independent items: S1 59-bot sweep; R1/R2; Q1/Q2; C1/C3; W1/W2.
+
+## 13. R1 growth curve (2026-10-24)
+
+- 36/44 wiki bots have >=3 stat-table rows. A linear rank+level fit is
+  rejected (HP RMSE up to 7,267; Attack usually 50–250). Growth is a
+  curve/table, not a plane. `spec/stat_growth_fit.md`,
+  `data/wiki/stat_growth_fit.json`.
+- 47 client bots without a star-1 table remain `[ASSUMED]`; do not use the
+  fit as wiki data. Next: piecewise per-rank curves and the client
+  `curves`/`attributeGrowthDefs`.

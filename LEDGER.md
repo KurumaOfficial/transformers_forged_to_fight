@@ -498,3 +498,14 @@ the active-team object source), not a simple alias. [RUN]
   - `/quests/quest-list`: shape unchanged; values now use `showUI`/`group`/
     `recommendMinLevel`.
 - Rule: re-record only with a reason in this ledger.
+
+### 22. R1 stat growth fit (2026-10-24)
+
+- Parsed 36 bots with >=3 wiki `stat_tables` rows.
+- Linear `stat = a*rank + b*level + c` is rejected: HP RMSE often 700–1,000,
+  worst 7,267 (Hot Rod); Attack RMSE usually 50–250.
+- Best: Mixmaster (HP 457 / ATK 24.9); Waspinator/Rhinox have column-order
+  issues (low HP error, very high Attack error).
+- Conclusion: growth is a curve/table, not a linear plane. Do not derive the
+  47 no-table bots from this fit. See `spec/stat_growth_fit.md`,
+  `data/wiki/stat_growth_fit.json`, `work/fit_stat_growth.py`.
