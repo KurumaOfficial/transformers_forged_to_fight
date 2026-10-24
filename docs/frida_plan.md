@@ -74,3 +74,9 @@ Do **not** run Frida yet. First exhaust the read-only route:
 
 If those fail, the least invasive dynamic option is a rooted **ARM64** device
 with Frida server, not a gadget in the APK. Await the user's decision.
+
+Update A9: the registry entry is now resolved; the remaining static/memory
+gap is the generic type identity at the call site (`0x2BE2870`) and the
+runtime `Activator.CreateInstance` result. Frida would still be needed to
+observe the exact `Get<T>` argument and creation failure if static resolution
+fails.

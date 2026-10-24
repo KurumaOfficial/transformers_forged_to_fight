@@ -367,3 +367,11 @@ R5 addendum (2026-10-24): top-left account icon -> KABAM ACCOUNT? ->
 LOGIN OPTIONS (KABAM/GOOGLE PLAY), with `/invites/privacy` and
 `/benchmark/performance`; not the commander profile. CRYSTALS opens empty,
 OBJECTIVES opens `[0/0] COMPLETE`, STORE is level-locked.
+
+## 18. 2026-10-24: A1–A4 registry result
+
+`docs/prefight_flow.md` added. Key: `IPrefightDataProvider` is injector entry
+69, default-only (`PrefightScreenData`); live tag `tform`; `Get<T>` has a
+default fallback, so the null points to a type-identity/ContainsKey or
+call-site-interface mismatch. `IAdsProvider` is the only tform entry. BOTS is
+not an injector consumer. No provider error in logcat before the NRE.

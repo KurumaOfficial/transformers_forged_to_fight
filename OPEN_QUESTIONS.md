@@ -137,3 +137,17 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
 - 3315 stat entries are exact; 3332 remains legacy/unreproducible
   (17 unaccounted). `data/wiki/ability_localization_client.json` is the
   current authoritative extraction.
+
+## 9. P0 provider: registry resolved (2026-10-24)
+
+- `IPrefightDataProvider` is injector entry **69** with only
+  `default -> PrefightScreenData`; live tag is `tform`. `Get<T>` has a
+  default fallback in code, so the null is likely a `ContainsKey`/type
+  identity mismatch or a wrong call-site interface, not a missing
+  implementation.
+- Need to resolve the `0x2BE2870` method-info generic argument; compare it
+  with entry 69. Then test settings/profile (default-only entries) under
+  `tform` to distinguish tag vs type identity.
+- A5/A6: not yet run; A5 must test the boss-tile trigger and map/prefight
+  registry snapshots; A6 variants cannot alter a static registry, only the
+  trigger.

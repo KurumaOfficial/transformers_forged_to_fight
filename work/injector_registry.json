@@ -1,0 +1,1260 @@
+{
+ "tag": "tform",
+ "interfaces": [
+  {
+   "index": 0,
+   "interface": [
+    "EB.Ads",
+    "IAdsProvider"
+   ],
+   "implementations": [
+    [
+     "tform",
+     [
+      "",
+      "TFormIronSourceAdsModel"
+     ]
+    ],
+    [
+     "default",
+     [
+      "EB.Ads",
+      "IronSourceAdsModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 1,
+   "interface": [
+    "",
+    "IGachaLimits"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "GachaLimitClient"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 2,
+   "interface": [
+    "",
+    "IAllianceHelpOverlayData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AllianceHelpOverlayModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 3,
+   "interface": [
+    "",
+    "IDialogueOverlayData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "DialogueOverayModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 4,
+   "interface": [
+    "",
+    "IAveBattleGroupInfoModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AVEBattleGroupInfoModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 5,
+   "interface": [
+    "",
+    "IArenaRequirementsPopupModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ArenaRequirementsPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 6,
+   "interface": [
+    "",
+    "IArenaRequirementsPopupCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ArenaRequirementsPopupCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 7,
+   "interface": [
+    "",
+    "IArenaRewardsPopupModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ArenaRewardsPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 8,
+   "interface": [
+    "",
+    "IArenaRewardsPopupCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ArenaRewardsPopupCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 9,
+   "interface": [
+    "",
+    "IAwayTeamPopupModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AwayTeamPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 10,
+   "interface": [
+    "",
+    "IBaseEditBuildingPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "BaseEditBuildingPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 11,
+   "interface": [
+    "",
+    "IBaseEditNodePopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "BaseEditNodePopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 12,
+   "interface": [
+    "",
+    "IBaseGachaPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "BaseGachaPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 13,
+   "interface": [
+    "",
+    "IBuildingSelectPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "BuildingSelectPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 14,
+   "interface": [
+    "",
+    "IChampionItemUseConfirmationModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ChampionItemUseConfirmationModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 15,
+   "interface": [
+    "",
+    "IDailyLoginModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "DailyLoginModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 16,
+   "interface": [
+    "",
+    "IDailyLoginCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "DailyLoginCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 17,
+   "interface": [
+    "",
+    "IDailyRewardPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "DailyRewardPopupData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 18,
+   "interface": [
+    "",
+    "IDefenderSelectPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "DefenderSelectPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 19,
+   "interface": [
+    "",
+    "IEnergySummaryPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "EnergySummaryPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 20,
+   "interface": [
+    "",
+    "IPaymentCardPurchasedPopupModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PaymentCardPurchasedPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 21,
+   "interface": [
+    "",
+    "IFightResultsPopupModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "FightResultsPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 22,
+   "interface": [
+    "",
+    "IFightResultsCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "FightResultsCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 23,
+   "interface": [
+    "",
+    "IFlashSaleDataProvider"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "FlashSaleModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 24,
+   "interface": [
+    "",
+    "IHeroConsumablesModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "HeroConsumablesData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 25,
+   "interface": [
+    "",
+    "IHeroConsumablesCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "HeroConsumablesCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 26,
+   "interface": [
+    "",
+    "IHowToAvePopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "HowToAvePopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 27,
+   "interface": [
+    "",
+    "IInventoryItemPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "InventoryItemPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 28,
+   "interface": [
+    "",
+    "IItemOverrideWarningPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ItemOverrideWarningPopupData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 29,
+   "interface": [
+    "",
+    "IItemUseChooseChampionModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ItemUseChooseChampionModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 30,
+   "interface": [
+    "",
+    "IItemUseSelectPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ItemUseSelectPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 31,
+   "interface": [
+    "",
+    "IKabamLoginIncentivePopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "KabamLoginIncentivePopupData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 32,
+   "interface": [
+    "",
+    "ILoginRewardsModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "LoginRewardsPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 33,
+   "interface": [
+    "",
+    "ILoginRewardsCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "LoginRewardsCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 34,
+   "interface": [
+    "",
+    "IMissionTeamSelectWarningPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "MissionTeamSelectWarningPopupData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 35,
+   "interface": [
+    "",
+    "INamePopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "NamePopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 36,
+   "interface": [
+    "",
+    "IPVPRaidOpponentReviewData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPRaidOpponentReviewData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 37,
+   "interface": [
+    "",
+    "IPVPRaidReportDetailsData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPRaidReportDetailsData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 38,
+   "interface": [
+    "",
+    "IPaymentCardsPopupModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PaymentCardsPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 39,
+   "interface": [
+    "",
+    "IPlayerProfileDataProvider"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PlayerProfileModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 40,
+   "interface": [
+    "",
+    "IQuestDetailsData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "QuestDetailsModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 41,
+   "interface": [
+    "",
+    "IQuitArenaPopupModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "QuitArenaPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 42,
+   "interface": [
+    "",
+    "IQuitArenaPopupCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "QuitArenaPopupCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 43,
+   "interface": [
+    "",
+    "IResourceSummaryPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "ResourceSummaryPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 44,
+   "interface": [
+    "",
+    "ISoloEventsPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "SoloEventsPopupModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 45,
+   "interface": [
+    "",
+    "ISummonerBoostsPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "SummonerBoostsPopupData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 46,
+   "interface": [
+    "",
+    "IUseItemPopupData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "UseItemPopupDefaultData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 47,
+   "interface": [
+    "",
+    "IUseItemsPopupCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "UseItemPopupDefaultCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 48,
+   "interface": [
+    "",
+    "IAVEBattleGroupSelectionModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AVEBattlegroupSelectionModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 49,
+   "interface": [
+    "",
+    "IAllianceNavScreenData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AllianceNavScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 50,
+   "interface": [
+    "",
+    "IAveHistoryScreenModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AveHistoryScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 51,
+   "interface": [
+    "",
+    "IAveLandingScreenModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AveLandingScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 52,
+   "interface": [
+    "",
+    "IAveResultsScreenModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "AveResultsScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 53,
+   "interface": [
+    "",
+    "IBuildingDetailsScreenData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "BuildingDetailsScreenData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 54,
+   "interface": [
+    "",
+    "IEditTeamData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "EditTeamModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 55,
+   "interface": [
+    "",
+    "IEditTeamCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "EditTeamCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 56,
+   "interface": [
+    "",
+    "IFightLandingData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "FightLandingModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 57,
+   "interface": [
+    "",
+    "GachaRevealDataProvider"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "GachaRevealModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 58,
+   "interface": [
+    "",
+    "IGoalsModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "GoalsModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 59,
+   "interface": [
+    "",
+    "IBaseLeaderboardModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "BaseLeaderboardModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 60,
+   "interface": [
+    "",
+    "IMasteriesScreenData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "MasteriesScreenData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 61,
+   "interface": [
+    "",
+    "IPVPArenaResultsScreenModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPArenaResultsScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 62,
+   "interface": [
+    "",
+    "IPVPMatchSeriesScreenModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPMatchSeriesScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 63,
+   "interface": [
+    "",
+    "IPVPMatchSeriesScreenCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPMatchSeriesScreenCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 64,
+   "interface": [
+    "",
+    "IPVPScreenCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPScreenCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 65,
+   "interface": [
+    "",
+    "IPVPScreenModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 66,
+   "interface": [
+    "",
+    "IPVPRaidResultsData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPRaidResultsData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 67,
+   "interface": [
+    "",
+    "IPVPRaidSelectDataProvider"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPRaidSelectDataProvider"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 68,
+   "interface": [
+    "",
+    "IPVPReportData"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PVPReportData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 69,
+   "interface": [
+    "",
+    "IPrefightDataProvider"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "PrefightScreenData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 70,
+   "interface": [
+    "",
+    "IQuestResultsDataProvider"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "QuestResultsScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 71,
+   "interface": [
+    "",
+    "IQuestResultsCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "QuestResultsCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 72,
+   "interface": [
+    "",
+    "IQuestSelectModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "QuestSelectData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 73,
+   "interface": [
+    "",
+    "ISettingsScreenDataProvider"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "SettingsScreenModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 74,
+   "interface": [
+    "",
+    "IMissionTeamSelect"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "MissionTeamSelectData"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 75,
+   "interface": [
+    "",
+    "ITeamSelectModel"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "TeamSelectModel"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 76,
+   "interface": [
+    "",
+    "ITeamSelectCallbacks"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "TeamSelectCallbacks"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 77,
+   "interface": [
+    "",
+    "IUpgradeScreenModelBase"
+   ],
+   "implementations": [
+    [
+     "default",
+     [
+      "",
+      "UpgradeScreenData"
+     ]
+    ]
+   ]
+  }
+ ]
+}

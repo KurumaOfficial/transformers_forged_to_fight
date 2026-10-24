@@ -461,3 +461,29 @@ the active-team object source), not a simple alias. [RUN]
   `D_STATE`/`ID_STATE`, not 17 extra stat strings.
 - Evidence: `work/analyze_localization_count.py`,
   `work/analyze_stat_count.py`.
+
+### 20. A1/A2/A3/A4: registry resolved (2026-10-24)
+
+- `work/dump_injector_names.py` resolves all 78 injector entries through
+  `Il2CppTypeDefinition.nameIndex` -> `global-metadata.dat` string table.
+- **`IPrefightDataProvider` is entry 69 with one implementation:
+  `default -> PrefightScreenData`.** It has no `tform` implementation.
+  `IAdsProvider` is the only entry with both `tform` and `default`.
+- Live `_currentTag = "tform"`, `_gameInterfaces = 78`, persistent = 1.
+- `Get<T>` (`0x11E7640`) does `ContainsKey` (0x11E7860), then iterates tuples:
+  current tag compare at `0x11E7950`, **default fallback at `0x11E7988`**,
+  then `Activator.CreateInstance` at `0x11E79E8`. So a default fallback
+  exists; the null means `ContainsKey(typeof(T))` failed, the call site is a
+  different interface, or `Activator.CreateInstance` returned null/threw.
+- `PrefightScreenData` is the only class implementing
+  `IPrefightDataProvider`; no story/arena/PvP variant.
+- `HeroesScreen` is not an injector consumer (uses `BCGHelper.GetHeroes`);
+  BOTS is not a working analog. Better analogs: `ISettingsScreenDataProvider`
+  (entry 73), `IPlayerProfileDataProvider` (entry 39), both default-only.
+- `Gameboard.OpenPreFightScreen` (`0xA550A0`) is called from
+  `Action_Battle`/`Action_Ambush`; it does not create `PrefightScreenData`
+  and does not register anything. `PrefightScreenData..ctor` has no direct
+  BL call, consistent with `Activator.CreateInstance`.
+- No provider/Injector error appears in logcat before the FIGHT NRE.
+  `QuestboardHud is inactive` was the only nearby warning.
+- Docs: `docs/prefight_flow.md` (Mermaid + addresses).
