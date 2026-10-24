@@ -1,0 +1,1445 @@
+{
+ "source": "work/il2cpp_dump/dump.cs",
+ "rows": [
+  {
+   "class": "AllianceScreen",
+   "bases": "Window",
+   "typedef": 10805,
+   "provider": "IAllianceNavScreenData (52)",
+   "endpoints": "/alliance",
+   "status": "locked (red lock) [RUN]"
+  },
+  {
+   "class": "ArenaRequirementsPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 9992,
+   "provider": "IArenaRequirementsPopupModel/Callbacks",
+   "endpoints": "/pvp",
+   "status": "locked at level 0 [RUN]"
+  },
+  {
+   "class": "BaseLeaderboardScreen",
+   "bases": "Window",
+   "typedef": 10854,
+   "provider": "IBaseLeaderboardModel (59)",
+   "endpoints": "/base",
+   "status": "not reached [STATIC]"
+  },
+  {
+   "class": "BusyBlocker",
+   "bases": "Window",
+   "typedef": 6212,
+   "provider": "none",
+   "endpoints": "-",
+   "status": "blocker [RUN]"
+  },
+  {
+   "class": "CriticalError",
+   "bases": "Window",
+   "typedef": 4973,
+   "provider": "none",
+   "endpoints": "-",
+   "status": "error overlay [RUN]"
+  },
+  {
+   "class": "EditTeamScreen",
+   "bases": "TFormWindow",
+   "typedef": 10918,
+   "provider": "IEditTeamData (57), IEditTeamCallbacks",
+   "endpoints": "/bcg/setSavedTeam",
+   "status": "opens; NRE in EditTeamModel.RefreshHeros if active team is empty [RUN]"
+  },
+  {
+   "class": "FullScreenBlocker",
+   "bases": "Window",
+   "typedef": 4759,
+   "provider": "none",
+   "endpoints": "-",
+   "status": "blocker [RUN]"
+  },
+  {
+   "class": "FuseODRBlocker",
+   "bases": "Window",
+   "typedef": 6275,
+   "provider": "none",
+   "endpoints": "-",
+   "status": "ODR blocker [RUN]"
+  },
+  {
+   "class": "FuseStoreScreen",
+   "bases": "Window",
+   "typedef": 13311,
+   "provider": "none",
+   "endpoints": "/store",
+   "status": "locked (level) [RUN]"
+  },
+  {
+   "class": "GachaPurchaseScreen",
+   "bases": "Window",
+   "typedef": 12983,
+   "provider": "none",
+   "endpoints": "/gacha",
+   "status": "locked/empty [RUN]"
+  },
+  {
+   "class": "GlobalEventHandler",
+   "bases": "Window",
+   "typedef": 9527,
+   "provider": "none",
+   "endpoints": "-",
+   "status": "global input [RUN]"
+  },
+  {
+   "class": "GoalsScreen",
+   "bases": "TFormWindow",
+   "typedef": 10990,
+   "provider": "IGoalsModel (58)",
+   "endpoints": "/objectives",
+   "status": "open; empty [0/0] because stub payload is empty [RUN]"
+  },
+  {
+   "class": "HeroesScreen",
+   "bases": "Window",
+   "typedef": 11010,
+   "provider": "none (BCGHelper.GetHeroes)",
+   "endpoints": "/bcg/getLoginData (cached)",
+   "status": "open, 59 cards [RUN]"
+  },
+  {
+   "class": "InventoryScreen",
+   "bases": "Window",
+   "typedef": 11053,
+   "provider": "none",
+   "endpoints": "/inventory",
+   "status": "locked (red lock) at level 0 [RUN]"
+  },
+  {
+   "class": "KabamLoginWindow",
+   "bases": "Window",
+   "typedef": 5768,
+   "provider": "none",
+   "endpoints": "/auth/*",
+   "status": "account popup; KABAM/GOOGLE [RUN]"
+  },
+  {
+   "class": "LoginOptionsPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9618,
+   "provider": "none",
+   "endpoints": "/invites/privacy",
+   "status": "login options [RUN]"
+  },
+  {
+   "class": "LoginScreen",
+   "bases": "Window",
+   "typedef": 9834,
+   "provider": "none",
+   "endpoints": "/auth/*",
+   "status": "login flow [RUN]"
+  },
+  {
+   "class": "MasteryFullScreenOverlay",
+   "bases": "Window, ISkillTreeListener",
+   "typedef": 9611,
+   "provider": "IMasteriesScreenData (60)",
+   "endpoints": "/quests/mastery",
+   "status": "not reached [STATIC]"
+  },
+  {
+   "class": "PVPArenaResultsScreen",
+   "bases": "TFormWindow",
+   "typedef": 11143,
+   "provider": "IPVPArenaResultsScreenModel (61)",
+   "endpoints": "/pvp",
+   "status": "locked [RUN]"
+  },
+  {
+   "class": "PVPRaidSelectScreen",
+   "bases": "Window",
+   "typedef": 11272,
+   "provider": "IPVPRaidSelectDataProvider (66)",
+   "endpoints": "/pvp",
+   "status": "locked [RUN]"
+  },
+  {
+   "class": "PlayerProfilePopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10544,
+   "provider": "IPlayerProfileDataProvider (39)",
+   "endpoints": "/userprofile/",
+   "status": "not reachable from the current home UI [RUN]"
+  },
+  {
+   "class": "PreFightScreen",
+   "bases": "Window",
+   "typedef": 11317,
+   "provider": "IPrefightDataProvider (69)",
+   "endpoints": "/matches/activate-match",
+   "status": "open; FIGHT works; battle-init NRE [RUN]"
+  },
+  {
+   "class": "QuestDetailsPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10559,
+   "provider": "IQuestDetailsData (40)",
+   "endpoints": "/quests/quest-detail",
+   "status": "open [RUN]"
+  },
+  {
+   "class": "QuestResultsScreen",
+   "bases": "TFormWindow",
+   "typedef": 11362,
+   "provider": "IQuestResultsDataProvider (70), IQuestResultsCallbacks",
+   "endpoints": "/quests/battlecomplete, /quests/fightlost",
+   "status": "not reached (battle does not finish) [STATIC]"
+  },
+  {
+   "class": "QuestSelect",
+   "bases": "TFormWindow",
+   "typedef": 11368,
+   "provider": "IQuestSelectModel (72)",
+   "endpoints": "/quests/quest-list",
+   "status": "open; 66+24 mission list [RUN]"
+  },
+  {
+   "class": "QuestboardHud",
+   "bases": "Window, IGameboardHud",
+   "typedef": 11383,
+   "provider": "none",
+   "endpoints": "/quests/quest-movedir",
+   "status": "open; HUD stacked below PreFightScreen [RUN]"
+  },
+  {
+   "class": "SettingsScreen",
+   "bases": "TFormWindow",
+   "typedef": 11394,
+   "provider": "ISettingsScreenDataProvider (73)",
+   "endpoints": "-",
+   "status": "open; ACCOUNT/SOUND/STORY work [RUN]"
+  },
+  {
+   "class": "SoloEventsPopup",
+   "bases": "TFormWindow",
+   "typedef": 10637,
+   "provider": "ISoloEventsPopupData (47)",
+   "endpoints": "/events",
+   "status": "not reached [STATIC]"
+  },
+  {
+   "class": "TeamSelect",
+   "bases": "TFormWindow",
+   "typedef": 11463,
+   "provider": "ITeamSelectModel (75), ITeamSelectCallbacks",
+   "endpoints": "/bcg/setSavedTeam",
+   "status": "open from quest team selection [RUN]"
+  },
+  {
+   "class": "UIScreenBackground",
+   "bases": "Window",
+   "typedef": 9534,
+   "provider": "none",
+   "endpoints": "-",
+   "status": "background [RUN]"
+  },
+  {
+   "class": "UpgradeActorScreen",
+   "bases": "Window",
+   "typedef": 11621,
+   "provider": "IUpgradeScreenModelBase (77)",
+   "endpoints": "/bcg/getHeroXPCurve",
+   "status": "opens; NRE in SetXPCurve when curve payload is empty [RUN]"
+  },
+  {
+   "class": "AVEBattleGroupInfoPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 9937,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AVEBattlegroupInfo",
+   "bases": "Window",
+   "typedef": 10729,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AVEBattlegroupSelection",
+   "bases": "Window, IAllianceEventListener",
+   "typedef": 10735,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AVEDifficultyConfirmationPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9943,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AcknowledgeConsent",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12189,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ActRewardsSummaryPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9945,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ActionToolbarPopup",
+   "bases": "Window",
+   "typedef": 9951,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceBenefitsPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9953,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceDonationConfirmationPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9956,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceDonationPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9960,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceHelpOverlay",
+   "bases": "TFormWindow, IInviteEventListener",
+   "typedef": 9593,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceHowToPlayPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9963,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceMyHelpRequestsPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9964,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceNavScreen",
+   "bases": "TFormWindow",
+   "typedef": 10800,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceNavScreenPresentation",
+   "bases": "Window",
+   "typedef": 10778,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceParticipationPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 9972,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AlliancePendingRequestsPopup",
+   "bases": "Window, IInviteEventListener, PopupFader.Listener",
+   "typedef": 9978,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AllianceStatsPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9982,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AndroidPermissionsScreen",
+   "bases": "Window",
+   "typedef": 10811,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ArenaRewardsPopup",
+   "bases": "Window",
+   "typedef": 9999,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AveHistoryScreen",
+   "bases": "TFormWindow",
+   "typedef": 10813,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AveLandingScreen",
+   "bases": "TFormWindow",
+   "typedef": 10831,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AveResultsScreen",
+   "bases": "TFormWindow",
+   "typedef": 10844,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "AwayTeamPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10020,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BanterSelect",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12192,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BaseEditBuildingPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10041,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BaseEditNodePopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10052,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BaseGachaPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10074,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BotBadgeLegend",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 10680,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BotExclusivityPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10086,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BuildingDetailsScreen",
+   "bases": "TFormWindow",
+   "typedef": 10866,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BuildingSelectPopup",
+   "bases": "TFormWindow",
+   "typedef": 10096,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BundlePurchasePopup",
+   "bases": "Window, ItemPurchasePopupPresentation.IItemPurchasePopupController, PopupFader.Listener",
+   "typedef": 10102,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "BusyBlockerTestScreen",
+   "bases": "Window",
+   "typedef": 9539,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "CTAPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10104,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ChampionItemUseConfirmation",
+   "bases": "TFormWindow",
+   "typedef": 10108,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "CharacterDetailInfoPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10116,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ConfirmBoostOverridePopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10121,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "CutSceneScreen",
+   "bases": "Window",
+   "typedef": 10882,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "CutsceneTest",
+   "bases": "Window",
+   "typedef": 10883,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DailyLoginInfo",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12193,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DailyLoginPopup",
+   "bases": "TFormWindow",
+   "typedef": 10160,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DailyRewardPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10166,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DebugHudOverlay",
+   "bases": "Window",
+   "typedef": 9862,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DefenderSelectPopup",
+   "bases": "TFormWindow",
+   "typedef": 10175,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DeferredStackTestingOverlay",
+   "bases": "Window",
+   "typedef": 9867,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DialogueOverlay",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 9876,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DisconnectFlowTestingScreen",
+   "bases": "Window",
+   "typedef": 9574,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DivisonChange",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12195,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "DynamicScrollViewScreen",
+   "bases": "Window",
+   "typedef": 9576,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "EditAlliancePopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10187,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "EditTeamBonusOverlay",
+   "bases": "Window",
+   "typedef": 9892,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "EnergySummaryPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10193,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "EventTestScreen",
+   "bases": "Window",
+   "typedef": 9579,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FightLandingScreen",
+   "bases": "TFormWindow",
+   "typedef": 10925,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FightResultsPopup",
+   "bases": "TFormWindow",
+   "typedef": 10213,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FightResultsScreen",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10225,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FilterSelectionPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10227,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FlashSalePopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10236,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FocusableControlSampleScreen",
+   "bases": "Window",
+   "typedef": 9585,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FontSizeTestingScreen",
+   "bases": "Window",
+   "typedef": 9586,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FontTextureRebuildBugTestScreen",
+   "bases": "Window",
+   "typedef": 9587,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FuseFontCachePrewarmingScreen",
+   "bases": "Window",
+   "typedef": 12921,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FuseHomeScreen",
+   "bases": "Window",
+   "typedef": 12924,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FuseLoadingScreen",
+   "bases": "Window",
+   "typedef": 13391,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FusePayoutsScreen",
+   "bases": "Window",
+   "typedef": 13335,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FuseSocialHub",
+   "bases": "Window",
+   "typedef": 13008,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FuseSystemMessageOverlay",
+   "bases": "Window",
+   "typedef": 13375,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "FuseTopBarOverlay",
+   "bases": "Window",
+   "typedef": 13371,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "GachaRevealScreen",
+   "bases": "Window, RedeemerListPopup.IRedeemerListDataProvider",
+   "typedef": 10980,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "GenericPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 9656,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "GenericPopupTestScreen",
+   "bases": "Window",
+   "typedef": 9657,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "HeroActionPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10251,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "HeroConsumablesPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10269,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "HowToAvePopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10287,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "HudGesturesOverlay",
+   "bases": "Window",
+   "typedef": 11976,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "HudScreen",
+   "bases": "Window",
+   "typedef": 11020,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "InventoryItemPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10296,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ItemOverrideWarningPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10301,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ItemPurchasePopup",
+   "bases": "Window, ItemPurchasePopupPresentation.IItemPurchasePopupController, PopupFader.Listener",
+   "typedef": 10314,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ItemUseChooseChampionScreen",
+   "bases": "TFormWindow",
+   "typedef": 10336,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ItemUseSelectPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10360,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "KabamLoginIncentivePopup",
+   "bases": "TFormWindow",
+   "typedef": 10366,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "LandingScreen",
+   "bases": "Window",
+   "typedef": 9831,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "LanguageSelectionPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10376,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "LeaderboardScreen",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 11101,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "LevelUpPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10389,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "LoginRewardsPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10397,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "MasteriesScreen",
+   "bases": "TFormWindow, ISkillTreeListener",
+   "typedef": 11111,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "MasteryRespecPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10412,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "MatchWidgetSizeTestScreen",
+   "bases": "Window",
+   "typedef": 9837,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "MissionTeamSelectPopup",
+   "bases": "TFormWindow",
+   "typedef": 10417,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "MissionTeamSelectWarningPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10428,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "MultiUidsScreen",
+   "bases": "Window",
+   "typedef": 9845,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "MultipleCosts",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12198,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "NSFPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10438,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "NamePopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10444,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "NodeInfoPopup",
+   "bases": "Window",
+   "typedef": 10472,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "OutOfAVEEnergyPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10476,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVEQuestExclusivity",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10481,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVPFightResultScreen",
+   "bases": "Window",
+   "typedef": 11156,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVPMatchSeriesScreen",
+   "bases": "TFormWindow",
+   "typedef": 11164,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVPRaidOpponentReview",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10500,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVPRaidReportDetails",
+   "bases": "Window",
+   "typedef": 10507,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVPRaidResults",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 11284,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVPReportScreen",
+   "bases": "Window",
+   "typedef": 11297,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PVPScreen",
+   "bases": "TFormWindow",
+   "typedef": 11228,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PauseMenuPopup",
+   "bases": "Window",
+   "typedef": 10517,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PaymentCardPurchasedPopup",
+   "bases": "TFormWindow",
+   "typedef": 10200,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PaymentCardsPopup",
+   "bases": "TFormWindow",
+   "typedef": 10525,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PayoutsSkinSelectScreen",
+   "bases": "Window",
+   "typedef": 9631,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PermissionsScreen",
+   "bases": "Window",
+   "typedef": 9919,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PoorNetworkOverlay",
+   "bases": "Window",
+   "typedef": 9893,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PopupFader",
+   "bases": "Window",
+   "typedef": 9923,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PreFightBuffsPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10554,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "PushRegistrationScreen",
+   "bases": "Window",
+   "typedef": 10720,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "QuitArenaPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10568,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "RaidInProgress",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12201,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "RankRewardsLockedPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10580,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "RedeemerListPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10587,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ResourceActionPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10600,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ResourceMessagePopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10606,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ResourceSummaryPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10611,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SampleScreen",
+   "bases": "Window",
+   "typedef": 10723,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SellCatalystPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10622,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SellConfirmPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10625,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SellHeroPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10630,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SharedComponentExampleScreen",
+   "bases": "Window",
+   "typedef": 11534,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ShieldPrompt",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 10683,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ShieldWarning",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12204,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SimpleScreen",
+   "bases": "Window",
+   "typedef": 11398,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SocialOverlay",
+   "bases": "Window",
+   "typedef": 9897,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SoloEventJoinBenefit",
+   "bases": "Window",
+   "typedef": 10631,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SplashScreenOverlay",
+   "bases": "Window",
+   "typedef": 9899,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SpriteMaskingExampleScreen",
+   "bases": "Window",
+   "typedef": 11538,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "StashScreen",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 11421,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "SummonerBoostsPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10649,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "TFormWindow",
+   "bases": "Window",
+   "typedef": 11543,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "TeamHeroRatingWarningPopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10669,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "TemplatePopup",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10675,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "ToolTip",
+   "bases": "Window",
+   "typedef": 11576,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "TopContributors",
+   "bases": "Window, PopupFader.Listener",
+   "typedef": 10687,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "TransformersHomeScreen",
+   "bases": "Window",
+   "typedef": 11015,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "TransformersMenuBar",
+   "bases": "Window",
+   "typedef": 9915,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "TutorialWindow",
+   "bases": "Window",
+   "typedef": 11610,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "UIInputTestScreen",
+   "bases": "Window",
+   "typedef": 11612,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "UnevenScrollviewScreen",
+   "bases": "Window",
+   "typedef": 11616,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "UseItemPopup",
+   "bases": "TFormWindow, PopupFader.Listener",
+   "typedef": 10702,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  },
+  {
+   "class": "WithheldItems",
+   "bases": "TemplatePopup.TemplatePopupContent",
+   "typedef": 12206,
+   "provider": "",
+   "endpoints": "",
+   "status": "untested; no dedicated stub data"
+  }
+ ]
+}
