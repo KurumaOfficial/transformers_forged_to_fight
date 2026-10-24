@@ -106,3 +106,12 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   pages. 39 boss names matched to client ids with high confidence; 8
   ambiguous, 7 none, 12 missing. Quest 1.1 = "A Beast to Start" / Rhinox.
 - Not done: W4 re-run after id_map update; W5 image retry (209 HTTP 403).
+
+## 2026-10-24 (v4.3)
+
+- `docs/interfaces.md` generated from the live registry: 78 interfaces,
+  tags, implementations, persistent, screen/subsystem, stub status.
+- `IAdsProvider` is the only persistent (tform) interface; no ad-network
+  HTTP request observed.
+- `work/check_all.ps1` prints `target_checks` and `known_issues`/xfail status.
+- `MASTER_PROMPT.md` updated to v4.3 with current facts and queue.

@@ -200,3 +200,11 @@ URL/revid в raw и manifest; CC BY-SA 3.0 для TFWiki; Fandom — услов�
   or `Activator.CreateInstance` issue, not a missing implementation.
 - `QuestboardHud is inactive` was observed once at 16:35:21; it is not present
   in every run and cannot yet be tied to the provider.
+
+## 12. I1/I2/S2/T5 status (2026-10-24)
+
+- I1 done: `docs/interfaces.md` (78 rows).
+- I2 done: ads provider static + no network request observed.
+- S2 done: check_all prints target checks and xfail state.
+- T5 done: MASTER_PROMPT v4.3.
+- Next independent items: S1 59-bot sweep; R1/R2; Q1/Q2; C1/C3; W1/W2.

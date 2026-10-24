@@ -159,3 +159,8 @@ Windblade, so R2 is still open. Abilities are `NO ABILITIES`, special
 attack names are raw `M1_SPECIAL_ATTACK_NAMEID_*` keys, and the synergy
 box is empty for Windblade (R3/R4 open). `teamSizeMax=1` is a deliberate
 deviation for the 1-bot test quest.
+
+**2026-10-24, I1/I2:** `docs/interfaces.md` lists all 78 injector interfaces.
+`IPrefightDataProvider` is entry 69, default-only; `IAdsProvider` is the only
+persistent/tform entry. No ad-network request observed. S2 prints xfail/target
+status. T5 is MASTER_PROMPT v4.3.

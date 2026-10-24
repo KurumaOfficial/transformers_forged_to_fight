@@ -384,3 +384,15 @@ tokens (`0x2000...`), not class pointers; the class struct is in a
 metadata-heap mapping and a full scan timed out. `CacheReferences` is called
 from `SetupWindow`; provider entry 69 is default-only. No Frida. See
 `OPEN_QUESTIONS.md` §11.
+
+## 20. 2026-10-24: I1/I2/S2/T5
+
+- `docs/interfaces.md`: all 78 InterfaceInjector entries with tags,
+  implementations, persistent flag, screen/subsystem and stub status.
+  `IPrefightDataProvider` entry 69 (default-only) is the only FIGHT blocker.
+- I2: `IAdsProvider` is the only persistent interface
+  (`TFormIronSourceAdsModel`). Only `/autorefresh/ads/refresh` observed; no
+  ad-network request; native IronSource not initialized by the stub.
+- S2: `check_all.ps1` now prints `target_checks` and each `known_issues`
+  entry, plus whether all xfails are resolved.
+- T5: `MASTER_PROMPT.md` is v4.3 with current facts and the full queue.

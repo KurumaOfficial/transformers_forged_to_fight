@@ -1,3 +1,77 @@
+# MASTER_PROMPT v4.3 — current state and queue (2026-10-24)
+
+Continue from this file if the chat is lost. Files beat this text:
+`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-24.md`,
+`docs/prefight_flow.md`, `docs/interfaces.md`, `docs/frida_plan.md`.
+
+## What is proven now
+
+- Client is original 9.2.0 (endpoint patched/re-signed only). SHA-256
+  `77d2e9dd…63cb`. No Frida, gadget, client patch, block bypass or OneDrive.
+- Login, 59-bot roster/BOTS, quest list/detail/begin/movedir and prefight
+  **screen** work; full smoke PASS; golden 9/9 PASS.
+- **Battle blocker:** `PreFightScreen._model` (`+0x98`) is null; FIGHT NREs
+  in `PreFightScreen.OnFight` (`0xE397BC`). Team is **not** the blocker:
+  `TeamHeroes=1`, `localPlayer.team=1`.
+- `InterfaceInjector` live: tag `tform`, 78 entries, persistent 1
+  (`IAdsProvider -> TFormIronSourceAdsModel`).
+  - **Entry 69 `IPrefightDataProvider` = `default -> PrefightScreenData` only.**
+  - `Get<T>` (`0x11E7640`) has a default fallback (`0x11E7988`), then
+    `Activator.CreateInstance` (`0x11E79E8`).
+  - Remaining suspects: `ContainsKey(typeof(T))`/generic type identity,
+    wrong call-site interface, or `Activator.CreateInstance` returning
+    null/throwing.
+- `CacheReferences` is called from `PreFightScreen.SetupWindow`;
+  `Gameboard.OpenPreFightScreen` does not create or register a provider.
+  `PrefightScreenData..ctor` has no direct BL; creation is via the injector.
+- Runtime `PreFightScreen` field dump is **blocked**: `PreFightScreen_TypeInfo`
+  and `WindowManager_TypeInfo` slots are metadata usage tokens
+  (`0x2000…`), not class pointers; the class instance is in a metadata heap.
+  Need to resolve `Il2CppMetadataUsage` or `WindowManager.windowStacks`.
+- `docs/interfaces.md`: all 78 interfaces, tags, implementations, screens,
+  stub status. `IPrefightDataProvider` is the only blocker for FIGHT.
+- S1: smoke has `known_issues`/`target_checks`/`xfail_open`.
+- S2: old golden tagged `golden-baseline-2026-10-23`; diffs and reasons in
+  `tests/golden/`.
+- S4: `work/check_all.ps1` prints xfail status and target checks.
+- 59 bots: 12 with wiki star-1 stats, 47 `[ASSUMED]`; abilities/special names
+  are raw IDs; rating formula unresolved.
+- W3: `data/quests_real.json` real mission names; quest 1.1 "A Beast to Start"
+  (Rhinox); map/rewards `[ASSUMED]`.
+- C4: 7869 localization is correct; 3315 stat strings exact (3332 legacy,
+  17 unaccounted).
+
+## Queue v4.3 (continue from the first not done/blocked)
+
+**P0 A:** A1 runtime field dump (blocked by metadata usage); A2 CacheReferences
+callers/QuestboardHud; A3 Get exceptions + PrefightScreenData ctor dependencies;
+A4 type identity; A5 default-only control screens (Settings/Profile); A6 boss
+tile trigger (moveto/battle separate); A7 prefight state with fixed team;
+A8 data fix; A9 `/matches/*`; A10 Frida plan only.
+**P0 S:** S1 59-bot auto sweep; S2 xfail visibility (done).
+**P1 I:** I1 interfaces (done), I2 ads (done).
+**P1 R:** R1 growth curves, R2 rating, R3 abilities, R4 signature/specials/
+synergies, R5 non-combat screens, R6 tutorial.
+**P1 Q:** Q1 all 66+24 missions, Q2 map generator, Q3 bosses/icons, Q4 post-battle
+actions, Q5 progression/mastery.
+**P1 C:** C1 OpenAPI depth, C2 empty endpoint keys, C3 tuning defaults, C4 17 keys.
+**P1 W:** W1 images, W2 economy, W3 classes/status, W4 synergies, W5 zip.
+**P2 T:** T1 data split/routing, T2 SQLite persistence, T3 hygiene, T4 Netflix plan,
+T5 docs (this file).
+
+## Rules
+
+- Labels `[RUN]`, `[STATIC]`, `[DERIVED]`, `[ASSUMED]`; source tags
+  `[CLIENT]`, `[WIKI]`, `[RUN]`.
+- Three substantive attempts per experimental item, then `OPEN_QUESTIONS.md`
+  and the next independent item.
+- Commit and update `STATE.md` after each item.
+- Do not modify the APK, raw wiki archive, or `server/data` without a ledger entry.
+- Frida/gadget/client patches/block bypass/OneDrive: **no** without explicit
+  user consent. Frida plan only.
+
+---
+
 # MASTER_PROMPT v4.1 — status addendum (2026-10-24)
 
 The canonical task/plan is the user's **v4 master prompt** (2026-10-24). This

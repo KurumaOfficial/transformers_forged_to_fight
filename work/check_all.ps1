@@ -8,6 +8,15 @@ $results += "== golden =="
 if (-not $SkipSmoke) {
     $results += "== smoke (fast) =="
     & python work\smoke_test.py --plus --fight; $s = $LASTEXITCODE; $results += "smoke_exit=$s"
+    $smoke = Join-Path $Root "..\tests\smoke\latest.json"
+    if (Test-Path $smoke) {
+        $j = Get-Content $smoke -Raw | ConvertFrom-Json
+        $results += "target_checks: provider_found=$($j.target_checks.provider_found) activate_match=$($j.target_checks.activate_match)"
+        foreach ($k in $j.known_issues) {
+            $results += "xfail[$($k.state)] $($k.id): $($k.actual)"
+        }
+        if ($j.xfail_open -eq 0) { $results += "xfail: all resolved" } else { $results += "xfail_open=$($j.xfail_open)" }
+    }
 } else { $s = 0 }
 $results += "== unittest =="
 & python -m unittest discover -s tests -p "test_*.py" -v; $u = $LASTEXITCODE; $results += "unittest_exit=$u"
