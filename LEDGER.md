@@ -487,3 +487,14 @@ the active-team object source), not a simple alias. [RUN]
 - No provider/Injector error appears in logcat before the FIGHT NRE.
   `QuestboardHud is inactive` was the only nearby warning.
 - Docs: `docs/prefight_flow.md` (Mermaid + addresses).
+
+### 21. Golden re-record 2026-10-24 (intentional)
+
+- Baseline tag `golden-baseline-2026-10-23` (`0d0641c`) preserved.
+- Recursive diff: `tests/golden/diff_2026-10-24.json`; reasons:
+  - `/bcg/getLoginData`: 57 new blueprint keys (59-bot catalog grant).
+  - `/quests/quest-movedir/.../1/0`: added
+    `teamData.updates.activeTeams.story_act_1` for the client's `setId`.
+  - `/quests/quest-list`: shape unchanged; values now use `showUI`/`group`/
+    `recommendMinLevel`.
+- Rule: re-record only with a reason in this ledger.

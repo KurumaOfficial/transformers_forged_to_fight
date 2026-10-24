@@ -265,6 +265,25 @@ def main():
     }
     plus_shot = OUT / "08_plus.png"
     plus_error = bool(plus_shot.exists() and plus_shot.stat().st_size < 150_000) or key["bugs"]
+    known_issues = []
+    if model_nre:
+        known_issues.append({
+            "id": "K-001-prefight-provider",
+            "state": "open",
+            "expected": "IPrefightDataProvider is created; FIGHT does not NRE",
+            "actual": "PreFightScreen._model is null; OnFight NRE",
+        })
+    if not key["activate_match"]:
+        known_issues.append({
+            "id": "K-002-activate-match",
+            "state": "open",
+            "expected": "/matches/activate-match is called after FIGHT",
+            "actual": "no /matches/* request",
+        })
+    if args.fight:
+        provider_found = not model_nre
+    else:
+        provider_found = None
     mem = "" if args.no_memory else memory_probes()
 
     if args.full:
@@ -303,6 +322,12 @@ def main():
         "checks": key,
         "prefight_detected": prefight,
         "prefight_bar": prefight_bar,
+        "target_checks": {
+            "provider_found": provider_found,
+            "activate_match": key["activate_match"],
+        },
+        "known_issues": known_issues,
+        "xfail_open": sum(1 for x in known_issues if x["state"] == "open"),
         "nre_get_new_scale": scale_nre,
         "nre_prefight_model": model_nre,
         "plus_clicked": bool(args.plus),

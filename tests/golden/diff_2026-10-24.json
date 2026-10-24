@@ -1,0 +1,217 @@
+[
+ {
+  "path": "/bcg/getLoginData",
+  "changes": [
+   {
+    "at": "/result/blueprints/arcee_gs_deluxe2014",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/barricade_cin_dotm",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/blaster_gs_leader2016",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/bludgeon_gs_rd20",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/bonecrusher_cin_rotf",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/bumblebee_gs_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/cheetor_bw_transmetal",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/cliffjumper_gs_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/cyclonus_gs_uw06",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/dinobot_bw_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/dirge_gs_deluxe2008",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/drift_cin_aoe",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/galvatron_gs_voyager2016",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/grimlock_gs_mp08",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/grindor_cin_rotf",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/hotrod_cin_tlk",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/hound_cin_tlk",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/ironhide_cin_rotf",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/ironhide_gs_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/jazz_gs_twm05",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/jetfire_gs_leader2014",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/kickback_gs_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/megatron_cin_rotf",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/megatron_gs_leader2015",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/megatronus_gs_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/mirage_gs_deluxe2016",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/mixmaster_cin_rotf",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/motormaster_gs_voyager2015",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/necrotronus_gs_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/nemesisprime_gs_voyager2015",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/optimusprimal_bw_mp32",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/optimusprime_cin_tf",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/prowl_gs_deluxe2016",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/ramjet_gs_deluxe2008",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/ratchet_gs_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/rhinox_gs_voyager2014",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/rodimusprime_gs_mp09",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/scorponok_bw_kabam",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/sharkticon_gs_brawler",
+    "old": "missing",
+    "new": "present"
+   },
+   {
+    "at": "/result/blueprints/sharkticon_gs_demolition",
+    "old": "missing",
+    "new": "present"
+   }
+  ]
+ },
+ {
+  "path": "/quests/quest-movedir/story_act1_ch1_m1/1/0",
+  "changes": [
+   {
+    "at": "/result/teamData/updates/activeTeams/story_act_1",
+    "old": "missing",
+    "new": "present"
+   }
+  ]
+ }
+]
