@@ -117,3 +117,20 @@ If JSON is kept for the prototype:
 
 This is a design document only; no database or endpoint behavior is changed in
 this task.
+
+## Implementation status (2026-10-25)
+
+`server/persistence.py` implements the schema above (schema version 1):
+account, wallet, roster, active_team, quest_run, reward_ledger, match, plus
+`schema_meta`. It uses WAL mode and `INSERT ... ON CONFLICT` upserts.
+
+Opt-in: set `TFTF_DB=<path>` before starting `server/stub_server.py`. The server
+then initializes the DB and persists `quest-begin` (team/phase) and
+`quest-movedir` (current position). With `TFTF_DB` unset the server behaves
+exactly as before (JSON only).
+
+Tests: `tests/test_persistence.py` (5 tests: schema version, account upsert,
+roster upsert, quest-run JSON round-trip, reward ledger).
+
+Not wired yet: login/account bootstrap from SQLite, match rows, reward
+application, and migrations beyond version 1.

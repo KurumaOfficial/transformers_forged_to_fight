@@ -426,3 +426,25 @@ Movement protocol: one `quest-movedir` request per move; `moveto` and
 `battle` are actions in the response, not separate requests. With
 `moveto` only, moving to the final tile does not open prefight; a client-side
 boss-tile tap sends nothing. The server decides when to include `battle`.
+
+## 2026-10-25 (v4.4 queue work)
+
+- Prefight: live dump proves `_model` non-null; data root cause was
+  `scaledBossTable.enemy1.key="enemy1"` instead of the boss blueprint. Fixed
+  in `quest_begin_response.json`/`quest_detail.json`; FIGHT now sends
+  `/matches/activate-match/quests_fight`.
+- A5: Settings/Goals/Upgrade work with default-only providers under `tform`;
+  profile popup is not reachable.
+- A6: one `quest-movedir` request; `moveto`/`battle` are response actions.
+- Step 4: debug/dev classes are scene components or dead code; no data-only
+  activation, no extra requests.
+- R1 v2: dot-thousands parser fix; rank/level effects are collinear; 47 bots
+  without tables remain `[ASSUMED]`.
+- S1: 12/59 BOTS cards opened (popup + INFO), no NRE; abilities still empty and
+  special names raw.
+- Step 6.2: `docs/screens.md` + `data/screens.json` list 180 Window classes.
+- Q1/Q2/Q3: `server/data/quest_list.json` now has 66 Story + 24 Awaken quests
+  with deterministic 3x3 maps and wiki boss ids.
+- W1: 2 priority images recovered, 34 blocked by 403/no manifest URL; W5 zip
+  `2026-10-25_195954` with hashes.
+- T2: SQLite persistence module + 5 tests; T4 Netflix plan written.

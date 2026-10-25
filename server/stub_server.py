@@ -13,7 +13,39 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 ACTIVE_POS = {}
 # Runtime experiment switches, for black-box protocol probes only.
 # GET /__control?movedir_actions=moveto|battle|both
-EXPERIMENT = {"movedir_actions": "both"}
+EXPERIMENT = {"movedir_actions": "both", "tutorial_mode": "completed"}
+DB_ENABLED = bool(os.environ.get("TFTF_DB"))
+
+
+def persist_quest_run(qid, team=None, state=None):
+    if not DB_ENABLED:
+        return
+    try:
+        from persistence import save_quest_run
+        save_quest_run("10001", qid, "local", team=team or {}, state=state or {})
+    except Exception as exc:
+        print(f"[persistence] {exc}")
+
+
+def tutorial_payload(data):
+    """Return the stub tutorial payload, optionally reset to the original flow."""
+    if EXPERIMENT.get("tutorial_mode") != "original":
+        return data
+    out = json.loads(json.dumps(data))
+    for key, value in list(out.items()):
+        if not isinstance(value, dict):
+            continue
+        value["s"] = "not_started"
+        value["state"] = "not_started"
+        value["current_bid"] = "fte"
+        value["currentBranchID"] = "fte"
+        branches = value.get("branches")
+        if isinstance(branches, dict):
+            for branch in branches.values():
+                if isinstance(branch, dict):
+                    branch["s"] = "not_started"
+                    branch["state"] = "not_started"
+    return out
 
 def load_data_json(filename, default=None):
     """Load JSON data payload from server/data/<filename>."""
@@ -125,8 +157,13 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 val = query["movedir_actions"][0]
                 if val in ("moveto", "battle", "both"):
                     EXPERIMENT["movedir_actions"] = val
+            if "tutorial_mode" in query:
+                val = query["tutorial_mode"][0]
+                if val in ("completed", "original"):
+                    EXPERIMENT["tutorial_mode"] = val
             if "reset" in query:
                 EXPERIMENT["movedir_actions"] = "both"
+                EXPERIMENT["tutorial_mode"] = "completed"
             self.send_sparx(dict(EXPERIMENT), assumed_label="[RUN: __control]")
             return
 
@@ -388,6 +425,7 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 },
                 "deletes": {}
             }
+            persist_quest_run(qid, team=quest.get("team"), state={"phase": "begin"})
             self.send_sparx({"activeQuests": {qid: quest}},
                             assumed_label="[CLIENT: /quests/quest-begin/ activeQuests wrapper + teamData]")
             ACTIVE_POS[qid] = {"x": 0, "y": 0}
@@ -543,6 +581,7 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 results = results[:1]
             elif mode == "battle":
                 results = results[1:]
+            persist_quest_run(qid, state={"position": new})
             self.send_sparx({
                 "progression": {
                     "version": 3,
@@ -649,7 +688,7 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
 
         # 23. Tutorial login data [STATIC: loaded from server/data/tutorial_data.json]
         if path == "/tutorial/get-login-data":
-            data = load_data_json("tutorial_data.json")
+            data = tutorial_payload(load_data_json("tutorial_data.json"))
             self.send_sparx(data, assumed_label="[STATIC: /tutorial/get-login-data loaded from data/tutorial_data.json]")
             return
 
@@ -718,6 +757,10 @@ class ThreadedHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
     daemon_threads = True
 
 def run(port=PORT):
+    if DB_ENABLED:
+        from persistence import init_db
+        init_db()
+        print(f"  SQLite persistence: {os.environ.get('TFTF_DB')}")
     server_address = ('0.0.0.0', port)
     httpd = ThreadedHTTPServer(server_address, SparxStubHandler)
     print(f"==================================================")
