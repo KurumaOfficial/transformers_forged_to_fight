@@ -33,3 +33,11 @@ work/all_game_classes.json
 work/*.zip
 tests/screens/
 work/*.txt
+
+# local backups / experiments
+server/data/*.bak
+server/data/*.pre_*.json
+work/test_state.db
+work/test_state.db-*
+work/emu*_out.log
+work/emu*_err.log
