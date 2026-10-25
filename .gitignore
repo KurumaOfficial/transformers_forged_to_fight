@@ -41,3 +41,4 @@ work/test_state.db
 work/test_state.db-*
 work/emu*_out.log
 work/emu*_err.log
+tests/sweep/*.png

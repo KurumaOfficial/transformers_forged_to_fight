@@ -1,0 +1,112 @@
+{
+ "model": "rating = a*hp + b*attack + c",
+ "coef": [
+  -0.0148944570648834,
+  0.16494895876807147,
+  257.2418663631502
+ ],
+ "rows": [
+  {
+   "bot": "Arcee",
+   "hp": 855.0,
+   "attack": 104.0,
+   "rating": 256.0
+  },
+  {
+   "bot": "Barricade",
+   "hp": 826.0,
+   "attack": 106.0,
+   "rating": 260.0
+  },
+  {
+   "bot": "Bonecrusher",
+   "hp": 970.0,
+   "attack": 93.0,
+   "rating": 248.0
+  },
+  {
+   "bot": "Chromia",
+   "hp": 1009.0,
+   "attack": 70.0,
+   "rating": 262.0
+  },
+  {
+   "bot": "Dead End",
+   "hp": 1009.0,
+   "attack": 89.0,
+   "rating": 267.0
+  },
+  {
+   "bot": "Ironhide (ROTF)",
+   "hp": 1009.0,
+   "attack": 89.0,
+   "rating": 260.0
+  },
+  {
+   "bot": "Mirage",
+   "hp": 874.0,
+   "attack": 85.0,
+   "rating": 248.0
+  },
+  {
+   "bot": "Mixmaster",
+   "hp": 1009.0,
+   "attack": 70.0,
+   "rating": 243.0
+  },
+  {
+   "bot": "Motormaster",
+   "hp": 1076.0,
+   "attack": 103.0,
+   "rating": 249.0
+  },
+  {
+   "bot": "Optimus Prime",
+   "hp": 1066.0,
+   "attack": 97.0,
+   "rating": 267.0
+  },
+  {
+   "bot": "Rhinox",
+   "hp": 951.0,
+   "attack": 81.0,
+   "rating": 256.0
+  },
+  {
+   "bot": "Sideswipe",
+   "hp": 826.0,
+   "attack": 106.0,
+   "rating": 271.0
+  },
+  {
+   "bot": "Wheeljack",
+   "hp": 855.0,
+   "attack": 82.0,
+   "rating": 265.0
+  },
+  {
+   "bot": "Windblade",
+   "hp": 826.0,
+   "attack": 102.0,
+   "rating": 264.0
+  }
+ ],
+ "pred": [
+  261.6617972845543,
+  262.42363445697214,
+  258.13449617564396,
+  253.75978629844786,
+  256.89381651504124,
+  256.89381651504124,
+  258.2447723837282,
+  253.75978629844786,
+  258.20517331444705,
+  257.36442413248744,
+  256.4381033546599,
+  262.42363445697214,
+  258.0329201916568,
+  261.7638386218998
+ ],
+ "rmse": 7.773199870616248,
+ "note": "not the client formula; R2 partial"
+}

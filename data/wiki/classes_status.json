@@ -1,0 +1,230 @@
+{
+ "classes": {
+  "source": "data/wiki/topics/class_triangle.json",
+  "triangle": {
+   "Brawler": {
+    "bonus_against": "Warrior",
+    "weak_to": "Tactician",
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Brawler"
+   },
+   "Scout": {
+    "bonus_against": "Tech",
+    "weak_to": "Warrior",
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Scout"
+   },
+   "Warrior": {
+    "bonus_against": "Scout",
+    "weak_to": "Brawler",
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Warrior"
+   },
+   "Tactician": {
+    "bonus_against": "Brawler",
+    "weak_to": "Demolition",
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Tactician"
+   },
+   "Class": {
+    "bonus_against": null,
+    "weak_to": null,
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Class"
+   }
+  },
+  "pages": {
+   "Brawler": {
+    "as_of_2023": {
+     "present": true,
+     "revid": 8495,
+     "timestamp": "2021-02-15T04:31:38Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 10939,
+     "timestamp": "2024-03-16T23:27:34Z",
+     "numeric_lines": []
+    }
+   },
+   "Scout": {
+    "as_of_2023": {
+     "present": true,
+     "revid": 9314,
+     "timestamp": "2022-07-17T10:41:10Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 11126,
+     "timestamp": "2024-10-01T02:11:00Z",
+     "numeric_lines": []
+    }
+   },
+   "Warrior": {
+    "as_of_2023": {
+     "present": true,
+     "revid": 9311,
+     "timestamp": "2022-07-17T10:28:46Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 10948,
+     "timestamp": "2024-03-16T23:55:53Z",
+     "numeric_lines": []
+    }
+   },
+   "Tactician": {
+    "as_of_2023": {
+     "present": true,
+     "revid": 8712,
+     "timestamp": "2021-08-01T17:03:35Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 11298,
+     "timestamp": "2026-05-03T16:56:52Z",
+     "numeric_lines": []
+    }
+   },
+   "Class": {
+    "as_of_2023": {
+     "present": true,
+     "revid": 8358,
+     "timestamp": "2021-01-05T05:56:07Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 8358,
+     "timestamp": "2021-01-05T05:56:07Z",
+     "numeric_lines": []
+    }
+   }
+  },
+  "numeric_note": "The wiki pages give the triangle and qualitative bonuses; exact damage multipliers are not stated in the saved text."
+ },
+ "status": {
+  "source": "data/wiki/topics/status_effects.json",
+  "pages": {
+   "Acid": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Acid",
+    "as_of_2023": {
+     "present": false,
+     "content": null,
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 10915,
+     "timestamp": "2024-02-02T00:24:45Z",
+     "numeric_lines": []
+    }
+   },
+   "Armor Break": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Break",
+    "as_of_2023": {
+     "present": true,
+     "revid": 7885,
+     "timestamp": "2020-09-13T12:01:49Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 7885,
+     "timestamp": "2020-09-13T12:01:49Z",
+     "numeric_lines": []
+    }
+   },
+   "Armor Buff": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Armor_Buff",
+    "as_of_2023": {
+     "present": true,
+     "revid": 8754,
+     "timestamp": "2021-09-22T06:58:01Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 8754,
+     "timestamp": "2021-09-22T06:58:01Z",
+     "numeric_lines": []
+    }
+   },
+   "Bleed": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Bleed",
+    "as_of_2023": {
+     "present": true,
+     "revid": 7772,
+     "timestamp": "2020-07-17T07:44:28Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 7772,
+     "timestamp": "2020-07-17T07:44:28Z",
+     "numeric_lines": []
+    }
+   },
+   "Burn": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Burn",
+    "as_of_2023": {
+     "present": true,
+     "revid": 9376,
+     "timestamp": "2022-07-29T01:02:02Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 9376,
+     "timestamp": "2022-07-29T01:02:02Z",
+     "numeric_lines": []
+    }
+   },
+   "Shock": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Shock",
+    "as_of_2023": {
+     "present": true,
+     "revid": 9374,
+     "timestamp": "2022-07-29T01:00:30Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 9374,
+     "timestamp": "2022-07-29T01:00:30Z",
+     "numeric_lines": []
+    }
+   },
+   "Stun": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Stun",
+    "as_of_2023": {
+     "present": true,
+     "revid": 8753,
+     "timestamp": "2021-09-21T09:26:04Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 8753,
+     "timestamp": "2021-09-21T09:26:04Z",
+     "numeric_lines": []
+    }
+   },
+   "Evade": {
+    "url": "https://transformers-forged-to-fight.fandom.com/wiki/Evade",
+    "as_of_2023": {
+     "present": true,
+     "revid": 7813,
+     "timestamp": "2020-08-03T04:18:44Z",
+     "numeric_lines": []
+    },
+    "latest": {
+     "present": true,
+     "revid": 10828,
+     "timestamp": "2023-05-16T06:24:56Z",
+     "numeric_lines": []
+    }
+   }
+  },
+  "note": "Descriptions and any numeric lines from saved wikitext; no fabricated numbers."
+ }
+}

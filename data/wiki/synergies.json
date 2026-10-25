@@ -1,0 +1,50 @@
+{
+ "source": "data/wiki/versions/Synergy*.json",
+ "pages": {
+  "Synergy Bonus": {
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Synergy_Bonus",
+   "revid": 10703,
+   "timestamp": "2023-01-13T06:34:35Z",
+   "headings": [
+    "List"
+   ],
+   "numeric_lines": [
+    "Note that most 2-Star Bots start with a level 2 Synergy, and 4-Star and 5-Star bots both cap at level 4, but 2022 Bots start with level 1 Synergies at 2-Stars and have four tiers to 5-Star.",
+    "* +1~2-3-8% Armor",
+    "* Heavy attacks:+25% Attack buff for 5 sec. Purifies All damaging debuffs as long as there two more beast bots with Primal",
+    "* +8% Armor for a faction(Autobots). Additional +8% damage to Melee Attacks in Solo Missions",
+    "* +2-3-8% Attack Rating",
+    "* +70% Chance not to trigger opponent's abilities while using Special Attack 2 & 3",
+    "* +8% Armor to Minions.",
+    "* Barricade: Megatron has 100% Chance to inflict extra impair charge while attacking. Grindor: 100% Chance to gain unstoppable at start of fight.  Bonecrusher:100% Chance to stun for each 20 impair charges.",
+    "* +16% Attack yo Heavy Attacks and Sp3",
+    "* +8% Health repaired at start of fight.",
+    "* 80% of Power Bar at start of fight.",
+    "* +2-3-8% Armor",
+    "* +20% CRIT rate for ranged attacks",
+    "* 5~10~20% Block Proficiency",
+    "* old: 3~4~10% Critical Damage for each sword attack that isn't a Critical Hit until the next Critical Hit. 6~8~12% more Critical Hits in Solo missions. new:",
+    "* +25% Anti-Evade",
+    "* +8% Attack Rating for Autobots. +12% Damage to DoT Debuffs in Raids",
+    "* +10% Attack Rating for Decepticons against Autobots.",
+    "* +15% CRIT Rate to Heavy Attacks"
+   ],
+   "content": "Pairing certain Bots with the correct bots activates '''Synergy Bonuses''' for one or both of them. All Bots have at least one Synergy Bonus except Tier 1 Bots (which they had up to v1.0). If there is the same bot with mutliple tiers on the same team, only the bonus with the highest effect will take effect.\n\nOn this wiki, [[File:Synergy-incoming.jpg]] will represent incoming bonuses that bots receive, and [[File:Synergy-outgoing.jpg]] will represent outgoing bonuses bots give.\n\nNote that most 2-Star Bots start with a level 2 Synergy, and 4-Star and 5-Star bots both cap at level 4, but 2022 Bots start with level 1 Synergies at 2-Stars and have four tiers to 5-Star.\n\n==List==\n\n* Allies\n* +1~2-3-8% Armor\n* Beastial Purification\n* Heavy attacks:+25% Attack buff for 5 sec. Purifies All damaging debuffs as long as there two more beast bots with Primal\n* Brain Gain\n* Brain Drain\n* Brothers in Arms\n* +8% Armor for a faction(Autobots). Additional +8% damage to Melee Attacks in Solo Missions\n* Code 12: Reckless Driving\n* Chief Medical Officer\n* Enemies\n* +2-3-8% Attack Rating\n* Espionage Specialists\n* +70% Chance not to trigger opponent's abilities while using Special Attack 2 & 3\n* Forged to Lead\n* +8% Armor to Minions.\n* Forged to Serve\n* Barricade: Megatron has 100% Chance to inflict extra impair charge while attacking. Grindor: 100% Chance to gain unstoppable at start of fight.  Bonecrusher:100% Chance to stun for each 20 impair charges.\n* Lieutenants\n* Living Weapon\n* +16% Attack yo Heavy Attacks and Sp3\n* Medic Support\n* +8% Health repaired at start of fight.\n* Old Friends\n* Outlaws\n* First Heavy inflicts Power Lock for 12 sec.\n* Racing Rivals\n* Romance\n* 80% of Power Bar at start of fight.\n* Sensei\n* +2-3-8% Armor\n* Sharpshooters\n* +20% CRIT rate for ranged attacks\n* Shield Amp\n* Shieldmasters\n* 5~10~20% Block Proficiency\n* Speed Chasers\n* Swordmasters\n* old: 3~4~10% Critical Damage for each sword attack that isn't a Critical Hit until the next Critical Hit. 6~8~12% more Critical Hits in Solo missions. new:\n* Sky Assault\n* +25% Anti-Evade\n* Starscream's Seekers\n* Till All Are One\n* +8% Attack Rating for Autobots. +12% Damage to DoT Debuffs in Raids\n* Till All Is Ours\n* +10% Attack Rating for Decepticons against Autobots.\n* Unstoppable Force\n* Weapon Specialists\n* Weaponsmiths\n* +15% CRIT Rate to Heavy Attacks\n[[Category:Gameplay]]"
+  },
+  "Synergy": {
+   "url": "https://transformers-forged-to-fight.fandom.com/wiki/Synergy",
+   "revid": 9348,
+   "timestamp": "2022-07-26T11:12:53Z",
+   "headings": [
+    "Common Synergies"
+   ],
+   "numeric_lines": [
+    "* {{Syn/Out}} '''Leadership''' - Acting as a beacon of leadership, all lower tier teammates gain +10% Armor Rating."
+   ],
+   "content": "A [[Bot]]'s '''Synergy''' is a special ability that activates when paired with another Bot with the same synergy.\n\n== Common Synergies ==\nSynergies common to all Bots are:\n* {{Syn/Both}} '''Allies''' - +2~3~8 Armor\n* {{Syn/Out}} '''Enemies''' - +2~3~8 Attack Rating\n* {{Syn/Out}} '''Leadership''' - Acting as a beacon of leadership, all lower tier teammates gain +10% Armor Rating.\n\nThe latter is only available to 5-[[Star]] bots."
+  }
+ },
+ "gaps": [
+  "Per-bot synergy mapping/formulas are not in the saved two pages; the client `synergyBonuses` arrays are empty in the stub."
+ ]
+}

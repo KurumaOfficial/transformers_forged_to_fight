@@ -66,3 +66,19 @@ they are only a monotonic sanity check, not a derivation.
   `/tuning` or TuningManager, not the stub defaults.
 - `ratingPrecision` semantics (rounding/truncation) and whether
   `useSelectionBias` changes the weight.
+
+## R2 attempt (2026-10-25): simple operand fits
+
+15 wiki bots have star-1 HP/ATK/Max Rating (14 after excluding the
+`Soundblaster` typo row with HP=1.009). A linear fit
+`rating = a*HP + b*ATK + c` gives
+`a=-0.0149, b=0.1649, c=257.24`, RMSE 7.77 (errors -10.8..+10.8).
+The coefficient on HP is effectively zero/negative, which contradicts the
+catalog's `heroRatingMaxHPWeight=0.2`; the simple operand binding is therefore
+wrong.
+
+`CalculateModifiedHeroRating` (`0xA4814C`) uses `IsIdealContender` selection
+bias and BCG manager lookups before applying weights; the exact modified
+attributes/selection-bias branch are not reproduced. R2 remains **partial**:
+the fit is in `work/rating_fit.py`, but it is not the client formula and must
+not be used to replace wiki Max Rating.
