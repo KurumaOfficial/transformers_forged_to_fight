@@ -246,3 +246,14 @@ is null in the loaded character prefab, or a real activate-match response.
 - **T1:** payloads split; routing still central.
 - **Emulator:** headless QEMU stalls/crashes after a few minutes; a fresh
   stable boot is required for further live work.
+
+## 16. 2026-10-25 late blockers
+
+- Battle: `PlayerAttributes.Init` HashSet collection null. Live `Blueprint.Tags`
+  is non-null (count 2), so the exact instance/collection needs a breakpoint.
+  ModelID was fixed by `JSONPaths.m="m"`; tags by `t`/`tags`.
+- R1: no-anchor LOBO error 14.3% HP / 16.4% ATK; the requested 7–8% for 47
+  no-table bots is not supported. 37 table-anchored bots are `[DERIVED]`.
+- Git: remote contains binary screenshots, wiki metadata/data and
+  `C:\Users\gameg`; cleanup plan prepared, no push/rewrite without consent.
+- Emulator: headless QEMU unstable; windowed angle is the current mode.

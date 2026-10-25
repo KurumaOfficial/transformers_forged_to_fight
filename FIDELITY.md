@@ -181,3 +181,17 @@ status. T5 is MASTER_PROMPT v4.3.
 | Client bot catalog | high | 59 packs, classes/factions |
 | OpenAPI/tuning/localization | partial | C1/C2/C3 partial |
 | Infrastructure | partial | SQLite opt-in, routing central, plans written |
+
+## 2026-10-25 late update
+
+| Area | Level | Basis |
+|---|---|---|
+| Prefight/FIGHT | **medium-high** | provider fixed earlier; activate-match sent [RUN] |
+| Battle scene | low/blocked | model id + tags fixed; `PlayerAttributes.Init` HashSet NRE; no match-loaded [RUN] |
+| Quest list/detail/begin/move | **good** | 90 missions; dynamic detail/begin/movedir; smoke PASS [RUN] |
+| Map generator | **medium** | validated 9-tile template, per-qid hash; entity still template [RUN] |
+| Boss data | **medium-high** | 60/90 client ids; 1.1 Rhinox, 1.4.2 Sideswipe [WIKI+RUN] |
+| R1 stats | **partial** | LOBO 14.3%/16.4% no anchor; 4.1%/2.8% one anchor; 37 derived [DERIVED] |
+| R2 rating | **partial** | fit RMSE 7.77, not client formula [DERIVED] |
+| Git/publication | **audit done** | no secrets/APK/libil2cpp in history; remote has binary/wiki dumps/personal path; no push until user decision |
+| Emulator | **improved** | windowed angle stable; watchdog + snapshot added |
