@@ -1,0 +1,464 @@
+{
+ "lobo": {
+  "hp": {
+   "bots": 39,
+   "mean_no_anchor_pct": 14.345472452297802,
+   "mean_one_anchor_pct": 4.094697375145384,
+   "median_no_anchor_pct": 13.213922436195858,
+   "median_one_anchor_pct": 2.156345491099265,
+   "worst_no_anchor_pct": 57.28712438672594,
+   "per_bot": {
+    "Arcee": {
+     "no_anchor": 0.05937541008246686,
+     "one_anchor": 0.029264968420196803,
+     "rows": 6
+    },
+    "Barricade": {
+     "no_anchor": 0.059801015382637275,
+     "one_anchor": 0.021349119006378203,
+     "rows": 7
+    },
+    "Bludgeon": {
+     "no_anchor": 0.11099428978332705,
+     "one_anchor": 0.015399159229592741,
+     "rows": 6
+    },
+    "Bonecrusher": {
+     "no_anchor": 0.11932366282948803,
+     "one_anchor": 0.019504735628413823,
+     "rows": 6
+    },
+    "Bumblebee": {
+     "no_anchor": 0.11514083579902203,
+     "one_anchor": 0.019288911618894674,
+     "rows": 6
+    },
+    "Cliffjumper": {
+     "no_anchor": 0.1241089619374204,
+     "one_anchor": 0.05740936046949222,
+     "rows": 7
+    },
+    "Drift": {
+     "no_anchor": 0.10058286965910454,
+     "one_anchor": 0.019431466338630396,
+     "rows": 6
+    },
+    "Galvatron": {
+     "no_anchor": 0.1737434535785581,
+     "one_anchor": 0.1184035288949695,
+     "rows": 6
+    },
+    "Hot Rod": {
+     "no_anchor": 0.07339526064159564,
+     "one_anchor": 0.015368427331559926,
+     "rows": 6
+    },
+    "Hound": {
+     "no_anchor": 0.16368168015583417,
+     "one_anchor": 0.017905890249968533,
+     "rows": 7
+    },
+    "Ironhide (ROTF)": {
+     "no_anchor": 0.14752127473257517,
+     "one_anchor": 0.04590175146015662,
+     "rows": 7
+    },
+    "Ironhide": {
+     "no_anchor": 0.20430233536526174,
+     "one_anchor": 0.035098556208291,
+     "rows": 7
+    },
+    "Jazz": {
+     "no_anchor": 0.015456760461160285,
+     "one_anchor": 0.015795634228636963,
+     "rows": 6
+    },
+    "Jetfire": {
+     "no_anchor": 0.03454764882377934,
+     "one_anchor": 0.02279375029787934,
+     "rows": 7
+    },
+    "Megatron (ROTF)": {
+     "no_anchor": 0.20143660397096333,
+     "one_anchor": 0.018082057000812425,
+     "rows": 5
+    },
+    "Megatron": {
+     "no_anchor": 0.09118211664576949,
+     "one_anchor": 0.015412903196382142,
+     "rows": 6
+    },
+    "Mirage": {
+     "no_anchor": 0.023266385862049623,
+     "one_anchor": 0.029485154391608134,
+     "rows": 6
+    },
+    "Mixmaster": {
+     "no_anchor": 0.1515670190815229,
+     "one_anchor": 0.016806112292801437,
+     "rows": 5
+    },
+    "Motormaster": {
+     "no_anchor": 0.2084617468106029,
+     "one_anchor": 0.021341372185576264,
+     "rows": 7
+    },
+    "Necrotronus": {
+     "no_anchor": 0.20274731773639834,
+     "one_anchor": 0.014992613772793758,
+     "rows": 7
+    },
+    "Nemesis Prime": {
+     "no_anchor": 0.1814576581355864,
+     "one_anchor": 0.021331585723275377,
+     "rows": 7
+    },
+    "Optimus Prime (MV1)": {
+     "no_anchor": 0.219572650901259,
+     "one_anchor": 0.015893591580245076,
+     "rows": 6
+    },
+    "Optimus Prime": {
+     "no_anchor": 0.14169705212177958,
+     "one_anchor": 0.023215087943502157,
+     "rows": 7
+    },
+    "Prowl": {
+     "no_anchor": 0.08856079383527606,
+     "one_anchor": 0.01850888150197874,
+     "rows": 6
+    },
+    "Ramjet": {
+     "no_anchor": 0.1590310001762919,
+     "one_anchor": 0.015395660236069893,
+     "rows": 6
+    },
+    "Rhinox": {
+     "no_anchor": 0.09118211664576896,
+     "one_anchor": 0.015412903196382416,
+     "rows": 6
+    },
+    "Scorponok": {
+     "no_anchor": 0.18486882204072205,
+     "one_anchor": 0.014851092456106567,
+     "rows": 7
+    },
+    "Shockwave": {
+     "no_anchor": 0.25617574311741614,
+     "one_anchor": 0.10417987742820395,
+     "rows": 7
+    },
+    "Sideswipe": {
+     "no_anchor": 0.05980101538264575,
+     "one_anchor": 0.02134911900637878,
+     "rows": 7
+    },
+    "Skywarp": {
+     "no_anchor": 0.2054813112062427,
+     "one_anchor": 0.037402102375337934,
+     "rows": 5
+    },
+    "Slipstream": {
+     "no_anchor": 0.05683165308227269,
+     "one_anchor": 0.02133425269128669,
+     "rows": 7
+    },
+    "Soundblaster/Tactician": {
+     "no_anchor": 0.4529027668589622,
+     "one_anchor": 0.4882926233197428,
+     "rows": 7
+    },
+    "Starscream": {
+     "no_anchor": 0.06716857386808722,
+     "one_anchor": 0.07532294597700706,
+     "rows": 7
+    },
+    "Tantrum": {
+     "no_anchor": 0.2106223498596768,
+     "one_anchor": 0.01588157577374431,
+     "rows": 6
+    },
+    "Thundercracker": {
+     "no_anchor": 0.190543990404093,
+     "one_anchor": 0.021346124207559596,
+     "rows": 7
+    },
+    "Ultra Magnus": {
+     "no_anchor": 0.13895611403611235,
+     "one_anchor": 0.02457814854531867,
+     "rows": 6
+    },
+    "Waspinator": {
+     "no_anchor": 0.054178607793962406,
+     "one_anchor": 0.01624582493806675,
+     "rows": 6
+    },
+    "Wheeljack": {
+     "no_anchor": 0.028641572923581275,
+     "one_anchor": 0.024177182800222307,
+     "rows": 7
+    },
+    "Windblade": {
+     "no_anchor": 0.059801015382643936,
+     "one_anchor": 0.021349119006378346,
+     "rows": 7
+    }
+   }
+  },
+  "atk": {
+   "bots": 39,
+   "mean_no_anchor_pct": 16.351972214619327,
+   "mean_one_anchor_pct": 2.806958473475385,
+   "median_no_anchor_pct": 16.14881777298787,
+   "median_one_anchor_pct": 2.028223090091208,
+   "worst_no_anchor_pct": 53.39665716974316,
+   "per_bot": {
+    "Arcee": {
+     "no_anchor": 0.02765060559613242,
+     "one_anchor": 0.029106463395286136,
+     "rows": 6
+    },
+    "Barricade": {
+     "no_anchor": 0.024059423737032626,
+     "one_anchor": 0.021590337578057246,
+     "rows": 7
+    },
+    "Bludgeon": {
+     "no_anchor": 0.09013990801632567,
+     "one_anchor": 0.005449383944168305,
+     "rows": 6
+    },
+    "Bonecrusher": {
+     "no_anchor": 0.11989108046320959,
+     "one_anchor": 0.01318450154737802,
+     "rows": 6
+    },
+    "Bumblebee": {
+     "no_anchor": 0.1756048332770228,
+     "one_anchor": 0.022894025613188533,
+     "rows": 6
+    },
+    "Cliffjumper": {
+     "no_anchor": 0.0873052044100262,
+     "one_anchor": 0.06010643598726316,
+     "rows": 7
+    },
+    "Drift": {
+     "no_anchor": 0.1377875642222184,
+     "one_anchor": 0.013285819560241895,
+     "rows": 6
+    },
+    "Galvatron": {
+     "no_anchor": 0.09798618762026921,
+     "one_anchor": 0.1059904654620432,
+     "rows": 6
+    },
+    "Hot Rod": {
+     "no_anchor": 0.10650139769212927,
+     "one_anchor": 0.004246893304022039,
+     "rows": 6
+    },
+    "Hound": {
+     "no_anchor": 0.16407428058834708,
+     "one_anchor": 0.01593794555658048,
+     "rows": 7
+    },
+    "Ironhide (ROTF)": {
+     "no_anchor": 0.184767955459567,
+     "one_anchor": 0.020079285984313976,
+     "rows": 7
+    },
+    "Ironhide": {
+     "no_anchor": 0.05752242075012567,
+     "one_anchor": 0.03786729981940529,
+     "rows": 7
+    },
+    "Jazz": {
+     "no_anchor": 0.025931964238816076,
+     "one_anchor": 0.01625483393764237,
+     "rows": 6
+    },
+    "Jetfire": {
+     "no_anchor": 0.1941509931711372,
+     "one_anchor": 0.02787221975974449,
+     "rows": 7
+    },
+    "Megatron (ROTF)": {
+     "no_anchor": 0.20347568939623942,
+     "one_anchor": 0.006901035257905388,
+     "rows": 5
+    },
+    "Megatron": {
+     "no_anchor": 0.11836432741496315,
+     "one_anchor": 0.006147994061722283,
+     "rows": 6
+    },
+    "Mirage": {
+     "no_anchor": 0.23511659138713897,
+     "one_anchor": 0.009555915286845329,
+     "rows": 6
+    },
+    "Mixmaster": {
+     "no_anchor": 0.4278569111153372,
+     "one_anchor": 0.00473683063365453,
+     "rows": 5
+    },
+    "Motormaster": {
+     "no_anchor": 0.046159738363014985,
+     "one_anchor": 0.021948718247463698,
+     "rows": 7
+    },
+    "Necrotronus": {
+     "no_anchor": 0.09611609000327714,
+     "one_anchor": 0.016892603202532996,
+     "rows": 7
+    },
+    "Nemesis Prime": {
+     "no_anchor": 0.17484150672497364,
+     "one_anchor": 0.021022410527727554,
+     "rows": 7
+    },
+    "Optimus Prime (MV1)": {
+     "no_anchor": 0.030753746619925904,
+     "one_anchor": 0.006435140561862631,
+     "rows": 6
+    },
+    "Optimus Prime": {
+     "no_anchor": 0.1699188876968037,
+     "one_anchor": 0.021894912860726735,
+     "rows": 7
+    },
+    "Prowl": {
+     "no_anchor": 0.14970209472614177,
+     "one_anchor": 0.011053624553739337,
+     "rows": 6
+    },
+    "Ramjet": {
+     "no_anchor": 0.197654094515582,
+     "one_anchor": 0.005198712018575993,
+     "rows": 6
+    },
+    "Rhinox": {
+     "no_anchor": 0.2833465413363505,
+     "one_anchor": 0.00627102003640085,
+     "rows": 6
+    },
+    "Scorponok": {
+     "no_anchor": 0.19024911548037235,
+     "one_anchor": 0.011598210045424046,
+     "rows": 7
+    },
+    "Shockwave": {
+     "no_anchor": 0.3072861005796315,
+     "one_anchor": 0.09305232616969163,
+     "rows": 7
+    },
+    "Sideswipe": {
+     "no_anchor": 0.024059423737036532,
+     "one_anchor": 0.02159033757805628,
+     "rows": 7
+    },
+    "Skywarp": {
+     "no_anchor": 0.33026352372922047,
+     "one_anchor": 0.006388138106713485,
+     "rows": 5
+    },
+    "Slipstream": {
+     "no_anchor": 0.0925844974626821,
+     "one_anchor": 0.09254264872936455,
+     "rows": 7
+    },
+    "Soundblaster/Tactician": {
+     "no_anchor": 0.30308461770867895,
+     "one_anchor": 0.022014004431230343,
+     "rows": 7
+    },
+    "Starscream": {
+     "no_anchor": 0.2730912782504413,
+     "one_anchor": 0.12552236571685632,
+     "rows": 7
+    },
+    "Tantrum": {
+     "no_anchor": 0.02986252495041167,
+     "one_anchor": 0.006553677829178773,
+     "rows": 6
+    },
+    "Thundercracker": {
+     "no_anchor": 0.027358150924998385,
+     "one_anchor": 0.02193441852567156,
+     "rows": 7
+    },
+    "Ultra Magnus": {
+     "no_anchor": 0.1714477983490582,
+     "one_anchor": 0.02576525385874145,
+     "rows": 6
+    },
+    "Waspinator": {
+     "no_anchor": 0.2148349621028158,
+     "one_anchor": 0.006717878915455874,
+     "rows": 6
+    },
+    "Wheeljack": {
+     "no_anchor": 0.2527797164917426,
+     "one_anchor": 0.09221734604262716,
+     "rows": 7
+    },
+    "Windblade": {
+     "no_anchor": 0.06295477026219294,
+     "one_anchor": 0.02180987809332115,
+     "rows": 7
+    }
+   }
+  }
+ },
+ "star1_with_table": {
+  "Arcee": {
+   "hp": 855.0,
+   "attack": 104.0
+  },
+  "Barricade": {
+   "hp": 826.0,
+   "attack": 106.0
+  },
+  "Bonecrusher": {
+   "hp": 970.0,
+   "attack": 93.0
+  },
+  "Ironhide (ROTF)": {
+   "hp": 1009.0,
+   "attack": 89.0
+  },
+  "Mirage": {
+   "hp": 874.0,
+   "attack": 85.0
+  },
+  "Mixmaster": {
+   "hp": 1009.0,
+   "attack": 70.0
+  },
+  "Motormaster": {
+   "hp": 1076.0,
+   "attack": 103.0
+  },
+  "Optimus Prime": {
+   "hp": 1066.0,
+   "attack": 97.0
+  },
+  "Rhinox": {
+   "hp": 951.0,
+   "attack": 81.0
+  },
+  "Sideswipe": {
+   "hp": 826.0,
+   "attack": 106.0
+  },
+  "Wheeljack": {
+   "hp": 855.0,
+   "attack": 82.0
+  },
+  "Windblade": {
+   "hp": 826.0,
+   "attack": 102.0
+  }
+ }
+}

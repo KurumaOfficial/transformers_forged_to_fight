@@ -1,0 +1,345 @@
+{
+ "method": "global log-additive fit + one anchor row per bot",
+ "error": {
+  "hp_mean_pct": 4.094697375145384,
+  "hp_median_pct": 2.156345491099265,
+  "atk_mean_pct": 2.806958473475385,
+  "atk_median_pct": 2.028223090091208,
+  "note": "leave-one-bot-out, one anchor row; no-anchor error is ~14-16%, so bots without any row stay ASSUMED"
+ },
+ "bots": {
+  "Arcee": {
+   "hp": 5340.0,
+   "attack": 516.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Barricade": {
+   "hp": 5160.0,
+   "attack": 520.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Bludgeon": {
+   "hp": 6060.0,
+   "attack": 480.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Bonecrusher": {
+   "hp": 6060.0,
+   "attack": 462.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Bumblebee": {
+   "hp": 4860.0,
+   "attack": 444.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Cliffjumper": {
+   "hp": 6000.0,
+   "attack": 484.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Drift": {
+   "hp": 5940.0,
+   "attack": 453.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Galvatron": {
+   "hp": 5994.0,
+   "attack": 484.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Hot Rod": {
+   "hp": 5820.0,
+   "attack": 471.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Ironhide": {
+   "hp": 6720.0,
+   "attack": 507.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Ironhide (ROTF)": {
+   "hp": 6300.0,
+   "attack": 431.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Jazz": {
+   "hp": 5400.0,
+   "attack": 516.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Jetfire": {
+   "hp": 5580.0,
+   "attack": 436.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Megatron": {
+   "hp": 5940.0,
+   "attack": 467.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Megatron (ROTF)": {
+   "hp": 6600.0,
+   "attack": 427.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Mirage": {
+   "hp": 5640.0,
+   "attack": 413.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Mixmaster": {
+   "hp": 6300.0,
+   "attack": 342.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Motormaster": {
+   "hp": 6720.0,
+   "attack": 507.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Necrotronus": {
+   "hp": 6660.0,
+   "attack": 480.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Optimus Prime": {
+   "hp": 6240.0,
+   "attack": 444.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Optimus Prime (MV1)": {
+   "hp": 6720.0,
+   "attack": 507.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Prowl": {
+   "hp": 5880.0,
+   "attack": 449.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Ramjet": {
+   "hp": 6360.0,
+   "attack": 431.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Rhinox": {
+   "hp": 5940.0,
+   "attack": 396.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Scorponok": {
+   "hp": 6540.0,
+   "attack": 436.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Shockwave": {
+   "hp": 6660.0,
+   "attack": 378.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Sideswipe": {
+   "hp": 5160.0,
+   "attack": 520.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Skywarp": {
+   "hp": 6885.1,
+   "attack": 377.9,
+   "anchor_row": {
+    "rank": 1,
+    "level": 10
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Slipstream": {
+   "hp": 5760.0,
+   "attack": 516.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Soundblaster/Tactician": {
+   "hp": 5400.0,
+   "attack": 391.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Starscream": {
+   "hp": 5400.0,
+   "attack": 391.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Tantrum": {
+   "hp": 6660.0,
+   "attack": 538.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Thundercracker": {
+   "hp": 6600.0,
+   "attack": 518.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Ultra Magnus": {
+   "hp": 6240.0,
+   "attack": 444.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Waspinator": {
+   "hp": 5700.0,
+   "attack": 422.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Wheeljack": {
+   "hp": 5340.0,
+   "attack": 400.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  },
+  "Windblade": {
+   "hp": 5160.0,
+   "attack": 498.0,
+   "anchor_row": {
+    "rank": 1,
+    "level": 1
+   },
+   "source": "[DERIVED] from wiki table + global ladder"
+  }
+ }
+}

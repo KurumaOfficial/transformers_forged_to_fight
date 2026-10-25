@@ -1,41 +1,41 @@
 {
-  "matchId": "match_pve_1001",
-  "matchType": "quests_fight",
-  "seed": 1234567,
-  "fighterData": {
-    "enemyFighter": {
-      "id": "barricade",
-      "hero": "barricade",
-      "name": "Barricade",
-      "class": "scout",
-      "level": 1,
-      "rank": 1,
-      "isBoss": true,
-      "hpMax": 1000,
-      "hp": 1000.0,
-      "attack": 120,
-      "critRating": 100.0,
-      "critDamage": 1.5,
-      "blockProficiency": 0.5,
-      "perfectBlockChance": 0.0,
-      "armor": 50.0,
-      "manaGain": 1.0,
-      "attributes": {
-        "hpMax": 1000,
-        "hpMaxBase": 1000,
-        "hp": 1000.0,
-        "attack": 120,
-        "attackBase": 120,
-        "armor": 50.0,
-        "critChance": 0.1,
-        "critDamage": 1.5,
-        "critRating": 100.0,
-        "blockProficiency": 0.5,
-        "perfectBlockChance": 0.0,
-        "manaGain": 1.0,
-        "resistMagic": 0.0,
-        "resistPhysical": 0.0
-      }
-    }
+ "matchId": "match_pve_1001",
+ "matchType": "quests_fight",
+ "seed": 1234567,
+ "fighterData": {
+  "enemyFighter": {
+   "id": "barricade",
+   "hero": "barricade",
+   "name": "Barricade",
+   "class": "scout",
+   "level": 1,
+   "rank": 1,
+   "isBoss": true,
+   "hpMax": 1000,
+   "hp": 1000.0,
+   "attack": 120,
+   "critRating": 100.0,
+   "critDamage": 1.5,
+   "blockProficiency": 0.5,
+   "perfectBlockChance": 0.0,
+   "armor": 50.0,
+   "manaGain": 1.0,
+   "attributes": {
+    "hpMax": 1000,
+    "hpMaxBase": 1000,
+    "hp": 1000.0,
+    "attack": 120,
+    "attackBase": 120,
+    "armor": 50.0,
+    "critChance": 0.1,
+    "critDamage": 1.5,
+    "critRating": 100.0,
+    "blockProficiency": 0.5,
+    "perfectBlockChance": 0.0,
+    "manaGain": 1.0,
+    "resistMagic": 0.0,
+    "resistPhysical": 0.0
+   }
   }
+ }
 }

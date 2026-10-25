@@ -10346,7 +10346,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "bumblebee_cin_dotm_2",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "bumblebee_cin_dotm",
+   "model": "bumblebee_cin_dotm",
+   "modelID": "bumblebee_cin_dotm",
+   "modelAsset": "bumblebee_cin_dotm",
+   "model_asset": "bumblebee_cin_dotm",
+   "m": "bumblebee_cin_dotm",
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "optimus_c_tf_t3": {
    "blueprint": "optimus_c_tf_t3",
@@ -10407,7 +10417,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "optimus_c_tf_t3",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "optimus_c_tf",
+   "model": "optimus_c_tf",
+   "modelID": "optimus_c_tf",
+   "modelAsset": "optimus_c_tf",
+   "model_asset": "optimus_c_tf",
+   "m": "optimus_c_tf",
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "arcee_gs_deluxe2014": {
    "blueprint": "arcee_gs_deluxe2014",
@@ -10468,7 +10488,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "arcee_gs_deluxe2014",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "arcee_gs_deluxe2014",
+   "model": "arcee_gs_deluxe2014",
+   "modelID": "arcee_gs_deluxe2014",
+   "modelAsset": "arcee_gs_deluxe2014",
+   "model_asset": "arcee_gs_deluxe2014",
+   "m": "arcee_gs_deluxe2014",
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "barricade_cin_dotm": {
    "blueprint": "barricade_cin_dotm",
@@ -10529,7 +10559,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "barricade_cin_dotm",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "barricade_cin_dotm",
+   "model": "barricade_cin_dotm",
+   "modelID": "barricade_cin_dotm",
+   "modelAsset": "barricade_cin_dotm",
+   "model_asset": "barricade_cin_dotm",
+   "m": "barricade_cin_dotm",
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "blaster_gs_leader2016": {
    "blueprint": "blaster_gs_leader2016",
@@ -10590,7 +10630,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "blaster_gs_leader2016",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "blaster_gs_leader2016",
+   "model": "blaster_gs_leader2016",
+   "modelID": "blaster_gs_leader2016",
+   "modelAsset": "blaster_gs_leader2016",
+   "model_asset": "blaster_gs_leader2016",
+   "m": "blaster_gs_leader2016",
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "bludgeon_gs_rd20": {
    "blueprint": "bludgeon_gs_rd20",
@@ -10651,7 +10701,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "bludgeon_gs_rd20",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "bludgeon_gs_rd20",
+   "model": "bludgeon_gs_rd20",
+   "modelID": "bludgeon_gs_rd20",
+   "modelAsset": "bludgeon_gs_rd20",
+   "model_asset": "bludgeon_gs_rd20",
+   "m": "bludgeon_gs_rd20",
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "bonecrusher_cin_rotf": {
    "blueprint": "bonecrusher_cin_rotf",
@@ -10712,7 +10772,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "bonecrusher_cin_rotf",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "bonecrusher_cin_rotf",
+   "model": "bonecrusher_cin_rotf",
+   "modelID": "bonecrusher_cin_rotf",
+   "modelAsset": "bonecrusher_cin_rotf",
+   "model_asset": "bonecrusher_cin_rotf",
+   "m": "bonecrusher_cin_rotf",
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "bumblebee_gs_kabam": {
    "blueprint": "bumblebee_gs_kabam",
@@ -10773,7 +10843,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "bumblebee_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "bumblebee_gs_kabam",
+   "model": "bumblebee_gs_kabam",
+   "modelID": "bumblebee_gs_kabam",
+   "modelAsset": "bumblebee_gs_kabam",
+   "model_asset": "bumblebee_gs_kabam",
+   "m": "bumblebee_gs_kabam",
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "cheetor_bw_transmetal": {
    "blueprint": "cheetor_bw_transmetal",
@@ -10834,7 +10914,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "cheetor_bw_transmetal",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "cheetor_bw_transmetal",
+   "model": "cheetor_bw_transmetal",
+   "modelID": "cheetor_bw_transmetal",
+   "modelAsset": "cheetor_bw_transmetal",
+   "model_asset": "cheetor_bw_transmetal",
+   "m": "cheetor_bw_transmetal",
+   "t": [
+    "scout",
+    "maximal"
+   ]
   },
   "cliffjumper_gs_kabam": {
    "blueprint": "cliffjumper_gs_kabam",
@@ -10895,7 +10985,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "cliffjumper_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "cliffjumper_gs_kabam",
+   "model": "cliffjumper_gs_kabam",
+   "modelID": "cliffjumper_gs_kabam",
+   "modelAsset": "cliffjumper_gs_kabam",
+   "model_asset": "cliffjumper_gs_kabam",
+   "m": "cliffjumper_gs_kabam",
+   "t": [
+    "demolitions",
+    "autobot"
+   ]
   },
   "cyclonus_gs_uw06": {
    "blueprint": "cyclonus_gs_uw06",
@@ -10956,7 +11056,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "cyclonus_gs_uw06",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "cyclonus_gs_uw06",
+   "model": "cyclonus_gs_uw06",
+   "modelID": "cyclonus_gs_uw06",
+   "modelAsset": "cyclonus_gs_uw06",
+   "model_asset": "cyclonus_gs_uw06",
+   "m": "cyclonus_gs_uw06",
+   "t": [
+    "tactician",
+    "decepticon"
+   ]
   },
   "dinobot_bw_kabam": {
    "blueprint": "dinobot_bw_kabam",
@@ -11017,7 +11127,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "dinobot_bw_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "dinobot_bw_kabam",
+   "model": "dinobot_bw_kabam",
+   "modelID": "dinobot_bw_kabam",
+   "modelAsset": "dinobot_bw_kabam",
+   "model_asset": "dinobot_bw_kabam",
+   "m": "dinobot_bw_kabam",
+   "t": [
+    "tactician",
+    "maximal"
+   ]
   },
   "dirge_gs_deluxe2008": {
    "blueprint": "dirge_gs_deluxe2008",
@@ -11078,7 +11198,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "dirge_gs_deluxe2008",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "dirge_gs_deluxe2008",
+   "model": "dirge_gs_deluxe2008",
+   "modelID": "dirge_gs_deluxe2008",
+   "modelAsset": "dirge_gs_deluxe2008",
+   "model_asset": "dirge_gs_deluxe2008",
+   "m": "dirge_gs_deluxe2008",
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "drift_cin_aoe": {
    "blueprint": "drift_cin_aoe",
@@ -11139,7 +11269,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "drift_cin_aoe",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "drift_cin_aoe",
+   "model": "drift_cin_aoe",
+   "modelID": "drift_cin_aoe",
+   "modelAsset": "drift_cin_aoe",
+   "model_asset": "drift_cin_aoe",
+   "m": "drift_cin_aoe",
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "galvatron_gs_voyager2016": {
    "blueprint": "galvatron_gs_voyager2016",
@@ -11200,7 +11340,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "galvatron_gs_voyager2016",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "galvatron_gs_voyager2016",
+   "model": "galvatron_gs_voyager2016",
+   "modelID": "galvatron_gs_voyager2016",
+   "modelAsset": "galvatron_gs_voyager2016",
+   "model_asset": "galvatron_gs_voyager2016",
+   "m": "galvatron_gs_voyager2016",
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "grimlock_gs_mp08": {
    "blueprint": "grimlock_gs_mp08",
@@ -11261,7 +11411,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "grimlock_gs_mp08",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "grimlock_gs_mp08",
+   "model": "grimlock_gs_mp08",
+   "modelID": "grimlock_gs_mp08",
+   "modelAsset": "grimlock_gs_mp08",
+   "model_asset": "grimlock_gs_mp08",
+   "m": "grimlock_gs_mp08",
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "grindor_cin_rotf": {
    "blueprint": "grindor_cin_rotf",
@@ -11322,7 +11482,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "grindor_cin_rotf",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "grindor_cin_rotf",
+   "model": "grindor_cin_rotf",
+   "modelID": "grindor_cin_rotf",
+   "modelAsset": "grindor_cin_rotf",
+   "model_asset": "grindor_cin_rotf",
+   "m": "grindor_cin_rotf",
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "hotrod_cin_tlk": {
    "blueprint": "hotrod_cin_tlk",
@@ -11383,7 +11553,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "hotrod_cin_tlk",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "hotrod_cin_tlk",
+   "model": "hotrod_cin_tlk",
+   "modelID": "hotrod_cin_tlk",
+   "modelAsset": "hotrod_cin_tlk",
+   "model_asset": "hotrod_cin_tlk",
+   "m": "hotrod_cin_tlk",
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "hound_cin_tlk": {
    "blueprint": "hound_cin_tlk",
@@ -11444,7 +11624,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "hound_cin_tlk",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "hound_cin_tlk",
+   "model": "hound_cin_tlk",
+   "modelID": "hound_cin_tlk",
+   "modelAsset": "hound_cin_tlk",
+   "model_asset": "hound_cin_tlk",
+   "m": "hound_cin_tlk",
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "ironhide_cin_rotf": {
    "blueprint": "ironhide_cin_rotf",
@@ -11505,7 +11695,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "ironhide_cin_rotf",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "ironhide_cin_rotf",
+   "model": "ironhide_cin_rotf",
+   "modelID": "ironhide_cin_rotf",
+   "modelAsset": "ironhide_cin_rotf",
+   "model_asset": "ironhide_cin_rotf",
+   "m": "ironhide_cin_rotf",
+   "t": [
+    "demolitions",
+    "autobot"
+   ]
   },
   "ironhide_gs_kabam": {
    "blueprint": "ironhide_gs_kabam",
@@ -11566,7 +11766,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "ironhide_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "ironhide_gs_kabam",
+   "model": "ironhide_gs_kabam",
+   "modelID": "ironhide_gs_kabam",
+   "modelAsset": "ironhide_gs_kabam",
+   "model_asset": "ironhide_gs_kabam",
+   "m": "ironhide_gs_kabam",
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "jazz_gs_twm05": {
    "blueprint": "jazz_gs_twm05",
@@ -11627,7 +11837,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "jazz_gs_twm05",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "jazz_gs_twm05",
+   "model": "jazz_gs_twm05",
+   "modelID": "jazz_gs_twm05",
+   "modelAsset": "jazz_gs_twm05",
+   "model_asset": "jazz_gs_twm05",
+   "m": "jazz_gs_twm05",
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "jetfire_gs_leader2014": {
    "blueprint": "jetfire_gs_leader2014",
@@ -11688,7 +11908,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "jetfire_gs_leader2014",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "jetfire_gs_leader2014",
+   "model": "jetfire_gs_leader2014",
+   "modelID": "jetfire_gs_leader2014",
+   "modelAsset": "jetfire_gs_leader2014",
+   "model_asset": "jetfire_gs_leader2014",
+   "m": "jetfire_gs_leader2014",
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "kickback_gs_kabam": {
    "blueprint": "kickback_gs_kabam",
@@ -11749,7 +11979,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "kickback_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "kickback_gs_kabam",
+   "model": "kickback_gs_kabam",
+   "modelID": "kickback_gs_kabam",
+   "modelAsset": "kickback_gs_kabam",
+   "model_asset": "kickback_gs_kabam",
+   "m": "kickback_gs_kabam",
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "megatron_cin_rotf": {
    "blueprint": "megatron_cin_rotf",
@@ -11810,7 +12050,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "megatron_cin_rotf",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "megatron_cin_rotf",
+   "model": "megatron_cin_rotf",
+   "modelID": "megatron_cin_rotf",
+   "modelAsset": "megatron_cin_rotf",
+   "model_asset": "megatron_cin_rotf",
+   "m": "megatron_cin_rotf",
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "megatron_gs_leader2015": {
    "blueprint": "megatron_gs_leader2015",
@@ -11871,7 +12121,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "megatron_gs_leader2015",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "megatron_gs_leader2015",
+   "model": "megatron_gs_leader2015",
+   "modelID": "megatron_gs_leader2015",
+   "modelAsset": "megatron_gs_leader2015",
+   "model_asset": "megatron_gs_leader2015",
+   "m": "megatron_gs_leader2015",
+   "t": [
+    "tactician",
+    "decepticon"
+   ]
   },
   "megatronus_gs_kabam": {
    "blueprint": "megatronus_gs_kabam",
@@ -11932,7 +12192,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "megatronus_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "megatronus_gs_kabam",
+   "model": "megatronus_gs_kabam",
+   "modelID": "megatronus_gs_kabam",
+   "modelAsset": "megatronus_gs_kabam",
+   "model_asset": "megatronus_gs_kabam",
+   "m": "megatronus_gs_kabam",
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "mirage_gs_deluxe2016": {
    "blueprint": "mirage_gs_deluxe2016",
@@ -11993,7 +12263,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "mirage_gs_deluxe2016",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "mirage_gs_deluxe2016",
+   "model": "mirage_gs_deluxe2016",
+   "modelID": "mirage_gs_deluxe2016",
+   "modelAsset": "mirage_gs_deluxe2016",
+   "model_asset": "mirage_gs_deluxe2016",
+   "m": "mirage_gs_deluxe2016",
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "mixmaster_cin_rotf": {
    "blueprint": "mixmaster_cin_rotf",
@@ -12054,7 +12334,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "mixmaster_cin_rotf",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "mixmaster_cin_rotf",
+   "model": "mixmaster_cin_rotf",
+   "modelID": "mixmaster_cin_rotf",
+   "modelAsset": "mixmaster_cin_rotf",
+   "model_asset": "mixmaster_cin_rotf",
+   "m": "mixmaster_cin_rotf",
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "motormaster_gs_voyager2015": {
    "blueprint": "motormaster_gs_voyager2015",
@@ -12115,7 +12405,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "motormaster_gs_voyager2015",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "motormaster_gs_voyager2015",
+   "model": "motormaster_gs_voyager2015",
+   "modelID": "motormaster_gs_voyager2015",
+   "modelAsset": "motormaster_gs_voyager2015",
+   "model_asset": "motormaster_gs_voyager2015",
+   "m": "motormaster_gs_voyager2015",
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "necrotronus_gs_kabam": {
    "blueprint": "necrotronus_gs_kabam",
@@ -12176,7 +12476,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "necrotronus_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "necrotronus_gs_kabam",
+   "model": "necrotronus_gs_kabam",
+   "modelID": "necrotronus_gs_kabam",
+   "modelAsset": "necrotronus_gs_kabam",
+   "model_asset": "necrotronus_gs_kabam",
+   "m": "necrotronus_gs_kabam",
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "nemesisprime_gs_voyager2015": {
    "blueprint": "nemesisprime_gs_voyager2015",
@@ -12237,7 +12547,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "nemesisprime_gs_voyager2015",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "nemesisprime_gs_voyager2015",
+   "model": "nemesisprime_gs_voyager2015",
+   "modelID": "nemesisprime_gs_voyager2015",
+   "modelAsset": "nemesisprime_gs_voyager2015",
+   "model_asset": "nemesisprime_gs_voyager2015",
+   "m": "nemesisprime_gs_voyager2015",
+   "t": [
+    "tactician",
+    "decepticon"
+   ]
   },
   "optimusprimal_bw_mp32": {
    "blueprint": "optimusprimal_bw_mp32",
@@ -12298,7 +12618,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "optimusprimal_bw_mp32",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "optimusprimal_bw_mp32",
+   "model": "optimusprimal_bw_mp32",
+   "modelID": "optimusprimal_bw_mp32",
+   "modelAsset": "optimusprimal_bw_mp32",
+   "model_asset": "optimusprimal_bw_mp32",
+   "m": "optimusprimal_bw_mp32",
+   "t": [
+    "brawler",
+    "maximal"
+   ]
   },
   "optimusprime_cin_tf": {
    "blueprint": "optimusprime_cin_tf",
@@ -12359,7 +12689,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "optimusprime_cin_tf",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "optimusprime_cin_tf",
+   "model": "optimusprime_cin_tf",
+   "modelID": "optimusprime_cin_tf",
+   "modelAsset": "optimusprime_cin_tf",
+   "model_asset": "optimusprime_cin_tf",
+   "m": "optimusprime_cin_tf",
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "prowl_gs_deluxe2016": {
    "blueprint": "prowl_gs_deluxe2016",
@@ -12420,7 +12760,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "prowl_gs_deluxe2016",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "prowl_gs_deluxe2016",
+   "model": "prowl_gs_deluxe2016",
+   "modelID": "prowl_gs_deluxe2016",
+   "modelAsset": "prowl_gs_deluxe2016",
+   "model_asset": "prowl_gs_deluxe2016",
+   "m": "prowl_gs_deluxe2016",
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "ramjet_gs_deluxe2008": {
    "blueprint": "ramjet_gs_deluxe2008",
@@ -12481,7 +12831,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "ramjet_gs_deluxe2008",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "ramjet_gs_deluxe2008",
+   "model": "ramjet_gs_deluxe2008",
+   "modelID": "ramjet_gs_deluxe2008",
+   "modelAsset": "ramjet_gs_deluxe2008",
+   "model_asset": "ramjet_gs_deluxe2008",
+   "m": "ramjet_gs_deluxe2008",
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "ratchet_gs_kabam": {
    "blueprint": "ratchet_gs_kabam",
@@ -12542,7 +12902,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "ratchet_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "ratchet_gs_kabam",
+   "model": "ratchet_gs_kabam",
+   "modelID": "ratchet_gs_kabam",
+   "modelAsset": "ratchet_gs_kabam",
+   "model_asset": "ratchet_gs_kabam",
+   "m": "ratchet_gs_kabam",
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "rhinox_gs_voyager2014": {
    "blueprint": "rhinox_gs_voyager2014",
@@ -12603,7 +12973,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "rhinox_gs_voyager2014",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "rhinox_gs_voyager2014",
+   "model": "rhinox_gs_voyager2014",
+   "modelID": "rhinox_gs_voyager2014",
+   "modelAsset": "rhinox_gs_voyager2014",
+   "model_asset": "rhinox_gs_voyager2014",
+   "m": "rhinox_gs_voyager2014",
+   "t": [
+    "tech",
+    "maximal"
+   ]
   },
   "rodimusprime_gs_mp09": {
    "blueprint": "rodimusprime_gs_mp09",
@@ -12664,7 +13044,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "rodimusprime_gs_mp09",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "rodimusprime_gs_mp09",
+   "model": "rodimusprime_gs_mp09",
+   "modelID": "rodimusprime_gs_mp09",
+   "modelAsset": "rodimusprime_gs_mp09",
+   "model_asset": "rodimusprime_gs_mp09",
+   "m": "rodimusprime_gs_mp09",
+   "t": [
+    "tactician",
+    "autobot"
+   ]
   },
   "scorponok_bw_kabam": {
    "blueprint": "scorponok_bw_kabam",
@@ -12725,7 +13115,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "scorponok_bw_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "scorponok_bw_kabam",
+   "model": "scorponok_bw_kabam",
+   "modelID": "scorponok_bw_kabam",
+   "modelAsset": "scorponok_bw_kabam",
+   "model_asset": "scorponok_bw_kabam",
+   "m": "scorponok_bw_kabam",
+   "t": [
+    "warrior",
+    "predacon"
+   ]
   },
   "sharkticon_gs_brawler": {
    "blueprint": "sharkticon_gs_brawler",
@@ -12784,7 +13184,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sharkticon_gs_brawler",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sharkticon_gs_brawler",
+   "model": "sharkticon_gs_brawler",
+   "modelID": "sharkticon_gs_brawler",
+   "modelAsset": "sharkticon_gs_brawler",
+   "model_asset": "sharkticon_gs_brawler",
+   "m": "sharkticon_gs_brawler",
+   "t": [
+    "brawler",
+    "none"
+   ]
   },
   "sharkticon_gs_demolition": {
    "blueprint": "sharkticon_gs_demolition",
@@ -12843,7 +13253,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sharkticon_gs_demolition",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sharkticon_gs_demolition",
+   "model": "sharkticon_gs_demolition",
+   "modelID": "sharkticon_gs_demolition",
+   "modelAsset": "sharkticon_gs_demolition",
+   "model_asset": "sharkticon_gs_demolition",
+   "m": "sharkticon_gs_demolition",
+   "t": [
+    "demolition",
+    "none"
+   ]
   },
   "sharkticon_gs_kabam": {
    "blueprint": "sharkticon_gs_kabam",
@@ -12902,7 +13322,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sharkticon_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sharkticon_gs_kabam",
+   "model": "sharkticon_gs_kabam",
+   "modelID": "sharkticon_gs_kabam",
+   "modelAsset": "sharkticon_gs_kabam",
+   "model_asset": "sharkticon_gs_kabam",
+   "m": "sharkticon_gs_kabam",
+   "t": [
+    "brawler",
+    "none"
+   ]
   },
   "sharkticon_gs_scout": {
    "blueprint": "sharkticon_gs_scout",
@@ -12961,7 +13391,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sharkticon_gs_scout",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sharkticon_gs_scout",
+   "model": "sharkticon_gs_scout",
+   "modelID": "sharkticon_gs_scout",
+   "modelAsset": "sharkticon_gs_scout",
+   "model_asset": "sharkticon_gs_scout",
+   "m": "sharkticon_gs_scout",
+   "t": [
+    "scout",
+    "none"
+   ]
   },
   "sharkticon_gs_tactician": {
    "blueprint": "sharkticon_gs_tactician",
@@ -13020,7 +13460,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sharkticon_gs_tactician",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sharkticon_gs_tactician",
+   "model": "sharkticon_gs_tactician",
+   "modelID": "sharkticon_gs_tactician",
+   "modelAsset": "sharkticon_gs_tactician",
+   "model_asset": "sharkticon_gs_tactician",
+   "m": "sharkticon_gs_tactician",
+   "t": [
+    "tactician",
+    "none"
+   ]
   },
   "sharkticon_gs_tech": {
    "blueprint": "sharkticon_gs_tech",
@@ -13079,7 +13529,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sharkticon_gs_tech",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sharkticon_gs_tech",
+   "model": "sharkticon_gs_tech",
+   "modelID": "sharkticon_gs_tech",
+   "modelAsset": "sharkticon_gs_tech",
+   "model_asset": "sharkticon_gs_tech",
+   "m": "sharkticon_gs_tech",
+   "t": [
+    "tech",
+    "none"
+   ]
   },
   "sharkticon_gs_warrior": {
    "blueprint": "sharkticon_gs_warrior",
@@ -13138,7 +13598,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sharkticon_gs_warrior",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sharkticon_gs_warrior",
+   "model": "sharkticon_gs_warrior",
+   "modelID": "sharkticon_gs_warrior",
+   "modelAsset": "sharkticon_gs_warrior",
+   "model_asset": "sharkticon_gs_warrior",
+   "m": "sharkticon_gs_warrior",
+   "t": [
+    "warrior",
+    "none"
+   ]
   },
   "shockwave_gs": {
    "blueprint": "shockwave_gs",
@@ -13199,7 +13669,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "shockwave_gs",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "shockwave_gs",
+   "model": "shockwave_gs",
+   "modelID": "shockwave_gs",
+   "modelAsset": "shockwave_gs",
+   "model_asset": "shockwave_gs",
+   "m": "shockwave_gs",
+   "t": [
+    "tech",
+    "decepticon"
+   ]
   },
   "sideswipe_gs": {
    "blueprint": "sideswipe_gs",
@@ -13260,7 +13740,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sideswipe_gs",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sideswipe_gs",
+   "model": "sideswipe_gs",
+   "modelID": "sideswipe_gs",
+   "modelAsset": "sideswipe_gs",
+   "model_asset": "sideswipe_gs",
+   "m": "sideswipe_gs",
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "skywarp_gs_leader2015": {
    "blueprint": "skywarp_gs_leader2015",
@@ -13321,7 +13811,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "skywarp_gs_leader2015",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "skywarp_gs_leader2015",
+   "model": "skywarp_gs_leader2015",
+   "modelID": "skywarp_gs_leader2015",
+   "modelAsset": "skywarp_gs_leader2015",
+   "model_asset": "skywarp_gs_leader2015",
+   "m": "skywarp_gs_leader2015",
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "slipstream_gs": {
    "blueprint": "slipstream_gs",
@@ -13382,7 +13882,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "slipstream_gs",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "slipstream_gs",
+   "model": "slipstream_gs",
+   "modelID": "slipstream_gs",
+   "modelAsset": "slipstream_gs",
+   "model_asset": "slipstream_gs",
+   "m": "slipstream_gs",
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "soundblaster_gs_mp13b": {
    "blueprint": "soundblaster_gs_mp13b",
@@ -13443,7 +13953,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "soundblaster_gs_mp13b",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "soundblaster_gs_mp13b",
+   "model": "soundblaster_gs_mp13b",
+   "modelID": "soundblaster_gs_mp13b",
+   "modelAsset": "soundblaster_gs_mp13b",
+   "model_asset": "soundblaster_gs_mp13b",
+   "m": "soundblaster_gs_mp13b",
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "soundwave_gs": {
    "blueprint": "soundwave_gs",
@@ -13504,7 +14024,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "soundwave_gs",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "soundwave_gs",
+   "model": "soundwave_gs",
+   "modelID": "soundwave_gs",
+   "modelAsset": "soundwave_gs",
+   "model_asset": "soundwave_gs",
+   "m": "soundwave_gs",
+   "t": [
+    "tech",
+    "decepticon"
+   ]
   },
   "sunstreaker_gs_deluxe2008": {
    "blueprint": "sunstreaker_gs_deluxe2008",
@@ -13565,7 +14095,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "sunstreaker_gs_deluxe2008",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "sunstreaker_gs_deluxe2008",
+   "model": "sunstreaker_gs_deluxe2008",
+   "modelID": "sunstreaker_gs_deluxe2008",
+   "modelAsset": "sunstreaker_gs_deluxe2008",
+   "model_asset": "sunstreaker_gs_deluxe2008",
+   "m": "sunstreaker_gs_deluxe2008",
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "tantrum_gs_kabam": {
    "blueprint": "tantrum_gs_kabam",
@@ -13626,7 +14166,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "tantrum_gs_kabam",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "tantrum_gs_kabam",
+   "model": "tantrum_gs_kabam",
+   "modelID": "tantrum_gs_kabam",
+   "modelAsset": "tantrum_gs_kabam",
+   "model_asset": "tantrum_gs_kabam",
+   "m": "tantrum_gs_kabam",
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "thundercracker_gs_leader2015": {
    "blueprint": "thundercracker_gs_leader2015",
@@ -13687,7 +14237,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "thundercracker_gs_leader2015",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "thundercracker_gs_leader2015",
+   "model": "thundercracker_gs_leader2015",
+   "modelID": "thundercracker_gs_leader2015",
+   "modelAsset": "thundercracker_gs_leader2015",
+   "model_asset": "thundercracker_gs_leader2015",
+   "m": "thundercracker_gs_leader2015",
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "ultramagnus_gs_leader": {
    "blueprint": "ultramagnus_gs_leader",
@@ -13748,7 +14308,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "ultramagnus_gs_leader",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "ultramagnus_gs_leader",
+   "model": "ultramagnus_gs_leader",
+   "modelID": "ultramagnus_gs_leader",
+   "modelAsset": "ultramagnus_gs_leader",
+   "model_asset": "ultramagnus_gs_leader",
+   "m": "ultramagnus_gs_leader",
+   "t": [
+    "tactician",
+    "autobot"
+   ]
   },
   "waspinator_gs_deluxe": {
    "blueprint": "waspinator_gs_deluxe",
@@ -13809,7 +14379,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "waspinator_gs_deluxe",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "waspinator_gs_deluxe",
+   "model": "waspinator_gs_deluxe",
+   "modelID": "waspinator_gs_deluxe",
+   "modelAsset": "waspinator_gs_deluxe",
+   "model_asset": "waspinator_gs_deluxe",
+   "m": "waspinator_gs_deluxe",
+   "t": [
+    "demolitions",
+    "predacon"
+   ]
   },
   "wheeljack_gs_mp20": {
    "blueprint": "wheeljack_gs_mp20",
@@ -13870,7 +14450,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "wheeljack_gs_mp20",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "wheeljack_gs_mp20",
+   "model": "wheeljack_gs_mp20",
+   "modelID": "wheeljack_gs_mp20",
+   "modelAsset": "wheeljack_gs_mp20",
+   "model_asset": "wheeljack_gs_mp20",
+   "m": "wheeljack_gs_mp20",
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "windblade_gs": {
    "blueprint": "windblade_gs",
@@ -13931,7 +14521,17 @@
    "forge_hp_atk_growth": "curve_linear",
    "victory_stage": "",
    "id": "windblade_gs",
-   "et": "hero"
+   "et": "hero",
+   "model_id": "windblade_gs",
+   "model": "windblade_gs",
+   "modelID": "windblade_gs",
+   "modelAsset": "windblade_gs",
+   "model_asset": "windblade_gs",
+   "m": "windblade_gs",
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   }
  },
  "characters": {
@@ -13944,7 +14544,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "bumblebee_cin_dotm",
+   "map_asset": "bumblebee_cin_dotm",
+   "mapAsset": "bumblebee_cin_dotm",
+   "model_id": "bumblebee_cin_dotm",
+   "model": "bumblebee_cin_dotm",
+   "modelID": "bumblebee_cin_dotm",
+   "modelAsset": "bumblebee_cin_dotm",
+   "model_asset": "bumblebee_cin_dotm",
+   "m": "bumblebee_cin_dotm",
+   "tags": [
+    "scout",
+    "autobot"
+   ],
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "optimus_c_tf": {
    "id": "optimus_c_tf",
@@ -13955,7 +14572,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "optimus_c_tf",
+   "map_asset": "optimus_c_tf",
+   "mapAsset": "optimus_c_tf",
+   "model_id": "optimus_c_tf",
+   "model": "optimus_c_tf",
+   "modelID": "optimus_c_tf",
+   "modelAsset": "optimus_c_tf",
+   "model_asset": "optimus_c_tf",
+   "m": "optimus_c_tf",
+   "tags": [
+    "scout",
+    "autobot"
+   ],
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "arcee_gs_deluxe2014": {
    "id": "arcee_gs_deluxe2014",
@@ -13966,7 +14600,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "arcee_gs_deluxe2014",
+   "map_asset": "arcee_gs_deluxe2014",
+   "mapAsset": "arcee_gs_deluxe2014",
+   "model_id": "arcee_gs_deluxe2014",
+   "model": "arcee_gs_deluxe2014",
+   "modelID": "arcee_gs_deluxe2014",
+   "modelAsset": "arcee_gs_deluxe2014",
+   "model_asset": "arcee_gs_deluxe2014",
+   "m": "arcee_gs_deluxe2014",
+   "tags": [
+    "warrior",
+    "autobot"
+   ],
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "barricade_cin_dotm": {
    "id": "barricade_cin_dotm",
@@ -13977,7 +14628,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "barricade_cin_dotm",
+   "map_asset": "barricade_cin_dotm",
+   "mapAsset": "barricade_cin_dotm",
+   "model_id": "barricade_cin_dotm",
+   "model": "barricade_cin_dotm",
+   "modelID": "barricade_cin_dotm",
+   "modelAsset": "barricade_cin_dotm",
+   "model_asset": "barricade_cin_dotm",
+   "m": "barricade_cin_dotm",
+   "tags": [
+    "scout",
+    "decepticon"
+   ],
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "blaster_gs_leader2016": {
    "id": "blaster_gs_leader2016",
@@ -13988,7 +14656,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "blaster_gs_leader2016",
+   "map_asset": "blaster_gs_leader2016",
+   "mapAsset": "blaster_gs_leader2016",
+   "model_id": "blaster_gs_leader2016",
+   "model": "blaster_gs_leader2016",
+   "modelID": "blaster_gs_leader2016",
+   "modelAsset": "blaster_gs_leader2016",
+   "model_asset": "blaster_gs_leader2016",
+   "m": "blaster_gs_leader2016",
+   "tags": [
+    "tech",
+    "autobot"
+   ],
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "bludgeon_gs_rd20": {
    "id": "bludgeon_gs_rd20",
@@ -13999,7 +14684,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "bludgeon_gs_rd20",
+   "map_asset": "bludgeon_gs_rd20",
+   "mapAsset": "bludgeon_gs_rd20",
+   "model_id": "bludgeon_gs_rd20",
+   "model": "bludgeon_gs_rd20",
+   "modelID": "bludgeon_gs_rd20",
+   "modelAsset": "bludgeon_gs_rd20",
+   "model_asset": "bludgeon_gs_rd20",
+   "m": "bludgeon_gs_rd20",
+   "tags": [
+    "warrior",
+    "decepticon"
+   ],
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "bonecrusher_cin_rotf": {
    "id": "bonecrusher_cin_rotf",
@@ -14010,7 +14712,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "bonecrusher_cin_rotf",
+   "map_asset": "bonecrusher_cin_rotf",
+   "mapAsset": "bonecrusher_cin_rotf",
+   "model_id": "bonecrusher_cin_rotf",
+   "model": "bonecrusher_cin_rotf",
+   "modelID": "bonecrusher_cin_rotf",
+   "modelAsset": "bonecrusher_cin_rotf",
+   "model_asset": "bonecrusher_cin_rotf",
+   "m": "bonecrusher_cin_rotf",
+   "tags": [
+    "warrior",
+    "decepticon"
+   ],
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "bumblebee_gs_kabam": {
    "id": "bumblebee_gs_kabam",
@@ -14021,7 +14740,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "bumblebee_gs_kabam",
+   "map_asset": "bumblebee_gs_kabam",
+   "mapAsset": "bumblebee_gs_kabam",
+   "model_id": "bumblebee_gs_kabam",
+   "model": "bumblebee_gs_kabam",
+   "modelID": "bumblebee_gs_kabam",
+   "modelAsset": "bumblebee_gs_kabam",
+   "model_asset": "bumblebee_gs_kabam",
+   "m": "bumblebee_gs_kabam",
+   "tags": [
+    "scout",
+    "autobot"
+   ],
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "cheetor_bw_transmetal": {
    "id": "cheetor_bw_transmetal",
@@ -14032,7 +14768,24 @@
    "generation": "Beast Wars",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "cheetor_bw_transmetal",
+   "map_asset": "cheetor_bw_transmetal",
+   "mapAsset": "cheetor_bw_transmetal",
+   "model_id": "cheetor_bw_transmetal",
+   "model": "cheetor_bw_transmetal",
+   "modelID": "cheetor_bw_transmetal",
+   "modelAsset": "cheetor_bw_transmetal",
+   "model_asset": "cheetor_bw_transmetal",
+   "m": "cheetor_bw_transmetal",
+   "tags": [
+    "scout",
+    "maximal"
+   ],
+   "t": [
+    "scout",
+    "maximal"
+   ]
   },
   "cliffjumper_gs_kabam": {
    "id": "cliffjumper_gs_kabam",
@@ -14043,7 +14796,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "cliffjumper_gs_kabam",
+   "map_asset": "cliffjumper_gs_kabam",
+   "mapAsset": "cliffjumper_gs_kabam",
+   "model_id": "cliffjumper_gs_kabam",
+   "model": "cliffjumper_gs_kabam",
+   "modelID": "cliffjumper_gs_kabam",
+   "modelAsset": "cliffjumper_gs_kabam",
+   "model_asset": "cliffjumper_gs_kabam",
+   "m": "cliffjumper_gs_kabam",
+   "tags": [
+    "demolitions",
+    "autobot"
+   ],
+   "t": [
+    "demolitions",
+    "autobot"
+   ]
   },
   "cyclonus_gs_uw06": {
    "id": "cyclonus_gs_uw06",
@@ -14054,7 +14824,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "cyclonus_gs_uw06",
+   "map_asset": "cyclonus_gs_uw06",
+   "mapAsset": "cyclonus_gs_uw06",
+   "model_id": "cyclonus_gs_uw06",
+   "model": "cyclonus_gs_uw06",
+   "modelID": "cyclonus_gs_uw06",
+   "modelAsset": "cyclonus_gs_uw06",
+   "model_asset": "cyclonus_gs_uw06",
+   "m": "cyclonus_gs_uw06",
+   "tags": [
+    "tactician",
+    "decepticon"
+   ],
+   "t": [
+    "tactician",
+    "decepticon"
+   ]
   },
   "dinobot_bw_kabam": {
    "id": "dinobot_bw_kabam",
@@ -14065,7 +14852,24 @@
    "generation": "Beast Wars",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "dinobot_bw_kabam",
+   "map_asset": "dinobot_bw_kabam",
+   "mapAsset": "dinobot_bw_kabam",
+   "model_id": "dinobot_bw_kabam",
+   "model": "dinobot_bw_kabam",
+   "modelID": "dinobot_bw_kabam",
+   "modelAsset": "dinobot_bw_kabam",
+   "model_asset": "dinobot_bw_kabam",
+   "m": "dinobot_bw_kabam",
+   "tags": [
+    "tactician",
+    "maximal"
+   ],
+   "t": [
+    "tactician",
+    "maximal"
+   ]
   },
   "dirge_gs_deluxe2008": {
    "id": "dirge_gs_deluxe2008",
@@ -14076,7 +14880,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "dirge_gs_deluxe2008",
+   "map_asset": "dirge_gs_deluxe2008",
+   "mapAsset": "dirge_gs_deluxe2008",
+   "model_id": "dirge_gs_deluxe2008",
+   "model": "dirge_gs_deluxe2008",
+   "modelID": "dirge_gs_deluxe2008",
+   "modelAsset": "dirge_gs_deluxe2008",
+   "model_asset": "dirge_gs_deluxe2008",
+   "m": "dirge_gs_deluxe2008",
+   "tags": [
+    "warrior",
+    "decepticon"
+   ],
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "drift_cin_aoe": {
    "id": "drift_cin_aoe",
@@ -14087,7 +14908,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "drift_cin_aoe",
+   "map_asset": "drift_cin_aoe",
+   "mapAsset": "drift_cin_aoe",
+   "model_id": "drift_cin_aoe",
+   "model": "drift_cin_aoe",
+   "modelID": "drift_cin_aoe",
+   "modelAsset": "drift_cin_aoe",
+   "model_asset": "drift_cin_aoe",
+   "m": "drift_cin_aoe",
+   "tags": [
+    "warrior",
+    "autobot"
+   ],
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "galvatron_gs_voyager2016": {
    "id": "galvatron_gs_voyager2016",
@@ -14098,7 +14936,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "galvatron_gs_voyager2016",
+   "map_asset": "galvatron_gs_voyager2016",
+   "mapAsset": "galvatron_gs_voyager2016",
+   "model_id": "galvatron_gs_voyager2016",
+   "model": "galvatron_gs_voyager2016",
+   "modelID": "galvatron_gs_voyager2016",
+   "modelAsset": "galvatron_gs_voyager2016",
+   "model_asset": "galvatron_gs_voyager2016",
+   "m": "galvatron_gs_voyager2016",
+   "tags": [
+    "demolitions",
+    "decepticon"
+   ],
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "grimlock_gs_mp08": {
    "id": "grimlock_gs_mp08",
@@ -14109,7 +14964,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "grimlock_gs_mp08",
+   "map_asset": "grimlock_gs_mp08",
+   "mapAsset": "grimlock_gs_mp08",
+   "model_id": "grimlock_gs_mp08",
+   "model": "grimlock_gs_mp08",
+   "modelID": "grimlock_gs_mp08",
+   "modelAsset": "grimlock_gs_mp08",
+   "model_asset": "grimlock_gs_mp08",
+   "m": "grimlock_gs_mp08",
+   "tags": [
+    "brawler",
+    "autobot"
+   ],
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "grindor_cin_rotf": {
    "id": "grindor_cin_rotf",
@@ -14120,7 +14992,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "grindor_cin_rotf",
+   "map_asset": "grindor_cin_rotf",
+   "mapAsset": "grindor_cin_rotf",
+   "model_id": "grindor_cin_rotf",
+   "model": "grindor_cin_rotf",
+   "modelID": "grindor_cin_rotf",
+   "modelAsset": "grindor_cin_rotf",
+   "model_asset": "grindor_cin_rotf",
+   "m": "grindor_cin_rotf",
+   "tags": [
+    "brawler",
+    "decepticon"
+   ],
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "hotrod_cin_tlk": {
    "id": "hotrod_cin_tlk",
@@ -14131,7 +15020,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "hotrod_cin_tlk",
+   "map_asset": "hotrod_cin_tlk",
+   "mapAsset": "hotrod_cin_tlk",
+   "model_id": "hotrod_cin_tlk",
+   "model": "hotrod_cin_tlk",
+   "modelID": "hotrod_cin_tlk",
+   "modelAsset": "hotrod_cin_tlk",
+   "model_asset": "hotrod_cin_tlk",
+   "m": "hotrod_cin_tlk",
+   "tags": [
+    "warrior",
+    "autobot"
+   ],
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "hound_cin_tlk": {
    "id": "hound_cin_tlk",
@@ -14142,7 +15048,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "hound_cin_tlk",
+   "map_asset": "hound_cin_tlk",
+   "mapAsset": "hound_cin_tlk",
+   "model_id": "hound_cin_tlk",
+   "model": "hound_cin_tlk",
+   "modelID": "hound_cin_tlk",
+   "modelAsset": "hound_cin_tlk",
+   "model_asset": "hound_cin_tlk",
+   "m": "hound_cin_tlk",
+   "tags": [
+    "warrior",
+    "autobot"
+   ],
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   },
   "ironhide_cin_rotf": {
    "id": "ironhide_cin_rotf",
@@ -14153,7 +15076,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "ironhide_cin_rotf",
+   "map_asset": "ironhide_cin_rotf",
+   "mapAsset": "ironhide_cin_rotf",
+   "model_id": "ironhide_cin_rotf",
+   "model": "ironhide_cin_rotf",
+   "modelID": "ironhide_cin_rotf",
+   "modelAsset": "ironhide_cin_rotf",
+   "model_asset": "ironhide_cin_rotf",
+   "m": "ironhide_cin_rotf",
+   "tags": [
+    "demolitions",
+    "autobot"
+   ],
+   "t": [
+    "demolitions",
+    "autobot"
+   ]
   },
   "ironhide_gs_kabam": {
    "id": "ironhide_gs_kabam",
@@ -14164,7 +15104,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "ironhide_gs_kabam",
+   "map_asset": "ironhide_gs_kabam",
+   "mapAsset": "ironhide_gs_kabam",
+   "model_id": "ironhide_gs_kabam",
+   "model": "ironhide_gs_kabam",
+   "modelID": "ironhide_gs_kabam",
+   "modelAsset": "ironhide_gs_kabam",
+   "model_asset": "ironhide_gs_kabam",
+   "m": "ironhide_gs_kabam",
+   "tags": [
+    "brawler",
+    "autobot"
+   ],
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "jazz_gs_twm05": {
    "id": "jazz_gs_twm05",
@@ -14175,7 +15132,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "jazz_gs_twm05",
+   "map_asset": "jazz_gs_twm05",
+   "mapAsset": "jazz_gs_twm05",
+   "model_id": "jazz_gs_twm05",
+   "model": "jazz_gs_twm05",
+   "modelID": "jazz_gs_twm05",
+   "modelAsset": "jazz_gs_twm05",
+   "model_asset": "jazz_gs_twm05",
+   "m": "jazz_gs_twm05",
+   "tags": [
+    "scout",
+    "autobot"
+   ],
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "jetfire_gs_leader2014": {
    "id": "jetfire_gs_leader2014",
@@ -14186,7 +15160,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "jetfire_gs_leader2014",
+   "map_asset": "jetfire_gs_leader2014",
+   "mapAsset": "jetfire_gs_leader2014",
+   "model_id": "jetfire_gs_leader2014",
+   "model": "jetfire_gs_leader2014",
+   "modelID": "jetfire_gs_leader2014",
+   "modelAsset": "jetfire_gs_leader2014",
+   "model_asset": "jetfire_gs_leader2014",
+   "m": "jetfire_gs_leader2014",
+   "tags": [
+    "tech",
+    "autobot"
+   ],
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "kickback_gs_kabam": {
    "id": "kickback_gs_kabam",
@@ -14197,7 +15188,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "kickback_gs_kabam",
+   "map_asset": "kickback_gs_kabam",
+   "mapAsset": "kickback_gs_kabam",
+   "model_id": "kickback_gs_kabam",
+   "model": "kickback_gs_kabam",
+   "modelID": "kickback_gs_kabam",
+   "modelAsset": "kickback_gs_kabam",
+   "model_asset": "kickback_gs_kabam",
+   "m": "kickback_gs_kabam",
+   "tags": [
+    "scout",
+    "decepticon"
+   ],
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "megatron_cin_rotf": {
    "id": "megatron_cin_rotf",
@@ -14208,7 +15216,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "megatron_cin_rotf",
+   "map_asset": "megatron_cin_rotf",
+   "mapAsset": "megatron_cin_rotf",
+   "model_id": "megatron_cin_rotf",
+   "model": "megatron_cin_rotf",
+   "modelID": "megatron_cin_rotf",
+   "modelAsset": "megatron_cin_rotf",
+   "model_asset": "megatron_cin_rotf",
+   "m": "megatron_cin_rotf",
+   "tags": [
+    "demolitions",
+    "decepticon"
+   ],
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "megatron_gs_leader2015": {
    "id": "megatron_gs_leader2015",
@@ -14219,7 +15244,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "megatron_gs_leader2015",
+   "map_asset": "megatron_gs_leader2015",
+   "mapAsset": "megatron_gs_leader2015",
+   "model_id": "megatron_gs_leader2015",
+   "model": "megatron_gs_leader2015",
+   "modelID": "megatron_gs_leader2015",
+   "modelAsset": "megatron_gs_leader2015",
+   "model_asset": "megatron_gs_leader2015",
+   "m": "megatron_gs_leader2015",
+   "tags": [
+    "tactician",
+    "decepticon"
+   ],
+   "t": [
+    "tactician",
+    "decepticon"
+   ]
   },
   "megatronus_gs_kabam": {
    "id": "megatronus_gs_kabam",
@@ -14230,7 +15272,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "megatronus_gs_kabam",
+   "map_asset": "megatronus_gs_kabam",
+   "mapAsset": "megatronus_gs_kabam",
+   "model_id": "megatronus_gs_kabam",
+   "model": "megatronus_gs_kabam",
+   "modelID": "megatronus_gs_kabam",
+   "modelAsset": "megatronus_gs_kabam",
+   "model_asset": "megatronus_gs_kabam",
+   "m": "megatronus_gs_kabam",
+   "tags": [
+    "demolitions",
+    "decepticon"
+   ],
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "mirage_gs_deluxe2016": {
    "id": "mirage_gs_deluxe2016",
@@ -14241,7 +15300,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "mirage_gs_deluxe2016",
+   "map_asset": "mirage_gs_deluxe2016",
+   "mapAsset": "mirage_gs_deluxe2016",
+   "model_id": "mirage_gs_deluxe2016",
+   "model": "mirage_gs_deluxe2016",
+   "modelID": "mirage_gs_deluxe2016",
+   "modelAsset": "mirage_gs_deluxe2016",
+   "model_asset": "mirage_gs_deluxe2016",
+   "m": "mirage_gs_deluxe2016",
+   "tags": [
+    "tech",
+    "autobot"
+   ],
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "mixmaster_cin_rotf": {
    "id": "mixmaster_cin_rotf",
@@ -14252,7 +15328,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "mixmaster_cin_rotf",
+   "map_asset": "mixmaster_cin_rotf",
+   "mapAsset": "mixmaster_cin_rotf",
+   "model_id": "mixmaster_cin_rotf",
+   "model": "mixmaster_cin_rotf",
+   "modelID": "mixmaster_cin_rotf",
+   "modelAsset": "mixmaster_cin_rotf",
+   "model_asset": "mixmaster_cin_rotf",
+   "m": "mixmaster_cin_rotf",
+   "tags": [
+    "demolitions",
+    "decepticon"
+   ],
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "motormaster_gs_voyager2015": {
    "id": "motormaster_gs_voyager2015",
@@ -14263,7 +15356,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "motormaster_gs_voyager2015",
+   "map_asset": "motormaster_gs_voyager2015",
+   "mapAsset": "motormaster_gs_voyager2015",
+   "model_id": "motormaster_gs_voyager2015",
+   "model": "motormaster_gs_voyager2015",
+   "modelID": "motormaster_gs_voyager2015",
+   "modelAsset": "motormaster_gs_voyager2015",
+   "model_asset": "motormaster_gs_voyager2015",
+   "m": "motormaster_gs_voyager2015",
+   "tags": [
+    "brawler",
+    "decepticon"
+   ],
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "necrotronus_gs_kabam": {
    "id": "necrotronus_gs_kabam",
@@ -14274,7 +15384,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "necrotronus_gs_kabam",
+   "map_asset": "necrotronus_gs_kabam",
+   "mapAsset": "necrotronus_gs_kabam",
+   "model_id": "necrotronus_gs_kabam",
+   "model": "necrotronus_gs_kabam",
+   "modelID": "necrotronus_gs_kabam",
+   "modelAsset": "necrotronus_gs_kabam",
+   "model_asset": "necrotronus_gs_kabam",
+   "m": "necrotronus_gs_kabam",
+   "tags": [
+    "warrior",
+    "decepticon"
+   ],
+   "t": [
+    "warrior",
+    "decepticon"
+   ]
   },
   "nemesisprime_gs_voyager2015": {
    "id": "nemesisprime_gs_voyager2015",
@@ -14285,7 +15412,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "nemesisprime_gs_voyager2015",
+   "map_asset": "nemesisprime_gs_voyager2015",
+   "mapAsset": "nemesisprime_gs_voyager2015",
+   "model_id": "nemesisprime_gs_voyager2015",
+   "model": "nemesisprime_gs_voyager2015",
+   "modelID": "nemesisprime_gs_voyager2015",
+   "modelAsset": "nemesisprime_gs_voyager2015",
+   "model_asset": "nemesisprime_gs_voyager2015",
+   "m": "nemesisprime_gs_voyager2015",
+   "tags": [
+    "tactician",
+    "decepticon"
+   ],
+   "t": [
+    "tactician",
+    "decepticon"
+   ]
   },
   "optimusprimal_bw_mp32": {
    "id": "optimusprimal_bw_mp32",
@@ -14296,7 +15440,24 @@
    "generation": "Beast Wars",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "optimusprimal_bw_mp32",
+   "map_asset": "optimusprimal_bw_mp32",
+   "mapAsset": "optimusprimal_bw_mp32",
+   "model_id": "optimusprimal_bw_mp32",
+   "model": "optimusprimal_bw_mp32",
+   "modelID": "optimusprimal_bw_mp32",
+   "modelAsset": "optimusprimal_bw_mp32",
+   "model_asset": "optimusprimal_bw_mp32",
+   "m": "optimusprimal_bw_mp32",
+   "tags": [
+    "brawler",
+    "maximal"
+   ],
+   "t": [
+    "brawler",
+    "maximal"
+   ]
   },
   "optimusprime_cin_tf": {
    "id": "optimusprime_cin_tf",
@@ -14307,7 +15468,24 @@
    "generation": "Cinematic",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "optimusprime_cin_tf",
+   "map_asset": "optimusprime_cin_tf",
+   "mapAsset": "optimusprime_cin_tf",
+   "model_id": "optimusprime_cin_tf",
+   "model": "optimusprime_cin_tf",
+   "modelID": "optimusprime_cin_tf",
+   "modelAsset": "optimusprime_cin_tf",
+   "model_asset": "optimusprime_cin_tf",
+   "m": "optimusprime_cin_tf",
+   "tags": [
+    "brawler",
+    "autobot"
+   ],
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "prowl_gs_deluxe2016": {
    "id": "prowl_gs_deluxe2016",
@@ -14318,7 +15496,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "prowl_gs_deluxe2016",
+   "map_asset": "prowl_gs_deluxe2016",
+   "mapAsset": "prowl_gs_deluxe2016",
+   "model_id": "prowl_gs_deluxe2016",
+   "model": "prowl_gs_deluxe2016",
+   "modelID": "prowl_gs_deluxe2016",
+   "modelAsset": "prowl_gs_deluxe2016",
+   "model_asset": "prowl_gs_deluxe2016",
+   "m": "prowl_gs_deluxe2016",
+   "tags": [
+    "scout",
+    "autobot"
+   ],
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "ramjet_gs_deluxe2008": {
    "id": "ramjet_gs_deluxe2008",
@@ -14329,7 +15524,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "ramjet_gs_deluxe2008",
+   "map_asset": "ramjet_gs_deluxe2008",
+   "mapAsset": "ramjet_gs_deluxe2008",
+   "model_id": "ramjet_gs_deluxe2008",
+   "model": "ramjet_gs_deluxe2008",
+   "modelID": "ramjet_gs_deluxe2008",
+   "modelAsset": "ramjet_gs_deluxe2008",
+   "model_asset": "ramjet_gs_deluxe2008",
+   "m": "ramjet_gs_deluxe2008",
+   "tags": [
+    "demolitions",
+    "decepticon"
+   ],
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "ratchet_gs_kabam": {
    "id": "ratchet_gs_kabam",
@@ -14340,7 +15552,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "ratchet_gs_kabam",
+   "map_asset": "ratchet_gs_kabam",
+   "mapAsset": "ratchet_gs_kabam",
+   "model_id": "ratchet_gs_kabam",
+   "model": "ratchet_gs_kabam",
+   "modelID": "ratchet_gs_kabam",
+   "modelAsset": "ratchet_gs_kabam",
+   "model_asset": "ratchet_gs_kabam",
+   "m": "ratchet_gs_kabam",
+   "tags": [
+    "tech",
+    "autobot"
+   ],
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "rhinox_gs_voyager2014": {
    "id": "rhinox_gs_voyager2014",
@@ -14351,7 +15580,24 @@
    "generation": "Beast Wars",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "rhinox_gs_voyager2014",
+   "map_asset": "rhinox_gs_voyager2014",
+   "mapAsset": "rhinox_gs_voyager2014",
+   "model_id": "rhinox_gs_voyager2014",
+   "model": "rhinox_gs_voyager2014",
+   "modelID": "rhinox_gs_voyager2014",
+   "modelAsset": "rhinox_gs_voyager2014",
+   "model_asset": "rhinox_gs_voyager2014",
+   "m": "rhinox_gs_voyager2014",
+   "tags": [
+    "tech",
+    "maximal"
+   ],
+   "t": [
+    "tech",
+    "maximal"
+   ]
   },
   "rodimusprime_gs_mp09": {
    "id": "rodimusprime_gs_mp09",
@@ -14362,7 +15608,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "rodimusprime_gs_mp09",
+   "map_asset": "rodimusprime_gs_mp09",
+   "mapAsset": "rodimusprime_gs_mp09",
+   "model_id": "rodimusprime_gs_mp09",
+   "model": "rodimusprime_gs_mp09",
+   "modelID": "rodimusprime_gs_mp09",
+   "modelAsset": "rodimusprime_gs_mp09",
+   "model_asset": "rodimusprime_gs_mp09",
+   "m": "rodimusprime_gs_mp09",
+   "tags": [
+    "tactician",
+    "autobot"
+   ],
+   "t": [
+    "tactician",
+    "autobot"
+   ]
   },
   "scorponok_bw_kabam": {
    "id": "scorponok_bw_kabam",
@@ -14373,7 +15636,24 @@
    "generation": "Beast Wars",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "scorponok_bw_kabam",
+   "map_asset": "scorponok_bw_kabam",
+   "mapAsset": "scorponok_bw_kabam",
+   "model_id": "scorponok_bw_kabam",
+   "model": "scorponok_bw_kabam",
+   "modelID": "scorponok_bw_kabam",
+   "modelAsset": "scorponok_bw_kabam",
+   "model_asset": "scorponok_bw_kabam",
+   "m": "scorponok_bw_kabam",
+   "tags": [
+    "warrior",
+    "predacon"
+   ],
+   "t": [
+    "warrior",
+    "predacon"
+   ]
   },
   "sharkticon_gs_brawler": {
    "id": "sharkticon_gs_brawler",
@@ -14384,7 +15664,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sharkticon_gs_brawler",
+   "map_asset": "sharkticon_gs_brawler",
+   "mapAsset": "sharkticon_gs_brawler",
+   "model_id": "sharkticon_gs_brawler",
+   "model": "sharkticon_gs_brawler",
+   "modelID": "sharkticon_gs_brawler",
+   "modelAsset": "sharkticon_gs_brawler",
+   "model_asset": "sharkticon_gs_brawler",
+   "m": "sharkticon_gs_brawler",
+   "tags": [
+    "brawler",
+    "none"
+   ],
+   "t": [
+    "brawler",
+    "none"
+   ]
   },
   "sharkticon_gs_demolition": {
    "id": "sharkticon_gs_demolition",
@@ -14395,7 +15692,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sharkticon_gs_demolition",
+   "map_asset": "sharkticon_gs_demolition",
+   "mapAsset": "sharkticon_gs_demolition",
+   "model_id": "sharkticon_gs_demolition",
+   "model": "sharkticon_gs_demolition",
+   "modelID": "sharkticon_gs_demolition",
+   "modelAsset": "sharkticon_gs_demolition",
+   "model_asset": "sharkticon_gs_demolition",
+   "m": "sharkticon_gs_demolition",
+   "tags": [
+    "demolition",
+    "none"
+   ],
+   "t": [
+    "demolition",
+    "none"
+   ]
   },
   "sharkticon_gs_kabam": {
    "id": "sharkticon_gs_kabam",
@@ -14406,7 +15720,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sharkticon_gs_kabam",
+   "map_asset": "sharkticon_gs_kabam",
+   "mapAsset": "sharkticon_gs_kabam",
+   "model_id": "sharkticon_gs_kabam",
+   "model": "sharkticon_gs_kabam",
+   "modelID": "sharkticon_gs_kabam",
+   "modelAsset": "sharkticon_gs_kabam",
+   "model_asset": "sharkticon_gs_kabam",
+   "m": "sharkticon_gs_kabam",
+   "tags": [
+    "brawler",
+    "none"
+   ],
+   "t": [
+    "brawler",
+    "none"
+   ]
   },
   "sharkticon_gs_scout": {
    "id": "sharkticon_gs_scout",
@@ -14417,7 +15748,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sharkticon_gs_scout",
+   "map_asset": "sharkticon_gs_scout",
+   "mapAsset": "sharkticon_gs_scout",
+   "model_id": "sharkticon_gs_scout",
+   "model": "sharkticon_gs_scout",
+   "modelID": "sharkticon_gs_scout",
+   "modelAsset": "sharkticon_gs_scout",
+   "model_asset": "sharkticon_gs_scout",
+   "m": "sharkticon_gs_scout",
+   "tags": [
+    "scout",
+    "none"
+   ],
+   "t": [
+    "scout",
+    "none"
+   ]
   },
   "sharkticon_gs_tactician": {
    "id": "sharkticon_gs_tactician",
@@ -14428,7 +15776,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sharkticon_gs_tactician",
+   "map_asset": "sharkticon_gs_tactician",
+   "mapAsset": "sharkticon_gs_tactician",
+   "model_id": "sharkticon_gs_tactician",
+   "model": "sharkticon_gs_tactician",
+   "modelID": "sharkticon_gs_tactician",
+   "modelAsset": "sharkticon_gs_tactician",
+   "model_asset": "sharkticon_gs_tactician",
+   "m": "sharkticon_gs_tactician",
+   "tags": [
+    "tactician",
+    "none"
+   ],
+   "t": [
+    "tactician",
+    "none"
+   ]
   },
   "sharkticon_gs_tech": {
    "id": "sharkticon_gs_tech",
@@ -14439,7 +15804,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sharkticon_gs_tech",
+   "map_asset": "sharkticon_gs_tech",
+   "mapAsset": "sharkticon_gs_tech",
+   "model_id": "sharkticon_gs_tech",
+   "model": "sharkticon_gs_tech",
+   "modelID": "sharkticon_gs_tech",
+   "modelAsset": "sharkticon_gs_tech",
+   "model_asset": "sharkticon_gs_tech",
+   "m": "sharkticon_gs_tech",
+   "tags": [
+    "tech",
+    "none"
+   ],
+   "t": [
+    "tech",
+    "none"
+   ]
   },
   "sharkticon_gs_warrior": {
    "id": "sharkticon_gs_warrior",
@@ -14450,7 +15832,24 @@
    "generation": "Generation 1 (Game Original)",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sharkticon_gs_warrior",
+   "map_asset": "sharkticon_gs_warrior",
+   "mapAsset": "sharkticon_gs_warrior",
+   "model_id": "sharkticon_gs_warrior",
+   "model": "sharkticon_gs_warrior",
+   "modelID": "sharkticon_gs_warrior",
+   "modelAsset": "sharkticon_gs_warrior",
+   "model_asset": "sharkticon_gs_warrior",
+   "m": "sharkticon_gs_warrior",
+   "tags": [
+    "warrior",
+    "none"
+   ],
+   "t": [
+    "warrior",
+    "none"
+   ]
   },
   "shockwave_gs": {
    "id": "shockwave_gs",
@@ -14461,7 +15860,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "shockwave_gs",
+   "map_asset": "shockwave_gs",
+   "mapAsset": "shockwave_gs",
+   "model_id": "shockwave_gs",
+   "model": "shockwave_gs",
+   "modelID": "shockwave_gs",
+   "modelAsset": "shockwave_gs",
+   "model_asset": "shockwave_gs",
+   "m": "shockwave_gs",
+   "tags": [
+    "tech",
+    "decepticon"
+   ],
+   "t": [
+    "tech",
+    "decepticon"
+   ]
   },
   "sideswipe_gs": {
    "id": "sideswipe_gs",
@@ -14472,7 +15888,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sideswipe_gs",
+   "map_asset": "sideswipe_gs",
+   "mapAsset": "sideswipe_gs",
+   "model_id": "sideswipe_gs",
+   "model": "sideswipe_gs",
+   "modelID": "sideswipe_gs",
+   "modelAsset": "sideswipe_gs",
+   "model_asset": "sideswipe_gs",
+   "m": "sideswipe_gs",
+   "tags": [
+    "scout",
+    "autobot"
+   ],
+   "t": [
+    "scout",
+    "autobot"
+   ]
   },
   "skywarp_gs_leader2015": {
    "id": "skywarp_gs_leader2015",
@@ -14483,7 +15916,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "skywarp_gs_leader2015",
+   "map_asset": "skywarp_gs_leader2015",
+   "mapAsset": "skywarp_gs_leader2015",
+   "model_id": "skywarp_gs_leader2015",
+   "model": "skywarp_gs_leader2015",
+   "modelID": "skywarp_gs_leader2015",
+   "modelAsset": "skywarp_gs_leader2015",
+   "model_asset": "skywarp_gs_leader2015",
+   "m": "skywarp_gs_leader2015",
+   "tags": [
+    "scout",
+    "decepticon"
+   ],
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "slipstream_gs": {
    "id": "slipstream_gs",
@@ -14494,7 +15944,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "slipstream_gs",
+   "map_asset": "slipstream_gs",
+   "mapAsset": "slipstream_gs",
+   "model_id": "slipstream_gs",
+   "model": "slipstream_gs",
+   "modelID": "slipstream_gs",
+   "modelAsset": "slipstream_gs",
+   "model_asset": "slipstream_gs",
+   "m": "slipstream_gs",
+   "tags": [
+    "scout",
+    "decepticon"
+   ],
+   "t": [
+    "scout",
+    "decepticon"
+   ]
   },
   "soundblaster_gs_mp13b": {
    "id": "soundblaster_gs_mp13b",
@@ -14505,7 +15972,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "soundblaster_gs_mp13b",
+   "map_asset": "soundblaster_gs_mp13b",
+   "mapAsset": "soundblaster_gs_mp13b",
+   "model_id": "soundblaster_gs_mp13b",
+   "model": "soundblaster_gs_mp13b",
+   "modelID": "soundblaster_gs_mp13b",
+   "modelAsset": "soundblaster_gs_mp13b",
+   "model_asset": "soundblaster_gs_mp13b",
+   "m": "soundblaster_gs_mp13b",
+   "tags": [
+    "demolitions",
+    "decepticon"
+   ],
+   "t": [
+    "demolitions",
+    "decepticon"
+   ]
   },
   "soundwave_gs": {
    "id": "soundwave_gs",
@@ -14516,7 +16000,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "soundwave_gs",
+   "map_asset": "soundwave_gs",
+   "mapAsset": "soundwave_gs",
+   "model_id": "soundwave_gs",
+   "model": "soundwave_gs",
+   "modelID": "soundwave_gs",
+   "modelAsset": "soundwave_gs",
+   "model_asset": "soundwave_gs",
+   "m": "soundwave_gs",
+   "tags": [
+    "tech",
+    "decepticon"
+   ],
+   "t": [
+    "tech",
+    "decepticon"
+   ]
   },
   "sunstreaker_gs_deluxe2008": {
    "id": "sunstreaker_gs_deluxe2008",
@@ -14527,7 +16028,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "sunstreaker_gs_deluxe2008",
+   "map_asset": "sunstreaker_gs_deluxe2008",
+   "mapAsset": "sunstreaker_gs_deluxe2008",
+   "model_id": "sunstreaker_gs_deluxe2008",
+   "model": "sunstreaker_gs_deluxe2008",
+   "modelID": "sunstreaker_gs_deluxe2008",
+   "modelAsset": "sunstreaker_gs_deluxe2008",
+   "model_asset": "sunstreaker_gs_deluxe2008",
+   "m": "sunstreaker_gs_deluxe2008",
+   "tags": [
+    "brawler",
+    "autobot"
+   ],
+   "t": [
+    "brawler",
+    "autobot"
+   ]
   },
   "tantrum_gs_kabam": {
    "id": "tantrum_gs_kabam",
@@ -14538,7 +16056,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "tantrum_gs_kabam",
+   "map_asset": "tantrum_gs_kabam",
+   "mapAsset": "tantrum_gs_kabam",
+   "model_id": "tantrum_gs_kabam",
+   "model": "tantrum_gs_kabam",
+   "modelID": "tantrum_gs_kabam",
+   "modelAsset": "tantrum_gs_kabam",
+   "model_asset": "tantrum_gs_kabam",
+   "m": "tantrum_gs_kabam",
+   "tags": [
+    "brawler",
+    "decepticon"
+   ],
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "thundercracker_gs_leader2015": {
    "id": "thundercracker_gs_leader2015",
@@ -14549,7 +16084,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "thundercracker_gs_leader2015",
+   "map_asset": "thundercracker_gs_leader2015",
+   "mapAsset": "thundercracker_gs_leader2015",
+   "model_id": "thundercracker_gs_leader2015",
+   "model": "thundercracker_gs_leader2015",
+   "modelID": "thundercracker_gs_leader2015",
+   "modelAsset": "thundercracker_gs_leader2015",
+   "model_asset": "thundercracker_gs_leader2015",
+   "m": "thundercracker_gs_leader2015",
+   "tags": [
+    "brawler",
+    "decepticon"
+   ],
+   "t": [
+    "brawler",
+    "decepticon"
+   ]
   },
   "ultramagnus_gs_leader": {
    "id": "ultramagnus_gs_leader",
@@ -14560,7 +16112,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "ultramagnus_gs_leader",
+   "map_asset": "ultramagnus_gs_leader",
+   "mapAsset": "ultramagnus_gs_leader",
+   "model_id": "ultramagnus_gs_leader",
+   "model": "ultramagnus_gs_leader",
+   "modelID": "ultramagnus_gs_leader",
+   "modelAsset": "ultramagnus_gs_leader",
+   "model_asset": "ultramagnus_gs_leader",
+   "m": "ultramagnus_gs_leader",
+   "tags": [
+    "tactician",
+    "autobot"
+   ],
+   "t": [
+    "tactician",
+    "autobot"
+   ]
   },
   "waspinator_gs_deluxe": {
    "id": "waspinator_gs_deluxe",
@@ -14571,7 +16140,24 @@
    "generation": "Beast Wars",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "waspinator_gs_deluxe",
+   "map_asset": "waspinator_gs_deluxe",
+   "mapAsset": "waspinator_gs_deluxe",
+   "model_id": "waspinator_gs_deluxe",
+   "model": "waspinator_gs_deluxe",
+   "modelID": "waspinator_gs_deluxe",
+   "modelAsset": "waspinator_gs_deluxe",
+   "model_asset": "waspinator_gs_deluxe",
+   "m": "waspinator_gs_deluxe",
+   "tags": [
+    "demolitions",
+    "predacon"
+   ],
+   "t": [
+    "demolitions",
+    "predacon"
+   ]
   },
   "wheeljack_gs_mp20": {
    "id": "wheeljack_gs_mp20",
@@ -14582,7 +16168,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "wheeljack_gs_mp20",
+   "map_asset": "wheeljack_gs_mp20",
+   "mapAsset": "wheeljack_gs_mp20",
+   "model_id": "wheeljack_gs_mp20",
+   "model": "wheeljack_gs_mp20",
+   "modelID": "wheeljack_gs_mp20",
+   "modelAsset": "wheeljack_gs_mp20",
+   "model_asset": "wheeljack_gs_mp20",
+   "m": "wheeljack_gs_mp20",
+   "tags": [
+    "tech",
+    "autobot"
+   ],
+   "t": [
+    "tech",
+    "autobot"
+   ]
   },
   "windblade_gs": {
    "id": "windblade_gs",
@@ -14593,7 +16196,24 @@
    "generation": "Generation 1",
    "ai_personality": "aggressive",
    "victory_stage": "",
-   "special_stage": ""
+   "special_stage": "",
+   "modelId": "windblade_gs",
+   "map_asset": "windblade_gs",
+   "mapAsset": "windblade_gs",
+   "model_id": "windblade_gs",
+   "model": "windblade_gs",
+   "modelID": "windblade_gs",
+   "modelAsset": "windblade_gs",
+   "model_asset": "windblade_gs",
+   "m": "windblade_gs",
+   "tags": [
+    "warrior",
+    "autobot"
+   ],
+   "t": [
+    "warrior",
+    "autobot"
+   ]
   }
  },
  "evoBlueprints": {
@@ -15007,6 +16627,14 @@
     "rating_attack_base": 50,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "scout",
+     "autobot"
+    ],
+    "t": [
+     "scout",
+     "autobot"
     ]
    },
    {
@@ -15099,6 +16727,14 @@
     "rating_attack_base": 128,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "warrior",
+     "autobot"
+    ],
+    "t": [
+     "warrior",
+     "autobot"
     ]
    },
    {
@@ -15191,6 +16827,14 @@
     "rating_attack_base": 130,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "scout",
+     "decepticon"
+    ],
+    "t": [
+     "scout",
+     "decepticon"
     ]
    },
    {
@@ -15283,6 +16927,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "tech",
+     "autobot"
+    ],
+    "t": [
+     "tech",
+     "autobot"
     ]
    },
    {
@@ -15375,6 +17027,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "warrior",
+     "decepticon"
+    ],
+    "t": [
+     "warrior",
+     "decepticon"
     ]
    },
    {
@@ -15467,6 +17127,14 @@
     "rating_attack_base": 124,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "warrior",
+     "decepticon"
+    ],
+    "t": [
+     "warrior",
+     "decepticon"
     ]
    },
    {
@@ -15559,6 +17227,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "scout",
+     "autobot"
+    ],
+    "t": [
+     "scout",
+     "autobot"
     ]
    },
    {
@@ -15651,6 +17327,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_maximals"
+    ],
+    "tags": [
+     "scout",
+     "maximal"
+    ],
+    "t": [
+     "scout",
+     "maximal"
     ]
    },
    {
@@ -15743,6 +17427,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "demolitions",
+     "autobot"
+    ],
+    "t": [
+     "demolitions",
+     "autobot"
     ]
    },
    {
@@ -15835,6 +17527,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "tactician",
+     "decepticon"
+    ],
+    "t": [
+     "tactician",
+     "decepticon"
     ]
    },
    {
@@ -15927,6 +17627,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_maximals"
+    ],
+    "tags": [
+     "tactician",
+     "maximal"
+    ],
+    "t": [
+     "tactician",
+     "maximal"
     ]
    },
    {
@@ -16019,6 +17727,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "warrior",
+     "decepticon"
+    ],
+    "t": [
+     "warrior",
+     "decepticon"
     ]
    },
    {
@@ -16111,6 +17827,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "warrior",
+     "autobot"
+    ],
+    "t": [
+     "warrior",
+     "autobot"
     ]
    },
    {
@@ -16203,6 +17927,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "demolitions",
+     "decepticon"
+    ],
+    "t": [
+     "demolitions",
+     "decepticon"
     ]
    },
    {
@@ -16295,6 +18027,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "brawler",
+     "autobot"
+    ],
+    "t": [
+     "brawler",
+     "autobot"
     ]
    },
    {
@@ -16387,6 +18127,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "brawler",
+     "decepticon"
+    ],
+    "t": [
+     "brawler",
+     "decepticon"
     ]
    },
    {
@@ -16479,6 +18227,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "warrior",
+     "autobot"
+    ],
+    "t": [
+     "warrior",
+     "autobot"
     ]
    },
    {
@@ -16571,6 +18327,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "warrior",
+     "autobot"
+    ],
+    "t": [
+     "warrior",
+     "autobot"
     ]
    },
    {
@@ -16663,6 +18427,14 @@
     "rating_attack_base": 130,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "demolitions",
+     "autobot"
+    ],
+    "t": [
+     "demolitions",
+     "autobot"
     ]
    },
    {
@@ -16755,6 +18527,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "brawler",
+     "autobot"
+    ],
+    "t": [
+     "brawler",
+     "autobot"
     ]
    },
    {
@@ -16847,6 +18627,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "scout",
+     "autobot"
+    ],
+    "t": [
+     "scout",
+     "autobot"
     ]
    },
    {
@@ -16939,6 +18727,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "tech",
+     "autobot"
+    ],
+    "t": [
+     "tech",
+     "autobot"
     ]
    },
    {
@@ -17031,6 +18827,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "scout",
+     "decepticon"
+    ],
+    "t": [
+     "scout",
+     "decepticon"
     ]
    },
    {
@@ -17123,6 +18927,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "demolitions",
+     "decepticon"
+    ],
+    "t": [
+     "demolitions",
+     "decepticon"
     ]
    },
    {
@@ -17215,6 +19027,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "tactician",
+     "decepticon"
+    ],
+    "t": [
+     "tactician",
+     "decepticon"
     ]
    },
    {
@@ -17307,6 +19127,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "demolitions",
+     "decepticon"
+    ],
+    "t": [
+     "demolitions",
+     "decepticon"
     ]
    },
    {
@@ -17399,6 +19227,14 @@
     "rating_attack_base": 124,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "tech",
+     "autobot"
+    ],
+    "t": [
+     "tech",
+     "autobot"
     ]
    },
    {
@@ -17491,6 +19327,14 @@
     "rating_attack_base": 122,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "demolitions",
+     "decepticon"
+    ],
+    "t": [
+     "demolitions",
+     "decepticon"
     ]
    },
    {
@@ -17583,6 +19427,14 @@
     "rating_attack_base": 125,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "brawler",
+     "decepticon"
+    ],
+    "t": [
+     "brawler",
+     "decepticon"
     ]
    },
    {
@@ -17675,6 +19527,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "warrior",
+     "decepticon"
+    ],
+    "t": [
+     "warrior",
+     "decepticon"
     ]
    },
    {
@@ -17767,6 +19627,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "tactician",
+     "decepticon"
+    ],
+    "t": [
+     "tactician",
+     "decepticon"
     ]
    },
    {
@@ -17859,6 +19727,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_maximals"
+    ],
+    "tags": [
+     "brawler",
+     "maximal"
+    ],
+    "t": [
+     "brawler",
+     "maximal"
     ]
    },
    {
@@ -17951,6 +19827,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "brawler",
+     "autobot"
+    ],
+    "t": [
+     "brawler",
+     "autobot"
     ]
    },
    {
@@ -18043,6 +19927,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "scout",
+     "autobot"
+    ],
+    "t": [
+     "scout",
+     "autobot"
     ]
    },
    {
@@ -18135,6 +20027,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "demolitions",
+     "decepticon"
+    ],
+    "t": [
+     "demolitions",
+     "decepticon"
     ]
    },
    {
@@ -18227,6 +20127,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "tech",
+     "autobot"
+    ],
+    "t": [
+     "tech",
+     "autobot"
     ]
    },
    {
@@ -18319,6 +20227,14 @@
     "rating_attack_base": 128,
     "synergyBonuses": [
      "syn_maximals"
+    ],
+    "tags": [
+     "tech",
+     "maximal"
+    ],
+    "t": [
+     "tech",
+     "maximal"
     ]
    },
    {
@@ -18411,6 +20327,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "tactician",
+     "autobot"
+    ],
+    "t": [
+     "tactician",
+     "autobot"
     ]
    },
    {
@@ -18503,6 +20427,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_predacons"
+    ],
+    "tags": [
+     "warrior",
+     "predacon"
+    ],
+    "t": [
+     "warrior",
+     "predacon"
     ]
    },
    {
@@ -18592,7 +20524,15 @@
     "rating_hp": 160,
     "rating_attack": 160,
     "rating_hp_base": 160,
-    "rating_attack_base": 160
+    "rating_attack_base": 160,
+    "tags": [
+     "brawler",
+     "none"
+    ],
+    "t": [
+     "brawler",
+     "none"
+    ]
    },
    {
     "rank": 1,
@@ -18681,7 +20621,15 @@
     "rating_hp": 160,
     "rating_attack": 160,
     "rating_hp_base": 160,
-    "rating_attack_base": 160
+    "rating_attack_base": 160,
+    "tags": [
+     "demolition",
+     "none"
+    ],
+    "t": [
+     "demolition",
+     "none"
+    ]
    },
    {
     "rank": 1,
@@ -18770,7 +20718,15 @@
     "rating_hp": 160,
     "rating_attack": 160,
     "rating_hp_base": 160,
-    "rating_attack_base": 160
+    "rating_attack_base": 160,
+    "tags": [
+     "brawler",
+     "none"
+    ],
+    "t": [
+     "brawler",
+     "none"
+    ]
    },
    {
     "rank": 1,
@@ -18859,7 +20815,15 @@
     "rating_hp": 160,
     "rating_attack": 160,
     "rating_hp_base": 160,
-    "rating_attack_base": 160
+    "rating_attack_base": 160,
+    "tags": [
+     "scout",
+     "none"
+    ],
+    "t": [
+     "scout",
+     "none"
+    ]
    },
    {
     "rank": 1,
@@ -18948,7 +20912,15 @@
     "rating_hp": 160,
     "rating_attack": 160,
     "rating_hp_base": 160,
-    "rating_attack_base": 160
+    "rating_attack_base": 160,
+    "tags": [
+     "tactician",
+     "none"
+    ],
+    "t": [
+     "tactician",
+     "none"
+    ]
    },
    {
     "rank": 1,
@@ -19037,7 +21009,15 @@
     "rating_hp": 160,
     "rating_attack": 160,
     "rating_hp_base": 160,
-    "rating_attack_base": 160
+    "rating_attack_base": 160,
+    "tags": [
+     "tech",
+     "none"
+    ],
+    "t": [
+     "tech",
+     "none"
+    ]
    },
    {
     "rank": 1,
@@ -19126,7 +21106,15 @@
     "rating_hp": 160,
     "rating_attack": 160,
     "rating_hp_base": 160,
-    "rating_attack_base": 160
+    "rating_attack_base": 160,
+    "tags": [
+     "warrior",
+     "none"
+    ],
+    "t": [
+     "warrior",
+     "none"
+    ]
    },
    {
     "rank": 1,
@@ -19218,6 +21206,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "tech",
+     "decepticon"
+    ],
+    "t": [
+     "tech",
+     "decepticon"
     ]
    },
    {
@@ -19310,6 +21306,14 @@
     "rating_attack_base": 136,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "scout",
+     "autobot"
+    ],
+    "t": [
+     "scout",
+     "autobot"
     ]
    },
    {
@@ -19402,6 +21406,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "scout",
+     "decepticon"
+    ],
+    "t": [
+     "scout",
+     "decepticon"
     ]
    },
    {
@@ -19494,6 +21506,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "scout",
+     "decepticon"
+    ],
+    "t": [
+     "scout",
+     "decepticon"
     ]
    },
    {
@@ -19586,6 +21606,14 @@
     "rating_attack_base": 131,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "demolitions",
+     "decepticon"
+    ],
+    "t": [
+     "demolitions",
+     "decepticon"
     ]
    },
    {
@@ -19678,6 +21706,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "tech",
+     "decepticon"
+    ],
+    "t": [
+     "tech",
+     "decepticon"
     ]
    },
    {
@@ -19770,6 +21806,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "brawler",
+     "autobot"
+    ],
+    "t": [
+     "brawler",
+     "autobot"
     ]
    },
    {
@@ -19862,6 +21906,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "brawler",
+     "decepticon"
+    ],
+    "t": [
+     "brawler",
+     "decepticon"
     ]
    },
    {
@@ -19954,6 +22006,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_decepticons"
+    ],
+    "tags": [
+     "brawler",
+     "decepticon"
+    ],
+    "t": [
+     "brawler",
+     "decepticon"
     ]
    },
    {
@@ -20046,6 +22106,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "tactician",
+     "autobot"
+    ],
+    "t": [
+     "tactician",
+     "autobot"
     ]
    },
    {
@@ -20138,6 +22206,14 @@
     "rating_attack_base": 160,
     "synergyBonuses": [
      "syn_predacons"
+    ],
+    "tags": [
+     "demolitions",
+     "predacon"
+    ],
+    "t": [
+     "demolitions",
+     "predacon"
     ]
    },
    {
@@ -20230,6 +22306,14 @@
     "rating_attack_base": 133,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "tech",
+     "autobot"
+    ],
+    "t": [
+     "tech",
+     "autobot"
     ]
    },
    {
@@ -20322,6 +22406,14 @@
     "rating_attack_base": 132,
     "synergyBonuses": [
      "syn_autobots"
+    ],
+    "tags": [
+     "warrior",
+     "autobot"
+    ],
+    "t": [
+     "warrior",
+     "autobot"
     ]
    }
   ],
@@ -20414,7 +22506,15 @@
      "rating_hp": 50,
      "rating_attack": 50,
      "rating_hp_base": 50,
-     "rating_attack_base": 50
+     "rating_attack_base": 50,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     "arcee_gs_deluxe2014": {
      "rank": 1,
@@ -20503,7 +22603,15 @@
      "rating_hp": 128,
      "rating_attack": 128,
      "rating_hp_base": 128,
-     "rating_attack_base": 128
+     "rating_attack_base": 128,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     "barricade_cin_dotm": {
      "rank": 1,
@@ -20592,7 +22700,15 @@
      "rating_hp": 130,
      "rating_attack": 130,
      "rating_hp_base": 130,
-     "rating_attack_base": 130
+     "rating_attack_base": 130,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     "blaster_gs_leader2016": {
      "rank": 1,
@@ -20681,7 +22797,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     "bludgeon_gs_rd20": {
      "rank": 1,
@@ -20770,7 +22894,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     "bonecrusher_cin_rotf": {
      "rank": 1,
@@ -20859,7 +22991,15 @@
      "rating_hp": 124,
      "rating_attack": 124,
      "rating_hp_base": 124,
-     "rating_attack_base": 124
+     "rating_attack_base": 124,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     "bumblebee_gs_kabam": {
      "rank": 1,
@@ -20948,7 +23088,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     "cheetor_bw_transmetal": {
      "rank": 1,
@@ -21037,7 +23185,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "maximal"
+     ],
+     "t": [
+      "scout",
+      "maximal"
+     ]
     },
     "cliffjumper_gs_kabam": {
      "rank": 1,
@@ -21126,7 +23282,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "autobot"
+     ],
+     "t": [
+      "demolitions",
+      "autobot"
+     ]
     },
     "cyclonus_gs_uw06": {
      "rank": 1,
@@ -21215,7 +23379,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "decepticon"
+     ],
+     "t": [
+      "tactician",
+      "decepticon"
+     ]
     },
     "dinobot_bw_kabam": {
      "rank": 1,
@@ -21304,7 +23476,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "maximal"
+     ],
+     "t": [
+      "tactician",
+      "maximal"
+     ]
     },
     "dirge_gs_deluxe2008": {
      "rank": 1,
@@ -21393,7 +23573,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     "drift_cin_aoe": {
      "rank": 1,
@@ -21482,7 +23670,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     "galvatron_gs_voyager2016": {
      "rank": 1,
@@ -21571,7 +23767,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     "grimlock_gs_mp08": {
      "rank": 1,
@@ -21660,7 +23864,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     "grindor_cin_rotf": {
      "rank": 1,
@@ -21749,7 +23961,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     "hotrod_cin_tlk": {
      "rank": 1,
@@ -21838,7 +24058,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     "hound_cin_tlk": {
      "rank": 1,
@@ -21927,7 +24155,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     "ironhide_cin_rotf": {
      "rank": 1,
@@ -22016,7 +24252,15 @@
      "rating_hp": 130,
      "rating_attack": 130,
      "rating_hp_base": 130,
-     "rating_attack_base": 130
+     "rating_attack_base": 130,
+     "tags": [
+      "demolitions",
+      "autobot"
+     ],
+     "t": [
+      "demolitions",
+      "autobot"
+     ]
     },
     "ironhide_gs_kabam": {
      "rank": 1,
@@ -22105,7 +24349,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     "jazz_gs_twm05": {
      "rank": 1,
@@ -22194,7 +24446,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     "jetfire_gs_leader2014": {
      "rank": 1,
@@ -22283,7 +24543,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     "kickback_gs_kabam": {
      "rank": 1,
@@ -22372,7 +24640,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     "megatron_cin_rotf": {
      "rank": 1,
@@ -22461,7 +24737,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     "megatron_gs_leader2015": {
      "rank": 1,
@@ -22550,7 +24834,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "decepticon"
+     ],
+     "t": [
+      "tactician",
+      "decepticon"
+     ]
     },
     "megatronus_gs_kabam": {
      "rank": 1,
@@ -22639,7 +24931,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     "mirage_gs_deluxe2016": {
      "rank": 1,
@@ -22728,7 +25028,15 @@
      "rating_hp": 124,
      "rating_attack": 124,
      "rating_hp_base": 124,
-     "rating_attack_base": 124
+     "rating_attack_base": 124,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     "mixmaster_cin_rotf": {
      "rank": 1,
@@ -22817,7 +25125,15 @@
      "rating_hp": 121,
      "rating_attack": 122,
      "rating_hp_base": 121,
-     "rating_attack_base": 122
+     "rating_attack_base": 122,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     "motormaster_gs_voyager2015": {
      "rank": 1,
@@ -22906,7 +25222,15 @@
      "rating_hp": 124,
      "rating_attack": 125,
      "rating_hp_base": 124,
-     "rating_attack_base": 125
+     "rating_attack_base": 125,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     "necrotronus_gs_kabam": {
      "rank": 1,
@@ -22995,7 +25319,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     "nemesisprime_gs_voyager2015": {
      "rank": 1,
@@ -23084,7 +25416,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "decepticon"
+     ],
+     "t": [
+      "tactician",
+      "decepticon"
+     ]
     },
     "optimusprimal_bw_mp32": {
      "rank": 1,
@@ -23173,7 +25513,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "maximal"
+     ],
+     "t": [
+      "brawler",
+      "maximal"
+     ]
     },
     "optimusprime_cin_tf": {
      "rank": 1,
@@ -23262,7 +25610,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     "prowl_gs_deluxe2016": {
      "rank": 1,
@@ -23351,7 +25707,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     "ramjet_gs_deluxe2008": {
      "rank": 1,
@@ -23440,7 +25804,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     "ratchet_gs_kabam": {
      "rank": 1,
@@ -23529,7 +25901,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     "rhinox_gs_voyager2014": {
      "rank": 1,
@@ -23618,7 +25998,15 @@
      "rating_hp": 128,
      "rating_attack": 128,
      "rating_hp_base": 128,
-     "rating_attack_base": 128
+     "rating_attack_base": 128,
+     "tags": [
+      "tech",
+      "maximal"
+     ],
+     "t": [
+      "tech",
+      "maximal"
+     ]
     },
     "rodimusprime_gs_mp09": {
      "rank": 1,
@@ -23707,7 +26095,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "autobot"
+     ],
+     "t": [
+      "tactician",
+      "autobot"
+     ]
     },
     "scorponok_bw_kabam": {
      "rank": 1,
@@ -23796,7 +26192,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "predacon"
+     ],
+     "t": [
+      "warrior",
+      "predacon"
+     ]
     },
     "sharkticon_gs_brawler": {
      "rank": 1,
@@ -23885,7 +26289,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "none"
+     ],
+     "t": [
+      "brawler",
+      "none"
+     ]
     },
     "sharkticon_gs_demolition": {
      "rank": 1,
@@ -23974,7 +26386,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolition",
+      "none"
+     ],
+     "t": [
+      "demolition",
+      "none"
+     ]
     },
     "sharkticon_gs_kabam": {
      "rank": 1,
@@ -24063,7 +26483,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "none"
+     ],
+     "t": [
+      "brawler",
+      "none"
+     ]
     },
     "sharkticon_gs_scout": {
      "rank": 1,
@@ -24152,7 +26580,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "none"
+     ],
+     "t": [
+      "scout",
+      "none"
+     ]
     },
     "sharkticon_gs_tactician": {
      "rank": 1,
@@ -24241,7 +26677,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "none"
+     ],
+     "t": [
+      "tactician",
+      "none"
+     ]
     },
     "sharkticon_gs_tech": {
      "rank": 1,
@@ -24330,7 +26774,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "none"
+     ],
+     "t": [
+      "tech",
+      "none"
+     ]
     },
     "sharkticon_gs_warrior": {
      "rank": 1,
@@ -24419,7 +26871,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "none"
+     ],
+     "t": [
+      "warrior",
+      "none"
+     ]
     },
     "shockwave_gs": {
      "rank": 1,
@@ -24508,7 +26968,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "decepticon"
+     ],
+     "t": [
+      "tech",
+      "decepticon"
+     ]
     },
     "sideswipe_gs": {
      "rank": 1,
@@ -24597,7 +27065,15 @@
      "rating_hp": 135,
      "rating_attack": 136,
      "rating_hp_base": 135,
-     "rating_attack_base": 136
+     "rating_attack_base": 136,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     "skywarp_gs_leader2015": {
      "rank": 1,
@@ -24686,7 +27162,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     "slipstream_gs": {
      "rank": 1,
@@ -24775,7 +27259,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     "soundblaster_gs_mp13b": {
      "rank": 1,
@@ -24864,7 +27356,15 @@
      "rating_hp": 131,
      "rating_attack": 131,
      "rating_hp_base": 131,
-     "rating_attack_base": 131
+     "rating_attack_base": 131,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     "soundwave_gs": {
      "rank": 1,
@@ -24953,7 +27453,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "decepticon"
+     ],
+     "t": [
+      "tech",
+      "decepticon"
+     ]
     },
     "sunstreaker_gs_deluxe2008": {
      "rank": 1,
@@ -25042,7 +27550,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     "tantrum_gs_kabam": {
      "rank": 1,
@@ -25131,7 +27647,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     "thundercracker_gs_leader2015": {
      "rank": 1,
@@ -25220,7 +27744,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     "ultramagnus_gs_leader": {
      "rank": 1,
@@ -25309,7 +27841,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "autobot"
+     ],
+     "t": [
+      "tactician",
+      "autobot"
+     ]
     },
     "waspinator_gs_deluxe": {
      "rank": 1,
@@ -25398,7 +27938,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "predacon"
+     ],
+     "t": [
+      "demolitions",
+      "predacon"
+     ]
     },
     "wheeljack_gs_mp20": {
      "rank": 1,
@@ -25487,7 +28035,15 @@
      "rating_hp": 132,
      "rating_attack": 133,
      "rating_hp_base": 132,
-     "rating_attack_base": 133
+     "rating_attack_base": 133,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     "windblade_gs": {
      "rank": 1,
@@ -25576,7 +28132,15 @@
      "rating_hp": 132,
      "rating_attack": 132,
      "rating_hp_base": 132,
-     "rating_attack_base": 132
+     "rating_attack_base": 132,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     }
    }
   },
@@ -25602,7 +28166,15 @@
       "synergyBonuses": [
        "syn_autobots"
       ],
-      "user_owned": true
+      "user_owned": true,
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      }
     ]
    }
@@ -25634,7 +28206,15 @@
        "syn_autobots"
       ],
       "user_owned": true,
-      "blueprint": "bumblebee_cin_dotm_2"
+      "blueprint": "bumblebee_cin_dotm_2",
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      }
     }
    },
@@ -25664,7 +28244,15 @@
        "syn_autobots"
       ],
       "user_owned": true,
-      "blueprint": "bumblebee_cin_dotm_2"
+      "blueprint": "bumblebee_cin_dotm_2",
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      }
     },
     "activityID": "story"
@@ -25695,7 +28283,15 @@
        "syn_autobots"
       ],
       "user_owned": true,
-      "blueprint": "bumblebee_cin_dotm_2"
+      "blueprint": "bumblebee_cin_dotm_2",
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      }
     },
     "activityID": "story_act_1"
@@ -25804,7 +28400,15 @@
      "rating_hp": 50,
      "rating_attack": 50,
      "rating_hp_base": 50,
-     "rating_attack_base": 50
+     "rating_attack_base": 50,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -25893,7 +28497,15 @@
      "rating_hp": 128,
      "rating_attack": 128,
      "rating_hp_base": 128,
-     "rating_attack_base": 128
+     "rating_attack_base": 128,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -25982,7 +28594,15 @@
      "rating_hp": 130,
      "rating_attack": 130,
      "rating_hp_base": 130,
-     "rating_attack_base": 130
+     "rating_attack_base": 130,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -26071,7 +28691,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -26160,7 +28788,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -26249,7 +28885,15 @@
      "rating_hp": 124,
      "rating_attack": 124,
      "rating_hp_base": 124,
-     "rating_attack_base": 124
+     "rating_attack_base": 124,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -26338,7 +28982,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -26427,7 +29079,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "maximal"
+     ],
+     "t": [
+      "scout",
+      "maximal"
+     ]
     },
     {
      "rank": 1,
@@ -26516,7 +29176,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "autobot"
+     ],
+     "t": [
+      "demolitions",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -26605,7 +29273,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "decepticon"
+     ],
+     "t": [
+      "tactician",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -26694,7 +29370,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "maximal"
+     ],
+     "t": [
+      "tactician",
+      "maximal"
+     ]
     },
     {
      "rank": 1,
@@ -26783,7 +29467,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -26872,7 +29564,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -26961,7 +29661,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -27050,7 +29758,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -27139,7 +29855,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -27228,7 +29952,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -27317,7 +30049,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -27406,7 +30146,15 @@
      "rating_hp": 130,
      "rating_attack": 130,
      "rating_hp_base": 130,
-     "rating_attack_base": 130
+     "rating_attack_base": 130,
+     "tags": [
+      "demolitions",
+      "autobot"
+     ],
+     "t": [
+      "demolitions",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -27495,7 +30243,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -27584,7 +30340,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -27673,7 +30437,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -27762,7 +30534,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -27851,7 +30631,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -27940,7 +30728,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "decepticon"
+     ],
+     "t": [
+      "tactician",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -28029,7 +30825,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -28118,7 +30922,15 @@
      "rating_hp": 124,
      "rating_attack": 124,
      "rating_hp_base": 124,
-     "rating_attack_base": 124
+     "rating_attack_base": 124,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -28207,7 +31019,15 @@
      "rating_hp": 121,
      "rating_attack": 122,
      "rating_hp_base": 121,
-     "rating_attack_base": 122
+     "rating_attack_base": 122,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -28296,7 +31116,15 @@
      "rating_hp": 124,
      "rating_attack": 125,
      "rating_hp_base": 124,
-     "rating_attack_base": 125
+     "rating_attack_base": 125,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -28385,7 +31213,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "decepticon"
+     ],
+     "t": [
+      "warrior",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -28474,7 +31310,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "decepticon"
+     ],
+     "t": [
+      "tactician",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -28563,7 +31407,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "maximal"
+     ],
+     "t": [
+      "brawler",
+      "maximal"
+     ]
     },
     {
      "rank": 1,
@@ -28652,7 +31504,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -28741,7 +31601,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -28830,7 +31698,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -28919,7 +31795,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -29008,7 +31892,15 @@
      "rating_hp": 128,
      "rating_attack": 128,
      "rating_hp_base": 128,
-     "rating_attack_base": 128
+     "rating_attack_base": 128,
+     "tags": [
+      "tech",
+      "maximal"
+     ],
+     "t": [
+      "tech",
+      "maximal"
+     ]
     },
     {
      "rank": 1,
@@ -29097,7 +31989,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "autobot"
+     ],
+     "t": [
+      "tactician",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -29186,7 +32086,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "predacon"
+     ],
+     "t": [
+      "warrior",
+      "predacon"
+     ]
     },
     {
      "rank": 1,
@@ -29275,7 +32183,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "none"
+     ],
+     "t": [
+      "brawler",
+      "none"
+     ]
     },
     {
      "rank": 1,
@@ -29364,7 +32280,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolition",
+      "none"
+     ],
+     "t": [
+      "demolition",
+      "none"
+     ]
     },
     {
      "rank": 1,
@@ -29453,7 +32377,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "none"
+     ],
+     "t": [
+      "brawler",
+      "none"
+     ]
     },
     {
      "rank": 1,
@@ -29542,7 +32474,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "none"
+     ],
+     "t": [
+      "scout",
+      "none"
+     ]
     },
     {
      "rank": 1,
@@ -29631,7 +32571,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "none"
+     ],
+     "t": [
+      "tactician",
+      "none"
+     ]
     },
     {
      "rank": 1,
@@ -29720,7 +32668,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "none"
+     ],
+     "t": [
+      "tech",
+      "none"
+     ]
     },
     {
      "rank": 1,
@@ -29809,7 +32765,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "warrior",
+      "none"
+     ],
+     "t": [
+      "warrior",
+      "none"
+     ]
     },
     {
      "rank": 1,
@@ -29898,7 +32862,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "decepticon"
+     ],
+     "t": [
+      "tech",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -29987,7 +32959,15 @@
      "rating_hp": 135,
      "rating_attack": 136,
      "rating_hp_base": 135,
-     "rating_attack_base": 136
+     "rating_attack_base": 136,
+     "tags": [
+      "scout",
+      "autobot"
+     ],
+     "t": [
+      "scout",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -30076,7 +33056,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -30165,7 +33153,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "scout",
+      "decepticon"
+     ],
+     "t": [
+      "scout",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -30254,7 +33250,15 @@
      "rating_hp": 131,
      "rating_attack": 131,
      "rating_hp_base": 131,
-     "rating_attack_base": 131
+     "rating_attack_base": 131,
+     "tags": [
+      "demolitions",
+      "decepticon"
+     ],
+     "t": [
+      "demolitions",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -30343,7 +33347,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tech",
+      "decepticon"
+     ],
+     "t": [
+      "tech",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -30432,7 +33444,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "autobot"
+     ],
+     "t": [
+      "brawler",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -30521,7 +33541,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -30610,7 +33638,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "brawler",
+      "decepticon"
+     ],
+     "t": [
+      "brawler",
+      "decepticon"
+     ]
     },
     {
      "rank": 1,
@@ -30699,7 +33735,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "tactician",
+      "autobot"
+     ],
+     "t": [
+      "tactician",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -30788,7 +33832,15 @@
      "rating_hp": 160,
      "rating_attack": 160,
      "rating_hp_base": 160,
-     "rating_attack_base": 160
+     "rating_attack_base": 160,
+     "tags": [
+      "demolitions",
+      "predacon"
+     ],
+     "t": [
+      "demolitions",
+      "predacon"
+     ]
     },
     {
      "rank": 1,
@@ -30877,7 +33929,15 @@
      "rating_hp": 132,
      "rating_attack": 133,
      "rating_hp_base": 132,
-     "rating_attack_base": 133
+     "rating_attack_base": 133,
+     "tags": [
+      "tech",
+      "autobot"
+     ],
+     "t": [
+      "tech",
+      "autobot"
+     ]
     },
     {
      "rank": 1,
@@ -30966,7 +34026,15 @@
      "rating_hp": 132,
      "rating_attack": 132,
      "rating_hp_base": 132,
-     "rating_attack_base": 132
+     "rating_attack_base": 132,
+     "tags": [
+      "warrior",
+      "autobot"
+     ],
+     "t": [
+      "warrior",
+      "autobot"
+     ]
     }
    ],
    "activeTeams": [
@@ -30993,7 +34061,15 @@
        "special_attacks": 3,
        "pvpb": {},
        "synergyBonuses": [],
-       "user_owned": true
+       "user_owned": true,
+       "tags": [
+        "scout",
+        "autobot"
+       ],
+       "t": [
+        "scout",
+        "autobot"
+       ]
       }
      }
     }
@@ -31017,7 +34093,15 @@
        "special_attacks": 3,
        "pvpb": {},
        "synergyBonuses": [],
-       "user_owned": true
+       "user_owned": true,
+       "tags": [
+        "scout",
+        "autobot"
+       ],
+       "t": [
+        "scout",
+        "autobot"
+       ]
       }
      ]
     }
@@ -31118,7 +34202,15 @@
       "rating_hp": 128,
       "rating_attack": 128,
       "rating_hp_base": 128,
-      "rating_attack_base": 128
+      "rating_attack_base": 128,
+      "tags": [
+       "warrior",
+       "autobot"
+      ],
+      "t": [
+       "warrior",
+       "autobot"
+      ]
      },
      "barricade_cin_dotm": {
       "rank": 1,
@@ -31207,7 +34299,15 @@
       "rating_hp": 130,
       "rating_attack": 130,
       "rating_hp_base": 130,
-      "rating_attack_base": 130
+      "rating_attack_base": 130,
+      "tags": [
+       "scout",
+       "decepticon"
+      ],
+      "t": [
+       "scout",
+       "decepticon"
+      ]
      },
      "blaster_gs_leader2016": {
       "rank": 1,
@@ -31296,7 +34396,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tech",
+       "autobot"
+      ],
+      "t": [
+       "tech",
+       "autobot"
+      ]
      },
      "bludgeon_gs_rd20": {
       "rank": 1,
@@ -31385,7 +34493,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "decepticon"
+      ],
+      "t": [
+       "warrior",
+       "decepticon"
+      ]
      },
      "bonecrusher_cin_rotf": {
       "rank": 1,
@@ -31474,7 +34590,15 @@
       "rating_hp": 124,
       "rating_attack": 124,
       "rating_hp_base": 124,
-      "rating_attack_base": 124
+      "rating_attack_base": 124,
+      "tags": [
+       "warrior",
+       "decepticon"
+      ],
+      "t": [
+       "warrior",
+       "decepticon"
+      ]
      },
      "bumblebee_gs_kabam": {
       "rank": 1,
@@ -31563,7 +34687,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      },
      "cheetor_bw_transmetal": {
       "rank": 1,
@@ -31652,7 +34784,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "maximal"
+      ],
+      "t": [
+       "scout",
+       "maximal"
+      ]
      },
      "cliffjumper_gs_kabam": {
       "rank": 1,
@@ -31741,7 +34881,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "demolitions",
+       "autobot"
+      ],
+      "t": [
+       "demolitions",
+       "autobot"
+      ]
      },
      "cyclonus_gs_uw06": {
       "rank": 1,
@@ -31830,7 +34978,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tactician",
+       "decepticon"
+      ],
+      "t": [
+       "tactician",
+       "decepticon"
+      ]
      },
      "dinobot_bw_kabam": {
       "rank": 1,
@@ -31919,7 +35075,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tactician",
+       "maximal"
+      ],
+      "t": [
+       "tactician",
+       "maximal"
+      ]
      },
      "dirge_gs_deluxe2008": {
       "rank": 1,
@@ -32008,7 +35172,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "decepticon"
+      ],
+      "t": [
+       "warrior",
+       "decepticon"
+      ]
      },
      "drift_cin_aoe": {
       "rank": 1,
@@ -32097,7 +35269,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "autobot"
+      ],
+      "t": [
+       "warrior",
+       "autobot"
+      ]
      },
      "galvatron_gs_voyager2016": {
       "rank": 1,
@@ -32186,7 +35366,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "demolitions",
+       "decepticon"
+      ],
+      "t": [
+       "demolitions",
+       "decepticon"
+      ]
      },
      "grimlock_gs_mp08": {
       "rank": 1,
@@ -32275,7 +35463,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "autobot"
+      ],
+      "t": [
+       "brawler",
+       "autobot"
+      ]
      },
      "grindor_cin_rotf": {
       "rank": 1,
@@ -32364,7 +35560,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "decepticon"
+      ],
+      "t": [
+       "brawler",
+       "decepticon"
+      ]
      },
      "hotrod_cin_tlk": {
       "rank": 1,
@@ -32453,7 +35657,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "autobot"
+      ],
+      "t": [
+       "warrior",
+       "autobot"
+      ]
      },
      "hound_cin_tlk": {
       "rank": 1,
@@ -32542,7 +35754,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "autobot"
+      ],
+      "t": [
+       "warrior",
+       "autobot"
+      ]
      },
      "ironhide_cin_rotf": {
       "rank": 1,
@@ -32631,7 +35851,15 @@
       "rating_hp": 130,
       "rating_attack": 130,
       "rating_hp_base": 130,
-      "rating_attack_base": 130
+      "rating_attack_base": 130,
+      "tags": [
+       "demolitions",
+       "autobot"
+      ],
+      "t": [
+       "demolitions",
+       "autobot"
+      ]
      },
      "ironhide_gs_kabam": {
       "rank": 1,
@@ -32720,7 +35948,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "autobot"
+      ],
+      "t": [
+       "brawler",
+       "autobot"
+      ]
      },
      "jazz_gs_twm05": {
       "rank": 1,
@@ -32809,7 +36045,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      },
      "jetfire_gs_leader2014": {
       "rank": 1,
@@ -32898,7 +36142,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tech",
+       "autobot"
+      ],
+      "t": [
+       "tech",
+       "autobot"
+      ]
      },
      "kickback_gs_kabam": {
       "rank": 1,
@@ -32987,7 +36239,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "decepticon"
+      ],
+      "t": [
+       "scout",
+       "decepticon"
+      ]
      },
      "megatron_cin_rotf": {
       "rank": 1,
@@ -33076,7 +36336,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "demolitions",
+       "decepticon"
+      ],
+      "t": [
+       "demolitions",
+       "decepticon"
+      ]
      },
      "megatron_gs_leader2015": {
       "rank": 1,
@@ -33165,7 +36433,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tactician",
+       "decepticon"
+      ],
+      "t": [
+       "tactician",
+       "decepticon"
+      ]
      },
      "megatronus_gs_kabam": {
       "rank": 1,
@@ -33254,7 +36530,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "demolitions",
+       "decepticon"
+      ],
+      "t": [
+       "demolitions",
+       "decepticon"
+      ]
      },
      "mirage_gs_deluxe2016": {
       "rank": 1,
@@ -33343,7 +36627,15 @@
       "rating_hp": 124,
       "rating_attack": 124,
       "rating_hp_base": 124,
-      "rating_attack_base": 124
+      "rating_attack_base": 124,
+      "tags": [
+       "tech",
+       "autobot"
+      ],
+      "t": [
+       "tech",
+       "autobot"
+      ]
      },
      "mixmaster_cin_rotf": {
       "rank": 1,
@@ -33432,7 +36724,15 @@
       "rating_hp": 121,
       "rating_attack": 122,
       "rating_hp_base": 121,
-      "rating_attack_base": 122
+      "rating_attack_base": 122,
+      "tags": [
+       "demolitions",
+       "decepticon"
+      ],
+      "t": [
+       "demolitions",
+       "decepticon"
+      ]
      },
      "motormaster_gs_voyager2015": {
       "rank": 1,
@@ -33521,7 +36821,15 @@
       "rating_hp": 124,
       "rating_attack": 125,
       "rating_hp_base": 124,
-      "rating_attack_base": 125
+      "rating_attack_base": 125,
+      "tags": [
+       "brawler",
+       "decepticon"
+      ],
+      "t": [
+       "brawler",
+       "decepticon"
+      ]
      },
      "necrotronus_gs_kabam": {
       "rank": 1,
@@ -33610,7 +36918,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "decepticon"
+      ],
+      "t": [
+       "warrior",
+       "decepticon"
+      ]
      },
      "nemesisprime_gs_voyager2015": {
       "rank": 1,
@@ -33699,7 +37015,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tactician",
+       "decepticon"
+      ],
+      "t": [
+       "tactician",
+       "decepticon"
+      ]
      },
      "optimusprimal_bw_mp32": {
       "rank": 1,
@@ -33788,7 +37112,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "maximal"
+      ],
+      "t": [
+       "brawler",
+       "maximal"
+      ]
      },
      "optimusprime_cin_tf": {
       "rank": 1,
@@ -33877,7 +37209,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "autobot"
+      ],
+      "t": [
+       "brawler",
+       "autobot"
+      ]
      },
      "prowl_gs_deluxe2016": {
       "rank": 1,
@@ -33966,7 +37306,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      },
      "ramjet_gs_deluxe2008": {
       "rank": 1,
@@ -34055,7 +37403,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "demolitions",
+       "decepticon"
+      ],
+      "t": [
+       "demolitions",
+       "decepticon"
+      ]
      },
      "ratchet_gs_kabam": {
       "rank": 1,
@@ -34144,7 +37500,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tech",
+       "autobot"
+      ],
+      "t": [
+       "tech",
+       "autobot"
+      ]
      },
      "rhinox_gs_voyager2014": {
       "rank": 1,
@@ -34233,7 +37597,15 @@
       "rating_hp": 128,
       "rating_attack": 128,
       "rating_hp_base": 128,
-      "rating_attack_base": 128
+      "rating_attack_base": 128,
+      "tags": [
+       "tech",
+       "maximal"
+      ],
+      "t": [
+       "tech",
+       "maximal"
+      ]
      },
      "rodimusprime_gs_mp09": {
       "rank": 1,
@@ -34322,7 +37694,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tactician",
+       "autobot"
+      ],
+      "t": [
+       "tactician",
+       "autobot"
+      ]
      },
      "scorponok_bw_kabam": {
       "rank": 1,
@@ -34411,7 +37791,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "predacon"
+      ],
+      "t": [
+       "warrior",
+       "predacon"
+      ]
      },
      "sharkticon_gs_brawler": {
       "rank": 1,
@@ -34500,7 +37888,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "none"
+      ],
+      "t": [
+       "brawler",
+       "none"
+      ]
      },
      "sharkticon_gs_demolition": {
       "rank": 1,
@@ -34589,7 +37985,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "demolition",
+       "none"
+      ],
+      "t": [
+       "demolition",
+       "none"
+      ]
      },
      "sharkticon_gs_kabam": {
       "rank": 1,
@@ -34678,7 +38082,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "none"
+      ],
+      "t": [
+       "brawler",
+       "none"
+      ]
      },
      "sharkticon_gs_scout": {
       "rank": 1,
@@ -34767,7 +38179,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "none"
+      ],
+      "t": [
+       "scout",
+       "none"
+      ]
      },
      "sharkticon_gs_tactician": {
       "rank": 1,
@@ -34856,7 +38276,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tactician",
+       "none"
+      ],
+      "t": [
+       "tactician",
+       "none"
+      ]
      },
      "sharkticon_gs_tech": {
       "rank": 1,
@@ -34945,7 +38373,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tech",
+       "none"
+      ],
+      "t": [
+       "tech",
+       "none"
+      ]
      },
      "sharkticon_gs_warrior": {
       "rank": 1,
@@ -35034,7 +38470,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "warrior",
+       "none"
+      ],
+      "t": [
+       "warrior",
+       "none"
+      ]
      },
      "shockwave_gs": {
       "rank": 1,
@@ -35123,7 +38567,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tech",
+       "decepticon"
+      ],
+      "t": [
+       "tech",
+       "decepticon"
+      ]
      },
      "sideswipe_gs": {
       "rank": 1,
@@ -35212,7 +38664,15 @@
       "rating_hp": 135,
       "rating_attack": 136,
       "rating_hp_base": 135,
-      "rating_attack_base": 136
+      "rating_attack_base": 136,
+      "tags": [
+       "scout",
+       "autobot"
+      ],
+      "t": [
+       "scout",
+       "autobot"
+      ]
      },
      "skywarp_gs_leader2015": {
       "rank": 1,
@@ -35301,7 +38761,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "decepticon"
+      ],
+      "t": [
+       "scout",
+       "decepticon"
+      ]
      },
      "slipstream_gs": {
       "rank": 1,
@@ -35390,7 +38858,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "scout",
+       "decepticon"
+      ],
+      "t": [
+       "scout",
+       "decepticon"
+      ]
      },
      "soundblaster_gs_mp13b": {
       "rank": 1,
@@ -35479,7 +38955,15 @@
       "rating_hp": 131,
       "rating_attack": 131,
       "rating_hp_base": 131,
-      "rating_attack_base": 131
+      "rating_attack_base": 131,
+      "tags": [
+       "demolitions",
+       "decepticon"
+      ],
+      "t": [
+       "demolitions",
+       "decepticon"
+      ]
      },
      "soundwave_gs": {
       "rank": 1,
@@ -35568,7 +39052,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tech",
+       "decepticon"
+      ],
+      "t": [
+       "tech",
+       "decepticon"
+      ]
      },
      "sunstreaker_gs_deluxe2008": {
       "rank": 1,
@@ -35657,7 +39149,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "autobot"
+      ],
+      "t": [
+       "brawler",
+       "autobot"
+      ]
      },
      "tantrum_gs_kabam": {
       "rank": 1,
@@ -35746,7 +39246,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "decepticon"
+      ],
+      "t": [
+       "brawler",
+       "decepticon"
+      ]
      },
      "thundercracker_gs_leader2015": {
       "rank": 1,
@@ -35835,7 +39343,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "brawler",
+       "decepticon"
+      ],
+      "t": [
+       "brawler",
+       "decepticon"
+      ]
      },
      "ultramagnus_gs_leader": {
       "rank": 1,
@@ -35924,7 +39440,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "tactician",
+       "autobot"
+      ],
+      "t": [
+       "tactician",
+       "autobot"
+      ]
      },
      "waspinator_gs_deluxe": {
       "rank": 1,
@@ -36013,7 +39537,15 @@
       "rating_hp": 160,
       "rating_attack": 160,
       "rating_hp_base": 160,
-      "rating_attack_base": 160
+      "rating_attack_base": 160,
+      "tags": [
+       "demolitions",
+       "predacon"
+      ],
+      "t": [
+       "demolitions",
+       "predacon"
+      ]
      },
      "wheeljack_gs_mp20": {
       "rank": 1,
@@ -36102,7 +39634,15 @@
       "rating_hp": 132,
       "rating_attack": 133,
       "rating_hp_base": 132,
-      "rating_attack_base": 133
+      "rating_attack_base": 133,
+      "tags": [
+       "tech",
+       "autobot"
+      ],
+      "t": [
+       "tech",
+       "autobot"
+      ]
      },
      "windblade_gs": {
       "rank": 1,
@@ -36191,7 +39731,15 @@
       "rating_hp": 132,
       "rating_attack": 132,
       "rating_hp_base": 132,
-      "rating_attack_base": 132
+      "rating_attack_base": 132,
+      "tags": [
+       "warrior",
+       "autobot"
+      ],
+      "t": [
+       "warrior",
+       "autobot"
+      ]
      }
     }
    }

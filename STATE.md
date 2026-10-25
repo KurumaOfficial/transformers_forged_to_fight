@@ -466,3 +466,11 @@ boss-tile tap sends nothing. The server decides when to include `battle`.
 - Golden 9/9 PASS, unit tests 19/19 PASS (server running).
 - Emulator became unstable (headless QEMU stalls/crashes); further live work
   needs a fresh stable boot.
+
+## 2. 2026-10-25 Q1 dynamic quests
+
+`/quests/quest-detail/{qid}`, `/quests/quest-begin/{qid}` and movedir now
+build from `quest_list.json` for any of the 90 missions (name, act/chapter/
+mission, map, boss id). Verified by HTTP for 1.1 (Rhinox) and 1.4.2
+(Sideswipe); movedir returns the right boss key and map. `quest_detail.json`
+and `quest_begin_response.json` remain templates/fallbacks.

@@ -545,3 +545,16 @@ now include `synergyBonuses`; movedir/progression shape stayed the same but the
 recorded request pair changed. New golden: 9/9 PASS. Unit tests: 19/19 PASS
 (including 5 persistence tests). Old baseline tag:
 `golden-baseline-2026-10-23`.
+
+### 26. 2026-10-25 battle init: model id and tags
+
+- `get_ModelID` reads `_characterData.ModelID`; the parser uses `JSONPaths.m`
+  which is the literal `"m"`. Adding `"m"` to `blueprints`/`characters` fixed
+  the empty model id; `map_asset`/`model_id` also set.
+- `Blueprint.Tags` parser uses `t`/`tags`; adding them to blueprints,
+  characters and hero details made live tags count 2.
+- The NRE moved from `InitPlayer` to `PlayerAttributes.Init`:
+  `ArgumentNullException` from `HashSet<string>` (`collection`). The only
+  HashSet field is `BlueprintTags`; live tags are non-null, so the exact null
+  instance still needs a breakpoint. 3 attempts used; record and stop.
+- No `/matches/match-loaded`.
