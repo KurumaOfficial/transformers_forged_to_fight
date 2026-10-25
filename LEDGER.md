@@ -537,3 +537,11 @@ the active-team object source), not a simple alias. [RUN]
 - Detail/begin/movedir are still served from the single static
   `quest_detail.json`/`quest_begin_response.json`; only the list is complete.
   Rewards and exact layouts remain [ASSUMED].
+
+### 25. Golden re-record after Q1/R4 (2026-10-25)
+
+Intentional changes: quest-list now has 5 sets / 90 missions; BCG hero details
+now include `synergyBonuses`; movedir/progression shape stayed the same but the
+recorded request pair changed. New golden: 9/9 PASS. Unit tests: 19/19 PASS
+(including 5 persistence tests). Old baseline tag:
+`golden-baseline-2026-10-23`.
