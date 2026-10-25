@@ -83,3 +83,11 @@ Proposed server growth table:
   }
 }
 ```
+
+## Growth table example (R1 3.3)
+
+`data/wiki/growth_table_example.json` is the server-side shape:
+`curves` (a,b,c,exp,max) + `attributeGrowthDefs` (`level_key`, `curve_key`,
+`rounded`, `attribute_keys`) + per-blueprint `base_hp`/`base_attack`. The client
+accepts this shape via `bcg_login_data.attributeGrowthDefs`; exact retail
+constants are not in the stub and remain `[ASSUMED]`.

@@ -6,6 +6,7 @@ import os
 import sys
 import urllib.parse
 from datetime import datetime
+from routes.quests import build_detail as build_quest_detail, build_begin as build_quest_begin
 
 PORT = 8080
 LOG_FILE = os.path.join(os.path.dirname(__file__), "requests.jsonl")
@@ -25,112 +26,6 @@ def persist_quest_run(qid, team=None, state=None):
         save_quest_run("10001", qid, "local", team=team or {}, state=state or {})
     except Exception as exc:
         print(f"[persistence] {exc}")
-
-
-def _find_quest(qid):
-    for qset in load_data_json("quest_list.json", default=[]):
-        for quest in qset.get("availableQuests", []):
-            if quest.get("id") == qid:
-                return qset, quest
-    return None, None
-
-
-def _scaled_boss(quest):
-    boss = (quest or {}).get("finalBoss") or {}
-    bid = boss.get("id")
-    if not bid:
-        return {}
-    return {
-        "enemy1": {
-            "isFinalBoss": True,
-            "characters": [bid],
-            "rank": int(boss.get("rank", 1)),
-            "level": int(boss.get("level", 1)),
-            "sig_lvl": 0,
-            "flvl": 0,
-            "aiType": 1,
-            "aiString": "default",
-            "aiPer": "aggressive",
-            "mapOverride": "",
-            "todIndex": 0,
-            "uid": "enemy1",
-            "key": bid,
-            "hi": [],
-            "type": "boss",
-            "baseType": "boss",
-        }
-    }
-
-
-def build_quest_detail(qid):
-    """Build /quest-detail for any qid from the 90-mission list."""
-    qset, quest = _find_quest(qid)
-    if not quest:
-        return load_data_json("quest_detail.json")
-    data = json.loads(json.dumps(load_data_json("quest_detail.json")))
-    data["summary"] = {
-        "id": qid,
-        "category": quest.get("category", "Story"),
-        "friendlyName": quest.get("friendlyName", qid),
-        "description": quest.get("description", ""),
-        "isDetailed": True,
-        "theme": quest.get("theme", "primordial"),
-        "todIndex": quest.get("todIndex", 0),
-        "energyPerTile": quest.get("energyPerTile", 1),
-        "minXpPerTile": quest.get("minXpPerTile", 20),
-        "maxXpPerTile": quest.get("maxXpPerTile", 50),
-        "actIndex": quest.get("actIndex", 1),
-        "chapterIndex": quest.get("chapterIndex", 1),
-        "missionIndex": quest.get("missionIndex", 1),
-        "act": quest.get("act", 1),
-        "chapter": quest.get("chapter", 1),
-        "mission": quest.get("mission", 1),
-        "teamSizeMin": quest.get("teamSizeMin", 1),
-        "teamSizeMax": quest.get("teamSizeMax", 1),
-        "unlocked": True,
-    }
-    data["map"] = (qset.get("QuestMaps") or {}).get(qid) or data.get("map", {})
-    data["scaledBossTable"] = _scaled_boss(quest)
-    return data
-
-
-def build_quest_begin(qid):
-    """Build /quest-begin for any qid from the 90-mission list."""
-    qset, quest = _find_quest(qid)
-    if not quest:
-        return load_data_json("quest_begin_response.json")
-    data = json.loads(json.dumps(load_data_json("quest_begin_response.json")))
-    data["qid"] = qid
-    data["uniqueId"] = qid
-    data["data"] = {
-        "id": qid,
-        "category": quest.get("category", "Story"),
-        "friendlyName": quest.get("friendlyName", qid),
-        "description": quest.get("description", ""),
-        "isDetailed": True,
-        "theme": quest.get("theme", "primordial"),
-        "todIndex": quest.get("todIndex", 0),
-        "energyPerTile": quest.get("energyPerTile", 1),
-        "minXpPerTile": quest.get("minXpPerTile", 20),
-        "maxXpPerTile": quest.get("maxXpPerTile", 50),
-        "actIndex": quest.get("actIndex", 1),
-        "chapterIndex": quest.get("chapterIndex", 1),
-        "missionIndex": quest.get("missionIndex", 1),
-        "act": quest.get("act", 1),
-        "chapter": quest.get("chapter", 1),
-        "mission": quest.get("mission", 1),
-        "teamSizeMin": quest.get("teamSizeMin", 1),
-        "teamSizeMax": quest.get("teamSizeMax", 1),
-        "unlocked": True,
-    }
-    data["map"] = (qset.get("QuestMaps") or {}).get(qid) or data.get("map", {})
-    data["scaledBossTable"] = _scaled_boss(quest)
-    data["progression"] = {
-        "clearedTiles": [{"x": 0, "y": 0}],
-        "currentTile": {"x": 0, "y": 0},
-        "percentComplete": 0,
-    }
-    return data
 
 
 def tutorial_payload(data):

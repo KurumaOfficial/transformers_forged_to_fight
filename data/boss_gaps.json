@@ -1,0 +1,162 @@
+[
+ {
+  "name": "A Slow Learner",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "story_act1_ch1_m2"
+ },
+ {
+  "name": "Power Seeker",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "story_act1_ch3_m5"
+ },
+ {
+  "name": "The Long Game",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "story_act1_ch4_m4"
+ },
+ {
+  "name": "Who's Your Master?",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "story_act2_ch1_m3"
+ },
+ {
+  "name": "T-Cog Probs",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "story_act2_ch2_m3"
+ },
+ {
+  "name": "Head Gamezzz",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "story_act2_ch3_m5"
+ },
+ {
+  "name": "Proof of Death",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "story_act3_ch1_m6"
+ },
+ {
+  "name": "Wrong Place, Wrong Time",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch1_m1"
+ },
+ {
+  "name": "Fight Fire with Fire",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch1_m2"
+ },
+ {
+  "name": "Blast from the Past",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch1_m3"
+ },
+ {
+  "name": "Mixed Messages",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch1_m4"
+ },
+ {
+  "name": "Herald of Destruction",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch1_m5"
+ },
+ {
+  "name": "Dark Arrival",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch1_m6"
+ },
+ {
+  "name": "Fuel",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch2_m1"
+ },
+ {
+  "name": "Fire",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch2_m2"
+ },
+ {
+  "name": "Desire",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch2_m3"
+ },
+ {
+  "name": "Burn",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch2_m4"
+ },
+ {
+  "name": "Face",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch2_m5"
+ },
+ {
+  "name": "Upon the Chrome",
+  "boss": null,
+  "boss_client_id": null,
+  "match": null,
+  "reason": "no boss name on wiki",
+  "qid": "story_act4_ch2_m6"
+ },
+ {
+  "name": "Face",
+  "boss": "Starscream",
+  "boss_client_id": null,
+  "match": "none",
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)",
+  "qid": "awaken_ch2_m5"
+ }
+]

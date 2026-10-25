@@ -1,0 +1,16 @@
+﻿{
+  "schema": "attributeGrowthDefs (client keys)",
+  "curves": {
+    "hp_tier": {"a": 1.0, "b": 1.0, "c": 0.0, "exp": 1.0, "max": 100000.0},
+    "atk_tier": {"a": 1.0, "b": 1.0, "c": 0.0, "exp": 1.0, "max": 10000.0}
+  },
+  "attributeGrowthDefs": [
+    {"level_key": "level", "curve_key": "hp_tier", "rounded": true, "attribute_keys": ["health"]},
+    {"level_key": "level", "curve_key": "atk_tier", "rounded": true, "attribute_keys": ["attack"]}
+  ],
+  "blueprints": {
+    "bumblebee_cin_dotm_2": {"base_hp": 1050, "base_attack": 115, "growth_multiplier": 1.0, "source": "[DERIVED]"},
+    "rhinox_gs_voyager2014": {"base_hp": 1050, "base_attack": 115, "growth_multiplier": 1.0, "source": "[ASSUMED]"}
+  },
+  "note": "Client parses attributeGrowthDefs + curves from /bcg/getLoginData; values above are the stub format example, not retail constants."
+}

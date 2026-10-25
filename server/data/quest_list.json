@@ -440,7 +440,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act1_ch2_m1",
     "mapHash": "story_act1_ch2_m1_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "ironhide_cin_rotf",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -637,7 +641,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act1_ch2_m4",
     "mapHash": "story_act1_ch2_m4_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "bumblebee_cin_dotm",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -968,7 +976,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act1_ch3_m3",
     "mapHash": "story_act1_ch3_m3_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "ironhide_cin_rotf",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -1559,7 +1571,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act1_ch4_m6",
     "mapHash": "story_act1_ch4_m6_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "megatron_cin_rotf",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -13932,7 +13948,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act2_ch1_m6",
     "mapHash": "story_act2_ch1_m6_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "ironhide_cin_rotf",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -14192,7 +14212,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act2_ch2_m4",
     "mapHash": "story_act2_ch2_m4_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "sharkticon_gs_warrior",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -14921,7 +14945,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act2_ch4_m3",
     "mapHash": "story_act2_ch4_m3_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "megatron_cin_rotf",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -15051,7 +15079,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act2_ch4_m5",
     "mapHash": "story_act2_ch4_m5_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "bumblebee_cin_dotm",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -37704,7 +37736,11 @@
     "maxHealthPerTile": 0,
     "sid": "awaken_ch1_m3",
     "mapHash": "awaken_ch1_m3_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "bumblebee_cin_dotm",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -38102,7 +38138,11 @@
     "maxHealthPerTile": 0,
     "sid": "awaken_ch2_m3",
     "mapHash": "awaken_ch2_m3_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "megatron_cin_rotf",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",

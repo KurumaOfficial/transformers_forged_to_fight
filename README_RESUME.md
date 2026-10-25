@@ -1,22 +1,37 @@
-﻿
-# Resume in 10 minutes
+﻿# Resume in 10 minutes
 
-1. Open the project root and read `STATE.md` (latest section), `OPEN_QUESTIONS.md`,
-   and `report/FINAL_2026-10-24.md`.
-2. Start the emulator `TFTF_AVD` and wait for `adb devices` to show
-   `emulator-5554 device`.
-3. Run `powershell -ExecutionPolicy Bypass -File .\resume.ps1 -Full`.
-   It sets `adb reverse tcp:8080 tcp:8080`, starts `server/stub_server.py 8080`
-   if needed, checks the installed APK and SHA-256, launches the app, and runs
-   the full smoke + golden regression.
-4. Evidence lands in `tests/smoke/latest.json` and `tests/smoke/*.png`.
-   `status=PASS` means the UI flow reached the battle tile; it does **not**
-   mean combat works.
-5. Current hard blocker: `PreFightScreen._model` is null, so FIGHT NREs in
-   `PreFightScreen.OnFight`. Team data is not the blocker (`TeamHeroes=1`,
-   `localPlayer.team=1`). Read `STATE.md` §15 and `docs/memory_probe.md`.
-6. Queue: A5/A6 (other battle entrances / match protocol), R2-R6, C1-C3,
-   W4-W5, P2 I1-I2. Work from the first item not marked done in
-   `report/FINAL_2026-10-24.md`.
-7. Do not modify the APK, raw wiki archive, or `server/data` by hand unless
-   the change is recorded in `LEDGER.md` and `FIDELITY.md`.
+1. Read `STATE.md` (latest section), `OPEN_QUESTIONS.md`, `MASTER_PROMPT.md`
+   (v4.5) and `report/FINAL_2026-10-25.md`.
+2. Start the emulator:
+   `work/android-sdk/emulator/emulator.exe -avd TFTF_AVD -no-snapshot -no-audio -gpu angle_indirect`
+   (windowed is the stable mode; headless was unstable).
+3. `work/emulator_watchdog.py --ensure --windowed` — checks adb, boots,
+   restores `adb reverse`, installs the APK if missing, launches the app.
+   `--save-snapshot tftf_home` / `--load-snapshot tftf_home` are available.
+4. Start the server if needed:
+   `python server/stub_server.py` (port 8080). Optional persistence:
+   set `TFTF_DB=<path>` before starting.
+5. Quick health: `python work/check_all.ps1` (golden + fast smoke + unit
+   tests) or `powershell -ExecutionPolicy Bypass -File work\nightly.ps1`.
+6. Current battle blocker: prefight works and FIGHT sends
+   `/matches/activate-match/quests_fight`; the fight scene then throws
+   `ArgumentNullException` from `PlayerAttributes.Init`'s `HashSet<string>`.
+   `Blueprint.ModelID` was fixed by the `"m"` key; `tags`/`t` made live
+   `Blueprint.Tags` non-null. No `/matches/match-loaded` yet.
+   See `docs/battle_init_progress.md`.
+7. Quest data: 90 missions in `server/data/quest_list.json`; detail/begin/
+   movedir are built by `server/routes/quests.py`; maps use the validated
+   9-tile template with per-qid `mapHash`. 70/90 bosses have a client id;
+   `data/boss_gaps.json` lists the 20 gaps.
+8. Tests: full smoke PASS, golden 9/9, unit 19/19. Golden is re-recorded only
+   with a diff/reason in `LEDGER.md`.
+9. Git: **do not push/gc/filter-repo/change remotes or user.email without the
+   user's consent.** The remote is ahead/behind; local commits only. Read
+   `docs/git_audit.md`, `docs/git_dangling.md`,
+   `docs/git_cleanup_plan.md`.
+10. Public-repo guard: `.git/hooks/pre-commit` (source
+    `work/git-hooks/pre-commit`) blocks binaries, >1 MiB files, unpacked
+    assets, keys and `C:/Users/` in added text. `docs/screens_ok/` is the only
+    image exception.
+11. Do not modify the APK, raw wiki archive, or `server/data` by hand unless
+    the change is recorded in `LEDGER.md` and `FIDELITY.md`.

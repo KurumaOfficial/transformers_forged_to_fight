@@ -61,3 +61,7 @@ archive/wiki/raw/
 # dangling-audit artifacts
 work/git_dangling.json
 work/dangling_tmp.zip
+
+# local backup/test artifacts
+work/backup_test/
+work/nightly/

@@ -1,0 +1,3787 @@
+{
+ "stat_table_rows": [
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5340.0,
+   "attack": 516.0,
+   "rating": 1397.0,
+   "bot": "Arcee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8423.0,
+   "attack": 813.0,
+   "rating": 2198.0,
+   "bot": "Arcee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11172.0,
+   "attack": 1079.0,
+   "rating": 2971.0,
+   "bot": "Arcee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 14633.0,
+   "attack": 1412.0,
+   "rating": 3986.0,
+   "bot": "Arcee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 19597.0,
+   "attack": 1914.0,
+   "rating": 6654.0,
+   "bot": "Arcee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 24123.0,
+   "attack": 2327.0,
+   "rating": 8470.0,
+   "bot": "Arcee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5160.0,
+   "attack": 520.0,
+   "rating": 1377.0,
+   "bot": "Barricade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8139.0,
+   "attack": 820.0,
+   "rating": 2168.0,
+   "bot": "Barricade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 10601.0,
+   "attack": 1068.0,
+   "rating": 2868.0,
+   "bot": "Barricade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 13790.0,
+   "attack": 1389.0,
+   "rating": 3805.0,
+   "bot": "Barricade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 17925.0,
+   "attack": 1805.0,
+   "rating": null,
+   "bot": "Barricade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 23310.0,
+   "attack": 2347.0,
+   "rating": 8250.0,
+   "bot": "Barricade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 26794.0,
+   "attack": 2698.0,
+   "rating": 9902.0,
+   "bot": "Barricade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6060.0,
+   "attack": 480.0,
+   "rating": 1397.0,
+   "bot": "Bludgeon",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9558.0,
+   "attack": 757.0,
+   "rating": 2202.0,
+   "bot": "Bludgeon",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12450.0,
+   "attack": 986.0,
+   "rating": 2903.0,
+   "bot": "Bludgeon",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16196.0,
+   "attack": 1282.0,
+   "rating": 4142.0,
+   "bot": "Bludgeon",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 21051.0,
+   "attack": 1666.0,
+   "rating": null,
+   "bot": "Bludgeon",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 27375.0,
+   "attack": 2167.0,
+   "rating": 6869.0,
+   "bot": "Bludgeon",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6060.0,
+   "attack": 462.0,
+   "rating": 1401.0,
+   "bot": "Bonecrusher",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9558.0,
+   "attack": 729.0,
+   "rating": 2236.0,
+   "bot": "Bonecrusher",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12450.0,
+   "attack": 949.0,
+   "rating": 2911.0,
+   "bot": "Bonecrusher",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16607.0,
+   "attack": 1267.0,
+   "rating": 3957.0,
+   "bot": "Bonecrusher",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 21585.0,
+   "attack": 1646.0,
+   "rating": 5723.0,
+   "bot": "Bonecrusher",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 27375.0,
+   "attack": 2086.0,
+   "rating": 8319.0,
+   "bot": "Bonecrusher",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 4860.0,
+   "attack": 444.0,
+   "rating": 1353.0,
+   "bot": "Bumblebee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 7666.0,
+   "attack": 701.0,
+   "rating": 2130.0,
+   "bot": "Bumblebee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 9984.0,
+   "attack": 913.0,
+   "rating": 2844.0,
+   "bot": "Bumblebee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 12989.0,
+   "attack": 1187.0,
+   "rating": 4075.0,
+   "bot": "Bumblebee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 16883.0,
+   "attack": 1543.0,
+   "rating": null,
+   "bot": "Bumblebee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 25536.0,
+   "attack": 2306.0,
+   "rating": 10400.0,
+   "bot": "Bumblebee",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6000.0,
+   "attack": 484.0,
+   "rating": 1433.0,
+   "bot": "Cliffjumper",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9464.0,
+   "attack": 764.0,
+   "rating": 2260.0,
+   "bot": "Cliffjumper",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12326.0,
+   "attack": 995.0,
+   "rating": 2979.0,
+   "bot": "Cliffjumper",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16035.0,
+   "attack": 1294.0,
+   "rating": 3965.0,
+   "bot": "Cliffjumper",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20843.0,
+   "attack": 1682.0,
+   "rating": 5263.0,
+   "bot": "Cliffjumper",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 31000.0,
+   "attack": 2513.0,
+   "rating": 10490.0,
+   "bot": "Cliffjumper",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 31156.0,
+   "attack": 2513.0,
+   "rating": 10540.0,
+   "bot": "Cliffjumper",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5940.0,
+   "attack": 453.0,
+   "rating": 1404.0,
+   "bot": "Drift",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9369.0,
+   "attack": 715.0,
+   "rating": 2345.0,
+   "bot": "Drift",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12440.0,
+   "attack": 950.0,
+   "rating": 3168.0,
+   "bot": "Drift",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16183.0,
+   "attack": 1235.0,
+   "rating": 4375.0,
+   "bot": "Drift",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 21035.0,
+   "attack": 1605.0,
+   "rating": 5867.0,
+   "bot": "Drift",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 26833.0,
+   "attack": 2046.0,
+   "rating": 8420.0,
+   "bot": "Drift",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5994.0,
+   "attack": 484.0,
+   "rating": 1500.0,
+   "bot": "Galvatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9454.0,
+   "attack": 764.0,
+   "rating": 2363.0,
+   "bot": "Galvatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12314.0,
+   "attack": 995.0,
+   "rating": 3120.0,
+   "bot": "Galvatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16019.0,
+   "attack": 1294.0,
+   "rating": 4300.0,
+   "bot": "Galvatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20822.0,
+   "attack": 1682.0,
+   "rating": 5761.0,
+   "bot": "Galvatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 41552.0,
+   "attack": 3309.0,
+   "rating": 15477.0,
+   "bot": "Galvatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5820.0,
+   "attack": 471.0,
+   "rating": 1425.0,
+   "bot": "Hot Rod",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9180.0,
+   "attack": 743.0,
+   "rating": 2243.0,
+   "bot": "Hot Rod",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11957.0,
+   "attack": 967.0,
+   "rating": 2956.0,
+   "bot": "Hot Rod",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 15554.0,
+   "attack": 1258.0,
+   "rating": 3922.0,
+   "bot": "Hot Rod",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20520.0,
+   "attack": 1660.0,
+   "rating": 5725.0,
+   "bot": "Hot Rod",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 26291.0,
+   "attack": 2127.0,
+   "rating": 8417.0,
+   "bot": "Hot Rod",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6300.0,
+   "attack": 431.0,
+   "rating": 1419.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9937.0,
+   "attack": 680.0,
+   "rating": 2325.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12943.0,
+   "attack": 885.0,
+   "rating": 3067.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17045.0,
+   "attack": 1166.0,
+   "rating": 4112.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 22156.0,
+   "attack": 1516.0,
+   "rating": 5546.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 29308.0,
+   "attack": 1985.0,
+   "rating": 9467.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 30733.0,
+   "attack": 2455.0,
+   "rating": 12528.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6720.0,
+   "attack": 507.0,
+   "rating": 6720.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10599.0,
+   "attack": 799.0,
+   "rating": 2299.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13805.0,
+   "attack": 1040.0,
+   "rating": 3110.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17959.0,
+   "attack": 1353.0,
+   "rating": 4120.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23344.0,
+   "attack": 1759.0,
+   "rating": 5144.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 30356.0,
+   "attack": 2287.0,
+   "rating": 7429.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 33602.0,
+   "attack": 2531.0,
+   "rating": 9765.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5400.0,
+   "attack": 516.0,
+   "rating": 1392.0,
+   "bot": "Jazz",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8517.0,
+   "attack": 813.0,
+   "rating": 2191.0,
+   "bot": "Jazz",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11094.0,
+   "attack": 1059.0,
+   "rating": 2904.0,
+   "bot": "Jazz",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 14432.0,
+   "attack": 1377.0,
+   "rating": 4036.0,
+   "bot": "Jazz",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 18759.0,
+   "attack": 1790.0,
+   "rating": 5390.0,
+   "bot": "Jazz",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 28810.0,
+   "attack": 2721.0,
+   "rating": 11250.0,
+   "bot": "Jazz",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5580.0,
+   "attack": 436.0,
+   "rating": 1388.0,
+   "bot": "Jetfire",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8801.0,
+   "attack": 687.0,
+   "rating": 2186.0,
+   "bot": "Jetfire",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11464.0,
+   "attack": 894.0,
+   "rating": 2899.0,
+   "bot": "Jetfire",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 15219.0,
+   "attack": 1187.0,
+   "rating": 4191.0,
+   "bot": "Jetfire",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 19781.0,
+   "attack": 1543.0,
+   "rating": 5643.0,
+   "bot": "Jetfire",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 25207.0,
+   "attack": 1906.0,
+   "rating": 8600.0,
+   "bot": "Jetfire",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 28975.0,
+   "attack": 2260.0,
+   "rating": 10630.0,
+   "bot": "Jetfire",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6600.0,
+   "attack": 427.0,
+   "rating": 1451.0,
+   "bot": "Megatron (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10410.0,
+   "attack": 673.0,
+   "rating": 2285.0,
+   "bot": "Megatron (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13559.0,
+   "attack": 876.0,
+   "rating": 2976.0,
+   "bot": "Megatron (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23423.0,
+   "attack": 1513.0,
+   "rating": 5639.0,
+   "bot": "Megatron (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 29814.0,
+   "attack": 1926.0,
+   "rating": 8593.0,
+   "bot": "Megatron (ROTF)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5940.0,
+   "attack": 467.0,
+   "rating": 1387.0,
+   "bot": "Megatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9369.0,
+   "attack": 736.0,
+   "rating": 2186.0,
+   "bot": "Megatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12203.0,
+   "attack": 958.0,
+   "rating": 2883.0,
+   "bot": "Megatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 15875.0,
+   "attack": 1246.0,
+   "rating": 4012.0,
+   "bot": "Megatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20634.0,
+   "attack": 1620.0,
+   "rating": 5339.0,
+   "bot": "Megatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 26833.0,
+   "attack": 2106.0,
+   "rating": 8453.0,
+   "bot": "Megatron",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5640.0,
+   "attack": 413.0,
+   "rating": 1362.0,
+   "bot": "Mirage",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8612.0,
+   "attack": 652.0,
+   "rating": 2147.0,
+   "bot": "Mirage",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11217.0,
+   "attack": 849.0,
+   "rating": 2841.0,
+   "bot": "Mirage",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 14592.0,
+   "attack": 1104.0,
+   "rating": 3872.0,
+   "bot": "Mirage",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 19501.0,
+   "attack": 1476.0,
+   "rating": 5594.0,
+   "bot": "Mirage",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 24665.0,
+   "attack": 1866.0,
+   "rating": 8441.0,
+   "bot": "Mirage",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6300.0,
+   "attack": 342.0,
+   "rating": 1431.0,
+   "bot": "Mixmaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9937.0,
+   "attack": 540.0,
+   "rating": 2252.0,
+   "bot": "Mixmaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12943.0,
+   "attack": 703.0,
+   "rating": 2976.0,
+   "bot": "Mixmaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16837.0,
+   "attack": 914.0,
+   "rating": 3948.0,
+   "bot": "Mixmaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 21885.0,
+   "attack": 1188.0,
+   "rating": 5250.0,
+   "bot": "Mixmaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6720.0,
+   "attack": 507.0,
+   "rating": 1413.0,
+   "bot": "Motormaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10599.0,
+   "attack": 799.0,
+   "rating": 2222.0,
+   "bot": "Motormaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13805.0,
+   "attack": 1040.0,
+   "rating": 3088.0,
+   "bot": "Motormaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17959.0,
+   "attack": 1353.0,
+   "rating": 4066.0,
+   "bot": "Motormaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23344.0,
+   "attack": 1759.0,
+   "rating": null,
+   "bot": "Motormaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 30356.0,
+   "attack": 2287.0,
+   "rating": 6918.0,
+   "bot": "Motormaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 34894.0,
+   "attack": 2629.0,
+   "rating": 10070.0,
+   "bot": "Motormaster",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6660.0,
+   "attack": 480.0,
+   "rating": 1491.0,
+   "bot": "Necrotronus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10504.0,
+   "attack": 757.0,
+   "rating": 2349.0,
+   "bot": "Necrotronus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13682.0,
+   "attack": 986.0,
+   "rating": 3122.0,
+   "bot": "Necrotronus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17779.0,
+   "attack": 1282.0,
+   "rating": 4145.0,
+   "bot": "Necrotronus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23135.0,
+   "attack": 1666.0,
+   "rating": 5498.0,
+   "bot": "Necrotronus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 30085.0,
+   "attack": 2167.0,
+   "rating": 8890.0,
+   "bot": "Necrotronus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 35484.0,
+   "attack": 2519.0,
+   "rating": 11670.0,
+   "bot": "Necrotronus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6720.0,
+   "attack": 507.0,
+   "rating": 1427.0,
+   "bot": "Optimus Prime (MV1)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10599.0,
+   "attack": 799.0,
+   "rating": 2247.0,
+   "bot": "Optimus Prime (MV1)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13805.0,
+   "attack": 1040.0,
+   "rating": 2961.0,
+   "bot": "Optimus Prime (MV1)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17959.0,
+   "attack": 1353.0,
+   "rating": 3931.0,
+   "bot": "Optimus Prime (MV1)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23751.0,
+   "attack": 1790.0,
+   "rating": 5529.0,
+   "bot": "Optimus Prime (MV1)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 30885.0,
+   "attack": 2327.0,
+   "rating": 7601.0,
+   "bot": "Optimus Prime (MV1)",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6240.0,
+   "attack": 444.0,
+   "rating": 1393.0,
+   "bot": "Optimus Prime",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9842.0,
+   "attack": 701.0,
+   "rating": 2194.0,
+   "bot": "Optimus Prime",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12819.0,
+   "attack": 913.0,
+   "rating": 2903.0,
+   "bot": "Optimus Prime",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16677.0,
+   "attack": 1187.0,
+   "rating": 3868.0,
+   "bot": "Optimus Prime",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 22055.0,
+   "attack": 1570.0,
+   "rating": 5494.0,
+   "bot": "Optimus Prime",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 29031.0,
+   "attack": 2046.0,
+   "rating": 7860.0,
+   "bot": "Optimus Prime",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 32402.0,
+   "attack": 2306.0,
+   "rating": 10140.0,
+   "bot": "Optimus Prime",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5880.0,
+   "attack": 449.0,
+   "rating": 1425.0,
+   "bot": "Prowl",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9274.0,
+   "attack": 708.0,
+   "rating": 2243.0,
+   "bot": "Prowl",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12080.0,
+   "attack": 922.0,
+   "rating": 2974.0,
+   "bot": "Prowl",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16074.0,
+   "attack": 1227.0,
+   "rating": 4008.0,
+   "bot": "Prowl",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20892.0,
+   "attack": 1594.0,
+   "rating": 5866.0,
+   "bot": "Prowl",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 26562.0,
+   "attack": 2026.0,
+   "rating": 8455.0,
+   "bot": "Prowl",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6360.0,
+   "attack": 431.0,
+   "rating": 1476.0,
+   "bot": "Ramjet",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10031.0,
+   "attack": 680.0,
+   "rating": 2323.0,
+   "bot": "Ramjet",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13066.0,
+   "attack": 885.0,
+   "rating": 3085.0,
+   "bot": "Ramjet",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16997.0,
+   "attack": 1151.0,
+   "rating": 4102.0,
+   "bot": "Ramjet",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 22093.0,
+   "attack": 1497.0,
+   "rating": 5518.0,
+   "bot": "Ramjet",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 28730.0,
+   "attack": 1946.0,
+   "rating": 8325.0,
+   "bot": "Ramjet",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5940.0,
+   "attack": 396.0,
+   "rating": 1413.0,
+   "bot": "Rhinox",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9369.0,
+   "attack": 624.0,
+   "rating": 2224.0,
+   "bot": "Rhinox",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 12203.0,
+   "attack": 812.0,
+   "rating": 2952.0,
+   "bot": "Rhinox",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 15875.0,
+   "attack": 1057.0,
+   "rating": 3925.0,
+   "bot": "Rhinox",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20634.0,
+   "attack": 1373.0,
+   "rating": 5470.0,
+   "bot": "Rhinox",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 26833.0,
+   "attack": 1786.0,
+   "rating": 8433.0,
+   "bot": "Rhinox",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6540.0,
+   "attack": 436.0,
+   "rating": 1404.0,
+   "bot": "Scorponok",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10315.0,
+   "attack": 687.0,
+   "rating": 2211.0,
+   "bot": "Scorponok",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13436.0,
+   "attack": 894.0,
+   "rating": 2928.0,
+   "bot": "Scorponok",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17478.0,
+   "attack": 1163.0,
+   "rating": 4136.0,
+   "bot": "Scorponok",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 22719.0,
+   "attack": 1512.0,
+   "rating": 5518.0,
+   "bot": "Scorponok",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 29543.0,
+   "attack": 1966.0,
+   "rating": 8551.0,
+   "bot": "Scorponok",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 34867.0,
+   "attack": 2321.0,
+   "rating": 9782.0,
+   "bot": "Scorponok",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6660.0,
+   "attack": 378.0,
+   "rating": 1512.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10504.0,
+   "attack": 596.0,
+   "rating": 2384.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13682.0,
+   "attack": 776.0,
+   "rating": 3093.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17799.0,
+   "attack": 1009.0,
+   "rating": 4073.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23135.0,
+   "attack": 1311.0,
+   "rating": 5675.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 30085.0,
+   "attack": 1705.0,
+   "rating": 8604.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 45732.0,
+   "attack": 2561.0,
+   "rating": 16019.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5160.0,
+   "attack": 520.0,
+   "rating": 1426.0,
+   "bot": "Sideswipe",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8139.0,
+   "attack": 820.0,
+   "rating": 2246.0,
+   "bot": "Sideswipe",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 10601.0,
+   "attack": 1068.0,
+   "rating": 2962.0,
+   "bot": "Sideswipe",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 13790.0,
+   "attack": 1389.0,
+   "rating": 3928.0,
+   "bot": "Sideswipe",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 17925.0,
+   "attack": 1805.0,
+   "rating": 5536.0,
+   "bot": "Sideswipe",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 23310.0,
+   "attack": 2347.0,
+   "rating": 6991.0,
+   "bot": "Sideswipe",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 26794.0,
+   "attack": 2698.0,
+   "rating": 10160.0,
+   "bot": "Sideswipe",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10504.0,
+   "attack": 596.0,
+   "rating": 2434.0,
+   "bot": "Skywarp",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13682.0,
+   "attack": 776.0,
+   "rating": 3169.0,
+   "bot": "Skywarp",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17799.0,
+   "attack": 1009.0,
+   "rating": 4524.0,
+   "bot": "Skywarp",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23135.0,
+   "attack": 1311.0,
+   "rating": null,
+   "bot": "Skywarp",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 30085.0,
+   "attack": 1705.0,
+   "rating": 8033.0,
+   "bot": "Skywarp",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5760.0,
+   "attack": 516.0,
+   "rating": 1513.0,
+   "bot": "Slipstream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9085.0,
+   "attack": 813.0,
+   "rating": 2382.0,
+   "bot": "Slipstream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11833.0,
+   "attack": 1059.0,
+   "rating": 3160.0,
+   "bot": "Slipstream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 15394.0,
+   "attack": 1377.0,
+   "rating": 4162.0,
+   "bot": "Slipstream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20009.0,
+   "attack": 1790.0,
+   "rating": 5490.0,
+   "bot": "Slipstream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 26020.0,
+   "attack": 2327.0,
+   "rating": 7284.0,
+   "bot": "Slipstream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 29910.0,
+   "attack": 2265.0,
+   "rating": 8509.0,
+   "bot": "Slipstream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5400.0,
+   "attack": 391.0,
+   "rating": null,
+   "bot": "Soundblaster/Tactician",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 2575.0,
+   "attack": 617.0,
+   "rating": null,
+   "bot": "Soundblaster/Tactician",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11094.0,
+   "attack": 803.0,
+   "rating": null,
+   "bot": "Soundblaster/Tactician",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 14432.0,
+   "attack": 1045.0,
+   "rating": null,
+   "bot": "Soundblaster/Tactician",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 18758.0,
+   "attack": 1350.0,
+   "rating": null,
+   "bot": "Soundblaster/Tactician",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 24394.0,
+   "attack": 1765.0,
+   "rating": null,
+   "bot": "Soundblaster/Tactician",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 28040.0,
+   "attack": 2029.0,
+   "rating": null,
+   "bot": "Soundblaster/Tactician",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5400.0,
+   "attack": 391.0,
+   "rating": 1354.0,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8517.0,
+   "attack": 617.0,
+   "rating": 2133.0,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11094.0,
+   "attack": 803.0,
+   "rating": 3039.0,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 14432.0,
+   "attack": 1045.0,
+   "rating": 4080.0,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 18759.0,
+   "attack": 1358.0,
+   "rating": null,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 24394.0,
+   "attack": 1765.0,
+   "rating": 7850.0,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 34626.0,
+   "attack": 2859.0,
+   "rating": 18166.0,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6660.0,
+   "attack": 538.0,
+   "rating": 1421.0,
+   "bot": "Tantrum",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10504.0,
+   "attack": 848.0,
+   "rating": 2241.0,
+   "bot": "Tantrum",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13682.0,
+   "attack": 1104.0,
+   "rating": 2971.0,
+   "bot": "Tantrum",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17799.0,
+   "attack": 1436.0,
+   "rating": 3903.0,
+   "bot": "Tantrum",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 23539.0,
+   "attack": 1900.0,
+   "rating": 5612.0,
+   "bot": "Tantrum",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 30610.0,
+   "attack": 2470.0,
+   "rating": 7670.0,
+   "bot": "Tantrum",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6600.0,
+   "attack": 518.0,
+   "rating": 1454.0,
+   "bot": "Thundercracker",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 10410.0,
+   "attack": 816.0,
+   "rating": 2289.0,
+   "bot": "Thundercracker",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 13559.0,
+   "attack": 1063.0,
+   "rating": 3059.0,
+   "bot": "Thundercracker",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 17639.0,
+   "attack": 1383.0,
+   "rating": 4080.0,
+   "bot": "Thundercracker",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 22927.0,
+   "attack": 1797.0,
+   "rating": 5451.0,
+   "bot": "Thundercracker",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 29814.0,
+   "attack": 2337.0,
+   "rating": 8847.0,
+   "bot": "Thundercracker",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 34271.0,
+   "attack": 2686.0,
+   "rating": 10810.0,
+   "bot": "Thundercracker",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6240.0,
+   "attack": 444.0,
+   "rating": 1405.0,
+   "bot": "Ultra Magnus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 9842.0,
+   "attack": 701.0,
+   "rating": 2216.0,
+   "bot": "Ultra Magnus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 16677.0,
+   "attack": 1187.0,
+   "rating": 3866.0,
+   "bot": "Ultra Magnus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 22243.0,
+   "attack": 1597.0,
+   "rating": null,
+   "bot": "Ultra Magnus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 28188.0,
+   "attack": 2006.0,
+   "rating": 9232.0,
+   "bot": "Ultra Magnus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 32402.0,
+   "attack": 2306.0,
+   "rating": 11090.0,
+   "bot": "Ultra Magnus",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5700.0,
+   "attack": 422.0,
+   "rating": 1423.0,
+   "bot": "Waspinator",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8990.0,
+   "attack": 666.0,
+   "rating": 2247.0,
+   "bot": "Waspinator",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 11710.0,
+   "attack": 867.0,
+   "rating": 3136.0,
+   "bot": "Waspinator",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 15233.0,
+   "attack": 1128.0,
+   "rating": 4135.0,
+   "bot": "Waspinator",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 20229.0,
+   "attack": 1498.0,
+   "rating": 5580.0,
+   "bot": "Waspinator",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 25749.0,
+   "attack": 1906.0,
+   "rating": 8532.0,
+   "bot": "Waspinator",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5340.0,
+   "attack": 400.0,
+   "rating": 1476.0,
+   "bot": "Wheeljack",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8423.0,
+   "attack": 631.0,
+   "rating": 2327.0,
+   "bot": "Wheeljack",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 10970.0,
+   "attack": 821.0,
+   "rating": 2980.0,
+   "bot": "Wheeljack",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 14721.0,
+   "attack": 1068.0,
+   "rating": 3938.0,
+   "bot": "Wheeljack",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 18550.0,
+   "attack": 1389.0,
+   "rating": 5507.0,
+   "bot": "Wheeljack",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 24123.0,
+   "attack": 1806.0,
+   "rating": 7041.0,
+   "bot": "Wheeljack",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 27729.0,
+   "attack": 2705.0,
+   "rating": 10590.0,
+   "bot": "Wheeljack",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 5160.0,
+   "attack": 498.0,
+   "rating": 1381.0,
+   "bot": "Windblade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 1,
+   "level": 10,
+   "hp": 8139.0,
+   "attack": 785.0,
+   "rating": 2178.0,
+   "bot": "Windblade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 2,
+   "level": 20,
+   "hp": 10601.0,
+   "attack": 1022.0,
+   "rating": 3122.0,
+   "bot": "Windblade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 3,
+   "level": 30,
+   "hp": 13790.0,
+   "attack": 1329.0,
+   "rating": 4176.0,
+   "bot": "Windblade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 4,
+   "level": 40,
+   "hp": 17925.0,
+   "attack": 1728.0,
+   "rating": null,
+   "bot": "Windblade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 5,
+   "level": 50,
+   "hp": 23310.0,
+   "attack": 2247.0,
+   "rating": 8192.0,
+   "bot": "Windblade",
+   "star": null,
+   "source": "stat_table"
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 26794.0,
+   "attack": 2583.0,
+   "rating": 9794.0,
+   "bot": "Windblade",
+   "star": null,
+   "source": "stat_table"
+  }
+ ],
+ "star_rows": [
+  {
+   "bot": "Arcee",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 855.0,
+   "attack": 104.0,
+   "rating": 256.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Arcee",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1557.0,
+   "attack": 173.0,
+   "rating": 548.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Arcee",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3943.0,
+   "attack": 381.0,
+   "rating": 1231.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Arcee",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 9936.0,
+   "attack": 959.0,
+   "rating": 3129.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Barricade",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 826.0,
+   "attack": 106.0,
+   "rating": 260.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Barricade",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1505.0,
+   "attack": 176.0,
+   "rating": 552.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Barricade",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3694.0,
+   "attack": 372.0,
+   "rating": 1174.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Barricade",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 9601.0,
+   "attack": 967.0,
+   "rating": 3402.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bludgeon",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1788.0,
+   "attack": 157.0,
+   "rating": 533.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bludgeon",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4496.0,
+   "attack": 354.0,
+   "rating": 1247.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bludgeon",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11276.0,
+   "attack": 893.0,
+   "rating": 3041.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bludgeon",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 27375.0,
+   "attack": 2167.0,
+   "rating": 6869.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bonecrusher",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 970.0,
+   "attack": 93.0,
+   "rating": 248.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bonecrusher",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1786.0,
+   "attack": 157.0,
+   "rating": 544.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bonecrusher",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4339.0,
+   "attack": 331.0,
+   "rating": 1287.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bonecrusher",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11276.0,
+   "attack": 860.0,
+   "rating": 3432.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bumblebee",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1417.0,
+   "attack": 151.0,
+   "rating": 566.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bumblebee",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3480.0,
+   "attack": 318.0,
+   "rating": 1299.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Bumblebee",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 9043.0,
+   "attack": 827.0,
+   "rating": 3499.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Chromia",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 1009.0,
+   "attack": 70.0,
+   "rating": 262.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Cliffjumper",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1749.0,
+   "attack": 165.0,
+   "rating": 493.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Cliffjumper",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4274.0,
+   "attack": 347.0,
+   "rating": 1312.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Cliffjumper",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11108.0,
+   "attack": 901.0,
+   "rating": 3573.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Cliffjumper",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 31000.0,
+   "attack": 2513.0,
+   "rating": 10490.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Dead End",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 1009.0,
+   "attack": 89.0,
+   "rating": 267.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Drift",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1732.0,
+   "attack": 152.0,
+   "rating": 546.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Drift",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4253.0,
+   "attack": 325.0,
+   "rating": 1307.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Drift",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11053.0,
+   "attack": 843.0,
+   "rating": 3476.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Galvatron",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1748.0,
+   "attack": 165.0,
+   "rating": 590.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Galvatron",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4291.0,
+   "attack": 347.0,
+   "rating": 1352.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Galvatron",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11153.0,
+   "attack": 901.0,
+   "rating": 3549.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Hot Rod",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1697.0,
+   "attack": 158.0,
+   "rating": 552.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Hot Rod",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4167.0,
+   "attack": 337.0,
+   "rating": 1313.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Hot Rod",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10829.0,
+   "attack": 876.0,
+   "rating": 3476.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Hound",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1854.0,
+   "attack": 149.0,
+   "rating": 547.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Hound",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4553.0,
+   "attack": 318.0,
+   "rating": 1308.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Hound",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11839.0,
+   "attack": 827.0,
+   "rating": 3484.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide (ROTF)",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 1009.0,
+   "attack": 89.0,
+   "rating": 260.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide (ROTF)",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1837.0,
+   "attack": 147.0,
+   "rating": 493.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide (ROTF)",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4765.0,
+   "attack": 327.0,
+   "rating": 1376.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide (ROTF)",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11722.0,
+   "attack": 802.0,
+   "rating": 2869.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1959.0,
+   "attack": 171.0,
+   "rating": 468.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4811.0,
+   "attack": 363.0,
+   "rating": 1101.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12504.0,
+   "attack": 942.0,
+   "rating": 3327.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ironhide",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 33602.0,
+   "attack": 2531.0,
+   "rating": 9765.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Jazz",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1575.0,
+   "attack": 175.0,
+   "rating": 561.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Jazz",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3866.0,
+   "attack": 369.0,
+   "rating": 1304.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Jazz",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10048.0,
+   "attack": 959.0,
+   "rating": 3519.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Megatron (ROTF)",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1924.0,
+   "attack": 146.0,
+   "rating": 555.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Megatron (ROTF)",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4725.0,
+   "attack": 306.0,
+   "rating": 1312.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Megatron (ROTF)",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12281.0,
+   "attack": 794.0,
+   "rating": 3543.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Megatron",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1732.0,
+   "attack": 158.0,
+   "rating": 537.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Megatron",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4253.0,
+   "attack": 334.0,
+   "rating": 1270.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Megatron",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11053.0,
+   "attack": 868.0,
+   "rating": 3485.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mirage",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 874.0,
+   "attack": 85.0,
+   "rating": 248.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mirage",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1592.0,
+   "attack": 141.0,
+   "rating": 535.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mirage",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3909.0,
+   "attack": 296.0,
+   "rating": 1227.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mirage",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10461.0,
+   "attack": 792.0,
+   "rating": 3094.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mixmaster",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 1009.0,
+   "attack": 70.0,
+   "rating": 243.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mixmaster",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1837.0,
+   "attack": 117.0,
+   "rating": 526.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mixmaster",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4510.0,
+   "attack": 245.0,
+   "rating": 1273.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Mixmaster",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 8966.0,
+   "attack": 487.0,
+   "rating": 2606.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Motormaster",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 1076.0,
+   "attack": 103.0,
+   "rating": 249.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Motormaster",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1959.0,
+   "attack": 171.0,
+   "rating": 532.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Motormaster",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4811.0,
+   "attack": 363.0,
+   "rating": 1213.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Motormaster",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12504.0,
+   "attack": 942.0,
+   "rating": 6918.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Motormaster",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 30356.0,
+   "attack": 2287.0,
+   "rating": 6918.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Necrotronus",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1942.0,
+   "attack": 161.0,
+   "rating": 475.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Necrotronus",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4768.0,
+   "attack": 344.0,
+   "rating": 1386.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Necrotronus",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12392.0,
+   "attack": 893.0,
+   "rating": 3668.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Necrotronus",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 30085.0,
+   "attack": 2167.0,
+   "rating": 8890.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Optimus Prime (MV1)",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1981.0,
+   "attack": 173.0,
+   "rating": 546.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Optimus Prime (MV1)",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4900.0,
+   "attack": 370.0,
+   "rating": 1236.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Optimus Prime (MV1)",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12504.0,
+   "attack": 942.0,
+   "rating": 3536.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Optimus Prime",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 1066.0,
+   "attack": 97.0,
+   "rating": 267.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Optimus Prime",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4468.0,
+   "attack": 318.0,
+   "rating": 1287.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Optimus Prime",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11611.0,
+   "attack": 827.0,
+   "rating": 3465.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Prowl",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1714.0,
+   "attack": 152.0,
+   "rating": 557.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Prowl",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4210.0,
+   "attack": 322.0,
+   "rating": 1308.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Prowl",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10941.0,
+   "attack": 835.0,
+   "rating": 3488.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ramjet",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1854.0,
+   "attack": 147.0,
+   "rating": 554.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ramjet",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4553.0,
+   "attack": 309.0,
+   "rating": 1300.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ramjet",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11834.0,
+   "attack": 802.0,
+   "rating": 3436.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Rhinox",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 951.0,
+   "attack": 81.0,
+   "rating": 256.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Rhinox",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1750.0,
+   "attack": 137.0,
+   "rating": 555.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Rhinox",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4253.0,
+   "attack": 283.0,
+   "rating": 1281.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Rhinox",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11053.0,
+   "attack": 736.0,
+   "rating": 3071.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Rodimus Prime",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4768.0,
+   "attack": 322.0,
+   "rating": 1171.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Rodimus Prime",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12392.0,
+   "attack": 835.0,
+   "rating": 3136.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Rodimus Prime",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 34583.0,
+   "attack": 2329.0,
+   "rating": 9225.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Scorponok",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1907.0,
+   "attack": 146.0,
+   "rating": 524.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Scorponok",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4682.0,
+   "attack": 312.0,
+   "rating": 1309.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Scorponok",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12169.0,
+   "attack": 810.0,
+   "rating": 3523.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Scorponok",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 29543.0,
+   "attack": 1966.0,
+   "rating": 8551.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Shockwave",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1767.0,
+   "attack": 129.0,
+   "rating": 557.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Shockwave",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4339.0,
+   "attack": 271.0,
+   "rating": 1317.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Shockwave",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11276.0,
+   "attack": 703.0,
+   "rating": 3547.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Sideswipe",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 826.0,
+   "attack": 106.0,
+   "rating": 271.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Sideswipe",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1505.0,
+   "attack": 177.0,
+   "rating": 577.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Sideswipe",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3810.0,
+   "attack": 384.0,
+   "rating": 1348.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Sideswipe",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 9601.0,
+   "attack": 967.0,
+   "rating": 3254.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Skywarp",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1942.0,
+   "attack": 129.0,
+   "rating": 483.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Skywarp",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4768.0,
+   "attack": 271.0,
+   "rating": 1364.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Skywarp",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12392.0,
+   "attack": 703.0,
+   "rating": 3591.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Skywarp",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 34583.0,
+   "attack": 1960.0,
+   "rating": 10310.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Slipstream",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1679.0,
+   "attack": 175.0,
+   "rating": 491.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Slipstream",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4124.0,
+   "attack": 369.0,
+   "rating": 1125.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Slipstream",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10718.0,
+   "attack": 959.0,
+   "rating": 2977.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Slipstream",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 29910.0,
+   "attack": 2265.0,
+   "rating": 8509.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Soundblaster",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 1009.0,
+   "attack": 70.0,
+   "rating": 262.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Soundblaster/Tactician",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3866.0,
+   "attack": 280.0,
+   "rating": 1198.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Soundblaster/Tactician",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10048.0,
+   "attack": 727.0,
+   "rating": 3137.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Soundblaster/Tactician",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 28040.0,
+   "attack": 2029.0,
+   "rating": 8863.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Starscream",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1575.0,
+   "attack": 132.0,
+   "rating": 550.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Starscream",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3866.0,
+   "attack": 280.0,
+   "rating": 1312.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Starscream",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10048.0,
+   "attack": 727.0,
+   "rating": 3524.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Sunstreaker",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4768.0,
+   "attack": 385.0,
+   "rating": 1070.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Sunstreaker",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12392.0,
+   "attack": 1000.0,
+   "rating": 2881.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Sunstreaker",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 34583.0,
+   "attack": 2790.0,
+   "rating": 8399.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Tantrum",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1942.0,
+   "attack": 181.0,
+   "rating": 533.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Tantrum",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4768.0,
+   "attack": 385.0,
+   "rating": 1292.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Tantrum",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12392.0,
+   "attack": 1000.0,
+   "rating": 3484.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Thundercracker",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1924.0,
+   "attack": 175.0,
+   "rating": 469.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Thundercracker",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4725.0,
+   "attack": 371.0,
+   "rating": 1367.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Thundercracker",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 12281.0,
+   "attack": 963.0,
+   "rating": 3646.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Thundercracker",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 29814.0,
+   "attack": 2337.0,
+   "rating": 8847.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ultra Magnus",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1819.0,
+   "attack": 150.0,
+   "rating": 595.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ultra Magnus",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4594.0,
+   "attack": 327.0,
+   "rating": 1432.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Ultra Magnus",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 11611.0,
+   "attack": 827.0,
+   "rating": 3364.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Waspinator",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1662.0,
+   "attack": 144.0,
+   "rating": 571.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Waspinator",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 4081.0,
+   "attack": 302.0,
+   "rating": 1326.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Waspinator",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 10606.0,
+   "attack": 785.0,
+   "rating": 3524.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Wheeljack",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 855.0,
+   "attack": 82.0,
+   "rating": 265.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Wheeljack",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1557.0,
+   "attack": 137.0,
+   "rating": 562.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Wheeljack",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3823.0,
+   "attack": 287.0,
+   "rating": 1309.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Wheeljack",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 9936.0,
+   "attack": 744.0,
+   "rating": 3525.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Wheeljack",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 24123.0,
+   "attack": 1806.0,
+   "rating": 7041.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Windblade",
+   "star": 1,
+   "rank": null,
+   "level": null,
+   "hp": 826.0,
+   "attack": 102.0,
+   "rating": 264.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Windblade",
+   "star": 2,
+   "rank": null,
+   "level": null,
+   "hp": 1527.0,
+   "attack": 172.0,
+   "rating": 600.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Windblade",
+   "star": 3,
+   "rank": null,
+   "level": null,
+   "hp": 3694.0,
+   "attack": 356.0,
+   "rating": 1260.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Windblade",
+   "star": 4,
+   "rank": null,
+   "level": null,
+   "hp": 9601.0,
+   "attack": 926.0,
+   "rating": 3376.0,
+   "source": "wiki_star"
+  },
+  {
+   "bot": "Windblade",
+   "star": 5,
+   "rank": null,
+   "level": null,
+   "hp": 23310.0,
+   "attack": 2247.0,
+   "rating": 6787.0,
+   "source": "wiki_star"
+  }
+ ],
+ "note": "stat rows have rank/level but no star; star rows have star but no rank/level"
+}

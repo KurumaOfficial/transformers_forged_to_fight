@@ -1,0 +1,149 @@
+{
+ "Bumblebee": {
+  "source": "[WIKI]",
+  "url": "https://transformers-forged-to-fight.fandom.com/wiki/Bumblebee",
+  "basic": [
+   "Melee Evade",
+   "Critical Rate Buff",
+   "Shield Break"
+  ],
+  "list": [
+   "Dashing Back:",
+   "Grants a 24~32% Melee Evasion Buff that is removed the next time this bot Evades.",
+   "Sidestepping:",
+   "Grants up to 3 Critical Rate Buffs that each increase Critical Rating by 20~28%. These buffs are removed each time this bot lands a hit.",
+   "Critical Hits:",
+   "100% Chance to Break the opponent’s Shielding, completely Nullifying all Shields and inflicting Shock, dealing 50~90% Energy Damage over 5 seconds."
+  ],
+  "tables": [
+   [
+    [
+     "Rank",
+     "Evade",
+     "Crit Rate Buff",
+     "Shield Break Shock",
+     "Special 3 Crit Rate"
+    ],
+    [
+     "1",
+     "24%",
+     "20%",
+     "50%",
+     "10%"
+    ],
+    [
+     "2",
+     "26%",
+     "22%",
+     "60%",
+     "12%"
+    ],
+    [
+     "3",
+     "28%",
+     "24%",
+     "70%",
+     "15%"
+    ],
+    [
+     "4",
+     "30%",
+     "26%",
+     "80%",
+     "17%"
+    ],
+    [
+     "5",
+     "32%",
+     "28%",
+     "90%",
+     "20%"
+    ],
+    [
+     "6",
+     "34%",
+     "30%",
+     "100%",
+     "22%"
+    ]
+   ]
+  ]
+ },
+ "Rhinox": {
+  "source": "[WIKI]",
+  "url": "https://transformers-forged-to-fight.fandom.com/wiki/Rhinox",
+  "basic": [
+   "Shielding",
+   "Bleed"
+  ],
+  "list": [
+   "Shielding Passive",
+   "Starts the fight with 6 Shield Buffs each capping damage from one attack to 80% of the opponent's Attack Rating. which are removed each time Rhinox is hit by a Basic or Heavy Melee Attack.",
+   "While Rhinox's Shield is active, powerful enemy attacks cannot deal more than 80% of the opponent's Attack Rating in a single hit.",
+   "Shield Buffs recharge in 12-8 seconds. (cooldown on HUD as of December 2019)",
+   "+35% Burn and Shock Resistance while Shielded.",
+   "Basic Melee Attacks: +20% damage against Bleeding targets.",
+   "Chaingun Ranged Attacks: 30% chance to inflict Bleed, dealing 35-55% Attack over 5 seconds.",
+   "Rhino Ram Heavy Attack:",
+   "90% 100% chance to drain 12% of the target's max Power and inflict Power Lock for 4 seconds.",
+   "When this ability is triggered, its chance to trigger again is reduced by 70%. This returns to normal after 16 seconds."
+  ],
+  "tables": [
+   [
+    [
+     "Rank",
+     "Shielding Recharge",
+     "Bleed",
+     "Special 1 Bleed"
+    ],
+    [
+     "1",
+     "12 seconds",
+     "35%",
+     "95%/9 sec"
+    ],
+    [
+     "2",
+     "11 seconds",
+     "40%",
+     "100%/10 sec"
+    ],
+    [
+     "3",
+     "10 seconds",
+     "45%",
+     "105%/11 sec"
+    ],
+    [
+     "4",
+     "9 seconds",
+     "50%",
+     "110%/12 sec"
+    ],
+    [
+     "5",
+     "8 seconds",
+     "55%",
+     "115%/13 sec"
+    ],
+    [
+     "6",
+     "7 seconds",
+     "60%",
+     "120%/14 sec"
+    ]
+   ]
+  ]
+ },
+ "Optimus Prime (MV1)": {
+  "source": "[WIKI]",
+  "url": "https://transformers-forged-to-fight.fandom.com/wiki/Optimus_Prime_%28MV1%29",
+  "basic": [
+   "[https://transformers-forged-to-fight.fandom.com/wiki/File:Buff_Armor.png Armor Buff] - Reduces damage taken from attacks.",
+   "[https://transformers-forged-to-fight.fandom.com/wiki/File:Melee.png Melee Buff] - Temporarily increases the damage of Melee Attacks.",
+   "[https://transformers-forged-to-fight.fandom.com/wiki/File:Buff_Willpower.png Willpower] - Returns damage he deals as Health when Bleeding"
+  ],
+  "list": [],
+  "tables": []
+ }
+}
