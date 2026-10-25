@@ -522,3 +522,18 @@ the active-team object source), not a simple alias. [RUN]
 - A5: Settings, Objectives, Upgrade screens work with default-only providers
   under tag `tform`; profile popup unreachable in this build.
 - A6: movement is one movedir request; battle is a server response action.
+
+### 24. Q1/Q2/Q3 full quest list (2026-10-25)
+
+- `server/data/quest_list.json` now has 5 sets: Story acts 1-4 (24+24+6+12 =
+  66 missions) and Awaken and Corrupt (24), total **90**.
+- Names/boss names from `data/quests_real.json` [WIKI]; boss ids where the
+  match was high; `data/boss_map.json` has 90 entries, 60 with a client id.
+- Maps: deterministic 3x3 serpentine, final tile boss entity, `mapHash=qid_map`
+  ([ASSUMED] layout). `docs/map_generator.md`.
+- The client accepted the 5-set list and rendered chapters/missions without the
+  earlier `QuestSet.BuildSummaryTable` IndexOutOfRange (that was caused by
+  non-local act indices; each single-act set now uses act=1 internally).
+- Detail/begin/movedir are still served from the single static
+  `quest_detail.json`/`quest_begin_response.json`; only the list is complete.
+  Rewards and exact layouts remain [ASSUMED].
