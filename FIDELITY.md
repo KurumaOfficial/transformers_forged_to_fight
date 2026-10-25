@@ -195,3 +195,15 @@ status. T5 is MASTER_PROMPT v4.3.
 | R2 rating | **partial** | fit RMSE 7.77, not client formula [DERIVED] |
 | Git/publication | **audit done** | no secrets/APK/libil2cpp in history; remote has binary/wiki dumps/personal path; no push until user decision |
 | Emulator | **improved** | windowed angle stable; watchdog + snapshot added |
+
+## 2026-10-25 hygiene/schema update
+
+| Area | Level | Basis |
+|---|---|---|
+| Git dangling audit | done | exact APK/zip originals identified; no deletion |
+| Pre-commit guard | done | blocks binaries/large/keys/personal path |
+| Quest routing | **good** | separate module; behavior unchanged; smoke PASS |
+| Boss coverage | **improved** | 70/90 ids; 20 gaps documented |
+| R1 coverage | partial | 37 WIKI / 22 ASSUMED + uncertainty |
+| R2 rows/regression | partial | 236/142 rows; non-integer fit |
+| Ability schema | partial | core fields/RVAs + raw-id source blocked |

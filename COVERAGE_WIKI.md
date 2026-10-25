@@ -128,3 +128,16 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   formulas are not available.
 - W5: `archive/TFTF_wiki_archive_2026-10-25_195954.zip`, 32,506,584 bytes,
   SHA-256 `4a0aa74133eb80ba067e7a541195bb38d28d4b7db96138ab1f1924a1bb22cc9b`.
+
+## 2026-10-25 W/Q/R status
+
+- Q3: 70/90 boss ids after id_map resolution; 20 gaps: 8 Starscream (no
+  9.2.0 pack), 12 Act 4 chapter I/II missions with no boss name/table.
+- Q1/Q2: dynamic routes + validated 9-tile map template; smoke PASS.
+- R1: `data/wiki/stat_coverage.json`; 37 table/WIKI, 22 ASSUMED with 25%
+  class-median prior.
+- R2: `data/wiki/rating_rows.json`; linear fits RMSE 873 (table) / 425 (stars),
+  no integer-exact solution.
+- R3/R4: `spec/ability_schema.md`, `data/wiki/ability_pilot.json`; raw
+  `M1_SPECIAL_ATTACK_*` is not a retained localization key.
+- W1: 2/36 priority images; 34 still blocked.

@@ -484,3 +484,17 @@ and `quest_begin_response.json` remain templates/fallbacks.
   run_variant call it before launching.
 - Q1/Q2: detail/begin/movedir are dynamic for all 90 missions; the map uses
   the validated 9-tile template with a per-qid hash. Full smoke PASS.
+
+## 4. 2026-10-25 hygiene, schema, coverage
+
+- Git dangling audit: 839 MB APK / 155 MB cmdline-tools / 11 MB Il2CppDumper
+  unreachable blobs match local originals; 337 MB invalid temp; nothing
+  deleted. Pre-commit hook installed (source `work/git-hooks/pre-commit`).
+- Battle: ModelID key `m`; tags `t`; next `PlayerAttributes.Init` HashSet NRE.
+- Quest routing split: `server/routes/quests.py`; detail/begin/movedir dynamic
+  for 90 missions. 70/90 boss ids; `data/boss_gaps.json` 20 gaps.
+- R1 coverage: 37 WIKI / 22 ASSUMED (`data/wiki/stat_coverage.json`).
+- R2 rows: `data/wiki/rating_rows.json` (236 table rows / 142 star rows);
+  fits still partial.
+- Specs: `spec/bcg_schema_full.md`, `spec/ability_schema.md`.
+- Nightly/backup scripts; README_RESUME updated.

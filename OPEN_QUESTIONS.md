@@ -257,3 +257,12 @@ is null in the loaded character prefab, or a real activate-match response.
 - Git: remote contains binary screenshots, wiki metadata/data and
   `C:\Users\gameg`; cleanup plan prepared, no push/rewrite without consent.
 - Emulator: headless QEMU unstable; windowed angle is the current mode.
+
+## 17. 2026-10-25 late additions
+
+- Git dangling objects identified; no deletion. Hook installed.
+- Battle: ModelID/tags fixed; `PlayerAttributes.Init` HashSet NRE remains.
+- Q3: 70/90 boss ids; 20 gaps in `data/boss_gaps.json`.
+- R1: 37 WIKI / 22 ASSUMED; R2 rows built but not integer-exact.
+- R3: `M1_SPECIAL_ATTACK_*` not found in retained assets; needs external table.
+- T1: quest routing split done; T2/T3 done; backup/nightly scripts added.

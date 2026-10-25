@@ -1,4 +1,4 @@
-# MASTER_PROMPT v4.4 — current state and queue (2026-10-25)
+# MASTER_PROMPT v4.5 — current state and queue (2026-10-25)
 
 Continue from this file if the chat is lost. Files beat this text:
 `STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-25.md`,
@@ -65,6 +65,29 @@ Continue from this file if the chat is lost. Files beat this text:
   `[ASSUMED]`. R2 remains partial. R3/R4 data still empty/raw.
 - W1: 2 priority images recovered; 34 blocked by 403/no URL. W5 repacked.
 
+## 2026-10-25 hygiene / stability / schema additions
+
+- **Git hygiene:** `docs/git_dangling.md` identifies the 1.5 GiB of unreachable
+  objects: exact APK (839 MB), cmdline-tools zip (155 MB), Il2CppDumper zip
+  (11 MB), SDK tool PE/ZIP blobs, and one 337 MB invalid temp. Originals exist
+  on disk; nothing deleted. `.git/hooks/pre-commit` (source
+  `work/git-hooks/pre-commit`) blocks binaries, >1 MiB files, unpacked
+  assets, keys and `C:/Users/` in added text. **No push/gc/filter-repo.**
+- **Stability:** windowed `angle_indirect` stable; watchdog + snapshot
+  `tftf_home`; smoke/run_variant integration. Full smoke PASS.
+- **Battle:** ModelID key is `m`; `map_asset`; `t`/`tags` make live
+  `Blueprint.Tags` non-null. Next: `PlayerAttributes.Init` HashSet
+  `ArgumentNullException`; `spec/bcg_schema_full.md` has the field/RVA table.
+- **Quests:** `server/routes/quests.py` split out; detail/begin/movedir are
+  dynamic for 90 missions; maps use the validated 9-tile template; 70/90 boss
+  ids, 20 gaps in `data/boss_gaps.json`.
+- **R1/R2:** `data/wiki/stat_coverage.json` (37 WIKI, 22 ASSUMED);
+  `rating_rows.json` (236 stat rows, 142 star rows); fits are partial.
+- **R3/R4:** `spec/ability_schema.md`, `data/wiki/ability_pilot.json`; raw
+  `M1_SPECIAL_ATTACK_*` is not a retained localization key.
+- **T1:** quest routing split done; T2/T3 done; `work/nightly.ps1`,
+  `work/backup.ps1`, updated `README_RESUME.md`.
+
 ## What is proven now (v4.4)
 
 - Client is original 9.2.0 (endpoint patched/re-signed only). SHA-256
@@ -116,27 +139,26 @@ Continue from this file if the chat is lost. Files beat this text:
 **Step 0:** git audit **done**; **no push/remote changes**; cleanup plan pending user decision.
 **Step 1:** windowed `angle_indirect` stable so far; watchdog not yet written.
 
-## Next queue (v4.5)
+## Queue status v4.5
 
-1. Battle: breakpoint on `0xDAC198`/`HashSet..ctor` to identify the null collection; then match-loaded/resolve.
-2. Step 1: `work/emulator_watchdog.py` + snapshots + smoke integration.
-3. S1 59/59; R3/R4; Q4/Q5 after battle.
-4. C1/C2/C3 deeper; W2 exact economy; W1 remaining priority URLs.
-5. T1 route split; git cleanup only after user decision.
+- Step 0: git audit + dangling audit + pre-commit hook done; no push.
+- Step 1: watchdog/snapshot done; windowed angle stable; full smoke PASS.
+- Step 2: ModelID/tags fixed; `PlayerAttributes.Init` HashSet NRE open.
+- Step 3: blocked (no match-loaded).
+- Step 4: R1 coverage 37 WIKI / 22 ASSUMED; LOBO errors recorded; R2 rows + partial fit.
+- Step 5: S1 12/59; nightly/backup done; screens table exists.
+- Step 6: Q1/Q2/Q3 done (70/90 boss ids); Q4/Q5 blocked.
+- Step 7: C1/C2/C3 partial; sync/async catalog started.
+- Step 8: W1 2/36; W2-W4 partial; W5 done.
+- Step 9: T1 quest routing split done; T2/T3 done; backup done.
+- Step 10: this file; STATE/FIDELITY/COVERAGE/OPEN_QUESTIONS updated.
 
-## Next queue (v4.5)
+## Next queue (v4.6)
 
-1. Battle: obtain the exact `InitPlayer` null (asset/component vs FighterData) and a real `match_activate_response`; then match-loaded/resolve.
-2. R3/R4: ability text source, `ActiveSynergyBonuses` live verification, special-attack localization.
-3. S1: finish 59/59 with scroll; add screenshots.
-4. Q4/Q5 after battle; Q1 detail/begin should use per-qid data.
-5. C1/C2/C3 deeper; W2 exact economy; W1 remaining priority URLs.
-6. T1 route split if still required.
-
-**P1 C:** C1 OpenAPI depth, C2 empty endpoint keys, C3 tuning defaults, C4 17 keys.
-**P1 W:** W1 images, W2 economy, W3 classes/status, W4 synergies, W5 zip.
-**P2 T:** T1 data split/routing, T2 SQLite persistence, T3 hygiene, T4 Netflix plan,
-T5 docs (this file).
+1. Battle: breakpoint on `0xDAC198`/`HashSet..ctor`; then match-loaded/resolve.
+2. S1 59/59; R3/R4; Q4/Q5 after battle.
+3. C1/C2/C3 deeper; W2 exact economy; W1 remaining priority URLs.
+4. Git cleanup only after user decision; never push/gc/filter-repo without consent.
 
 ## Rules
 
