@@ -229,3 +229,20 @@ Prefight is fixed by the enemy-key data change; FIGHT sends
 request. Three attempts used: (1) infer null model, (2) live prefight dump,
 (3) live FightInitInfo dump. Next would need the exact asset/component that
 is null in the loaded character prefab, or a real activate-match response.
+
+## 15. Open after 2026-10-25
+
+- **Battle init:** `BattleArbiterInitState.InitPlayer` NRE; `FightInitInfo`
+  fighters/blueprints non-null, enemy `TeamData` null. Need the exact
+  null source (asset/component or FighterData field) or a real
+  `match_activate_response`. 3 attempts used; do not re-run without new data.
+- **R2:** simple HP/ATK fit RMSE 7.77, coefficient on HP ~0; not the client
+  formula. Need operand binding/selection-bias branch.
+- **R3:** ability text source not found; client details show `NO ABILITIES`
+  and raw `M1_SPECIAL_ATTACK_*` ids.
+- **R4:** `synergyBonuses` data populated but not live-verified; specials raw.
+- **S1:** 12/59 BOTS cards; finish with scrolling.
+- **W1:** 34 priority 403/no-URL images.
+- **T1:** payloads split; routing still central.
+- **Emulator:** headless QEMU stalls/crashes after a few minutes; a fresh
+  stable boot is required for further live work.

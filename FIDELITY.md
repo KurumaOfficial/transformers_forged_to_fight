@@ -164,3 +164,18 @@ deviation for the 1-bot test quest.
 `IPrefightDataProvider` is entry 69, default-only; `IAdsProvider` is the only
 persistent/tform entry. No ad-network request observed. S2 prints xfail/target
 status. T5 is MASTER_PROMPT v4.3.
+
+## 2026-10-25 fidelity update
+
+| Area | Level | Basis |
+|---|---|---|
+| Login/session, BCG catalog, quest list/detail/begin/move | good | 90-mission list accepted; prefight opens [RUN] |
+| Prefight roster/team, FIGHT | **medium-high** | Bumblebee vs Rhinox, HP/FIGHT enabled; activate-match sent [RUN] |
+| Battle scene / combat | low/blocked | `InitPlayer` NRE; no match-loaded/resolve [RUN] |
+| Match protocol | partial | first activate request captured; response ASSUMED |
+| Wiki text/history/File descriptions | high | 5154/5154 manifest verified |
+| Wiki images | medium | 696/907 (2 recovered), 209 403, priority 2/36 |
+| Wiki bot stats/abilities | medium | 44 pages; 12 star-1; 47 ASSUMED; abilities raw |
+| Client bot catalog | high | 59 packs, classes/factions |
+| OpenAPI/tuning/localization | partial | C1/C2/C3 partial |
+| Infrastructure | partial | SQLite opt-in, routing central, plans written |

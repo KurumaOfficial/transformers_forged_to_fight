@@ -115,3 +115,16 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   HTTP request observed.
 - `work/check_all.ps1` prints `target_checks` and `known_issues`/xfail status.
 - `MASTER_PROMPT.md` updated to v4.3 with current facts and queue.
+
+## 2026-10-25 W-track status
+
+- W1: 2 priority images recovered with Referer/UA (stop on 403/429); 34
+  priority images remain 403 or have no manifest URL.
+- W2: `data/wiki/economy.json` with `as_of_2023`/`latest` sides and numeric
+  lines; `docs/wiki_economy_gaps.md` lists missing exact costs.
+- W3: `data/wiki/classes_status.json` (5 class pages + 8 status pages);
+  exact damage multipliers are not in the saved text.
+- W4: `data/wiki/synergies.json` from the two saved synergy pages; per-bot
+  formulas are not available.
+- W5: `archive/TFTF_wiki_archive_2026-10-25_195954.zip`, 32,506,584 bytes,
+  SHA-256 `4a0aa74133eb80ba067e7a541195bb38d28d4b7db96138ab1f1924a1bb22cc9b`.

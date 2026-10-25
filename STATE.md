@@ -448,3 +448,21 @@ boss-tile tap sends nothing. The server decides when to include `battle`.
 - W1: 2 priority images recovered, 34 blocked by 403/no manifest URL; W5 zip
   `2026-10-25_195954` with hashes.
 - T2: SQLite persistence module + 5 tests; T4 Netflix plan written.
+
+## 22. 2026-10-25 session state
+
+- Prefight provider: fixed by enemy-key data; live dump proves `_model`,
+  `_config`, `_presentationSCI`, `_presentation` all non-null.
+- FIGHT sends `/matches/activate-match/quests_fight`; new NRE in
+  `BattleArbiterInitState.InitPlayer`; no match-loaded/resolve.
+- Default-only screens under `tform`: Settings/Goals/Upgrade work; Profile
+  popup not reachable.
+- Movement: one movedir request; battle is a server response action.
+- Quest list: 90 missions (66 Story + 24 Awaken), deterministic maps, boss map.
+- BOTS: 12/59 popup+INFO opened without NRE; abilities empty/specials raw.
+- R1 v2: parser fixed, rank/level collinear, 47 bots `[ASSUMED]`.
+- W1: 2 priority images recovered, 34 blocked; W5 zip repacked.
+- T2 SQLite module + 5 tests; tutorial switch; Netflix plan.
+- Golden 9/9 PASS, unit tests 19/19 PASS (server running).
+- Emulator became unstable (headless QEMU stalls/crashes); further live work
+  needs a fresh stable boot.

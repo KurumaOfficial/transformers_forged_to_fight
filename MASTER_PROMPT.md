@@ -1,18 +1,51 @@
-# MASTER_PROMPT v4.3 — current state and queue (2026-10-24)
+# MASTER_PROMPT v4.4 — current state and queue (2026-10-25)
 
 Continue from this file if the chat is lost. Files beat this text:
-`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-24.md`,
-`docs/prefight_flow.md`, `docs/interfaces.md`, `docs/frida_plan.md`.
+`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-25.md`,
+`docs/prefight_flow.md`, `docs/interfaces.md`, `docs/screens.md`,
+`docs/debug_modes.md`, `docs/protocol_coverage_2026-10-25.md`.
 
-## What is proven now
+## 2026-10-25 breakthrough (read this first)
+
+- **Prefight is unblocked.** The live `PreFightScreen` has non-null
+  `_config`, `_presentationSCI`, `_model` (`PrefightScreenData`) and
+  `_presentation`. The earlier “`_model` is null” claim was a failed object
+  lookup, not the object.
+- Root cause of the old `OnFight` NRE: `PrefightScreenData.InitEnemy` uses
+  `QuestBoss.character`, which is `Entity.key` (`0xEA469C`). Our
+  `scaledBossTable.enemy1` had `key="enemy1"` instead of the blueprint
+  (`rhinox_gs_voyager2014`), so the enemy lookup failed and `_enemy` stayed
+  null. **Data fix** in `server/data/quest_begin_response.json` and
+  `quest_detail.json`; no client patch.
+- FIGHT is now enabled and sends
+  `POST /matches/activate-match/quests_fight` with
+  `{"hero":"bumblebee_cin_dotm_2","qid":"story_act1_ch1_m1","battleId":"battle1"}`.
+- **New battle blocker:** `BattleArbiterInitState.InitPlayer` NRE after the
+  fight scene loads; no `/matches/match-loaded`. Live `FightFlow.FightInitInfo`
+  has both fighters and blueprints non-null; enemy `TeamData` is null.
+- A5: Settings/Goals/Upgrade work with default-only providers under `tform`;
+  Profile popup is not reachable from the home UI.
+- A6: one `quest-movedir` request per move; `moveto`/`battle` are response
+  actions. `moveto` only moves; a final-tile tap sends nothing; server decides
+  when to include `battle`.
+- S1 partial: 12/59 BOTS cards opened (popup + INFO), no NRE.
+- Q1/Q2/Q3: quest-list now has 66 Story + 24 Awaken missions with deterministic
+  3x3 maps and wiki boss ids; detail/begin/movedir still use static m1 data.
+- T2: SQLite module + 5 tests, opt-in `TFTF_DB`; T4 plan written.
+- R1 v2: parser fixed; rank/level effects are collinear; 47 no-table bots stay
+  `[ASSUMED]`. R2 remains partial. R3/R4 data still empty/raw.
+- W1: 2 priority images recovered; 34 blocked by 403/no URL. W5 repacked.
+
+## What is proven now (v4.4)
 
 - Client is original 9.2.0 (endpoint patched/re-signed only). SHA-256
   `77d2e9dd…63cb`. No Frida, gadget, client patch, block bypass or OneDrive.
-- Login, 59-bot roster/BOTS, quest list/detail/begin/movedir and prefight
-  **screen** work; full smoke PASS; golden 9/9 PASS.
-- **Battle blocker:** `PreFightScreen._model` (`+0x98`) is null; FIGHT NREs
-  in `PreFightScreen.OnFight` (`0xE397BC`). Team is **not** the blocker:
-  `TeamHeroes=1`, `localPlayer.team=1`.
+- Login, 59-bot roster/BOTS, quest list/detail/begin/movedir, prefight and
+  FIGHT → activate-match work. Full smoke was PASS before the emulator became
+  unstable; golden 9/9 PASS; unit tests 19/19 PASS.
+- **Battle blocker:** `BattleArbiterInitState.InitPlayer` NRE; no
+  match-loaded/resolve; combat does not start. Team is **not** the blocker.
+
 - `InterfaceInjector` live: tag `tform`, 78 entries, persistent 1
   (`IAdsProvider -> TFormIronSourceAdsModel`).
   - **Entry 69 `IPrefightDataProvider` = `default -> PrefightScreenData` only.**
@@ -41,19 +74,26 @@ Continue from this file if the chat is lost. Files beat this text:
 - C4: 7869 localization is correct; 3315 stat strings exact (3332 legacy,
   17 unaccounted).
 
-## Queue v4.3 (continue from the first not done/blocked)
+## Queue status v4.4
 
-**P0 A:** A1 runtime field dump (blocked by metadata usage); A2 CacheReferences
-callers/QuestboardHud; A3 Get exceptions + PrefightScreenData ctor dependencies;
-A4 type identity; A5 default-only control screens (Settings/Profile); A6 boss
-tile trigger (moveto/battle separate); A7 prefight state with fixed team;
-A8 data fix; A9 `/matches/*`; A10 Frida plan only.
-**P0 S:** S1 59-bot auto sweep; S2 xfail visibility (done).
-**P1 I:** I1 interfaces (done), I2 ads (done).
-**P1 R:** R1 growth curves, R2 rating, R3 abilities, R4 signature/specials/
-synergies, R5 non-combat screens, R6 tutorial.
-**P1 Q:** Q1 all 66+24 missions, Q2 map generator, Q3 bosses/icons, Q4 post-battle
-actions, Q5 progression/mastery.
+**P0 A:** A1 **done** (live dump; `_model` non-null); A2 **done** (SetupWindow → CacheReferences → Get; no early exit); A3 **done** (Get fallback, ctor via Activator); A4 **done** (type identity/registry); A5 **done** (default-only screens; Profile unreachable); A6 **done** (one movedir; battle is a response action); A7 **done** (Bumblebee vs Rhinox, HP/FIGHT); A8 **done** (enemy key data fix); A9 **partial/blocked** (activate-match captured; `InitPlayer` NRE); A10 plan only.
+**P0 S:** S1 **partial** (12/59); S2 **done**.
+**P1 I:** I1/I2 **done**.
+**P1 R:** R1 **done/partial** (collinear rank/level; 47 `[ASSUMED]`); R2 **partial** (fit, not formula); R3 **blocked** (no text source; raw ids); R4 **partial** (synergy data added, unverified; specials raw); R5 **done** (screens empty/locked; documented); R6 **partial** (switch implemented, original flow unverified).
+**P1 Q:** Q1/Q2/Q3 **done** (90 missions, maps, boss map); Q4/Q5 **blocked** (battle doesn't finish; static docs).
+**P1 C:** C1 **partial**; C2 **partial** (empty-endpoint keys not proven); C3 **partial** (4 verified); C4 **done**.
+**P1 W:** W1 **partial** (2/36 priority recovered, 34 blocked 403/no URL); W2 **partial** (economy.json + gaps); W3 **partial** (triangle/status extracts, no exact multipliers); W4 **partial** (raw synergy pages, no per-bot formulas); W5 **done** (2026-10-25 zip + hashes).
+**P2 T:** T1 **partial** (payloads split; routing still central); T2 **done** (SQLite + 5 tests, opt-in); T3 **done**; T4 **done** (plan); T5 **done** (this file).
+
+## Next queue (v4.5)
+
+1. Battle: obtain the exact `InitPlayer` null (asset/component vs FighterData) and a real `match_activate_response`; then match-loaded/resolve.
+2. R3/R4: ability text source, `ActiveSynergyBonuses` live verification, special-attack localization.
+3. S1: finish 59/59 with scroll; add screenshots.
+4. Q4/Q5 after battle; Q1 detail/begin should use per-qid data.
+5. C1/C2/C3 deeper; W2 exact economy; W1 remaining priority URLs.
+6. T1 route split if still required.
+
 **P1 C:** C1 OpenAPI depth, C2 empty endpoint keys, C3 tuning defaults, C4 17 keys.
 **P1 W:** W1 images, W2 economy, W3 classes/status, W4 synergies, W5 zip.
 **P2 T:** T1 data split/routing, T2 SQLite persistence, T3 hygiene, T4 Netflix plan,
