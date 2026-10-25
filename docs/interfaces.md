@@ -76,7 +76,7 @@ Live tag at HomeFlow/prefight: **`tform`**. `Get<T>` has a `default` fallback
 | 66 | `IPVPRaidResultsData` | default -> PVPRaidResultsData |  | PvP raid results | no dedicated stub data; screen not verified |
 | 67 | `IPVPRaidSelectDataProvider` | default -> PVPRaidSelectDataProvider |  | PvP raid select | no dedicated stub data; screen not verified |
 | 68 | `IPVPReportData` | default -> PVPReportData |  | PvP report | no dedicated stub data; screen not verified |
-| 69 | `IPrefightDataProvider` | default -> PrefightScreenData |  | prefight (SELECT YOUR BOT) | **BLOCKED**: entry 69 default-only; prefight model null |
+| 69 | `IPrefightDataProvider` | default -> PrefightScreenData |  | prefight (SELECT YOUR BOT) | **FIXED 2026-10-25**: entry 69 default-only works; enemy-key data bug fixed; battle init still blocked |
 | 70 | `IQuestResultsDataProvider` | default -> QuestResultsScreenModel |  | quest results | no dedicated stub data; screen not verified |
 | 71 | `IQuestResultsCallbacks` | default -> QuestResultsCallbacks |  | quest results | no dedicated stub data; screen not verified |
 | 72 | `IQuestSelectModel` | default -> QuestSelectData |  | quest select | quest UI; stub partially covers |

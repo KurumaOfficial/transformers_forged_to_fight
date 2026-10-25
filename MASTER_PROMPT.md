@@ -51,18 +51,18 @@ Continue from this file if the chat is lost. Files beat this text:
   - **Entry 69 `IPrefightDataProvider` = `default -> PrefightScreenData` only.**
   - `Get<T>` (`0x11E7640`) has a default fallback (`0x11E7988`), then
     `Activator.CreateInstance` (`0x11E79E8`).
-  - Remaining suspects: `ContainsKey(typeof(T))`/generic type identity,
-    wrong call-site interface, or `Activator.CreateInstance` returning
-    null/throwing.
-- `CacheReferences` is called from `PreFightScreen.SetupWindow`;
-  `Gameboard.OpenPreFightScreen` does not create or register a provider.
-  `PrefightScreenData..ctor` has no direct BL; creation is via the injector.
-- Runtime `PreFightScreen` field dump is **blocked**: `PreFightScreen_TypeInfo`
-  and `WindowManager_TypeInfo` slots are metadata usage tokens
-  (`0x2000…`), not class pointers; the class instance is in a metadata heap.
-  Need to resolve `Il2CppMetadataUsage` or `WindowManager.windowStacks`.
-- `docs/interfaces.md`: all 78 interfaces, tags, implementations, screens,
-  stub status. `IPrefightDataProvider` is the only blocker for FIGHT.
+  - The default fallback works: `_model` is non-null live and FIGHT activates
+    a match. The old defect was the enemy key, not `Get<T>`.
+- `CacheReferences` is called from `PreFightScreen.SetupWindow`; it has no
+  early exit before `Get<IPrefightDataProvider>`.
+  `Gameboard.OpenPreFightScreen` does not create/register a provider;
+  `PrefightScreenData..ctor` is created by the injector.
+- `PreFightScreen` was found live through `WindowManager.Instance.windowStacks`;
+  `_config`, `_presentationSCI`, `_model` and `_presentation` are non-null.
+  `_model._enemy` was null until `scaledBossTable.enemy1.key` was changed to
+  the boss blueprint (`rhinox_gs_voyager2014`).
+- `docs/interfaces.md`: all 78 interfaces; entry 69 works; the next blocker is
+  `BattleArbiterInitState.InitPlayer`.
 - S1: smoke has `known_issues`/`target_checks`/`xfail_open`.
 - S2: old golden tagged `golden-baseline-2026-10-23`; diffs and reasons in
   `tests/golden/`.

@@ -1,4 +1,4 @@
-# Prefight flow — provider registration and the null model
+# Prefight flow — provider registration (2026-10-24) and the 2026-10-25 fix
 
 Status 2026-10-24. All addresses are RVAs in `libil2cpp.so` 9.2.0.
 No Frida/gadget/patch was used.

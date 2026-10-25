@@ -138,8 +138,10 @@ after 5 stale-hash corrections; C5 catalog 59 packs; C2 formula partial.
 
 ### 2026-10-24: prefight provider
 
-The FIGHT NRE is `PreFightScreen.OnFight` (`0xE397BC`) because
-`PreFightScreen._model` (`+0x98`) is null, not because the team is empty.
+CORRECTED 2026-10-25: `PreFightScreen._model` is **not** null. The live object
+has a `PrefightScreenData` model; the old OnFight NRE came from a null `_enemy`
+because `scaledBossTable.enemy1.key` was the entity id instead of the boss
+blueprint. See `docs/prefight_flow.md` §12–14.
 The provider is fetched only via
 `InterfaceInjector.Get<IPrefightDataProvider>` (`0x11E7640`) in
 `CacheReferences` (`0xE38F08`). Live injector state: tag `tform`, 78
