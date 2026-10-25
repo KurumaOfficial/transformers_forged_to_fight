@@ -1,0 +1,45 @@
+#!/bin/sh
+# TFTF publication guard. Install: cp work/git-hooks/pre-commit .git/hooks/pre-commit
+# Rules: no binaries/large files, no unpacked assets/IL2CPP dumps, no keys/tokens,
+# no personal Windows path in added text. Only staged content is checked.
+set -u
+
+fail=0
+files=$(git diff --cached --name-only --diff-filter=ACM)
+[ -z "$files" ] && exit 0
+
+for f in $files; do
+    reason=""
+    case "$f" in
+        *.apk|*.zip|*.so|*.dll|*.exe|*.bin|*.dat|*.keystore|*.jks|*.p12|*.pfx|*.pem|*.key|*.env|.env|id_rsa|id_ed25519)
+            reason="blocked extension" ;;
+        assets/*|*/assets/*|archive/wiki/raw/*|work/unpacked/*|work/il2cpp_dump/*|work/android-sdk/*|work/platform-tools/*)
+            reason="blocked directory" ;;
+        *.png|*.jpg|*.jpeg|*.webp|*.gif|*.bmp|*.ico)
+            case "$f" in
+                docs/screens_ok/*) ;;
+                *) reason="binary image outside docs/screens_ok/" ;;
+            esac ;;
+    esac
+    if [ -z "$reason" ]; then
+        size=$(git cat-file -s ":$f" 2>/dev/null || echo 0)
+        if [ "$size" -gt 1048576 ]; then
+            reason="file is larger than 1 MiB ($size bytes)"
+        fi
+    fi
+    if [ -z "$reason" ]; then
+        if git diff --cached --unified=0 -- "$f" | grep '^+' | grep -qi 'C:\\Users\\'; then
+            reason="added text contains C:\\Users\\ personal path"
+        fi
+    fi
+    if [ -n "$reason" ]; then
+        echo "pre-commit: BLOCKED $f: $reason" >&2
+        fail=1
+    fi
+done
+
+if [ "$fail" -ne 0 ]; then
+    echo "pre-commit: fix or unstage the files above; no push was made." >&2
+    exit 1
+fi
+exit 0

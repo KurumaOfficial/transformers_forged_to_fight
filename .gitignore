@@ -57,3 +57,7 @@ archive/wiki/raw/
 *.jks
 *.pem
 *.key
+
+# dangling-audit artifacts
+work/git_dangling.json
+work/dangling_tmp.zip
