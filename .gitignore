@@ -42,3 +42,18 @@ work/test_state.db-*
 work/emu*_out.log
 work/emu*_err.log
 tests/sweep/*.png
+
+# publication hygiene (see docs/git_audit.md); existing tracked files are not untracked by this
+docs/evidence/**/*.png
+tests/smoke/*.png
+archive/wiki/meta/
+archive/wiki/raw/
+*.zip
+*.apk
+*.so
+*.dll
+*.exe
+*.keystore
+*.jks
+*.pem
+*.key
