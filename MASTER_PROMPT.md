@@ -23,6 +23,35 @@ Continue from this file if the chat is lost. Files beat this text:
 - **New battle blocker:** `BattleArbiterInitState.InitPlayer` NRE after the
   fight scene loads; no `/matches/match-loaded`. Live `FightFlow.FightInitInfo`
   has both fighters and blueprints non-null; enemy `TeamData` is null.
+
+## 2026-10-25 late session (v4.4 update)
+
+- **Git audit done; no push/remote changes since the user's instruction.**
+  History never contained APK, unpacked assets, libil2cpp, dump.cs, il2cpp
+  dumps, zip, keystore or private keys. The remote does contain binary
+  screenshots, wiki metadata/data and the personal path `C:\Users\gameg`; see
+  `docs/git_audit.md` and `docs/git_cleanup_plan.md`. Local `/objects` has
+  ~1.5 GiB of unreachable ZIP/PE residue; do not prune without a mirror backup.
+- **Battle chain moved forward:** the `InitPlayer` NRE was caused by an empty
+  `FighterData.Blueprint.ModelID` (the character prefab load returned null).
+  `get_ModelID` reads `_characterData.ModelID`; the parser uses
+  `JSONPaths.m` = `"m"`. Adding `"m"` plus `map_asset` to blueprints/characters
+  fixed it. Adding `t`/`tags` made live `Blueprint.Tags` non-null (count 2).
+  The next exception is `ArgumentNullException` from
+  `PlayerAttributes.Init`'s `HashSet<string>` (`collection`); the only field is
+  `BlueprintTags`, live non-null, so the exact null instance still needs a
+  breakpoint. No match-loaded yet. See `docs/battle_init_progress.md`.
+- **Q1 dynamic:** detail/begin/movedir now build from `quest_list.json` for all
+  90 missions; verified 1.1 (Rhinox) and 1.4.2 (Sideswipe) by HTTP.
+- **R1 LOBO:** moving a bot out of the fit gives 14.3% HP / 16.4% Attack mean
+  error without a base anchor; with one anchor row it is 4.1% / 2.8%.
+  Therefore the 47/59 bots without a known level-1 row cannot be derived at
+  7–8%; `data/wiki/derived_level1.json` has 37 table-anchored bots as
+  `[DERIVED]`, the rest stay `[ASSUMED]`.
+- **Emulator:** windowed `angle_indirect` stayed alive through repeated
+  restarts; headless QEMU was unstable. The watchdog is the next stability
+  step.
+
 - A5: Settings/Goals/Upgrade work with default-only providers under `tform`;
   Profile popup is not reachable from the home UI.
 - A6: one `quest-movedir` request per move; `moveto`/`battle` are response
@@ -76,14 +105,24 @@ Continue from this file if the chat is lost. Files beat this text:
 
 ## Queue status v4.4
 
-**P0 A:** A1 **done** (live dump; `_model` non-null); A2 **done** (SetupWindow → CacheReferences → Get; no early exit); A3 **done** (Get fallback, ctor via Activator); A4 **done** (type identity/registry); A5 **done** (default-only screens; Profile unreachable); A6 **done** (one movedir; battle is a response action); A7 **done** (Bumblebee vs Rhinox, HP/FIGHT); A8 **done** (enemy key data fix); A9 **partial/blocked** (activate-match captured; `InitPlayer` NRE); A10 plan only.
-**P0 S:** S1 **partial** (12/59); S2 **done**.
+**P0 A:** A1 **done**; A2 **done**; A3 **done**; A4 **done**; A5 **done**; A6 **done**; A7 **done**; A8 **done**; A9 **partial/blocked** (activate-match captured; model-id/tags fixed; `PlayerAttributes.Init` HashSet NRE; no match-loaded); A10 plan only.
+**P0 S:** S1 **partial** (12/59; emulator stability); S2 **done**.
 **P1 I:** I1/I2 **done**.
-**P1 R:** R1 **done/partial** (collinear rank/level; 47 `[ASSUMED]`); R2 **partial** (fit, not formula); R3 **blocked** (no text source; raw ids); R4 **partial** (synergy data added, unverified; specials raw); R5 **done** (screens empty/locked; documented); R6 **partial** (switch implemented, original flow unverified).
-**P1 Q:** Q1/Q2/Q3 **done** (90 missions, maps, boss map); Q4/Q5 **blocked** (battle doesn't finish; static docs).
-**P1 C:** C1 **partial**; C2 **partial** (empty-endpoint keys not proven); C3 **partial** (4 verified); C4 **done**.
-**P1 W:** W1 **partial** (2/36 priority recovered, 34 blocked 403/no URL); W2 **partial** (economy.json + gaps); W3 **partial** (triangle/status extracts, no exact multipliers); W4 **partial** (raw synergy pages, no per-bot formulas); W5 **done** (2026-10-25 zip + hashes).
-**P2 T:** T1 **partial** (payloads split; routing still central); T2 **done** (SQLite + 5 tests, opt-in); T3 **done**; T4 **done** (plan); T5 **done** (this file).
+**P1 R:** R1 **partial** (LOBO: 14.3%/16.4% without anchor, 4.1%/2.8% with one anchor; 37 table-anchored `[DERIVED]`, rest `[ASSUMED]`); R2 **partial** (fit, not formula); R3 **blocked** (no text source; raw ids); R4 **partial** (synergy data added, unverified; specials raw); R5 **done**; R6 **partial** (switch implemented, original flow unverified).
+**P1 Q:** Q1/Q2/Q3 **done** (90 missions; detail/begin/movedir dynamic; maps/boss map); Q4/Q5 **blocked** (battle doesn't finish; static docs).
+**P1 C:** C1 **partial**; C2 **partial**; C3 **partial** (4 verified); C4 **done**.
+**P1 W:** W1 **partial** (2/36 priority recovered, 34 blocked); W2-W4 **partial** (extracts + gaps); W5 **done**.
+**P2 T:** T1 **partial** (payloads dynamic, routing still central); T2 **done**; T3 **done**; T4 **done**; T5 **done**.
+**Step 0:** git audit **done**; **no push/remote changes**; cleanup plan pending user decision.
+**Step 1:** windowed `angle_indirect` stable so far; watchdog not yet written.
+
+## Next queue (v4.5)
+
+1. Battle: breakpoint on `0xDAC198`/`HashSet..ctor` to identify the null collection; then match-loaded/resolve.
+2. Step 1: `work/emulator_watchdog.py` + snapshots + smoke integration.
+3. S1 59/59; R3/R4; Q4/Q5 after battle.
+4. C1/C2/C3 deeper; W2 exact economy; W1 remaining priority URLs.
+5. T1 route split; git cleanup only after user decision.
 
 ## Next queue (v4.5)
 
