@@ -64,6 +64,8 @@ def main():
     shutil.copy2(LOGIN, b1)
     shutil.copy2(QUEST, b2)
     try:
+        subprocess.run([sys.executable, str(ROOT / "work" / "emulator_watchdog.py"),
+                        "--ensure", "--windowed"], timeout=300)
         for vf in args.variants:
             v = load(Path(vf))
             name = v.get("name") or Path(vf).stem

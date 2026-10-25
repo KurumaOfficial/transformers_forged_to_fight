@@ -474,3 +474,13 @@ build from `quest_list.json` for any of the 90 missions (name, act/chapter/
 mission, map, boss id). Verified by HTTP for 1.1 (Rhinox) and 1.4.2
 (Sideswipe); movedir returns the right boss key and map. `quest_detail.json`
 and `quest_begin_response.json` remain templates/fallbacks.
+
+## 3. 2026-10-25 stability and dynamic quests
+
+- Windowed `angle_indirect` stayed alive through repeated restarts; headless
+  QEMU was the unstable mode.
+- `work/emulator_watchdog.py` checks/restarts the AVD, restores adb reverse,
+  installs the APK if missing, launches, and supports snapshots. Smoke and
+  run_variant call it before launching.
+- Q1/Q2: detail/begin/movedir are dynamic for all 90 missions; the map uses
+  the validated 9-tile template with a per-qid hash. Full smoke PASS.

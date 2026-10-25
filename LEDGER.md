@@ -558,3 +558,15 @@ recorded request pair changed. New golden: 9/9 PASS. Unit tests: 19/19 PASS
   HashSet field is `BlueprintTags`; live tags are non-null, so the exact null
   instance still needs a breakpoint. 3 attempts used; record and stop.
 - No `/matches/match-loaded`.
+
+### 27. 2026-10-25 Q1 dynamic quests + Q2 template map
+
+- `quest-detail`/`quest-begin`/`movedir` now build from `quest_list.json` for
+  any of the 90 missions. Verified 1.1 (Rhinox) and 1.4.2 (Sideswipe).
+- The generated 5-tile/serpentine map caused `MapTile.Deserialize` NRE; the
+  generator now uses the validated 9-tile template with a per-qid `mapHash`.
+  Smoke PASS (login/quest_begin/movedir/activate-match all true).
+- Boss is taken from `finalBoss`/`scaledBossTable`; the map entity remains the
+  template's barricade until the exact Entity fields are mapped.
+- Emulator watchdog added (`work/emulator_watchdog.py`), with check/ensure/
+  restart/wipe/snapshot and smoke/run_variant integration.

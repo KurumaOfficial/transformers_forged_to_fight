@@ -205,6 +205,11 @@ def main():
         print(f"[smoke] {name} {note}")
 
     if not args.no_launch:
+        try:
+            subprocess.run([sys.executable, str(ROOT / "work" / "emulator_watchdog.py"),
+                            "--ensure", "--windowed"], timeout=300)
+        except Exception as exc:
+            notes.append(f"watchdog={exc}")
         adb("shell", "am", "force-stop", PKG)
         adb("logcat", "-c")
         time.sleep(2)

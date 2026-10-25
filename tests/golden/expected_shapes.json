@@ -1,73 +1,92 @@
 [
   {
     "request": {
-      "timestamp": "2026-10-25T21:09:54.814081Z",
+      "timestamp": "2026-10-25T21:40:12.124292Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62301,
+      "client_port": 57511,
       "method": "GET",
-      "path": "/quests/quest-progression",
+      "path": "/account/data",
       "query": {
+        "apiversions.events": [
+          "3"
+        ],
+        "deferJSONParse": [
+          "false"
+        ],
+        "ts": [
+          "1792964412"
+        ],
+        "apiversions.wske": [
+          "2"
+        ],
+        "apiversions.tuning": [
+          "2"
+        ],
+        "apiversions.ave": [
+          "11"
+        ],
+        "apiversions.objectives": [
+          "4"
+        ],
         "sig": [
-          "jGFzygT+RtsqS+I0PiFk0eKAYho="
+          "j2cPrcrb27HiYBdcr5MZmTebEHE="
+        ],
+        "apiversions.gacha": [
+          "8"
+        ],
+        "apiversions.matches": [
+          "3"
+        ],
+        "apiversions.buffs": [
+          "2"
+        ],
+        "apiversions.ai": [
+          "3"
+        ],
+        "apiversions.odr": [
+          "3"
+        ],
+        "apiversions.quests": [
+          "11"
+        ],
+        "apiversions.gameentitlements": [
+          "3"
+        ],
+        "apiversions.motd": [
+          "3"
+        ],
+        "apiversions.kabamsignup": [
+          "2"
         ],
         "stoken": [
           "sess_tf_stub_token_12345"
         ],
-        "api": [
-          "11"
+        "apiversions.bcg": [
+          "6"
+        ],
+        "apiversions.message": [
+          "2"
         ],
         "sver": [
           "3"
         ],
-        "ts": [
-          "1792867343"
+        "apiversions.notify": [
+          "5"
+        ],
+        "apiversions.resources": [
+          "2"
+        ],
+        "apiversions.prizes": [
+          "3"
+        ],
+        "apiversions.gamestore": [
+          "5"
         ]
       },
       "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "0",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
-      },
-      "body": ""
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "Story": {
-          "story_act1_ch1_m1": {
-            "cleared": [
-              "list"
-            ],
-            "completed": "bool",
-            "mastered": "bool",
-            "unlocked": "bool",
-            "visibleClearedCount": "number"
-          }
-        },
-        "ave": {},
-        "pve": {}
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-25T21:09:54.963314Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 62304,
-      "method": "GET",
-      "path": "/account/data",
-      "query": {},
-      "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "0",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
       },
       "body": ""
     },
@@ -132,19 +151,32 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:09:55.064100Z",
+      "timestamp": "2026-10-25T21:40:12.151904Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62305,
+      "client_port": 57511,
       "method": "GET",
       "path": "/bcg/getLoginData",
-      "query": {},
+      "query": {
+        "sig": [
+          "+aaEh9YsnKils17cE7+yvTTPksU="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "api": [
+          "6"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964412"
+        ]
+      },
       "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "0",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
       },
       "body": ""
     },
@@ -20112,19 +20144,29 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:09:55.153250Z",
+      "timestamp": "2026-10-25T21:40:12.649026Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62306,
+      "client_port": 57511,
       "method": "GET",
       "path": "/tuning",
-      "query": {},
+      "query": {
+        "sig": [
+          "R249v19dgDws8Zp07ln9qTZzWLg="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964412"
+        ]
+      },
       "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "0",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
       },
       "body": ""
     },
@@ -20144,19 +20186,32 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:09:55.186014Z",
+      "timestamp": "2026-10-25T21:40:14.155614Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62307,
+      "client_port": 57511,
       "method": "GET",
       "path": "/quests/quest-list",
-      "query": {},
+      "query": {
+        "sig": [
+          "LCcFipO5yJ9EtHKjjjApwhIUwyY="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "api": [
+          "11"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964414"
+        ]
+      },
       "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "0",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
       },
       "body": ""
     },
@@ -20757,19 +20812,41 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:09:55.262216Z",
+      "timestamp": "2026-10-25T21:40:14.563997Z",
       "client_ip": "127.0.0.1",
-      "client_port": 62308,
+      "client_port": 57511,
       "method": "GET",
       "path": "/quests/quest-active",
-      "query": {},
+      "query": {
+        "categories.1": [
+          "AvE"
+        ],
+        "categories.0": [
+          "PvE"
+        ],
+        "categories.2": [
+          "AvA"
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "api": [
+          "11"
+        ],
+        "sig": [
+          "8oUWezqH/sCmMjNA2UItydey29k="
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964414"
+        ]
+      },
       "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "0",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
       },
       "body": ""
     },
@@ -20788,21 +20865,379 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:13:40.008170Z",
+      "timestamp": "2026-10-25T21:40:15.584980Z",
       "client_ip": "127.0.0.1",
-      "client_port": 55013,
-      "method": "POST",
-      "path": "/quests/quest-movedir/story_act1_ch4_m2/0/1",
-      "query": {},
-      "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "2",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
+      "client_port": 57511,
+      "method": "GET",
+      "path": "/quests/quest-progression",
+      "query": {
+        "sig": [
+          "BurM0dPvdWlAbdSArf/aGqTDmJ0="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "api": [
+          "11"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964415"
+        ]
       },
-      "body": {}
+      "headers": {
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": ""
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "Story": {
+          "story_act1_ch1_m1": {
+            "cleared": [
+              "list"
+            ],
+            "completed": "bool",
+            "mastered": "bool",
+            "unlocked": "bool",
+            "visibleClearedCount": "number"
+          }
+        },
+        "ave": {},
+        "pve": {}
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-25T21:40:56.922623Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 57511,
+      "method": "POST",
+      "path": "/quests/quest-begin/story_act1_ch4_m2",
+      "query": {
+        "sig": [
+          "Ffg4MbbGoJHgxhaNiuHpAIAVeAs="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964456"
+        ]
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "128",
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": {
+        "quitExisting": true,
+        "nonce": "6ade77686911bc4d193f000d",
+        "hash": "v1",
+        "api": 11,
+        "setId": "story_act_1",
+        "tm0": "bumblebee_cin_dotm_2"
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "activeQuests": {
+          "story_act1_ch4_m2": {
+            "category": "string",
+            "currentPosition": {
+              "x": "number",
+              "y": "number"
+            },
+            "data": {
+              "act": "number",
+              "actIndex": "number",
+              "category": "string",
+              "chapter": "number",
+              "chapterIndex": "number",
+              "description": "string",
+              "energyPerTile": "number",
+              "friendlyName": "string",
+              "id": "string",
+              "isDetailed": "bool",
+              "maxXpPerTile": "number",
+              "minXpPerTile": "number",
+              "mission": "number",
+              "missionIndex": "number",
+              "teamSizeMax": "number",
+              "teamSizeMin": "number",
+              "theme": "string",
+              "todIndex": "number",
+              "unlocked": "bool"
+            },
+            "expiryTime": "number",
+            "isFinished": "bool",
+            "map": {
+              "grid": [
+                "list",
+                "..."
+              ],
+              "gridDimension": "number",
+              "mapHash": "string",
+              "pathData": [
+                "list",
+                "..."
+              ],
+              "paths": [
+                "list",
+                "..."
+              ],
+              "visibleWalkableCount": "number",
+              "walkableCount": "number"
+            },
+            "mode": "string",
+            "phase": "number",
+            "playerPosition": {
+              "x": "number",
+              "y": "number"
+            },
+            "progression": {
+              "clearedTiles": [
+                "list",
+                "..."
+              ],
+              "currentTile": {
+                "x": "...",
+                "y": "..."
+              },
+              "percentComplete": "number"
+            },
+            "qid": "string",
+            "scaledBossTable": {
+              "enemy1": {
+                "aiPer": "...",
+                "aiString": "...",
+                "aiType": "...",
+                "baseType": "...",
+                "characters": "...",
+                "flvl": "...",
+                "hi": "...",
+                "isFinalBoss": "...",
+                "key": "...",
+                "level": "...",
+                "mapOverride": "...",
+                "rank": "...",
+                "sig_lvl": "...",
+                "todIndex": "...",
+                "type": "...",
+                "uid": "..."
+              }
+            },
+            "startTime": "number",
+            "team": {
+              "bumblebee_cin_dotm_2": {
+                "hp": "...",
+                "pi": "...",
+                "sig_lvl": "...",
+                "sig_mods": "...",
+                "stat_mods": "..."
+              }
+            },
+            "teamData": {
+              "deletes": {},
+              "updates": {
+                "activeTeams": "...",
+                "heroes": "...",
+                "inventory": "...",
+                "savedTeams": "..."
+              },
+              "userData": {
+                "blueprintsMax": "...",
+                "teamCountMax": "...",
+                "teamSizeMax": "..."
+              }
+            },
+            "uniqueId": "string"
+          }
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-25T21:40:59.297915Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 57511,
+      "method": "POST",
+      "path": "/quests/quest-detail/story_act1_ch4_m2",
+      "query": {
+        "sig": [
+          "/Y0CDSM24g/fWYHAw8hcKPFhl+8="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964459"
+        ]
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "79",
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": {
+        "hash": "v1",
+        "nonce": "6ade776b6911bc4d193f0010",
+        "api": 11,
+        "setId": "story_act_1"
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "map": {
+          "grid": [
+            "list",
+            [
+              "list",
+              {
+                "ab": "...",
+                "barrier": "...",
+                "bg": "...",
+                "bt": "...",
+                "final": "...",
+                "links": "...",
+                "position": "...",
+                "sockets": "...",
+                "start": "...",
+                "visibleLinks": "...",
+                "walkable": "..."
+              }
+            ]
+          ],
+          "gridDimension": "number",
+          "mapHash": "string",
+          "pathData": [
+            "list",
+            {
+              "path": [
+                "list",
+                "..."
+              ]
+            }
+          ],
+          "paths": [
+            "list",
+            {
+              "path": [
+                "list",
+                "..."
+              ],
+              "tiles": [
+                "list",
+                "..."
+              ]
+            }
+          ],
+          "visibleWalkableCount": "number",
+          "walkableCount": "number"
+        },
+        "scaledBossTable": {
+          "enemy1": {
+            "aiPer": "string",
+            "aiString": "string",
+            "aiType": "number",
+            "baseType": "string",
+            "characters": [
+              "list",
+              "string"
+            ],
+            "flvl": "number",
+            "hi": [
+              "list"
+            ],
+            "isFinalBoss": "bool",
+            "key": "string",
+            "level": "number",
+            "mapOverride": "string",
+            "rank": "number",
+            "sig_lvl": "number",
+            "todIndex": "number",
+            "type": "string",
+            "uid": "string"
+          }
+        },
+        "summary": {
+          "act": "number",
+          "actIndex": "number",
+          "category": "string",
+          "chapter": "number",
+          "chapterIndex": "number",
+          "description": "string",
+          "energyPerTile": "number",
+          "friendlyName": "string",
+          "id": "string",
+          "isDetailed": "bool",
+          "maxXpPerTile": "number",
+          "minXpPerTile": "number",
+          "mission": "number",
+          "missionIndex": "number",
+          "teamSizeMax": "number",
+          "teamSizeMin": "number",
+          "theme": "string",
+          "todIndex": "number",
+          "unlocked": "bool"
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-25T21:41:17.673350Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 57511,
+      "method": "POST",
+      "path": "/quests/quest-movedir/story_act1_ch4_m2/1/0",
+      "query": {
+        "sig": [
+          "mriGkzP+ICK5Oq5tTs4XEf675F4="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1792964477"
+        ]
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "45",
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": {
+        "api": 11,
+        "nonce": "6ade777d6911bc4d193f0012"
+      }
     },
     "status": 200,
     "shape": {
@@ -21049,263 +21484,6 @@
             "blueprintsMax": "number",
             "teamCountMax": "number",
             "teamSizeMax": "number"
-          }
-        }
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-25T21:13:48.971330Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 62687,
-      "method": "GET",
-      "path": "/quests/quest-detail/story_act1_ch1_m1",
-      "query": {},
-      "headers": {
-        "Accept-Encoding": "identity",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
-      },
-      "body": ""
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "map": {
-          "grid": [
-            "list",
-            [
-              "list",
-              {
-                "final": "...",
-                "links": "...",
-                "position": "...",
-                "sockets": "...",
-                "start": "...",
-                "visibleLinks": "...",
-                "walkable": "..."
-              }
-            ]
-          ],
-          "gridDimension": "number",
-          "mapHash": "string",
-          "pathData": [
-            "list",
-            {
-              "path": [
-                "list",
-                "..."
-              ],
-              "tiles": [
-                "list",
-                "..."
-              ]
-            }
-          ],
-          "paths": [
-            "list",
-            {
-              "path": [
-                "list",
-                "..."
-              ],
-              "tiles": [
-                "list",
-                "..."
-              ]
-            }
-          ],
-          "visibleWalkableCount": "number",
-          "walkableCount": "number"
-        },
-        "scaledBossTable": {
-          "enemy1": {
-            "aiPer": "string",
-            "aiString": "string",
-            "aiType": "number",
-            "baseType": "string",
-            "characters": [
-              "list",
-              "string"
-            ],
-            "flvl": "number",
-            "hi": [
-              "list"
-            ],
-            "isFinalBoss": "bool",
-            "key": "string",
-            "level": "number",
-            "mapOverride": "string",
-            "rank": "number",
-            "sig_lvl": "number",
-            "todIndex": "number",
-            "type": "string",
-            "uid": "string"
-          }
-        },
-        "summary": {
-          "act": "number",
-          "actIndex": "number",
-          "category": "string",
-          "chapter": "number",
-          "chapterIndex": "number",
-          "description": "string",
-          "energyPerTile": "number",
-          "friendlyName": "string",
-          "id": "string",
-          "isDetailed": "bool",
-          "maxXpPerTile": "number",
-          "minXpPerTile": "number",
-          "mission": "number",
-          "missionIndex": "number",
-          "teamSizeMax": "number",
-          "teamSizeMin": "number",
-          "theme": "string",
-          "todIndex": "number",
-          "unlocked": "bool"
-        }
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-25T21:13:48.980769Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 62688,
-      "method": "POST",
-      "path": "/quests/quest-begin/story_act1_ch1_m1",
-      "query": {},
-      "headers": {
-        "Accept-Encoding": "identity",
-        "Content-Length": "31",
-        "Host": "127.0.0.1:8080",
-        "User-Agent": "Python-urllib/3.14",
-        "Content-Type": "application/json",
-        "Connection": "close"
-      },
-      "body": {
-        "tm0": "bumblebee_cin_dotm_2"
-      }
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "activeQuests": {
-          "story_act1_ch1_m1": {
-            "category": "string",
-            "currentPosition": {
-              "x": "number",
-              "y": "number"
-            },
-            "data": {
-              "act": "number",
-              "actIndex": "number",
-              "category": "string",
-              "chapter": "number",
-              "chapterIndex": "number",
-              "description": "string",
-              "energyPerTile": "number",
-              "friendlyName": "string",
-              "id": "string",
-              "isDetailed": "bool",
-              "maxXpPerTile": "number",
-              "minXpPerTile": "number",
-              "mission": "number",
-              "missionIndex": "number",
-              "teamSizeMax": "number",
-              "teamSizeMin": "number",
-              "theme": "string",
-              "todIndex": "number",
-              "unlocked": "bool"
-            },
-            "expiryTime": "number",
-            "isFinished": "bool",
-            "map": {
-              "grid": [
-                "list",
-                "..."
-              ],
-              "gridDimension": "number",
-              "mapHash": "string",
-              "pathData": [
-                "list",
-                "..."
-              ],
-              "paths": [
-                "list",
-                "..."
-              ],
-              "visibleWalkableCount": "number",
-              "walkableCount": "number"
-            },
-            "mode": "string",
-            "phase": "number",
-            "playerPosition": {
-              "x": "number",
-              "y": "number"
-            },
-            "progression": {
-              "clearedTiles": [
-                "list",
-                "..."
-              ],
-              "currentTile": {
-                "x": "...",
-                "y": "..."
-              },
-              "percentComplete": "number"
-            },
-            "qid": "string",
-            "scaledBossTable": {
-              "enemy1": {
-                "aiPer": "...",
-                "aiString": "...",
-                "aiType": "...",
-                "baseType": "...",
-                "characters": "...",
-                "flvl": "...",
-                "hi": "...",
-                "isFinalBoss": "...",
-                "key": "...",
-                "level": "...",
-                "mapOverride": "...",
-                "rank": "...",
-                "sig_lvl": "...",
-                "todIndex": "...",
-                "type": "...",
-                "uid": "..."
-              }
-            },
-            "startTime": "number",
-            "team": {
-              "bumblebee_cin_dotm_2": {
-                "hp": "...",
-                "pi": "...",
-                "sig_lvl": "...",
-                "sig_mods": "...",
-                "stat_mods": "..."
-              }
-            },
-            "teamData": {
-              "deletes": {},
-              "updates": {
-                "activeTeams": "...",
-                "heroes": "...",
-                "inventory": "...",
-                "savedTeams": "..."
-              },
-              "userData": {
-                "blueprintsMax": "...",
-                "teamCountMax": "...",
-                "teamSizeMax": "..."
-              }
-            },
-            "uniqueId": "string"
           }
         }
       },

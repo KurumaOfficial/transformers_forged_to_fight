@@ -19,49 +19,11 @@ def slug(name):
 
 
 def make_map(qid, act, chapter, mission, boss_id):
-    """Deterministic 3x3 serpentine map. Layout is [ASSUMED]."""
-    path = [(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
-    grid = []
-    for y in range(3):
-        row = []
-        for x in range(3):
-            links = []
-            if (x, y) in path:
-                i = path.index((x, y))
-                if i + 1 < len(path):
-                    links.append({"x": path[i + 1][0], "y": path[i + 1][1]})
-            tile = {
-                "position": {"x": x, "y": y},
-                "start": (x, y) == path[0],
-                "final": (x, y) == path[-1],
-                "walkable": (x, y) in path,
-                "links": links,
-                "visibleLinks": links,
-                "sockets": {},
-            }
-            if (x, y) == path[-1]:
-                tile["bt"] = [boss_id] if boss_id else []
-                tile["entities"] = ([{
-                    "id": boss_id,
-                    "hero": boss_id,
-                    "level": 1,
-                    "rank": 1,
-                    "team": "enemy",
-                    "ai": "default",
-                }] if boss_id else [])
-            row.append(tile)
-        grid.append(row)
-    return {
-        "mapHash": f"{qid}_map",
-        "gridDimension": 3,
-        "walkableCount": len(path),
-        "visibleWalkableCount": len(path),
-        "grid": grid,
-        "pathData": [{"path": [{"x": x, "y": y} for x, y in path],
-                      "tiles": [{"x": x, "y": y} for x, y in path]}],
-        "paths": [{"path": [{"x": x, "y": y} for x, y in path],
-                   "tiles": [{"x": x, "y": y} for x, y in path]}],
-    }
+    # exact validated template; only the hash changes for now
+    template = json.loads((ROOT / "server" / "data" / "quest_detail.json").read_text(encoding="utf-8"))["map"]
+    out = json.loads(json.dumps(template))
+    out["mapHash"] = f"{qid}_map"
+    return out
 
 
 def quest_obj(qid, category, act, chapter, mission, title, boss_name, boss_id):
