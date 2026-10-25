@@ -54,3 +54,16 @@ raw page contents were replaced. `[DERIVED]`
 "24? нет" in an earlier report was a stale error-count phrase from an
 intermediate download stage. It is not the current number. The current
 `errors.json` has exactly **209** entries, all categorized above.
+
+## 2026-10-25 W5 re-pack
+
+- New archive: `archive/TFTF_wiki_archive_2026-10-25_195954.zip`
+  - size: **32,506,584** bytes
+  - SHA-256: `4a0aa74133eb80ba067e7a541195bb38d28d4b7db96138ab1f1924a1bb22cc9b`
+- Adds two priority images recovered with a Referer + browser UA, 1.5 s pause:
+  `2-Star_Sharkticon_Crystal_Shard.png`,
+  `2-Star_Sharkticon_Crystal_banner.jpg`.
+  Report: `archive/wiki/W1_RETRY_2026-10-25.json`.
+- The remaining 34 priority 403 images have no source URL in the manifest;
+  `Special:FilePath` returns 403. No bypass was used. Text/manifest content is
+  otherwise unchanged.

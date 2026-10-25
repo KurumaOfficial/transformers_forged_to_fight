@@ -1,0 +1,158 @@
+{
+ "date": "2026-10-25",
+ "method": "Referer + browser UA, 1.5 s pause, stop on 429",
+ "categories": [
+  "maps_quests",
+  "ui"
+ ],
+ "results": [
+  {
+   "file": "2-Star_Sharkticon_Crystal_Shard.png",
+   "status": "ok",
+   "bytes": 5940,
+   "sha256": "82750116eb2527929990c6c72bea00891249696752ba07a85b8c6f0822d37517"
+  },
+  {
+   "file": "2-Star_Sharkticon_Crystal_banner.jpg",
+   "status": "ok",
+   "bytes": 41340,
+   "sha256": "858ae3ae6e588793dbe0bf776cfff825c6857e3aab9dee05f1e41a1e320c109a"
+  },
+  {
+   "file": "Act_1.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Act_3.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Act_3_newsfeed.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Alliance_Icon.png",
+   "status": "no_url"
+  },
+  {
+   "file": "Allspark_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Arcee_Icon_New.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Arcee_Icon_v3.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Awaken_and_Corrupt_icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Barricade_Icon_v3.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Blaster_Relic_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bludgeon_Icon_v2.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bludgeon_Icon_v4.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bonecrusher_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bonecrusher_Icon_v3.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Boss-Icon.png",
+   "status": "no_url"
+  },
+  {
+   "file": "Brawler_Bash_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Brawler_Bash_Icon_v2.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Brawler_Sharkticon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bronze_Galvatron_Relic_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bronze_Hound_Relic_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bronze_Jazz_Relic_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bronze_Kickback_Relic_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bronze_Megatron_Relic_G1_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bronze_Primal_Relic_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bronze_Shattered_Disk_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bumblebee_G1_Icon_v2.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bumblebee_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Bumblebee_Icon_v2.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Cha_sharkticon_gs_kabam_00_model.png",
+   "status": "no_url"
+  },
+  {
+   "file": "Character_Crystal_2.png",
+   "status": "no_url"
+  },
+  {
+   "file": "Character_Slot.png",
+   "status": "no_url"
+  },
+  {
+   "file": "Class_Use_Tactician.png",
+   "status": "no_url"
+  },
+  {
+   "file": "Cloaking_Field_Icon.jpg",
+   "status": "no_url"
+  },
+  {
+   "file": "Code_of_a_Hero_bundle_icon.png",
+   "status": "no_url"
+  }
+ ]
+}
