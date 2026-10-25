@@ -65,3 +65,4 @@ work/dangling_tmp.zip
 # local backup/test artifacts
 work/backup_test/
 work/nightly/
+server/routes/__pycache__/
