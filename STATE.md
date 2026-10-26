@@ -540,3 +540,16 @@ and `quest_begin_response.json` remain templates/fallbacks.
   full smoke FAIL by status (full-mode measurement loses quest checks); BOTS
   sweep 12/59 (no pagination). Old nightly printed PASS by exit code; fixed
   `work/nightly.ps1` now prints FAIL/PARTIAL. `docs/nightly_2026-10-26.md`.
+
+## 2026-10-26 v4.7 addendum
+
+- BaseRangedDamageType record: `docs/battle_init_fix.md`; evidence
+  `docs/evidence/battle_init/`. Character field +0x48 is the getter source.
+- ODR: `docs/odr_flow.md`; blocker Open, 0 downloads, no manifest, no /odr
+  requests, PlayCore service missing. Artifact `work/dump_odr_blocker.py`.
+- R2 LP: `data/wiki/rating_lp.json` infeasible; parser audit 20 pages, 0
+  numeric misparses (`docs/parser_audit.md`).
+- R1: `docs/stat_coverage.md`; 2 star-3 anchors, 20 class-median.
+- Starscream: `docs/starscream_fallback.md`; 9 gaps, `[ASSUMED]` fallback.
+- S1: `work/sweep_bots59.py` added; current BOTS remains 12/59 and blocked.
+- MASTER_PROMPT v4.7.

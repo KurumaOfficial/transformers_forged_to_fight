@@ -32,6 +32,33 @@ med_atk = {k: median(v) for k, v in class_atk.items()}
 default_hp = median([x for v in class_hp.values() for x in v]) if class_hp else 1000
 default_atk = median([x for v in class_atk.values() for x in v]) if class_atk else 120
 
+
+def n(v):
+    try:
+        return float(str(v).replace(",", "").replace("+", ""))
+    except Exception:
+        return None
+
+
+# Star-1 / star-N ratios from bots that have both.
+ratio_hp = {}
+ratio_atk = {}
+for name, b in bots.items():
+    stars = b.get("stars") or {}
+    one = stars.get("1") or {}
+    hp1, atk1 = n(one.get("health")), n(one.get("attack"))
+    if not hp1 or not atk1:
+        continue
+    for key, st in stars.items():
+        if key == "1":
+            continue
+        hp, atk = n(st.get("health")), n(st.get("attack"))
+        if hp and atk:
+            ratio_hp.setdefault(key, []).append(hp1 / hp)
+            ratio_atk.setdefault(key, []).append(atk1 / atk)
+ratio_hp = {k: median(v) for k, v in ratio_hp.items()}
+ratio_atk = {k: median(v) for k, v in ratio_atk.items()}
+
 rows = []
 for r in cat:
     cid = r["client_id"]
@@ -42,6 +69,7 @@ for r in cat:
     star1 = (b.get("stars") or {}).get("1") or {}
     has_star1 = bool(star1)
     cls = r.get("class") or b.get("infobox", {}).get("Class") or "Unknown"
+    anchor = None
     if has_table:
         label = "[WIKI]"
         unc = 4.1
@@ -61,10 +89,26 @@ for r in cat:
         reason = "wiki star-1"
     else:
         label = "[ASSUMED]"
-        unc = 25.0
-        hp = round(med_hp.get(cls, default_hp), 1)
-        atk = round(med_atk.get(cls, default_atk), 1)
-        reason = "no stat table, no star-1; class median prior"
+        stars = b.get("stars") or {}
+        anchor = None
+        for key in sorted(stars.keys(), key=lambda x: int(x) if str(x).isdigit() else 99):
+            if key == "1":
+                continue
+            st = stars[key]
+            shp, satk = n(st.get("health")), n(st.get("attack"))
+            if shp and satk and key in ratio_hp and key in ratio_atk:
+                hp = round(shp * ratio_hp[key], 1)
+                atk = round(satk * ratio_atk[key], 1)
+                unc = 10.0
+                reason = (f"no stat table/star-1; star-{key} anchor "
+                          f"({shp:.0f} HP/{satk:.0f} ATK) x global star ratio")
+                anchor = key
+                break
+        if anchor is None:
+            hp = round(med_hp.get(cls, default_hp), 1)
+            atk = round(med_atk.get(cls, default_atk), 1)
+            unc = 25.0
+            reason = "no stat table, no star-1; class median prior"
     rows.append({
         "client_id": cid,
         "wiki_page": page,
@@ -72,6 +116,7 @@ for r in cat:
         "has_stat_table": has_table,
         "table_count": len(tables),
         "has_star1": has_star1,
+        "star_anchor": anchor if not has_table and not has_star1 else None,
         "level1_hp": hp,
         "level1_attack": atk,
         "label": label,

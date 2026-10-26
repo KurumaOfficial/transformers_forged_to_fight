@@ -218,3 +218,7 @@ status. T5 is MASTER_PROMPT v4.3.
 | Rating client formula | **exact** | `spec/rating_formula.md`, 6 tests |
 | Boss ids | improved | 81/90; 9 Starscream gaps |
 | Smoke xfails | honest | battle_checks + open known_issues |
+
+| ODR blocker | **blocked** | Open with 0 downloads; no manifest; PlayCore missing |
+| R2 server rating split | missing | LP infeasible on raw stats |
+| Starscream | **outside 9.2.0** | explicit `[ASSUMED]` fallback only |

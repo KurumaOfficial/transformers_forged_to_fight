@@ -297,13 +297,16 @@ def main():
                          if p.startswith("/matches/activate-match")), None)
     after_activate = new_paths[activate_idx + 1:] if activate_idx is not None else []
     battle_checks = {
+        "odr_cleared": "PlayCore" not in lc and "AssetPackServiceImpl" not in lc,
         "match_loaded": any(p.startswith("/matches/match-loaded") for p in new_paths),
-        "fight_started": any(p.startswith("/matches/match-loaded") for p in new_paths),
+        "fight_started": (not model_nre and not scale_nre
+                          and "ArgumentNullException" not in lc),
         "resolve_match": any(p.startswith("/matches/resolve-match") for p in new_paths),
         "returned_to_map": any(p.startswith("/quests/quest-movedir") or p == "/base/active"
                                for p in after_activate),
     }
     for check, expected in (
+        ("odr_cleared", "FuseODRBlocker/PlayCore loading overlay is gone"),
         ("match_loaded", "client sends /matches/match-loaded after activate-match"),
         ("fight_started", "fight scene passes PlayerAttributes.Init and starts the round"),
         ("resolve_match", "client sends /matches/resolve-match after the fight"),

@@ -292,3 +292,11 @@ is null in the loaded character prefab, or a real activate-match response.
   on the emulator (`com.android.vending` missing). Battle logic runs behind the
   loading screen but input is blocked. Need the original ODR packs or a
   non-ODR data path; do not patch the client.
+
+- **ODR:** `FuseODRBlocker` Open with 0 active/requested downloads, no pending
+  WADs; `ODRManager` has no manifest and `_initAndGetManifestComplete=0`; no
+  `/odr/*` request reaches the stub; PlayCore cannot bind to
+  `com.android.vending` on the sideloaded emulator. Not an arena tag issue.
+- **R2:** LP infeasible on raw HP/ATK; need server rating split.
+- **S1:** `sweep_bots59.py` pagination added; clean 59/59 still blocked by
+  the global ODR/navigation state; current evidence remains 12/59.

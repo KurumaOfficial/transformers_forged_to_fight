@@ -3,54 +3,72 @@
   "qid": "story_act1_ch1_m2",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "story_act1_ch3_m5",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "story_act1_ch4_m4",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "story_act2_ch1_m3",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "story_act2_ch2_m3",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "story_act2_ch3_m5",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "story_act3_ch1_m6",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "story_act4_ch2_m5",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "[WIKI] Awaken and Corrupt revision: Starscream; no 9.2.0 pack"
+  "reason": "[WIKI] Awaken and Corrupt revision: Starscream; no 9.2.0 pack",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  },
  {
   "qid": "awaken_ch2_m5",
   "boss": "Starscream",
   "boss_client_id": null,
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
+  "fallback_client_id": "nemesisprime_gs_voyager2015",
+  "fallback_label": "[ASSUMED] not original"
  }
 ]

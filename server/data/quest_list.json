@@ -146,7 +146,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 2
+    "mission": 2,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "story_act1_ch1_m3",
@@ -1147,7 +1151,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 3,
-    "mission": 5
+    "mission": 5,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "story_act1_ch3_m6",
@@ -1478,7 +1486,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 4,
-    "mission": 4
+    "mission": 4,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "story_act1_ch4_m5",
@@ -13788,7 +13800,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 3
+    "mission": 3,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "story_act2_ch1_m4",
@@ -14186,7 +14202,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 3
+    "mission": 3,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "story_act2_ch2_m4",
@@ -14718,7 +14738,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 3,
-    "mission": 5
+    "mission": 5,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "story_act2_ch3_m6",
@@ -27564,7 +27588,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 6
+    "mission": 6,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    }
   ],
   "acts": [
@@ -31520,7 +31548,11 @@
     "chapter": 2,
     "mission": 5,
     "boss": "Starscream",
-    "bossName": "Starscream"
+    "bossName": "Starscream",
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "story_act4_ch2_m6",
@@ -38377,7 +38409,11 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 5
+    "mission": 5,
+    "bossFallback": {
+     "id": "nemesisprime_gs_voyager2015",
+     "label": "[ASSUMED] not original"
+    }
    },
    {
     "id": "awaken_ch2_m6",

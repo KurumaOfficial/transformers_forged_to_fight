@@ -617,3 +617,28 @@ level and the 3 Bumblebee boss ids moved to `_2`; Act 4 I/II bosses were filled.
 Golden re-recorded with `python work/golden_regression.py --record`, then 9/9
 PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 (`match_loaded`, `fight_started`, `resolve_match`, `returned_to_map`).
+
+### 31. 2026-10-26 v4.7: BaseRangedDamageType record, ODR, R2 LP, R1, Starscream
+
+- `[STATIC]` `BCGBlueprintBase.get_BaseRangedDamageType` (0xC169E4) reads
+  `BCGCharacterData +0x48`; `DamageType..ctor` (0xBB0B70) tail-calls
+  `HashSet<string>..ctor` (0x12A9D94). Character data, not blueprint +0x98, is
+  the getter source. Record: `docs/battle_init_fix.md`.
+- `[RUN]` ODR: `FuseODRBlocker` Open (state 4) with 0 active/requested
+  downloads, no pending WADs; `ODRManager` no manifest, `_receivedDataFromServer=0`,
+  `_initAndGetManifestComplete=0`; no `/odr/*` request; PlayCore
+  `com.android.vending` missing. `docs/odr_flow.md`.
+- `[RUN]` R2 interval LP infeasible globally and per rank/level; parser audit
+  20 pages, 0 numeric misparses. `data/wiki/rating_lp.json`,
+  `docs/parser_audit.md`.
+- `[RUN]` R1: 37 WIKI/table, 22 ASSUMED; 2 star-3 anchors 10%, 20 class-median
+  25%. `docs/stat_coverage.md`.
+- `[RUN]` Starscream: no 9.2.0 pack; 9 gaps; `[ASSUMED]`
+  `nemesisprime_gs_voyager2015` fallback, not original.
+  `docs/starscream_fallback.md`.
+- `[RUN]` S1 59-page sweep added; current sweep still running, first pages show
+  `popup_error=True`, `info_error=False`, `nre=0` (popup metric is not a
+  details-screen failure).
+- `[RUN]` Docs archive `work/archive/TFTF_docs_2026-10-26_210320.zip`
+  sha256 `6c1ef956...`; `docs/INTEGRITY.md`, `docs/CHANGELOG.md`.
+- `[RUN]` `BACKUP_PATH` empty -> backup skipped.

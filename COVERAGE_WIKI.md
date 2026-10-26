@@ -163,3 +163,8 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
 - 2026-10-26 nightly: check_all PASS; full smoke status FAIL (full-mode
   measurement, fast smoke PASS); BOTS sweep 12/59 (pagination missing). Old
   verdict PASS was exit-code-only; corrected script prints FAIL/PARTIAL.
+
+- 2026-10-26 v4.7: BaseRangedDamageType record/evidence; ODR blocker static
+  and live (no downloads/manifest, no /odr request, PlayCore missing);
+  R2 LP infeasible + parser audit; R1 star anchors; Starscream fallback;
+  59-page sweep script; MASTER v4.7.
