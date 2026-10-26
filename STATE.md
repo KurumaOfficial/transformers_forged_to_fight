@@ -559,3 +559,6 @@ and `quest_begin_response.json` remain templates/fallbacks.
   not an NRE. `tests/sweep/sweep_59.json`, `docs/sweep_diagnosis.md`.
   `nightly.ps1` now uses `sweep_bots59.py` and fast quest smoke by default;
   `-Full` keeps the full-mode experiment.
+
+- **Nightly 21:19 PASS:** `nightly_2026-10-26_211947.log`; check_all PASS,
+  smoke PASS (activate_match true), BOTS 59/59. Supersedes the 19:48 run.

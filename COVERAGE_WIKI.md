@@ -171,3 +171,5 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
 
 - S1: **59/59** across 5 BOTS pages; 0 info errors, 0 NRE; popup_error is a
   transition-frame metric. `docs/sweep_diagnosis.md`.
+
+- Nightly 21:19: **PASS** (check_all PASS, smoke PASS, BOTS 59/59).

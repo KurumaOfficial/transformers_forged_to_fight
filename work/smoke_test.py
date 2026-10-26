@@ -20,7 +20,7 @@ from pathlib import Path
 
 from PIL import Image
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(__file__).resolve().parents[1]
 ADB = ROOT / "work" / "platform-tools" / "adb.exe"
 OUT = ROOT / "tests" / "smoke"
 REQ = ROOT / "server" / "requests.jsonl"
@@ -293,11 +293,21 @@ def main():
 
     # Post-activate battle milestones. These are deliberately xfail while
     # PlayerAttributes.Init is blocked; they become real checks once fixed.
+    def odr_open():
+        try:
+            p = subprocess.run([sys.executable, str(ROOT / "work" / "dump_odr_blocker.py")],
+                               capture_output=True, text=True, timeout=120)
+            return ("FuseODRBlocker window" in p.stdout and "state 4" in p.stdout)
+        except Exception:
+            return None
+
+    blocker = odr_open()
     activate_idx = next((i for i, p in enumerate(new_paths)
                          if p.startswith("/matches/activate-match")), None)
     after_activate = new_paths[activate_idx + 1:] if activate_idx is not None else []
     battle_checks = {
-        "odr_cleared": "PlayCore" not in lc and "AssetPackServiceImpl" not in lc,
+        "odr_cleared": (not blocker) if blocker is not None else
+                       ("PlayCore" not in lc and "AssetPackServiceImpl" not in lc),
         "match_loaded": any(p.startswith("/matches/match-loaded") for p in new_paths),
         "fight_started": (not model_nre and not scale_nre
                           and "ArgumentNullException" not in lc),
@@ -370,7 +380,9 @@ def main():
         "plus_error": plus_error,
         "memory_team_count": team_count,
         "memory_probe": mem[-6000:],
-        "status": "PASS" if (key["login"] and key["quest_begin"] and key["movedir"] and steps) else "FAIL",
+        "status": "PASS" if (key["login"] and key["quest_begin"] and key["movedir"]
+                             and (key["activate_match"] if args.fight else True)
+                             and steps) else "FAIL",
         "note": "PASS means the scripted flow reached the battle tile and produced a screenshot; combat may still be blocked.",
     }
     report = OUT / "latest.json"

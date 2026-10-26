@@ -22,7 +22,7 @@ Say "== smoke (quest flow) =="
 if ($Full) {
     & python work\smoke_test.py --full --plus 2>&1 | Tee-Object -FilePath $log -Append
 } else {
-    & python work\smoke_test.py --plus 2>&1 | Tee-Object -FilePath $log -Append
+    & python work\smoke_test.py --plus --fight 2>&1 | Tee-Object -FilePath $log -Append
 }
 try {
     $smoke = Get-Content tests\smoke\latest.json -Raw | ConvertFrom-Json

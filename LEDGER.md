@@ -646,3 +646,6 @@ PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 - `[RUN]` S1 59/59 via `work/sweep_bots59.py` (pages 0-4, info_error=0,
   nre=0); `popup_error` is a transition-frame metric, not an error.
   `tests/sweep/sweep_59.json`.
+
+- `[RUN]` Nightly 21:19 PASS: check_all PASS, smoke PASS (activate_match true),
+  BOTS 59/59. Log `work/nightly/nightly_2026-10-26_211947.log`.

@@ -44,3 +44,18 @@
 - Starscream 9.2.0 pack absent.
 - R2 server-side rating split absent.
 - 34 wiki images (Wayback 404/503 in the tried variants).
+
+## S1 correction
+
+- `[RUN]` `work/sweep_bots59.py` reached **59/59** (5 pages, 0 info errors,
+  0 NRE). The old 12/59 note is superseded; `popup_error` is a transition-frame
+  metric, not an NRE.
+- `nightly.ps1` default is now fast quest smoke (`--plus --fight`) + 59-card
+  sweep; `-Full` keeps the full-mode experiment.
+
+## Nightly
+
+- 21:19 default nightly: **PASS** — check_all PASS, smoke PASS
+  (`activate_match=true`), BOTS 59/59. Log
+  `work/nightly/nightly_2026-10-26_211947.log`.
+- 19:48 run remains historical: old 12-card sweep, full smoke FAIL.

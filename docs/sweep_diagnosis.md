@@ -40,3 +40,30 @@ check both the JSON flag and the screenshots.
 2. If not, stop at the page where the hash stops changing or the app returns
    to Home; record the blocker/window state.
 3. Keep `popup_error` as a separate transition metric, not an NRE/failure.
+
+## S1 completed: 59/59
+
+`[RUN]` `work/sweep_bots59.py` finished all 5 pages:
+
+```
+count 59
+popup_error 59 (dark transition frame; metric false positive)
+info_error 0
+nre 0
+pages [0,1,2,3,4]
+```
+
+Page hashes changed `44950fc2… -> c9981a2e… -> 899ad084… -> bedac03d… ->
+c670b235…`, so pagination is real, not a repeated page. Every card opened the
+details/INFO screen (`info_error=False`) and no card produced an NRE. The
+`popup_error` flag is the old popup-vs-transition threshold; it is not an
+error. Result file: `tests/sweep/sweep_59.json`.
+
+## Metric flakiness after a fresh restart
+
+`[RUN]` After a force-stop/restart, the first two cards produced
+`popup_error=False` (the popup screenshot was larger) while the 59/59 run had
+`popup_error=True` for every card. `info_error` stayed `False` and `nre=0` in
+both. The popup flag is a **timing/transition** metric, not a stable error
+signal. Keep INFO/NRE as the real checks; if a popup is required, add a
+UI-state assertion instead of the 150 KB threshold.
