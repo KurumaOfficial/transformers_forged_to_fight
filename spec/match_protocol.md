@@ -78,3 +78,52 @@ quests the component is `quests` and messages include `match-activated`,
 3. Replace the [ASSUMED] response with fields observed/derived from FighterData
    and BCGAttributeDataBase; then verify prefight HP/rating and the transition
    to the fight scene.
+
+## 6. Observed activate-match (2026-10-26/27)
+
+`[RUN]` The prefight FIGHT button now sends:
+
+```
+POST /matches/activate-match/quests_fight
+{"hero":"bumblebee_cin_dotm_2","api":3,"nonce":"...","qid":"story_act1_ch4_m2","battleId":"battle1"}
+```
+
+`QuestsMatchData.addToRequest` (`0xD6C1C0`) adds exactly `qid`, `battleId`,
+`hero`; `MatchAPI` also adds `api` and `nonce`. The current stub response
+`server/data/match_activate_response.json` is `[ASSUMED]`; only the request
+shape is proven.
+
+## 7. Post-battle static schema (Step 6.3)
+
+- `MatchResults` (TypeDef 9115): `battleId` string (+0x10), `result`
+  `eBattleResult` (+0x18). Enum: `NONE=0`, `WON=1`, `LOST=2`, `DISCONNECT=3`,
+  `CRASH=4`, `TIMEOUT=5`, `UNKNOWN=6` [STATIC].
+- `QuestsMatchResults` (TypeDef 12669): `qid` (+0x10), `enemyHealth` float
+  (+0x18), `matchResults` (+0x20); `addToRequest` (`0xD6C284`) writes those
+  keys. [STATIC]
+- `MatchStats` (TypeDef 9117) extends `StatsLogger`; `Serialize`
+  (`0xBD2D88`) emits the dynamic `floats`/`ints`/`strings` maps plus
+  `PlayerStats` and `StatModTelemetry`. Exact wire key suffixes are not yet
+  proven; do not invent them in `match_resolve_response.json`.
+- `MatchManager.ResolveMatch` (`0x1A873AC` path builder, `0x11F19F4` generic)
+  calls `POST /matches/resolve-match/{matchType}` and expects an `IDictionary`.
+- `QuestsManager.ProcessActionResultsAndProgression` (`0xD65EE8`) consumes
+  `qid`, `progression`, `results`, `teamData`; the movedir handler already
+  proves those keys for map actions.
+- `QuestsManager.Async` (`0xD65038`) handles the async message names
+  `match-resolved`, `match-activated`, `battlecomplete`, `fightlost`,
+  `questcomplete` (string literals `0x2D75CD0..0x2D78090`). Payload keys are
+  not proven; no async message has been observed after a quest fight.
+- Rewards: `QuestResultsScreenModel` reads `RedeemerItem` lists from the
+  quest/active quest data; do not treat the current `rewards` array in
+  `match_resolve_response.json` as the real schema.
+
+`server/data/match_resolve_response.json` remains `[ASSUMED]` and the route
+stays behind the existing stub. No client code or data was changed.
+
+## 8. match-loaded
+
+`MatchAPI.SignalMatchLoaded` (`0x1A87254`) builds
+`POST /matches/match-loaded/quests_fight/{matchId}`. No such request has been
+observed for a quest fight; whether it is PvP-only is still open. The stub
+returns `{"status":"ok"}`.

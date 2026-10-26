@@ -524,7 +524,7 @@
           },
           "result": {
            "type": "object",
-           "description": "tuning dict; values [ASSUMED]"
+           "description": "tuning dict; current stub sends heroRatingAttackWeight/heroRatingMaxHPWeight/sigLvlMax/ratingPrecision. Tuning component keys are field names (spec/tuning_keys.md)."
           },
           "sync": {
            "type": "object",
@@ -3087,6 +3087,24 @@
        }
       }
      }
+    },
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "api": {
+          "type": "integer"
+         },
+         "nonce": {
+          "type": "string"
+         }
+        }
+       }
+      }
+     }
     }
    }
   },
@@ -3094,7 +3112,7 @@
    "post": {
     "summary": "Resolve match (blocked by ODR/loading)",
     "x-evidence": "[BLOCKED]",
-    "x-client-behavior": "Not reached: FuseLoadingScreen/FuseODRBlocker remains above HudScreen because Play Asset Delivery is unavailable on the emulator.",
+    "x-client-behavior": "Static body: qid, enemyHealth, matchResults{battleId,result}, matchStats, api, nonce (QuestsMatchResults, 0xD6C284). Not observed because the fight is ODR-blocked.",
     "responses": {
      "200": {
       "description": "Sparx envelope. [NOT OBSERVED]",
@@ -3139,6 +3157,58 @@
            "type": "boolean",
            "description": "[STATIC] retry flag"
           }
+         }
+        }
+       }
+      }
+     }
+    },
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "qid": {
+          "type": "string",
+          "description": "[STATIC] QuestsMatchResults.qid +0x10"
+         },
+         "enemyHealth": {
+          "type": "number",
+          "description": "[STATIC] +0x18 float"
+         },
+         "matchResults": {
+          "type": "object",
+          "description": "[STATIC] MatchResults",
+          "properties": {
+           "battleId": {
+            "type": "string"
+           },
+           "result": {
+            "type": "integer",
+            "enum": [
+             0,
+             1,
+             2,
+             3,
+             4,
+             5,
+             6
+            ],
+            "description": "[STATIC] eBattleResult NONE/WON/LOST/DISCONNECT/CRASH/TIMEOUT/UNKNOWN"
+           }
+          }
+         },
+         "matchStats": {
+          "type": "object",
+          "description": "[STATIC] MatchStats.Serialize 0xBD2D88; dynamic floats/ints/strings + playerStats/statModTelemetry; exact keys unproven"
+         },
+         "api": {
+          "type": "integer"
+         },
+         "nonce": {
+          "type": "string"
          }
         }
        }

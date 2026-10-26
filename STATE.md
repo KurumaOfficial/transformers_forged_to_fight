@@ -606,3 +606,13 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - `[RUN]` live ODR tuning flags: `ODRForceDownloadAll=0`,
   `ODRAllowNative=1`, `ODRShowProgressMB=1`, `ODRShowTimeEstimate=1`;
   data-only, not changed. See `docs/odr_report.md` 1.10.
+
+## 2026-10-27 match schema / openapi
+
+- `spec/match_protocol.md`: observed activate-match body; static
+  `QuestsMatchResults`/`MatchResults`/`MatchStats` schemas; async names
+  `match-resolved`, `match-activated`, `battlecomplete`, `fightlost`,
+  `questcomplete`; `match_resolve_response.json` stays `[ASSUMED]`.
+- `spec/openapi.json`: added resolve request body (qid/enemyHealth/
+  matchResults/matchStats) and match-loaded body; tuning result description
+  points to `spec/tuning_keys.md`.
