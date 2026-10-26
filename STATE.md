@@ -627,3 +627,13 @@ and `quest_begin_response.json` remain templates/fallbacks.
   analysis: `docs/special_attack_localization.md`.
 - **OPEN (5.4):** synergy live visual check; `syn_autobots` is present in the
   blueprint and userData but the UI was not captured this run.
+
+## 2026-10-27 economy / post-battle quests
+
+- `docs/economy.md`: known wiki numbers (Energon, Forge, Gold), current
+  `[ASSUMED]` catalog placeholders (`evoCosts`, `rarityProperties`,
+  `staminaRegen`, growth/curves, identical quest rewards), and the missing
+  numeric tables.
+- `docs/post_battle_quests.md`: expected resolve -> `battlecomplete`/
+  `fightlost` -> rewards/energy/unlock flow; blocked by ODR; no invented
+  async payload.

@@ -318,3 +318,8 @@ is null in the loaded character prefab, or a real activate-match response.
 - **BLOCKED (5.1/5.2):** no original per-bot `statMods`/`Buff` ids/triggers;
   wiki outcomes are not sufficient. `docs/ability_blocker.md`.
 - **OPEN (5.4):** live synergy screen check.
+
+- **ECONOMY (8.2):** wiki text has few numeric tables; catalog costs/XP/
+  evolution/forge/mastery/rewards are placeholders. `docs/economy.md`.
+- **POST-BATTLE (8.1):** blocked by ODR; plan and current stubs in
+  `docs/post_battle_quests.md`.
