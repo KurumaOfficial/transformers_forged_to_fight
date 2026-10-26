@@ -245,13 +245,33 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 atk = 80 + rank * 30 + level * 5
                 rating_hp = int(hp * 0.1)
                 rating_attack = int(atk * 0.5)
+                base_cat = load_data_json("bcg_login_data.json")
+                bp = (base_cat.get("blueprints") or {}).get(bid, {})
                 details.append({
                     "bid": bid,
+                    "blueprint": bid,
                     "rank": rank,
                     "level": level,
                     "sig_lvl": sig,
                     "max_hp": hp,
+                    "hp_max": hp,
+                    "hpMax": hp,
+                    "maxHp": hp,
+                    "hp": float(hp),
                     "attack": atk,
+                    "armor": 0.0,
+                    "crit_chance": 0.1,
+                    "crit_damage": 1.5,
+                    "block_proficiency": 0.5,
+                    "perfect_block_chance": 0.0,
+                    "mana_gain": 1.0,
+                    "mana_start": 0,
+                    "resist_magic": 0.0,
+                    "resist_physical": 0.0,
+                    "stat_mods": [],
+                    "sig_mods": [],
+                    "buff_mods": [],
+                    "tags": list(bp.get("tags") or bp.get("t") or []),
                     "rating": rating_hp + rating_attack,
                     "rating_hp": rating_hp,
                     "rating_attack": rating_attack,
@@ -260,6 +280,33 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     "special_attacks": 3,
                     "pvpb": {},
                     "synergyBonuses": [],
+                    "attributeData": {
+                        "hpMaxBase": hp,
+                        "hpMax": hp,
+                        "hp": float(hp),
+                        "attack": atk,
+                        "attackBase": atk,
+                        "armor": 0.0,
+                        "critChance": 0.1,
+                        "critDamage": 1.5,
+                        "perfectBlockChance": 0.0,
+                        "blockProficiency": 0.5,
+                        "manaGain": 1.0,
+                        "manaStart": 0,
+                        "resistMagic": 0.0,
+                        "resistPhysical": 0.0,
+                        "stunTime": 0,
+                        "stunChance": 0.0,
+                        "heroRating": rating_hp + rating_attack,
+                        "heroRatingHP": rating_hp,
+                        "heroRatingAttack": rating_attack,
+                        "heroRatingHPBase": rating_hp,
+                        "heroRatingAttackBase": rating_attack,
+                        "specialAttackCount": 3,
+                        "statMods": [],
+                        "sigMods": [],
+                        "buffMods": []
+                    },
                     "user_owned": True
                 })
             self.send_sparx(details, assumed_label="[ASSUMED: /bcg/getBaseHeroData computed details]")
@@ -378,10 +425,31 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     if body.get(key):
                         team.append(body[key])
             if team:
-                quest["team"] = {
-                    bid: {"hp": 1000.0, "pi": 100, "sig_lvl": 0, "stat_mods": [], "sig_mods": []}
-                    for bid in team
-                }
+                base_cat = load_data_json("bcg_login_data.json")
+                bps = base_cat.get("blueprints", {})
+                ud_heroes = {h.get("bid"): h for h in base_cat.get("userData", {}).get("heroes", [])
+                             if isinstance(h, dict)}
+                team_data = {}
+                for bid in team:
+                    bp = bps.get(bid, {})
+                    uh = ud_heroes.get(bid, {})
+                    team_data[bid] = {
+                        "hp": float(uh.get("hp", 1000.0)),
+                        "max_hp": float(uh.get("max_hp", 1000.0)),
+                        "pi": int(uh.get("rating", 100) or 100),
+                        "rating": int(uh.get("rating", 100) or 100),
+                        "rank": int(uh.get("rank", 1) or 1),
+                        "level": int(uh.get("level", 1) or 1),
+                        "sig_lvl": int(uh.get("sig_lvl", 0) or 0),
+                        "blueprint": bid,
+                        "tags": list(bp.get("tags") or bp.get("t") or []),
+                        "t": list(bp.get("t") or bp.get("tags") or []),
+                        "stat_mods": [],
+                        "sig_mods": [],
+                        "buff_mods": [],
+                        "synergyBonuses": [],
+                    }
+                quest["team"] = team_data
             base = load_data_json("bcg_login_data.json")
             ud = json.loads(json.dumps(base.get("userData", {})))
             hero_details = []

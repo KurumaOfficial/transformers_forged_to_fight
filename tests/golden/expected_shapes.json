@@ -1,92 +1,640 @@
 [
   {
     "request": {
-      "timestamp": "2026-10-25T21:40:12.124292Z",
+      "timestamp": "2026-10-26T18:35:30.277281Z",
       "client_ip": "127.0.0.1",
-      "client_port": 57511,
+      "client_port": 58463,
       "method": "GET",
-      "path": "/account/data",
+      "path": "/quests/quest-progression",
       "query": {
-        "apiversions.events": [
-          "3"
-        ],
-        "deferJSONParse": [
-          "false"
-        ],
-        "ts": [
-          "1792964412"
-        ],
-        "apiversions.wske": [
-          "2"
-        ],
-        "apiversions.tuning": [
-          "2"
-        ],
-        "apiversions.ave": [
-          "11"
-        ],
-        "apiversions.objectives": [
-          "4"
-        ],
         "sig": [
-          "j2cPrcrb27HiYBdcr5MZmTebEHE="
-        ],
-        "apiversions.gacha": [
-          "8"
-        ],
-        "apiversions.matches": [
-          "3"
-        ],
-        "apiversions.buffs": [
-          "2"
-        ],
-        "apiversions.ai": [
-          "3"
-        ],
-        "apiversions.odr": [
-          "3"
-        ],
-        "apiversions.quests": [
-          "11"
-        ],
-        "apiversions.gameentitlements": [
-          "3"
-        ],
-        "apiversions.motd": [
-          "3"
-        ],
-        "apiversions.kabamsignup": [
-          "2"
+          "eOH8DeGmDvWctLQ8R8GRLoYztc0="
         ],
         "stoken": [
           "sess_tf_stub_token_12345"
         ],
-        "apiversions.bcg": [
-          "6"
-        ],
-        "apiversions.message": [
-          "2"
+        "api": [
+          "11"
         ],
         "sver": [
           "3"
         ],
-        "apiversions.notify": [
-          "5"
-        ],
-        "apiversions.resources": [
-          "2"
-        ],
-        "apiversions.prizes": [
-          "3"
-        ],
-        "apiversions.gamestore": [
-          "5"
+        "ts": [
+          "1793039730"
         ]
       },
       "headers": {
         "Host": "127.0.0.1",
         "Accept-Encoding": "gzip",
         "User-Agent": "Sparx/1.0"
+      },
+      "body": ""
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "Story": {
+          "story_act1_ch1_m1": {
+            "cleared": [
+              "list"
+            ],
+            "completed": "bool",
+            "mastered": "bool",
+            "unlocked": "bool",
+            "visibleClearedCount": "number"
+          }
+        },
+        "ave": {},
+        "pve": {}
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-26T18:36:11.904244Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 58463,
+      "method": "POST",
+      "path": "/quests/quest-begin/story_act1_ch4_m2",
+      "query": {
+        "sig": [
+          "PFLHRQmQPGw0pLXeUpZY13BN2vY="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1793039771"
+        ]
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "128",
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": {
+        "quitExisting": true,
+        "nonce": "6adf9d9b6911bc4d608e000d",
+        "hash": "v1",
+        "api": 11,
+        "setId": "story_act_1",
+        "tm0": "bumblebee_cin_dotm_2"
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "activeQuests": {
+          "story_act1_ch4_m2": {
+            "category": "string",
+            "currentPosition": {
+              "x": "number",
+              "y": "number"
+            },
+            "data": {
+              "act": "number",
+              "actIndex": "number",
+              "category": "string",
+              "chapter": "number",
+              "chapterIndex": "number",
+              "description": "string",
+              "energyPerTile": "number",
+              "friendlyName": "string",
+              "id": "string",
+              "isDetailed": "bool",
+              "maxXpPerTile": "number",
+              "minXpPerTile": "number",
+              "mission": "number",
+              "missionIndex": "number",
+              "teamSizeMax": "number",
+              "teamSizeMin": "number",
+              "theme": "string",
+              "todIndex": "number",
+              "unlocked": "bool"
+            },
+            "expiryTime": "number",
+            "isFinished": "bool",
+            "map": {
+              "grid": [
+                "list",
+                "..."
+              ],
+              "gridDimension": "number",
+              "mapHash": "string",
+              "pathData": [
+                "list",
+                "..."
+              ],
+              "paths": [
+                "list",
+                "..."
+              ],
+              "visibleWalkableCount": "number",
+              "walkableCount": "number"
+            },
+            "mode": "string",
+            "phase": "number",
+            "playerPosition": {
+              "x": "number",
+              "y": "number"
+            },
+            "progression": {
+              "clearedTiles": [
+                "list",
+                "..."
+              ],
+              "currentTile": {
+                "x": "...",
+                "y": "..."
+              },
+              "percentComplete": "number"
+            },
+            "qid": "string",
+            "scaledBossTable": {
+              "enemy1": {
+                "aiPer": "...",
+                "aiString": "...",
+                "aiType": "...",
+                "baseType": "...",
+                "characters": "...",
+                "flvl": "...",
+                "hi": "...",
+                "isFinalBoss": "...",
+                "key": "...",
+                "level": "...",
+                "mapOverride": "...",
+                "rank": "...",
+                "sig_lvl": "...",
+                "todIndex": "...",
+                "type": "...",
+                "uid": "..."
+              }
+            },
+            "startTime": "number",
+            "team": {
+              "bumblebee_cin_dotm_2": {
+                "blueprint": "...",
+                "buff_mods": "...",
+                "hp": "...",
+                "level": "...",
+                "max_hp": "...",
+                "pi": "...",
+                "rank": "...",
+                "rating": "...",
+                "sig_lvl": "...",
+                "sig_mods": "...",
+                "stat_mods": "...",
+                "synergyBonuses": "...",
+                "t": "...",
+                "tags": "..."
+              }
+            },
+            "teamData": {
+              "deletes": {},
+              "updates": {
+                "activeTeams": "...",
+                "heroes": "...",
+                "inventory": "...",
+                "savedTeams": "..."
+              },
+              "userData": {
+                "blueprintsMax": "...",
+                "teamCountMax": "...",
+                "teamSizeMax": "..."
+              }
+            },
+            "uniqueId": "string"
+          }
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-26T18:36:32.765218Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 58463,
+      "method": "POST",
+      "path": "/quests/quest-movedir/story_act1_ch4_m2/1/0",
+      "query": {
+        "sig": [
+          "eTgbDC514Mbhi90Tov+VDruL5fc="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1793039793"
+        ]
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "45",
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": {
+        "api": 11,
+        "nonce": "6adf9db16911bc4d608e0012"
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "currentPosition": {
+          "x": "number",
+          "y": "number"
+        },
+        "currentTile": {
+          "x": "number",
+          "y": "number"
+        },
+        "playerPosition": {
+          "x": "number",
+          "y": "number"
+        },
+        "progression": {
+          "cleared": [
+            "list",
+            {
+              "x": "number",
+              "y": "number"
+            }
+          ],
+          "clearedTiles": [
+            "list",
+            {
+              "x": "number",
+              "y": "number"
+            }
+          ],
+          "currentBattleBossId": "string",
+          "currentBattleEnemy": {
+            "aiPer": "string",
+            "aiString": "string",
+            "aiType": "number",
+            "baseType": "string",
+            "characters": [
+              "list",
+              "string"
+            ],
+            "flvl": "number",
+            "hi": [
+              "list"
+            ],
+            "id": "string",
+            "isFinalBoss": "bool",
+            "key": "string",
+            "level": "number",
+            "mapOverride": "string",
+            "rank": "number",
+            "sig_lvl": "number",
+            "todIndex": "number",
+            "type": "string",
+            "uid": "string"
+          },
+          "currentBattleEnemyHealth": "number",
+          "currentBattleId": "string",
+          "currentBattlePos": {
+            "x": "number",
+            "y": "number"
+          },
+          "currentFightId": "string",
+          "currentPos": {
+            "x": "number",
+            "y": "number"
+          },
+          "currentPosition": {
+            "x": "number",
+            "y": "number"
+          },
+          "currentTile": {
+            "x": "number",
+            "y": "number"
+          },
+          "percentComplete": "number",
+          "playerPosition": {
+            "x": "number",
+            "y": "number"
+          },
+          "previouslyCleared": [
+            "list"
+          ],
+          "revealed": [
+            "list"
+          ],
+          "users": {
+            "10001": {
+              "battleLockExpiry": "number",
+              "currentBattleId": "string",
+              "currentBattlePos": {
+                "x": "...",
+                "y": "..."
+              },
+              "currentBattleState": "number",
+              "currentPos": {
+                "x": "...",
+                "y": "..."
+              },
+              "name": "string",
+              "state": "number",
+              "strongestHero": "string",
+              "tag": "string",
+              "team": {
+                "bumblebee_cin_dotm": "..."
+              },
+              "uid": "string",
+              "usedConsumableCount": "number"
+            }
+          },
+          "version": "number"
+        },
+        "results": [
+          "list",
+          {
+            "action": {
+              "moveto": {
+                "x": "...",
+                "y": "..."
+              }
+            }
+          }
+        ],
+        "teamData": {
+          "deletes": {},
+          "updates": {
+            "activeTeams": {
+              "Story": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "active_quest_1001": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "story": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "story_act1_ch1_m1": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "story_act_1": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              }
+            },
+            "heroes": [
+              "list",
+              {
+                "armor": "...",
+                "attack": "...",
+                "attributeData": "...",
+                "bid": "...",
+                "block_proficiency": "...",
+                "blueprint": "...",
+                "crit_chance": "...",
+                "crit_damage": "...",
+                "entity_type": "...",
+                "exc": "...",
+                "hero": "...",
+                "hero_rating_attack": "...",
+                "hero_rating_hp": "...",
+                "hp": "...",
+                "id": "...",
+                "level": "...",
+                "mana_gain": "...",
+                "mana_start": "...",
+                "max_hp": "...",
+                "max_xp": "...",
+                "modes": "...",
+                "modesAvail": "...",
+                "pi": "...",
+                "pvpb": "...",
+                "rank": "...",
+                "rating": "...",
+                "rating_attack": "...",
+                "rating_attack_base": "...",
+                "rating_hp": "...",
+                "rating_hp_base": "...",
+                "required_xp": "...",
+                "resist_magic": "...",
+                "resist_physical": "...",
+                "sig_lvl": "...",
+                "sig_mods": "...",
+                "special_attacks": "...",
+                "stamina": "...",
+                "staminaFullGrowthTime": "...",
+                "staminaNextGrowthTime": "...",
+                "stamina_full_ts": "...",
+                "stamina_ts": "...",
+                "stat_mods": "...",
+                "stt": "...",
+                "stun_chance": "...",
+                "stun_time": "...",
+                "synergyBonuses": "...",
+                "t": "...",
+                "tags": "...",
+                "teamTypes": "...",
+                "team_types": "...",
+                "uid": "..."
+              }
+            ],
+            "inventory": {
+              "bp": {},
+              "f": {},
+              "max": {}
+            },
+            "savedTeams": [
+              "list",
+              {
+                "heroes": "...",
+                "sid": "..."
+              }
+            ]
+          },
+          "userData": {
+            "blueprintsMax": "number",
+            "teamCountMax": "number",
+            "teamSizeMax": "number"
+          }
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-26T18:37:11.923786Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 65219,
+      "method": "POST",
+      "path": "/quests/quest-detail/story_act1_ch1_m1",
+      "query": {},
+      "headers": {
+        "Accept-Encoding": "identity",
+        "Content-Length": "49",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
+      },
+      "body": {
+        "hash": "v1",
+        "setId": "story_act_1",
+        "api": 11
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "map": {
+          "grid": [
+            "list",
+            [
+              "list",
+              {
+                "ab": "...",
+                "barrier": "...",
+                "bg": "...",
+                "bt": "...",
+                "final": "...",
+                "links": "...",
+                "position": "...",
+                "sockets": "...",
+                "start": "...",
+                "visibleLinks": "...",
+                "walkable": "..."
+              }
+            ]
+          ],
+          "gridDimension": "number",
+          "mapHash": "string",
+          "pathData": [
+            "list",
+            {
+              "path": [
+                "list",
+                "..."
+              ]
+            }
+          ],
+          "paths": [
+            "list",
+            {
+              "path": [
+                "list",
+                "..."
+              ],
+              "tiles": [
+                "list",
+                "..."
+              ]
+            }
+          ],
+          "visibleWalkableCount": "number",
+          "walkableCount": "number"
+        },
+        "scaledBossTable": {
+          "enemy1": {
+            "aiPer": "string",
+            "aiString": "string",
+            "aiType": "number",
+            "baseType": "string",
+            "characters": [
+              "list",
+              "string"
+            ],
+            "flvl": "number",
+            "hi": [
+              "list"
+            ],
+            "isFinalBoss": "bool",
+            "key": "string",
+            "level": "number",
+            "mapOverride": "string",
+            "rank": "number",
+            "sig_lvl": "number",
+            "todIndex": "number",
+            "type": "string",
+            "uid": "string"
+          }
+        },
+        "summary": {
+          "act": "number",
+          "actIndex": "number",
+          "category": "string",
+          "chapter": "number",
+          "chapterIndex": "number",
+          "description": "string",
+          "energyPerTile": "number",
+          "friendlyName": "string",
+          "id": "string",
+          "isDetailed": "bool",
+          "maxXpPerTile": "number",
+          "minXpPerTile": "number",
+          "mission": "number",
+          "missionIndex": "number",
+          "teamSizeMax": "number",
+          "teamSizeMin": "number",
+          "theme": "string",
+          "todIndex": "number",
+          "unlocked": "bool"
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-26T18:37:11.971051Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 65226,
+      "method": "GET",
+      "path": "/account/data",
+      "query": {},
+      "headers": {
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -151,32 +699,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:40:12.151904Z",
+      "timestamp": "2026-10-26T18:37:11.972989Z",
       "client_ip": "127.0.0.1",
-      "client_port": 57511,
+      "client_port": 65227,
       "method": "GET",
       "path": "/bcg/getLoginData",
-      "query": {
-        "sig": [
-          "+aaEh9YsnKils17cE7+yvTTPksU="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "6"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964412"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -221,6 +754,10 @@
           "arcee_gs_deluxe2014": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -280,6 +817,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -297,6 +837,10 @@
           "barricade_cin_dotm": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -356,6 +900,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -373,6 +920,10 @@
           "blaster_gs_leader2016": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -432,6 +983,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -449,6 +1003,10 @@
           "bludgeon_gs_rd20": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -508,6 +1066,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -525,6 +1086,10 @@
           "bonecrusher_cin_rotf": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -584,6 +1149,92 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
+            "synergy_bonuses": [
+              "list",
+              "string"
+            ],
+            "t": [
+              "list",
+              "string"
+            ],
+            "tags": [
+              "list",
+              "string"
+            ],
+            "victory_stage": "string"
+          },
+          "bumblebee_cin_dotm": {
+            "attack_bonus": "number",
+            "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
+            "bcg_curve_values": {
+              "attack": "string",
+              "health": "string"
+            },
+            "blueprint": "string",
+            "character": "string",
+            "cl": "number",
+            "class": "number",
+            "entity_type": "string",
+            "et": "string",
+            "evo_blueprint": "string",
+            "fcpg": "string",
+            "fgr": "number",
+            "fhpag": "string",
+            "forge_cp_growth": "string",
+            "forge_growth_rate": "number",
+            "forge_hp_atk_growth": "string",
+            "friendly_name": "string",
+            "friendly_name_short": "string",
+            "gachaFeaturedImg": "string",
+            "gacha_reveal": "string",
+            "gg": "number",
+            "gold_generation": "number",
+            "hero_class": "number",
+            "hero_colour": "string",
+            "id": "string",
+            "imgID": "string",
+            "m": "string",
+            "map_asset": "string",
+            "max_forge_level": "number",
+            "max_rank": "number",
+            "max_special_attacks": "number",
+            "mfl": "number",
+            "model": "string",
+            "modelAsset": "string",
+            "modelID": "string",
+            "modelId": "string",
+            "model_asset": "string",
+            "model_id": "string",
+            "next_forge_rank": "number",
+            "nfr": "number",
+            "rarity": "number",
+            "redeemer_base": [
+              "list"
+            ],
+            "s3GachaFeaturedImg": "bool",
+            "s3imgID": "bool",
+            "special_1_damage": "number",
+            "special_2_damage": "number",
+            "special_3_damage": "number",
+            "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -601,6 +1252,10 @@
           "bumblebee_cin_dotm_2": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -660,6 +1315,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -677,6 +1335,10 @@
           "bumblebee_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -736,6 +1398,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -753,6 +1418,10 @@
           "cheetor_bw_transmetal": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -812,6 +1481,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -829,6 +1501,10 @@
           "cliffjumper_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -888,6 +1564,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -905,6 +1584,10 @@
           "cyclonus_gs_uw06": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -964,6 +1647,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -981,6 +1667,10 @@
           "dinobot_bw_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1040,6 +1730,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1057,6 +1750,10 @@
           "dirge_gs_deluxe2008": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1116,6 +1813,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1133,6 +1833,10 @@
           "drift_cin_aoe": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1192,6 +1896,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1209,6 +1916,10 @@
           "galvatron_gs_voyager2016": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1268,6 +1979,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1285,6 +1999,10 @@
           "grimlock_gs_mp08": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1344,6 +2062,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1361,6 +2082,10 @@
           "grindor_cin_rotf": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1420,6 +2145,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1437,6 +2165,10 @@
           "hotrod_cin_tlk": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1496,6 +2228,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1513,6 +2248,10 @@
           "hound_cin_tlk": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1572,6 +2311,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1589,6 +2331,10 @@
           "ironhide_cin_rotf": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1648,6 +2394,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1665,6 +2414,10 @@
           "ironhide_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1724,6 +2477,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1741,6 +2497,10 @@
           "jazz_gs_twm05": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1800,6 +2560,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1817,6 +2580,10 @@
           "jetfire_gs_leader2014": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1876,6 +2643,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1893,6 +2663,10 @@
           "kickback_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -1952,6 +2726,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -1969,6 +2746,10 @@
           "megatron_cin_rotf": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2028,6 +2809,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2045,6 +2829,10 @@
           "megatron_gs_leader2015": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2104,6 +2892,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2121,6 +2912,10 @@
           "megatronus_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2180,6 +2975,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2197,6 +2995,10 @@
           "mirage_gs_deluxe2016": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2256,6 +3058,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2273,6 +3078,10 @@
           "mixmaster_cin_rotf": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2332,6 +3141,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2349,6 +3161,10 @@
           "motormaster_gs_voyager2015": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2408,6 +3224,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2425,6 +3244,10 @@
           "necrotronus_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2484,6 +3307,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2501,6 +3327,10 @@
           "nemesisprime_gs_voyager2015": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2560,6 +3390,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2577,6 +3410,10 @@
           "optimus_c_tf_t3": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2636,6 +3473,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2653,6 +3493,10 @@
           "optimusprimal_bw_mp32": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2712,6 +3556,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2729,6 +3576,10 @@
           "optimusprime_cin_tf": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2788,6 +3639,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2805,6 +3659,10 @@
           "prowl_gs_deluxe2016": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2864,6 +3722,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2881,6 +3742,10 @@
           "ramjet_gs_deluxe2008": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -2940,6 +3805,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -2957,6 +3825,10 @@
           "ratchet_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3016,6 +3888,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -3033,6 +3908,10 @@
           "rhinox_gs_voyager2014": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3092,6 +3971,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -3109,6 +3991,10 @@
           "rodimusprime_gs_mp09": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3168,6 +4054,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -3185,6 +4074,10 @@
           "scorponok_bw_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3244,6 +4137,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -3261,6 +4157,10 @@
           "sharkticon_gs_brawler": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3320,6 +4220,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list"
             ],
@@ -3336,6 +4239,10 @@
           "sharkticon_gs_demolition": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3395,6 +4302,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list"
             ],
@@ -3411,6 +4321,10 @@
           "sharkticon_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3470,6 +4384,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list"
             ],
@@ -3486,6 +4403,10 @@
           "sharkticon_gs_scout": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3545,6 +4466,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list"
             ],
@@ -3561,6 +4485,10 @@
           "sharkticon_gs_tactician": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3620,6 +4548,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list"
             ],
@@ -3636,6 +4567,10 @@
           "sharkticon_gs_tech": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3695,6 +4630,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list"
             ],
@@ -3711,6 +4649,10 @@
           "sharkticon_gs_warrior": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3770,6 +4712,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list"
             ],
@@ -3786,6 +4731,10 @@
           "shockwave_gs": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3845,6 +4794,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -3862,6 +4814,10 @@
           "sideswipe_gs": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3921,6 +4877,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -3938,6 +4897,10 @@
           "skywarp_gs_leader2015": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -3997,6 +4960,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4014,6 +4980,10 @@
           "slipstream_gs": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4073,6 +5043,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4090,6 +5063,10 @@
           "soundblaster_gs_mp13b": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4149,6 +5126,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4166,6 +5146,10 @@
           "soundwave_gs": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4225,6 +5209,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4242,6 +5229,10 @@
           "sunstreaker_gs_deluxe2008": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4301,6 +5292,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4318,6 +5312,10 @@
           "tantrum_gs_kabam": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4377,6 +5375,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4394,6 +5395,10 @@
           "thundercracker_gs_leader2015": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4453,6 +5458,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4470,6 +5478,10 @@
           "ultramagnus_gs_leader": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4529,6 +5541,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4546,6 +5561,10 @@
           "waspinator_gs_deluxe": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4605,6 +5624,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4622,6 +5644,10 @@
           "wheeljack_gs_mp20": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4681,6 +5707,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4698,6 +5727,10 @@
           "windblade_gs": {
             "attack_bonus": "number",
             "attribute_base_type": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
             "base_damage": [
               "list",
               "string"
@@ -4757,6 +5790,9 @@
             "special_2_damage": "number",
             "special_3_damage": "number",
             "stamina_regen": "string",
+            "synergyBonuses": [
+              "list"
+            ],
             "synergy_bonuses": [
               "list",
               "string"
@@ -4777,6 +5813,18 @@
         "characters": {
           "arcee_gs_deluxe2014": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -4805,6 +5853,18 @@
           },
           "barricade_cin_dotm": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -4833,6 +5893,18 @@
           },
           "blaster_gs_leader2016": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -4861,6 +5933,18 @@
           },
           "bludgeon_gs_rd20": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -4889,6 +5973,18 @@
           },
           "bonecrusher_cin_rotf": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -4917,6 +6013,18 @@
           },
           "bumblebee_cin_dotm": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -4945,6 +6053,18 @@
           },
           "bumblebee_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -4973,6 +6093,18 @@
           },
           "cheetor_bw_transmetal": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5001,6 +6133,18 @@
           },
           "cliffjumper_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5029,6 +6173,18 @@
           },
           "cyclonus_gs_uw06": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5057,6 +6213,18 @@
           },
           "dinobot_bw_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5085,6 +6253,18 @@
           },
           "dirge_gs_deluxe2008": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5113,6 +6293,18 @@
           },
           "drift_cin_aoe": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5141,6 +6333,18 @@
           },
           "galvatron_gs_voyager2016": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5169,6 +6373,18 @@
           },
           "grimlock_gs_mp08": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5197,6 +6413,18 @@
           },
           "grindor_cin_rotf": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5225,6 +6453,18 @@
           },
           "hotrod_cin_tlk": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5253,6 +6493,18 @@
           },
           "hound_cin_tlk": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5281,6 +6533,18 @@
           },
           "ironhide_cin_rotf": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5309,6 +6573,18 @@
           },
           "ironhide_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5337,6 +6613,18 @@
           },
           "jazz_gs_twm05": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5365,6 +6653,18 @@
           },
           "jetfire_gs_leader2014": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5393,6 +6693,18 @@
           },
           "kickback_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5421,6 +6733,18 @@
           },
           "megatron_cin_rotf": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5449,6 +6773,18 @@
           },
           "megatron_gs_leader2015": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5477,6 +6813,18 @@
           },
           "megatronus_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5505,6 +6853,18 @@
           },
           "mirage_gs_deluxe2016": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5533,6 +6893,18 @@
           },
           "mixmaster_cin_rotf": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5561,6 +6933,18 @@
           },
           "motormaster_gs_voyager2015": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5589,6 +6973,18 @@
           },
           "necrotronus_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5617,6 +7013,18 @@
           },
           "nemesisprime_gs_voyager2015": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5645,6 +7053,18 @@
           },
           "optimus_c_tf": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5673,6 +7093,18 @@
           },
           "optimusprimal_bw_mp32": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5701,6 +7133,18 @@
           },
           "optimusprime_cin_tf": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5729,6 +7173,18 @@
           },
           "prowl_gs_deluxe2016": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5757,6 +7213,18 @@
           },
           "ramjet_gs_deluxe2008": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5785,6 +7253,18 @@
           },
           "ratchet_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5813,6 +7293,18 @@
           },
           "rhinox_gs_voyager2014": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5841,6 +7333,18 @@
           },
           "rodimusprime_gs_mp09": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5869,6 +7373,18 @@
           },
           "scorponok_bw_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5897,6 +7413,18 @@
           },
           "sharkticon_gs_brawler": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5925,6 +7453,18 @@
           },
           "sharkticon_gs_demolition": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5953,6 +7493,18 @@
           },
           "sharkticon_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -5981,6 +7533,18 @@
           },
           "sharkticon_gs_scout": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6009,6 +7573,18 @@
           },
           "sharkticon_gs_tactician": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6037,6 +7613,18 @@
           },
           "sharkticon_gs_tech": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6065,6 +7653,18 @@
           },
           "sharkticon_gs_warrior": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6093,6 +7693,18 @@
           },
           "shockwave_gs": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6121,6 +7733,18 @@
           },
           "sideswipe_gs": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6149,6 +7773,18 @@
           },
           "skywarp_gs_leader2015": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6177,6 +7813,18 @@
           },
           "slipstream_gs": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6205,6 +7853,18 @@
           },
           "soundblaster_gs_mp13b": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6233,6 +7893,18 @@
           },
           "soundwave_gs": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6261,6 +7933,18 @@
           },
           "sunstreaker_gs_deluxe2008": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6289,6 +7973,18 @@
           },
           "tantrum_gs_kabam": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6317,6 +8013,18 @@
           },
           "thundercracker_gs_leader2015": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6345,6 +8053,18 @@
           },
           "ultramagnus_gs_leader": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6373,6 +8093,18 @@
           },
           "waspinator_gs_deluxe": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6401,6 +8133,18 @@
           },
           "wheeljack_gs_mp20": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -6429,6 +8173,18 @@
           },
           "windblade_gs": {
             "ai_personality": "string",
+            "baseRangedDamageType": [
+              "list",
+              "string"
+            ],
+            "base_damage": [
+              "list",
+              "string"
+            ],
+            "base_ranged_damage": [
+              "list",
+              "string"
+            ],
             "faction": "number",
             "friendly_name": "string",
             "generation": "string",
@@ -20144,29 +21900,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:40:12.649026Z",
+      "timestamp": "2026-10-26T18:37:11.987191Z",
       "client_ip": "127.0.0.1",
-      "client_port": 57511,
+      "client_port": 65228,
       "method": "GET",
       "path": "/tuning",
-      "query": {
-        "sig": [
-          "R249v19dgDws8Zp07ln9qTZzWLg="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964412"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -20186,32 +21930,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:40:14.155614Z",
+      "timestamp": "2026-10-26T18:37:11.993804Z",
       "client_ip": "127.0.0.1",
-      "client_port": 57511,
+      "client_port": 65231,
       "method": "GET",
       "path": "/quests/quest-list",
-      "query": {
-        "sig": [
-          "LCcFipO5yJ9EtHKjjjApwhIUwyY="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "11"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964414"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -20812,41 +22541,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-25T21:40:14.563997Z",
+      "timestamp": "2026-10-26T18:37:12.009765Z",
       "client_ip": "127.0.0.1",
-      "client_port": 57511,
+      "client_port": 65232,
       "method": "GET",
       "path": "/quests/quest-active",
-      "query": {
-        "categories.1": [
-          "AvE"
-        ],
-        "categories.0": [
-          "PvE"
-        ],
-        "categories.2": [
-          "AvA"
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "11"
-        ],
-        "sig": [
-          "8oUWezqH/sCmMjNA2UItydey29k="
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964414"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -20859,633 +22564,6 @@
         "instances": [
           "list"
         ]
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-25T21:40:15.584980Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 57511,
-      "method": "GET",
-      "path": "/quests/quest-progression",
-      "query": {
-        "sig": [
-          "BurM0dPvdWlAbdSArf/aGqTDmJ0="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "11"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964415"
-        ]
-      },
-      "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": ""
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "Story": {
-          "story_act1_ch1_m1": {
-            "cleared": [
-              "list"
-            ],
-            "completed": "bool",
-            "mastered": "bool",
-            "unlocked": "bool",
-            "visibleClearedCount": "number"
-          }
-        },
-        "ave": {},
-        "pve": {}
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-25T21:40:56.922623Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 57511,
-      "method": "POST",
-      "path": "/quests/quest-begin/story_act1_ch4_m2",
-      "query": {
-        "sig": [
-          "Ffg4MbbGoJHgxhaNiuHpAIAVeAs="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964456"
-        ]
-      },
-      "headers": {
-        "Content-Type": "application/json",
-        "Content-Length": "128",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": {
-        "quitExisting": true,
-        "nonce": "6ade77686911bc4d193f000d",
-        "hash": "v1",
-        "api": 11,
-        "setId": "story_act_1",
-        "tm0": "bumblebee_cin_dotm_2"
-      }
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "activeQuests": {
-          "story_act1_ch4_m2": {
-            "category": "string",
-            "currentPosition": {
-              "x": "number",
-              "y": "number"
-            },
-            "data": {
-              "act": "number",
-              "actIndex": "number",
-              "category": "string",
-              "chapter": "number",
-              "chapterIndex": "number",
-              "description": "string",
-              "energyPerTile": "number",
-              "friendlyName": "string",
-              "id": "string",
-              "isDetailed": "bool",
-              "maxXpPerTile": "number",
-              "minXpPerTile": "number",
-              "mission": "number",
-              "missionIndex": "number",
-              "teamSizeMax": "number",
-              "teamSizeMin": "number",
-              "theme": "string",
-              "todIndex": "number",
-              "unlocked": "bool"
-            },
-            "expiryTime": "number",
-            "isFinished": "bool",
-            "map": {
-              "grid": [
-                "list",
-                "..."
-              ],
-              "gridDimension": "number",
-              "mapHash": "string",
-              "pathData": [
-                "list",
-                "..."
-              ],
-              "paths": [
-                "list",
-                "..."
-              ],
-              "visibleWalkableCount": "number",
-              "walkableCount": "number"
-            },
-            "mode": "string",
-            "phase": "number",
-            "playerPosition": {
-              "x": "number",
-              "y": "number"
-            },
-            "progression": {
-              "clearedTiles": [
-                "list",
-                "..."
-              ],
-              "currentTile": {
-                "x": "...",
-                "y": "..."
-              },
-              "percentComplete": "number"
-            },
-            "qid": "string",
-            "scaledBossTable": {
-              "enemy1": {
-                "aiPer": "...",
-                "aiString": "...",
-                "aiType": "...",
-                "baseType": "...",
-                "characters": "...",
-                "flvl": "...",
-                "hi": "...",
-                "isFinalBoss": "...",
-                "key": "...",
-                "level": "...",
-                "mapOverride": "...",
-                "rank": "...",
-                "sig_lvl": "...",
-                "todIndex": "...",
-                "type": "...",
-                "uid": "..."
-              }
-            },
-            "startTime": "number",
-            "team": {
-              "bumblebee_cin_dotm_2": {
-                "hp": "...",
-                "pi": "...",
-                "sig_lvl": "...",
-                "sig_mods": "...",
-                "stat_mods": "..."
-              }
-            },
-            "teamData": {
-              "deletes": {},
-              "updates": {
-                "activeTeams": "...",
-                "heroes": "...",
-                "inventory": "...",
-                "savedTeams": "..."
-              },
-              "userData": {
-                "blueprintsMax": "...",
-                "teamCountMax": "...",
-                "teamSizeMax": "..."
-              }
-            },
-            "uniqueId": "string"
-          }
-        }
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-25T21:40:59.297915Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 57511,
-      "method": "POST",
-      "path": "/quests/quest-detail/story_act1_ch4_m2",
-      "query": {
-        "sig": [
-          "/Y0CDSM24g/fWYHAw8hcKPFhl+8="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964459"
-        ]
-      },
-      "headers": {
-        "Content-Type": "application/json",
-        "Content-Length": "79",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": {
-        "hash": "v1",
-        "nonce": "6ade776b6911bc4d193f0010",
-        "api": 11,
-        "setId": "story_act_1"
-      }
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "map": {
-          "grid": [
-            "list",
-            [
-              "list",
-              {
-                "ab": "...",
-                "barrier": "...",
-                "bg": "...",
-                "bt": "...",
-                "final": "...",
-                "links": "...",
-                "position": "...",
-                "sockets": "...",
-                "start": "...",
-                "visibleLinks": "...",
-                "walkable": "..."
-              }
-            ]
-          ],
-          "gridDimension": "number",
-          "mapHash": "string",
-          "pathData": [
-            "list",
-            {
-              "path": [
-                "list",
-                "..."
-              ]
-            }
-          ],
-          "paths": [
-            "list",
-            {
-              "path": [
-                "list",
-                "..."
-              ],
-              "tiles": [
-                "list",
-                "..."
-              ]
-            }
-          ],
-          "visibleWalkableCount": "number",
-          "walkableCount": "number"
-        },
-        "scaledBossTable": {
-          "enemy1": {
-            "aiPer": "string",
-            "aiString": "string",
-            "aiType": "number",
-            "baseType": "string",
-            "characters": [
-              "list",
-              "string"
-            ],
-            "flvl": "number",
-            "hi": [
-              "list"
-            ],
-            "isFinalBoss": "bool",
-            "key": "string",
-            "level": "number",
-            "mapOverride": "string",
-            "rank": "number",
-            "sig_lvl": "number",
-            "todIndex": "number",
-            "type": "string",
-            "uid": "string"
-          }
-        },
-        "summary": {
-          "act": "number",
-          "actIndex": "number",
-          "category": "string",
-          "chapter": "number",
-          "chapterIndex": "number",
-          "description": "string",
-          "energyPerTile": "number",
-          "friendlyName": "string",
-          "id": "string",
-          "isDetailed": "bool",
-          "maxXpPerTile": "number",
-          "minXpPerTile": "number",
-          "mission": "number",
-          "missionIndex": "number",
-          "teamSizeMax": "number",
-          "teamSizeMin": "number",
-          "theme": "string",
-          "todIndex": "number",
-          "unlocked": "bool"
-        }
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-25T21:41:17.673350Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 57511,
-      "method": "POST",
-      "path": "/quests/quest-movedir/story_act1_ch4_m2/1/0",
-      "query": {
-        "sig": [
-          "mriGkzP+ICK5Oq5tTs4XEf675F4="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1792964477"
-        ]
-      },
-      "headers": {
-        "Content-Type": "application/json",
-        "Content-Length": "45",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": {
-        "api": 11,
-        "nonce": "6ade777d6911bc4d193f0012"
-      }
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "currentPosition": {
-          "x": "number",
-          "y": "number"
-        },
-        "currentTile": {
-          "x": "number",
-          "y": "number"
-        },
-        "playerPosition": {
-          "x": "number",
-          "y": "number"
-        },
-        "progression": {
-          "cleared": [
-            "list",
-            {
-              "x": "number",
-              "y": "number"
-            }
-          ],
-          "clearedTiles": [
-            "list",
-            {
-              "x": "number",
-              "y": "number"
-            }
-          ],
-          "currentBattleBossId": "string",
-          "currentBattleEnemy": {
-            "aiPer": "string",
-            "aiString": "string",
-            "aiType": "number",
-            "baseType": "string",
-            "characters": [
-              "list",
-              "string"
-            ],
-            "flvl": "number",
-            "hi": [
-              "list"
-            ],
-            "id": "string",
-            "isFinalBoss": "bool",
-            "key": "string",
-            "level": "number",
-            "mapOverride": "string",
-            "rank": "number",
-            "sig_lvl": "number",
-            "todIndex": "number",
-            "type": "string",
-            "uid": "string"
-          },
-          "currentBattleEnemyHealth": "number",
-          "currentBattleId": "string",
-          "currentBattlePos": {
-            "x": "number",
-            "y": "number"
-          },
-          "currentFightId": "string",
-          "currentPos": {
-            "x": "number",
-            "y": "number"
-          },
-          "currentPosition": {
-            "x": "number",
-            "y": "number"
-          },
-          "currentTile": {
-            "x": "number",
-            "y": "number"
-          },
-          "percentComplete": "number",
-          "playerPosition": {
-            "x": "number",
-            "y": "number"
-          },
-          "previouslyCleared": [
-            "list"
-          ],
-          "revealed": [
-            "list"
-          ],
-          "users": {
-            "10001": {
-              "battleLockExpiry": "number",
-              "currentBattleId": "string",
-              "currentBattlePos": {
-                "x": "...",
-                "y": "..."
-              },
-              "currentBattleState": "number",
-              "currentPos": {
-                "x": "...",
-                "y": "..."
-              },
-              "name": "string",
-              "state": "number",
-              "strongestHero": "string",
-              "tag": "string",
-              "team": {
-                "bumblebee_cin_dotm": "..."
-              },
-              "uid": "string",
-              "usedConsumableCount": "number"
-            }
-          },
-          "version": "number"
-        },
-        "results": [
-          "list",
-          {
-            "action": {
-              "moveto": {
-                "x": "...",
-                "y": "..."
-              }
-            }
-          }
-        ],
-        "teamData": {
-          "deletes": {},
-          "updates": {
-            "activeTeams": {
-              "Story": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "active_quest_1001": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "story": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "story_act1_ch1_m1": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "story_act_1": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              }
-            },
-            "heroes": [
-              "list",
-              {
-                "armor": "...",
-                "attack": "...",
-                "attributeData": "...",
-                "bid": "...",
-                "block_proficiency": "...",
-                "blueprint": "...",
-                "crit_chance": "...",
-                "crit_damage": "...",
-                "entity_type": "...",
-                "exc": "...",
-                "hero": "...",
-                "hero_rating_attack": "...",
-                "hero_rating_hp": "...",
-                "hp": "...",
-                "id": "...",
-                "level": "...",
-                "mana_gain": "...",
-                "mana_start": "...",
-                "max_hp": "...",
-                "max_xp": "...",
-                "modes": "...",
-                "modesAvail": "...",
-                "pi": "...",
-                "pvpb": "...",
-                "rank": "...",
-                "rating": "...",
-                "rating_attack": "...",
-                "rating_attack_base": "...",
-                "rating_hp": "...",
-                "rating_hp_base": "...",
-                "required_xp": "...",
-                "resist_magic": "...",
-                "resist_physical": "...",
-                "sig_lvl": "...",
-                "sig_mods": "...",
-                "special_attacks": "...",
-                "stamina": "...",
-                "staminaFullGrowthTime": "...",
-                "staminaNextGrowthTime": "...",
-                "stamina_full_ts": "...",
-                "stamina_ts": "...",
-                "stat_mods": "...",
-                "stt": "...",
-                "stun_chance": "...",
-                "stun_time": "...",
-                "synergyBonuses": "...",
-                "t": "...",
-                "tags": "...",
-                "teamTypes": "...",
-                "team_types": "...",
-                "uid": "..."
-              }
-            ],
-            "inventory": {
-              "bp": {},
-              "f": {},
-              "max": {}
-            },
-            "savedTeams": [
-              "list",
-              {
-                "heroes": "...",
-                "sid": "..."
-              }
-            ]
-          },
-          "userData": {
-            "blueprintsMax": "number",
-            "teamCountMax": "number",
-            "teamSizeMax": "number"
-          }
-        }
       },
       "ts": "number"
     }

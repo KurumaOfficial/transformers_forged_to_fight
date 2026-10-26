@@ -291,6 +291,32 @@ def main():
         provider_found = None
     mem = "" if args.no_memory else memory_probes()
 
+    # Post-activate battle milestones. These are deliberately xfail while
+    # PlayerAttributes.Init is blocked; they become real checks once fixed.
+    activate_idx = next((i for i, p in enumerate(new_paths)
+                         if p.startswith("/matches/activate-match")), None)
+    after_activate = new_paths[activate_idx + 1:] if activate_idx is not None else []
+    battle_checks = {
+        "match_loaded": any(p.startswith("/matches/match-loaded") for p in new_paths),
+        "fight_started": any(p.startswith("/matches/match-loaded") for p in new_paths),
+        "resolve_match": any(p.startswith("/matches/resolve-match") for p in new_paths),
+        "returned_to_map": any(p.startswith("/quests/quest-movedir") or p == "/base/active"
+                               for p in after_activate),
+    }
+    for check, expected in (
+        ("match_loaded", "client sends /matches/match-loaded after activate-match"),
+        ("fight_started", "fight scene passes PlayerAttributes.Init and starts the round"),
+        ("resolve_match", "client sends /matches/resolve-match after the fight"),
+        ("returned_to_map", "client returns to the quest map after the fight"),
+    ):
+        if not battle_checks[check]:
+            known_issues.append({
+                "id": f"K-00{3 + list(battle_checks).index(check)}-{check}",
+                "state": "open",
+                "expected": expected,
+                "actual": f"no {check} observed (battle blocked before this milestone)",
+            })
+
     if args.full:
         # Run the BOTS screens after the main flow so a slow BOTS scene load
         # cannot break the quest navigation.
@@ -331,6 +357,7 @@ def main():
             "provider_found": provider_found,
             "activate_match": key["activate_match"],
         },
+        "battle_checks": battle_checks,
         "known_issues": known_issues,
         "xfail_open": sum(1 for x in known_issues if x["state"] == "open"),
         "nre_get_new_scale": scale_nre,

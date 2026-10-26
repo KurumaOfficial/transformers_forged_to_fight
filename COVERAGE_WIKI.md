@@ -141,3 +141,13 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
 - R3/R4: `spec/ability_schema.md`, `data/wiki/ability_pilot.json`; raw
   `M1_SPECIAL_ATTACK_*` is not a retained localization key.
 - W1: 2/36 priority images; 34 still blocked.
+
+## 2026-10-26 Q3/R2/battle
+
+- Q3: `bumblebee_cin_dotm` -> `_2` for 3 quests; Act 4 I/II bosses from the
+  `Awaken and Corrupt` wiki revision (Bonecrusher, Jetfire, Bumblebee DOTM,
+  Blaster, Shockwave, Megatronus, Cheetor, Soundwave, Megatron,
+  Thundercracker, Megatronus; Starscream unavailable).
+- Boss gaps now 9, all Starscream (no 9.2.0 pack).
+- R2.1 formula decoded; server-side `rating_hp/rating_attack` still missing.
+- Battle init NRE fixed; combat loop next.

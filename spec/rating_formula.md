@@ -1,84 +1,100 @@
-# Hero rating formula — static findings (C2)
+# Rating formula — client static decode (R2.1)
 
-Status: **partial** `[STATIC]+[DERIVED]`; no runtime numeric validation yet.
+Source: `GameUtil.CalculateModifiedHeroRating` at `0xA4814C`
+(`dump.cs` TypeDefIndex unknown; RVA verified by disassembly). All labels
+`[STATIC]`; live weights `[CLIENT]` from `bcg_login_data.json` /
+`tuning_client_defaults.json`.
 
-## Entry point
+## Inputs
 
-`GameUtil.CalculateModifiedHeroRating` — RVA **0xA4814C**:
+The function reads a `BCGAttributeData` at `+0x70` (`HeroRatingHP`, int),
+`+0x74` (`HeroRatingAttack`, int), `+0x7C` (`HeroRatingAttackBase`, int) and
+`+0xA0` (`ClassPower`, float, from the TF specialization). It also reads a
+`BCGHeroClass` entry selected by `BCGBlueprintBase.HeroClass`:
+
+| config field | offset | use |
+|---|---:|---|
+| `AttackBonus` | `0x20` | multiplier when the contender is ideal |
+| `AttackPenalty` | `0x24` | multiplier otherwise |
+
+`BCGManagerBase` instance weights:
+
+| key | offset | value |
+|---|---:|---:|
+| `heroRatingMaxHPWeight` | `+0x108` | **0.2** |
+| `heroRatingAttackWeight` | `+0x10C` | **1.0** |
+| `ratingPrecision` | `+0x110` | **1.0** |
+
+(The offsets are the three consecutive float reads at `0xA48264`,
+`0xA4834C`, `0xA485B8`; the symbolic names follow the only consecutive
+rating weights in `BCGManagerBase` and the key values in the login payload.
+The exact field-name-to-offset order is `[ASSUMED]` until a live read is
+recorded, but the values 0.2/1.0/1.0 are known from the payload.)
+
+Function arguments:
+
+- `x20` — `BCGAttributeData` (rating fields above)
+- `x21`, `x23` — two `BCGBlueprintBase` objects (self/opponent)
+- `x22` — optional `BCGAttributeData` supplying `ClassPower`
+- `w19` — bool gate for the weight branch
+- `s8` — float rating modifier (0 = unmodified)
+
+## Operation order
 
 ```
-CalculateModifiedHeroRating(
-    BCGBlueprintBase targetBlueprint,
-    BCGBlueprintBase opponentBlueprint,
-    BCGAttributeData targetAttributes,
-    BCGAttributeData opponentAttributes,
-    float healthPct = 1,
-    bool useSelectionBias = false)
+hp        = (float)attributes.HeroRatingHP
+atk       = (float)attributes.HeroRatingAttack
+atkBase   = (float)attributes.HeroRatingAttackBase
+classPwr  = attributes.ClassPower            // or 1.0 if x22 is null
+classCfG  = heroClasses[blueprint.HeroClass]
+bonus     = classCfg.AttackBonus             // ideal branch
+penalty   = classCfg.AttackPenalty           // non-ideal branch
+
+// branch 1: IsIdealContender(self, opponent) == true
+extra = atkBase * bonus * classPwr * heroRatingAttackWeight
+
+// branch 2: otherwise
+extra = atkBase * penalty * classPwr * ratingPrecision
+
+// common tail (0xA48728)
+hpPart = hp * (1.0 - modifier * heroRatingMaxHPWeight)
+rating = hpPart + atk + extra
+return Mathf.CeilToInt(rating)
 ```
 
-The method reads target attributes at `+0x70` (HP rating), `+0x74` (attack
-rating), `+0x7c`, `+0xa0`, and class/manager data. It calls
-`BCGManager.get_Instance()` and reads weights at manager instance
-`+0x108` and `+0x10c`. The dump names these properties:
+`Mathf.CeilToInt` is `0x1B58158` (`Gradient::public static int CeilToInt` in
+the call map; the symbol is a generic-sharing thunk). There is **no**
+`pow`, `sqrt`, or `RoundToInt` in the function. All arithmetic is float32;
+the final conversion is ceiling to int.
 
-- `BCGManagerBase.heroRatingAttackWeight`
-- `BCGManagerBase.heroRatingMaxHPWeight`
-- `BCGManagerBase.ratingPrecision`
+## What the client does *not* do
 
-`server/data/tuning_data.json` currently supplies:
+The function never reads raw `HPMax` or `Attack`. `HeroRatingHP`,
+`HeroRatingAttack` and `HeroRatingAttackBase` are **server-provided** fields
+(`BCGAttributeData`), so the retail rating depends on the original server's
+rating computation. The stub currently fills them with placeholders
+(`rating_hp = int(hp*0.1)`, `rating_attack = int(atk*0.5)` in
+`/bcg/getBaseHeroData`), which is why the UI rating is not the wiki rating.
 
-```json
-{"heroRatingAttackWeight": 1.0, "heroRatingMaxHPWeight": 0.2,
- "sigLvlMax": 100, "ratingPrecision": 0}
-```
+## Consequences for R2.2/R2.3
 
-These four values are the only ones marked `[CLIENT]` in
-`server/data/tuning_client_defaults.json`; they are **defaults/placeholders**
-until a full TuningManager field scan is done.
+- Fit the **server-side rating inputs** (`rating_hp`, `rating_attack`,
+  `rating_attack_base`) from wiki rows, not the raw HP/ATK directly.
+- If the wiki "Rating" is exactly `rating_hp + rating_attack` (plus a class
+  bonus when the opponent is an ideal contender), the integer-exact test
+  should be done on those inputs.
+- The wiki star rows (`data/wiki/rating_rows.json`, 142 rows) have no
+  rank/level, so they can only validate the final sum; the 236 rank/level
+  rows are the primary fit set.
 
-## Shape of the arithmetic
+## Tests
 
-At `0xA48728`–`0xA48744` the final expression is:
+`tests/test_rating_formula.py` implements the function above and asserts:
 
-```text
-hpPart   = float(HP_rating) - (1 - healthPct) * float(HP_rating) * maxHPWeight
-attackPart = classAttackBonus * baseAttack * attackModifier * attackWeight
-raw      = hpPart + attackPart
-rating   = CeilToInt(raw)
-```
+1. `modifier = 0`, `extra = 0` -> `ceil(hp + atk)`.
+2. `modifier = 1`, `heroRatingMaxHPWeight = 0.2` -> `ceil(0.8*hp + atk)`.
+3. ideal/non-ideal branch uses `AttackBonus`/`AttackPenalty` respectively.
+4. no rounding before the final `ceil`.
 
-The exact binding of the middle operands (`[targetAttributes+0x7c]`,
-`[targetAttributes+0xa0]`, `[classData+0x20]`) is not proven; treat the
-pseudocode as `[DERIVED]`, not a final formula. The `CeilToInt` call and the
-health-percentage subtraction are directly observed.
-
-## Cross-check material
-
-Wiki pages carry `Max Rating` for 2★–4★ (for example Bumblebee:
-2★ 566, 3★ 1,299, 4★ 3,499). Those values can bound the formula once
-`HeroRatingHP`/`HeroRatingAttack` for the same bot/rank are dumped. Until then
-they are only a monotonic sanity check, not a derivation.
-
-## What is still needed
-
-- A runtime dump of `BCGAttributeData` fields `+0x70/+0x74/+0x7c/+0xa0`.
-- The actual `heroRatingAttackWeight`/`heroRatingMaxHPWeight` from
-  `/tuning` or TuningManager, not the stub defaults.
-- `ratingPrecision` semantics (rounding/truncation) and whether
-  `useSelectionBias` changes the weight.
-
-## R2 attempt (2026-10-25): simple operand fits
-
-15 wiki bots have star-1 HP/ATK/Max Rating (14 after excluding the
-`Soundblaster` typo row with HP=1.009). A linear fit
-`rating = a*HP + b*ATK + c` gives
-`a=-0.0149, b=0.1649, c=257.24`, RMSE 7.77 (errors -10.8..+10.8).
-The coefficient on HP is effectively zero/negative, which contradicts the
-catalog's `heroRatingMaxHPWeight=0.2`; the simple operand binding is therefore
-wrong.
-
-`CalculateModifiedHeroRating` (`0xA4814C`) uses `IsIdealContender` selection
-bias and BCG manager lookups before applying weights; the exact modified
-attributes/selection-bias branch are not reproduced. R2 remains **partial**:
-the fit is in `work/rating_fit.py`, but it is not the client formula and must
-not be used to replace wiki Max Rating.
+The test is a direct transcription of the disassembly; it is not a claim that
+the stub's current `rating_hp/rating_attack` values are correct.

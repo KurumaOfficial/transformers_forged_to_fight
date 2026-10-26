@@ -266,3 +266,23 @@ is null in the loaded character prefab, or a real activate-match response.
 - R1: 37 WIKI / 22 ASSUMED; R2 rows built but not integer-exact.
 - R3: `M1_SPECIAL_ATTACK_*` not found in retained assets; needs external table.
 - T1: quest routing split done; T2/T3 done; backup/nightly scripts added.
+
+## 2026-10-26 battle init resolved / next blocker
+
+- **RESOLVED:** `PlayerAttributes.Init` `ArgumentNullException` was
+  `BaseRangedDamageType` (null) passed to `DamageType..ctor`, which tail-calls
+  `HashSet<string>..ctor`. Fixed with non-null damage-type lists in blueprints
+  and characters; `bumblebee_cin_dotm` alias added. Battle reaches
+  `BattleArbiterMainState` with two fighters.
+- **OPEN:** The player stays at `BCGAttributeData.HP = 1.0` (HPMax 1050) while
+  the enemy attacks; the hit-react loop does not end, no death, no
+  `resolve-match`, no rewards, no return to map. Suspects: minimum-HP stat,
+  missing animation event, or the server `hp`/`attributes` shape.
+- **OPEN:** `HeroData.Create - blueprint 'bumblebee_cin_dotm' does not exist`
+  was fixed by an alias, but the client still logs other null character data
+  during prefight; verify the UI.
+- **OPEN:** `/matches/match-loaded` is not sent for quests_fight; determine
+  whether it is PvP-only or required for quest resolution.
+- **OPEN:** 9 Starscream boss gaps remain; no 9.2.0 character pack.
+- **OPEN:** R2 server-side `HeroRatingHP/Attack` formula still not derived;
+  client combination formula is now exact.

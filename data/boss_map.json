@@ -11,7 +11,7 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "story_act1_ch1_m3": {
   "name": "Me Have Mod",
@@ -65,9 +65,9 @@
  "story_act1_ch2_m4": {
   "name": "A Scout No More",
   "boss": "Dark of the Moon Bumblebee",
-  "boss_client_id": "bumblebee_cin_dotm",
+  "boss_client_id": "bumblebee_cin_dotm_2",
   "match": "ambiguous",
-  "reason": "id_map match: Bumblebee (DOTM) (high (manual variant/base))"
+  "reason": "id_map match: Bumblebee (DOTM) (high (manual variant/base)); fixed: blueprint variant _2 (bumblebee_cin_dotm -> bumblebee_cin_dotm_2)"
  },
  "story_act1_ch2_m5": {
   "name": "Loyalty Points",
@@ -116,7 +116,7 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "story_act1_ch3_m6": {
   "name": "School the Sharks",
@@ -151,7 +151,7 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "story_act1_ch4_m5": {
   "name": "Optimum Outcome",
@@ -186,7 +186,7 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "story_act2_ch1_m4": {
   "name": "Scout's Honor",
@@ -228,7 +228,7 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "story_act2_ch2_m4": {
   "name": "Origins",
@@ -284,7 +284,7 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "story_act2_ch3_m6": {
   "name": "No Petty Relic",
@@ -324,9 +324,9 @@
  "story_act2_ch4_m5": {
   "name": "Assurance",
   "boss": "Dark of the Moon Bumblebee",
-  "boss_client_id": "bumblebee_cin_dotm",
+  "boss_client_id": "bumblebee_cin_dotm_2",
   "match": "ambiguous",
-  "reason": "id_map match: Bumblebee (DOTM) (high (manual variant/base))"
+  "reason": "id_map match: Bumblebee (DOTM) (high (manual variant/base)); fixed: blueprint variant _2 (bumblebee_cin_dotm -> bumblebee_cin_dotm_2)"
  },
  "story_act2_ch4_m6": {
   "name": "And Then There Were Five",
@@ -375,91 +375,91 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "story_act4_ch1_m1": {
   "name": "Wrong Place, Wrong Time",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Bonecrusher",
+  "boss_client_id": "bonecrusher_cin_rotf",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Bonecrusher"
  },
  "story_act4_ch1_m2": {
   "name": "Fight Fire with Fire",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Jetfire",
+  "boss_client_id": "jetfire_gs_leader2014",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Jetfire"
  },
  "story_act4_ch1_m3": {
   "name": "Blast from the Past",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Bumblebee (DOTM)",
+  "boss_client_id": "bumblebee_cin_dotm_2",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Bumblebee (DOTM)"
  },
  "story_act4_ch1_m4": {
   "name": "Mixed Messages",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Blaster",
+  "boss_client_id": "blaster_gs_leader2016",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Blaster"
  },
  "story_act4_ch1_m5": {
   "name": "Herald of Destruction",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Shockwave",
+  "boss_client_id": "shockwave_gs",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Shockwave"
  },
  "story_act4_ch1_m6": {
   "name": "Dark Arrival",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Megatronus",
+  "boss_client_id": "megatronus_gs_kabam",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Megatronus"
  },
  "story_act4_ch2_m1": {
   "name": "Fuel",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Cheetor",
+  "boss_client_id": "cheetor_bw_transmetal",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Cheetor"
  },
  "story_act4_ch2_m2": {
   "name": "Fire",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Soundwave",
+  "boss_client_id": "soundwave_gs",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Soundwave"
  },
  "story_act4_ch2_m3": {
   "name": "Desire",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Megatron",
+  "boss_client_id": "megatron_gs_leader2015",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Megatron"
  },
  "story_act4_ch2_m4": {
   "name": "Burn",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Thundercracker",
+  "boss_client_id": "thundercracker_gs_leader2015",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Thundercracker"
  },
  "story_act4_ch2_m5": {
   "name": "Face",
-  "boss": null,
+  "boss": "Starscream",
   "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Starscream; no 9.2.0 pack"
  },
  "story_act4_ch2_m6": {
   "name": "Upon the Chrome",
-  "boss": null,
-  "boss_client_id": null,
-  "match": null,
-  "reason": "no boss name on wiki"
+  "boss": "Megatronus",
+  "boss_client_id": "megatronus_gs_kabam",
+  "match": "wiki_act4",
+  "reason": "[WIKI] Awaken and Corrupt revision: Megatronus"
  },
  "awaken_ch1_m1": {
   "name": "Wrong Pace, Wrong Time",
@@ -478,9 +478,9 @@
  "awaken_ch1_m3": {
   "name": "Blast From The Past",
   "boss": "Bumblebee (DOTM)",
-  "boss_client_id": "bumblebee_cin_dotm",
+  "boss_client_id": "bumblebee_cin_dotm_2",
   "match": "ambiguous",
-  "reason": "id_map match: Bumblebee (DOTM) (high (manual variant/base))"
+  "reason": "id_map match: Bumblebee (DOTM) (high (manual variant/base)); fixed: blueprint variant _2 (bumblebee_cin_dotm -> bumblebee_cin_dotm_2)"
  },
  "awaken_ch1_m4": {
   "name": "Mixed Messages",
@@ -536,7 +536,7 @@
   "boss": "Starscream",
   "boss_client_id": null,
   "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants)"
+  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id"
  },
  "awaken_ch2_m6": {
   "name": "Upon The Chrome",

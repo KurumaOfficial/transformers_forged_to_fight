@@ -207,3 +207,14 @@ status. T5 is MASTER_PROMPT v4.3.
 | R1 coverage | partial | 37 WIKI / 22 ASSUMED + uncertainty |
 | R2 rows/regression | partial | 236/142 rows; non-integer fit |
 | Ability schema | partial | core fields/RVAs + raw-id source blocked |
+
+## 2026-10-26 battle start / R2
+
+| Area | Level | Basis |
+|---|---|---|
+| Battle init | **passes** | no NRE; `BattleArbiterMainState`, 2 fighters spawned |
+| Combat loop | blocked | player HP 1.0, hit-react never ends |
+| Match resolve/rewards | not observed | no resolve-match |
+| Rating client formula | **exact** | `spec/rating_formula.md`, 6 tests |
+| Boss ids | improved | 81/90; 9 Starscream gaps |
+| Smoke xfails | honest | battle_checks + open known_issues |

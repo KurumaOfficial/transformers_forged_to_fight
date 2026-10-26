@@ -570,3 +570,50 @@ recorded request pair changed. New golden: 9/9 PASS. Unit tests: 19/19 PASS
   template's barricade until the exact Entity fields are mapped.
 - Emulator watchdog added (`work/emulator_watchdog.py`), with check/ensure/
   restart/wipe/snapshot and smoke/run_variant integration.
+
+### 28. 2026-10-26 battle init NRE root cause (BaseRangedDamageType)
+
+- `[STATIC]` `DamageType..ctor(List<string>)` at `0xBB0B70` tail-calls
+  `HashSet<string>..ctor(IEnumerable<string>)` at `0x12A9D94`. The list is
+  `BCGBlueprintBase.BaseRangedDamageType` (0x98). It was null for both
+  Bumblebee and Sideswipe; the visible stack was `HashSet..ctor <-
+  PlayerAttributes.Init` because the `DamageType` frame was tail-called away.
+  The `Tags` HashSet at `0xDAC198` was not the failure.
+- `[RUN]` Null-safe `base_damage`/`base_ranged_damage` +
+  `baseRangedDamageType` added to all blueprints and characters; a
+  `bumblebee_cin_dotm` blueprint alias added because `HeroData.Create` logged
+  the missing id.
+- `[RUN]` After the fix: no `ArgumentNullException`; `BattleArbiter._state` =
+  `BattleArbiterMainState`; `_fighters` length 2; player in
+  `PlayerHitReactState`, enemy in `PlayerAttackState`/`PlayerNewHeavyAttackState`.
+- `[RUN]` No `/matches/match-loaded` or `resolve-match` for this quest fight.
+  Player `BCGAttributeData.HP` reads 1.0 (HPMax 1050), enemy 1000; the hit-react
+  loop does not finish. Next blocker: state/animation or minimum-HP.
+- Evidence: `docs/battle_started.md`, `work/probe_fightdata.py`,
+  `work/dump_battlearbiter.py`, `work/after_fix2.png` (outside git).
+
+### 29. 2026-10-26 Q3/R2/smoke additions
+
+- `[RUN]` Boss ids fixed to real blueprints: `bumblebee_cin_dotm` ->
+  `bumblebee_cin_dotm_2` for 3 quests; Act 4 I/II bosses filled from
+  `Awaken and Corrupt` wiki revision (11 mapped, Starscream has no 9.2.0 pack).
+  `boss_gaps.json` reduced from 20 to 9 (all Starscream).
+- `[STATIC]` R2 formula decoded: `Mathf.CeilToInt(HeroRatingHP * (1 - mod *
+  heroRatingMaxHPWeight) + HeroRatingAttack + HeroRatingAttackBase *
+  classWeight * ClassPower * attackWeight)`; weights 0.2/1.0 from
+  `BCGManagerBase`; ideal branch uses `BCGHeroClass.AttackBonus`, otherwise
+  `AttackPenalty`. `spec/rating_formula.md`, `tests/test_rating_formula.py`.
+- `[RUN]` Smoke now emits `battle_checks` and open xfails for `match_loaded`,
+  `fight_started`, `resolve_match`, `returned_to_map`; it no longer prints
+  "all resolved" when the battle is blocked.
+
+### 30. Golden re-record after battle/quest data fix (2026-10-26)
+
+Intentional shape changes: `/bcg/getLoginData` blueprints/characters now carry
+`base_damage`, `base_ranged_damage`, `baseRangedDamageType`, and the
+`bumblebee_cin_dotm` alias; `/bcg/getBaseHeroData` carries `hp`/`hp_max`/
+`attributeData`; `/quests/quest-begin` team entries carry blueprint/tags/rank/
+level and the 3 Bumblebee boss ids moved to `_2`; Act 4 I/II bosses were filled.
+Golden re-recorded with `python work/golden_regression.py --record`, then 9/9
+PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
+(`match_loaded`, `fight_started`, `resolve_match`, `returned_to_map`).

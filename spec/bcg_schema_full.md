@@ -26,7 +26,7 @@ live memory. Keys marked `[RUN]` were observed on the wire or in memory.
 | GachaReveal | 0x80 | `gacha_reveal` | string | empty |
 | StaminaRegen | 0x88 | `stamina_regen` | string | empty |
 | BaseDamageType | 0x90 | `base_damage` | list<string> | null/empty |
-| BaseRangedDamageType | 0x98 | `base_ranged_damage` | list<string> | null/empty |
+| BaseRangedDamageType | 0x98 | `base_ranged_damage` | list<string> | **null -> DamageType ctor HashSet throws** |
 | Special1/2/3Damage | 0xA0/A4/A8 | `special_1_damage` etc. | float | 0 |
 | MaxSpecialAttacks | 0xAC | `max_special_attacks` | int | 0 |
 | AttackBonus | 0xB0 | `attack_bonus` | float | 0 |
@@ -70,15 +70,18 @@ battle prefab load.
 `ResistMagic` 0x5C, `ResistPhysical` 0x60, `StunTime` 0x64, `StunChance` 0x68,
 `HeroRating` 0x6C, `HeroRatingHP`/`Attack`/bases around 0x70–0x7C.
 
-## PlayerAttributes.Init (0xDAB16C) — current NRE
+## PlayerAttributes.Init (0xDAB16C) — resolved NRE
 
-At `0xDAC198` it constructs `HashSet<string>` from `_blueprint.Tags`
-(`[_blueprint+0xB8]`). The live `FighterData.Blueprint.Tags` for the player and
-enemy is non-null (count 2), so the observed `ArgumentNullException(collection)`
-still needs an exact instance/breakpoint. The method also copies:
+At `0xDAC198` it constructs `HashSet<string>` from `_blueprint.Tags`; that list
+was non-null in the live run. The actual exception came from
+`0xDAC238`: `DamageType..ctor` receives `_blueprint.BaseRangedDamageType`, which
+was null. `DamageType..ctor` (`0xBB0B70`) tail-calls the same
+`HashSet<string>..ctor` (`0x12A9D94`), so the `DamageType` frame is absent and
+the stack shows `HashSet..ctor <- PlayerAttributes.Init`. Null-safe
+`base_ranged_damage` lists fixed the battle init. The method also copies:
 `FighterData+0x30 -> +0x50`, `+0x38 -> +0x58`, `+0x40 -> +0x48`,
-`+0x48 -> +0x38`, `+0x60 -> +0x30`; it creates `AttributeManager`
-stat dictionaries, class/signature values, and `_health/_mana/_attack` etc.
+`+0x48 -> +0x38`, `+0x60 -> +0x30`; it creates `AttributeManager` stat
+dictionaries, class/signature values, and `_health/_mana/_attack`.
 
 ## Activation / response
 

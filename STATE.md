@@ -498,3 +498,19 @@ and `quest_begin_response.json` remain templates/fallbacks.
   fits still partial.
 - Specs: `spec/bcg_schema_full.md`, `spec/ability_schema.md`.
 - Nightly/backup scripts; README_RESUME updated.
+
+## 2026-10-26 battle init fixed
+
+- Root cause: `DamageType..ctor` tail-calls `HashSet<string>..ctor` with
+  `Blueprint.BaseRangedDamageType`; the list was null. `Tags` was a red herring.
+- Fix: non-null `base_damage`/`base_ranged_damage`/`baseRangedDamageType` in all
+  blueprints and characters; `bumblebee_cin_dotm` blueprint alias.
+- `[RUN]` No NRE; `BattleArbiterMainState`, `_fighters` length 2, player
+  hit-react vs enemy attack. Player HP 1.0 / HPMax 1050, enemy 1000; hit-react
+  loop does not finish. No match-loaded/resolve-match for quest fight.
+- Q3: Act 4 I/II bosses from wiki; 11 new ids, 9 gaps left (all Starscream).
+- R2.1: client formula decoded; weights 0.2 max-HP / 1.0 attack; CeilToInt;
+  `spec/rating_formula.md` + 6 tests.
+- Smoke now records `battle_checks` and open xfails.
+- Next: keep the battle open, record death/resolve/rewards, fix the hit-react
+  loop; then Q4/Q5 and S1.

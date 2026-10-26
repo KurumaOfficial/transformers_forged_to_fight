@@ -642,7 +642,7 @@
     "sid": "story_act1_ch2_m4",
     "mapHash": "story_act1_ch2_m4_map",
     "finalBoss": {
-     "id": "bumblebee_cin_dotm",
+     "id": "bumblebee_cin_dotm_2",
      "level": 1,
      "rank": 1
     },
@@ -15080,7 +15080,7 @@
     "sid": "story_act2_ch4_m5",
     "mapHash": "story_act2_ch4_m5_map",
     "finalBoss": {
-     "id": "bumblebee_cin_dotm",
+     "id": "bumblebee_cin_dotm_2",
      "level": 1,
      "rank": 1
     },
@@ -30791,7 +30791,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch1_m1",
     "mapHash": "story_act4_ch1_m1_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "bonecrusher_cin_rotf",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -30828,7 +30832,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 1
+    "mission": 1,
+    "boss": "Bonecrusher",
+    "bossName": "Bonecrusher"
    },
    {
     "id": "story_act4_ch1_m2",
@@ -30854,7 +30860,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch1_m2",
     "mapHash": "story_act4_ch1_m2_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "jetfire_gs_leader2014",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -30891,7 +30901,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 2
+    "mission": 2,
+    "boss": "Jetfire",
+    "bossName": "Jetfire"
    },
    {
     "id": "story_act4_ch1_m3",
@@ -30917,7 +30929,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch1_m3",
     "mapHash": "story_act4_ch1_m3_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "bumblebee_cin_dotm_2",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -30954,7 +30970,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 3
+    "mission": 3,
+    "boss": "Bumblebee (DOTM)",
+    "bossName": "Bumblebee (DOTM)"
    },
    {
     "id": "story_act4_ch1_m4",
@@ -30980,7 +30998,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch1_m4",
     "mapHash": "story_act4_ch1_m4_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "blaster_gs_leader2016",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31017,7 +31039,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 4
+    "mission": 4,
+    "boss": "Blaster",
+    "bossName": "Blaster"
    },
    {
     "id": "story_act4_ch1_m5",
@@ -31043,7 +31067,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch1_m5",
     "mapHash": "story_act4_ch1_m5_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "shockwave_gs",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31080,7 +31108,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 5
+    "mission": 5,
+    "boss": "Shockwave",
+    "bossName": "Shockwave"
    },
    {
     "id": "story_act4_ch1_m6",
@@ -31106,7 +31136,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch1_m6",
     "mapHash": "story_act4_ch1_m6_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "megatronus_gs_kabam",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31143,7 +31177,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 1,
-    "mission": 6
+    "mission": 6,
+    "boss": "Megatronus",
+    "bossName": "Megatronus"
    },
    {
     "id": "story_act4_ch2_m1",
@@ -31169,7 +31205,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch2_m1",
     "mapHash": "story_act4_ch2_m1_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "cheetor_bw_transmetal",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31206,7 +31246,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 1
+    "mission": 1,
+    "boss": "Cheetor",
+    "bossName": "Cheetor"
    },
    {
     "id": "story_act4_ch2_m2",
@@ -31232,7 +31274,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch2_m2",
     "mapHash": "story_act4_ch2_m2_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "soundwave_gs",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31269,7 +31315,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 2
+    "mission": 2,
+    "boss": "Soundwave",
+    "bossName": "Soundwave"
    },
    {
     "id": "story_act4_ch2_m3",
@@ -31295,7 +31343,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch2_m3",
     "mapHash": "story_act4_ch2_m3_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "megatron_gs_leader2015",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31332,7 +31384,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 3
+    "mission": 3,
+    "boss": "Megatron",
+    "bossName": "Megatron"
    },
    {
     "id": "story_act4_ch2_m4",
@@ -31358,7 +31412,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch2_m4",
     "mapHash": "story_act4_ch2_m4_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "thundercracker_gs_leader2015",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31395,7 +31453,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 4
+    "mission": 4,
+    "boss": "Thundercracker",
+    "bossName": "Thundercracker"
    },
    {
     "id": "story_act4_ch2_m5",
@@ -31458,7 +31518,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 5
+    "mission": 5,
+    "boss": "Starscream",
+    "bossName": "Starscream"
    },
    {
     "id": "story_act4_ch2_m6",
@@ -31484,7 +31546,11 @@
     "maxHealthPerTile": 0,
     "sid": "story_act4_ch2_m6",
     "mapHash": "story_act4_ch2_m6_map",
-    "finalBoss": null,
+    "finalBoss": {
+     "id": "megatronus_gs_kabam",
+     "level": 1,
+     "rank": 1
+    },
     "teamSizeMin": 1,
     "teamSizeMax": 1,
     "difficulty": "normal",
@@ -31521,7 +31587,9 @@
     "potentialCompletionRewards": [],
     "act": 1,
     "chapter": 2,
-    "mission": 6
+    "mission": 6,
+    "boss": "Megatronus",
+    "bossName": "Megatronus"
    }
   ],
   "acts": [
@@ -37737,7 +37805,7 @@
     "sid": "awaken_ch1_m3",
     "mapHash": "awaken_ch1_m3_map",
     "finalBoss": {
-     "id": "bumblebee_cin_dotm",
+     "id": "bumblebee_cin_dotm_2",
      "level": 1,
      "rank": 1
     },

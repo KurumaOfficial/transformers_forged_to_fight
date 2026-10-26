@@ -1,7 +1,20 @@
-# Battle init progress — 2026-10-25
+# Battle init progress — 2026-10-26
 
-Status: **still blocked**, but the null chain moved forward and is now much
-narrower. No client patch; all changes are server data.
+Status: **init NRE fixed; battle starts.** `PlayerAttributes.Init` no longer
+throws after the server catalog supplied non-null `BaseRangedDamageType` lists.
+The client reaches `BattleArbiterMainState` with two fighters. The next blocker
+is the stuck hit-react/HP loop; see `docs/battle_started.md`.
+
+## 0. Root cause (supersedes the earlier Tag hypothesis)
+
+`DamageType..ctor(List<string>)` (`0xBB0B70`) tail-calls
+`HashSet<string>..ctor(collection)` (`0x12A9D94`). The list is
+`Blueprint.BaseRangedDamageType`, which was null for both fighters. Because the
+call is a tail call, the visible stack was `HashSet..ctor` directly under
+`PlayerAttributes.Init`; the `HashSet` at `0xDAC198` from `Tags` was a red
+herring. Adding `base_ranged_damage`/`baseRangedDamageType` to blueprints and
+characters fixed the NRE. See `docs/battle_init_1_1.md` and
+`docs/battle_started.md`.
 
 ## 1. First NRE was not TeamData
 
