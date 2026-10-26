@@ -2947,12 +2947,12 @@
   },
   "/matches/activate-match/{matchType}": {
    "post": {
-    "summary": "Activate match",
-    "x-evidence": "[NOT OBSERVED]",
-    "x-client-behavior": "not called",
+    "summary": "Activate match (quest fight)",
+    "x-evidence": "[RUN]",
+    "x-client-behavior": "POST /matches/activate-match/quests_fight after FIGHT; body {hero,qid,battleId}. The client then loads the battle scene.",
     "responses": {
      "200": {
-      "description": "Sparx envelope. [NOT OBSERVED]",
+      "description": "Sparx envelope. [RUN] request captured; result body is [ASSUMED] match_activate_response.json (matchId/matchType/seed/fighterData).",
       "content": {
        "application/json": {
         "schema": {
@@ -2999,14 +2999,45 @@
        }
       }
      }
+    },
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "hero": {
+          "type": "string",
+          "example": "bumblebee_cin_dotm_2"
+         },
+         "qid": {
+          "type": "string",
+          "example": "story_act1_ch4_m2"
+         },
+         "battleId": {
+          "type": "string",
+          "example": "battle1"
+         },
+         "api": {
+          "type": "integer",
+          "example": 3
+         },
+         "nonce": {
+          "type": "string"
+         }
+        }
+       }
+      }
+     }
     }
    }
   },
   "/matches/match-loaded/{matchType}/{id}": {
    "post": {
-    "summary": "Match loaded",
-    "x-evidence": "[NOT OBSERVED]",
-    "x-client-behavior": "not called",
+    "summary": "Match loaded (not sent for quests_fight)",
+    "x-evidence": "[RUN: not observed]",
+    "x-client-behavior": "Not sent in the verified quest fight. Whether it is PvP-only is open; the smoke battle_checks keep it as an open xfail.",
     "responses": {
      "200": {
       "description": "Sparx envelope. [NOT OBSERVED]",
@@ -3061,9 +3092,9 @@
   },
   "/matches/resolve-match/{matchType}": {
    "post": {
-    "summary": "Resolve match",
-    "x-evidence": "[NOT OBSERVED]",
-    "x-client-behavior": "not called",
+    "summary": "Resolve match (blocked by ODR/loading)",
+    "x-evidence": "[BLOCKED]",
+    "x-client-behavior": "Not reached: FuseLoadingScreen/FuseODRBlocker remains above HudScreen because Play Asset Delivery is unavailable on the emulator.",
     "responses": {
      "200": {
       "description": "Sparx envelope. [NOT OBSERVED]",
