@@ -616,3 +616,14 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - `spec/openapi.json`: added resolve request body (qid/enemyHealth/
   matchResults/matchStats) and match-loaded body; tuning result description
   points to `spec/tuning_keys.md`.
+
+## 2026-10-27 abilities
+
+- **BLOCKED (5.1/5.2):** pilot wiki text cannot be mapped to `statMods`/`Buff`
+  without the original id/trigger table. Schema and enums are known
+  (`BCGStatModifier` 8306, `StatModifierAttributes`, `BuffModTypes`, triggers);
+  no per-bot values in the APK. Details: `docs/ability_blocker.md`.
+- **DONE (5.3):** special-attack name/description builder and missing-key
+  analysis: `docs/special_attack_localization.md`.
+- **OPEN (5.4):** synergy live visual check; `syn_autobots` is present in the
+  blueprint and userData but the UI was not captured this run.

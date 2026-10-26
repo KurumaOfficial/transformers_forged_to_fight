@@ -314,3 +314,7 @@ is null in the loaded character prefab, or a real activate-match response.
   activeTeam hero details are the player's battle attribute source; now Armor
   50.0, CritChance 0.1, CritDamage 1.5, Block 0.5, ManaGain 1.0. Values are
   `[ASSUMED]`; per-bot fidelity remains.
+
+- **BLOCKED (5.1/5.2):** no original per-bot `statMods`/`Buff` ids/triggers;
+  wiki outcomes are not sufficient. `docs/ability_blocker.md`.
+- **OPEN (5.4):** live synergy screen check.
