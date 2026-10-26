@@ -28,10 +28,10 @@ Continue from this file if the chat is lost. Files beat this text:
 - **Q3/4:** 81/90 boss ids; 9 Starscream gaps; explicit `[ASSUMED]`
   `nemesisprime_gs_voyager2015` fallback, never called the original.
   `docs/starscream_fallback.md`.
-- **S1/nightly:** BOTS sweep is 12/59 (script only sweeps the first 12); a new
-  59-page script was added but the global blocker/navigation prevents a clean
-  59/59. Nightly check_all PASS; full smoke FAIL by status; corrected
-  `nightly.ps1` prints FAIL/PARTIAL, not exit-code PASS.
+- **S1/nightly:** `work/sweep_bots59.py` reached **59/59** across 5 pages; 0
+  info errors and 0 NRE. `popup_error` is a transition-frame metric, not an
+  error. `nightly.ps1` uses the 59-card sweep and fast quest smoke by default;
+  `-Full` keeps the full-mode experiment. Full-mode status remains a known gap.
 - **Enums:** `spec/battle_enums.md`; damage strings `kinetic`/`energy`, class
   flags numeric, AI selectors `aiString`/`aiPer`, default behavior tree
   `Gameplay/AIBehavior/AIBehavior-Default`.

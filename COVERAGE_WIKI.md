@@ -168,3 +168,6 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   and live (no downloads/manifest, no /odr request, PlayCore missing);
   R2 LP infeasible + parser audit; R1 star anchors; Starscream fallback;
   59-page sweep script; MASTER v4.7.
+
+- S1: **59/59** across 5 BOTS pages; 0 info errors, 0 NRE; popup_error is a
+  transition-frame metric. `docs/sweep_diagnosis.md`.

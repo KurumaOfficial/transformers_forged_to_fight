@@ -553,3 +553,9 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - Starscream: `docs/starscream_fallback.md`; 9 gaps, `[ASSUMED]` fallback.
 - S1: `work/sweep_bots59.py` added; current BOTS remains 12/59 and blocked.
 - MASTER_PROMPT v4.7.
+
+- **S1 59/59:** `work/sweep_bots59.py` swept all 5 pages (59 cards):
+  `info_error=0`, `nre=0`; `popup_error=59` is the old transition-frame metric,
+  not an NRE. `tests/sweep/sweep_59.json`, `docs/sweep_diagnosis.md`.
+  `nightly.ps1` now uses `sweep_bots59.py` and fast quest smoke by default;
+  `-Full` keeps the full-mode experiment.

@@ -642,3 +642,7 @@ PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 - `[RUN]` Docs archive `work/archive/TFTF_docs_2026-10-26_210320.zip`
   sha256 `6c1ef956...`; `docs/INTEGRITY.md`, `docs/CHANGELOG.md`.
 - `[RUN]` `BACKUP_PATH` empty -> backup skipped.
+
+- `[RUN]` S1 59/59 via `work/sweep_bots59.py` (pages 0-4, info_error=0,
+  nre=0); `popup_error` is a transition-frame metric, not an error.
+  `tests/sweep/sweep_59.json`.

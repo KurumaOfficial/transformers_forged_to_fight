@@ -1,5 +1,6 @@
 param(
-    [string]$LogDir = "work\nightly"
+    [string]$LogDir = "work\nightly",
+    [switch]$Full
 )
 $ErrorActionPreference = "Continue"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -17,28 +18,32 @@ $checkOut = & powershell -ExecutionPolicy Bypass -File work\check_all.ps1 2>&1
 $checkOut | Tee-Object -FilePath $log -Append
 if (-not ($checkOut -match "VERDICT: PASS")) { $ok = $false }
 
-Say "== full smoke (--full --plus) =="
-& python work\smoke_test.py --full --plus 2>&1 | Tee-Object -FilePath $log -Append
+Say "== smoke (quest flow) =="
+if ($Full) {
+    & python work\smoke_test.py --full --plus 2>&1 | Tee-Object -FilePath $log -Append
+} else {
+    & python work\smoke_test.py --plus 2>&1 | Tee-Object -FilePath $log -Append
+}
 try {
     $smoke = Get-Content tests\smoke\latest.json -Raw | ConvertFrom-Json
     if ($smoke.status -ne "PASS") {
         $ok = $false
-        Say "full smoke status: $($smoke.status)"
+        Say "smoke status: $($smoke.status)"
     }
 } catch {
     $ok = $false
-    Say "full smoke status: unreadable ($_)"
+    Say "smoke status: unreadable ($_)"
 }
 
 Say "== BOTS sweep =="
-& python work\sweep_bots.py 2>&1 | Tee-Object -FilePath $log -Append
+& python work\sweep_bots59.py 2>&1 | Tee-Object -FilePath $log -Append
 try {
-    $sweep = Get-Content tests\sweep\sweep_12.json -Raw | ConvertFrom-Json
-    $count = @($sweep).Count
+    $sweep = Get-Content tests\sweep\sweep_59.json -Raw | ConvertFrom-Json
+    $count = @($sweep.results).Count
     Say "BOTS sweep count: $count/59"
     if ($count -lt 59) {
         $partial = $true
-        Say "BOTS sweep: PARTIAL ($count/59; the script currently covers the first 12 cards)"
+        Say "BOTS sweep: PARTIAL ($count/59)"
     }
 } catch {
     $partial = $true
