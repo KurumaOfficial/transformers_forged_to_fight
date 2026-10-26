@@ -66,3 +66,6 @@ work/dangling_tmp.zip
 work/backup_test/
 work/nightly/
 server/routes/__pycache__/
+
+# run artifacts (outside git)
+runs/

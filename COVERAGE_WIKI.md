@@ -173,3 +173,7 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   transition-frame metric. `docs/sweep_diagnosis.md`.
 
 - Nightly 21:19: **PASS** (check_all PASS, smoke PASS, BOTS 59/59).
+
+- 2026-10-26 v4.8: ODR lazy manifest chain (no normal call), PlayStore/ARM64
+  plans only, hidden-stat pipeline, rating inverse table, content timeline,
+  S1 59/59 + nightly PASS.

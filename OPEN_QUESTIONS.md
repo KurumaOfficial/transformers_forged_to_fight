@@ -300,3 +300,12 @@ is null in the loaded character prefab, or a real activate-match response.
 - **R2:** LP infeasible on raw HP/ATK; need server rating split.
 - **S1:** `sweep_bots59.py` pagination added; clean 59/59 still blocked by
   the global ODR/navigation state; current evidence remains 12/59.
+
+- **ODR:** normal `ODRManager.Initialize` does not call `InitAndGetManifest`;
+  lazy `EnsureManifest` -> `ODRAPI.GetManifest` is not started because the
+  bundle exists. Blocker global + PlayCore missing; PlayStore image not
+  downloaded (permission empty).
+- **Hidden stats:** battle path recalculates locally; need `heroes[rank]` /
+  `attributeGrowthDefs` / `curves`, not flat getBaseHeroData.
+- **R2:** equivalent split exists (`data/rating_table.json`), retail split
+  still missing.

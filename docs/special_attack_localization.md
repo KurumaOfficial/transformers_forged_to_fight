@@ -36,3 +36,28 @@ data.
 
 The pilot ability data (`data/wiki/ability_pilot.json`) remains the source for
 names/descriptions, but it cannot be wired until the key table is recovered.
+
+## Exact key builder (static)
+
+`[STATIC]` `SpecialAttackInfoPanelItem.SetData` (`0xCC3188`) calls:
+- `BCGHelper.GetSpecialAttackNameLocString` (`0xC1B154`)
+- `BCGHelper.GetSpecialAttackDescriptionLocString` (`0xC1B21C`)
+
+Both helpers:
+1. take the special-attack id (e.g. `M1_SPECIAL_ATTACK_<BOT>.<n>`),
+2. `LastIndexOf` a separator (the static field at `0x2C35A20`; the name
+   helper uses it),
+3. `Substring(0, index)`,
+4. `ToUpperInvariant()`,
+5. `String.Concat(prefix, upper, indexString)`.
+
+The prefix fields are `0x2C35000+0xA20` (name) and `0x2C1C000+0xCA0`
+(description). The screen shows the raw id because the resulting
+`ID_SPECIAL_ATTACK_*` key is not present in the retained localization tables.
+The metadata contains only generic `ID_SPECIAL_ATTACK` and
+`ID_SPECIAL_ATTACK_DESCRIPTION`; no per-bot key was found.
+
+To fix by data, add the exact `ID_SPECIAL_ATTACK_<UPPER>` and
+`..._DESCRIPTION` keys for each move id; the move id/name must come from the
+character move set, not invented. Until then, the raw `M1_SPECIAL_ATTACK_*`
+display is expected.

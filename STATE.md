@@ -562,3 +562,19 @@ and `quest_begin_response.json` remain templates/fallbacks.
 
 - **Nightly 21:19 PASS:** `nightly_2026-10-26_211947.log`; check_all PASS,
   smoke PASS (activate_match true), BOTS 59/59. Supersedes the 19:48 run.
+
+## 2026-10-26 v4.8 addendum
+
+- ODR: lazy `EnsureManifest` -> `WaitForTOC` -> `ODRAPI.GetManifest`; normal
+  Initialize does not call it; `InitializedAndLoadedCoroutine` only from
+  DownloadAll. Bundle/arena valid; blocker global + PlayCore missing.
+  `docs/odr_flow.md`, `docs/odr_report.md`.
+- PlayStore image permission empty -> plan only (`docs/playstore_image_plan.md`);
+  ARM64 debug plan included.
+- Hidden stats: `spec/attribute_pipeline.md`; battle recalculates locally,
+  HP default 1.0; need growth tables.
+- R2 inverse: `data/rating_table.json` 363 `[DERIVED]` rows, equivalent split.
+- Timeline: `docs/content_timeline.md` (252 pages, 131 post-APK, 53 after close;
+  saved revisions only).
+- S1 59/59 and nightly 21:19 PASS; runs snapshot `runs/2026-10-26_232903/`,
+  `runs/index.json` (outside git).

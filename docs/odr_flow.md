@@ -127,3 +127,47 @@ Data-only options to try next (planned, not yet proven):
 Do not patch the client. If the Play Core service is the hard requirement, this
 is a hard asset blocker and belongs in OPEN_QUESTIONS with the ODR asset-pack
 request to the user.
+
+## 1.1/1.2 addendum: who calls the manifest init
+
+`[STATIC]` `ODRManager.Initialize` (`0x135A7A8`) does **not** call
+`InitAndGetManifest`; it sets `Instance`, `GetDownloadPath/GetOutputPath`,
+starts `TransitionToNewExtractPath`, and applies `ODRConfig` (`+0x70`).
+`InitAndGetManifest` (`0x1359774`) is a separate path; direct callers found
+inside `SetupFilesystem`/`WaitForTOC`/itself, not in normal login.
+
+The lazy/normal manifest path is:
+`ODRManager.EnsureManifest` (`0x135A730`, IEnumerator) ->
+`WaitForTOC` (`0x135A6B4`) -> `ODRAPI.GetManifest` (`0x1355360`) ->
+`/odr/get-manifest` (string literal 1329), with `previousBid`,
+`questCompleted`, `completedTutorials` data.
+`InitializedAndLoadedCoroutine` (`0x135CAF0`) is called only from
+`DownloadAllCoroutine` (`0x14B8D88`), i.e. the download-all/debug path.
+
+`ODRAPI.GetManifest` uses `Request.Get`/`AddData`; it builds a server request
+only when `EnsureManifest` is actually started. No direct normal-login caller
+was found because the coroutine is passed as a method pointer, not a direct
+`bl`. The battle did **not** start it: the sideswipe bundle exists, the log
+shows `get asset location` for it, and `_requestedWads=0`.
+
+`_initAndGetManifestComplete=0` is therefore consistent with a lazy manifest
+that was never requested, but it does **not by itself** prove the blocker
+cause. The live blocker has 0 downloads and no pending WADs, so the PlayCore /
+PackDriver / `PlayAssetRegistry` base-pack status is the stronger candidate:
+logcat shows `getPackStates([UnityDataAssetPack])` and the Play Store service
+is absent on the sideloaded emulator.
+
+`FuseODRBlocker` state 4 (Open) is global (on `HeroesScreen`, no `HudScreen`);
+it is not tied to the arena tag or to the sideswipe bundle, both of which are
+valid/present. The blocker must be closed by its model/presentation event
+(`OnDisableBlockUIChanged` / `SetRequiredODRDisplaysEnabled(false)`), not by a
+quest theme change.
+
+## 1.4 resource that opened it
+
+`[RUN]` The only relevant asset line in the battle log is
+`assetpack/sideswipe_gs_odr/sideswipe_gs.assetbundle`; the file exists in
+`assets/assetpack/sideswipe_gs_odr/` (4,168,275 bytes). The blocker is also
+present on `HeroesScreen`, so it is not opened by this single character
+bundle. No `PackDriver`/`WAD`/`AssetBundle` error line was found; the PlayCore
+service line is the only global failure.

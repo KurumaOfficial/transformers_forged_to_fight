@@ -150,3 +150,23 @@ The parser is not the cause of the LP infeasibility.
 Not performed: the bot-details screen is behind the global `FuseODRBlocker`
 (`docs/odr_flow.md`). The client formula is proven, but there is no reliable UI
 rating to compare until the blocker is cleared.
+
+## R2.3 equivalent decomposition (2026-10-26)
+
+`data/rating_table.json` contains one row per wiki stat/star row (363 rows).
+For each row:
+
+```
+hero_rating_hp = round(rating * HP / (HP + ATK))
+hero_rating_attack = rating - hero_rating_hp
+client(hero_rating_hp, hero_rating_attack, extra=0, mod=0) = rating
+```
+
+This is an **equivalent proportional decomposition**, not the retail server
+split. It is labelled `[DERIVED]` and is only for making the client formula
+reproduce the wiki rating; do not use it as evidence of the original
+`HeroRatingHP/Attack`. The LP result in `data/wiki/rating_lp.json` still shows
+that raw HP/ATK alone cannot produce the rating with global constants.
+
+UI verification is blocked by `FuseODRBlocker`; the bot details reachable during
+the 59/59 sweep could be used later, but no rating readout was captured.

@@ -23,3 +23,9 @@ Heavy artifacts stay outside git; this index points to them. All times are
   the tracked source; the pre-commit hook blocks binary/large files.
 - Do not add run videos/screenshots to git; keep them in `work/` or an external
   evidence directory.
+
+## Latest run snapshot
+
+`[RUN]` `runs/2026-10-26_232903/` contains `requests.jsonl`, `logcat.txt`,
+`smoke_latest.json`, `sweep_59.json`, `nightly.log`, and the first 20 smoke
+screenshots. Index: `runs/index.json`. `runs/` is outside git.
