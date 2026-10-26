@@ -1,7 +1,7 @@
-﻿# Integrity (docs archive 2026-10-26_213725)
+﻿# Integrity (docs archive 2026-10-26_214309)
 
-- file: `work/archive/TFTF_docs_2026-10-26_213725.zip`
-- sha256: `1c2a824a108567c55b196c7447d30c1f5686ed84f714d50db2f54bc277131763`
+- file: `work/archive/TFTF_docs_2026-10-26_214309.zip`
+- sha256: `9d26047467b23b49d9828e4a76a6d916a2524672fecca564eb925b0fb02685f9`
 - bytes: 2352468
 - contents: docs, spec, data, report, tests (JSON/text only), server/data JSON
 - excluded: APK, asset bundles, screenshots, SQLite DB, .git
