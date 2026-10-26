@@ -123,3 +123,30 @@ Alignment rule used: HP, Attack and Rating are read from the same wiki row;
 rows whose rating deviates by >=3 sigma are flagged, not silently dropped.
 The next R2 step is to recover the server-side rating split, not to tune the
 raw-stat regression further.
+
+## R2.2/R2.3 LP result (2026-10-26)
+
+`work/rating_lp.py` imposes the client interval for every wiki row:
+`rating-1 < a*HP + b*ATK + c <= rating` (and a second model with rank/level).
+Result: **infeasible** for all three LP models (stat, star, rank/level), and
+infeasible per rank (1–6) and per level (1,10,20,30,40,50,60). L1 slack fit:
+218/221 rows need a violation; the largest are Starscream R6, Ironhide R1
+(rating == HP), Shockwave R6, Ironhide (ROTF) R6.
+
+`data/wiki/rating_lp.json` records the feasible flags and the strongest
+contradictions. Raw HP/ATK cannot produce the wiki Rating with any global
+linear constants, including rank/level terms. This does **not** contradict the
+client formula: the client consumes server-provided `HeroRatingHP`,
+`HeroRatingAttack`, `HeroRatingAttackBase` and class weights, which are not in
+the wiki rows. No tuning constants are recorded as `[DERIVED]`.
+
+Parser sample (`work/parser_audit.py`, 20 random pages, seed 42):
+**0 numeric misparses**; 2 empty rows (Mixmaster R5, Megatron ROTF R3) are
+skipped. Header order is respected (`Attack, Health, Rating` pages included).
+The parser is not the cause of the LP infeasibility.
+
+## R2.4 UI check
+
+Not performed: the bot-details screen is behind the global `FuseODRBlocker`
+(`docs/odr_flow.md`). The client formula is proven, but there is no reliable UI
+rating to compare until the blocker is cleared.

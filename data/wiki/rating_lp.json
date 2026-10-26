@@ -1,0 +1,723 @@
+{
+ "stat_rows": 221,
+ "star_rows": 142,
+ "stat_hp_atk": {
+  "feasible": false,
+  "features": [
+   "hp",
+   "attack"
+  ]
+ },
+ "star_hp_atk": {
+  "feasible": false,
+  "features": [
+   "hp",
+   "attack"
+  ]
+ },
+ "stat_hp_atk_rank_level": {
+  "feasible": false,
+  "features": [
+   "hp",
+   "attack",
+   "rank",
+   "level"
+  ]
+ },
+ "stat_slack": {
+  "feasible": true,
+  "x": [
+   0.18472599095649037,
+   1.7122552054292848,
+   -692.5624944506308
+  ],
+  "violations": 218,
+  "bad": [
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 34626.0,
+    "attack": 2859.0,
+    "rating": 18166.0,
+    "bot": "Starscream",
+    "star": null,
+    "source": "stat_table",
+    "pred": 10599.09730073113,
+    "violation": 7565.902700268869
+   },
+   {
+    "rank": 1,
+    "level": 1,
+    "hp": 6720.0,
+    "attack": 507.0,
+    "rating": 6720.0,
+    "bot": "Ironhide",
+    "star": null,
+    "source": "stat_table",
+    "pred": 1416.9095539296318,
+    "violation": 5302.090447070368
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 45732.0,
+    "attack": 2561.0,
+    "rating": 16019.0,
+    "bot": "Shockwave",
+    "star": null,
+    "source": "stat_table",
+    "pred": 12140.412105075986,
+    "violation": 3877.5878959240144
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 30733.0,
+    "attack": 2455.0,
+    "rating": 12528.0,
+    "bot": "Ironhide (ROTF)",
+    "star": null,
+    "source": "stat_table",
+    "pred": 9188.207914944081,
+    "violation": 3338.792086055918
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 41552.0,
+    "attack": 3309.0,
+    "rating": 15477.0,
+    "bot": "Galvatron",
+    "star": null,
+    "source": "stat_table",
+    "pred": 12649.024356538961,
+    "violation": 2826.9756444610393
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 25536.0,
+    "attack": 2306.0,
+    "rating": 10400.0,
+    "bot": "Bumblebee",
+    "star": null,
+    "source": "stat_table",
+    "pred": 7973.060914334237,
+    "violation": 2425.9390866657623
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 28975.0,
+    "attack": 2260.0,
+    "rating": 10630.0,
+    "bot": "Jetfire",
+    "star": null,
+    "source": "stat_table",
+    "pred": 8529.569857783861,
+    "violation": 2099.4301432161396
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 28810.0,
+    "attack": 2721.0,
+    "rating": 11250.0,
+    "bot": "Jazz",
+    "star": null,
+    "source": "stat_table",
+    "pred": 9288.43971897894,
+    "violation": 1960.5602820210597
+   },
+   {
+    "rank": 5,
+    "level": 50,
+    "hp": 30356.0,
+    "attack": 2287.0,
+    "rating": 6918.0,
+    "bot": "Motormaster",
+    "star": null,
+    "source": "stat_table",
+    "pred": 8830.907341841365,
+    "violation": 1912.907341841365
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 32402.0,
+    "attack": 2306.0,
+    "rating": 11090.0,
+    "bot": "Ultra Magnus",
+    "star": null,
+    "source": "stat_table",
+    "pred": 9241.3895682415,
+    "violation": 1847.6104327584999
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 27729.0,
+    "attack": 2705.0,
+    "rating": 10590.0,
+    "bot": "Wheeljack",
+    "star": null,
+    "source": "stat_table",
+    "pred": 9061.354839468106,
+    "violation": 1527.6451615318947
+   },
+   {
+    "rank": 5,
+    "level": 50,
+    "hp": 30610.0,
+    "attack": 2470.0,
+    "rating": 7670.0,
+    "bot": "Tantrum",
+    "star": null,
+    "source": "stat_table",
+    "pred": 9191.170446137872,
+    "violation": 1521.1704461378731
+   },
+   {
+    "rank": 6,
+    "level": 60,
+    "hp": 35484.0,
+    "attack": 2519.0,
+    "rating": 11670.0,
+    "bot": "Necrotronus",
+    "star": null,
+    "source": "stat_table",
+    "pred": 10175.425431125843,
+    "violation": 1493.5745698741584
+   },
+   {
+    "rank": 4,
+    "level": 40,
+    "hp": 23344.0,
+    "attack": 1759.0,
+    "rating": 5144.0,
+    "bot": "Ironhide",
+    "star": null,
+    "source": "stat_table",
+    "pred": 6631.537944787792,
+    "violation": 1487.5379447877922
+   },
+   {
+    "rank": 5,
+    "level": 50,
+    "hp": 30356.0,
+    "attack": 2287.0,
+    "rating": 7429.0,
+    "bot": "Ironhide",
+    "star": null,
+    "source": "stat_table",
+    "pred": 8830.907341841365,
+    "violation": 1401.907341841365
+   },
+   {
+    "rank": 5,
+    "level": 50,
+    "hp": 30885.0,
+    "attack": 2327.0,
+    "rating": 7601.0,
+    "bot": "Optimus Prime (MV1)",
+    "star": null,
+    "source": "stat_table",
+    "pred": 8997.11759927452,
+    "violation": 1396.1175992745202
+   },
+   {
+    "rank": 5,
+    "level": 50,
+    "hp": 24665.0,
+    "attack": 1866.0,
+    "rating": 8441.0,
+    "bot": "Mirage",
+    "star": null,
+    "source": "stat_table",
+    "pred": 7058.77228582225,
+    "violation": 1381.2277151777512
+   },
+   {
+    "rank": 5,
+    "level": 50,
+    "hp": 25207.0,
+    "attack": 1906.0,
+    "rating": 8600.0,
+    "bot": "Jetfire",
+    "star": null,
+    "source": "stat_table",
+    "pred": 7227.383981137838,
+    "violation": 1371.616019862162
+   },
+   {
+    "rank": 5,
+    "level": 50,
+    "hp": 29308.0,
+    "attack": 1985.0,
+    "rating": 9467.0,
+    "bot": "Ironhide (ROTF)",
+    "star": null,
+    "source": "stat_table",
+    "pred": 8120.213431279319,
+    "violation": 1345.7865697206817
+   },
+   {
+    "rank": 4,
+    "level": 40,
+    "hp": 23539.0,
+    "attack": 1900.0,
+    "rating": 5612.0,
+    "bot": "Tantrum",
+    "star": null,
+    "source": "stat_table",
+    "pred": 6908.9874969898365,
+    "violation": 1296.9874969898365
+   }
+  ]
+ },
+ "star_slack": {
+  "feasible": true,
+  "x": [
+   0.24806792871207758,
+   0.6193358229623344,
+   3.7149551151429643
+  ],
+  "violations": 139,
+  "bad": [
+   {
+    "bot": "Motormaster",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 12504.0,
+    "attack": 942.0,
+    "rating": 6918.0,
+    "source": "wiki_star",
+    "pred": 3688.97068096148,
+    "violation": 3228.02932003852
+   },
+   {
+    "bot": "Motormaster",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 30356.0,
+    "attack": 2287.0,
+    "rating": 6918.0,
+    "source": "wiki_star",
+    "pred": 8950.486026213828,
+    "violation": 2032.486026213829
+   },
+   {
+    "bot": "Sunstreaker",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 34583.0,
+    "attack": 2790.0,
+    "rating": 8399.0,
+    "source": "wiki_star",
+    "pred": 10310.595079829835,
+    "violation": 1911.595079829835
+   },
+   {
+    "bot": "Bludgeon",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 27375.0,
+    "attack": 2167.0,
+    "rating": 6869.0,
+    "source": "wiki_star",
+    "pred": 8136.675231967646,
+    "violation": 1267.6752319676457
+   },
+   {
+    "bot": "Cliffjumper",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 31000.0,
+    "attack": 2513.0,
+    "rating": 10490.0,
+    "source": "wiki_star",
+    "pred": 9250.211668293894,
+    "violation": 1238.7883327061054
+   },
+   {
+    "bot": "Sunstreaker",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 12392.0,
+    "attack": 1000.0,
+    "rating": 2881.0,
+    "source": "wiki_star",
+    "pred": 3697.1085506775426,
+    "violation": 816.1085506775428
+   },
+   {
+    "bot": "Rodimus Prime",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 34583.0,
+    "attack": 2329.0,
+    "rating": 9225.0,
+    "source": "wiki_star",
+    "pred": 10025.0812654442,
+    "violation": 800.0812654441988
+   },
+   {
+    "bot": "Bumblebee",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 9043.0,
+    "attack": 827.0,
+    "rating": 3499.0,
+    "source": "wiki_star",
+    "pred": 2759.183960048311,
+    "violation": 738.8160409516889
+   },
+   {
+    "bot": "Soundblaster/Tactician",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 28040.0,
+    "attack": 2029.0,
+    "rating": 8863.0,
+    "source": "wiki_star",
+    "pred": 8216.172060992376,
+    "violation": 645.8279400076249
+   },
+   {
+    "bot": "Wheeljack",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 9936.0,
+    "attack": 744.0,
+    "rating": 3525.0,
+    "source": "wiki_star",
+    "pred": 2929.3037470823224,
+    "violation": 594.6962539176773
+   },
+   {
+    "bot": "Starscream",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 10048.0,
+    "attack": 727.0,
+    "rating": 3524.0,
+    "source": "wiki_star",
+    "pred": 2946.5586461077155,
+    "violation": 576.4413548922843
+   },
+   {
+    "bot": "Ironhide (ROTF)",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 11722.0,
+    "attack": 802.0,
+    "rating": 2869.0,
+    "source": "wiki_star",
+    "pred": 3408.2745454939086,
+    "violation": 539.2745454939086
+   },
+   {
+    "bot": "Skywarp",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 34583.0,
+    "attack": 1960.0,
+    "rating": 10310.0,
+    "source": "wiki_star",
+    "pred": 9796.546346771098,
+    "violation": 512.4536542289029
+   },
+   {
+    "bot": "Rodimus Prime",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 12392.0,
+    "attack": 835.0,
+    "rating": 3136.0,
+    "source": "wiki_star",
+    "pred": 3594.9181398887577,
+    "violation": 458.91813988875765
+   },
+   {
+    "bot": "Jazz",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 10048.0,
+    "attack": 959.0,
+    "rating": 3519.0,
+    "source": "wiki_star",
+    "pred": 3090.244557034977,
+    "violation": 427.7554439650228
+   },
+   {
+    "bot": "Barricade",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 9601.0,
+    "attack": 967.0,
+    "rating": 3402.0,
+    "source": "wiki_star",
+    "pred": 2984.312879484377,
+    "violation": 416.6871215156227
+   },
+   {
+    "bot": "Windblade",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 9601.0,
+    "attack": 926.0,
+    "rating": 3376.0,
+    "source": "wiki_star",
+    "pred": 2958.920110742921,
+    "violation": 416.07989025707843
+   },
+   {
+    "bot": "Waspinator",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 10606.0,
+    "attack": 785.0,
+    "rating": 3524.0,
+    "source": "wiki_star",
+    "pred": 3120.90202806087,
+    "violation": 402.09797293912993
+   },
+   {
+    "bot": "Windblade",
+    "star": 5,
+    "rank": null,
+    "level": null,
+    "hp": 23310.0,
+    "attack": 2247.0,
+    "rating": 6787.0,
+    "source": "wiki_star",
+    "pred": 7177.825967590037,
+    "violation": 390.8259675900372
+   },
+   {
+    "bot": "Ironhide",
+    "star": 4,
+    "rank": null,
+    "level": null,
+    "hp": 12504.0,
+    "attack": 942.0,
+    "rating": 3327.0,
+    "source": "wiki_star",
+    "pred": 3688.97068096148,
+    "violation": 361.97068096148007
+   }
+  ]
+ },
+ "lobo": [
+  {
+   "bot": "Arcee",
+   "n": 6,
+   "feasible": false
+  },
+  {
+   "bot": "Barricade",
+   "n": 6,
+   "feasible": false
+  },
+  {
+   "bot": "Bludgeon",
+   "n": 5,
+   "feasible": false
+  },
+  {
+   "bot": "Bonecrusher",
+   "n": 6,
+   "feasible": false
+  },
+  {
+   "bot": "Bumblebee",
+   "n": 5,
+   "feasible": false
+  },
+  {
+   "bot": "Cliffjumper",
+   "n": 7,
+   "feasible": false
+  },
+  {
+   "bot": "Drift",
+   "n": 6,
+   "feasible": false
+  },
+  {
+   "bot": "Galvatron",
+   "n": 6,
+   "feasible": false
+  },
+  {
+   "bot": "Hot Rod",
+   "n": 6,
+   "feasible": false
+  },
+  {
+   "bot": "Ironhide (ROTF)",
+   "n": 7,
+   "feasible": false
+  },
+  {
+   "bot": "Ironhide",
+   "n": 7,
+   "feasible": false
+  },
+  {
+   "bot": "Jazz",
+   "n": 6,
+   "feasible": false
+  },
+  {
+   "bot": "Jetfire",
+   "n": 7,
+   "feasible": false
+  },
+  {
+   "bot": "Megatron (ROTF)",
+   "n": 5,
+   "feasible": false
+  },
+  {
+   "bot": "Megatron",
+   "n": 6,
+   "feasible": false
+  }
+ ],
+ "by_rank": {
+  "1": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "2": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "3": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "4": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "5": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "6": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  }
+ },
+ "by_level": {
+  "1": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "10": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "20": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "30": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "40": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "50": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  },
+  "60": {
+   "feasible": false,
+   "features": [
+    "hp",
+    "attack"
+   ]
+  }
+ },
+ "column_flags": {
+  "rating_equals_hp": [
+   {
+    "bot": "Ironhide",
+    "rank": 1,
+    "level": 1,
+    "hp": 6720.0,
+    "rating": 6720.0
+   }
+  ],
+  "rating_equals_attack": [],
+  "ratio_ranges": {
+   "rating_hp": [
+    0.20964241909614115,
+    1.0
+   ],
+   "rating_attack": [
+    2.641263940520446,
+    13.254437869822485
+   ]
+  }
+ }
+}
