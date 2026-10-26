@@ -3721,6 +3721,68 @@
      }
     }
    }
+  },
+  "/odr/get-manifest": {
+   "get": {
+    "summary": "ODR manifest",
+    "x-evidence": "[ASSUMED]",
+    "x-client-behavior": "Not requested in the verified run; ODRManager state has no manifests. Stub returns a minimal manifest.",
+    "responses": {
+     "200": {
+      "description": "Sparx envelope.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "required": [
+          "ts",
+          "result"
+         ],
+         "properties": {
+          "ts": {
+           "type": "integer"
+          },
+          "result": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/odr/get-published-manifests": {
+   "get": {
+    "summary": "ODR published manifests",
+    "x-evidence": "[ASSUMED]",
+    "x-client-behavior": "Not requested in the verified run; stub returns an empty list.",
+    "responses": {
+     "200": {
+      "description": "Sparx envelope.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "required": [
+          "ts",
+          "result"
+         ],
+         "properties": {
+          "ts": {
+           "type": "integer"
+          },
+          "result": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
   }
  }
 }

@@ -681,6 +681,15 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             }, assumed_label="[CLIENT: /quests/quest-movedir/ battle action + progression]")
             return
 
+        # 12e2. ODR manifest [ASSUMED: client did not request it in the verified run]
+        if path == "/odr/get-manifest":
+            data = load_data_json("odr_manifest.json")
+            self.send_sparx(data, assumed_label="[ASSUMED: /odr/get-manifest]")
+            return
+        if path == "/odr/get-published-manifests":
+            self.send_sparx([], assumed_label="[ASSUMED: /odr/get-published-manifests empty list]")
+            return
+
         # 12f. Matches: Activate Match [STATIC: loaded from server/data/match_activate_response.json]
         if path.startswith("/matches/activate-match/"):
             data = load_data_json("match_activate_response.json")

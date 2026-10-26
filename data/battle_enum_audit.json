@@ -1,0 +1,88 @@
+{
+ "classes_allowed": [
+  "alpha",
+  "basic",
+  "braw",
+  "def",
+  "demo",
+  "generic",
+  "none",
+  "off",
+  "scou",
+  "superior",
+  "tact",
+  "tech",
+  "uti",
+  "warr"
+ ],
+ "damage_allowed": [
+  "energy",
+  "kinetic"
+ ],
+ "factions_allowed": [
+  "Autobot",
+  "Decepticon",
+  "Maximal",
+  "Neutral",
+  "Predacon"
+ ],
+ "entity_types_allowed": [
+  "",
+  "boss",
+  "bot",
+  "entity",
+  "hero",
+  "tower"
+ ],
+ "blueprint_values": {
+  "class": {
+   "1": 14,
+   "16": 11,
+   "4": 10,
+   "32": 9,
+   "8": 10,
+   "2": 7
+  },
+  "hero_class": {
+   "1": 14,
+   "16": 11,
+   "4": 10,
+   "32": 9,
+   "8": 10,
+   "2": 7
+  },
+  "cl": {
+   "1": 61
+  },
+  "entity_type": {
+   "hero": 61
+  }
+ },
+ "character_values": {
+  "faction": {
+   "1": 24,
+   "2": 23,
+   "0": 13
+  },
+  "subgroup": {
+   "Autobot": 24,
+   "Decepticon": 23,
+   "Maximal": 4,
+   "Predacon": 2,
+   "None": 7
+  },
+  "generation": {
+   "Cinematic": 12,
+   "Generation 1": 34,
+   "Beast Wars": 6,
+   "Generation 1 (Game Original)": 8
+  },
+  "ai_personality": {
+   "aggressive": 60
+  }
+ },
+ "quest_ai": {},
+ "blueprint_bad": {},
+ "character_bad": {},
+ "quest_bad": []
+}

@@ -1,0 +1,23 @@
+{
+  "BuildConfig": "",
+  "CL": "",
+  "Platform": "Android",
+  "BuildMachine": "",
+  "BundleId": "",
+  "Priorities": {},
+  "CDN": "http://127.0.0.1:8080/cdn",
+  "KilobytesThrottle": 0,
+  "CheckCrc": false,
+  "FastDownload": true,
+  "NumResumes": 0,
+  "HttpSwitchEnabled": false,
+  "UseNativeDownloads": false,
+  "AppBackgroundDownloadsEnabled": false,
+  "UseAppleTagRequests": false,
+  "IsPublished": true,
+  "WadManifests": {},
+  "AssetBundlesToWads": {},
+  "WadManifestPriorityOrder": [],
+  "AllWadsSize": 0,
+  "_note": "[ASSUMED] minimal ODR manifest; client did not request /odr/get-manifest in the verified run"
+}
