@@ -159,3 +159,7 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
 - 6.3: economy report flags 37 pages with no numeric table
   (`docs/economy_report.md`).
 - 9.1/9.4: cleanup runbook and hook audit written; no execution.
+
+- 2026-10-26 nightly: check_all PASS; full smoke status FAIL (full-mode
+  measurement, fast smoke PASS); BOTS sweep 12/59 (pagination missing). Old
+  verdict PASS was exit-code-only; corrected script prints FAIL/PARTIAL.

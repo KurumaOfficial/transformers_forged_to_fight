@@ -535,3 +535,8 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - **FINAL 2026-10-26:** battle init NRE fixed; ODR/Play Asset Delivery blocks
   playable combat. Report: `report/FINAL_2026-10-26.md`.
 - 4.x/8.2: `docs/ability_pilot_wiring.md`, `docs/wiki_revision_diff.md`.
+
+- **Nightly actual:** check_all PASS (golden 9/9, fast smoke PASS, unit 25/25);
+  full smoke FAIL by status (full-mode measurement loses quest checks); BOTS
+  sweep 12/59 (no pagination). Old nightly printed PASS by exit code; fixed
+  `work/nightly.ps1` now prints FAIL/PARTIAL. `docs/nightly_2026-10-26.md`.
