@@ -309,3 +309,8 @@ is null in the loaded character prefab, or a real activate-match response.
   `attributeGrowthDefs` / `curves`, not flat getBaseHeroData.
 - **R2:** equivalent split exists (`data/rating_table.json`), retail split
   still missing.
+
+- **Hidden stats (2026-10-27):** solved the data path [RUN]. Quest team /
+  activeTeam hero details are the player's battle attribute source; now Armor
+  50.0, CritChance 0.1, CritDamage 1.5, Block 0.5, ManaGain 1.0. Values are
+  `[ASSUMED]`; per-bot fidelity remains.

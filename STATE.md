@@ -578,3 +578,21 @@ and `quest_begin_response.json` remain templates/fallbacks.
   saved revisions only).
 - S1 59/59 and nightly 21:19 PASS; runs snapshot `runs/2026-10-26_232903/`,
   `runs/index.json` (outside git).
+
+## 2026-10-27 hidden stats solved [RUN]
+
+- Root cause: the player quest-battle `BCGAttributeData` comes from the
+  **quest team / activeTeam hero details**, not `getBaseHeroData`. The local
+  upgrade path copies only HP/Attack/RatingHP/RatingAttack
+  (`0xA60FC8`/`0xA61018`), so rank-entry extras alone do not reach the player.
+- Fix (data only): add `armor`, `crit_chance`, `crit_damage`,
+  `perfect_block_chance`, `block_proficiency`, `mana_gain`, `mana_start`,
+  `resist_magic`, `resist_physical`, `stun_time`, `stun_chance` to
+  `quest["team"]`, `teamData.updates.activeTeams[].heroes[]`, and login
+  `activeTeams[].heroes[]`.
+- Live result: player Armor 50.0, CritChance 0.1, CritDamage 1.5,
+  BlockProficiency 0.5, ManaGain 1.0; PerfectBlock/ManaStart 0 because 0 was
+  sent. Enemy unchanged. Values `[ASSUMED]` defaults.
+- Evidence: `work/dump_fighter_attrs.py`, `spec/attribute_pipeline.md`,
+  `docs/battle_memory_values.md`; tests 32/32.
+- ODR blocker unchanged; fight still does not resolve.

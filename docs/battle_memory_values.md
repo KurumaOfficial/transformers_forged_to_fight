@@ -51,3 +51,27 @@ needs the public getter or a debug build; it is not used to claim full HP.
 - `work/probe_fightdata.py` output in `docs/evidence/battle_init/fightflow.txt`.
 - `docs/battle_init_fix.md`, `docs/battle_started.md`.
 - Live values copied from the 18:14–18:24 process; no client patch.
+
+## 2026-10-27 addendum: hidden stats are now applied [RUN]
+
+The player quest-battle `BCGAttributeData` is sourced from the **quest team
+payload**, not `getBaseHeroData`. After adding
+`armor/crit_chance/crit_damage/block_proficiency/mana_gain/...` to
+`quest["team"]` and `teamData.updates.activeTeams[].heroes[]`, live values are:
+
+| field | player | enemy |
+|---|---:|---:|
+| HPMax | 1050 | 1050 |
+| Attack | 115 | 115 |
+| Armor | 50.0 | 0.0 |
+| CritChance | 0.1 | 0.1 |
+| CritDamage | 1.5 | 1.5 |
+| BlockProficiency | 0.5 | 0.5 |
+| ManaGain | 1.0 | 1.0 |
+| PerfectBlockChance | 0.0 | 0.0 |
+| ManaStart | 0.0 | 0.0 |
+
+The values are `[ASSUMED]` defaults. Evidence:
+`work/dump_fighter_attrs.py` (read-only). The enemy Armor remains 0 because
+`getBaseHeroData` still sends 0.0 for the enemy. This closes the "hidden base
+stats are zero" item; per-bot fidelity is a separate data task.

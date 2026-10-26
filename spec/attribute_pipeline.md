@@ -66,15 +66,54 @@ or left those fields at defaults.
    `BCGAttributeData` class modifiers.
 6. `statMods`/`sigMods`/`synergyBonuses`/forge/relics.
 
+## SOLVED [RUN]: player quest-battle hidden attributes (2026-10-27)
+
+Root cause is **not** the client failing to parse the values; it is the quest
+team payload being the player's battle-attribute source.
+
+- `[STATIC]` `TeamData.RefreshHeroData` (`0x10DE4D0`) uses
+  `HeroData.CreateForModes` (`0xE8A7D8`) when the team detail has
+  `UserOwned=true` (`+0x38`); server-generated enemies use
+  `HeroData.CreateWithServerGeneratedDetails` (`0xE8C098`).
+- `[STATIC]` `HeroDataShared.get_attributes` (`0x12AD058`) returns
+  `mUserTeamHero.AttributeData` (`BCGHeroDetailsBase+0x40`) when the team
+  detail exists; otherwise it falls back to `mUserHero.AttributeData`
+  (`BCGUserHeroBase+0x38`).
+- `[STATIC]` The local upgrade path only copies HPMax/Attack/RatingHP/
+  RatingAttack:
+  `BCGUpgradeAttributesBase.UpdateFromBCGAttributeData` (`0xA60FC8`) and
+  `UpdateBCGAttributeData` (`0xA61018`) touch only `+0x2c`, `+0x38`, `+0x6c`,
+  `+0x70`, `+0x74`. It never copies Armor/Crit/Block/Mana from the catalog
+  rank entry, so putting those keys only into `heroes[bid][rank]` is not
+  enough for a player quest fight.
+- `[RUN]` The player's `BCGHeroDetails` comes from the active team /
+  `quest-begin` team payload, not from `/bcg/getBaseHeroData` (no
+  `getBaseHeroData` request for the player was observed; only
+  `sideswipe_gs` and `enemy1`).
+- `[RUN]` Adding `armor`, `crit_chance`, `crit_damage`,
+  `perfect_block_chance`, `block_proficiency`, `mana_gain`, `mana_start`,
+  `resist_magic`, `resist_physical`, `stun_time`, `stun_chance` to each
+  `quest["team"][bid]` and `teamData.updates.activeTeams[].heroes[bid]`
+  object makes the live player `BCGAttributeData` non-zero:
+  Armor 50.0, CritChance 0.1, CritDamage 1.5, BlockProficiency 0.5,
+  ManaGain 1.0 (PerfectBlock/ManaStart remain 0 because 0 was sent).
+- The same keys were added to the login `activeTeams[].heroes[]` entries so
+  non-quest prefight/display paths see them too.
+
+The values above are `[ASSUMED]` defaults, not retail per-bot stats. They
+prove the pipeline and the data source; per-bot/star/rank values still need
+wiki or retail evidence.
+
 ## What to check/do next
 
-- Read `BCGManager.Instance +0xD8` live to confirm the local-calculation flag.
-- For one bot, dump `BCGAttributeData` immediately after `HeroData.Create` and
-  compare with `getBaseHeroData` to see which ctor path is used.
-- Fill `heroes[rank].attr_base`/`hp_ratio`/`attack_ratio` and
-  `attributeGrowthDefs`/`curves` with wiki-derived values; re-run and read
-  Armor/Crit/Block/Mana. Do not patch client code.
-- Wiki ability percentages are additive bonuses; compare after the base values
-  are non-zero.
+- Replace the assumed flat defaults with per-bot/per-rank values if the wiki
+  or a later data source provides them.
+- Confirm ManaStart/PerfectBlock/Resist/Stun non-zero by sending distinct
+  values in the same team payload (pipeline is now proven).
+- Wiki ability percentages are additive bonuses; compare after the base
+  values are non-zero.
+- `clientCalculateHeroBaseAttributes` is still not read live; it is not needed
+  for the hidden-stat fix, but remains an open static question.
 
-This is a **data/growth-table** problem, not a client patch.
+This is a **data/team-payload** problem, not a client patch.
+

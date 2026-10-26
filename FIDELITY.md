@@ -222,3 +222,10 @@ status. T5 is MASTER_PROMPT v4.3.
 | ODR blocker | **blocked** | Open with 0 downloads; no manifest; PlayCore missing |
 | R2 server rating split | missing | LP infeasible on raw stats |
 | Starscream | **outside 9.2.0** | explicit `[ASSUMED]` fallback only |
+
+## 2026-10-27 hidden stats
+
+| Area | Level | Basis |
+|---|---|---|
+| Hidden base stats | **solved (pipeline)** | quest team payload now carries Armor 50/Crit 0.1/Block 0.5/Mana 1.0 [RUN] |
+| Per-bot hidden stats | partial | flat `[ASSUMED]` defaults; no wiki per-bot table |
