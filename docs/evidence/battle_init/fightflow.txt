@@ -1,0 +1,37 @@
+===== probe_fightdata.py =====
+pid 4462 base 0x7878da08f000
+BattleArbiter class 0x787e2b453010 BattleArbiter instance 0x7877adaf2220
+FightData 0x7877add81a80 FightData
+Fighters 0x7877adcb4f40 FighterData[]
+Fighters length 2
+
+Fighter[0] 0x7877adc83e00 FighterData
+  Id bumblebee_cin_dotm_2
+  Blueprint 0x7878df96ac60 TFBCGBlueprintBase
+    Tags ptr=0x7877aeb13330 class=List`1
+      size=2 items=0x7877f23ae980
+      [0] 'scout'
+      [1] 'autobot'
+    BaseDamageType ptr=0x7877aeb13390 class=List`1
+      size=1 items=0x7878deb5ef60
+      [0] 'energy'
+    BaseRangedDamageType ptr=None class=None
+    SynergyBonuses ptr=0x7877aeb13360 class=List`1
+      size=1 items=0x7878deb5ef30
+      [0] 'syn_autobots'
+
+Fighter[1] 0x7877adc83d90 FighterData
+  Id sideswipe_gs
+  Blueprint 0x7877aeb99120 TFBCGBlueprintBase
+    Tags ptr=0x7877aebeaf60 class=List`1
+      size=2 items=0x7877f049a7c0
+      [0] 'scout'
+      [1] 'autobot'
+    BaseDamageType ptr=0x7877aebeafc0 class=List`1
+      size=1 items=0x7877f67f4540
+      [0] 'energy'
+    BaseRangedDamageType ptr=None class=None
+    SynergyBonuses ptr=0x7877aebeaf90 class=List`1
+      size=1 items=0x7877f67f44b0
+      [0] 'syn_autobots'
+

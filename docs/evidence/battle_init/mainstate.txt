@@ -1,0 +1,33 @@
+BattleArbiter live dump — successful post-fix run (2026-10-26 18:14–18:24)
+
+[RUN] During the battle:
+  class 0x... BattleArbiter
+  FighterStartPositions  count 2
+  FighterStartRotations  count 2
+  FighterReferenceScales count 2
+  Instance 0x7877a81f4440 BattleArbiter
+  _state 0x7877aec8c780 BattleArbiterMainState
+  _running 01
+  _fighters PlayerController[2]
+    [0] Id=0 PlayerController
+        Attributes = PlayerAttributes
+        _blueprint = TFBCGBlueprintBase bumblebee_cin_dotm_2
+        Tags size 2
+        state = PlayerHitReactState
+    [1] Id=1 PlayerController
+        Attributes = PlayerAttributes
+        _blueprint = TFBCGBlueprintBase sideswipe_gs
+        Tags size 2
+        state = PlayerNewHeavyAttackState (later PlayerIdleState/BlockState)
+
+[RUN] MoveSequencer:
+  [0] Animator, MoveSet, opponent, _activeMoves non-null; speed=1.0; init=true
+  [1] Animator, MoveSet, opponent, _activeMoves non-null; speed=1.0; init=true
+
+[RUN] Later (same process, after the battle scene was closed by the test runner):
+  Instance = None
+  static arrays still count 2
+
+This is the evidence that PlayerAttributes.Init completed and both fighters
+spawned. The battle did not reach death/resolve before the scene was torn down;
+see docs/battle_started.md.

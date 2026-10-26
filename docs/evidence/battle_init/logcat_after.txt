@@ -1,0 +1,42 @@
+ArgumentNullException count: 1
+
+10-26 18:05:42.309 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/characters/characters.assetbundle
+10-26 18:05:42.309 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/characters/character_audio.assetbundle
+10-26 18:05:42.667 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/common_odr/common.assetbundle
+10-26 18:05:42.702 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/ui/bundles/uitextures/fte/atlases/mainuiatlassdprefab.png
+10-26 18:05:42.937 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/ui/bundles/uitextures/fte/atlases/masteriesuiatlassdprefab.png
+10-26 18:05:43.401 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/buildings_odr/buildings.assetbundle
+10-26 18:05:44.147 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/ui/titles/title_background.jpg
+10-26 18:05:44.704 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/ui/titles/tff_logo_en.png
+10-26 18:05:44.963 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/ui/loading/bot_roster.png
+10-26 18:05:50.805 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/primordial_base_odr/primordial_base.assetbundle
+10-26 18:05:51.696 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/assets_base_odr/assets_base.assetbundle
+10-26 18:05:52.663 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/base/base_merged.assetbundle
+10-26 18:05:53.247 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/assets_common_odr/assets_common.assetbundle
+10-26 18:05:53.380 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/misc_odr/misc/missing_prod.png
+10-26 18:06:07.887 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/fightstoryimglrg_sd.jpg
+10-26 18:06:07.964 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/fighteventimgsml_sd.jpg
+10-26 18:06:07.974 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/fightfightdailyimgsml_sd.jpg
+10-26 18:06:07.982 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/alliancejoinpopupimg_sd.png
+10-26 18:06:07.988 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/fightallianceimg_sd.jpg
+10-26 18:06:08.124 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/fightraidsimg_sd.png
+10-26 18:06:08.149 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/fightversusimg_sd.png
+10-26 18:06:08.186 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/fightlanding_odr/fightlanding/alliancejoinimg_sd.jpg
+10-26 18:06:17.448 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/bumblebee_cin_dotm_odr/bumblebee_cin_dotm.assetbundle
+10-26 18:06:33.430 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/assets_quest_fte_odr/assets_quest_fte.assetbundle
+10-26 18:06:33.630 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/assets_quest_odr/assets_quest.assetbundle
+10-26 18:06:34.066 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/primordial_odr/primordial.assetbundle
+10-26 18:06:34.696 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/primordial/primordial_merged.assetbundle
+10-26 18:06:54.314 I/Unity   ( 4462): Look rotation viewing vector is zero
+10-26 18:06:56.052 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/portraits_odr/portraits/portrait_unknown.png
+10-26 18:06:57.387 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/sideswipe_gs_odr/sideswipe_gs.assetbundle
+10-26 18:07:15.130 I/Unity   ( 4462): Calling get asset location, assetPackName: default, path: assetpack/karnak/karnak_merged.assetbundle
+10-26 18:07:15.844 W/Unity   ( 4462): DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+10-26 18:07:15.884 W/Unity   ( 4462): DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
+10-26 18:07:17.403 E/Unity   ( 4462): ArgumentNullException: Value cannot be null.
+10-26 18:07:17.403 E/Unity   ( 4462): Parameter name: collection
+10-26 18:07:17.403 E/Unity   ( 4462):   at System.Collections.Generic.HashSet`1[T]..ctor (System.Collections.Generic.IEnumerable`1[T] collection, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00000] in <00000000000000000000000000000000>:0 
+10-26 18:07:17.403 E/Unity   ( 4462):   at PlayerAttributes.Init (PlayerController owner, AttributeManager manager, FighterData fighterData, FighterData opponentFighterData) [0x00000] in <00000000000000000000000000000000>:0 
+10-26 18:07:17.403 E/Unity   ( 4462):   at PlayerController.Init (BattleArbiter battleArbiter, System.Int32 id, FighterData fighterData, FighterData opponentFighterData, TowerData towerData) [0x00000] in <00000000000000000000000000000000>:0 
+10-26 18:07:17.403 E/Unity   ( 4462):   at BattleArbiterInitState.InitPlayer (System.Int32 id, UnityEngine.GameObject player, System.Boolean isPlayer, System.Boolean mirror, FighterData fighterData, FighterData opponentFighterData, TowerData towerData) [0x00000] in <00000000000000000000000000000000>:0 
+10-26 18:07:17.403 E/Unity   ( 4462):   at BattleArbiterInitState+<>c__DisplayClass9_0.<InitCharacter>b__0 (Unity

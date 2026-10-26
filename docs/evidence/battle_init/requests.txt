@@ -1,0 +1,5 @@
+ACTIVATE:
+{"timestamp": "2026-10-26T18:50:03.491916Z", "client_ip": "127.0.0.1", "client_port": 64503, "method": "POST", "path": "/matches/activate-match/quests_fight", "query": {"sig": ["oTR9pugAhTeviy2TSPLFRaOK1Rs="], "stoken": ["sess_tf_stub_token_12345"], "sver": ["3"], "ts": ["1793040602"]}, "headers": {"Content-Type": "application/json", "Content-Length": "121", "Host": "127.0.0.1", "Accept-Encoding": "gzip", "User-Agent": "Sparx/1.0"}, "body": {"hero": "bumblebee_cin_dotm_2", "api": 3, "nonce": "6adfa0da6911bc4d50140013", "qid": "story_act1_ch4_m2", "battleId": "battle1"}}
+
+MATCH-LOADED LINES: 0
+(none)
