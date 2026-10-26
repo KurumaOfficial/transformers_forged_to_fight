@@ -67,3 +67,26 @@ records both as open xfails.
    recording.
 3. Re-run the 30 null-safe variants only if a new null collection appears; the
    root cause is now known.
+
+## ODR/loading blocker (discovered after the first MainState)
+
+`[RUN]` `WindowManager.Instance.windowStacks` on the running battle shows on
+top: `FuseLoadingScreen`, `PopupFader`, `BusyBlocker`, `FullScreenBlocker`,
+`FuseODRBlocker`; `HudScreen` is behind them. Logcat repeatedly shows
+`PlayCore ... AssetPackServiceImpl` and
+`BIND_ASSET_MODULE_SERVICE ... com.android.vending not found`. The emulator has
+no Play Store, so the Play Asset Delivery fetch cannot complete. The battle
+logic runs behind the blocker (fighters, MoveSet, Idle/HitReact/Attack states)
+but input is blocked and the loading screen stays.
+
+This is a **hard asset blocker**, not a data-schema blocker. Options:
+
+1. obtain the original ODR asset packs (Play Asset Delivery) and serve/install
+   them locally;
+2. find a supported non-ODR/debug data path in the client to skip the FuseODR
+   check (without patching the client);
+3. accept the battle-logic evidence (fighters spawned, states cycle) and
+   continue with server/data tracks.
+
+The NRE fix remains valid and is the important unblock. Do not claim a
+playable fight until the ODR blocker is resolved.

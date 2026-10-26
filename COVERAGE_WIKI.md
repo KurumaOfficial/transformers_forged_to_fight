@@ -151,3 +151,11 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
 - Boss gaps now 9, all Starscream (no 9.2.0 pack).
 - R2.1 formula decoded; server-side `rating_hp/rating_attack` still missing.
 - Battle init NRE fixed; combat loop next.
+
+- 3.1: 59 client packs / 44 wiki pages / 89 bios; 36 quest bosses; 5 extra wiki
+  pages (Starscream, Chromia, Dead End, Optimus Prime, Soundblaster/Tactician);
+  20 variant-mapping gaps. `docs/bot_matrix.md`.
+- 6.1: 90/90 maps valid on the 3x3 rule; `docs/map_validity.md`.
+- 6.3: economy report flags 37 pages with no numeric table
+  (`docs/economy_report.md`).
+- 9.1/9.4: cleanup runbook and hook audit written; no execution.

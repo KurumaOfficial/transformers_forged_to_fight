@@ -514,3 +514,20 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - Smoke now records `battle_checks` and open xfails.
 - Next: keep the battle open, record death/resolve/rewards, fix the hit-react
   loop; then Q4/Q5 and S1.
+
+- **ODR blocker:** live WindowManager shows `FuseLoadingScreen`,
+  `FullScreenBlocker`, `FuseODRBlocker` above `HudScreen`; Play Asset Delivery
+  service is absent (`com.android.vending` not found). Battle logic runs behind
+  the loading screen but input is blocked. This is now the main playable-battle
+  blocker; see `docs/battle_started.md`.
+- 3.1 bot matrix: `docs/bot_matrix.md`, `data/wiki/bot_matrix_full.json`
+  (59 client packs, 44 wiki pages, 89 bios, 36 quest bosses, 5 extra wiki pages,
+  20 variant-mapping gaps).
+
+- 3.1 matrix: `docs/bot_matrix.md`, `data/wiki/bot_matrix_full.json`.
+- 6.1 map validity: `docs/map_validity.md`, `data/map_validation.json`
+  (90 maps, 0 errors).
+- 6.3 economy: `docs/economy_report.md` (37 pages with no numeric table).
+- 9.1/9.4: `docs/git_cleanup_runbook.md`, `docs/hook_audit.md`.
+- R2.2/2.3: `data/wiki/rating_fit_v2.json`; raw HP/ATK fits RMSE 873-926,
+  LOBO 750, no integer-exact formula; 4 outliers flagged.

@@ -286,3 +286,9 @@ is null in the loaded character prefab, or a real activate-match response.
 - **OPEN:** 9 Starscream boss gaps remain; no 9.2.0 character pack.
 - **OPEN:** R2 server-side `HeroRatingHP/Attack` formula still not derived;
   client combination formula is now exact.
+
+- **NEW HARD BLOCKER (2026-10-26):** `FuseODRBlocker`/`FuseLoadingScreen` on
+  top of `HudScreen`; Play Asset Delivery `assetmoduleservice` is unavailable
+  on the emulator (`com.android.vending` missing). Battle logic runs behind the
+  loading screen but input is blocked. Need the original ODR packs or a
+  non-ODR data path; do not patch the client.

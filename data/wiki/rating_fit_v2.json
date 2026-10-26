@@ -1,0 +1,192 @@
+{
+ "stat_n": 221,
+ "star_n": 142,
+ "stat_linear": {
+  "coef": [
+   0.19512362329578686,
+   1.9565217079890467,
+   -1063.2725614355484
+  ],
+  "rmse": 920.6762965812887,
+  "max_abs": 6879.226418054946,
+  "integer_exact": 1,
+  "n": 221
+ },
+ "stat_loglog": {
+  "coef": [
+   2793.6934018047787,
+   2259.3646814063277,
+   -8195.802329267935
+  ],
+  "rmse": 1425.4616733255098,
+  "max_abs": 8883.484587053066,
+  "integer_exact": 0,
+  "n": 221,
+  "rmse_original_scale": null
+ },
+ "star_linear": {
+  "coef": [
+   0.25966467708984825,
+   0.3438647656349397,
+   85.64210156105473
+  ],
+  "rmse": 435.81955399202343,
+  "max_abs": 3261.5901668793695,
+  "integer_exact": 0,
+  "n": 142
+ },
+ "star_loglog": {
+  "coef": [
+   222.29941368295604,
+   2024.471486967317,
+   -697.2171133169354
+  ],
+  "rmse": 1096.8909713350874,
+  "max_abs": 4195.655001238156,
+  "integer_exact": 0,
+  "n": 142,
+  "rmse_original_scale": null
+ },
+ "stat_rank_level": {
+  "coef": [
+   0.21728402285313198,
+   2.17357485442695,
+   984.9145413068761,
+   -107.25095672395231,
+   -1606.8756695794325
+  ],
+  "rmse": 873.0301861697213,
+  "max_abs": 6560.5187410561175,
+  "integer_exact": 0,
+  "n": 221
+ },
+ "lobo_mean_rmse": 750.2339011400859,
+ "lobo": [
+  {
+   "bot": "Starscream",
+   "n": 6,
+   "rmse": 2933.0248407105505,
+   "max_abs": 7098.796227875893
+  },
+  {
+   "bot": "Ironhide",
+   "n": 7,
+   "rmse": 2390.2008147108436,
+   "max_abs": 5539.864110932986
+  },
+  {
+   "bot": "Shockwave",
+   "n": 7,
+   "rmse": 1471.0958349297362,
+   "max_abs": 3745.5135180272755
+  },
+  {
+   "bot": "Tantrum",
+   "n": 6,
+   "rmse": 1300.6759170169998,
+   "max_abs": 2145.634984879285
+  },
+  {
+   "bot": "Motormaster",
+   "n": 6,
+   "rmse": 1195.4696880106058,
+   "max_abs": 2481.72052100148
+  },
+  {
+   "bot": "Optimus Prime (MV1)",
+   "n": 6,
+   "rmse": 1189.5712848324595,
+   "max_abs": 1974.2301264538164
+  },
+  {
+   "bot": "Ironhide (ROTF)",
+   "n": 7,
+   "rmse": 1185.5303478460019,
+   "max_abs": 2847.529292700412
+  },
+  {
+   "bot": "Bumblebee",
+   "n": 5,
+   "rmse": 972.7849144270693,
+   "max_abs": 2023.465172557586
+  },
+  {
+   "bot": "Galvatron",
+   "n": 6,
+   "rmse": 886.1229227524161,
+   "max_abs": 2038.653423701804
+  },
+  {
+   "bot": "Bludgeon",
+   "n": 5,
+   "rmse": 813.3373810161122,
+   "max_abs": 1673.7709920884809
+  }
+ ],
+ "sqrt_hp_atk": {
+  "coef": [
+   1.2476625422766359,
+   -1055.2281653001041
+  ],
+  "rmse": 926.4613590025958,
+  "max_abs": 6807.410082159926,
+  "integer_exact": 1,
+  "n": 221
+ },
+ "loglog_note": "Log-log design is ill-conditioned (HP/ATK collinear); treat as diagnostic only.",
+ "outliers": [
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 30733.0,
+   "attack": 2455.0,
+   "rating": 12528.0,
+   "bot": "Ironhide (ROTF)",
+   "star": null,
+   "source": "stat_table",
+   "pred": 9736.72254642698,
+   "resid": -2791.2774535730205,
+   "z": -3.0317685639760263
+  },
+  {
+   "rank": 1,
+   "level": 1,
+   "hp": 6720.0,
+   "attack": 507.0,
+   "rating": 6720.0,
+   "bot": "Ironhide",
+   "star": null,
+   "source": "stat_table",
+   "pred": 1239.914693062586,
+   "resid": -5480.085306937414,
+   "z": -5.952238943574847
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 45732.0,
+   "attack": 2561.0,
+   "rating": 16019.0,
+   "bot": "Shockwave",
+   "star": null,
+   "source": "stat_table",
+   "pred": 12870.773073287326,
+   "resid": -3148.226926712674,
+   "z": -3.4194721189226454
+  },
+  {
+   "rank": 6,
+   "level": 60,
+   "hp": 34626.0,
+   "attack": 2859.0,
+   "rating": 18166.0,
+   "bot": "Starscream",
+   "star": null,
+   "source": "stat_table",
+   "pred": 11286.773581945054,
+   "resid": -6879.226418054946,
+   "z": -7.471927368608605
+  }
+ ],
+ "note": "Raw HP/ATK fits are proxies: the client formula consumes server-provided HeroRatingHP/HeroRatingAttack/HeroRatingAttackBase, not raw stats. Non-integer residuals are expected until those inputs are derived."
+}

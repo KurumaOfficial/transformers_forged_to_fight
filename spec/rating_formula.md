@@ -98,3 +98,28 @@ rating computation. The stub currently fills them with placeholders
 
 The test is a direct transcription of the disassembly; it is not a claim that
 the stub's current `rating_hp/rating_attack` values are correct.
+
+## R2.2/R2.3 data fits (2026-10-26)
+
+`data/wiki/rating_rows.json`: 236 stat rows, 221 with rating; 142 star rows.
+`data/wiki/rating_fit_v2.json` records the fits.
+
+| model | n | RMSE | integer exact |
+|---|---:|---:|---:|
+| HP + ATK + const | 221 | 920.7 | 1/221 |
+| HP + ATK + rank + level + const | 221 | 873.0 | 0/221 |
+| sqrt(HP*ATK) + const | 221 | 926.5 | 1/221 |
+| star HP + ATK + const | 142 | 435.8 | 0/142 |
+| leave-one-bot-out (linear) | 221 | mean 750.2 | - |
+
+The log-log form is ill-conditioned (HP/ATK collinear) and is diagnostic only.
+The 4 flagged outliers are `Ironhide (ROTF)` rank 6, `Ironhide` rank 1
+(rating == HP, a likely level/column artifact), `Shockwave` rank 6 and
+`Starscream` rank 6. No integer-exact formula exists on raw HP/ATK, which is
+expected: the client formula consumes server-provided `HeroRatingHP`,
+`HeroRatingAttack` and `HeroRatingAttackBase`, not raw stats.
+
+Alignment rule used: HP, Attack and Rating are read from the same wiki row;
+rows whose rating deviates by >=3 sigma are flagged, not silently dropped.
+The next R2 step is to recover the server-side rating split, not to tune the
+raw-stat regression further.
