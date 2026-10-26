@@ -531,3 +531,7 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - 9.1/9.4: `docs/git_cleanup_runbook.md`, `docs/hook_audit.md`.
 - R2.2/2.3: `data/wiki/rating_fit_v2.json`; raw HP/ATK fits RMSE 873-926,
   LOBO 750, no integer-exact formula; 4 outliers flagged.
+
+- **FINAL 2026-10-26:** battle init NRE fixed; ODR/Play Asset Delivery blocks
+  playable combat. Report: `report/FINAL_2026-10-26.md`.
+- 4.x/8.2: `docs/ability_pilot_wiring.md`, `docs/wiki_revision_diff.md`.

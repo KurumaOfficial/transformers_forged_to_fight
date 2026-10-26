@@ -1,7 +1,7 @@
 # MASTER_PROMPT v4.6 - current state and queue (2026-10-26)
 
 Continue from this file if the chat is lost. Files beat this text:
-`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-25.md`,
+`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-26.md`,
 `docs/prefight_flow.md`, `docs/interfaces.md`, `docs/screens.md`,
 `docs/debug_modes.md`, `docs/protocol_coverage_2026-10-25.md`.
 
