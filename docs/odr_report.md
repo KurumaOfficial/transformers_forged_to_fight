@@ -45,3 +45,26 @@ Do not spend more runs on 9 arenas: the blocker is global and the arena is
 valid. Next useful step is a **Play Store image** (permission was empty, so
 not executed) or a **rooted ARM64 debugger** plan. Until then, the battle
 track is blocked; the rest of the queue is unaffected.
+
+## 1.10 Data-only ODR tuning flags (plan only, not applied)
+
+`[STATIC]` `Tuning` (TypeDef 9463) exposes ODR switches at +0x360..0x368:
+
+| field | live value [RUN] | note |
+|---|---:|---|
+| `ODRForceDownloadAll` | 0 | force all ODR downloads |
+| `ODRForceDownloadAllPreTutorial` | 0 | |
+| `ODRShowProgressMB` | 1 | UI |
+| `ODRShowTimeEstimate` | 1 | UI |
+| `ODRForceDownloadAssetListPreTutorial` | 0 | |
+| `ODRAllowNative` | 1 | native ODR path allowed |
+| `ODRAssetListForForcedDownload` | empty/unknown | string |
+
+`Tuning.LoadTuningData` (`0x14233EC`) applies these by field name through
+`TuningManager.Apply`; `/tuning` can therefore set them in principle. This is a
+**client-data flag** and is not applied. In particular, setting
+`ODRAllowNative=0` is only a hypothesis for changing the ODR path; it must not
+be tried without explicit consent. The live value is already 1, so the blocker
+is not simply "native ODR disabled".
+
+Full field table: `spec/tuning_keys.md`.

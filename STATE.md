@@ -596,3 +596,13 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - Evidence: `work/dump_fighter_attrs.py`, `spec/attribute_pipeline.md`,
   `docs/battle_memory_values.md`; tests 32/32.
 - ODR blocker unchanged; fight still does not resolve.
+
+## 2026-10-27 tuning xref / ODR flags
+
+- `[STATIC]` no direct `BL` callers of `TuningManager.GetString/GetInt/
+  GetBool/GetFloat`; `Tuning.LoadTuningData` uses reflection `Apply`, so the
+  key namespace is the public field names. `spec/tuning_keys.md` has 242
+  `Tuning` fields + 30 `TuningGameplay` fields.
+- `[RUN]` live ODR tuning flags: `ODRForceDownloadAll=0`,
+  `ODRAllowNative=1`, `ODRShowProgressMB=1`, `ODRShowTimeEstimate=1`;
+  data-only, not changed. See `docs/odr_report.md` 1.10.
