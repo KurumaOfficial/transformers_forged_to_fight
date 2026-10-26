@@ -3,7 +3,7 @@
   "index": 0,
   "row": 0,
   "col": 0,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -11,7 +11,7 @@
   "index": 1,
   "row": 0,
   "col": 1,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -19,7 +19,7 @@
   "index": 2,
   "row": 0,
   "col": 2,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -27,7 +27,7 @@
   "index": 3,
   "row": 0,
   "col": 3,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -35,7 +35,7 @@
   "index": 4,
   "row": 0,
   "col": 4,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -43,7 +43,7 @@
   "index": 5,
   "row": 0,
   "col": 5,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -51,7 +51,7 @@
   "index": 6,
   "row": 1,
   "col": 0,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -59,7 +59,7 @@
   "index": 7,
   "row": 1,
   "col": 1,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -67,7 +67,7 @@
   "index": 8,
   "row": 1,
   "col": 2,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -75,7 +75,7 @@
   "index": 9,
   "row": 1,
   "col": 3,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -83,7 +83,7 @@
   "index": 10,
   "row": 1,
   "col": 4,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  },
@@ -91,7 +91,7 @@
   "index": 11,
   "row": 1,
   "col": 5,
-  "popup_error": false,
+  "popup_error": true,
   "info_error": false,
   "nre": []
  }

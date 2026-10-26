@@ -3783,6 +3783,108 @@
      }
     }
    }
+  },
+  "/bcg/getBaseHeroData": {
+   "post": {
+    "summary": "BCG base hero data",
+    "x-evidence": "[RUN]",
+    "x-client-behavior": "Body {heroes:[{bid,rank,level,sig_lvl,flvl}],api,nonce}; result is a list of BCGHeroDetails.",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "heroes": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Sparx envelope; result array of hero details [RUN request].",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "required": [
+          "ts",
+          "result"
+         ],
+         "properties": {
+          "ts": {
+           "type": "integer"
+          },
+          "result": {
+           "type": "array",
+           "items": {
+            "type": "object"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/bcg/setSavedTeam": {
+   "post": {
+    "summary": "BCG save team",
+    "x-evidence": "[RUN]",
+    "x-client-behavior": "Body {teamID,heroes:[bid]}; response is a userData-like BCG payload.",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "teamID": {
+          "type": "string"
+         },
+         "heroes": {
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Sparx envelope [RUN request].",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "required": [
+          "ts",
+          "result"
+         ],
+         "properties": {
+          "ts": {
+           "type": "integer"
+          },
+          "result": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
   }
  }
 }
