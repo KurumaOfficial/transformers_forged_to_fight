@@ -4,8 +4,9 @@ Source: `data/wiki/bots.json`, `infobox.Release Date` (44/44 bots have the
 field). APK date: **2022-07-26**. A date after that is a post-APK content
 candidate; it is not proof that the 9.2.0 client can load the bot.
 
-- bots with a parsed date: **18**
+- non-Launch dates parsed: **31**
 - `Launch`: **13**
+- no date: **0**
 - post-APK candidates: **5**
 
 ## Post-APK candidates
