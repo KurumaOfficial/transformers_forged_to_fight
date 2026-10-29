@@ -228,16 +228,18 @@ def main():
         # prompts "ADD MORE BOTS?" and auto-fills the team, which changes the
         # quest flow.  Manual evidence: work/edit2.png (TOTAL 100, ACCEPT).
         tap(2097, 1003, 4)
-        # START with fewer bots than the roster may prompt "ADD MORE BOTS?".
-        # Only tap CONTINUE when the prompt's green buttons are visible;
-        # otherwise the tap would hit the map and open NODE INFO.
-        for _ in range(3):
-            if green_button_in_region(450, 720):
-                tap(1339, 550, 8)
+        # START may briefly show "ADD MORE BOTS?", then loads the map. Wait for
+        # the quest-begin request and a fixed settle time. Do not use the old
+        # green-button heuristic here: the map glow false-positives and the
+        # extra tap opened NODE INFO instead of the battle tile.
+        base_count = len(read_requests())
+        deadline = time.time() + 30
+        while time.time() < deadline:
+            rows = read_requests()[base_count:]
+            if any("/quests/quest-begin" in (r.get("path") or "") for r in rows):
                 break
-            time.sleep(3)
-        else:
-            time.sleep(4)
+            time.sleep(0.5)
+        time.sleep(6)
         step("06_map")
         # The left-lower neighbour of the start tile is the (1,0) battle tile.
         tap(850, 732, 14)
