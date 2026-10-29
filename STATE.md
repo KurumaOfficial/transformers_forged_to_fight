@@ -637,3 +637,13 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - `docs/post_battle_quests.md`: expected resolve -> `battlecomplete`/
   `fightlost` -> rewards/energy/unlock flow; blocked by ODR; no invented
   async payload.
+
+## 2026-10-29 routing split (partial)
+
+- New `server/routes/auth.py`, `matches.py`, `odr.py`; `stub_server.py` now
+  calls them for those payloads. `routes/quests.py` remains.
+- Behavior unchanged by design; `golden_regression.py` PASS after
+  re-recording 9 shapes (hidden-stat keys changed two shapes), 32 unit tests
+  PASS.
+- Smoke navigation is flaky: the START tap can race the map and open NODE
+  INFO; server responses are unaffected. Details: `docs/routing_split.md`.
