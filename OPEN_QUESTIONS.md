@@ -348,3 +348,10 @@ is null in the loaded character prefab, or a real activate-match response.
 - **OPEN:** win rewards/results/cleared tile; the current resolve response is
   not accepted for progression. `docs/damage_pipeline.md`,
   `docs/evidence/post_battle_2026-10-29/`.
+
+- **OPEN (2026-10-30, Step 5):** rating/stat catalog is placeholder. Windblade
+  live HP/ATK 826/102 matches the wiki star-1 infobox, but rating 300 vs wiki
+  264; Bumblebee/Sideswipe live 1050/115 vs wiki 1/1 4860/444 and 5160/520.
+  Need retail per-bot rank/level/star tables or a confirmed growth formula.
+  Evidence `docs/rating_ui_check.md`, `work/wheel.png`,
+  `tests/smoke/10b_bot_info.png`.

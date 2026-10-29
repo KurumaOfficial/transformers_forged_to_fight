@@ -248,3 +248,12 @@ status. T5 is MASTER_PROMPT v4.3.
 | Return to map | **works** | both outcomes returned to map [RUN] |
 | Rewards/results/cleared tile | open | win returned to map without UI update |
 | Normal win without test data | partial | enemy reached 124.25 HP; test-only weak enemy used for the win |
+
+## 2026-10-30 rating/stat UI (Step 5)
+
+| Area | Level | Basis |
+|---|---|---|
+| Bot detail attributes render | **works** | Windblade LVL 1/10, RANK 1/5, HP 826, ATK 102 [RUN] |
+| Rating vs wiki | **fails** | Windblade 300 vs wiki 264; BOTS list flat 300 [RUN]/[WIKI] |
+| HP/ATK vs wiki | **fails for most bots** | Bumblebee/Sideswipe 1050/115 vs wiki 1/1 4860/444, 5160/520 [RUN]/[WIKI] |
+| Catalog source | placeholder | `800 + rank*200 + level*50` / `80 + rank*30 + level*5` [STATIC] |
