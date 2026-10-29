@@ -74,3 +74,14 @@ the pilot stays `[WIKI]`-only.
 
 Until then, the honest state is: schema known, data missing, no invented
 abilities.
+
+## 2026-10-29 correction: keys exist
+
+`work/localization_all.json` contains 3307 `ID_STAT_*` keys, 8 `D_STAT*`
+keys and 390 `ID_SPECIAL_ATTACK_*` keys (65 bot/move tokens). They are
+**localization keys**, not the numeric `statMods`/`Buff` definitions.
+Rhinox has the strongest key coverage (31 keys); Bumblebee has no
+`ID_STAT_BUMBLEE_*` ability keys; Windblade has no special-attack keys.
+`spec/buff_catalog.md` now lists the families, bot tokens and effect-token
+matches. The pilot stays blocked on numeric definitions/triggers, not on the
+absence of keys.

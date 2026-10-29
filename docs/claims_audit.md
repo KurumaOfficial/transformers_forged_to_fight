@@ -67,3 +67,13 @@ Every new `[RUN]`/`[STATIC]` claim must link a file in `docs/`, `spec/`,
 | 37 | ODR blocks combat input | **corrected** | Battle visible/controllable; resolve observed. |
 | 38 | `attackValues`/`attack_percent` are needed for basic damage | **confirmed [RUN]** | `DamageRating=0.7`; raw damage 80.5. |
 | 39 | Normal player can kill the enemy without test data | **open** | Normal run got enemy to 124.25 HP; win required the test-only `weak_enemy` flag. Controls/positioning still need practice. |
+
+## 2026-10-29 late correction: stat/localization keys exist
+
+| # | Claim | Status | Evidence |
+|---:|---|---|---|
+| 40 | There are no original `ID_STAT_*`/`D_STAT`/special-attack keys | **corrected** | `work/localization_all.json`: 3307 `ID_STAT_*`, 8 `D_STAT*`, 390 `ID_SPECIAL_ATTACK_*` (65 bot/move tokens). They are localization keys, not numeric definitions. `spec/buff_catalog.md`. |
+| 41 | Windblade special-attack names exist | **corrected** | No `ID_SPECIAL_ATTACK_WINDBLADE_*`; live raw `MS_ID_SPECIAL_ATTACK_WINDBLADE_0..2`. |
+| 42 | The localization table can be extended from the server | **open** | Not proven; need Xlate/snapshot/override analysis and a live test. |
+
+| 39 | Normal player can kill the enemy without test data | **confirmed [RUN]** | `battle_step.py` normal win: player HP 300.2, enemy HP 0, player damage 1069.5. `resolve_win_normal.json`. |

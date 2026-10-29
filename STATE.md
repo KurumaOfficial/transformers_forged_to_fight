@@ -708,3 +708,26 @@ and `quest_begin_response.json` remain templates/fallbacks.
   `match_resolve_response.json` progression/async is not accepted. The win
   response now includes progression/teamData/rewards plus a `match-resolved`
   async attempt, but the map did not update.
+
+- **Normal win [RUN]:** `battle_step.py` won without weak-enemy test data:
+  player HP 300.2, enemy 0, damage 1069.5. Evidence
+  `docs/evidence/post_battle_2026-10-29/resolve_win_normal.json`.
+
+## 2026-10-29 queue docs batch (Steps 2/4/6/8)
+
+- spec/buff_catalog.md: 3307 ID_STAT_*, 8 D_STAT*, 390
+  ID_SPECIAL_ATTACK_* keys (65 bot/move tokens); keys are localization
+  entries, not numeric statMod/Buff definitions. Rhinox strongest (31 keys),
+  Bumblebee has no ability keys, Windblade has no special-attack keys.
+- docs/content_timeline.md: post-APK candidates (Act 4/Awaken and Corrupt
+  2022-12-29, Soundblaster 2022-12-27, Slipstream 2022-12-29); Starscream,
+  Chromia, Dead End absent from the saved page set.
+- docs/systems_screens.md: live view-only CRYSTALS (empty), OBJECTIVES
+  [0/0], STORE level-2 lock, BASE opens; no /gacha/*, /objectives/*,
+  /store/* request observed yet.
+- spec/tuning_values.md: TuningGameplay keys/defaults/live values and proven
+  armor-DR effect; remaining 23 fields not decoded. spec/openapi.json points
+  to it.
+- work/battle_step.py added to nightly; normal-data win captured
+  (player HP 300.2, enemy 0, damage 1069.5).
+

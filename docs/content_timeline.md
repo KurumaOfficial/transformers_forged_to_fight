@@ -200,3 +200,27 @@ Green Revive Kits revive Bots i |
   page text/release notes, not only the saved timestamp.
 - For missing packs, the correct action is a later APK/asset pack or an
   explicit `[ASSUMED]` fallback; do not invent a 9.2.0 pack.
+
+## Post-APK content and mapping gaps (2026-10-29)
+
+The APK is dated **2022-07-26**; the service closed **2023-01-13**. The saved
+wiki revisions in this dataset show:
+
+- **Act 4 / `Awaken and Corrupt`**: page saved **2022-12-29**, described as
+  the fourth and final Act of the main Story campaign. It is a post-APK
+  candidate; no separate "Act 4 I/II" page exists in `pages.json`.
+- **Soundblaster / Make Some Noise / Play the Hits**: pages saved
+  **2022-12-27**; Soundblaster is a post-APK candidate. The bot page itself is
+  absent from the saved set.
+- **Slipstream / A Bad Name / Who Run the World**: pages saved
+  **2022-12-29**; post-APK candidates. Bot page absent.
+- **Starscream**: no `Starscream` page in `pages.json`; only event pages that
+  mention the name. The 9 Starscream boss ids are missing and there is no
+  9.2.0 character pack. The fallback stays `[ASSUMED]`.
+- **Chromia / Dead End**: no page and no pack in the saved set; their absence
+  cannot be separated from a wiki gap with this data.
+
+Do not treat the saved revision date as the release date. The split is:
+**post-APK candidate** (page/event saved after 2022-07-26) vs **mapping gap**
+(no page/pack at all). The 131 post-APK saved revisions include old pages that
+were only re-saved, so only explicit text/date statements are strong evidence.

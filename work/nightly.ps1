@@ -36,6 +36,7 @@ try {
 }
 
 Say "== BOTS sweep =="
+& python work\reset_home.py 2>&1 | Tee-Object -FilePath $log -Append
 & python work\sweep_bots59.py 2>&1 | Tee-Object -FilePath $log -Append
 try {
     $sweep = Get-Content tests\sweep\sweep_59.json -Raw | ConvertFrom-Json
@@ -48,6 +49,15 @@ try {
 } catch {
     $partial = $true
     Say "BOTS sweep: no result file ($_)"
+}
+
+Say "== battle step (damage / HP / resolve) =="
+& python work\battle_step.py --wait 75 2>&1 | Tee-Object -FilePath $log -Append
+if ($LASTEXITCODE -ne 0) {
+    $ok = $false
+    Say "battle step: FAIL"
+} else {
+    Say "battle step: PASS"
 }
 
 Say "== summary =="

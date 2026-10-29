@@ -17,6 +17,7 @@ out.mkdir(parents=True, exist_ok=True)
 for src, name in [
     (ROOT / "server" / "requests.jsonl", "requests.jsonl"),
     (ROOT / "tests" / "smoke" / "latest.json", "smoke_latest.json"),
+    (ROOT / "tests" / "smoke" / "battle_step.json", "battle_step.json"),
     (ROOT / "tests" / "sweep" / "sweep_59.json", "sweep_59.json"),
     (ROOT / "work" / "nightly" / "nightly_2026-10-26_211947.log", "nightly.log"),
 ]:

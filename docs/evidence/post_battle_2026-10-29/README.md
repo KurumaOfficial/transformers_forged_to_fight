@@ -39,3 +39,11 @@ was observed.
    0 to 64.4; the tuning key/default mapping is real.
 3. Death/K.O., `resolve-match`, and return-to-map all work.
 4. Remaining post-battle work is server response/async data, not client code.
+
+## Normal win (no weak-enemy test data) `[RUN]`
+
+`work/battle_step.py` (normal server data, automatic attack taps) produced a
+**WON** resolve: player HP 300.2, enemy HP 0, player damage 1069.5, enemy
+damage 749.8. This supersedes the earlier test-only win. Evidence:
+`resolve_win_normal.json`, `tests/smoke/battle_step.json`, nightly
+`nightly_2026-10-29_233256.log`.

@@ -77,3 +77,9 @@ The zero was entirely in `GetDamageReceived` via
 `work/weak_enemy.flag` makes server-generated enemy details HP/attack = 1;
 it is evaluated at server import and is **off** unless the file exists.
 Remove the file for normal tests. This is a harness switch, not client data.
+
+## Normal win `[RUN]`
+
+A normal-data `battle_step.py` run (no weak-enemy flag) won: player HP 300.2,
+enemy HP 0, player damage 1069.5, enemy damage 749.8. The weak-enemy flag is
+now only a fallback; it is removed for normal tests.

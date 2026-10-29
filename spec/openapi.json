@@ -505,7 +505,7 @@
    "get": {
     "summary": "Combat tuning",
     "x-evidence": "[RUN] observed 2026-10-21 21:23-21:24 UTC",
-    "x-client-behavior": "client falls back to built-in defaults if empty",
+    "x-client-behavior": "client falls back to built-in defaults if empty TuningGameplay uses the bcg-combat config; see spec/tuning_values.md.",
     "responses": {
      "200": {
       "description": "Sparx envelope. [RUN] observed 2026-10-21 21:23-21:24 UTC",
@@ -555,7 +555,8 @@
        }
       }
      }
-    }
+    },
+    "x-tuning-keys": "spec/tuning_keys.md (242 Tuning + 30 TuningGameplay fields)"
    }
   },
   "/payments/payouts": {

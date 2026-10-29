@@ -662,3 +662,15 @@ PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 | Урон удара | 0.0, `_attack.Get()=0`, `_value=115` | `[RUN]` |
 | ODR overlay в Main | не закрывает HUD; ввод работает | `[RUN]` |
 | Nightly 2026-10-29 | PASS, BOTS 59/59 | `[RUN]` |
+
+## 2026-10-29: ключи, контент, экраны, нормальная победа
+
+| Пункт | Результат | Метка |
+|---|---|---|
+| ID_STAT_* / D_STAT* / ID_SPECIAL_ATTACK_* | 3307 / 8 / 390 ключей (65 токенов ботов/приёмов) | [STATIC] |
+| Windblade special-attack ключи | отсутствуют; на экране сырые MS_ID_SPECIAL_ATTACK_WINDBLADE_0..2 | [RUN] |
+| Контент после APK | Act 4 2022-12-29, Soundblaster 2022-12-27, Slipstream 2022-12-29 | [WIKI] |
+| CRYSTALS / OBJECTIVES / STORE / BASE | открываются без NRE; кристаллов нет, целей 0/0, магазин с LEVEL 2 | [RUN] |
+| TuningGameplay live | 300 / 200 / 111, DefenderMana 1.25, blocked 0.35 | [RUN] |
+| Нормальная победа без weak-enemy | HP игрока 300.2, враг 0, урон 1069.5 | [RUN] |
+

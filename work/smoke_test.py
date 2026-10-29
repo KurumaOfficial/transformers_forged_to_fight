@@ -136,12 +136,19 @@ def wait_title_then_home(timeout=180):
     deadline = time.time() + timeout
     tapped = False
     base_count = len(read_requests())
+    last_nudge = 0.0
     while time.time() < deadline:
         if not tapped:
             pos = screen_green_button()
             if pos:
                 tap(pos[0], pos[1], 2)
                 tapped = True
+            elif time.time() - last_nudge > 12:
+                # Dismiss a Play Games/Google sign-in overlay that can appear
+                # before the title on the emulator. Do not press back once the
+                # green PLAY NOW button is visible.
+                adb("shell", "input", "keyevent", "4", timeout=20)
+                last_nudge = time.time()
         else:
             rows = read_requests()[base_count:]
             paths = [r.get("path", "") for r in rows]
