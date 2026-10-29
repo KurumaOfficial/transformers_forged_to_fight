@@ -59,3 +59,15 @@
   (`activate_match=true`), BOTS 59/59. Log
   `work/nightly/nightly_2026-10-26_211947.log`.
 - 19:48 run remains historical: old 12-card sweep, full smoke FAIL.
+
+## 2026-10-29
+
+- Hidden player stats sourced from quest team payload; live Armor 50/Crit 0.1/
+  CritDamage 1.5/Block 0.5/ManaGain 1.0.
+- AttackValueData keys and `attack_percent` fixed; Light DamageRating 0.7.
+- ODR overlay no longer blocks input; battle visible/controllable.
+- New blocker: `_attack.Get()=0` while display `_value=115`; all damage 0.
+- Routing split (auth/matches/odr), tuning field table, match schemas, economy
+  and post-battle plan, ability blocker, nightly 2026-10-29 PASS.
+- Final report `report/FINAL_2026-10-29.md`, MASTER_PROMPT v4.9, docs archive
+  `TFTF_docs_2026-10-29_201026.zip`.

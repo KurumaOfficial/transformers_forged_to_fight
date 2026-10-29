@@ -649,3 +649,16 @@ PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 
 - `[RUN]` Nightly 21:19 PASS: check_all PASS, smoke PASS (activate_match true),
   BOTS 59/59. Log `work/nightly/nightly_2026-10-26_211947.log`.
+
+## 2026-10-29: скрытые статы, attack values, ODR, ночной прогон
+
+| Факт | Значение | Метка |
+|---|---|---|
+| Источник статов игрока в квесте | `quest["team"]` / activeTeam heroes, не `getBaseHeroData` | `[RUN]` |
+| Живые статы игрока | Armor 50.0, Crit 0.1, CritDamage 1.5, Block 0.5, ManaGain 1.0 | `[RUN]` |
+| AttackLevel key map | Light/Medium/Heavy/Ranged/Special1..3/Normal | `[STATIC]` |
+| `BCGAttackValue.Percent` key | literal `attack_percent` | `[STATIC]` |
+| Light DamageRating после фикса | 0.7 (было 0) | `[RUN]` |
+| Урон удара | 0.0, `_attack.Get()=0`, `_value=115` | `[RUN]` |
+| ODR overlay в Main | не закрывает HUD; ввод работает | `[RUN]` |
+| Nightly 2026-10-29 | PASS, BOTS 59/59 | `[RUN]` |

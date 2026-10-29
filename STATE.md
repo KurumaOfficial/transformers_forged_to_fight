@@ -661,3 +661,14 @@ and `quest_begin_response.json` remain templates/fallbacks.
   `GetDamageInflicted` multiplies by the safe value, so all hits are 0. This is
   a client stat commit issue; no client patch applied.
 - `docs/odr_report.md`, `spec/attribute_pipeline.md` updated. Golden 9/9 PASS.
+
+## 2026-10-29 final for this queue
+
+- Nightly **PASS** at 19:54: check_all PASS, smoke PASS, BOTS 59/59, 0 NRE.
+  Log `work/nightly/nightly_2026-10-29_195435.log`; snapshot
+  `runs/2026-10-29_200853/`, index `runs/index.json`.
+- Final report: `report/FINAL_2026-10-29.md`; MASTER_PROMPT v4.9.
+- New blocker: `PlayerAttributes._attack.Get()` safe value 0 while display
+  `_value` 115; `Damage=0`, `DamageRating=0.7`. Not ODR; no client patch.
+- AttackValueData now has Light/Medium/Heavy/Ranged/Special1..3/Normal and
+  `attack_percent`; hidden player stats from quest team payload work.

@@ -330,3 +330,10 @@ is null in the loaded character prefab, or a real activate-match response.
   so the attack-value table works. Client stat commit issue, not ODR; no patch.
 - **OPEN:** whether a data-only stat/mod can force `_attack.Commit()`; not
   attempted.
+
+## 2026-10-29 итог очереди
+
+- `report/FINAL_2026-10-29.md`: все пункты закрыты как done/blocked.
+- Следующий приоритет: `_attack.Get()=0`; затем смерть/резолв/награды.
+- Блокеры: ability ids, Starscream pack, retail rating split, PlayStore image,
+  numeric economy.

@@ -177,3 +177,16 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
 - 2026-10-26 v4.8: ODR lazy manifest chain (no normal call), PlayStore/ARM64
   plans only, hidden-stat pipeline, rating inverse table, content timeline,
   S1 59/59 + nightly PASS.
+
+## 2026-10-29
+
+- **Hidden player stats:** quest team payload is the source; Armor 50/Crit 0.1/
+  CritDamage 1.5/Block 0.5/ManaGain 1.0 live. `[RUN]`
+- **ODR overlay:** not a permanent input blocker; battle visible/controllable.
+  Play Asset Delivery still unavailable.
+- **AttackValueData:** keys `Light/Medium/Heavy/Ranged/Special1..3/Normal` +
+  `attack_percent`; `DamageRating=0.7` for Light. `[RUN]`
+- **Zero damage:** `_attack.Get()=0` while `_value=115`; `Damage=0`,
+  `Flags=129`. New blocker, client stat commit issue.
+- **Nightly 2026-10-29 19:54 PASS**, BOTS 59/59; snapshot
+  `runs/2026-10-29_200853/`.
