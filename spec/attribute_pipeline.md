@@ -117,3 +117,27 @@ wiki or retail evidence.
 
 This is a **data/team-payload** problem, not a client patch.
 
+
+## 2026-10-29 attackValues and zero-damage blocker [RUN]
+
+`AttackLevel` enum is `None/Light/Medium/Heavy/Ranged/Special1..3/Special/
+Normal`; `PlayerAttributes.kAttackLevelEnums` maps those to the exact strings
+`Light`, `Medium`, `Heavy`, `Ranged`, `Special1/2/3`, `Special`, `Normal`.
+`GetAttackPercent` (`0xDAD2E4`) looks them up in `BCGManager.AttackValueData`.
+Our old table had only `basic_melee`, so the lookup returned 0. New entries
+were added as `[ASSUMED]` percentages (Light 0.7, Medium 1.0, Heavy 1.5,
+Ranged 0.7, Special1/2/3 1.0/1.5/2.0), plus the literal `attack_percent` key
+that `BCGAttackValue..ctor` (`0xC145BC`) reads for `Percent`:
+
+```
+Doc.Single(data, "percent", "attack_percent", default=0)
+```
+
+After this, live `DamageRating` for a Light hit became **0.7** (was 0).
+
+The final damage is still **0** because `PlayerAttributes._attack.Get()`
+returns 0 while `_attack._value` (display) is 115: the plain value is set but
+the `FastSafeFloat` safe value used by `Get()` is 0. `HitResultData.Damage`
+is 0 while `DamageRating` is 0.7 and `Flags=129` (Hit+LastHit). This is the
+current combat blocker; it is a client stat commit issue, not a missing
+server field. Do not patch the client to bypass it.

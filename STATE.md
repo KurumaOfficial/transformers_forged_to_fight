@@ -647,3 +647,17 @@ and `quest_begin_response.json` remain templates/fallbacks.
   PASS.
 - Smoke navigation is flaky: the START tap can race the map and open NODE
   INFO; server responses are unaffected. Details: `docs/routing_split.md`.
+
+## 2026-10-29 combat: ODR overlay gone, zero-damage blocker [RUN]
+
+- Battle scene is visible and input works; `FuseODRBlocker` object still exists
+  with 0 downloads but does not cover the HUD in `BattleArbiterMainState`.
+  Earlier "input blocked" conclusion was too strong.
+- Attack-value lookup fixed by data: `AttackLevel` keys `Light/Medium/Heavy/
+  Ranged/Special1..3/Normal` + literal `attack_percent`; `DamageRating` for a
+  Light hit is now 0.7 (was 0). `class_power: 1.0` added; live ClassPower 1.0.
+- New blocker: `PlayerAttributes._attack.Get()` returns 0 while the plain
+  `_value`/display is 115; `HitResultData.Damage=0`, `Flags=129`.
+  `GetDamageInflicted` multiplies by the safe value, so all hits are 0. This is
+  a client stat commit issue; no client patch applied.
+- `docs/odr_report.md`, `spec/attribute_pipeline.md` updated. Golden 9/9 PASS.

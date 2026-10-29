@@ -323,3 +323,10 @@ is null in the loaded character prefab, or a real activate-match response.
   evolution/forge/mastery/rewards are placeholders. `docs/economy.md`.
 - **POST-BATTLE (8.1):** blocked by ODR; plan and current stubs in
   `docs/post_battle_quests.md`.
+
+- **NEW (2026-10-29):** ODR overlay is not permanent; fight is visible and
+  controllable, but all damage is 0 because `PlayerAttributes._attack.Get()`
+  (safe value) is 0 while the display `_value` is 115. `DamageRating` is 0.7,
+  so the attack-value table works. Client stat commit issue, not ODR; no patch.
+- **OPEN:** whether a data-only stat/mod can force `_attack.Commit()`; not
+  attempted.

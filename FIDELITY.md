@@ -229,3 +229,12 @@ status. T5 is MASTER_PROMPT v4.3.
 |---|---|---|
 | Hidden base stats | **solved (pipeline)** | quest team payload now carries Armor 50/Crit 0.1/Block 0.5/Mana 1.0 [RUN] |
 | Per-bot hidden stats | partial | flat `[ASSUMED]` defaults; no wiki per-bot table |
+
+## 2026-10-29 combat state
+
+| Area | Level | Basis |
+|---|---|---|
+| ODR loading overlay | not visible in Main | battle HUD visible, input works [RUN] |
+| Attack value lookup | **fixed** | Light `DamageRating=0.7` [RUN] |
+| Damage / death / resolve | blocked | `_attack.Get()=0` while display `_value=115` [RUN] |
+| Hidden base stats | **solved (pipeline)** | Armor/Crit/Block/Mana non-zero [RUN] |

@@ -68,3 +68,31 @@ be tried without explicit consent. The live value is already 1, so the blocker
 is not simply "native ODR disabled".
 
 Full field table: `spec/tuning_keys.md`.
+
+## 2026-10-29 update: the overlay is not a permanent input blocker
+
+`[RUN]` After the latest runs the battle scene is visible and controllable:
+swipes increment the HITS counter, the HUD is drawn, and the camera follows
+the player. `dump_odr_blocker.py` still finds the `FuseODRBlocker` window/model
+(0 active/requested downloads, no pending WADs), but no loading overlay covers
+the HUD in `BattleArbiterMainState`. The earlier "input blocked by the blocker"
+conclusion was therefore too strong; the overlay is transient/state-dependent.
+
+The battle still does not resolve, but the cause is **zero damage**, not ODR:
+
+- `[RUN]` `HitResultData` after an enemy hit: `Flags=129` (Hit+LastHit),
+  `AttackLevel=1`, `Damage=0.0`, `DamageRating=0.7`.
+- `[RUN]` `PlayerAttributes._attack` is a `StatAttribute`; its visible/plain
+  `_value` is 115.0, but `Get()` (which reads the `FastSafeFloat` safe value)
+  returns 0.0. `GetDamageInflicted` multiplies by that value, so every hit is 0.
+- `[RUN]` The attack-value lookup itself now works after adding the
+  `Light/Medium/Heavy/Ranged/Special*` keys and the literal `attack_percent`
+  key: `DamageRating` became 0.7 for a Light hit (was 0 before).
+- Adding `class_power: 1.0` to the team/details did not change the result;
+  `ClassPower` is 1.0 live but `_attack.Get()` is still 0.
+
+This is a **client stat initialization/commit issue**, not a missing server
+field and not a reason to patch client code. It is recorded in
+`OPEN_QUESTIONS.md` and `STATE.md`; the ODR track stays blocked by the lack of
+Play Asset Delivery for the loading path, but it no longer explains the
+no-death/no-resolve outcome.
