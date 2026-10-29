@@ -679,3 +679,11 @@ and `quest_begin_response.json` remain templates/fallbacks.
   `MS_ID_SPECIAL_ATTACK_WINDBLADE_0..2`; `Synergy Bonuses` panel empty.
 - This is the expected result of missing per-bot catalog/localization data, not
   an NRE. Screenshot `tests/smoke/10b_bot_info.png`.
+
+## 2026-10-29 Step 0 claims audit
+
+- `docs/claims_audit.md`: 30 key claims with status; corrected ODR/input,
+  hidden-stat source, attackValues, special-attack prefix, rating-only-HP/ATK,
+  content timestamps and `Damage=0` cause; open buff ids, match-loaded,
+  zero-damage safe value, Play Store image, manifest trigger.
+- New rule: every new `[RUN]`/`[STATIC]` claim needs a linked evidence file.
