@@ -236,7 +236,7 @@ status. T5 is MASTER_PROMPT v4.3.
 |---|---|---|
 | ODR loading overlay | not visible in Main | battle HUD visible, input works [RUN] |
 | Attack value lookup | **fixed** | Light `DamageRating=0.7` [RUN] |
-| Damage / death / resolve | blocked | `_attack.Get()=0` while display `_value=115` [RUN] |
+| Damage / death / resolve | **fixed 2026-10-29** | `ArmorRatingConstant=0`; see later section [RUN] |
 | Hidden base stats | **solved (pipeline)** | Armor/Crit/Block/Mana non-zero [RUN] |
 
 ## 2026-10-29 late damage/post-battle
@@ -247,7 +247,7 @@ status. T5 is MASTER_PROMPT v4.3.
 | K.O. / resolve-match | **works** | loss and win request bodies captured [RUN] |
 | Return to map | **works** | both outcomes returned to map [RUN] |
 | Rewards/results/cleared tile | open | win returned to map without UI update |
-| Normal win without test data | partial | enemy reached 124.25 HP; test-only weak enemy used for the win |
+| Normal win without test data | **works** | player HP 300.2, enemy 0, damage 1069.5 [RUN] |
 
 ## 2026-10-30 rating/stat UI (Step 5)
 

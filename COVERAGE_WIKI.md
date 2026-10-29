@@ -190,3 +190,26 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   `Flags=129`. New blocker, client stat commit issue.
 - **Nightly 2026-10-29 19:54 PASS**, BOTS 59/59; snapshot
   `runs/2026-10-29_200853/`.
+
+## 2026-10-30
+
+- **Correction:** `_attack.Get()` is 115, not 0 (IL2CPP `byte[]` elements are
+  inline at `+0x20`). Zero damage was `ArmorRatingConstant=0`; adding
+  `missionsconfig.configs["bcg-combat"]` with `armor_break=200` fixed it.
+  `[RUN]` `docs/damage_pipeline.md`.
+- **Combat loop:** normal win player HP 300.2, enemy 0, damage 1069.5; loss and
+  win send resolve-match and return to map. `[RUN]`
+  `docs/evidence/post_battle_2026-10-29/`.
+- **Buff/localization:** 3307 `ID_STAT_*`, 8 `D_STAT*`, 390
+  `ID_SPECIAL_ATTACK_*`; keys only, numeric definitions still missing.
+  `spec/buff_catalog.md`.
+- **Server localization override:** `loc-cache-update` hook and
+  `xlate2Resources`/CDN path found, but two probes were negative.
+  `docs/special_attack_localization.md`.
+- **Systems:** CRYSTALS/OBJECTIVES/STORE/BASE view-only; PROFILE opens BOTS;
+  no AWAY MISSIONS. `docs/systems_screens.md`.
+- **Rating/stat UI:** UI renders, catalog values are placeholders; Windblade
+  rating 300 vs wiki 264, Bumblebee/Sideswipe 1050/115 vs wiki 1/1.
+  `docs/rating_ui_check.md`.
+- **Routing:** BCG builders extracted; offline regression PASS.
+  `docs/routing_split.md`.
