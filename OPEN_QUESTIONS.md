@@ -337,3 +337,7 @@ is null in the loaded character prefab, or a real activate-match response.
 - Следующий приоритет: `_attack.Get()=0`; затем смерть/резолв/награды.
 - Блокеры: ability ids, Starscream pack, retail rating split, PlayStore image,
   numeric economy.
+
+- **5.4 synergy/special UI [RUN]:** Windblade details shows empty synergy,
+  `NO ABILITIES`, raw `MS_ID_SPECIAL_ATTACK_WINDBLADE_0..2`. Data missing, UI
+  works. `docs/special_attack_localization.md`.

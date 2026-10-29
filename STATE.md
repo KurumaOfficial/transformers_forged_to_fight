@@ -672,3 +672,10 @@ and `quest_begin_response.json` remain templates/fallbacks.
   `_value` 115; `Damage=0`, `DamageRating=0.7`. Not ODR; no client patch.
 - AttackValueData now has Light/Medium/Heavy/Ranged/Special1..3/Normal and
   `attack_percent`; hidden player stats from quest team payload work.
+
+## 2026-10-29 live UI check (5.4) [RUN]
+
+- Windblade bot details: `ABILITIES: NO ABILITIES`; `SPECIAL ATTACKS` raw
+  `MS_ID_SPECIAL_ATTACK_WINDBLADE_0..2`; `Synergy Bonuses` panel empty.
+- This is the expected result of missing per-bot catalog/localization data, not
+  an NRE. Screenshot `tests/smoke/10b_bot_info.png`.

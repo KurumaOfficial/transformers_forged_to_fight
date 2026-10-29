@@ -61,3 +61,20 @@ To fix by data, add the exact `ID_SPECIAL_ATTACK_<UPPER>` and
 `..._DESCRIPTION` keys for each move id; the move id/name must come from the
 character move set, not invented. Until then, the raw `M1_SPECIAL_ATTACK_*`
 display is expected.
+
+## 2026-10-29 live bot details [RUN]
+
+Windblade details screen (`tests/smoke/10b_bot_info.png`) shows:
+
+- `ABILITIES` -> **NO ABILITIES** (the placeholder stat mod is not shown as a
+  bot ability).
+- `SPECIAL ATTACKS` -> raw keys
+  `MS_ID_SPECIAL_ATTACK_WINDBLADE_0`, `..._1`, `..._2` (the client displays the
+  key because the localization table has no entry).
+- `Synergy Bonuses` panel is present but empty for Windblade.
+
+This confirms the missing-data diagnosis: the client's UI slots are intact,
+but there is no per-bot `statMods`/`Buff`/localization data. The raw special key
+format here is `MS_ID_SPECIAL_ATTACK_<BOT>_<n>`; other bots may use a different
+move id (`M1_SPECIAL_ATTACK_*` was seen earlier), so do not assume one prefix
+for every bot.
