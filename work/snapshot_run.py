@@ -18,11 +18,16 @@ for src, name in [
     (ROOT / "server" / "requests.jsonl", "requests.jsonl"),
     (ROOT / "tests" / "smoke" / "latest.json", "smoke_latest.json"),
     (ROOT / "tests" / "smoke" / "battle_step.json", "battle_step.json"),
+    (ROOT / "tests" / "smoke" / "battle_series.json", "battle_series.json"),
+    (ROOT / "tests" / "smoke" / "full_smoke.json", "full_smoke.json"),
     (ROOT / "tests" / "sweep" / "sweep_59.json", "sweep_59.json"),
-    (ROOT / "work" / "nightly" / "nightly_2026-10-26_211947.log", "nightly.log"),
 ]:
     if src.exists():
         shutil.copy2(src, out / name)
+
+nightly_logs = sorted((ROOT / "work" / "nightly").glob("nightly_*.log"))
+if nightly_logs:
+    shutil.copy2(nightly_logs[-1], out / "nightly.log")
 
 logcat = subprocess.run([ADB, "logcat", "-d", "-v", "time"], capture_output=True,
                         text=True, encoding="utf-8", errors="replace", timeout=120).stdout
