@@ -1101,7 +1101,8 @@
        }
       }
      }
-    }
+    },
+    "description": "Inventory response (client-side currencies are rendered from login/account data; no purchase flow yet)."
    }
   },
   "/chat/data": {
@@ -1448,7 +1449,9 @@
        }
       }
      }
-    }
+    },
+    "description": "Gacha autorefresh. Current stub returns an empty auto-refresh envelope; no crystal list or open endpoint was observed.",
+    "x-implementation": "empty"
    }
   },
   "/autorefresh/gamestore/refresh": {
@@ -1519,7 +1522,9 @@
        }
       }
      }
-    }
+    },
+    "description": "Store autorefresh. Current stub returns an empty envelope; STORE is level-locked at LEVEL 2.",
+    "x-implementation": "empty"
    }
   },
   "/autorefresh/objectives/refresh": {
@@ -1590,7 +1595,9 @@
        }
       }
      }
-    }
+    },
+    "description": "Objectives autorefresh. Current stub returns an empty envelope; OBJECTIVES screen shows [0/0].",
+    "x-implementation": "empty"
    }
   },
   "/autorefresh/prizes/refresh": {
@@ -2016,7 +2023,9 @@
        }
       }
      }
-    }
+    },
+    "description": "Quest autorefresh. Current stub returns an empty envelope; quest list comes from /quests/quest-list.",
+    "x-implementation": "empty"
    }
   },
   "/autorefresh/ave/refresh": {
@@ -2087,7 +2096,9 @@
        }
       }
      }
-    }
+    },
+    "description": "Away/AVE autorefresh. Current stub returns an empty envelope; no away screen is reachable at this account state.",
+    "x-implementation": "empty"
    }
   },
   "/autorefresh/raid/refresh": {
