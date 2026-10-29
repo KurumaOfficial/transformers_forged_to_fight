@@ -224,3 +224,18 @@ Do not treat the saved revision date as the release date. The split is:
 **post-APK candidate** (page/event saved after 2022-07-26) vs **mapping gap**
 (no page/pack at all). The 131 post-APK saved revisions include old pages that
 were only re-saved, so only explicit text/date statements are strong evidence.
+
+## 2026-10-30 release-date correction
+
+`docs/content_release_dates.md` extracts `infobox.Release Date` from all 44
+saved bot pages. This is stronger than the saved revision date:
+
+- post-APK bots: **Sunstreaker** (2022-07-27 update / 2022-08-11 bot),
+  **Soundblaster/Tactician** (2022-09-15), **Chromia**, **Dead End** and the
+  base **Soundblaster** page (2023-05-10, Netflix era).
+- **Starscream** says `August 24, 2017`; the bot is pre-APK. The 9 missing
+  boss ids/pack are a **mapping/pack gap**, not evidence that Starscream was
+  added after the APK. The earlier wording that treated Starscream as
+  post-APK content was too strong.
+- 13 bots are `Launch`; 18 have a parseable date. Missions/events still need
+  the same per-page release-date extraction.
