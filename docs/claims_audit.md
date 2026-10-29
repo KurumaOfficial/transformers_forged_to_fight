@@ -77,3 +77,14 @@ Every new `[RUN]`/`[STATIC]` claim must link a file in `docs/`, `spec/`,
 | 42 | The localization table can be extended from the server | **open** | Not proven; need Xlate/snapshot/override analysis and a live test. |
 
 | 39 | Normal player can kill the enemy without test data | **confirmed [RUN]** | `battle_step.py` normal win: player HP 300.2, enemy HP 0, player damage 1069.5. `resolve_win_normal.json`. |
+
+## 2026-10-30 late corrections (localization, UI, routing)
+
+| # | Claim | Date | Status | Evidence / what was checked | Needed if open |
+|---:|---|---|---|---|---|
+| 43 | `LocalizationManager.Async` handles `loc-cache-update` | 2026-10-30 | **confirmed [STATIC]** | `0x127A050` compares the lowercased message with metadata string index 18474 (`loc-cache-update`); calls `loadLocData` (`0x1279C8C`). | — |
+| 44 | The server can override localization via `loc-cache-update` | 2026-10-30 | **corrected / negative [RUN]** | Sent the async with components `localization`, `LocalizationManager`, `localizationmanager`, `loc`; BOTS label unchanged, no loc error. | Exact async component registration or a working Xlate2 category |
+| 45 | `Xlate2` downloads `xlate2Resources` from `/cdn` | 2026-10-30 | **open / negative [RUN]** | `XlateManager.Connect` (`0x1593888`) calls `updateStringsFromCDN`; changing `xlate2Resources` to a direct array produced no `/cdn`/`xlate` request. Reverted. | Xlate2 enable flag and exact resource URL |
+| 46 | BCG builders can be extracted without wire changes | 2026-10-30 | **confirmed offline [RUN]** | `server/routes/bcg.py`; `work/test_bcg_split.py` PASS (HP 1050, ATK 115, rating 162, weak enemy, wrapper). | Live smoke after server restart |
+| 47 | Windblade UI stats match the wiki | 2026-10-30 | **partially confirmed [RUN]/[WIKI]** | HP 826 and ATK 102 match the star-1 infobox; rating 300 vs wiki 264. | Retail rating split |
+| 48 | The catalog stats/ratings are retail | 2026-10-30 | **corrected** | Bumblebee/Sideswipe live 1050/115 vs wiki 1/1 4860/444 and 5160/520; `docs/rating_ui_check.md`. | Retail per-bot rank/level/star tables |
