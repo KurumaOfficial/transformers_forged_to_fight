@@ -687,3 +687,24 @@ and `quest_begin_response.json` remain templates/fallbacks.
   content timestamps and `Damage=0` cause; open buff ids, match-loaded,
   zero-damage safe value, Play Store image, manifest trigger.
 - New rule: every new `[RUN]`/`[STATIC]` claim needs a linked evidence file.
+
+## 2026-10-29 damage root cause and post-battle loop
+
+- **Zero damage fixed [RUN]:** `TuningGameplay.ArmorRatingConstant` was 0
+  because no `bcg-combat` config was delivered. Adding
+  `missionsconfig.configs["bcg-combat"]` with `armor_break=200`,
+  `mana_gain=300`, `critTime=111` makes live values 200/300/111.
+- Player hit: raw 80.5, received 64.4 vs armor 50; enemy HP 1050 -> 124.25 in
+  a normal run. `_attack.Get()` is 115 (earlier safe-value claim was wrong:
+  IL2CPP byte[] elements are inline at +0x20).
+- **Win path [RUN]:** with test-only `work/weak_enemy.flag`, one hit killed the
+  enemy; `results={"result":"WON"}`, player HP 1033.6, enemy 0, resolve-match,
+  return to map.
+- **Loss path [RUN]:** K.O., `results={"result":"LOST"}`, enemyHealth=1,
+  resolve-match, return to map.
+- Evidence: `docs/evidence/post_battle_2026-10-29/`, `docs/damage_pipeline.md`,
+  `work/dmg1.png`, `work/ko2.png`, `work/winA.png`, `work/winB.png`.
+- **Still open:** rewards/results screen and cleared tile; current
+  `match_resolve_response.json` progression/async is not accepted. The win
+  response now includes progression/teamData/rewards plus a `match-resolved`
+  async attempt, but the map did not update.

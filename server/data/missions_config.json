@@ -13,7 +13,12 @@
       "pve": {},
       "ava": {},
       "ave": {},
-      "raid": {}
+      "raid": {},
+      "bcg-combat": {
+        "armor_break": 200.0,
+        "mana_gain": 300.0,
+        "critTime": 111.0
+      }
     }
   }
 }

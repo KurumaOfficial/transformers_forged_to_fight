@@ -341,3 +341,10 @@ is null in the loaded character prefab, or a real activate-match response.
 - **5.4 synergy/special UI [RUN]:** Windblade details shows empty synergy,
   `NO ABILITIES`, raw `MS_ID_SPECIAL_ATTACK_WINDBLADE_0..2`. Data missing, UI
   works. `docs/special_attack_localization.md`.
+
+- **FIXED (2026-10-29):** zero damage was `ArmorRatingConstant=0` due to a
+  missing `bcg-combat` config; add it with `armor_break=200`, `mana_gain=300`,
+  `critTime=111`. Damage 64.4, K.O., resolve-match and return-to-map work.
+- **OPEN:** win rewards/results/cleared tile; the current resolve response is
+  not accepted for progression. `docs/damage_pipeline.md`,
+  `docs/evidence/post_battle_2026-10-29/`.

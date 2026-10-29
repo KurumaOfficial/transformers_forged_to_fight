@@ -96,3 +96,13 @@ field and not a reason to patch client code. It is recorded in
 `OPEN_QUESTIONS.md` and `STATE.md`; the ODR track stays blocked by the lack of
 Play Asset Delivery for the loading path, but it no longer explains the
 no-death/no-resolve outcome.
+
+## 2026-10-29 correction: the zero-damage cause
+
+The earlier "`_attack.Get()` safe value is 0" statement was a decoding error:
+IL2CPP arrays store elements inline at `+0x20`; the correct value is 115 and
+the hash is valid. The real zero-damage cause was
+`TuningGameplay.ArmorRatingConstant=0` (missing `bcg-combat` config), which
+made armor 50 give 100% damage reduction. The combat loop now reaches K.O.,
+`resolve-match` and return-to-map. Full details: `docs/damage_pipeline.md`;
+evidence `docs/evidence/post_battle_2026-10-29/`.

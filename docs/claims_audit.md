@@ -53,3 +53,17 @@ Labels: `[RUN]` executed/observed, `[STATIC]` code/data, `[DERIVED]` computed,
 
 Every new `[RUN]`/`[STATIC]` claim must link a file in `docs/`, `spec/`,
 `tests/`, or `work/`; otherwise it stays `[ASSUMED]`.
+
+## 2026-10-29 late corrections (damage)
+
+| # | Claim | Status | Evidence / needed |
+|---:|---|---|---|
+| 31 | `PlayerAttributes._attack.Get()` is 0 while `_value` is 115 | **corrected** | The safe value is **115**; the earlier read treated an IL2CPP byte[] data pointer as a pointer, but elements are inline at `+0x20`. `work/dump_defense.py` shows hash OK, safe=115. |
+| 32 | Zero damage is a client stat commit issue | **corrected** | Zero was `ArmorRatingConstant=0`; `GetArmorDR` gave 100% reduction. `docs/damage_pipeline.md`. |
+| 33 | `TuningGameplay` defaults are 0 | **corrected** | Code defaults are 300/200/111; they are overwritten by `TuningGameplay.OnConfigChanged` with the `bcg-combat` config. Missing config left 0. |
+| 34 | A `bcg-combat` config with `armor_break=200` fixes damage | **confirmed [RUN]** | Live `ArmorRatingConstant=200`; player hit 80.5 raw, 64.4 after armor; enemy HP dropped. |
+| 35 | Death/K.O. -> resolve -> map works | **confirmed [RUN]** | Loss and win both sent `/matches/resolve-match/quests_fight` and returned to map; `docs/evidence/post_battle_2026-10-29/`. |
+| 36 | Rewards/results screen works after a win | **open** | Win returned to map without rewards/cleared tile; current `match_resolve_response.json` lacks the accepted progression/async payload. |
+| 37 | ODR blocks combat input | **corrected** | Battle visible/controllable; resolve observed. |
+| 38 | `attackValues`/`attack_percent` are needed for basic damage | **confirmed [RUN]** | `DamageRating=0.7`; raw damage 80.5. |
+| 39 | Normal player can kill the enemy without test data | **open** | Normal run got enemy to 124.25 HP; win required the test-only `weak_enemy` flag. Controls/positioning still need practice. |

@@ -1,0 +1,110 @@
+{
+ "timestamp": "2026-10-29T21:33:37.730286Z",
+ "client_ip": "127.0.0.1",
+ "client_port": 59124,
+ "method": "POST",
+ "path": "/matches/resolve-match/quests_fight",
+ "query": {
+  "sig": [
+   "08ZYm3H2AcwGlBhB8Av9NGETwc4="
+  ],
+  "stoken": [
+   "sess_tf_stub_token_12345"
+  ],
+  "sver": [
+   "3"
+  ],
+  "ts": [
+   "1793309617"
+  ]
+ },
+ "headers": {
+  "Content-Type": "application/json",
+  "Content-Length": "1380",
+  "Host": "127.0.0.1",
+  "Accept-Encoding": "gzip",
+  "User-Agent": "Sparx/1.0"
+ },
+ "body": {
+  "id": "",
+  "nonce": "6ae3bbb16911bc4d69100015",
+  "results": {
+   "result": "WON"
+  },
+  "api": 3,
+  "game_stats": {
+   "time": 55.0496979,
+   "map": "",
+   "tod": 0,
+   "player_1_stats": {
+    "res_m_l": 1,
+    "hp_remaining": 0,
+    "dmg_other": 0.00204086304,
+    "res_h_total": 61,
+    "time_idle": 14.215044,
+    "status_a": 29.5901833,
+    "res_h_m": 38,
+    "res_h_l": 23,
+    "res_m_total": 1,
+    "res_s_l": 0,
+    "hp_percent": 0,
+    "time_dodge": 0.733785629,
+    "use_atk_total": 43,
+    "use_atk_l": 24,
+    "use_dodge": 2,
+    "telemetry": {},
+    "res_s_m": 0,
+    "use_total": 55,
+    "status_i": 25.4595566,
+    "time_run": 0.100563049,
+    "time_block": 9.46586609,
+    "dmg_atk_total": 28.0799904,
+    "char": "sideswipe_gs",
+    "ai_personality": "EasyFTE",
+    "hp_lost": 1,
+    "ai_profile": "Default",
+    "res_total": 62,
+    "ai_difficulty": 0.5,
+    "max_combo": 61,
+    "dmg_atk_m": 15.1999941,
+    "dmg_atk_l": 12.880003,
+    "time_atk_l": 14.3509035,
+    "time_atk_m": 15.9839201,
+    "use_atk_m": 19,
+    "hp_start": 1,
+    "ai_rage_changes": 1,
+    "use_block": 10
+   },
+   "wf_duration": 0,
+   "player_0_stats": {
+    "max_combo": 1,
+    "status_a": 0.869379163,
+    "dmg_atk_total": 80.5,
+    "time_atk_l": 1.00069427,
+    "use_total": 4,
+    "telemetry": {},
+    "res_h_total": 1,
+    "char": "bumblebee_cin_dotm",
+    "res_h_l": 1,
+    "res_s_l": 1,
+    "time_run": 0.0334472656,
+    "res_m_total": 2,
+    "res_total": 3,
+    "dmg_atk_l": 80.5,
+    "use_atk_total": 4,
+    "status_i": 54.1803246,
+    "res_m_l": 2,
+    "hp_start": 1050,
+    "time_react": 30.2991028,
+    "dmg_other": -79.5,
+    "use_atk_l": 4,
+    "hp_percent": 0.973255217,
+    "time_idle": 23.5836067,
+    "hp_remaining": 1021.91797,
+    "hp_lost": 28.0820313
+   }
+  },
+  "enemyHealth": 0,
+  "qid": "story_act1_ch4_m2"
+ }
+}

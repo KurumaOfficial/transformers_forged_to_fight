@@ -141,3 +141,18 @@ the `FastSafeFloat` safe value used by `Get()` is 0. `HitResultData.Damage`
 is 0 while `DamageRating` is 0.7 and `Flags=129` (Hit+LastHit). This is the
 current combat blocker; it is a client stat commit issue, not a missing
 server field. Do not patch the client to bypass it.
+
+## 2026-10-29 correction and damage formula [RUN]
+
+- The earlier `_attack.Get()=0` claim was wrong (IL2CPP byte[] elements are
+  inline at `+0x20`; safe value is 115, hash OK).
+- `ArmorRatingConstant` was 0, so `GetArmorDR = armor/(armor+0)` = 1.0.
+  Add `missionsconfig.configs["bcg-combat"]`:
+  `armor_break=200`, `mana_gain=300`, `critTime=111` -> live 200/300/111.
+- `GetDamageInflicted`: `clamp01(HitData.Damage) * GetAttackPercent *
+  GetAttackBonusMultiplier * _attack.Get()` (+crit, +flat). Live Light hit:
+  0.7 * 1 * 115 = 80.5; after armor DR 0.2: 64.4.
+- `GetDamageReceived`: block/perfect-block, indestructible/invulnerable,
+  armor DR, damage resistances, protection clamp, minHP clamp.
+- `GetArmorDR`: `armor/(abs(armor)+ArmorRatingConstant) + up - break`.
+- Win/loss -> resolve -> map: `docs/evidence/post_battle_2026-10-29/`.

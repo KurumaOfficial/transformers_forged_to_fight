@@ -6,7 +6,7 @@ import os
 import sys
 import urllib.parse
 from datetime import datetime
-from routes.quests import build_detail as build_quest_detail, build_begin as build_quest_begin
+from routes.quests import build_detail as build_quest_detail, build_begin as build_quest_begin, find_quest
 from routes import auth as auth_routes
 from routes import matches as match_routes
 from routes import odr as odr_routes
@@ -19,6 +19,9 @@ ACTIVE_POS = {}
 # GET /__control?movedir_actions=moveto|battle|both
 EXPERIMENT = {"movedir_actions": "both", "tutorial_mode": "completed"}
 DB_ENABLED = bool(os.environ.get("TFTF_DB"))
+# Test-only switch: when work/weak_enemy.flag exists, server-generated enemy
+# details get 1 HP / 1 attack. Used only to capture the win/post-battle path.
+WEAK_ENEMY = os.path.exists(os.path.join(os.path.dirname(__file__), "..", "work", "weak_enemy.flag"))
 
 
 def persist_quest_run(qid, team=None, state=None):
@@ -125,8 +128,8 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
 
         return path, query, headers_dict, body_json
 
-    def send_sparx(self, result=None, sync=None, status_code=200, assumed_label="[ASSUMED]"):
-        payload = make_sparx_response(result=result, sync=sync)
+    def send_sparx(self, result=None, sync=None, status_code=200, assumed_label="[ASSUMED]", async_list=None):
+        payload = make_sparx_response(result=result, sync=sync, async_list=async_list)
         body = payload.encode('utf-8')
         self.send_response(status_code)
         self.send_header('Content-Type', 'application/json; charset=utf-8')
@@ -235,6 +238,9 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 sig = int(h.get("sig_lvl", 0) or 0)
                 hp = 800 + rank * 200 + level * 50
                 atk = 80 + rank * 30 + level * 5
+                if WEAK_ENEMY and bid in ("sideswipe_gs", "enemy1"):
+                    hp = 1
+                    atk = 1
                 rating_hp = int(hp * 0.1)
                 rating_attack = int(atk * 0.5)
                 base_cat = load_data_json("bcg_login_data.json")
@@ -718,8 +724,75 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
 
         # 12h. Matches: Resolve Match [STATIC: loaded from server/data/match_resolve_response.json]
         if path.startswith("/matches/resolve-match/"):
-            self.send_sparx(match_routes.resolve(load_data_json),
-                            assumed_label="[STATIC: /matches/resolve-match/ loaded from data/match_resolve_response.json]")
+            data = match_routes.resolve(load_data_json)
+            try:
+                won = ((body or {}).get("results") or {}).get("result") == "WON"
+            except Exception:
+                won = False
+            qid = (body or {}).get("qid") or ""
+            if won and qid:
+                pos = ACTIVE_POS.get(qid, {"x": 1, "y": 0})
+                cleared = [{"x": 0, "y": 0}]
+                if pos not in cleared:
+                    cleared.append(pos)
+                base_cat = load_data_json("bcg_login_data.json")
+                ud = json.loads(json.dumps(base_cat.get("userData", {})))
+                wrapper = {
+                    "userData": {
+                        "blueprintsMax": ud.get("blueprintsMax", 50),
+                        "teamSizeMax": ud.get("teamSizeMax", 3),
+                        "teamCountMax": ud.get("teamCountMax", 3),
+                    },
+                    "updates": {
+                        "heroes": ud.get("heroes", []),
+                        "savedTeams": ud.get("savedTeams", []),
+                        "activeTeams": ud.get("activeTeams", []),
+                        "inventory": ud.get("inventory", {"f": {}, "bp": {}, "max": {}}),
+                    },
+                    "deletes": {},
+                }
+                _qset, quest = find_quest(qid)
+                rewards = (quest or {}).get("firstCompletionRewards") or []
+                data.update({
+                    "qid": qid,
+                    "victory": True,
+                    "enemyHealth": 0,
+                    "rewards": rewards,
+                    "firstCompletionRewards": rewards,
+                    "results": [],
+                    "matchResults": {"battleId": "battle1", "result": 1},
+                    "progression": {
+                        "version": 3,
+                        "currentPos": pos,
+                        "cleared": cleared,
+                        "previouslyCleared": [],
+                        "revealed": [],
+                        "currentFightId": "",
+                        "currentBattleId": "",
+                        "currentBattleBossId": "",
+                        "currentBattlePos": pos,
+                        "currentBattleEnemyHealth": 0,
+                        "users": {},
+                        "currentPosition": pos,
+                        "playerPosition": pos,
+                        "currentTile": pos,
+                        "clearedTiles": cleared,
+                        "percentComplete": 22,
+                    },
+                    "teamData": wrapper,
+                })
+            self.send_sparx(data,
+                            assumed_label="[CLIENT: /matches/resolve-match/ win progression + rewards]",
+                            async_list=([{"component": "quests", "message": "match-resolved",
+                                          "payload": data},
+                                         {"component": "quests", "message": "battlecomplete",
+                                          "payload": {"matchId": "match_pve_1001", "isWin": True,
+                                                      "remainingHP": [0.0, 0.0], "rewards": data.get("rewards", []),
+                                                      "withheldRewards": []}},
+                                         {"component": "quests", "message": "questcomplete",
+                                          "payload": {"qid": qid, "completion": 1.0,
+                                                      "rewards": data.get("rewards", []), "nextQid": ""}}]
+                                        if won and qid else None))
             return
 
         # 13. Quests: Active quest [STATIC: loaded from server/data/quest_active.json]
