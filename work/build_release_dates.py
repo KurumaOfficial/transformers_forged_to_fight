@@ -39,7 +39,8 @@ rows = []
 for name, data in BOTS.items():
     raw = ((data.get("infobox") or {}).get("Release Date") or "").strip()
     dt = parse_date(raw)
-    rows.append((dt or datetime(1900, 1, 1), name, raw, dt is not None and dt >= APK))
+    rows.append((dt or datetime(1900, 1, 1), name, raw, dt is not None and dt >= APK,
+                 dt is not None and not raw.startswith("Launch")))
 
 rows.sort(key=lambda r: (r[0], r[1]))
 post = [r for r in rows if r[3]]
@@ -52,9 +53,9 @@ lines = [
     "field). APK date: **2022-07-26**. A date after that is a post-APK content",
     "candidate; it is not proof that the 9.2.0 client can load the bot.",
     "",
-    f"- non-Launch dates parsed: **{sum(1 for r in rows if r[2] and not r[2].startswith('Launch'))}**",
+    f"- non-Launch dates parsed: **{sum(1 for r in rows if r[4])}**",
     f"- `Launch`: **{len(launch)}**",
-    f"- no date: **{sum(1 for r in rows if not r[2])}**",
+    f"- unknown/unparsed: **{len(rows) - len(launch) - sum(1 for r in rows if r[4])}**",
     f"- post-APK candidates: **{len(post)}**",
     "",
     "## Post-APK candidates",
@@ -62,7 +63,7 @@ lines = [
     "| bot | release date (raw) | parsed |",
     "|---|---|---|",
 ]
-for dt, name, raw, is_post in post:
+for dt, name, raw, is_post, _parsed in post:
     lines.append(f"| {name} | {raw} | {dt.date().isoformat()} |")
 
 lines += [
@@ -72,7 +73,7 @@ lines += [
     "| bot | release date (raw) | parsed | post-APK |",
     "|---|---|---|---|",
 ]
-for dt, name, raw, is_post in rows:
+for dt, name, raw, is_post, _parsed in rows:
     parsed = "" if dt.year == 1900 else dt.date().isoformat()
     lines.append(f"| {name} | {raw} | {parsed} | {'yes' if is_post else ''} |")
 

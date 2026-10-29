@@ -6,7 +6,7 @@ candidate; it is not proof that the 9.2.0 client can load the bot.
 
 - non-Launch dates parsed: **31**
 - `Launch`: **13**
-- no date: **0**
+- unknown/unparsed: **0**
 - post-APK candidates: **5**
 
 ## Post-APK candidates
