@@ -44,3 +44,17 @@ these screens; the current data is local/empty. Do not invent response keys.
 These are **view-only** wins. No rewards, purchases, objectives or building
 actions are implemented. The store is blocked by the level lock; the arena by
 the level/alliance lock.
+
+
+## 2026-10-30 follow-up [RUN]
+
+- Tapping the top-left Commander block opens the BOTS roster; there is no
+  separate profile screen or KABAM ACCOUNT/LOGIN OPTIONS popup at this point.
+  Evidence work/pf.png.
+- The FIGHT mode list shows STORY, RAIDS, SPECIAL (locked), ARENAS (locked),
+  ALLIANCE (locked); no AWAY MISSIONS entry. Evidence work/home.png.
+- Home still shows LVL 0 although login_response.user.level and
+  ccount_data.user.level are 5; the displayed level source is not the
+  account level field. This is why STORE stays locked at LEVEL 2. The exact
+  player-level source is an open static question; do not fake a level value
+  until it is identified.
