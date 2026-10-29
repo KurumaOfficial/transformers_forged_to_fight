@@ -111,3 +111,10 @@ CDN path, but neither accepted our payload in the tested shape. The exact
 async component/registration and the Xlate2 enable condition are still
 unknown. Do **not** invent per-bot keys or claim a server override; the raw
 `MS_ID_SPECIAL_ATTACK_WINDBLADE_*` display remains the expected result.
+
+Exact-key search `[STATIC]`: `ID_SPECIAL_ATTACK_WINDBLADE` and
+`MS_ID_SPECIAL_ATTACK_WINDBLADE` are absent from both
+`global-metadata.dat` and every file under `assets/bin/Data` (recursive
+byte search). `ID_SPECIAL_ATTACK_OPTIMUS*` exists in 15 Data files, so the
+search method finds real keys; Windblade's keys are genuinely missing, not
+missed by a prefix assumption.
