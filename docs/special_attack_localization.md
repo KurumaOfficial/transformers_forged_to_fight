@@ -78,3 +78,36 @@ but there is no per-bot `statMods`/`Buff`/localization data. The raw special key
 format here is `MS_ID_SPECIAL_ATTACK_<BOT>_<n>`; other bots may use a different
 move id (`M1_SPECIAL_ATTACK_*` was seen earlier), so do not assume one prefix
 for every bot.
+
+## 2026-10-30 server-side localization override probe (Step 3.3)
+
+Static path exists, but the live override is **not proven**.
+
+- `LocalizationManager.Async` (`0x127A050`) lowercases the message and compares
+  it with the metadata literal at index 18474: **`loc-cache-update`**
+  (`global-metadata.dat` v27, string-literal table; resolved by hand).
+  On a match it calls `loadLocData(payload)` (`0x1279C8C`).
+- `LocalizationManager` keeps `Dictionary<string, IDictionary> locCache` and
+  exposes `UpdateLocForSystem`/`AllLocForSystem`.
+- `XlateManager.Connect` (`0x1593888`) reads the account `xlate2Resources`,
+  compares category hashes and calls `updateStringsFromCDN(category,
+  resource, cb)` (`0x159414C`). `account_data.json` already contains a
+  `xlate2Resources.resources[]` list and `cdn: http://127.0.0.1:8080/cdn`.
+
+Experiments (server data only, no client patch):
+
+1. `[RUN]` Sent async `{component, message: "loc-cache-update", payload}`
+   from `/bcg/getLoginData` and then from every response, with components
+   `localization`, `LocalizationManager`, `localizationmanager`, `loc` and a
+   flat payload overriding `ID_UI_HEROES_BOTS` (`BOTS`). The home label did
+   not change; no localization error appeared in logcat.
+2. `[RUN]` Changed `account_data.json` `xlate2Resources` from
+   `{resources:[...]}` to a direct array (the client calls `Dot.Array` on it).
+   No `/cdn/...`, `xlate/...` or `snapshot` request was observed; change
+   reverted.
+
+Conclusion: the client has a real `loc-cache-update` async hook and an Xlate2
+CDN path, but neither accepted our payload in the tested shape. The exact
+async component/registration and the Xlate2 enable condition are still
+unknown. Do **not** invent per-bot keys or claim a server override; the raw
+`MS_ID_SPECIAL_ATTACK_WINDBLADE_*` display remains the expected result.
