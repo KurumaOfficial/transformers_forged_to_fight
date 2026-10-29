@@ -674,3 +674,16 @@ PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 | TuningGameplay live | 300 / 200 / 111, DefenderMana 1.25, blocked 0.35 | [RUN] |
 | Нормальная победа без weak-enemy | HP игрока 300.2, враг 0, урон 1069.5 | [RUN] |
 
+## 2026-10-30: v4.10, локализация, экраны, рейтинг
+
+| Пункт | Результат | Метка |
+|---|---|---|
+| `loc-cache-update` | сообщение найдено в `LocalizationManager.Async`; серверный override не сработал | `[STATIC]`/`[RUN]` |
+| `xlate2Resources` | прямой массив не вызвал CDN-запрос; откат | `[RUN]` |
+| CRYSTALS/OBJECTIVES/STORE/BASE | просмотр без NRE; данных нет, магазин LEVEL 2 | `[RUN]` |
+| PROFILE | верхний левый Commander открывает BOTS; отдельного профиля нет | `[RUN]` |
+| Windblade UI | HP 826, ATK 102 (вики), rating 300 vs вики 264 | `[RUN]`/`[WIKI]` |
+| Bumblebee/Sideswipe | 1050/115 vs вики 1/1 4860/444 и 5160/520 | `[RUN]`/`[WIKI]` |
+| BCG-роуты | `routes/bcg.py`, offline regression PASS | `[RUN]` |
+| MASTER_PROMPT | v4.10 | — |
+

@@ -1,11 +1,105 @@
-# MASTER_PROMPT v4.9 - current state and queue (2026-10-29)
+# MASTER_PROMPT v4.10 - current state and queue (2026-10-30)
 
 Continue from this file if the chat is lost. Files beat this text:
-`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-29.md`, `report/FINAL_2026-10-26.md`,
-`docs/prefight_flow.md`, `docs/interfaces.md`, `docs/screens.md`,
-`docs/debug_modes.md`, `docs/protocol_coverage_2026-10-25.md`.
+`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-30.md`,
+`docs/damage_pipeline.md`, `docs/claims_audit.md`, `docs/routing_split.md`,
+`spec/buff_catalog.md`, `spec/tuning_values.md`, `docs/rating_ui_check.md`.
 
-## 2026-10-29 v4.9 update (read this first)
+## 2026-10-30 v4.10 update (read this first)
+
+- **Zero damage is fixed [RUN].** The root cause was
+  `TuningGameplay.ArmorRatingConstant=0` because no `bcg-combat` config was
+  delivered. Add
+  `missionsconfig.configs["bcg-combat"]={armor_break:200, mana_gain:300,
+  critTime:111}`. Do **not** replace the outer `missionsconfig` wrapper: that
+  caused a `QuestsManager.RefreshUserBase` NRE. `docs/damage_pipeline.md`.
+- **Correction to v4.9:** `PlayerAttributes._attack.Get()` is **115**, not 0.
+  The earlier 0 was an IL2CPP `byte[]` decoding error (elements are inline at
+  `+0x20`). Zero damage came from `GetArmorDR = armor/(armor+0) = 1.0`.
+- **Combat loop [RUN].** Light hit: raw 80.5, received 64.4 vs armor 50.
+  Normal win without test data: player HP 300.2, enemy 0, player damage 1069.5,
+  enemy damage 749.8. Loss and win both send
+  `/matches/resolve-match/quests_fight` and return to the quest map.
+  Evidence `docs/evidence/post_battle_2026-10-29/`.
+- **Post-battle still open.** Rewards/results/cleared tile did not update.
+  The current resolve response plus `match-resolved`/`battlecomplete`/
+  `questcomplete` async attempts were not accepted. Need the real accepted
+  progression/async payload; do not invent fields.
+- **Buff/localization keys exist but are not definitions.** `work/
+  localization_all.json` has **3307** `ID_STAT_*`, **8** `D_STAT*` and **390**
+  `ID_SPECIAL_ATTACK_*` keys (65 bot/move tokens). They are localization
+  entries, not numeric `statMods`/`Buff` definitions. Rhinox has 31 keys;
+  Bumblebee has no `ID_STAT_BUMBLEE_*` ability keys; Windblade has no
+  special-attack keys. `spec/buff_catalog.md`.
+- **Localization override is unproven.** `LocalizationManager.Async`
+  (`0x127A050`) compares the lowercase message with **`loc-cache-update`**;
+  `XlateManager.Connect` (`0x1593888`) reads `xlate2Resources` and calls
+  `updateStringsFromCDN`. Sending `loc-cache-update` with four component names
+  and a flat payload did not change a visible label; making `xlate2Resources`
+  a direct array produced no CDN request. Both were reverted. The raw
+  `MS_ID_SPECIAL_ATTACK_WINDBLADE_*` display remains expected.
+  `docs/special_attack_localization.md`.
+- **Other systems are view-only [RUN].** CRYSTALS opens empty (`No crystals
+  available`), OBJECTIVES shows `[0/0]`, STORE is locked at LEVEL 2, BASE
+  opens. Tapping top-left `Commander` opens the BOTS roster; there is no
+  separate profile screen. No AWAY MISSIONS entry in the FIGHT list; STORY
+  works, RAIDS/SPECIAL/ARENAS/ALLIANCE are locked. `docs/systems_screens.md`.
+- **Rating/stat UI does not match wiki.** Windblade live HP 826 / ATK 102
+  matches the star-1 infobox, but rating is 300 vs wiki 264. Bumblebee and
+  Sideswipe live at 1050/115 vs wiki rank/level 1/1 4860/444 and 5160/520.
+  The catalog uses placeholder formulas. `docs/rating_ui_check.md`.
+- **Routing split:** BCG builders are now in `server/routes/bcg.py`
+  (`login_data`, `base_hero_data`, `user_data`, `set_saved_team`); offline
+  regression PASS. The running server must be restarted before the live smoke
+  tests the split. Base/quests/autorefresh dispatch is still inline.
+  `docs/routing_split.md`.
+- **TuningGameplay:** 30 fields; decoded live values are 300/200/111,
+  DefenderMana 1.25, blocked 0.35, chain reset 0.75, evade 100, range 0.
+  The other 22 fields are unknown, not guessed. `spec/tuning_values.md`.
+- **Nightly** now includes `work/battle_step.py` (damage, HP drop,
+  resolve-match). A 20-fight series is recorded in
+  `tests/smoke/battle_series.json`; check its final count before claiming a
+  full series.
+- **Content timeline:** Act 4 / Awaken and Corrupt saved 2022-12-29,
+  Soundblaster 2022-12-27, Slipstream 2022-12-29; Starscream, Chromia and
+  Dead End are absent from the saved page set. `docs/content_timeline.md`.
+
+## Current queue status (v4.9 -> v4.10)
+
+| Step | State | What remains / why |
+|---|---|---|
+| 0 claims audit | **done** | `docs/claims_audit.md` 42 rows; new claims link evidence |
+| 1 zero damage | **done for damage + loop** | rewards/results/cleared tile open; 30-run variant series not repeated after the fix |
+| 2 buffs/abilities | **1 done, 2.2 partial, 2.3-2.5 blocked** | keys catalogued; numeric statMod/Buff definitions and triggers missing; do not invent |
+| 3 special-attack names | **3.1/3.2 done, 3.3 negative** | `loc-cache-update` hook found; server override not accepted; raw Windblade keys |
+| 4 content by date | **partial** | post-APK candidates listed; per-page first revision and full mission/event dates still incomplete |
+| 5 rating/stat UI | **checked, fails fidelity** | UI renders; catalog values are placeholders; `docs/rating_ui_check.md` |
+| 6 other systems | **view-only** | CRYSTALS/OBJECTIVES/STORE/BASE/PROFILE/FIGHT opened; gacha/objectives/store logic not implemented |
+| 7 tests/stand | **partial** | nightly battle step PASS; 20-fight series running; full independent smoke phases and fresh `runs/` snapshot missing |
+| 8 protocol/data | **partial** | openapi + tuning + economy docs exist; full Tuning consumer map and numeric economy missing |
+| 9 infrastructure | **BCG split done** | remaining dispatch inline; backup skipped (BACKUP_PATH empty); wiki images skipped |
+| 10 documents | **this file** | STATE/FIDELITY/OPEN_QUESTIONS/COVERAGE updated |
+| 11 final | **pending** | write `report/FINAL_2026-10-30.md` after the series/snapshot |
+
+## How to continue (no chat history)
+
+1. `cd` to the repo root; start
+   `C:\Python314\python.exe server\stub_server.py`; `adb reverse tcp:8080
+   tcp:8080`; run `python work\smoke_test.py --plus --fight --no-memory`.
+2. Normal combat check: `python work\battle_step.py --wait 75`. It must show
+   `resolve_match`, `damage_nonzero`, `hp_decreases`, `fight_ends` all true.
+3. Never create `work/weak_enemy.flag` for normal tests; it is a test-only
+   switch. Restart the server after data/code changes.
+4. Read `docs/claims_audit.md` before repeating any old blocker claim. The
+   zero-damage and ODR claims in v4.9 are corrected there.
+5. Do not invent per-bot statMod/Buff ids, special-attack localization keys,
+   store/gacha schemas or numeric economy. Record them in
+   `OPEN_QUESTIONS.md` instead.
+6. Rules unchanged: no Frida/gadget, no client code/data patch, no block
+   bypass, no OneDrive, no debugger, no Play Store image, no git push/gc
+   --prune/filter-repo/force-push/remotes/config changes.
+
+## 2026-10-29 v4.9 update (historical)
 
 - **Hidden player stats are solved [RUN].** The quest team payload is the
   player's battle-attribute source, not `getBaseHeroData`. Add
@@ -19,10 +113,6 @@ Continue from this file if the chat is lost. Files beat this text:
   downloads/pending WADs, but does not cover the HUD in `BattleArbiterMainState`.
   The earlier "input blocked" conclusion was too strong. Play Asset Delivery
   is still unavailable; ODR manifest track stays blocked.
-- **New combat blocker: zero damage.** `PlayerAttributes._attack.Get()` returns
-  0 while the display `_value` is 115; `HitResultData.Damage=0`,
-  `DamageRating=0.7`, `Flags=129`. `GetDamageInflicted` multiplies by the safe
-  value. This is a client stat commit issue, not missing data; no client patch.
 - **Attack-value keys fixed by data.** `AttackLevel` maps to
   `Light/Medium/Heavy/Ranged/Special1..3/Normal`; `BCGAttackValue..ctor` reads
   the literal `attack_percent` key. New `[ASSUMED]` entries make
@@ -40,9 +130,6 @@ Continue from this file if the chat is lost. Files beat this text:
   numeric retail tables are missing, fight does not resolve.
 - **Nightly 2026-10-29 19:54 PASS:** check_all PASS, smoke PASS,
   BOTS 59/59. Snapshot `runs/2026-10-29_200853/`, index `runs/index.json`.
-- **Still blocked:** zero damage/death/resolve/rewards, Starscream pack,
-  retail rating split, full PlayStore/ARM64 experiments, per-bot hidden stats,
-  full routing split, 34 wiki images.
 
 ## 2026-10-26 v4.8 update (read this first)
 

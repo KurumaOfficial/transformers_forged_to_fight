@@ -713,6 +713,32 @@ and `quest_begin_response.json` remain templates/fallbacks.
   player HP 300.2, enemy 0, damage 1069.5. Evidence
   `docs/evidence/post_battle_2026-10-29/resolve_win_normal.json`.
 
+## 2026-10-30 v4.10 queue state
+
+- MASTER_PROMPT.md is now v4.10 with the corrected damage story, buff/loc
+  findings, systems screens, rating UI gap and the current queue.
+- Step 1 is done for damage and the full kill/resolve/map loop. Rewards,
+  results and the cleared tile remain open (accepted progression/async
+  payload not found).
+- Step 2: key catalog done (3307/8/390); numeric statMod/Buff definitions,
+  triggers and pilot wiring are still missing. Do not invent them.
+- Step 3: `loc-cache-update` hook + XlateManager CDN path documented; two
+  server-side override probes were negative. Raw Windblade keys remain.
+- Step 4: post-APK candidates documented; full per-page first-revision table
+  still incomplete.
+- Step 5: UI check done; catalog values are placeholders and do not match wiki
+  (`docs/rating_ui_check.md`).
+- Step 6: CRYSTALS/OBJECTIVES/STORE/BASE/PROFILE/FIGHT view-only; logic not
+  implemented.
+- Step 7: nightly battle step PASS; 20-fight series is in
+  `tests/smoke/battle_series.json`; full independent smoke phases and a fresh
+  runs snapshot still pending.
+- Step 8: openapi/tuning/economy partial; full consumer map and numeric
+  economy missing.
+- Step 9: BCG builders extracted (`server/routes/bcg.py`, offline regression
+  PASS); remaining dispatch inline; backup/images skipped.
+- Step 10: this state + v4.10; Step 11 FINAL next.
+
 ## 2026-10-29 queue docs batch (Steps 2/4/6/8)
 
 - spec/buff_catalog.md: 3307 ID_STAT_*, 8 D_STAT*, 390
