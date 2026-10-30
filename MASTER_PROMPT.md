@@ -59,7 +59,13 @@ Continue from this file if the chat is lost. Files beat this text:
 - **Nightly** now includes `work/battle_step.py` (damage, HP drop,
   resolve-match). A 20-fight series is recorded in
   `tests/smoke/battle_series.json`; check its final count before claiming a
-  full series.
+  full series. The first 10/10 fights PASS (`battle_series_part1.json`); the
+  second 10-fight run was started after an emulator/server restart.
+- **Routing smoke:** after the restart, fast smoke PASS with
+  `server/routes/bcg.py`; the BCG split does not change the wire.
+- **Level lock:** the `user.levelrewards` experiment (top-level and under
+  `user`) did not change the home `LVL 0`; reverted. The exact login-data key
+  placement is still open (`docs/level_lock.md`).
 - **Content timeline:** Act 4 / Awaken and Corrupt saved 2022-12-29,
   Soundblaster 2022-12-27, Slipstream 2022-12-29; Starscream, Chromia and
   Dead End are absent from the saved page set. `docs/content_timeline.md`.
