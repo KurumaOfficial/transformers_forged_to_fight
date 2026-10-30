@@ -3,6 +3,8 @@
 Status: **partial / blocked by missing source data.** The wiki pages retained in
 `data/wiki/pages.json` describe the economy but contain almost no numeric
 tables. The server catalog currently uses `[ASSUMED]` placeholders.
+`docs/economy_numeric.md` renders all **169** numeric wikitext lines with
+their revision dates; it is the raw evidence, not a retail table.
 
 ## Known numeric facts [WIKI]
 
