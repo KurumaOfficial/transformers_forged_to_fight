@@ -53,11 +53,14 @@ nre 0
 pages [0,1,2,3,4]
 ```
 
-Page hashes changed `44950fc2… -> c9981a2e… -> 899ad084… -> bedac03d… ->
-c670b235…`, so pagination is real, not a repeated page. Every card opened the
-details/INFO screen (`info_error=False`) and no card produced an NRE. The
-`popup_error` flag is the old popup-vs-transition threshold; it is not an
-error. Result file: `tests/sweep/sweep_59.json`.
+Page hashes changed, but the page screenshots `tests/sweep/page_01..04.png`
+show the **same first 12 cards** (`Windblade..Tantrum`). The hash change is
+a transition/popup artifact, not proof of pagination. The BOTS grid is a
+**vertical scroll**; the horizontal-swipe sweep does not visit the other
+cards. Therefore `info_error=0` for 59 rows is **not** proof of 59 distinct
+bots. Fix: scroll down with `input swipe 1200 900 1200 300 400`, capture the
+new rows, and rerun. The old 59/59 report is historical, not coverage
+evidence. Result file: `tests/sweep/sweep_59.json`.
 
 ## Metric flakiness after a fresh restart
 
