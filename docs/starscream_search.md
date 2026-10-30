@@ -55,3 +55,11 @@ catalog lacked the id, not because the asset was absent.
   `starscream_gs` entry.
 - The remaining task is UI/model verification and a real fight, not finding a
   pack.
+
+## UI check
+
+Vertical scroll through the BOTS grid (`scroll1.png`..`scroll7.png`) shows the
+old 59-card roster; `Starscream` was **not** shown after the server catalog
+patch. `getLoginData` returns 60 roster heroes and the patch entry, so this is
+a client list/filter or refresh issue, not a missing asset. Do not claim the
+model loads until a BOTS card or a fight shows it.
