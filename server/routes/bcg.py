@@ -7,9 +7,11 @@ stub implementation.
 
 import json
 
+import wiki_stats
+
 
 def login_data(load_data_json):
-    return load_data_json("bcg_login_data.json")
+    return wiki_stats.enrich_login_data(load_data_json("bcg_login_data.json"))
 
 
 def base_hero_data(body, load_data_json, weak_enemy=False):
@@ -25,13 +27,14 @@ def base_hero_data(body, load_data_json, weak_enemy=False):
         rank = int(h.get("rank", 1) or 1)
         level = int(h.get("level", 1) or 1)
         sig = int(h.get("sig_lvl", 0) or 0)
-        hp = 800 + rank * 200 + level * 50
-        atk = 80 + rank * 30 + level * 5
+        s = wiki_stats.stats_for(bid, rank, level)
+        hp = s["hp"]
+        atk = s["attack"]
         if weak_enemy and bid in ("sideswipe_gs", "enemy1"):
             hp = 1
             atk = 1
-        rating_hp = int(hp * 0.1)
-        rating_attack = int(atk * 0.5)
+        rating_hp = int(hp * 0.1) if weak_enemy and bid in ("sideswipe_gs", "enemy1") else s["rating_hp"]
+        rating_attack = int(atk * 0.5) if weak_enemy and bid in ("sideswipe_gs", "enemy1") else s["rating_attack"]
         if base_cat is None:
             base_cat = load_data_json("bcg_login_data.json")
         bp = (base_cat.get("blueprints") or {}).get(bid, {})
@@ -103,7 +106,26 @@ def base_hero_data(body, load_data_json, weak_enemy=False):
 
 
 def user_data(load_data_json):
-    return load_data_json("bcg_user_data.json")
+    return wiki_stats.enrich_login_data(load_data_json("bcg_user_data.json"))
+
+
+def hero_xp_curve(body, load_data_json):
+    """Return the per-hero XP curve array expected by SetXPCurve."""
+    bid = ""
+    if isinstance(body, dict):
+        bid = body.get("bid") or body.get("blueprint") or body.get("hero") or ""
+    default = [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700]
+    try:
+        base = load_data_json("bcg_login_data.json")
+        heroes = (base.get("userData") or {}).get("heroes") or []
+        for hero in heroes:
+            if isinstance(hero, dict) and hero.get("bid") == bid:
+                curve = hero.get("xp_curve")
+                if isinstance(curve, list) and curve:
+                    return curve
+    except Exception:
+        pass
+    return default
 
 
 def set_saved_team(body, load_data_json):
@@ -119,14 +141,15 @@ def set_saved_team(body, load_data_json):
         hero = next((h for h in ud.get("heroes", []) if h.get("bid") == bid), None)
         rank = int(hero.get("rank", 1)) if hero else 1
         level = int(hero.get("level", 1)) if hero else 1
-        hp = 800 + rank * 200 + level * 50
-        atk = 80 + rank * 30 + level * 5
+        s = wiki_stats.stats_for(bid, rank, level)
+        hp = s["hp"]
+        atk = s["attack"]
         details.append({
             "bid": bid, "rank": rank, "level": level, "sig_lvl": 0,
             "max_hp": hp, "attack": atk,
-            "rating": int(hp * 0.1) + int(atk * 0.5),
-            "rating_hp": int(hp * 0.1), "rating_attack": int(atk * 0.5),
-            "rating_hp_base": int(hp * 0.1), "rating_attack_base": int(atk * 0.5),
+            "rating": s["rating"],
+            "rating_hp": s["rating_hp"], "rating_attack": s["rating_attack"],
+            "rating_hp_base": s["rating_hp_base"], "rating_attack_base": s["rating_attack_base"],
             "special_attacks": 3, "pvpb": {},
             "synergyBonuses": [], "user_owned": True
         })

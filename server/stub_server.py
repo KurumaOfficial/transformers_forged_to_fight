@@ -1,6 +1,7 @@
 import http.server
 import socketserver
 import json
+import wiki_stats
 import time
 import os
 import sys
@@ -262,6 +263,12 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                             async_list=level_sync_async())
             return
 
+        # 8b. BCG hero XP curve [CLIENT: BCGHeroBaseCommon.SetXPCurve 0xC2356C]
+        if path == "/bcg/getHeroXPCurve":
+            self.send_sparx(bcg_routes.hero_xp_curve(body, load_data_json),
+                            assumed_label="[CLIENT: /bcg/getHeroXPCurve array]")
+            return
+
         # 9. BCG base hero data [STATIC: BCGAPI request body {heroes:[{bid,rank,level,sig_lvl,flvl}],api,nonce}]
         # Response is a JSON array of BCGHeroDetails. Attribute values below are [ASSUMED]
         # placeholders (the original Kabam server computed them); schema is [CLIENT].
@@ -343,13 +350,17 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 for bid in team:
                     bp = bps.get(bid, {})
                     uh = ud_heroes.get(bid, {})
+                    rank = int(uh.get("rank", 1) or 1)
+                    level = int(uh.get("level", 1) or 1)
+                    s = wiki_stats.stats_for(bid, rank, level)
                     team_data[bid] = {
-                        "hp": float(uh.get("hp", 1000.0)),
-                        "max_hp": float(uh.get("max_hp", 1000.0)),
-                        "pi": int(uh.get("rating", 100) or 100),
-                        "rating": int(uh.get("rating", 100) or 100),
-                        "rank": int(uh.get("rank", 1) or 1),
-                        "level": int(uh.get("level", 1) or 1),
+                        "hp": float(s["hp"]),
+                        "max_hp": float(s["hp"]),
+                        "attack": s["attack"],
+                        "pi": s["rating"],
+                        "rating": s["rating"],
+                        "rank": rank,
+                        "level": level,
                         "sig_lvl": int(uh.get("sig_lvl", 0) or 0),
                         "blueprint": bid,
                         "tags": list(bp.get("tags") or bp.get("t") or []),
@@ -380,12 +391,15 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 hero = next((h for h in ud.get("heroes", []) if h.get("bid") == bid), None)
                 rank = int(hero.get("rank", 1)) if hero else 1
                 level = int(hero.get("level", 1)) if hero else 1
+                s = wiki_stats.stats_for(bid, rank, level)
                 hero_details.append({
                     "bid": bid, "rank": rank, "level": level, "sig_lvl": 0,
-                    "max_hp": 800 + rank * 200 + level * 50,
-                    "attack": 80 + rank * 30 + level * 5,
-                    "rating": 100, "rating_hp": 50, "rating_attack": 50,
-                    "rating_hp_base": 50, "rating_attack_base": 50,
+                    "max_hp": s["hp"],
+                    "attack": s["attack"],
+                    "rating": s["rating"], "rating_hp": s["rating_hp"],
+                    "rating_attack": s["rating_attack"],
+                    "rating_hp_base": s["rating_hp_base"],
+                    "rating_attack_base": s["rating_attack_base"],
                     "armor": 50.0, "crit_chance": 0.1, "crit_damage": 1.5,
                     "perfect_block_chance": 0.0, "block_proficiency": 0.5,
                     "mana_gain": 1.0, "mana_start": 0.0,
