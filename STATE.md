@@ -784,3 +784,12 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - work/battle_step.py added to nightly; normal-data win captured
   (player HP 300.2, enemy 0, damage 1069.5).
 
+## 2026-10-30 v4.11 Step 0
+
+- docs/claims_audit.md: added rows 51-54 with evidence: zero-damage root cause
+  (cg-combat/ArmorRatingConstant), _attack.Get() byte[] correction,
+  ODR not an input blocker, Starscream 2017/pre-APK.
+- docs/damage_fix.md: static chain TuningGameplay field +0x20 ->
+  DeserializeData 0x1425540 -> rmor_break; consumer GetArmorDR
+  0xDAD7A4; outer missionsconfig wrapper must stay.
+- Next: Step 1 configs/tuning audit.
