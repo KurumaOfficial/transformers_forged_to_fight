@@ -245,3 +245,7 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   Buff/trigger schema. `spec/ability_schema.md`.
 - **Tests:** 20/20 pre-stats (1 WON/19 LOST); final normal battle step
   COMPLETED/LOST; BOTS 59/59 metric invalid (horizontal swipe repeats page 0).
+
+- **Nightly 2026-10-30 21:13 PASS:** check_all 9/9, smoke PASS, vertical BOTS
+  59/59 (0 NRE), battle step COMPLETED/LOST (203.7 / 1289.6). Golden shapes
+  re-recorded after the stat/post-battle changes.
