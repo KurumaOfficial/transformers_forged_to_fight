@@ -11,7 +11,21 @@ import wiki_stats
 
 
 def login_data(load_data_json):
-    return wiki_stats.enrich_login_data(load_data_json("bcg_login_data.json"))
+    data = load_data_json("bcg_login_data.json")
+    patch = load_data_json("starscream_patch.json")
+    if isinstance(patch, dict):
+        for section in ("blueprints", "characters", "heroes"):
+            target = data.setdefault(section, {})
+            if isinstance(target, dict):
+                target.update(patch.get(section) or {})
+        user = data.setdefault("userData", {})
+        roster = user.setdefault("heroes", [])
+        if isinstance(roster, list) and not any(
+                isinstance(h, dict) and h.get("bid") == "starscream_gs" for h in roster):
+            hero = patch.get("hero")
+            if isinstance(hero, dict):
+                roster.append(hero)
+    return wiki_stats.enrich_login_data(data)
 
 
 def base_hero_data(body, load_data_json, weak_enemy=False):
