@@ -27,6 +27,20 @@ def _load(name):
 
 _FITS = {e["bot"]: e for e in _load("stat_growth_fit.json") if isinstance(e, dict)}
 _COVER = _load("stat_coverage.json").get("rows") or []
+# Client-only/wikidata bots not in the 44-page coverage table.
+_EXTRA = {
+    "starscream_gs": {
+        "client_id": "starscream_gs",
+        "wiki_page": "Starscream",
+        "class": "Tactician",
+        "level1_hp": 5400.0,
+        "level1_attack": 391.0,
+        "label": "[WIKI]",
+        "uncertainty_pct": 6.0,
+    },
+}
+_HAVE = {r.get("client_id") for r in _COVER}
+_COVER.extend(v for k, v in _EXTRA.items() if k not in _HAVE)
 _BY_CLIENT = {r.get("client_id"): r for r in _COVER if r.get("client_id")}
 
 # Some fit entries have hp/atk swapped (e.g. Rhinox). Detect by comparing the
