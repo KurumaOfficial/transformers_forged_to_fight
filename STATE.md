@@ -739,6 +739,19 @@ and `quest_begin_response.json` remain templates/fallbacks.
   PASS); remaining dispatch inline; backup/images skipped.
 - Step 10: this state + v4.10; Step 11 FINAL next.
 
+## 2026-10-30 environment restart and verification
+
+- The emulator/server stopped during the 20-fight series. Restarted
+  `TFTF_AVD` and the stub server; fast smoke **PASS** with the BCG route split
+  (`server/routes/bcg.py`), so the split did not change the wire behavior.
+- First 10-fight series: **10/10 PASS** (`tests/smoke/battle_series_part1.json`).
+  A second 10-fight run is in progress to complete the 20-fight series.
+- `levelrewards` experiment: adding `levelrewards` to login/account data
+  (top-level and under `user`, lowercase and capital keys) did **not** change
+  the home `LVL 0` or unlock STORE. Reverted; `docs/level_lock.md` marks the
+  hypothesis negative.
+- No client patch; only server data/routes/docs changed.
+
 ## 2026-10-29 queue docs batch (Steps 2/4/6/8)
 
 - spec/buff_catalog.md: 3307 ID_STAT_*, 8 D_STAT*, 390
