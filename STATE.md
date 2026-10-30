@@ -831,3 +831,21 @@ and `quest_begin_response.json` remain templates/fallbacks.
   progression currentPos/cleared/percentComplete. Need exact action keys and
   the active-quest refresh. work/postwin2.png, work/postwin3.png.
 - Removed work/weak_enemy.flag; normal server data restored.
+
+## 2026-10-30 v4.11 final sync
+
+- MASTER v4.11; claims 51-56; docs/damage_fix.md,
+  spec/configs_catalog.md, spec/tuning_live.md,
+  spec/tuning_zero_audit.md, docs/post_battle_flow.md,
+  docs/level_lock.md, docs/stat_ui_check.md,
+  docs/starscream_search.md, docs/systems_endpoints.md.
+- Wiki stats are in catalog/battle; final normal battle step is
+  COMPLETED/LOST (player damage 67.9, enemy 1497.6).
+- Starscream was found in characters/toc.txt/characters.assetbundle and
+  added via server/data/starscream_patch.json; BOTS grid still does not
+  show it.
+- Post-battle victory screen works; rewards/tile/progress open.
+- Level fetch endpoint works; status still 0; _loginData empty.
+- BOTS 59/59 metric invalid (horizontal swipe repeats page 0); vertical
+  scroll + rerun required.
+- Full nightly after all changes is still pending.
