@@ -69,3 +69,27 @@ populates `_loginData`; no client patch.
 - The BCG route split was verified separately by a fast smoke PASS after the
   restart.
 - No client patch.
+
+## 2026-10-30 level fetch path found, payload still not accepted
+
+- `LevelRewardsAPI.FetchStatus` (`0x1271694`) calls **`/levelrewards/fetch`**
+  (metadata string index 1298).
+- `LevelRewardsManager.Async` (`0x1273494`) handles **`level-up`** (calls
+  `OnLevelUp`) and **`sync`** (calls `FetchStatus`).
+- Sending async `sync` from `/bcg/getLoginData` with components
+  `levelrewards`, `LevelRewardsManager`, `levelrewardsmanager`,
+  `levelRewards` caused a real **`GET /levelrewards/fetch`** `[RUN]`.
+- The endpoint is now served with
+  `result.levelrewards={last_awarded_level:5, types:[]}` plus top-level
+  duplicates; `levelrewards_milestones=[]`.
+- Despite the request and a 200 response, live
+  `LevelRewardsManager._status.Level` stayed **0**; the status has a default
+  `types` array of length 6. The fetch is real, but the response schema is not
+  accepted (or the status object is the prefab default and `OnFetch` is not
+  applying it).
+- Home `LVL 0` and STORE LEVEL 2 lock remain.
+
+Next static step: read the exact `LevelRewardsStatus..ctor` field set and the
+live `Response`/`OnFetch` path; test a `types` array schema, not an empty one.
+The `sync` probe is kept behind the login async for now; it is harmless (one
+extra fetch) and documented as `[ASSUMED]`.
