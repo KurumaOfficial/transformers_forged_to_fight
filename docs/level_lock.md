@@ -39,9 +39,29 @@ their original content. Backups were kept locally as
 `server/data/*.pre_levelrewards` (not committed).
 
 Result `[RUN]`: the `levelrewards` hypothesis is **not confirmed**. The home
-LVL remains 0 and STORE remains locked at LEVEL 2. Next check: read the live
-`LoginManager._loginData` dictionary keys and the exact `levelrewards` key
-case/spelling; do not keep an unverified schema change.
+LVL remains 0 and STORE remains locked at LEVEL 2.
+
+## Live probe of the login dictionary `[RUN]`/`[STATIC]`
+
+A read-only `/proc/pid/mem` probe (`work/probe_login_data.py`) followed
+`Hub.Instance -> Hub+0x40 LoginManager -> LoginManager+0x38 _loginData`.
+The object is a `System.Collections.Hashtable`; its live header was:
+
+```
+buckets=0x...  count=0  occupancy=0  loadsize=12  loadFactor=0.72  version=0
+```
+
+So `_loginData` is **empty at the home screen**, even though `/auth/login`
+returned `user`, `level`, and the test `levelrewards` field. Adding
+`levelrewards` to the login/account JSON does not populate this hashtable.
+`LevelRewardsManager.Connect` therefore sees no `levelrewards` entry and leaves
+the level at 0. The client did not request `/levelrewards/fetch` in the
+verified flow; that endpoint is likely called only from the level-rewards UI.
+
+Conclusion: the home LVL / STORE lock is a client-fetch gap, not a missing
+server field we can fill blindly. The JSON changes were reverted. Next step
+would be to trigger the level-rewards screen or find the exact code that
+populates `_loginData`; no client patch.
 
 ## Verification
 
