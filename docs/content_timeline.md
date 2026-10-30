@@ -237,5 +237,20 @@ saved bot pages. This is stronger than the saved revision date:
   boss ids/pack are a **mapping/pack gap**, not evidence that Starscream was
   added after the APK. The earlier wording that treated Starscream as
   post-APK content was too strong.
-- 13 bots are `Launch`; 18 have a parseable date. Missions/events still need
-  the same per-page release-date extraction.
+- 13 bots are `Launch`; 31 have a parseable non-Launch date. Missions/events
+  still need the same per-page release-date extraction.
+
+## 2026-10-30 wiki-created-after-shutdown list
+
+`data/wiki/versions.json` (`created_after_cutoff`, cutoff 2023-01-13) lists
+pages that did **not** exist by shutdown and were created later:
+
+`Acid`, `Bots Than Should Be A Different Bot Class Type`,
+`Bots That Don't Act Like Their Bot Class Type`, `Dead End`, `Progression`,
+`Proving Grounds`, `Showcase`, `Soundblaster`, `Story/Netflix`,
+`Transformers: Forged to Fight (Netflix)`, `Tutorial/Getting Started With the
+Game's Unity Files and Assets`.
+
+These are wiki-creation facts, not in-game release dates. `Dead End` and
+`Soundblaster` also have 2023-05-10 infobox dates, consistent with the Netflix
+era; `Proving Grounds`/`Showcase` are page gaps, not necessarily 9.2.0 content.
