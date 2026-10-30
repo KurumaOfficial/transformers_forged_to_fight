@@ -818,3 +818,16 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - /bcg/getHeroXPCurve returns the curve array; fixes SetXPCurve NRE.
 - Open UI: BOTS list still flat 300; UPGRADE screen HP/ATK 0 (separate path).
   docs/stat_ui_check.md.
+
+## 2026-10-30 v4.11 Step 2 (post-battle, partial)
+
+- Static: QuestActionResult fields, Action.Type enum (BATTLE_COMPLETE=5,
+  QUEST_COMPLETE=7), QuestsManager.ProcessActionResultsAndProgression,
+  resolve/async flow. docs/post_battle_flow.md.
+- Added a attlecomplete action to the win resolve response. A test-only
+  weak-enemy win now shows the real **VICTORY** screen with stats.
+- Still open: rewards list empty, tile not cleared, map stays 22%; tried
+  {type,data,quantity} and {id,type,amount} reward schemas and
+  progression currentPos/cleared/percentComplete. Need exact action keys and
+  the active-quest refresh. work/postwin2.png, work/postwin3.png.
+- Removed work/weak_enemy.flag; normal server data restored.
