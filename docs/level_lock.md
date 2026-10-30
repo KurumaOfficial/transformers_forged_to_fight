@@ -22,28 +22,30 @@ Status: **static chain found; live test pending the next server restart.**
 So the account level at `login_response.user.level` (5) is not the value the
 lock uses. The lock uses `user.levelrewards.level`.
 
-## Server-data experiment (reversible)
+## Server-data experiment (reversible, negative)
 
-Added to `server/data/login_response.json` and
-`server/data/account_data.json`:
+Tried in `server/data/login_response.json` and
+`server/data/account_data.json` (both top-level and under `user`):
 
 ```json
-"user": {
-  "level": 5,
-  "levelrewards": {"level": 5, "types": []},
-  "levelrewards_milestones": []
-}
+"levelrewards": {"level": 5, "types": []},
+"levelrewards_milestones": []
 ```
 
-Backups: `server/data/*.pre_levelrewards` (local only, ignored by git).
+with `level`, `Level`, `types`, `Types` variants. The home still showed
+`LVL 0` after a full server/app restart, so the field placement or schema is
+not accepted. **The changes were reverted**; the two JSON files are back to
+their original content. Backups were kept locally as
+`server/data/*.pre_levelrewards` (not committed).
 
-Expected `[ASSUMED]`: home shows `LVL 5`; STORE no longer shows the LEVEL 2
-lock. This is server data only, no client patch.
+Result `[RUN]`: the `levelrewards` hypothesis is **not confirmed**. The home
+LVL remains 0 and STORE remains locked at LEVEL 2. Next check: read the live
+`LoginManager._loginData` dictionary keys and the exact `levelrewards` key
+case/spelling; do not keep an unverified schema change.
 
 ## Verification
 
-- Restart the server, force-stop/restart the app, reach home, screenshot.
-- If `LVL 5` and STORE opens: update `docs/systems_screens.md` and mark the
-  level source confirmed.
-- If not: revert the two JSON files from the backups and record the negative
-  result; do not keep an unverified schema change.
+- Restart the server, force-stop/restart the app, reach home: still `LVL 0`.
+- The BCG route split was verified separately by a fast smoke PASS after the
+  restart.
+- No client patch.

@@ -66,8 +66,9 @@ the level/alliance lock.
 the level is 0. The min level for a lock (STORE = 2) comes from the client
 `TuningLevelLocks.levelLocks` prefab, not from the server.
 
-A reversible server-data experiment adds
-`user.levelrewards={"level":5,"types":[]}` and
-`user.levelrewards_milestones=[]` to `login_response.json` and
-`account_data.json`. Live verification is pending the next restart:
+A reversible server-data experiment added
+`levelrewards={"level":5,"types":[]}` (and `levelrewards_milestones=[]`) to
+`login_response.json` and `account_data.json`, both top-level and under
+`user`. After a full server/app restart the home still showed `LVL 0`, so the
+field placement/schema is not accepted. The JSON files were reverted.
 `docs/level_lock.md`.
