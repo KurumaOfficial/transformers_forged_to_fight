@@ -99,3 +99,10 @@ Every new `[RUN]`/`[STATIC]` claim must link a file in `docs/`, `spec/`,
 | 52 | `PlayerAttributes._attack.Get()` is 0 while `_value` is 115 | **corrected** | The safe value is 115, hash OK. The earlier 0 was an IL2CPP `byte[]` decoding error: elements are inline at `+0x20`. `[RUN]` `work/dump_defense.py`, `docs/damage_fix.md`. |
 | 53 | `FuseODRBlocker` blocks battle input | **corrected** | Battle is visible and controllable; the blocker object exists with 0 downloads but does not cover the HUD. `[RUN]` `docs/odr_report.md`, `work/f1.png`. |
 | 54 | Starscream is post-APK content | **corrected** | Infobox release date `August 24, 2017`; the bot is pre-APK. The 9 missing boss ids/pack are a mapping/pack gap, not a release-date gap. `[WIKI]` `docs/content_release_dates.md`, `data/wiki/bots.json`. |
+
+## 2026-10-30 v4.11 late corrections
+
+| # | Claim | Status | Evidence |
+|---:|---|---|---|
+| 55 | The BOTS sweep visited 59/59 bots | **corrected / invalid metric** | sweep_bots59.py uses horizontal swipes; screenshots 	ests/sweep/page_01..04.png show the same first 12 cards (Windblade..Tantrum) on every page. The 59/59 info_error=0 rows are not proof of visiting 59 distinct bots. Use vertical scroll and rerun. |
+| 56 | Starscream is absent from the client pack | **corrected** | work/unpacked/assets/characters/toc.txt lists starscream_gs; characters.assetbundle contains Starscream_GS; localization has ID_SPECIAL_ATTACK_STARS_GS_*; wiki page 5400/391/1354. Catalog patch added. |
