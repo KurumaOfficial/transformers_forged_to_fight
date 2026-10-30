@@ -19,6 +19,7 @@ for src, name in [
     (ROOT / "tests" / "smoke" / "latest.json", "smoke_latest.json"),
     (ROOT / "tests" / "smoke" / "battle_step.json", "battle_step.json"),
     (ROOT / "tests" / "smoke" / "battle_series.json", "battle_series.json"),
+    (ROOT / "tests" / "smoke" / "battle_series_20.json", "battle_series_20.json"),
     (ROOT / "tests" / "smoke" / "full_smoke.json", "full_smoke.json"),
     (ROOT / "tests" / "sweep" / "sweep_59.json", "sweep_59.json"),
 ]:
