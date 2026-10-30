@@ -806,3 +806,15 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - missions_config.json already has the complete cg-combat block; other
   modes intentionally empty. No silent combat zero remains.
 - Regression: 20/20 battle series and 6/6 full smoke still pass.
+
+## 2026-10-30 v4.11 Step 4 (stats)
+
+- server/wiki_stats.py: wiki HP/ATK for 44 pages, exact 1/1 rating when the
+  stat table has it; Rhinox fit swap fixed.
+- Catalog/getBaseHeroData/team/boss now use wiki stats; Bumblebee DOTM live
+  1066/97, Sideswipe 5160/520, Windblade 5160/498/1381, Rhinox 5940/396/1413.
+- Live battle: player damage 67.9, enemy damage 1206.4, LOST; resolve/HP
+  checks still pass. Real numbers, not tuned.
+- /bcg/getHeroXPCurve returns the curve array; fixes SetXPCurve NRE.
+- Open UI: BOTS list still flat 300; UPGRADE screen HP/ATK 0 (separate path).
+  docs/stat_ui_check.md.
