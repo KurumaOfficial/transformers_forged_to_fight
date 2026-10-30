@@ -118,3 +118,19 @@ Exact-key search `[STATIC]`: `ID_SPECIAL_ATTACK_WINDBLADE` and
 byte search). `ID_SPECIAL_ATTACK_OPTIMUS*` exists in 15 Data files, so the
 search method finds real keys; Windblade's keys are genuinely missing, not
 missed by a prefix assumption.
+
+## 2026-10-30 Step 6 findings
+
+- `MS_` is a literal **missing-string marker** in the client
+  (`stringliteral.json` addresses `0x2D63A70` `MS_`, `0x2D63A78` `MS_NULL`,
+  `0x2D64000` `Missing`), not part of the key. The UI asks for
+  `ID_SPECIAL_ATTACK_WINDBLADE_0..2`.
+- `LocalizationManager.Connect` (`0x1278758`) reads
+  `Hub.LoginManager._loginData` and calls `addLocIfFound`; the live
+  `_loginData` is an empty Hashtable at home (same root as the level issue).
+- Tried `/auth/login` `loc` as `{"common":{"ID_UI_HEROES_BOTS":"TESTLOC"}}`
+  and as `[{"ID_UI_HEROES_BOTS":"TESTLOC"}]`. The BOTS label stayed `BOTS`;
+  reverted. No client patch.
+- Conclusion: the client has no retained Windblade special-attack strings and
+  no accepted server override in the tested shapes. Raw keys remain expected.
+  Adding guessed strings would not prove the key table.
