@@ -63,11 +63,19 @@ Continue from this file if the chat is lost. Files beat this text:
 | 5 abilities | **blocked** | Buff/trigger schema, no fake ids |
 | 6 localization | **partial/negative** | `MS_` marker; Windblade keys absent; loc injection negative |
 | 7 Starscream | **found, cataloged** | BOTS grid/model not yet shown |
-| 8 tests | **partial** | final battle step; full smoke pre-stats; BOTS sweep invalid; full nightly pending |
+| 8 tests | **done** | final battle step, full smoke 6/6 post-stats, vertical BOTS 59/59, full nightly PASS 2026-10-30 21:13 |
 | 9 systems | **static only** | gacha/objectives/store endpoints cataloged; no logic |
 | 10 protocol/infra | **partial** | openapi/tuning docs; remaining routing inline; backup skipped (BACKUP_PATH empty) |
 | 11 docs | **this file** | STATE/FIDELITY/OPEN_QUESTIONS/COVERAGE need final sync |
-| 12 final | **pending** | write after the remaining independent checks |
+| 12 final | **done** | `report/FINAL_2026-10-30.md` (v4.11) |
+
+- **Tests:** full nightly **PASS 2026-10-30 21:13** (check_all 9/9, fast
+  smoke PASS, BOTS vertical 59/59 with 0 NRE, battle step COMPLETED/LOST,
+  player damage 203.7 / enemy 1289.6). Log
+  `work/nightly/nightly_2026-10-30_211332.log`.
+- **The older 20/20 series** was run with the pre-wiki stats; the final
+  normal battle step with the wiki stats is COMPLETED/LOST. Do not merge the
+  two claims into "20/20 with wiki stats".
 
 ## How to continue
 
