@@ -4,8 +4,6 @@
     "id": 10001,
     "name": "Commander",
     "level": 5,
-    "levelrewards": {"level": 5, "types": []},
-    "levelrewards_milestones": [],
     "xp": 1000
   },
   "settings": {},
