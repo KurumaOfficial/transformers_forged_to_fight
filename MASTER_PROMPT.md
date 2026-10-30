@@ -57,10 +57,12 @@ Continue from this file if the chat is lost. Files beat this text:
   DefenderMana 1.25, blocked 0.35, chain reset 0.75, evade 100, range 0.
   The other 22 fields are unknown, not guessed. `spec/tuning_values.md`.
 - **Nightly** now includes `work/battle_step.py` (damage, HP drop,
-  resolve-match). A 20-fight series is recorded in
-  `tests/smoke/battle_series.json`; check its final count before claiming a
-  full series. The first 10/10 fights PASS (`battle_series_part1.json`); the
-  second 10-fight run was started after an emulator/server restart.
+  resolve-match). The completed 20-fight series is **20/20 PASS** (19 LOST,
+  1 normal WON at fight 17: HP 166.8/0, damage 1127); merged file
+  `tests/smoke/battle_series_20.json`, report `docs/battle_series.md`.
+- **Full smoke** independent phases: **6/6 PASS** (home, crystals, objectives,
+  store, bots, fight_modes), 0 NRE, fresh launch per phase.
+  `tests/smoke/full_smoke.json`; snapshot `runs/2026-10-30_173359/`.
 - **Routing smoke:** after the restart, fast smoke PASS with
   `server/routes/bcg.py`; the BCG split does not change the wire.
 - **Level lock:** the `user.levelrewards` experiment (top-level and under
@@ -81,11 +83,11 @@ Continue from this file if the chat is lost. Files beat this text:
 | 4 content by date | **partial** | post-APK candidates listed; per-page first revision and full mission/event dates still incomplete |
 | 5 rating/stat UI | **checked, fails fidelity** | UI renders; catalog values are placeholders; `docs/rating_ui_check.md` |
 | 6 other systems | **view-only** | CRYSTALS/OBJECTIVES/STORE/BASE/PROFILE/FIGHT opened; gacha/objectives/store logic not implemented |
-| 7 tests/stand | **partial** | nightly battle step PASS; 20-fight series running; full independent smoke phases and fresh `runs/` snapshot missing |
+| 7 tests/stand | **series + full smoke done** | 20/20 battle series, 6/6 full-smoke phases, snapshot `runs/2026-10-30_173359/`; full nightly after changes still pending |
 | 8 protocol/data | **partial** | openapi + tuning + economy docs exist; full Tuning consumer map and numeric economy missing |
 | 9 infrastructure | **BCG split done** | remaining dispatch inline; backup skipped (BACKUP_PATH empty); wiki images skipped |
 | 10 documents | **this file** | STATE/FIDELITY/OPEN_QUESTIONS/COVERAGE updated |
-| 11 final | **pending** | write `report/FINAL_2026-10-30.md` after the series/snapshot |
+| 11 final | **done** | `report/FINAL_2026-10-30.md` |
 
 ## How to continue (no chat history)
 
