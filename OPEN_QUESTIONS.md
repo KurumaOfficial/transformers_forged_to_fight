@@ -355,3 +355,9 @@ is null in the loaded character prefab, or a real activate-match response.
   Need retail per-bot rank/level/star tables or a confirmed growth formula.
   Evidence `docs/rating_ui_check.md`, `work/wheel.png`,
   `tests/smoke/10b_bot_info.png`.
+
+- **OPEN (2026-10-30, level lock):** home `LVL 0` / STORE LEVEL 2 use
+  `LevelRewardsManager.Level` from `LoginManager.LoginData["levelrewards"]`.
+  Adding `levelrewards` to login/account data (top-level and under `user`,
+  lowercase and capital keys) did not change the value; reverted. Need the
+  exact live login-data placement/schema. `docs/level_lock.md`.
