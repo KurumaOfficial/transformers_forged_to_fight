@@ -47,7 +47,7 @@ index.append({
     "utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     "path": f"runs/{stamp}",
     "files": sorted(p.name for p in out.iterdir()),
-    "notes": "requests, smoke/sweep JSON, nightly log, logcat, first 20 smoke screenshots",
+    "notes": "requests, smoke/sweep/series/full-smoke JSON, nightly log, logcat, first 20 smoke screenshots",
 })
 index_path.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
 print("run", out, "index entries", len(index))
