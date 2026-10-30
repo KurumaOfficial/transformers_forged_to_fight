@@ -793,3 +793,16 @@ and `quest_begin_response.json` remain templates/fallbacks.
   DeserializeData 0x1425540 -> rmor_break; consumer GetArmorDR
   0xDAD7A4; outer missionsconfig wrapper must stay.
 - Next: Step 1 configs/tuning audit.
+
+## 2026-10-30 v4.11 Step 1
+
+- spec/configs_catalog.md: ten modes; confirmed consumers lliance-base,
+  user-base, ve, pve, cg-combat; cg-combat keys
+  rmor_break/mana_gain/critTime = 200/300/111.
+- spec/tuning_live.md: live Tuning dump, 242 fields, 95 zero/empty;
+  work/dump_tuning_live.py.
+- spec/tuning_zero_audit.md: functional zero candidates classified; only
+  cg-combat is server-controllable; other zeros are client prefab/flags.
+- missions_config.json already has the complete cg-combat block; other
+  modes intentionally empty. No silent combat zero remains.
+- Regression: 20/20 battle series and 6/6 full smoke still pass.
