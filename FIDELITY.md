@@ -265,3 +265,17 @@ status. T5 is MASTER_PROMPT v4.3.
 | 20-fight series | **20/20 PASS** | 19 LOST, 1 WON at fight 17 (HP 166.8/0, damage 1127) [RUN] |
 | Full smoke phases | **6/6 PASS** | home/crystals/objectives/store/bots/fight_modes, 0 NRE [RUN] |
 | Snapshot | **done** | `runs/2026-10-30_173359/` [RUN] |
+
+## 2026-10-30 v4.11
+
+| Area | Level | Basis |
+|---|---|---|
+| Damage/config chain | **documented** | `ArmorRatingConstant` +0x20, `bcg-combat`; `docs/damage_fix.md` [STATIC]/[RUN] |
+| Tuning zeros | **audited** | 242 fields, 95 zero/empty; only `bcg-combat` server-controllable [RUN] |
+| Post-battle | **victory screen works** | `battlecomplete` action; rewards/tile/progress open [RUN] |
+| Level / STORE | **fetch works, status 0** | `/levelrewards/fetch` requested; `_status.Level=0` [RUN] |
+| Wiki stats | **catalog/battle** | Bumblebee 1066/97, Sideswipe 5160/520, Windblade 5160/498/1381 [RUN]/[WIKI] |
+| Starscream | **found/cataloged** | toc + `characters.assetbundle`; patch entry; UI not shown [STATIC]/[RUN] |
+| Abilities | **blocked** | no Evade/Shield/Bleed stat enum; Buff/trigger graph missing [STATIC] |
+| BOTS 59/59 | **invalid metric** | horizontal swipe repeats page 0; vertical rerun needed [RUN] |
+| Full nightly after changes | **pending** | latest full nightly was 2026-10-29 [RUN] |

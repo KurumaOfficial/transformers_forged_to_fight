@@ -361,3 +361,30 @@ is null in the loaded character prefab, or a real activate-match response.
   Adding `levelrewards` to login/account data (top-level and under `user`,
   lowercase and capital keys) did not change the value; reverted. Need the
   exact live login-data placement/schema. `docs/level_lock.md`.
+
+## 2026-10-30 v4.11
+
+- **Post-battle:** attlecomplete now shows the VICTORY screen, but rewards,
+  tile clear and map progress do not apply. Need the exact
+  QuestActionResult keys and the active-quest/quest-result refresh.
+  docs/post_battle_flow.md.
+- **Level/STORE:** /levelrewards/fetch is requested after async sync, but
+  LevelRewardsStatus.Level stays 0 and LoginManager._loginData is an empty
+  Hashtable. Need the exact status payload or the code that populates
+  _loginData. docs/level_lock.md.
+- **Wiki stats UI:** catalog/battle use wiki stats, but the BOTS list still
+  shows flat 300 and the UPGRADE screen shows 0/0; these are separate client
+  paths. docs/stat_ui_check.md.
+- **Abilities:** StatModifierAttributes has no Evade/Shield/Bleed and the
+  Buff/trigger JSON graph is not decoded; pilot definitions cannot be authored
+  without inventing schema. spec/ability_schema.md.
+- **BOTS sweep:** the 59/59 metric is invalid; the horizontal swipe repeats
+  page 0. Fix to vertical scroll and rerun before claiming coverage.
+  docs/sweep_diagnosis.md.
+- **Starscream:** found in characters/toc.txt/characters.assetbundle,
+  catalog patch added, but the BOTS grid/model is not yet shown.
+  docs/starscream_search.md.
+- **Systems:** gacha/objectives/store endpoints are cataloged but no schemas
+  or data are implemented. docs/systems_endpoints.md.
+- **Full nightly** after the current changes is still pending (last full PASS
+  2026-10-29).
