@@ -213,3 +213,12 @@ Soundblaster/Tactician, Starscream). [CLIENT]+[WIKI]
   `docs/rating_ui_check.md`.
 - **Routing:** BCG builders extracted; offline regression PASS.
   `docs/routing_split.md`.
+
+- **20-fight series:** 20/20 PASS, 19 LOST + 1 WON (fight 17: HP 166.8,
+  enemy 0, damage 1127). `tests/smoke/battle_series_20.json`.
+- **Full smoke:** 6/6 independent phases PASS, 0 NRE.
+  `tests/smoke/full_smoke.json`.
+- **Snapshot:** `runs/2026-10-30_173359/`.
+- **Home LVL/STORE:** `LoginManager._loginData` live is an empty Hashtable,
+  so `levelrewards` from login data is not applied; experiment reverted.
+  `docs/level_lock.md`.

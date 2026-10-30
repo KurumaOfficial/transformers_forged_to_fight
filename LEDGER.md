@@ -687,3 +687,13 @@ PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 | BCG-роуты | `routes/bcg.py`, offline regression PASS | `[RUN]` |
 | MASTER_PROMPT | v4.10 | — |
 
+## 2026-10-30 финальные тесты
+
+| Пункт | Результат | Метка |
+|---|---|---|
+| 20-боёв серия | 20/20 PASS; 19 поражений, 1 победа (HP 166.8, враг 0, урон 1127) | `[RUN]` |
+| Full smoke | 6/6 PASS, 0 NRE, независимые фазы | `[RUN]` |
+| Snapshot | `runs/2026-10-30_173359/` + index | `[RUN]` |
+| levelrewards | не сработал; `_loginData` пуст (Hashtable count 0); откат | `[RUN]`/`[STATIC]` |
+| FINAL | `report/FINAL_2026-10-30.md` | — |
+

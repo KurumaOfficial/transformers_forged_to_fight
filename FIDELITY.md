@@ -257,3 +257,11 @@ status. T5 is MASTER_PROMPT v4.3.
 | Rating vs wiki | **fails** | Windblade 300 vs wiki 264; BOTS list flat 300 [RUN]/[WIKI] |
 | HP/ATK vs wiki | **fails for most bots** | Bumblebee/Sideswipe 1050/115 vs wiki 1/1 4860/444, 5160/520 [RUN]/[WIKI] |
 | Catalog source | placeholder | `800 + rank*200 + level*50` / `80 + rank*30 + level*5` [STATIC] |
+
+## 2026-10-30 final tests
+
+| Area | Level | Basis |
+|---|---|---|
+| 20-fight series | **20/20 PASS** | 19 LOST, 1 WON at fight 17 (HP 166.8/0, damage 1127) [RUN] |
+| Full smoke phases | **6/6 PASS** | home/crystals/objectives/store/bots/fight_modes, 0 NRE [RUN] |
+| Snapshot | **done** | `runs/2026-10-30_173359/` [RUN] |

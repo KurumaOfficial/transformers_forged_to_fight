@@ -752,6 +752,20 @@ and `quest_begin_response.json` remain templates/fallbacks.
   hypothesis negative.
 - No client patch; only server data/routes/docs changed.
 
+## 2026-10-30 final test results
+
+- 20-fight series: **20/20 PASS**; 19 LOST, 1 normal WON at fight 17
+  (player HP 166.8, enemy 0, player damage 1127.0). Merge:
+  `tests/smoke/battle_series_20.json`; report `docs/battle_series.md`.
+- Full smoke independent phases: **6/6 PASS** (home, crystals, objectives,
+  store, bots, fight_modes), 0 NRE, each phase from a fresh launch.
+  `tests/smoke/full_smoke.json`.
+- Snapshot `runs/2026-10-30_173359/`, `runs/index.json`.
+- Final report `report/FINAL_2026-10-30.md`; MASTER v4.10.
+- Remaining blocked: rewards/results/cleared tile, numeric buff/ability
+  definitions, server localization override, home LVL/STORE fetch, retail
+  rating/stats, Starscream pack, full nightly after changes.
+
 ## 2026-10-29 queue docs batch (Steps 2/4/6/8)
 
 - spec/buff_catalog.md: 3307 ID_STAT_*, 8 D_STAT*, 390
