@@ -264,7 +264,7 @@ status. T5 is MASTER_PROMPT v4.3.
 |---|---|---|
 | 20-fight series | **20/20 PASS** | 19 LOST, 1 WON at fight 17 (HP 166.8/0, damage 1127) [RUN] |
 | Full smoke phases | **6/6 PASS** | home/crystals/objectives/store/bots/fight_modes, 0 NRE [RUN] |
-| Snapshot | **done** | `runs/2026-10-30_173359/` [RUN] |
+| Snapshot | **done** | `runs/2026-10-30_213745/` [RUN] |
 
 ## 2026-10-30 v4.11
 
