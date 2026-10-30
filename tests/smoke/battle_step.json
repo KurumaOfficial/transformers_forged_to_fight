@@ -3,16 +3,18 @@
   "fight_ends": true,
   "damage_nonzero": true,
   "hp_decreases": true,
-  "result": "WON",
+  "completed": true,
+  "outcome": "LOST",
+  "result": "LOST",
   "player_0": {
     "hp_start": 1066.0,
-    "hp_remaining": 1064.23999,
-    "dmg_atk_total": 33.9500008
+    "hp_remaining": 0.0,
+    "dmg_atk_total": 67.9000015
   },
   "player_1": {
-    "hp_start": 1.0,
-    "hp_remaining": 0.0,
-    "dmg_atk_total": 1.75999999
+    "hp_start": 5160.0,
+    "hp_remaining": 5092.1001,
+    "dmg_atk_total": 1497.6001
   },
-  "status": "PASS"
+  "status": "COMPLETED"
 }
