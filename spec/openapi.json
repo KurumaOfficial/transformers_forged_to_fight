@@ -4012,7 +4012,8 @@
        }
       }
      }
-    }
+    },
+    "x-client-behavior": "Documented from static code; the verified client flow did not request this path. LevelRewardsManager.Connect reads levelrewards from login data if present."
    }
   }
  }
