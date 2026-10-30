@@ -66,7 +66,7 @@ Every new `[RUN]`/`[STATIC]` claim must link a file in `docs/`, `spec/`,
 | 36 | Rewards/results screen works after a win | **open** | Win returned to map without rewards/cleared tile; current `match_resolve_response.json` lacks the accepted progression/async payload. |
 | 37 | ODR blocks combat input | **corrected** | Battle visible/controllable; resolve observed. |
 | 38 | `attackValues`/`attack_percent` are needed for basic damage | **confirmed [RUN]** | `DamageRating=0.7`; raw damage 80.5. |
-| 39 | Normal player can kill the enemy without test data | **open** | Normal run got enemy to 124.25 HP; win required the test-only `weak_enemy` flag. Controls/positioning still need practice. |
+| 39a | Normal player can kill the enemy without test data (earlier note) | **superseded** | See row 39 at the end of the late-corrections table; the normal win was later confirmed. |
 
 ## 2026-10-29 late correction: stat/localization keys exist
 
