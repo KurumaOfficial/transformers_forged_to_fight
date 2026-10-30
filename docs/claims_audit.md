@@ -90,3 +90,12 @@ Every new `[RUN]`/`[STATIC]` claim must link a file in `docs/`, `spec/`,
 | 48 | The catalog stats/ratings are retail | 2026-10-30 | **corrected** | Bumblebee/Sideswipe live 1050/115 vs wiki 1/1 4860/444 and 5160/520; `docs/rating_ui_check.md`. | Retail per-bot rank/level/star tables |
 | 49 | Adding `user.levelrewards` unlocks the home LVL / STORE | 2026-10-30 | **negative [RUN]** | Tried top-level and under `user`, with `level`/`Level`, after full restart; home stayed `LVL 0`, STORE stayed locked. Live `LoginManager._loginData` is an empty Hashtable (count 0), so the field never reaches `LevelRewardsManager`. Reverted. `docs/level_lock.md`. | Trigger the level-rewards fetch or find who populates `_loginData` |
 | 50 | The BCG route split preserves the wire | 2026-10-30 | **confirmed [RUN]** | `server/routes/bcg.py`; offline regression PASS and fast smoke PASS after server restart. | Full routing split still inline |
+
+## 2026-10-30 v4.11 Step 0 corrections
+
+| # | Claim | Status | Evidence |
+|---:|---|---|---|
+| 51 | Zero damage is caused by a client safe-value/commit bug | **corrected** | `TuningGameplay.ArmorRatingConstant` was 0 because `missionsconfig.configs["bcg-combat"]` was missing; `GetArmorDR` gave 100% reduction. Adding `armor_break=200` fixed damage. `[RUN]` `docs/damage_fix.md`, `docs/damage_pipeline.md`. |
+| 52 | `PlayerAttributes._attack.Get()` is 0 while `_value` is 115 | **corrected** | The safe value is 115, hash OK. The earlier 0 was an IL2CPP `byte[]` decoding error: elements are inline at `+0x20`. `[RUN]` `work/dump_defense.py`, `docs/damage_fix.md`. |
+| 53 | `FuseODRBlocker` blocks battle input | **corrected** | Battle is visible and controllable; the blocker object exists with 0 downloads but does not cover the HUD. `[RUN]` `docs/odr_report.md`, `work/f1.png`. |
+| 54 | Starscream is post-APK content | **corrected** | Infobox release date `August 24, 2017`; the bot is pre-APK. The 9 missing boss ids/pack are a mapping/pack gap, not a release-date gap. `[WIKI]` `docs/content_release_dates.md`, `data/wiki/bots.json`. |
