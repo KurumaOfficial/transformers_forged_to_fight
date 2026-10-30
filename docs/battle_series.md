@@ -1,8 +1,9 @@
 # 20-fight battle series (Step 7.1)
 
-Status: **20/20 PASS** on the battle-step contract (resolve-match, damage,
-HP drop). 19 fights ended in a loss and **one fight was won** under the
-automatic attack loop; no weak-enemy test data was used.
+Status: **20/20 COMPLETED** on the battle-step contract (resolve-match,
+damage, HP drop): **1 WIN, 19 LOSS** under the automatic attack loop; no
+weak-enemy test data was used. Old files say PASS for the same mechanic
+completion; the new report fields are completed + outcome.
 
 ## Results `[RUN]`
 
@@ -35,7 +36,8 @@ Sources: `tests/smoke/battle_series_part1.json` (fights 1-10) and
 
 ## Observations
 
-- `resolve_match=true`, `damage_nonzero=true`, `hp_decreases=true` for all 20.
+- `completed=true`, `damage_nonzero=true`, `hp_decreases=true` for all 20.
+- Outcome: **1 WON** (fight 17, HP 166.8/0, damage 1127) and **19 LOST**.
 - Enemy HP at the end ranges **3.5-607.25**; player damage ranges
   **442.75-1127.0**. The fight is real, not a zero-damage stub.
 - Fight 17 is a **normal win without test data**: player HP 166.8, enemy HP 0,

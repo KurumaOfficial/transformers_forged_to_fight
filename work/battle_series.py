@@ -56,10 +56,18 @@ def main():
         }, ensure_ascii=False, indent=2), encoding="utf-8")
         time.sleep(3)
 
-    ok = sum(1 for r in results if r.get("step", {}).get("status") == "PASS")
-    print(json.dumps({"completed": len(results), "pass": ok, "out": str(OUT)},
+    completed = sum(
+        1 for r in results
+        if (r.get("step", {}).get("completed") is True
+            or r.get("step", {}).get("status") in ("PASS", "COMPLETED")))
+    wins = sum(1 for r in results
+               if (r.get("step", {}).get("outcome") or r.get("step", {}).get("result")) == "WON")
+    losses = sum(1 for r in results
+                 if (r.get("step", {}).get("outcome") or r.get("step", {}).get("result")) == "LOST")
+    print(json.dumps({"completed": len(results), "completed_ok": completed,
+                      "wins": wins, "losses": losses, "out": str(OUT)},
                      ensure_ascii=False))
-    return 0 if ok == len(results) else 1
+    return 0 if completed == len(results) else 1
 
 
 if __name__ == "__main__":

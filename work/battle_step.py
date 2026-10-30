@@ -74,20 +74,23 @@ def main():
     damage_nonzero = dmg0 > 0 or dmg1 > 0 or hp0_rem < hp0_start or hp1_rem < hp1_start
     hp_decreases = hp0_rem < hp0_start or hp1_rem < hp1_start
     result = ((body.get("results") or {}).get("result")) if isinstance(body.get("results"), dict) else None
+    completed = bool(resolved and damage_nonzero and hp_decreases)
     check = {
         "resolve_match": bool(resolved),
         "fight_ends": bool(resolved),
         "damage_nonzero": bool(damage_nonzero),
         "hp_decreases": bool(hp_decreases),
+        "completed": completed,
+        "outcome": result,
         "result": result,
         "player_0": {"hp_start": hp0_start, "hp_remaining": hp0_rem, "dmg_atk_total": dmg0},
         "player_1": {"hp_start": hp1_start, "hp_remaining": hp1_rem, "dmg_atk_total": dmg1},
-        "status": "PASS" if (resolved and damage_nonzero and hp_decreases) else "FAIL",
+        "status": "COMPLETED" if completed else "FAIL",
     }
     OUT.write_text(json.dumps(check, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(check, ensure_ascii=False, indent=2))
     print("report", OUT)
-    return 0 if check["status"] == "PASS" else 1
+    return 0 if completed else 1
 
 
 if __name__ == "__main__":
