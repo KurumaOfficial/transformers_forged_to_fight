@@ -849,3 +849,11 @@ and `quest_begin_response.json` remain templates/fallbacks.
 - BOTS 59/59 metric invalid (horizontal swipe repeats page 0); vertical
   scroll + rerun required.
 - Full nightly after all changes is still pending.
+
+## 2026-10-30 v4.11 nightly PASS
+
+- work/nightly/nightly_2026-10-30_211332.log: check_all 9/9, fast smoke
+  PASS, BOTS vertical 59/59 with 0 NRE, battle step COMPLETED/LOST
+  (player damage 203.7, enemy 1289.6). VERDICT PASS.
+- Golden shapes re-recorded after the wiki-stat/post-battle changes.
+- FINAL updated; snapshot/archive to refresh.

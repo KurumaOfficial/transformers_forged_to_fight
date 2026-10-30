@@ -278,4 +278,4 @@ status. T5 is MASTER_PROMPT v4.3.
 | Starscream | **found/cataloged** | toc + `characters.assetbundle`; patch entry; UI not shown [STATIC]/[RUN] |
 | Abilities | **blocked** | no Evade/Shield/Bleed stat enum; Buff/trigger graph missing [STATIC] |
 | BOTS 59/59 | **invalid metric** | horizontal swipe repeats page 0; vertical rerun needed [RUN] |
-| Full nightly after changes | **pending** | latest full nightly was 2026-10-29 [RUN] |
+| Full nightly after changes | **PASS 2026-10-30 21:13** | check_all 9/9, smoke PASS, BOTS 59/59, battle step COMPLETED/LOST [RUN] |
