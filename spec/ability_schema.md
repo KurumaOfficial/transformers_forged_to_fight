@@ -70,3 +70,27 @@ into `statMods` because the wiki text has no stable client stat-mod ids.
 - Per-bot special-attack name table.
 - Exact `Buff` JSON path list and stack/refresh rules.
 - `BCGStatModifier` ctor keys (only the sample entry above is verified).
+
+## 2026-10-30 Step 5 pilot assessment
+
+The wiki numbers are available (data/wiki/ability_pilot.json), but the
+client schema cannot represent the three pilots as statMods alone:
+
+| wiki effect | client representation | status |
+|---|---|---|
+| Bumblebee Melee Evade 24-34% | StatModifierAttributes has no Evade entry; PlayerAttributes._evadeMelee is a separate field | no statMod var |
+| Bumblebee Critical Rate Buff | CritChance exists, but the buff is 3 stacks removed on hit | needs Buff/trigger graph |
+| Bumblebee Shield Break + Shock | Buff class exists; no decoded uffParams/trigger JSON | blocked |
+| Rhinox Shield 6 stacks | Buff class exists; no decoded shield/stack JSON | blocked |
+| Rhinox Bleed / Power Lock | no Bleed/PowerLock stat enum; needs Buff | blocked |
+| Optimus Prime | wiki text not yet mapped to a client factory | blocked |
+
+The only verified statMods entry is stat_mod_attack_pct
+(id, ar: attack, modSource: passive, modifier: 0.1,
+uth: [bumblebee_cin_dotm_2]). Adding a permanent crit_chance modifier
+would not reproduce the wiki's stack/removal rules, so it was not applied.
+No invented ability definitions were added.
+
+To author the pilots, the missing pieces are the Buff JSON path/trigger
+graph (uffParams, groups, BuffTriggerFactory) and a stat enum for
+Evade/Shield/Bleed. These are static-code gaps, not wiki-number gaps.
