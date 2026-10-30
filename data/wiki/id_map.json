@@ -1,5 +1,5 @@
 {
- "source": "client package directories under work/unpacked/assets (59 bot packs) vs wiki pages",
+ "source": "61 base character tokens from all character TOCs/bundles (59 ODR packs + Starscream_GS and OptimusPrime_GS_V merged) vs wiki pages",
  "client_pack_count": 59,
  "sharkticon_pack_count": 7,
  "non_sharkticon_client_count": 52,
@@ -417,19 +417,31 @@
    "wiki_page_exists": true,
    "confidence": "high (manual variant/base)",
    "in_bots_stats": true
+  },
+  {
+   "client_id": "starscream_gs",
+   "wiki_page": "Starscream",
+   "wiki_page_exists": true,
+   "confidence": "high (client toc/bundle + loc token + wiki 1/1)",
+   "in_bots_stats": true
+  },
+  {
+   "client_id": "optimusprime_gs_v",
+   "wiki_page": "Optimus Prime",
+   "wiki_page_exists": true,
+   "confidence": "high (client toc/bundle + loc token + wiki 1/1)",
+   "in_bots_stats": true
   }
  ],
- "matched_count": 59,
+ "matched_count": 61,
  "unmatched_client": [],
  "unmatched_client_count": 0,
  "wiki_without_client": [
   "Chromia",
   "Dead End",
-  "Optimus Prime",
-  "Soundblaster/Tactician",
-  "Starscream"
+  "Soundblaster/Tactician"
  ],
- "note": "Mapping is by canonical pack prefix + manual variants; confidence is not a pack-by-pack asset proof. 2026-10-24: five wiki-only pages analysed; only Optimus Prime maps to a client pack under a variant page title.",
+ "note": "Starscream and Optimus Prime are present in characters.assetbundle; the old 59-pack scan missed them. Chromia/Dead End have no 9.2.0 token or asset match. Soundblaster/Tactician is a separate wiki variant; client has Demolitions soundblaster_gs_mp13b.",
  "client_with_stat_page": 39,
  "client_without_stat_page": 20,
  "client_without_stat_non_shark": 13,
@@ -466,5 +478,10 @@
    "label": "[ASSUMED] not original",
    "reason": "no 9.2.0 Starscream pack; same-faction/class Tactician"
   }
+ ],
+ "client_character_count": 61,
+ "merged_only": [
+  "starscream_gs",
+  "optimusprime_gs_v"
  ]
 }

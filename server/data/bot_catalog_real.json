@@ -1,7 +1,7 @@
 {
- "source": "client package dirs (9.2.0) + data/wiki/id_map.json + data/wiki/bots.json + data/wiki/pages.json",
- "note": "No fabricated class/faction/generation; empty strings + missing reasons where wiki data is absent. Sharkticon variant names are client IDs; class mapping is not asserted.",
- "count": 59,
+ "source": "61 base character tokens (59 ODR packs + Starscream_GS and OptimusPrime_GS_V merged) + data/wiki/id_map.json + bots.json",
+ "note": "Count is 61 characters. The old 59-pack count missed the two merged prefabs; Starscream/Optimus are not post-APK content.",
+ "count": 61,
  "rows": [
   {
    "client_id": "arcee_gs_deluxe2014",
@@ -2151,6 +2151,98 @@
    },
    "missing": [
     "no parsed wiki page"
+   ]
+  },
+  {
+   "client_id": "starscream_gs",
+   "pack_dir": "work/unpacked/assets/assetpack/characters/characters.assetbundle",
+   "wiki_page": "Starscream",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Decepticon",
+   "generation": "Generation 1",
+   "release": "August 24, 2017",
+   "stars": {
+    "2": {
+     "health": "1,575",
+     "attack": "132",
+     "max_rating": "550"
+    },
+    "3": {
+     "health": "3,866",
+     "attack": "280",
+     "max_rating": "1312"
+    },
+    "4": {
+     "health": "10,048",
+     "attack": "727",
+     "max_rating": "3524"
+    }
+   },
+   "max_rating": {
+    "2": "550",
+    "3": "1312",
+    "4": "3524"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]",
+    "bundle": "[STATIC]"
+   },
+   "missing": [
+    "merged bundle (characters.assetbundle); ODR pack absent"
+   ]
+  },
+  {
+   "client_id": "optimusprime_gs_v",
+   "pack_dir": "work/unpacked/assets/assetpack/characters/characters.assetbundle",
+   "wiki_page": "Optimus Prime",
+   "wiki_page_exists": true,
+   "in_bots_stats": true,
+   "sharkticon_variant": false,
+   "class": "Tactician",
+   "faction": "Autobot",
+   "generation": "Generation 1",
+   "release": "Launch",
+   "stars": {
+    "1": {
+     "health": "1,066",
+     "attack": "97",
+     "max_rating": "267"
+    },
+    "2": {
+     "health": "1819~1842",
+     "attack": "150~152",
+     "max_rating": "544"
+    },
+    "3": {
+     "health": "4,468",
+     "attack": "318",
+     "max_rating": "1,287"
+    },
+    "4": {
+     "health": "11,611",
+     "attack": "827",
+     "max_rating": "3,465"
+    }
+   },
+   "max_rating": {
+    "1": "267",
+    "2": "544",
+    "3": "1,287",
+    "4": "3,465"
+   },
+   "sources": {
+    "client_id": "[CLIENT]",
+    "class_faction_generation": "[WIKI]",
+    "stars": "[WIKI]",
+    "bundle": "[STATIC]"
+   },
+   "missing": [
+    "merged bundle (characters.assetbundle); ODR pack absent"
    ]
   }
  ]

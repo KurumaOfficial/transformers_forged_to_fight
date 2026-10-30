@@ -38,6 +38,15 @@ _EXTRA = {
         "label": "[WIKI]",
         "uncertainty_pct": 6.0,
     },
+    "optimusprime_gs_v": {
+        "client_id": "optimusprime_gs_v",
+        "wiki_page": "Optimus Prime",
+        "class": "Tactician",
+        "level1_hp": 6240.0,
+        "level1_attack": 444.0,
+        "label": "[WIKI]",
+        "uncertainty_pct": 6.0,
+    },
 }
 _HAVE = {r.get("client_id") for r in _COVER}
 _COVER.extend(v for k, v in _EXTRA.items() if k not in _HAVE)

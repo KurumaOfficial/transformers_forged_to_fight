@@ -9,12 +9,9 @@
  "story_act1_ch1_m2": {
   "name": "A Slow Learner",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act1_ch1_m3": {
   "name": "Me Have Mod",
@@ -117,12 +114,9 @@
  "story_act1_ch3_m5": {
   "name": "Power Seeker",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act1_ch3_m6": {
   "name": "School the Sharks",
@@ -155,12 +149,9 @@
  "story_act1_ch4_m4": {
   "name": "The Long Game",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act1_ch4_m5": {
   "name": "Optimum Outcome",
@@ -193,12 +184,9 @@
  "story_act2_ch1_m3": {
   "name": "Who's Your Master?",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act2_ch1_m4": {
   "name": "Scout's Honor",
@@ -238,12 +226,9 @@
  "story_act2_ch2_m3": {
   "name": "T-Cog Probs",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act2_ch2_m4": {
   "name": "Origins",
@@ -297,12 +282,9 @@
  "story_act2_ch3_m5": {
   "name": "Head Gamezzz",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act2_ch3_m6": {
   "name": "No Petty Relic",
@@ -391,12 +373,9 @@
  "story_act3_ch1_m6": {
   "name": "Proof of Death",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act4_ch1_m1": {
   "name": "Wrong Place, Wrong Time",
@@ -471,12 +450,9 @@
  "story_act4_ch2_m5": {
   "name": "Face",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "wiki_act4",
-  "reason": "[WIKI] Awaken and Corrupt revision: Starscream; no 9.2.0 pack",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "story_act4_ch2_m6": {
   "name": "Upon the Chrome",
@@ -558,12 +534,9 @@
  "awaken_ch2_m5": {
   "name": "Face",
   "boss": "Starscream",
-  "boss_client_id": null,
-  "match": "none",
-  "reason": "Starscream has no 9.2.0 client pack (wiki-only variants); unresolved: no boss id",
-  "fallback_client_id": "nemesisprime_gs_voyager2015",
-  "fallback_label": "[ASSUMED] not original",
-  "fallback_reason": "[ASSUMED] Starscream has no 9.2.0 client pack; same-faction/same-class Tactician fallback for data experiments only; not the original boss"
+  "boss_client_id": "starscream_gs",
+  "match": "high",
+  "reason": "[CLIENT] characters/toc.txt + characters.assetbundle Starscream_GS + STARS_GS localization; [WIKI] 5400/391/1354"
  },
  "awaken_ch2_m6": {
   "name": "Upon The Chrome",
