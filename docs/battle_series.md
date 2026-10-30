@@ -1,14 +1,14 @@
 # 20-fight battle series (Step 7.1)
 
-Status: **series in two halves.** The first 10/10 fights PASS the battle-step
-contract (resolve-match, damage, HP drop). All ten ended in a loss under the
-automatic attack loop; that is a gameplay/positioning result, not a protocol
-failure.
+Status: **20/20 PASS** on the battle-step contract (resolve-match, damage,
+HP drop). 19 fights ended in a loss and **one fight was won** under the
+automatic attack loop; no weak-enemy test data was used.
 
-## First half `[RUN]`
+## Results `[RUN]`
 
-Source: `tests/smoke/battle_series_part1.json`, normal server data, no
-`weak_enemy` flag.
+Sources: `tests/smoke/battle_series_part1.json` (fights 1-10) and
+`tests/smoke/battle_series.json` (fights 11-20), merged into
+`tests/smoke/battle_series_20.json`.
 
 | # | result | player HP | enemy HP | player damage |
 |---:|---|---:|---:|---:|
@@ -22,15 +22,27 @@ Source: `tests/smoke/battle_series_part1.json`, normal server data, no
 | 8 | LOST | 0 | 285.25 | 764.75 |
 | 9 | LOST | 0 | 325.5 | 724.5 |
 | 10 | LOST | 0 | 567.0 | 483.0 |
+| 11 | LOST | 0 | 245.0 | 805.0 |
+| 12 | LOST | 0 | 325.5 | 724.5 |
+| 13 | LOST | 0 | 3.5 | 1046.5 |
+| 14 | LOST | 0 | 204.75 | 845.25 |
+| 15 | LOST | 0 | 204.75 | 845.25 |
+| 16 | LOST | 0 | 446.25 | 603.75 |
+| 17 | **WON** | **166.8** | **0** | **1127.0** |
+| 18 | LOST | 0 | 245.0 | 805.0 |
+| 19 | LOST | 0 | 204.75 | 845.25 |
+| 20 | LOST | 0 | 365.75 | 684.25 |
 
-Observations:
+## Observations
 
-- `resolve_match=true`, `damage_nonzero=true`, `hp_decreases=true` for all 10.
-- Enemy HP at the end ranges 43.75–607.25; the player damage range is
-  442.75–1006.25. The fight is real, not a zero-damage stub.
-- The automatic tap loop does not block/dodge well enough to win; the earlier
-  normal win (HP 300.2, enemy 0, damage 1069.5) needed better timing.
-- Series was split because the emulator/server stopped during the first
-  20-fight run; the second 10-fight run continues from a fresh launch.
-- Final combined file: `tests/smoke/battle_series_20.json` (merge via
-  `work/merge_series.py`).
+- `resolve_match=true`, `damage_nonzero=true`, `hp_decreases=true` for all 20.
+- Enemy HP at the end ranges **3.5-607.25**; player damage ranges
+  **442.75-1127.0**. The fight is real, not a zero-damage stub.
+- Fight 17 is a **normal win without test data**: player HP 166.8, enemy HP 0,
+  player damage 1127.0. This is the second independent normal win (the first
+  was 300.2 / 0 / 1069.5).
+- The auto-loop usually loses because it does not block/dodge well; the win
+  proves the full win path is reachable with normal data.
+- The series was split into two 10-fight runs because the emulator/server
+  stopped during the first 20-fight attempt; both halves used a fresh launch.
+- The merge is reproducible with `work/merge_series.py`.

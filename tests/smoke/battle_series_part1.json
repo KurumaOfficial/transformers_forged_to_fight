@@ -1,0 +1,258 @@
+{
+  "started": "2026-10-29T23:13:19.291498+00:00",
+  "updated": "2026-10-29T23:43:08.748810+00:00",
+  "count": 20,
+  "completed": 10,
+  "results": [
+    {
+      "index": 0,
+      "started": "2026-10-29T23:13:19.291522+00:00",
+      "exit": 0,
+      "tail": "tch\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 442.75\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 607.25,\n    \"dmg_atk_total\": 1085.6001\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 442.75
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 607.25,
+          "dmg_atk_total": 1085.6001
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:16:11.797838+00:00"
+    },
+    {
+      "index": 1,
+      "started": "2026-10-29T23:16:14.798577+00:00",
+      "exit": 0,
+      "tail": "match\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 483.0\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 567.0,\n    \"dmg_atk_total\": 1085.6001\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 483.0
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 567.0,
+          "dmg_atk_total": 1085.6001
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:19:01.900447+00:00"
+    },
+    {
+      "index": 2,
+      "started": "2026-10-29T23:19:04.901106+00:00",
+      "exit": 0,
+      "tail": "ch\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 523.25\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 526.75,\n    \"dmg_atk_total\": 1076.40015\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 523.25
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 526.75,
+          "dmg_atk_total": 1076.40015
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:22:11.615285+00:00"
+    },
+    {
+      "index": 3,
+      "started": "2026-10-29T23:22:14.616156+00:00",
+      "exit": 0,
+      "tail": "ch\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 764.75\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 285.25,\n    \"dmg_atk_total\": 1104.00024\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 764.75
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 285.25,
+          "dmg_atk_total": 1104.00024
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:25:15.504317+00:00"
+    },
+    {
+      "index": 4,
+      "started": "2026-10-29T23:25:18.504945+00:00",
+      "exit": 0,
+      "tail": "atch\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 644.0\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 406.0,\n    \"dmg_atk_total\": 1104.00012\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 644.0
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 406.0,
+          "dmg_atk_total": 1104.00012
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:28:07.330325+00:00"
+    },
+    {
+      "index": 5,
+      "started": "2026-10-29T23:28:10.331316+00:00",
+      "exit": 0,
+      "tail": "ch\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 764.75\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 285.25,\n    \"dmg_atk_total\": 1094.80017\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 764.75
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 285.25,
+          "dmg_atk_total": 1094.80017
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:30:59.125740+00:00"
+    },
+    {
+      "index": 6,
+      "started": "2026-10-29T23:31:02.126786+00:00",
+      "exit": 0,
+      "tail": "ch\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 1006.25\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 43.75,\n    \"dmg_atk_total\": 1076.40015\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 1006.25
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 43.75,
+          "dmg_atk_total": 1076.40015
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:34:06.806396+00:00"
+    },
+    {
+      "index": 7,
+      "started": "2026-10-29T23:34:09.807394+00:00",
+      "exit": 0,
+      "tail": "ch\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 764.75\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 285.25,\n    \"dmg_atk_total\": 1085.59998\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 764.75
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 285.25,
+          "dmg_atk_total": 1085.59998
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:37:05.951217+00:00"
+    },
+    {
+      "index": 8,
+      "started": "2026-10-29T23:37:08.952140+00:00",
+      "exit": 0,
+      "tail": "match\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 724.5\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 325.5,\n    \"dmg_atk_total\": 1085.6001\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 724.5
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 325.5,
+          "dmg_atk_total": 1085.6001
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:40:09.204737+00:00"
+    },
+    {
+      "index": 9,
+      "started": "2026-10-29T23:40:12.205745+00:00",
+      "exit": 0,
+      "tail": "te_match\": true,\n    \"bugs\": false\n  },\n  \"prefight_detected\": true,\n  \"nre_prefight_model\": false,\n  \"memory_team_count\": null\n}\n[smoke] report: C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\latest.json\n\n{\n  \"resolve_match\": true,\n  \"fight_ends\": true,\n  \"damage_nonzero\": true,\n  \"hp_decreases\": true,\n  \"result\": \"LOST\",\n  \"player_0\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 0.0,\n    \"dmg_atk_total\": 483.0\n  },\n  \"player_1\": {\n    \"hp_start\": 1050.0,\n    \"hp_remaining\": 567.0,\n    \"dmg_atk_total\": 1058.0\n  },\n  \"status\": \"PASS\"\n}\nreport C:\\Users\\gameg\\Desktop\\TFTF\\tests\\smoke\\battle_step.json\n",
+      "step": {
+        "resolve_match": true,
+        "fight_ends": true,
+        "damage_nonzero": true,
+        "hp_decreases": true,
+        "result": "LOST",
+        "player_0": {
+          "hp_start": 1050.0,
+          "hp_remaining": 0.0,
+          "dmg_atk_total": 483.0
+        },
+        "player_1": {
+          "hp_start": 1050.0,
+          "hp_remaining": 567.0,
+          "dmg_atk_total": 1058.0
+        },
+        "status": "PASS"
+      },
+      "finished": "2026-10-29T23:43:08.748799+00:00"
+    }
+  ]
+}
