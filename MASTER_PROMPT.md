@@ -1,11 +1,88 @@
-# MASTER_PROMPT v4.10 - current state and queue (2026-10-30)
+# MASTER_PROMPT v4.11 - current state and queue (2026-10-30)
 
 Continue from this file if the chat is lost. Files beat this text:
 `STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-30.md`,
-`docs/damage_pipeline.md`, `docs/claims_audit.md`, `docs/routing_split.md`,
-`spec/buff_catalog.md`, `spec/tuning_values.md`, `docs/rating_ui_check.md`.
+`docs/damage_fix.md`, `spec/configs_catalog.md`, `spec/tuning_live.md`,
+`spec/tuning_zero_audit.md`, `docs/post_battle_flow.md`, `docs/level_lock.md`,
+`docs/stat_ui_check.md`, `docs/starscream_search.md`.
 
-## 2026-10-30 v4.10 update (read this first)
+## 2026-10-30 v4.11 update (read this first)
+
+- **Damage chain is documented:** `TuningGameplay.ArmorRatingConstant`
+  (+0x20) <- `DeserializeData` (`0x1425540`) <- `armor_break` in
+  `missionsconfig.configs["bcg-combat"]`; consumer `GetArmorDR` (`0xDAD7A4`).
+  `docs/damage_fix.md`; config catalog `spec/configs_catalog.md`.
+- **Tuning audit:** live `Tuning` has 242 fields, **95 zero/empty**; the
+  functional candidates are classified in `spec/tuning_zero_audit.md`. Only
+  `bcg-combat` is server-controllable; other zeros are client prefab/flags.
+  No silent combat zero remains.
+- **Post-battle:** a `battlecomplete` action produces the real **VICTORY**
+  screen with stats. Rewards, tile clear and map progress still do not apply;
+  tried `{type,data,quantity}` and `{id,type,amount}` and a `progression`
+  block. Need the exact `QuestActionResult` keys and active-quest refresh.
+  `docs/post_battle_flow.md`, `work/postwin2.png`/`postwin3.png`.
+- **Level:** found `/levelrewards/fetch` (`0x1271694`) and async messages
+  `level-up`/`sync` (`0x1273494`); sending `sync` does trigger the endpoint,
+  but `_status.Level` stays 0 (`types` default 6). `LoginManager._loginData`
+  is an empty Hashtable at home. `/auth/login` `loc` injection was negative.
+  `docs/level_lock.md`.
+- **Stats:** `server/wiki_stats.py` uses the wiki rank/level fits and exact
+  1/1 rating rows. Bumblebee DOTM live **1066/97**, Sideswipe **5160/520**,
+  Windblade **5160/498/1381**, Rhinox **5940/396/1413**, Arcee
+  **5340/516/1397**, Optimus MV1 **6720/507/1427**. Normal battle step after
+  the change: COMPLETED/LOST, player damage 67.9, enemy damage 1497.6.
+  `docs/stat_ui_check.md`. BOTS list still flat 300; UPGRADE screen 0/0.
+- **Starscream is in the client.** `characters/toc.txt` lists
+  `starscream_gs`; `characters.assetbundle` contains `Starscream_GS`;
+  localization has `ID_SPECIAL_ATTACK_STARS_GS_0..2` and the wiki page is
+  class Tactician, 5400/391/1354, release 2017-08-24. A patch file adds it to
+  the catalog at load; the BOTS grid does not show it yet.
+  `docs/starscream_search.md`.
+- **Abilities:** wiki numbers exist, but `StatModifierAttributes` has no
+  Evade/Shield/Bleed and the Buff/trigger JSON graph is not decoded. The pilot
+  is blocked on schema, not numbers; no fake definitions were added.
+  `spec/ability_schema.md`.
+- **Tests:** the older 20/20 series (pre-wiki-stats) is 1 WON/19 LOST; the
+  final normal-data `battle_step` is COMPLETED/LOST with the new stats.
+  Full smoke 6/6 was pre-stats. The BOTS 59/59 metric is **invalid**: the
+  horizontal-swipe sweep repeats the first 12 cards; use vertical scroll and
+  rerun. Do not claim 59/59 coverage until fixed. `docs/sweep_diagnosis.md`.
+- **Routing:** BCG builders + `/bcg/getHeroXPCurve` are in
+  `server/routes/bcg.py`; offline regression, fast smoke and 32/32 unit tests
+  pass. Remaining dispatch is still inline.
+
+## Queue status (v4.11)
+
+| Step | State | Remaining |
+|---|---|---|
+| 0 records | **done** | claims 51-56; damage_fix |
+| 1 configs/tuning | **done for static audit** | no full server config for unconfirmed modes (intentional) |
+| 2 post-battle | **partial** | victory screen works; rewards/tile/progress open |
+| 3 level | **partial/blocked** | fetch endpoint works; status stays 0 |
+| 4 stats | **done for catalog/battle** | BOTS list/upgrade UI separate path |
+| 5 abilities | **blocked** | Buff/trigger schema, no fake ids |
+| 6 localization | **partial/negative** | `MS_` marker; Windblade keys absent; loc injection negative |
+| 7 Starscream | **found, cataloged** | BOTS grid/model not yet shown |
+| 8 tests | **partial** | final battle step; full smoke pre-stats; BOTS sweep invalid; full nightly pending |
+| 9 systems | **static only** | gacha/objectives/store endpoints cataloged; no logic |
+| 10 protocol/infra | **partial** | openapi/tuning docs; remaining routing inline; backup skipped (BACKUP_PATH empty) |
+| 11 docs | **this file** | STATE/FIDELITY/OPEN_QUESTIONS/COVERAGE need final sync |
+| 12 final | **pending** | write after the remaining independent checks |
+
+## How to continue
+
+1. Start server, `adb reverse tcp:8080 tcp:8080`, run
+   `python work\smoke_test.py --plus --fight --no-memory`.
+2. Normal battle: `python work\battle_step.py --wait 75`; it must show
+   `completed=true`, `damage_nonzero`, `hp_decreases`.
+3. Keep `work/weak_enemy.flag` absent for normal tests.
+4. Do not claim BOTS 59/59 until the sweep uses vertical scroll.
+5. Do not invent Buff/trigger/localization/store keys.
+6. Rules unchanged: no Frida/gadget, client patch, debugger, Play Store image,
+   block bypass, OneDrive, push/gc --prune/filter-repo/force-push/remotes/
+   git config.
+
+## 2026-10-30 v4.10 update (historical)
 
 - **Zero damage is fixed [RUN].** The root cause was
   `TuningGameplay.ArmorRatingConstant=0` because no `bcg-combat` config was
