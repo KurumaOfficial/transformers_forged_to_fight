@@ -81,8 +81,8 @@ for page in range(5):
         print(idx, "popup_error", err1, "info_error", err2, "nre", len(nre), flush=True)
         adb("shell", "input", "keyevent", "4")
         time.sleep(0.8)
-    # next page: swipe left across the grid
-    adb("shell", "input", "swipe", "2000", "540", "250", "540", "300")
+    # next page: the BOTS grid scrolls vertically, not horizontally
+    adb("shell", "input", "swipe", "1200", "900", "1200", "300", "400")
     time.sleep(2)
 
 (OUT / "sweep_59.json").write_text(json.dumps({
