@@ -66,7 +66,37 @@ def load_data_json(filename, default=None):
             print(f"[!] Error loading {filepath}: {e}", file=sys.stderr)
     return default if default is not None else {}
 
-def make_sparx_response(result=None, sync=None, async_list=None, error=None, fatal=False, retry=False):
+
+def level_rewards_payload():
+    """Minimal /levelrewards/fetch result from account level data."""
+    level = 5
+    try:
+        account = load_data_json("account_data.json")
+        level = int((account.get("user") or {}).get("level", level))
+    except Exception:
+        pass
+    return {
+        "levelrewards": {
+            "last_awarded_level": level,
+            "lastAwardedLevel": level,
+            "level": level,
+            "Level": level,
+            "isEnabled": True,
+            "types": [],
+        },
+        "levelrewards_milestones": [],
+    }
+
+
+def level_sync_async():
+    """Ask LevelRewardsManager to fetch its status; component names are probed."""
+    return [
+        {"component": name, "message": "sync", "payload": {}}
+        for name in ("levelrewards", "LevelRewardsManager",
+                     "levelrewardsmanager", "levelRewards")
+    ]
+
+def make_sparx_response(result=None, sync=None, async_list=None, error=None, fatal=False, retry=False, extra=None):
     # Sparx canonical envelope [STATIC: parsed from EB.Sparx.Response and EB.Sparx.EndPoint]
     resp = {
         "ts": int(time.time()),
@@ -80,6 +110,8 @@ def make_sparx_response(result=None, sync=None, async_list=None, error=None, fat
         resp["error"] = error
         resp["fatal"] = fatal
         resp["retry"] = retry
+    if extra:
+        resp.update(extra)
     return json.dumps(resp, ensure_ascii=False)
 
 class SparxStubHandler(http.server.BaseHTTPRequestHandler):
@@ -129,8 +161,8 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
 
         return path, query, headers_dict, body_json
 
-    def send_sparx(self, result=None, sync=None, status_code=200, assumed_label="[ASSUMED]", async_list=None):
-        payload = make_sparx_response(result=result, sync=sync, async_list=async_list)
+    def send_sparx(self, result=None, sync=None, status_code=200, assumed_label="[ASSUMED]", async_list=None, extra=None):
+        payload = make_sparx_response(result=result, sync=sync, async_list=async_list, extra=extra)
         body = payload.encode('utf-8')
         self.send_response(status_code)
         self.send_header('Content-Type', 'application/json; charset=utf-8')
@@ -216,10 +248,18 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
             self.send_sparx(data, assumed_label="[STATIC: /tuning loaded from data/tuning_data.json]")
             return
 
+        # 7b. Level rewards status [CLIENT: LevelRewardsAPI.FetchStatus 0x1271694]
+        if path == "/levelrewards/fetch":
+            data = level_rewards_payload()
+            self.send_sparx(data, assumed_label="[CLIENT: /levelrewards/fetch status]",
+                            extra=data)
+            return
+
         # 8. BCG getLoginData [STATIC: loaded from server/data/bcg_login_data.json]
         if path == "/bcg/getLoginData":
             data = bcg_routes.login_data(load_data_json)
-            self.send_sparx(data, assumed_label="[STATIC: /bcg/getLoginData loaded from data/bcg_login_data.json]")
+            self.send_sparx(data, assumed_label="[STATIC: /bcg/getLoginData loaded from data/bcg_login_data.json]",
+                            async_list=level_sync_async())
             return
 
         # 9. BCG base hero data [STATIC: BCGAPI request body {heroes:[{bid,rank,level,sig_lvl,flvl}],api,nonce}]
