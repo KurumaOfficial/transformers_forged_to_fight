@@ -1,8 +1,9 @@
 # Post-battle quests / economy (Step 8.1): plan and current state
 
-Status: **blocked by the fight not resolving** (`FuseODRBlocker`). No
-`/matches/resolve-match` request has ever been observed; rewards, energy and
-progression after a fight are therefore not exercised.
+Status: **fight resolves; victory screen observed; rewards/tile-clear/progress
+not applied yet.** See `docs/post_battle_flow.md` for the 2026-10-30 static
+schema and the exact request/response tested. The old "blocked by ODR" status
+is obsolete.
 
 ## Expected flow (static, partially verified)
 

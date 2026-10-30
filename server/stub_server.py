@@ -677,13 +677,34 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                 }
                 _qset, quest = find_quest(qid)
                 rewards = (quest or {}).get("firstCompletionRewards") or []
+                redeems = [
+                    {"type": str(r.get("type", "currency")),
+                     "data": str(r.get("id", "")),
+                     "quantity": int(r.get("amount", 0))}
+                    for r in rewards if isinstance(r, dict)
+                ]
+                completed = (quest or {}).get("isFinalBoss") or False
+                actions = [
+                    {"action": {
+                        "battlecomplete": {"x": pos["x"], "y": pos["y"]},
+                        "cleared": cleared,
+                        "visibleClearedCount": len(cleared),
+                        "percentComplete": 30,
+                        "redeems": redeems,
+                    }},
+                ]
+                if completed:
+                    actions.append({"action": {"questcomplete": {
+                        "x": pos["x"], "y": pos["y"], "cleared": cleared,
+                    }}})
                 data.update({
                     "qid": qid,
                     "victory": True,
                     "enemyHealth": 0,
-                    "rewards": rewards,
+                    "rewards": redeems,
+                    "redeems": redeems,
                     "firstCompletionRewards": rewards,
-                    "results": [],
+                    "results": actions,
                     "matchResults": {"battleId": "battle1", "result": 1},
                     "progression": {
                         "version": 3,
