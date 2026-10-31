@@ -32,6 +32,32 @@ def login_data(load_data_json):
                 drop = set((removals.get("heroes") or []) + (removals.get("blueprints") or []))
                 roster[:] = [h for h in roster
                              if isinstance(h, dict) and h.get("bid") not in drop]
+        # Pilot: replace a blueprint id with <loc_token>_<suffix> while keeping
+        # the character/model id. This is the Step 1.3 experiment.
+        if os.path.exists("work/blueprint_pilot.flag"):
+            pilot = load_data_json("blueprint_pilot.json")
+            if isinstance(pilot, dict):
+                for old, new in (pilot.get("rename") or {}).items():
+                    bp = data.get("blueprints", {}).pop(old, None)
+                    hh = data.get("heroes", {}).pop(old, None)
+                    if bp is not None:
+                        data["blueprints"][new] = pilot.get("blueprints", {}).get(new, bp)
+                    if hh is not None:
+                        data["heroes"][new] = pilot.get("heroes", {}).get(new, hh)
+                    for cid, ch in (pilot.get("characters") or {}).items():
+                        if isinstance(ch, dict):
+                            data.setdefault("characters", {})[cid] = ch
+                    for i, h in enumerate(roster if isinstance(roster, list) else []):
+                        if isinstance(h, dict) and h.get("bid") == old:
+                            roster[i] = pilot.get("roster", h)
+                            break
+        if os.path.exists("work/character_token_patch.flag"):
+            cpatch = load_data_json("character_token_patch.json")
+            if isinstance(cpatch, dict):
+                for cid, fields in (cpatch.get("characters") or {}).items():
+                    target = data.get("characters", {}).get(cid)
+                    if isinstance(target, dict) and isinstance(fields, dict):
+                        target.update(fields)
         if isinstance(roster, list) and not any(
                 isinstance(h, dict) and h.get("bid") == "starscream_gs" for h in roster):
             hero = patch.get("hero")

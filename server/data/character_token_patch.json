@@ -1,0 +1,8 @@
+{
+ "reason": "loc token is carried by BCGCharacterData.Character, not the blueprint key",
+ "characters": {
+  "windblade_gs": {
+   "character": "windb_gs_5"
+  }
+ }
+}

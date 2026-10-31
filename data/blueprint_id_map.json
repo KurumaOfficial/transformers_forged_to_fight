@@ -1,0 +1,1199 @@
+{
+ "source": "data/client_character_census.json + 0xC1B154 key builder",
+ "count": 61,
+ "rows": [
+  {
+   "client_id": "arcee_gs_deluxe2014",
+   "model_id": "arcee_gs_deluxe2014",
+   "blueprint_id": "arcee_gs_deluxe2014",
+   "loc_token": "ARCEE_GS",
+   "portrait_token": "arcee_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_ARCEE_GS_0",
+    "ID_SPECIAL_ATTACK_ARCEE_GS_1",
+    "ID_SPECIAL_ATTACK_ARCEE_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_ARCEE_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "barricade_cin_dotm",
+   "model_id": "barricade_cin_dotm",
+   "blueprint_id": "barricade_cin_dotm",
+   "loc_token": "BARRI_C",
+   "portrait_token": "barri_c",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_BARRI_C_0",
+    "ID_SPECIAL_ATTACK_BARRI_C_1",
+    "ID_SPECIAL_ATTACK_BARRI_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_BARRI_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "blaster_gs_leader2016",
+   "model_id": "blaster_gs_leader2016",
+   "blueprint_id": "blaster_gs_leader2016",
+   "loc_token": "BLASTR_GS",
+   "portrait_token": "blastr_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_BLASTR_GS_0",
+    "ID_SPECIAL_ATTACK_BLASTR_GS_1",
+    "ID_SPECIAL_ATTACK_BLASTR_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_BLASTR_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "bludgeon_gs_rd20",
+   "model_id": "bludgeon_gs_rd20",
+   "blueprint_id": "bludgeon_gs_rd20",
+   "loc_token": "BLUDGE_GS",
+   "portrait_token": "bludge_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_BLUDGE_GS_0",
+    "ID_SPECIAL_ATTACK_BLUDGE_GS_1",
+    "ID_SPECIAL_ATTACK_BLUDGE_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_BLUDGE_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "bonecrusher_cin_rotf",
+   "model_id": "bonecrusher_cin_rotf",
+   "blueprint_id": "bonecrusher_cin_rotf",
+   "loc_token": "BONEC_C",
+   "portrait_token": "bonec_c",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_BONEC_C_0",
+    "ID_SPECIAL_ATTACK_BONEC_C_1",
+    "ID_SPECIAL_ATTACK_BONEC_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_BONEC_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "bumblebee_cin_dotm",
+   "model_id": "bumblebee_cin_dotm",
+   "blueprint_id": "bumblebee_cin_dotm",
+   "loc_token": "BUMBL_C",
+   "portrait_token": "bumbl_c",
+   "suffix_note": "stub uses _2 (rarity/variant), client accepted it",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_BUMBL_C_0",
+    "ID_SPECIAL_ATTACK_BUMBL_C_1",
+    "ID_SPECIAL_ATTACK_BUMBL_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_BUMBL_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "bumblebee_gs_kabam",
+   "model_id": "bumblebee_gs_kabam",
+   "blueprint_id": "bumblebee_gs_kabam",
+   "loc_token": "BUMBL_GS",
+   "portrait_token": "bumbl_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_BUMBL_GS_0",
+    "ID_SPECIAL_ATTACK_BUMBL_GS_1",
+    "ID_SPECIAL_ATTACK_BUMBL_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_BUMBL_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "cheetor_bw_transmetal",
+   "model_id": "cheetor_bw_transmetal",
+   "blueprint_id": "cheetor_bw_transmetal",
+   "loc_token": "CHEETOR_BW",
+   "portrait_token": "cheetor_bw",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_CHEETOR_BW_0",
+    "ID_SPECIAL_ATTACK_CHEETOR_BW_1",
+    "ID_SPECIAL_ATTACK_CHEETOR_BW_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_CHEETOR_BW",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "cliffjumper_gs_kabam",
+   "model_id": "cliffjumper_gs_kabam",
+   "blueprint_id": "cliffjumper_gs_kabam",
+   "loc_token": "CLIFFJUMP_GS",
+   "portrait_token": "cliffjump_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_CLIFFJUMP_GS_0",
+    "ID_SPECIAL_ATTACK_CLIFFJUMP_GS_1",
+    "ID_SPECIAL_ATTACK_CLIFFJUMP_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_CLIFFJUMP_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "cyclonus_gs_uw06",
+   "model_id": "cyclonus_gs_uw06",
+   "blueprint_id": "cyclonus_gs_uw06",
+   "loc_token": "CYCLON_GS",
+   "portrait_token": "cyclon_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_CYCLON_GS_0",
+    "ID_SPECIAL_ATTACK_CYCLON_GS_1",
+    "ID_SPECIAL_ATTACK_CYCLON_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_CYCLON_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "dinobot_bw_kabam",
+   "model_id": "dinobot_bw_kabam",
+   "blueprint_id": "dinobot_bw_kabam",
+   "loc_token": "DINOB_BW",
+   "portrait_token": "dinob_bw",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_DINOB_BW_0",
+    "ID_SPECIAL_ATTACK_DINOB_BW_1",
+    "ID_SPECIAL_ATTACK_DINOB_BW_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_DINOB_BW",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "dirge_gs_deluxe2008",
+   "model_id": "dirge_gs_deluxe2008",
+   "blueprint_id": "dirge_gs_deluxe2008",
+   "loc_token": "DIRGE_GS",
+   "portrait_token": "dirge_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": false,
+   "bio_present": false,
+   "special_attack_names": [],
+   "bio_key": null,
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "drift_cin_aoe",
+   "model_id": "drift_cin_aoe",
+   "blueprint_id": "drift_cin_aoe",
+   "loc_token": "DRIFT_C",
+   "portrait_token": "drift_c",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_DRIFT_C_0",
+    "ID_SPECIAL_ATTACK_DRIFT_C_1",
+    "ID_SPECIAL_ATTACK_DRIFT_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_DRIFT_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "galvatron_gs_voyager2016",
+   "model_id": "galvatron_gs_voyager2016",
+   "blueprint_id": "galvatron_gs_voyager2016",
+   "loc_token": "GALVATRON_GS",
+   "portrait_token": "galvatron_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_GALVATRON_GS_0",
+    "ID_SPECIAL_ATTACK_GALVATRON_GS_1",
+    "ID_SPECIAL_ATTACK_GALVATRON_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_GALVATRON_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "grimlock_gs_mp08",
+   "model_id": "grimlock_gs_mp08",
+   "blueprint_id": "grimlock_gs_mp08",
+   "loc_token": "GRIML_GS",
+   "portrait_token": "griml_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_GRIML_GS_0",
+    "ID_SPECIAL_ATTACK_GRIML_GS_1",
+    "ID_SPECIAL_ATTACK_GRIML_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_GRIML_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "grindor_cin_rotf",
+   "model_id": "grindor_cin_rotf",
+   "blueprint_id": "grindor_cin_rotf",
+   "loc_token": "GRIND_C_ROTF",
+   "portrait_token": "grind_c_rotf",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_GRIND_C_ROTF_0",
+    "ID_SPECIAL_ATTACK_GRIND_C_ROTF_1",
+    "ID_SPECIAL_ATTACK_GRIND_C_ROTF_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_GRIND_C_ROTF",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "hotrod_cin_tlk",
+   "model_id": "hotrod_cin_tlk",
+   "blueprint_id": "hotrod_cin_tlk",
+   "loc_token": "HOTRO_C",
+   "portrait_token": "hotrod_c",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_HOTRO_C_0",
+    "ID_SPECIAL_ATTACK_HOTRO_C_1",
+    "ID_SPECIAL_ATTACK_HOTRO_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_HOTRO_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "hound_cin_tlk",
+   "model_id": "hound_cin_tlk",
+   "blueprint_id": "hound_cin_tlk",
+   "loc_token": "HOUND_C",
+   "portrait_token": "hound_c",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_HOUND_C_0",
+    "ID_SPECIAL_ATTACK_HOUND_C_1",
+    "ID_SPECIAL_ATTACK_HOUND_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_HOUND_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "ironhide_cin_rotf",
+   "model_id": "ironhide_cin_rotf",
+   "blueprint_id": "ironhide_cin_rotf",
+   "loc_token": "IRONH_C_ROTF",
+   "portrait_token": "ironh_c_rotf",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_IRONH_C_ROTF_0",
+    "ID_SPECIAL_ATTACK_IRONH_C_ROTF_1",
+    "ID_SPECIAL_ATTACK_IRONH_C_ROTF_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_IRONH_C_ROTF",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "ironhide_gs_kabam",
+   "model_id": "ironhide_gs_kabam",
+   "blueprint_id": "ironhide_gs_kabam",
+   "loc_token": "IRONH_GS",
+   "portrait_token": "ironh_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": false,
+   "bio_present": false,
+   "special_attack_names": [],
+   "bio_key": null,
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "jazz_gs_twm05",
+   "model_id": "jazz_gs_twm05",
+   "blueprint_id": "jazz_gs_twm05",
+   "loc_token": "JAZZ_GS",
+   "portrait_token": "jazz_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_JAZZ_GS_0",
+    "ID_SPECIAL_ATTACK_JAZZ_GS_1",
+    "ID_SPECIAL_ATTACK_JAZZ_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_JAZZ_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "jetfire_gs_leader2014",
+   "model_id": "jetfire_gs_leader2014",
+   "blueprint_id": "jetfire_gs_leader2014",
+   "loc_token": "JETFIRE_GS",
+   "portrait_token": "jetfire_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_JETFIRE_GS_0",
+    "ID_SPECIAL_ATTACK_JETFIRE_GS_1",
+    "ID_SPECIAL_ATTACK_JETFIRE_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_JETFIRE_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "kickback_gs_kabam",
+   "model_id": "kickback_gs_kabam",
+   "blueprint_id": "kickback_gs_kabam",
+   "loc_token": "KICKB_GS",
+   "portrait_token": "kickb_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_KICKB_GS_0",
+    "ID_SPECIAL_ATTACK_KICKB_GS_1",
+    "ID_SPECIAL_ATTACK_KICKB_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_KICKB_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "megatron_cin_rotf",
+   "model_id": "megatron_cin_rotf",
+   "blueprint_id": "megatron_cin_rotf",
+   "loc_token": "MEGAT_C",
+   "portrait_token": "megat_c",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_MEGAT_C_0",
+    "ID_SPECIAL_ATTACK_MEGAT_C_1",
+    "ID_SPECIAL_ATTACK_MEGAT_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_MEGAT_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "megatron_gs_leader2015",
+   "model_id": "megatron_gs_leader2015",
+   "blueprint_id": "megatron_gs_leader2015",
+   "loc_token": "MEGAT_GS",
+   "portrait_token": "megat_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_MEGAT_GS_0",
+    "ID_SPECIAL_ATTACK_MEGAT_GS_1",
+    "ID_SPECIAL_ATTACK_MEGAT_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_MEGAT_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "megatronus_gs_kabam",
+   "model_id": "megatronus_gs_kabam",
+   "blueprint_id": "megatronus_gs_kabam",
+   "loc_token": "MEGATRO_GS",
+   "portrait_token": "megatro_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_MEGATRO_GS_0",
+    "ID_SPECIAL_ATTACK_MEGATRO_GS_1",
+    "ID_SPECIAL_ATTACK_MEGATRO_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_MEGATRO_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "mirage_gs_deluxe2016",
+   "model_id": "mirage_gs_deluxe2016",
+   "blueprint_id": "mirage_gs_deluxe2016",
+   "loc_token": "MIRAG_GS",
+   "portrait_token": "mirag_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_MIRAG_GS_0",
+    "ID_SPECIAL_ATTACK_MIRAG_GS_1",
+    "ID_SPECIAL_ATTACK_MIRAG_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_MIRAG_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "mixmaster_cin_rotf",
+   "model_id": "mixmaster_cin_rotf",
+   "blueprint_id": "mixmaster_cin_rotf",
+   "loc_token": "MIXMA_C_ROTF",
+   "portrait_token": "mixma_c_rotf",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_MIXMA_C_ROTF_0",
+    "ID_SPECIAL_ATTACK_MIXMA_C_ROTF_1",
+    "ID_SPECIAL_ATTACK_MIXMA_C_ROTF_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_MIXMA_C_ROTF",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "motormaster_gs_voyager2015",
+   "model_id": "motormaster_gs_voyager2015",
+   "blueprint_id": "motormaster_gs_voyager2015",
+   "loc_token": "MOTORM_GS",
+   "portrait_token": "motorm_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_MOTORM_GS_0",
+    "ID_SPECIAL_ATTACK_MOTORM_GS_1",
+    "ID_SPECIAL_ATTACK_MOTORM_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_MOTORM_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "necrotronus_gs_kabam",
+   "model_id": "necrotronus_gs_kabam",
+   "blueprint_id": "necrotronus_gs_kabam",
+   "loc_token": "NECROTRO_GS",
+   "portrait_token": "necrotro_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_NECROTRO_GS_0",
+    "ID_SPECIAL_ATTACK_NECROTRO_GS_1",
+    "ID_SPECIAL_ATTACK_NECROTRO_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_NECROTRO_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "nemesisprime_gs_voyager2015",
+   "model_id": "nemesisprime_gs_voyager2015",
+   "blueprint_id": "nemesisprime_gs_voyager2015",
+   "loc_token": "NEMESIS_GS",
+   "portrait_token": "nemesis_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_NEMESIS_GS_0",
+    "ID_SPECIAL_ATTACK_NEMESIS_GS_1",
+    "ID_SPECIAL_ATTACK_NEMESIS_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_NEMESIS_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "optimusprimal_bw_mp32",
+   "model_id": "optimusprimal_bw_mp32",
+   "blueprint_id": "optimusprimal_bw_mp32",
+   "loc_token": "OPRIMAL_BW",
+   "portrait_token": "oprimal_bw",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_OPRIMAL_BW_0",
+    "ID_SPECIAL_ATTACK_OPRIMAL_BW_1",
+    "ID_SPECIAL_ATTACK_OPRIMAL_BW_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_OPRIMAL_BW",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "optimusprime_cin_tf",
+   "model_id": "optimusprime_cin_tf",
+   "blueprint_id": "optimusprime_cin_tf",
+   "loc_token": "OPTIMUS_C_TF",
+   "portrait_token": "optimus_c_tf",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_OPTIMUS_C_TF_0",
+    "ID_SPECIAL_ATTACK_OPTIMUS_C_TF_1",
+    "ID_SPECIAL_ATTACK_OPTIMUS_C_TF_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_OPTIMUS_C_TF",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "optimusprime_gs_v",
+   "model_id": "optimusprime_gs_v",
+   "blueprint_id": "optimusprime_gs_v",
+   "loc_token": "OPTIMUS_GS",
+   "portrait_token": "optimus_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_OPTIMUS_GS_0",
+    "ID_SPECIAL_ATTACK_OPTIMUS_GS_1",
+    "ID_SPECIAL_ATTACK_OPTIMUS_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_OPTIMUS_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "prowl_gs_deluxe2016",
+   "model_id": "prowl_gs_deluxe2016",
+   "blueprint_id": "prowl_gs_deluxe2016",
+   "loc_token": "PROWL_GS",
+   "portrait_token": "prowl_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_PROWL_GS_0",
+    "ID_SPECIAL_ATTACK_PROWL_GS_1",
+    "ID_SPECIAL_ATTACK_PROWL_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_PROWL_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "ramjet_gs_deluxe2008",
+   "model_id": "ramjet_gs_deluxe2008",
+   "blueprint_id": "ramjet_gs_deluxe2008",
+   "loc_token": "RAMJET_GS",
+   "portrait_token": "ramjet_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_RAMJET_GS_0",
+    "ID_SPECIAL_ATTACK_RAMJET_GS_1",
+    "ID_SPECIAL_ATTACK_RAMJET_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_RAMJET_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "ratchet_gs_kabam",
+   "model_id": "ratchet_gs_kabam",
+   "blueprint_id": "ratchet_gs_kabam",
+   "loc_token": "RATCH_GS",
+   "portrait_token": "ratch_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_RATCH_GS_0",
+    "ID_SPECIAL_ATTACK_RATCH_GS_1",
+    "ID_SPECIAL_ATTACK_RATCH_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_RATCH_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "rhinox_gs_voyager2014",
+   "model_id": "rhinox_gs_voyager2014",
+   "blueprint_id": "rhinox_gs_voyager2014",
+   "loc_token": "RHINO_BW",
+   "portrait_token": "rhino_bw",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_RHINO_BW_0",
+    "ID_SPECIAL_ATTACK_RHINO_BW_1",
+    "ID_SPECIAL_ATTACK_RHINO_BW_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_RHINO_BW",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "rodimusprime_gs_mp09",
+   "model_id": "rodimusprime_gs_mp09",
+   "blueprint_id": "rodimusprime_gs_mp09",
+   "loc_token": "RODIMUS_GS",
+   "portrait_token": "rodimus_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": false,
+   "bio_present": false,
+   "special_attack_names": [],
+   "bio_key": null,
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "scorponok_bw_kabam",
+   "model_id": "scorponok_bw_kabam",
+   "blueprint_id": "scorponok_bw_kabam",
+   "loc_token": "SCORPO_BW",
+   "portrait_token": "scorpo_bw",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SCORPO_BW_0",
+    "ID_SPECIAL_ATTACK_SCORPO_BW_1",
+    "ID_SPECIAL_ATTACK_SCORPO_BW_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SCORPO_BW",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sharkticon_gs_brawler",
+   "model_id": "sharkticon_gs_brawler",
+   "blueprint_id": "sharkticon_gs_brawler",
+   "loc_token": "SHARK_BRAW",
+   "portrait_token": "npc_shark_braw",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHARK_BRAW_0",
+    "ID_SPECIAL_ATTACK_SHARK_BRAW_1",
+    "ID_SPECIAL_ATTACK_SHARK_BRAW_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHARK_BRAW",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sharkticon_gs_demolition",
+   "model_id": "sharkticon_gs_demolition",
+   "blueprint_id": "sharkticon_gs_demolition",
+   "loc_token": "SHARK_DEMO",
+   "portrait_token": "npc_shark_demo",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHARK_DEMO_0",
+    "ID_SPECIAL_ATTACK_SHARK_DEMO_1",
+    "ID_SPECIAL_ATTACK_SHARK_DEMO_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHARK_DEMO",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sharkticon_gs_kabam",
+   "model_id": "sharkticon_gs_kabam",
+   "blueprint_id": "sharkticon_gs_kabam",
+   "loc_token": "SHARK_GOLD",
+   "portrait_token": "npc_shark_gold",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHARK_GOLD_0",
+    "ID_SPECIAL_ATTACK_SHARK_GOLD_1",
+    "ID_SPECIAL_ATTACK_SHARK_GOLD_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHARK_GOLD",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sharkticon_gs_scout",
+   "model_id": "sharkticon_gs_scout",
+   "blueprint_id": "sharkticon_gs_scout",
+   "loc_token": "SHARK_SCOU",
+   "portrait_token": "npc_shark_scou",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHARK_SCOU_0",
+    "ID_SPECIAL_ATTACK_SHARK_SCOU_1",
+    "ID_SPECIAL_ATTACK_SHARK_SCOU_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHARK_SCOU",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sharkticon_gs_tactician",
+   "model_id": "sharkticon_gs_tactician",
+   "blueprint_id": "sharkticon_gs_tactician",
+   "loc_token": "SHARK_TACT",
+   "portrait_token": "npc_shark_tact",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHARK_TACT_0",
+    "ID_SPECIAL_ATTACK_SHARK_TACT_1",
+    "ID_SPECIAL_ATTACK_SHARK_TACT_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHARK_TACT",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sharkticon_gs_tech",
+   "model_id": "sharkticon_gs_tech",
+   "blueprint_id": "sharkticon_gs_tech",
+   "loc_token": "SHARK_TECH",
+   "portrait_token": "npc_shark_tech",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHARK_TECH_0",
+    "ID_SPECIAL_ATTACK_SHARK_TECH_1",
+    "ID_SPECIAL_ATTACK_SHARK_TECH_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHARK_TECH",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sharkticon_gs_warrior",
+   "model_id": "sharkticon_gs_warrior",
+   "blueprint_id": "sharkticon_gs_warrior",
+   "loc_token": "SHARK_WARR",
+   "portrait_token": "npc_shark_warr",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHARK_WARR_0",
+    "ID_SPECIAL_ATTACK_SHARK_WARR_1",
+    "ID_SPECIAL_ATTACK_SHARK_WARR_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHARK_WARR",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "shockwave_gs",
+   "model_id": "shockwave_gs",
+   "blueprint_id": "shockwave_gs",
+   "loc_token": "SHOCK_C",
+   "portrait_token": "shock_c",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SHOCK_C_0",
+    "ID_SPECIAL_ATTACK_SHOCK_C_1",
+    "ID_SPECIAL_ATTACK_SHOCK_C_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SHOCK_C",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sideswipe_gs",
+   "model_id": "sideswipe_gs",
+   "blueprint_id": "sideswipe_gs",
+   "loc_token": "SIDES_GS",
+   "portrait_token": "sides_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SIDES_GS_0",
+    "ID_SPECIAL_ATTACK_SIDES_GS_1",
+    "ID_SPECIAL_ATTACK_SIDES_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SIDES_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "skywarp_gs_leader2015",
+   "model_id": "skywarp_gs_leader2015",
+   "blueprint_id": "skywarp_gs_leader2015",
+   "loc_token": "SKYWARP_GS",
+   "portrait_token": "skywarp_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": false,
+   "bio_present": false,
+   "special_attack_names": [],
+   "bio_key": null,
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "slipstream_gs",
+   "model_id": "slipstream_gs",
+   "blueprint_id": "slipstream_gs",
+   "loc_token": "SLIPSTREAM_GS",
+   "portrait_token": "slipstream_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": false,
+   "bio_present": false,
+   "special_attack_names": [],
+   "bio_key": null,
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "soundblaster_gs_mp13b",
+   "model_id": "soundblaster_gs_mp13b",
+   "blueprint_id": "soundblaster_gs_mp13b",
+   "loc_token": "SOUNDBLAST_GS",
+   "portrait_token": "soundblast_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": false,
+   "bio_present": false,
+   "special_attack_names": [],
+   "bio_key": null,
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "soundwave_gs",
+   "model_id": "soundwave_gs",
+   "blueprint_id": "soundwave_gs",
+   "loc_token": "SOUND_GS",
+   "portrait_token": "sound_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_SOUND_GS_0",
+    "ID_SPECIAL_ATTACK_SOUND_GS_1",
+    "ID_SPECIAL_ATTACK_SOUND_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_SOUND_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "starscream_gs",
+   "model_id": "starscream_gs",
+   "blueprint_id": "starscream_gs",
+   "loc_token": "STARS_GS",
+   "portrait_token": "stars_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_STARS_GS_0",
+    "ID_SPECIAL_ATTACK_STARS_GS_1",
+    "ID_SPECIAL_ATTACK_STARS_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_STARS_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "sunstreaker_gs_deluxe2008",
+   "model_id": "sunstreaker_gs_deluxe2008",
+   "blueprint_id": "sunstreaker_gs_deluxe2008",
+   "loc_token": "SUNSTREAK_GS",
+   "portrait_token": "sunstreak_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": false,
+   "bio_present": false,
+   "special_attack_names": [],
+   "bio_key": null,
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "tantrum_gs_kabam",
+   "model_id": "tantrum_gs_kabam",
+   "blueprint_id": "tantrum_gs_kabam",
+   "loc_token": "TANTRUM_GS",
+   "portrait_token": "tantrum_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_TANTRUM_GS_0",
+    "ID_SPECIAL_ATTACK_TANTRUM_GS_1",
+    "ID_SPECIAL_ATTACK_TANTRUM_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_TANTRUM_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "thundercracker_gs_leader2015",
+   "model_id": "thundercracker_gs_leader2015",
+   "blueprint_id": "thundercracker_gs_leader2015",
+   "loc_token": "THUNDERCRACKER_GS",
+   "portrait_token": "thunder_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_THUNDERCRACKER_GS_0",
+    "ID_SPECIAL_ATTACK_THUNDERCRACKER_GS_1",
+    "ID_SPECIAL_ATTACK_THUNDERCRACKER_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_THUNDERCRACKER_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "ultramagnus_gs_leader",
+   "model_id": "ultramagnus_gs_leader",
+   "blueprint_id": "ultramagnus_gs_leader",
+   "loc_token": "ULTRAM_GS",
+   "portrait_token": "ultram_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_ULTRAM_GS_0",
+    "ID_SPECIAL_ATTACK_ULTRAM_GS_1",
+    "ID_SPECIAL_ATTACK_ULTRAM_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_ULTRAM_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "waspinator_gs_deluxe",
+   "model_id": "waspinator_gs_deluxe",
+   "blueprint_id": "waspinator_gs_deluxe",
+   "loc_token": "WASP_BW",
+   "portrait_token": "wasp_bw",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_WASP_BW_0",
+    "ID_SPECIAL_ATTACK_WASP_BW_1",
+    "ID_SPECIAL_ATTACK_WASP_BW_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_WASP_BW",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "wheeljack_gs_mp20",
+   "model_id": "wheeljack_gs_mp20",
+   "blueprint_id": "wheeljack_gs_mp20",
+   "loc_token": "WHEELJ_GS",
+   "portrait_token": "wheelj_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_WHEELJ_GS_0",
+    "ID_SPECIAL_ATTACK_WHEELJ_GS_1",
+    "ID_SPECIAL_ATTACK_WHEELJ_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_WHEELJ_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  },
+  {
+   "client_id": "windblade_gs",
+   "model_id": "windblade_gs",
+   "blueprint_id": "windblade_gs",
+   "loc_token": "WINDB_GS",
+   "portrait_token": "windb_gs",
+   "suffix_note": "no suffix; asset/character key",
+   "special_attack_present": true,
+   "bio_present": true,
+   "special_attack_names": [
+    "ID_SPECIAL_ATTACK_WINDB_GS_0",
+    "ID_SPECIAL_ATTACK_WINDB_GS_1",
+    "ID_SPECIAL_ATTACK_WINDB_GS_2"
+   ],
+   "bio_key": "ID_CHARACTER_BIOS_WINDB_GS",
+   "labels": {
+    "assets": "[STATIC]",
+    "strings": "[STATIC]"
+   }
+  }
+ ],
+ "note": "Blueprint/character/model keys are the asset ids in the current catalog; the loc token is separate. Renaming the blueprint id removed the BOTS card in the pilot (work/pilot_grid4.png), so the grid keys on the asset/character id. The Character field is the likely loc-token carrier; see docs/blueprint_ids.md."
+}
