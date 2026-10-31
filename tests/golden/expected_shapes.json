@@ -1,92 +1,654 @@
 [
   {
     "request": {
-      "timestamp": "2026-10-30T20:05:08.910446Z",
+      "timestamp": "2026-10-31T12:37:37.062235Z",
       "client_ip": "127.0.0.1",
-      "client_port": 49328,
+      "client_port": 63655,
       "method": "GET",
-      "path": "/account/data",
+      "path": "/quests/quest-progression",
       "query": {
-        "apiversions.events": [
-          "3"
-        ],
-        "deferJSONParse": [
-          "false"
-        ],
-        "ts": [
-          "1793390708"
-        ],
-        "apiversions.wske": [
-          "2"
-        ],
-        "apiversions.tuning": [
-          "2"
-        ],
-        "apiversions.ave": [
-          "11"
-        ],
-        "apiversions.objectives": [
-          "4"
-        ],
         "sig": [
-          "eFvLL/AieIWB9w1afWrEXjvMW2w="
-        ],
-        "apiversions.gacha": [
-          "8"
-        ],
-        "apiversions.matches": [
-          "3"
-        ],
-        "apiversions.buffs": [
-          "2"
-        ],
-        "apiversions.ai": [
-          "3"
-        ],
-        "apiversions.odr": [
-          "3"
-        ],
-        "apiversions.quests": [
-          "11"
-        ],
-        "apiversions.gameentitlements": [
-          "3"
-        ],
-        "apiversions.motd": [
-          "3"
-        ],
-        "apiversions.kabamsignup": [
-          "2"
+          "DbPE6bq2k05rI+CZSNa1XtFNt40="
         ],
         "stoken": [
           "sess_tf_stub_token_12345"
         ],
-        "apiversions.bcg": [
-          "6"
-        ],
-        "apiversions.message": [
-          "2"
+        "api": [
+          "11"
         ],
         "sver": [
           "3"
         ],
-        "apiversions.notify": [
-          "5"
-        ],
-        "apiversions.resources": [
-          "2"
-        ],
-        "apiversions.prizes": [
-          "3"
-        ],
-        "apiversions.gamestore": [
-          "5"
+        "ts": [
+          "1793450256"
         ]
       },
       "headers": {
         "Host": "127.0.0.1",
         "Accept-Encoding": "gzip",
         "User-Agent": "Sparx/1.0"
+      },
+      "body": ""
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "Story": {
+          "story_act1_ch1_m1": {
+            "cleared": [
+              "list"
+            ],
+            "completed": "bool",
+            "mastered": "bool",
+            "unlocked": "bool",
+            "visibleClearedCount": "number"
+          }
+        },
+        "ave": {},
+        "pve": {}
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-31T12:38:18.146230Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 63655,
+      "method": "POST",
+      "path": "/quests/quest-begin/story_act1_ch4_m2",
+      "query": {
+        "sig": [
+          "dHXliKlqzS6FpEtdraz93R8jaTI="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1793450297"
+        ]
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "128",
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": {
+        "quitExisting": true,
+        "nonce": "6ae5e1396911bc4d2995000e",
+        "hash": "v1",
+        "api": 11,
+        "setId": "story_act_1",
+        "tm0": "bumblebee_cin_dotm_2"
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "activeQuests": {
+          "story_act1_ch4_m2": {
+            "category": "string",
+            "currentPosition": {
+              "x": "number",
+              "y": "number"
+            },
+            "data": {
+              "act": "number",
+              "actIndex": "number",
+              "category": "string",
+              "chapter": "number",
+              "chapterIndex": "number",
+              "description": "string",
+              "energyPerTile": "number",
+              "friendlyName": "string",
+              "id": "string",
+              "isDetailed": "bool",
+              "maxXpPerTile": "number",
+              "minXpPerTile": "number",
+              "mission": "number",
+              "missionIndex": "number",
+              "teamSizeMax": "number",
+              "teamSizeMin": "number",
+              "theme": "string",
+              "todIndex": "number",
+              "unlocked": "bool"
+            },
+            "expiryTime": "number",
+            "isFinished": "bool",
+            "map": {
+              "grid": [
+                "list",
+                "..."
+              ],
+              "gridDimension": "number",
+              "mapHash": "string",
+              "pathData": [
+                "list",
+                "..."
+              ],
+              "paths": [
+                "list",
+                "..."
+              ],
+              "visibleWalkableCount": "number",
+              "walkableCount": "number"
+            },
+            "mode": "string",
+            "phase": "number",
+            "playerPosition": {
+              "x": "number",
+              "y": "number"
+            },
+            "progression": {
+              "clearedTiles": [
+                "list",
+                "..."
+              ],
+              "currentTile": {
+                "x": "...",
+                "y": "..."
+              },
+              "percentComplete": "number"
+            },
+            "qid": "string",
+            "scaledBossTable": {
+              "enemy1": {
+                "aiPer": "...",
+                "aiString": "...",
+                "aiType": "...",
+                "baseType": "...",
+                "characters": "...",
+                "flvl": "...",
+                "hi": "...",
+                "isFinalBoss": "...",
+                "key": "...",
+                "level": "...",
+                "mapOverride": "...",
+                "rank": "...",
+                "sig_lvl": "...",
+                "todIndex": "...",
+                "type": "...",
+                "uid": "..."
+              }
+            },
+            "startTime": "number",
+            "team": {
+              "bumblebee_cin_dotm_2": {
+                "armor": "...",
+                "attack": "...",
+                "block_proficiency": "...",
+                "blueprint": "...",
+                "buff_mods": "...",
+                "class_power": "...",
+                "crit_chance": "...",
+                "crit_damage": "...",
+                "hp": "...",
+                "level": "...",
+                "mana_gain": "...",
+                "mana_start": "...",
+                "max_hp": "...",
+                "perfect_block_chance": "...",
+                "pi": "...",
+                "rank": "...",
+                "rating": "...",
+                "resist_magic": "...",
+                "resist_physical": "...",
+                "sig_lvl": "...",
+                "sig_mods": "...",
+                "special_attacks": "...",
+                "stat_mods": "...",
+                "stun_chance": "...",
+                "stun_time": "...",
+                "synergyBonuses": "...",
+                "t": "...",
+                "tags": "..."
+              }
+            },
+            "teamData": {
+              "deletes": {},
+              "updates": {
+                "activeTeams": "...",
+                "heroes": "...",
+                "inventory": "...",
+                "savedTeams": "..."
+              },
+              "userData": {
+                "blueprintsMax": "...",
+                "teamCountMax": "...",
+                "teamSizeMax": "..."
+              }
+            },
+            "uniqueId": "string"
+          }
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-31T12:38:59.965627Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 63655,
+      "method": "POST",
+      "path": "/quests/quest-movedir/story_act1_ch4_m2/1/0",
+      "query": {
+        "sig": [
+          "yOFtHqO88GDiY5e593Kr0Eze4b8="
+        ],
+        "stoken": [
+          "sess_tf_stub_token_12345"
+        ],
+        "sver": [
+          "3"
+        ],
+        "ts": [
+          "1793450339"
+        ]
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "45",
+        "Host": "127.0.0.1",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "Sparx/1.0"
+      },
+      "body": {
+        "api": 11,
+        "nonce": "6ae5e1636911bc4d29950013"
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "currentPosition": {
+          "x": "number",
+          "y": "number"
+        },
+        "currentTile": {
+          "x": "number",
+          "y": "number"
+        },
+        "playerPosition": {
+          "x": "number",
+          "y": "number"
+        },
+        "progression": {
+          "cleared": [
+            "list",
+            {
+              "x": "number",
+              "y": "number"
+            }
+          ],
+          "clearedTiles": [
+            "list",
+            {
+              "x": "number",
+              "y": "number"
+            }
+          ],
+          "currentBattleBossId": "string",
+          "currentBattleEnemy": {
+            "aiPer": "string",
+            "aiString": "string",
+            "aiType": "number",
+            "baseType": "string",
+            "characters": [
+              "list",
+              "string"
+            ],
+            "flvl": "number",
+            "hi": [
+              "list"
+            ],
+            "id": "string",
+            "isFinalBoss": "bool",
+            "key": "string",
+            "level": "number",
+            "mapOverride": "string",
+            "rank": "number",
+            "sig_lvl": "number",
+            "todIndex": "number",
+            "type": "string",
+            "uid": "string"
+          },
+          "currentBattleEnemyHealth": "number",
+          "currentBattleId": "string",
+          "currentBattlePos": {
+            "x": "number",
+            "y": "number"
+          },
+          "currentFightId": "string",
+          "currentPos": {
+            "x": "number",
+            "y": "number"
+          },
+          "currentPosition": {
+            "x": "number",
+            "y": "number"
+          },
+          "currentTile": {
+            "x": "number",
+            "y": "number"
+          },
+          "percentComplete": "number",
+          "playerPosition": {
+            "x": "number",
+            "y": "number"
+          },
+          "previouslyCleared": [
+            "list"
+          ],
+          "revealed": [
+            "list"
+          ],
+          "users": {
+            "10001": {
+              "battleLockExpiry": "number",
+              "currentBattleId": "string",
+              "currentBattlePos": {
+                "x": "...",
+                "y": "..."
+              },
+              "currentBattleState": "number",
+              "currentPos": {
+                "x": "...",
+                "y": "..."
+              },
+              "name": "string",
+              "state": "number",
+              "strongestHero": "string",
+              "tag": "string",
+              "team": {
+                "bumblebee_cin_dotm": "..."
+              },
+              "uid": "string",
+              "usedConsumableCount": "number"
+            }
+          },
+          "version": "number"
+        },
+        "results": [
+          "list",
+          {
+            "action": {
+              "moveto": {
+                "x": "...",
+                "y": "..."
+              }
+            }
+          }
+        ],
+        "teamData": {
+          "deletes": {},
+          "updates": {
+            "activeTeams": {
+              "Story": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "active_quest_1001": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "story": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "story_act1_ch1_m1": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              },
+              "story_act_1": {
+                "activityID": "...",
+                "aid": "...",
+                "estimatedExpire": "...",
+                "expire": "...",
+                "heroes": "...",
+                "modes": "...",
+                "type": "..."
+              }
+            },
+            "heroes": [
+              "list",
+              {
+                "armor": "...",
+                "attack": "...",
+                "attributeData": "...",
+                "bid": "...",
+                "block_proficiency": "...",
+                "blueprint": "...",
+                "crit_chance": "...",
+                "crit_damage": "...",
+                "entity_type": "...",
+                "exc": "...",
+                "hero": "...",
+                "hero_rating_attack": "...",
+                "hero_rating_hp": "...",
+                "hp": "...",
+                "id": "...",
+                "level": "...",
+                "mana_gain": "...",
+                "mana_start": "...",
+                "max_hp": "...",
+                "max_xp": "...",
+                "modes": "...",
+                "modesAvail": "...",
+                "pi": "...",
+                "pvpb": "...",
+                "rank": "...",
+                "rating": "...",
+                "rating_attack": "...",
+                "rating_attack_base": "...",
+                "rating_hp": "...",
+                "rating_hp_base": "...",
+                "required_xp": "...",
+                "resist_magic": "...",
+                "resist_physical": "...",
+                "sig_lvl": "...",
+                "sig_mods": "...",
+                "special_attacks": "...",
+                "stamina": "...",
+                "staminaFullGrowthTime": "...",
+                "staminaNextGrowthTime": "...",
+                "stamina_full_ts": "...",
+                "stamina_ts": "...",
+                "stat_mods": "...",
+                "stt": "...",
+                "stun_chance": "...",
+                "stun_time": "...",
+                "synergyBonuses": "...",
+                "t": "...",
+                "tags": "...",
+                "teamTypes": "...",
+                "team_types": "...",
+                "uid": "..."
+              }
+            ],
+            "inventory": {
+              "bp": {},
+              "f": {},
+              "max": {}
+            },
+            "savedTeams": [
+              "list",
+              {
+                "heroes": "...",
+                "sid": "..."
+              }
+            ]
+          },
+          "userData": {
+            "blueprintsMax": "number",
+            "teamCountMax": "number",
+            "teamSizeMax": "number"
+          }
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-31T12:39:58.513838Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 59788,
+      "method": "POST",
+      "path": "/quests/quest-detail/story_act1_ch1_m1",
+      "query": {},
+      "headers": {
+        "Accept-Encoding": "identity",
+        "Content-Length": "49",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Content-Type": "application/json",
+        "Connection": "close"
+      },
+      "body": {
+        "hash": "v1",
+        "setId": "story_act_1",
+        "api": 11
+      }
+    },
+    "status": 200,
+    "shape": {
+      "result": {
+        "map": {
+          "grid": [
+            "list",
+            [
+              "list",
+              {
+                "ab": "...",
+                "barrier": "...",
+                "bg": "...",
+                "bt": "...",
+                "final": "...",
+                "links": "...",
+                "position": "...",
+                "sockets": "...",
+                "start": "...",
+                "visibleLinks": "...",
+                "walkable": "..."
+              }
+            ]
+          ],
+          "gridDimension": "number",
+          "mapHash": "string",
+          "pathData": [
+            "list",
+            {
+              "path": [
+                "list",
+                "..."
+              ]
+            }
+          ],
+          "paths": [
+            "list",
+            {
+              "path": [
+                "list",
+                "..."
+              ],
+              "tiles": [
+                "list",
+                "..."
+              ]
+            }
+          ],
+          "visibleWalkableCount": "number",
+          "walkableCount": "number"
+        },
+        "scaledBossTable": {
+          "enemy1": {
+            "aiPer": "string",
+            "aiString": "string",
+            "aiType": "number",
+            "baseType": "string",
+            "characters": [
+              "list",
+              "string"
+            ],
+            "flvl": "number",
+            "hi": [
+              "list"
+            ],
+            "isFinalBoss": "bool",
+            "key": "string",
+            "level": "number",
+            "mapOverride": "string",
+            "rank": "number",
+            "sig_lvl": "number",
+            "todIndex": "number",
+            "type": "string",
+            "uid": "string"
+          }
+        },
+        "summary": {
+          "act": "number",
+          "actIndex": "number",
+          "category": "string",
+          "chapter": "number",
+          "chapterIndex": "number",
+          "description": "string",
+          "energyPerTile": "number",
+          "friendlyName": "string",
+          "id": "string",
+          "isDetailed": "bool",
+          "maxXpPerTile": "number",
+          "minXpPerTile": "number",
+          "mission": "number",
+          "missionIndex": "number",
+          "teamSizeMax": "number",
+          "teamSizeMin": "number",
+          "theme": "string",
+          "todIndex": "number",
+          "unlocked": "bool"
+        }
+      },
+      "ts": "number"
+    }
+  },
+  {
+    "request": {
+      "timestamp": "2026-10-31T12:39:58.562405Z",
+      "client_ip": "127.0.0.1",
+      "client_port": 59795,
+      "method": "GET",
+      "path": "/account/data",
+      "query": {},
+      "headers": {
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -151,32 +713,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-30T20:05:08.971037Z",
+      "timestamp": "2026-10-31T12:39:58.563729Z",
       "client_ip": "127.0.0.1",
-      "client_port": 49328,
+      "client_port": 59796,
       "method": "GET",
       "path": "/bcg/getLoginData",
-      "query": {
-        "sig": [
-          "o5Qb1daa+SrCJFVlvbnJha9vSvI="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "6"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390708"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -3392,104 +3939,6 @@
             "victory_stage": "string"
           },
           "nemesisprime_gs_voyager2015": {
-            "Attack": "number",
-            "HPMax": "number",
-            "attack": "number",
-            "attack_bonus": "number",
-            "attribute_base_type": "string",
-            "baseRangedDamageType": [
-              "list",
-              "string"
-            ],
-            "base_damage": [
-              "list",
-              "string"
-            ],
-            "base_ranged_damage": [
-              "list",
-              "string"
-            ],
-            "bcg_curve_values": {
-              "attack": "string",
-              "health": "string"
-            },
-            "blueprint": "string",
-            "character": "string",
-            "cl": "number",
-            "class": "number",
-            "entity_type": "string",
-            "et": "string",
-            "evo_blueprint": "string",
-            "fcpg": "string",
-            "fgr": "number",
-            "fhpag": "string",
-            "forge_cp_growth": "string",
-            "forge_growth_rate": "number",
-            "forge_hp_atk_growth": "string",
-            "friendly_name": "string",
-            "friendly_name_short": "string",
-            "gachaFeaturedImg": "string",
-            "gacha_reveal": "string",
-            "gg": "number",
-            "gold_generation": "number",
-            "heroRating": "number",
-            "hero_class": "number",
-            "hero_colour": "string",
-            "hero_rating": "number",
-            "hero_rating_attack": "number",
-            "hero_rating_hp": "number",
-            "hp": "number",
-            "id": "string",
-            "imgID": "string",
-            "m": "string",
-            "map_asset": "string",
-            "maxHP": "number",
-            "max_forge_level": "number",
-            "max_hp": "number",
-            "max_rank": "number",
-            "max_special_attacks": "number",
-            "mfl": "number",
-            "model": "string",
-            "modelAsset": "string",
-            "modelID": "string",
-            "modelId": "string",
-            "model_asset": "string",
-            "model_id": "string",
-            "next_forge_rank": "number",
-            "nfr": "number",
-            "pi": "number",
-            "rarity": "number",
-            "rating": "number",
-            "rating_source": "string",
-            "redeemer_base": [
-              "list"
-            ],
-            "s3GachaFeaturedImg": "bool",
-            "s3imgID": "bool",
-            "special_1_damage": "number",
-            "special_2_damage": "number",
-            "special_3_damage": "number",
-            "stamina_regen": "string",
-            "stat_source": "string",
-            "stat_uncertainty_pct": "number",
-            "synergyBonuses": [
-              "list"
-            ],
-            "synergy_bonuses": [
-              "list",
-              "string"
-            ],
-            "t": [
-              "list",
-              "string"
-            ],
-            "tags": [
-              "list",
-              "string"
-            ],
-            "victory_stage": "string"
-          },
-          "optimus_c_tf_t3": {
             "Attack": "number",
             "HPMax": "number",
             "attack": "number",
@@ -7628,46 +8077,6 @@
             "victory_stage": "string"
           },
           "nemesisprime_gs_voyager2015": {
-            "ai_personality": "string",
-            "baseRangedDamageType": [
-              "list",
-              "string"
-            ],
-            "base_damage": [
-              "list",
-              "string"
-            ],
-            "base_ranged_damage": [
-              "list",
-              "string"
-            ],
-            "faction": "number",
-            "friendly_name": "string",
-            "generation": "string",
-            "id": "string",
-            "m": "string",
-            "mapAsset": "string",
-            "map_asset": "string",
-            "model": "string",
-            "modelAsset": "string",
-            "modelID": "string",
-            "modelId": "string",
-            "model_asset": "string",
-            "model_id": "string",
-            "name": "string",
-            "special_stage": "string",
-            "subgroup": "string",
-            "t": [
-              "list",
-              "string"
-            ],
-            "tags": [
-              "list",
-              "string"
-            ],
-            "victory_stage": "string"
-          },
-          "optimus_c_tf": {
             "ai_personality": "string",
             "baseRangedDamageType": [
               "list",
@@ -17368,197 +17777,6 @@
               ]
             },
             "3": {
-              "Attack": "number",
-              "HPMax": "number",
-              "armor": "number",
-              "attack": "number",
-              "attack_mod": "number",
-              "attack_ratio": "number",
-              "attr_base": "number",
-              "block_proficiency": "number",
-              "blueprint": "string",
-              "crit_chance": "number",
-              "crit_damage": "number",
-              "evo_cost": "number",
-              "evo_recipe": {},
-              "exp_growth": "number",
-              "flat_growth": "number",
-              "heroRating": "number",
-              "hero_rating": "number",
-              "hero_rating_attack": "number",
-              "hero_rating_hp": "number",
-              "hp": "number",
-              "hp_mod": "number",
-              "hp_ratio": "number",
-              "id": "string",
-              "invest2_base": [
-                "list"
-              ],
-              "invest2_level_mod": "number",
-              "invest3_base": [
-                "list"
-              ],
-              "invest3_level_mod": "number",
-              "invest4_base": [
-                "list"
-              ],
-              "invest4_sig_mod": "number",
-              "invest_base": [
-                "list"
-              ],
-              "invest_level_mod": "number",
-              "mana_gain": "number",
-              "mana_start": "number",
-              "maxHP": "number",
-              "max_hp": "number",
-              "max_level": "number",
-              "perfect_block_chance": "number",
-              "pi": "number",
-              "rank": "number",
-              "rating": "number",
-              "rating_source": "string",
-              "resist_magic": "number",
-              "resist_physical": "number",
-              "special_attacks": "number",
-              "stamina": "number",
-              "stat_source": "string",
-              "stat_uncertainty_pct": "number",
-              "stun_chance": "number",
-              "stun_time": "number",
-              "xp_curve": [
-                "list",
-                "..."
-              ]
-            },
-            "4": {
-              "Attack": "number",
-              "HPMax": "number",
-              "armor": "number",
-              "attack": "number",
-              "attack_mod": "number",
-              "attack_ratio": "number",
-              "attr_base": "number",
-              "block_proficiency": "number",
-              "blueprint": "string",
-              "crit_chance": "number",
-              "crit_damage": "number",
-              "evo_cost": "number",
-              "evo_recipe": {},
-              "exp_growth": "number",
-              "flat_growth": "number",
-              "heroRating": "number",
-              "hero_rating": "number",
-              "hero_rating_attack": "number",
-              "hero_rating_hp": "number",
-              "hp": "number",
-              "hp_mod": "number",
-              "hp_ratio": "number",
-              "id": "string",
-              "invest2_base": [
-                "list"
-              ],
-              "invest2_level_mod": "number",
-              "invest3_base": [
-                "list"
-              ],
-              "invest3_level_mod": "number",
-              "invest4_base": [
-                "list"
-              ],
-              "invest4_sig_mod": "number",
-              "invest_base": [
-                "list"
-              ],
-              "invest_level_mod": "number",
-              "mana_gain": "number",
-              "mana_start": "number",
-              "maxHP": "number",
-              "max_hp": "number",
-              "max_level": "number",
-              "perfect_block_chance": "number",
-              "pi": "number",
-              "rank": "number",
-              "rating": "number",
-              "rating_source": "string",
-              "resist_magic": "number",
-              "resist_physical": "number",
-              "special_attacks": "number",
-              "stamina": "number",
-              "stat_source": "string",
-              "stat_uncertainty_pct": "number",
-              "stun_chance": "number",
-              "stun_time": "number",
-              "xp_curve": [
-                "list",
-                "..."
-              ]
-            },
-            "5": {
-              "Attack": "number",
-              "HPMax": "number",
-              "armor": "number",
-              "attack": "number",
-              "attack_mod": "number",
-              "attack_ratio": "number",
-              "attr_base": "number",
-              "block_proficiency": "number",
-              "blueprint": "string",
-              "crit_chance": "number",
-              "crit_damage": "number",
-              "evo_cost": "number",
-              "evo_recipe": {},
-              "exp_growth": "number",
-              "flat_growth": "number",
-              "heroRating": "number",
-              "hero_rating": "number",
-              "hero_rating_attack": "number",
-              "hero_rating_hp": "number",
-              "hp": "number",
-              "hp_mod": "number",
-              "hp_ratio": "number",
-              "id": "string",
-              "invest2_base": [
-                "list"
-              ],
-              "invest2_level_mod": "number",
-              "invest3_base": [
-                "list"
-              ],
-              "invest3_level_mod": "number",
-              "invest4_base": [
-                "list"
-              ],
-              "invest4_sig_mod": "number",
-              "invest_base": [
-                "list"
-              ],
-              "invest_level_mod": "number",
-              "mana_gain": "number",
-              "mana_start": "number",
-              "maxHP": "number",
-              "max_hp": "number",
-              "max_level": "number",
-              "perfect_block_chance": "number",
-              "pi": "number",
-              "rank": "number",
-              "rating": "number",
-              "rating_source": "string",
-              "resist_magic": "number",
-              "resist_physical": "number",
-              "special_attacks": "number",
-              "stamina": "number",
-              "stat_source": "string",
-              "stat_uncertainty_pct": "number",
-              "stun_chance": "number",
-              "stun_time": "number",
-              "xp_curve": [
-                "list",
-                "..."
-              ]
-            }
-          },
-          "optimus_c_tf_t3": {
-            "1": {
               "Attack": "number",
               "HPMax": "number",
               "armor": "number",
@@ -30031,29 +30249,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-30T20:05:09.623663Z",
+      "timestamp": "2026-10-31T12:39:58.588973Z",
       "client_ip": "127.0.0.1",
-      "client_port": 49328,
+      "client_port": 59797,
       "method": "GET",
       "path": "/tuning",
-      "query": {
-        "sig": [
-          "3r2nL5iXK5MhXLNnV5MGoaRqk0c="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390708"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -30073,32 +30279,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-30T20:05:13.624005Z",
+      "timestamp": "2026-10-31T12:39:58.595520Z",
       "client_ip": "127.0.0.1",
-      "client_port": 49328,
+      "client_port": 59800,
       "method": "GET",
       "path": "/quests/quest-list",
-      "query": {
-        "sig": [
-          "gApSIp/aBCwQeai+6XbD2beyfd4="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "11"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390713"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -30699,41 +30890,17 @@
   },
   {
     "request": {
-      "timestamp": "2026-10-30T20:05:14.268478Z",
+      "timestamp": "2026-10-31T12:39:58.611345Z",
       "client_ip": "127.0.0.1",
-      "client_port": 49328,
+      "client_port": 59801,
       "method": "GET",
       "path": "/quests/quest-active",
-      "query": {
-        "categories.1": [
-          "AvE"
-        ],
-        "categories.0": [
-          "PvE"
-        ],
-        "categories.2": [
-          "AvA"
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "11"
-        ],
-        "sig": [
-          "ua8pqGuFBizpnoUNTsyGizGgyEE="
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390713"
-        ]
-      },
+      "query": {},
       "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
+        "Accept-Encoding": "identity",
+        "Host": "127.0.0.1:8080",
+        "User-Agent": "Python-urllib/3.14",
+        "Connection": "close"
       },
       "body": ""
     },
@@ -30746,656 +30913,6 @@
         "instances": [
           "list"
         ]
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-30T20:05:15.612842Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 49328,
-      "method": "GET",
-      "path": "/quests/quest-progression",
-      "query": {
-        "sig": [
-          "IYrw4wONdS/b6vHu/AyERmXDGUo="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "api": [
-          "11"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390715"
-        ]
-      },
-      "headers": {
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": ""
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "Story": {
-          "story_act1_ch1_m1": {
-            "cleared": [
-              "list"
-            ],
-            "completed": "bool",
-            "mastered": "bool",
-            "unlocked": "bool",
-            "visibleClearedCount": "number"
-          }
-        },
-        "ave": {},
-        "pve": {}
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-30T20:05:55.300991Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 49328,
-      "method": "POST",
-      "path": "/quests/quest-begin/story_act1_ch4_m2",
-      "query": {
-        "sig": [
-          "xtCkvFdw57PJ8P46tITijy4Ldlg="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390754"
-        ]
-      },
-      "headers": {
-        "Content-Type": "application/json",
-        "Content-Length": "128",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": {
-        "quitExisting": true,
-        "nonce": "6ae4f8a26911bc4d3afa000e",
-        "hash": "v1",
-        "api": 11,
-        "setId": "story_act_1",
-        "tm0": "bumblebee_cin_dotm_2"
-      }
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "activeQuests": {
-          "story_act1_ch4_m2": {
-            "category": "string",
-            "currentPosition": {
-              "x": "number",
-              "y": "number"
-            },
-            "data": {
-              "act": "number",
-              "actIndex": "number",
-              "category": "string",
-              "chapter": "number",
-              "chapterIndex": "number",
-              "description": "string",
-              "energyPerTile": "number",
-              "friendlyName": "string",
-              "id": "string",
-              "isDetailed": "bool",
-              "maxXpPerTile": "number",
-              "minXpPerTile": "number",
-              "mission": "number",
-              "missionIndex": "number",
-              "teamSizeMax": "number",
-              "teamSizeMin": "number",
-              "theme": "string",
-              "todIndex": "number",
-              "unlocked": "bool"
-            },
-            "expiryTime": "number",
-            "isFinished": "bool",
-            "map": {
-              "grid": [
-                "list",
-                "..."
-              ],
-              "gridDimension": "number",
-              "mapHash": "string",
-              "pathData": [
-                "list",
-                "..."
-              ],
-              "paths": [
-                "list",
-                "..."
-              ],
-              "visibleWalkableCount": "number",
-              "walkableCount": "number"
-            },
-            "mode": "string",
-            "phase": "number",
-            "playerPosition": {
-              "x": "number",
-              "y": "number"
-            },
-            "progression": {
-              "clearedTiles": [
-                "list",
-                "..."
-              ],
-              "currentTile": {
-                "x": "...",
-                "y": "..."
-              },
-              "percentComplete": "number"
-            },
-            "qid": "string",
-            "scaledBossTable": {
-              "enemy1": {
-                "aiPer": "...",
-                "aiString": "...",
-                "aiType": "...",
-                "baseType": "...",
-                "characters": "...",
-                "flvl": "...",
-                "hi": "...",
-                "isFinalBoss": "...",
-                "key": "...",
-                "level": "...",
-                "mapOverride": "...",
-                "rank": "...",
-                "sig_lvl": "...",
-                "todIndex": "...",
-                "type": "...",
-                "uid": "..."
-              }
-            },
-            "startTime": "number",
-            "team": {
-              "bumblebee_cin_dotm_2": {
-                "armor": "...",
-                "attack": "...",
-                "block_proficiency": "...",
-                "blueprint": "...",
-                "buff_mods": "...",
-                "class_power": "...",
-                "crit_chance": "...",
-                "crit_damage": "...",
-                "hp": "...",
-                "level": "...",
-                "mana_gain": "...",
-                "mana_start": "...",
-                "max_hp": "...",
-                "perfect_block_chance": "...",
-                "pi": "...",
-                "rank": "...",
-                "rating": "...",
-                "resist_magic": "...",
-                "resist_physical": "...",
-                "sig_lvl": "...",
-                "sig_mods": "...",
-                "special_attacks": "...",
-                "stat_mods": "...",
-                "stun_chance": "...",
-                "stun_time": "...",
-                "synergyBonuses": "...",
-                "t": "...",
-                "tags": "..."
-              }
-            },
-            "teamData": {
-              "deletes": {},
-              "updates": {
-                "activeTeams": "...",
-                "heroes": "...",
-                "inventory": "...",
-                "savedTeams": "..."
-              },
-              "userData": {
-                "blueprintsMax": "...",
-                "teamCountMax": "...",
-                "teamSizeMax": "..."
-              }
-            },
-            "uniqueId": "string"
-          }
-        }
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-30T20:06:00.916368Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 49328,
-      "method": "POST",
-      "path": "/quests/quest-detail/story_act1_ch4_m2",
-      "query": {
-        "sig": [
-          "fx7628oPtG5Q64HfhwVk/GIc4Es="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390760"
-        ]
-      },
-      "headers": {
-        "Content-Type": "application/json",
-        "Content-Length": "79",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": {
-        "hash": "v1",
-        "nonce": "6ae4f8a86911bc4d3afa0011",
-        "api": 11,
-        "setId": "story_act_1"
-      }
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "map": {
-          "grid": [
-            "list",
-            [
-              "list",
-              {
-                "ab": "...",
-                "barrier": "...",
-                "bg": "...",
-                "bt": "...",
-                "final": "...",
-                "links": "...",
-                "position": "...",
-                "sockets": "...",
-                "start": "...",
-                "visibleLinks": "...",
-                "walkable": "..."
-              }
-            ]
-          ],
-          "gridDimension": "number",
-          "mapHash": "string",
-          "pathData": [
-            "list",
-            {
-              "path": [
-                "list",
-                "..."
-              ]
-            }
-          ],
-          "paths": [
-            "list",
-            {
-              "path": [
-                "list",
-                "..."
-              ],
-              "tiles": [
-                "list",
-                "..."
-              ]
-            }
-          ],
-          "visibleWalkableCount": "number",
-          "walkableCount": "number"
-        },
-        "scaledBossTable": {
-          "enemy1": {
-            "aiPer": "string",
-            "aiString": "string",
-            "aiType": "number",
-            "baseType": "string",
-            "characters": [
-              "list",
-              "string"
-            ],
-            "flvl": "number",
-            "hi": [
-              "list"
-            ],
-            "isFinalBoss": "bool",
-            "key": "string",
-            "level": "number",
-            "mapOverride": "string",
-            "rank": "number",
-            "sig_lvl": "number",
-            "todIndex": "number",
-            "type": "string",
-            "uid": "string"
-          }
-        },
-        "summary": {
-          "act": "number",
-          "actIndex": "number",
-          "category": "string",
-          "chapter": "number",
-          "chapterIndex": "number",
-          "description": "string",
-          "energyPerTile": "number",
-          "friendlyName": "string",
-          "id": "string",
-          "isDetailed": "bool",
-          "maxXpPerTile": "number",
-          "minXpPerTile": "number",
-          "mission": "number",
-          "missionIndex": "number",
-          "teamSizeMax": "number",
-          "teamSizeMin": "number",
-          "theme": "string",
-          "todIndex": "number",
-          "unlocked": "bool"
-        }
-      },
-      "ts": "number"
-    }
-  },
-  {
-    "request": {
-      "timestamp": "2026-10-30T20:06:37.432267Z",
-      "client_ip": "127.0.0.1",
-      "client_port": 49328,
-      "method": "POST",
-      "path": "/quests/quest-movedir/story_act1_ch4_m2/1/0",
-      "query": {
-        "sig": [
-          "aVv6lsYMVFRrM1SaQieCpZ7DYOE="
-        ],
-        "stoken": [
-          "sess_tf_stub_token_12345"
-        ],
-        "sver": [
-          "3"
-        ],
-        "ts": [
-          "1793390797"
-        ]
-      },
-      "headers": {
-        "Content-Type": "application/json",
-        "Content-Length": "45",
-        "Host": "127.0.0.1",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "Sparx/1.0"
-      },
-      "body": {
-        "api": 11,
-        "nonce": "6ae4f8cd6911bc4d3afa0013"
-      }
-    },
-    "status": 200,
-    "shape": {
-      "result": {
-        "currentPosition": {
-          "x": "number",
-          "y": "number"
-        },
-        "currentTile": {
-          "x": "number",
-          "y": "number"
-        },
-        "playerPosition": {
-          "x": "number",
-          "y": "number"
-        },
-        "progression": {
-          "cleared": [
-            "list",
-            {
-              "x": "number",
-              "y": "number"
-            }
-          ],
-          "clearedTiles": [
-            "list",
-            {
-              "x": "number",
-              "y": "number"
-            }
-          ],
-          "currentBattleBossId": "string",
-          "currentBattleEnemy": {
-            "aiPer": "string",
-            "aiString": "string",
-            "aiType": "number",
-            "baseType": "string",
-            "characters": [
-              "list",
-              "string"
-            ],
-            "flvl": "number",
-            "hi": [
-              "list"
-            ],
-            "id": "string",
-            "isFinalBoss": "bool",
-            "key": "string",
-            "level": "number",
-            "mapOverride": "string",
-            "rank": "number",
-            "sig_lvl": "number",
-            "todIndex": "number",
-            "type": "string",
-            "uid": "string"
-          },
-          "currentBattleEnemyHealth": "number",
-          "currentBattleId": "string",
-          "currentBattlePos": {
-            "x": "number",
-            "y": "number"
-          },
-          "currentFightId": "string",
-          "currentPos": {
-            "x": "number",
-            "y": "number"
-          },
-          "currentPosition": {
-            "x": "number",
-            "y": "number"
-          },
-          "currentTile": {
-            "x": "number",
-            "y": "number"
-          },
-          "percentComplete": "number",
-          "playerPosition": {
-            "x": "number",
-            "y": "number"
-          },
-          "previouslyCleared": [
-            "list"
-          ],
-          "revealed": [
-            "list"
-          ],
-          "users": {
-            "10001": {
-              "battleLockExpiry": "number",
-              "currentBattleId": "string",
-              "currentBattlePos": {
-                "x": "...",
-                "y": "..."
-              },
-              "currentBattleState": "number",
-              "currentPos": {
-                "x": "...",
-                "y": "..."
-              },
-              "name": "string",
-              "state": "number",
-              "strongestHero": "string",
-              "tag": "string",
-              "team": {
-                "bumblebee_cin_dotm": "..."
-              },
-              "uid": "string",
-              "usedConsumableCount": "number"
-            }
-          },
-          "version": "number"
-        },
-        "results": [
-          "list",
-          {
-            "action": {
-              "moveto": {
-                "x": "...",
-                "y": "..."
-              }
-            }
-          }
-        ],
-        "teamData": {
-          "deletes": {},
-          "updates": {
-            "activeTeams": {
-              "Story": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "active_quest_1001": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "story": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "story_act1_ch1_m1": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              },
-              "story_act_1": {
-                "activityID": "...",
-                "aid": "...",
-                "estimatedExpire": "...",
-                "expire": "...",
-                "heroes": "...",
-                "modes": "...",
-                "type": "..."
-              }
-            },
-            "heroes": [
-              "list",
-              {
-                "armor": "...",
-                "attack": "...",
-                "attributeData": "...",
-                "bid": "...",
-                "block_proficiency": "...",
-                "blueprint": "...",
-                "crit_chance": "...",
-                "crit_damage": "...",
-                "entity_type": "...",
-                "exc": "...",
-                "hero": "...",
-                "hero_rating_attack": "...",
-                "hero_rating_hp": "...",
-                "hp": "...",
-                "id": "...",
-                "level": "...",
-                "mana_gain": "...",
-                "mana_start": "...",
-                "max_hp": "...",
-                "max_xp": "...",
-                "modes": "...",
-                "modesAvail": "...",
-                "pi": "...",
-                "pvpb": "...",
-                "rank": "...",
-                "rating": "...",
-                "rating_attack": "...",
-                "rating_attack_base": "...",
-                "rating_hp": "...",
-                "rating_hp_base": "...",
-                "required_xp": "...",
-                "resist_magic": "...",
-                "resist_physical": "...",
-                "sig_lvl": "...",
-                "sig_mods": "...",
-                "special_attacks": "...",
-                "stamina": "...",
-                "staminaFullGrowthTime": "...",
-                "staminaNextGrowthTime": "...",
-                "stamina_full_ts": "...",
-                "stamina_ts": "...",
-                "stat_mods": "...",
-                "stt": "...",
-                "stun_chance": "...",
-                "stun_time": "...",
-                "synergyBonuses": "...",
-                "t": "...",
-                "tags": "...",
-                "teamTypes": "...",
-                "team_types": "...",
-                "uid": "..."
-              }
-            ],
-            "inventory": {
-              "bp": {},
-              "f": {},
-              "max": {}
-            },
-            "savedTeams": [
-              "list",
-              {
-                "heroes": "...",
-                "sid": "..."
-              }
-            ]
-          },
-          "userData": {
-            "blueprintsMax": "number",
-            "teamCountMax": "number",
-            "teamSizeMax": "number"
-          }
-        }
       },
       "ts": "number"
     }
