@@ -857,3 +857,18 @@ and `quest_begin_response.json` remain templates/fallbacks.
   (player damage 203.7, enemy 1289.6). VERDICT PASS.
 - Golden shapes re-recorded after the wiki-stat/post-battle changes.
 - FINAL updated; snapshot/archive to refresh.
+
+## 2026-10-31 v4.12 Step 0-2
+
+- Step 0: claims 57-61; 61 base characters (not 59 packs), async match-resolved route,
+  Windblade token WINDB_GS.
+- Step 1: data/client_character_census.json (61 chars, 122 tokens, 923 moves);
+  data/client_character_tokens? no; id_map 61; bot_catalog_real 61; boss_map 90/90;
+  boss_gaps []; wiki-only reduced to Chromia/Dead End/Soundblaster-Tactician.
+- Step 2: docs/bots_grid.md. Grid is a client-side 59-card ODR list; Starscream and
+  Optimus GS are merged-only and never appear. Server roster add/replace has no effect
+  on the grid. Cards show display default 300 although live BCGUserHero has 1381/1426;
+  UPGRADE/INFO 0 HP/ATK is a binding gap. Removed stale optimus_c_tf/c_tf_t3 via
+  catalog_removals.json. Open.
+- Next: Step 4 async post-battle payload (fields inside battlecomplete, top-level version),
+  then difficulty/level/Buff/config/systems/tests/docs/FINAL.
