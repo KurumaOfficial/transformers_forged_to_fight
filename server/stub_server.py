@@ -76,16 +76,23 @@ def level_rewards_payload():
         level = int((account.get("user") or {}).get("level", level))
     except Exception:
         pass
+    status = {
+        "last_awarded_level": level,
+        "lastAwardedLevel": level,
+        "level": level,
+        "Level": level,
+        "isEnabled": True,
+        "nextLevelXp": 1000,
+        "types": [
+            {"name": "commander", "level": level,
+             "nextResourceThreshold": 1000, "previousResourceThreshold": 0}
+        ],
+    }
     return {
-        "levelrewards": {
-            "last_awarded_level": level,
-            "lastAwardedLevel": level,
-            "level": level,
-            "Level": level,
-            "isEnabled": True,
-            "types": [],
-        },
+        "status": status,
+        "levelrewards": status,
         "levelrewards_milestones": [],
+        "nextLevelXp": 1000,
     }
 
 

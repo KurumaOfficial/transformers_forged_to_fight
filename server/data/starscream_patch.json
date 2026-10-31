@@ -382,8 +382,8 @@
   "special_attacks": 3,
   "hero_rating_hp": 540,
   "hero_rating_attack": 814,
-  "id": "999",
-  "uid": "999",
+  "id": "60",
+  "uid": "60",
   "hero": "starscream_gs",
   "blueprint": "starscream_gs",
   "modes": [
@@ -416,12 +416,12 @@
    "syn_autobots"
   ],
   "tags": [
-   "scout",
-   "autobot"
+   "tactician",
+   "decepticon"
   ],
   "t": [
-   "scout",
-   "autobot"
+   "tactician",
+   "decepticon"
   ]
  }
 }
