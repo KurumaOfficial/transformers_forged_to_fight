@@ -683,14 +683,49 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                      "quantity": int(r.get("amount", 0))}
                     for r in rewards if isinstance(r, dict)
                 ]
+                first_gold = sum(int(r.get("amount", 0)) for r in rewards
+                                 if isinstance(r, dict) and r.get("id") == "gold")
+                first_items = [r for r in redeems if r.get("data") != "gold"]
+                completion_rewards = {
+                    "firstGold": first_gold,
+                    "firstItems": first_items,
+                    "firstXP": int((quest or {}).get("minXpPerTile", 20) or 20),
+                    "masteryGold": 0,
+                    "masteryItems": [],
+                    "masteryXP": 0,
+                    "potentialItems": [],
+                }
                 completed = (quest or {}).get("isFinalBoss") or False
+                battlecomplete = {
+                    "x": pos["x"], "y": pos["y"],
+                    "cleared": cleared,
+                    "visibleClearedCount": len(cleared),
+                    "walkableCount": 6,
+                    "visibleWalkableCount": 6,
+                    "percentHealthGained": 0,
+                    "eventPoints": 0,
+                    "isFinalBoss": bool(completed),
+                    "redeems": redeems,
+                    "spends": [],
+                    "withHeldItemRedeems": [],
+                    "firstCompletionRewards": redeems,
+                    "replayCompletionRewards": [],
+                    "masteryCompletionRewards": [],
+                    "completionRewards": completion_rewards,
+                }
                 actions = [
                     {"action": {
-                        "battlecomplete": {"x": pos["x"], "y": pos["y"]},
+                        "battlecomplete": battlecomplete,
                         "cleared": cleared,
                         "visibleClearedCount": len(cleared),
-                        "percentComplete": 30,
+                        "walkableCount": 6,
+                        "visibleWalkableCount": 6,
+                        "percentComplete": 100,
                         "redeems": redeems,
+                        "firstCompletionRewards": redeems,
+                        "replayCompletionRewards": [],
+                        "masteryCompletionRewards": [],
+                        "completionRewards": completion_rewards,
                     }},
                 ]
                 if completed:
@@ -699,11 +734,14 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     }}})
                 data.update({
                     "qid": qid,
+                    "battleId": "battle1",
+                    "version": 3,
                     "victory": True,
                     "enemyHealth": 0,
                     "rewards": redeems,
                     "redeems": redeems,
-                    "firstCompletionRewards": rewards,
+                    "firstCompletionRewards": redeems,
+                    "completionRewards": completion_rewards,
                     "results": actions,
                     "matchResults": {"battleId": "battle1", "result": 1},
                     "progression": {
