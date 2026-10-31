@@ -915,3 +915,16 @@ and `quest_begin_response.json` remain templates/fallbacks.
   systems; Step 8 sweep/nightly/openapi/routing.
 - Push: **not performed** because the standing rules in the same queue forbid
   `git push`/remotes. All work is committed locally.
+
+## 2026-10-31 v4.13 Step 3 progress
+
+- Added optional pply_win_progress behind work/persist_progress.flag:
+  writes quest_progression.json (cleared/currentPos/percent) and
+  quest_active.json after a win.
+- [RUN] With the flag + weak win, server files updated (cleared 0,0/1,0;
+  currentPos 1,0; 33%), but the map still showed 22% after TAP ANYWHERE.
+  The client does not apply/refetch that state in the current flow.
+  docs/post_battle_flow.md, docs/screens_ok/persist_map_22pct.jpg.
+- No default behavior change; flag off.
+- Next: find the post-return quest-active/quest-detail read and the exact
+  attlecomplete/progression consume path.
