@@ -134,3 +134,27 @@ What is still open:
 - The active-quest refresh: `/quests/quest-active` still returns the static
   22% payload, so even an in-memory progression would be overwritten.
 - Persistence: no SQLite write of `cleared`/`currentPos` yet.
+
+## 2026-10-31 v4.13 Step 3 state attempt
+
+server/stub_server.py now has pply_win_progress behind
+work/persist_progress.flag: on a win it writes
+quest_progression.json (cleared tiles, currentPos, percentComplete) and
+quest_active.json (one active quest with the updated position).
+
+[RUN] With the flag and a weak-enemy win, the files did update:
+
+- Story.story_act1_ch4_m2.cleared = [{0,0},{1,0}]
+- currentPos = {1,0}, percentComplete = 33
+- quest_active.activeQuests[0].currentPosition = {1,0}
+
+After TAP ANYWHERE, the map still showed **22% EXPLORED** and the old tile
+state (docs/screens_ok/persist_map_22pct.jpg). So the server state alone is
+not enough: the client does not refetch/apply this file on return, or the
+attlecomplete action/progression is still not parsed. The flag is off by
+default; no behavior change in the normal stub.
+
+Next: find the post-return request sequence (
+equests.jsonl) and the exact
+quest-detail/quest-active read; then make the action/progression apply in
+the same payload the client already consumes.

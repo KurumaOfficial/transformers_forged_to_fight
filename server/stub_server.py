@@ -67,6 +67,43 @@ def load_data_json(filename, default=None):
             print(f"[!] Error loading {filepath}: {e}", file=sys.stderr)
     return default if default is not None else {}
 
+def write_data_json(filename, data):
+    """Persist a small JSON state file under server/data."""
+    filepath = os.path.join(DATA_DIR, filename)
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+
+def apply_win_progress(qid, pos, cleared, quest):
+    """Update the runtime quest progress/active files after a win."""
+    try:
+        prog = load_data_json("quest_progression.json")
+        bucket = prog.setdefault("Story", {})
+        entry = bucket.setdefault(qid, {})
+        entry.update({
+            "unlocked": True,
+            "completed": False,
+            "mastered": bool(entry.get("mastered", False)),
+            "cleared": cleared,
+            "visibleClearedCount": len(cleared),
+            "currentPos": pos,
+            "percentComplete": 100 if (quest or {}).get("isFinalBoss") else 33,
+        })
+        prog["Story"] = bucket
+        write_data_json("quest_progression.json", prog)
+        active = load_data_json("quest_begin_response.json")
+        active.update({
+            "uniqueId": f"active_quest_{qid}",
+            "qid": qid,
+            "currentPosition": pos,
+            "playerPosition": pos,
+            "isFinished": False,
+        })
+        if quest:
+            active["data"] = {**active.get("data", {}), **quest}
+        write_data_json("quest_active.json", {"activeQuests": [active], "instances": []})
+    except Exception as e:
+        print(f"[!] apply_win_progress failed: {e}", file=sys.stderr)
+
 
 def level_rewards_payload():
     """Minimal /levelrewards/fetch result from account level data."""
@@ -703,6 +740,8 @@ class SparxStubHandler(http.server.BaseHTTPRequestHandler):
                     "potentialItems": [],
                 }
                 completed = (quest or {}).get("isFinalBoss") or False
+                if os.path.exists("work/persist_progress.flag"):
+                    apply_win_progress(qid, pos, cleared, quest)
                 battlecomplete = {
                     "x": pos["x"], "y": pos["y"],
                     "cleared": cleared,
