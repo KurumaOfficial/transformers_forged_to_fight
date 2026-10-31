@@ -6,6 +6,7 @@ stub implementation.
 """
 
 import json
+import os
 
 import wiki_stats
 
@@ -20,6 +21,17 @@ def login_data(load_data_json):
                 target.update(patch.get(section) or {})
         user = data.setdefault("userData", {})
         roster = user.setdefault("heroes", [])
+        removals = load_data_json("catalog_removals.json")
+        if isinstance(removals, dict):
+            for section in ("blueprints", "characters", "heroes"):
+                target = data.get(section)
+                if isinstance(target, dict):
+                    for key in removals.get(section) or []:
+                        target.pop(key, None)
+            if isinstance(roster, list):
+                drop = set((removals.get("heroes") or []) + (removals.get("blueprints") or []))
+                roster[:] = [h for h in roster
+                             if isinstance(h, dict) and h.get("bid") not in drop]
         if isinstance(roster, list) and not any(
                 isinstance(h, dict) and h.get("bid") == "starscream_gs" for h in roster):
             hero = patch.get("hero")

@@ -1,0 +1,12 @@
+{
+ "reason": "stale duplicate: optimus_c_tf has portraits but no character bundle; the playable cinematic Optimus is optimusprime_cin_tf (ODR). It was the first/default blueprint in the client data list and made card selection/upgrade use the wrong hero.",
+ "blueprints": [
+  "optimus_c_tf_t3"
+ ],
+ "characters": [
+  "optimus_c_tf"
+ ],
+ "heroes": [
+  "optimus_c_tf_t3"
+ ]
+}
