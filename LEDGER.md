@@ -711,3 +711,18 @@ PASS. Unit tests 25/25 PASS. Fast smoke PASS; `xfail_open=4` is expected
 | Abilities | Evade/Shield/Bleed нет в stat enum; Buff/trigger schema не декодирована | `[STATIC]` |
 | BOTS sweep | 59/59 недействителен: horizontal swipe повторяет page 0 | `[RUN]` |
 | FINAL | `report/FINAL_2026-10-30.md` (v4.11) | — |
+
+## 2026-10-31 v4.12
+
+| Пункт | Результат | Метка |
+|---|---|---|
+| Перепись | 61 базовых / 122 токена / 923 move / 59 ODR + 2 merged | `[STATIC]` |
+| Токены | 61/61; 7 ботов без строк; key builder `0xC1B154` | `[STATIC]` |
+| Боссы | 90/90 client id; 9 Starscream; gaps [] | `[STATIC]` |
+| BOTS grid | 59 ODR-карточек; Starscream/Optimus GS нет; карточки 300/0 | `[RUN]` |
+| Постбой | async keys найдены; REWARDS пуст, 22% | `[RUN]` |
+| Уровень | fetch есть; Level 0 | `[RUN]` |
+| Buff | trigger/effect schema не декодирована | `[STATIC]` |
+| Конфиги | только bcg-combat подтверждён | `[STATIC]` |
+| Тесты | check_all 9/9, unit 32/32, smoke 6/6; battle COMPLETED/LOST | `[RUN]` |
+| FINAL | `report/FINAL_2026-10-31.md` | — |
