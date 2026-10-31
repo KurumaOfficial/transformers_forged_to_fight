@@ -9,12 +9,12 @@
   "player_0": {
     "hp_start": 1066.0,
     "hp_remaining": 0.0,
-    "dmg_atk_total": 203.700012
+    "dmg_atk_total": 271.600006
   },
   "player_1": {
     "hp_start": 5160.0,
-    "hp_remaining": 4956.30029,
-    "dmg_atk_total": 1289.6001
+    "hp_remaining": 4888.40039,
+    "dmg_atk_total": 1248.0
   },
   "status": "COMPLETED"
 }
