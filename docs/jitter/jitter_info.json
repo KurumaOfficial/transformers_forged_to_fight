@@ -1,0 +1,24 @@
+{
+ "source": "work\\jitter_info.mp4",
+ "fps_meta": 15.24,
+ "frames_with_model": 124,
+ "duration_s": 8.136,
+ "centroid_x_mean": 496.761,
+ "centroid_y_mean": 557.599,
+ "frame_dx_mean_abs": 5.199,
+ "frame_dy_mean_abs": 8.483,
+ "frame_dx_max_abs": 27.393,
+ "frame_dy_max_abs": 45.68,
+ "hp_x_std": 31.166,
+ "hp_y_std": 34.872,
+ "bbox_w_std": 38.763,
+ "bbox_h_std": 39.701,
+ "bbox_w_minmax": [
+  654,
+  780
+ ],
+ "bbox_h_minmax": [
+  780,
+  900
+ ]
+}
