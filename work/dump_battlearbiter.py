@@ -2,8 +2,8 @@
 import struct
 import subprocess
 
-ADB = r"C:\Users\gameg\Desktop\TFTF\work\platform-tools\adb.exe"
-ELF = r"C:\Users\gameg\Desktop\TFTF\work\unpacked\lib\arm64-v8a\libil2cpp.so"
+ADB = r".\work\platform-tools\adb.exe"
+ELF = r".\work\unpacked\lib\arm64-v8a\libil2cpp.so"
 SLOT = 0x2C377E0
 
 pid = subprocess.run([ADB, "shell", "pidof com.kabam.bigrobot"], capture_output=True, text=True).stdout.strip()

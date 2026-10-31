@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-p = Path(r"C:\Users\gameg\Desktop\TFTF\server\data\bcg_login_data.json")
+p = Path(r".\server\data\bcg_login_data.json")
 d = json.loads(p.read_text(encoding="utf-8"))
 u = d.setdefault("userData", {})
 ats = u.setdefault("activeTeams", [])

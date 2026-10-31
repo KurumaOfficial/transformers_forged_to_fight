@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 d = json.loads((ROOT / "work" / "injector_registry.json").read_text(encoding="utf-8"))
 
 SCREEN = {

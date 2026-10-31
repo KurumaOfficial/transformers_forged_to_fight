@@ -1,5 +1,5 @@
 from pathlib import Path
-p = Path(r"C:\Users\gameg\Desktop\TFTF\server\stub_server.py")
+p = Path(r".\server\stub_server.py")
 s = p.read_text(encoding="utf-8")
 old = '''            active_teams.append({
                 "aid": qid, "type": "story", "modes": ["Story"], "expire": 0,

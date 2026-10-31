@@ -10,7 +10,7 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 ADB = str(ROOT / "work" / "platform-tools" / "adb.exe")
 META_FILE = ROOT / "work" / "unpacked" / "assets" / "bin" / "Data" / "Managed" / "Metadata" / "global-metadata.dat"
 

@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-p = Path(r"C:\Users\gameg\Desktop\TFTF\spec\openapi.json")
+p = Path(r".\spec\openapi.json")
 d = json.loads(p.read_text(encoding="utf-8"))
 
 def envelope(result, desc):

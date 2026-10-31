@@ -1,6 +1,6 @@
 import subprocess, struct, re, sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-ADB = r"C:\Users\gameg\Desktop\TFTF\work\platform-tools\adb.exe"
+ADB = r".\work\platform-tools\adb.exe"
 PID = subprocess.run([ADB, "shell", "pidof com.kabam.bigrobot"], capture_output=True, text=True).stdout.strip()
 maps = subprocess.run([ADB, "shell", f"su 0 cat /proc/{PID}/maps"], capture_output=True, text=True).stdout
 rw = None

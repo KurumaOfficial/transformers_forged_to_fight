@@ -3,7 +3,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 TOP = ROOT / "data" / "wiki" / "topics"
 OUT = ROOT / "data" / "wiki"
 

@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 W = ROOT / "archive" / "wiki"
 manifest = json.loads((W / "manifest.json").read_text(encoding="utf-8"))
 errs = json.loads((W / "errors.json").read_text(encoding="utf-8"))

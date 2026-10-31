@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-out = Path(r"C:\Users\gameg\Desktop\TFTF\work\variants")
+out = Path(r".\work\variants")
 hero = "bumblebee_cin_dotm"
 h = {"bid": hero, "blueprint": hero, "rank": 1, "level": 1, "sig_lvl": 0,
      "max_hp": 1000.0, "hp": 1000.0, "attack": 120, "rating_hp": 50,

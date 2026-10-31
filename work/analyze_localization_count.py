@@ -2,7 +2,7 @@ import os
 import re
 import json
 
-ROOT = r"C:\Users\gameg\Desktop\TFTF"
+ROOT = r"."
 DATA = os.path.join(ROOT, "work", "unpacked", "assets", "bin", "Data")
 pat = re.compile(rb'"k"\s*:\s*"((?:\\.|[^"\\])*)"')
 keys = set()

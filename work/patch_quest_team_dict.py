@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-p = Path(r"C:\Users\gameg\Desktop\TFTF\server\stub_server.py")
+p = Path(r".\server\stub_server.py")
 s = p.read_text(encoding="utf-8")
 old = '''            if team:
                 quest["team"] = team'''
@@ -12,7 +12,7 @@ new = '''            if team:
 assert old in s
 s = s.replace(old, new, 1)
 p.write_text(s, encoding="utf-8")
-q = Path(r"C:\Users\gameg\Desktop\TFTF\server\data\quest_begin_response.json")
+q = Path(r".\server\data\quest_begin_response.json")
 d = json.loads(q.read_text(encoding="utf-8"))
 if isinstance(d.get("team"), list):
     d["team"] = {

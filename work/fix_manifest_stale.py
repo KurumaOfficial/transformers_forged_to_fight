@@ -1,7 +1,7 @@
 import hashlib, json, sys
 from datetime import datetime, timezone
 from pathlib import Path
-root = Path(r"C:\Users\gameg\Desktop\TFTF")
+root = Path(r".")
 W = root / "archive" / "wiki"
 manifest = json.loads((W / "manifest.json").read_text(encoding="utf-8"))
 by = {r["path"]: r for r in manifest}

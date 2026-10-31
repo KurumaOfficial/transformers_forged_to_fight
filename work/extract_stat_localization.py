@@ -1,7 +1,7 @@
 import os, re, json, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-root = Path(r"C:\Users\gameg\Desktop\TFTF\work\unpacked\assets\bin\Data")
+root = Path(r".\work\unpacked\assets\bin\Data")
 out = {}
 for p in root.iterdir():
     if not p.is_file():
@@ -30,7 +30,7 @@ data = {
     "note": "Best ASCII-containing localized value per key; values can be German/Italian/English depending on the asset language table. Not a claim of complete multilingual coverage.",
     "entries": rows,
 }
-(Path(r"C:\Users\gameg\Desktop\TFTF\data\wiki\ability_localization_client.json")).write_text(
+(Path(r".\data\wiki\ability_localization_client.json")).write_text(
     json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 print("STAT entries", len(rows), "ascii", sum(any(c.isalpha() for c in r["value"]) for r in rows))
 print(rows[:5])

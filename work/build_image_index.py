@@ -1,7 +1,7 @@
 import json, re
 from collections import Counter
 from pathlib import Path
-root = Path(r"C:\Users\gameg\Desktop\TFTF")
+root = Path(r".")
 m = json.loads((root / "archive/wiki/manifest.json").read_text(encoding="utf-8"))
 errs = json.loads((root / "archive/wiki/errors.json").read_text(encoding="utf-8"))
 imgs = [r for r in m if r.get("path", "").startswith("raw/fandom/files/")]

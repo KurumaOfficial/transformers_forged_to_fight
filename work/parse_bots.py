@@ -1,7 +1,7 @@
 import json, glob, re, os, sys
 from urllib.parse import quote
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-ROOT = r"C:\Users\gameg\Desktop\TFTF"
+ROOT = r"."
 SRC = os.path.join(ROOT, "archive", "wiki", "raw", "fandom", "revisions", "0")
 OUT = os.path.join(ROOT, "data", "wiki")
 os.makedirs(OUT, exist_ok=True)

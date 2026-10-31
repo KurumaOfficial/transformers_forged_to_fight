@@ -2,7 +2,7 @@ import json
 import re
 from pathlib import Path
 
-root = Path(r"C:\Users\gameg\Desktop\TFTF")
+root = Path(r".")
 pages = json.loads((root / "data/wiki/pages.json").read_text(encoding="utf-8"))["pages"]
 versions = {}
 for p in (root / "data/wiki/versions").glob("*.json"):

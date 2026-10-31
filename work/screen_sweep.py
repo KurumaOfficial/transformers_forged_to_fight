@@ -5,7 +5,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 sys.path.insert(0, str(ROOT / "work"))
 import smoke_test as s
 

@@ -5,7 +5,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 REQ = ROOT / "server" / "requests.jsonl"
 GOLD = ROOT / "tests" / "golden"
 GOLD.mkdir(parents=True, exist_ok=True)

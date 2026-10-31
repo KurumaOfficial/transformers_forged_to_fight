@@ -13,7 +13,7 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 ADB = ROOT / "work" / "platform-tools" / "adb.exe"
 EMULATOR = ROOT / "work" / "android-sdk" / "emulator" / "emulator.exe"
 AVD = "TFTF_AVD"

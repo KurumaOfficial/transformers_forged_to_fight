@@ -6,7 +6,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 INDEX = ROOT / "data" / "wiki" / "image_index.json"
 MANIFEST = ROOT / "archive" / "wiki" / "manifest.json"
 OUTDIR = ROOT / "archive" / "wiki" / "raw" / "fandom" / "files"

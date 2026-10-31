@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-root = Path(r"C:\Users\gameg\Desktop\TFTF")
+root = Path(r".")
 d = json.loads((root / "work/localization_all.json").read_text(encoding="utf-8"))
 stat = {k: v for k, v in d.items() if k.startswith("D_STAT")}
 out = {

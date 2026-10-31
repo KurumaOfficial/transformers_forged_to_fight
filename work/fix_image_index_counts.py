@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-p = Path(r"C:\Users\gameg\Desktop\TFTF\data\wiki\image_index.json")
+p = Path(r".\data\wiki\image_index.json")
 d = json.loads(p.read_text(encoding="utf-8"))
 names = {r["name"] for r in d["present"]}
 d["counts"]["present_manifest_entries"] = len(d["present"])

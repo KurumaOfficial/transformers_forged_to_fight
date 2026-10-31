@@ -8,7 +8,7 @@ from pathlib import Path
 
 from PIL import Image
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 ADB = str(ROOT / "work" / "platform-tools" / "adb.exe")
 OUT = ROOT / "tests" / "sweep"
 OUT.mkdir(parents=True, exist_ok=True)

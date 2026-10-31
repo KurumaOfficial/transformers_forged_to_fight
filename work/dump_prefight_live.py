@@ -8,8 +8,8 @@ import struct
 import subprocess
 import sys
 
-ADB = r"C:\Users\gameg\Desktop\TFTF\work\platform-tools\adb.exe"
-ELF = r"C:\Users\gameg\Desktop\TFTF\work\unpacked\lib\arm64-v8a\libil2cpp.so"
+ADB = r".\work\platform-tools\adb.exe"
+ELF = r".\work\unpacked\lib\arm64-v8a\libil2cpp.so"
 SLOT_WM = 0x2BE5B18
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

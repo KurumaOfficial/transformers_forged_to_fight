@@ -7,7 +7,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 REAL = ROOT / "data" / "quests_real.json"
 BASE = ROOT / "server" / "data" / "quest_list.json"
 OUT = ROOT / "server" / "data" / "quest_list.json"

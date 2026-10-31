@@ -3,7 +3,7 @@ import re
 import math
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 DOC = ROOT / "data" / "wiki" / "bots.json"
 
 

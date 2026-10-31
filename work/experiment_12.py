@@ -13,7 +13,7 @@ from pathlib import Path
 
 from PIL import Image
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 ADB = ROOT / "work" / "platform-tools" / "adb.exe"
 PKG = "com.kabam.bigrobot"
 ACT = "com.kabam.bigrobot/com.explodingbarrel.Activity"

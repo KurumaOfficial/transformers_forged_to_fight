@@ -1,5 +1,5 @@
 from pathlib import Path
-p = Path(r"C:\Users\gameg\Desktop\TFTF\work\run_variant.py")
+p = Path(r".\work\run_variant.py")
 s = p.read_text(encoding="utf-8")
 s = s.replace('''    if "login_active_teams" in v:
         ats = json.loads(json.dumps(v["login_active_teams"]))''', '''    if "login_active_teams" in v:

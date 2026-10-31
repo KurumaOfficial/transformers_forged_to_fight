@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-root = Path(r"C:\Users\gameg\Desktop\TFTF")
+root = Path(r".")
 out = root / "work" / "variants"
 out.mkdir(parents=True, exist_ok=True)
 hero = "bumblebee_cin_dotm"

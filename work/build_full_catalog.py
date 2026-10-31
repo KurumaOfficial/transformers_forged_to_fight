@@ -10,7 +10,7 @@ import re
 import shutil
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 LOGIN = ROOT / "server" / "data" / "bcg_login_data.json"
 CATALOG = ROOT / "server" / "data" / "bot_catalog_real.json"
 BACKUP = ROOT / "server" / "data" / "bcg_login_data.pre_full_catalog.json"

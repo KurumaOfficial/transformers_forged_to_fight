@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-root = Path(r"C:\Users\gameg\Desktop\TFTF")
+root = Path(r".")
 idm = json.loads((root / "data/wiki/id_map.json").read_text(encoding="utf-8"))
 matched = idm.get("matched", [])
 client_without = []

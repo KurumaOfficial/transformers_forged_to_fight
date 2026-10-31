@@ -6,7 +6,7 @@ from pathlib import Path
 
 import numpy as np
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 BOTS = ROOT / "data" / "wiki" / "bots.json"
 OUT = ROOT / "data" / "wiki" / "stat_lobo.json"
 

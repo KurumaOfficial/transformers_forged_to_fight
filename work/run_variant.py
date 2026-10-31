@@ -6,7 +6,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gameg\Desktop\TFTF")
+ROOT = Path(r".")
 LOGIN = ROOT / "server" / "data" / "bcg_login_data.json"
 QUEST = ROOT / "server" / "data" / "quest_begin_response.json"
 SMOKE = ROOT / "work" / "smoke_test.py"

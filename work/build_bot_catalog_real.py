@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-root = Path(r"C:\Users\gameg\Desktop\TFTF")
+root = Path(r".")
 idm = json.loads((root / "data/wiki/id_map.json").read_text(encoding="utf-8"))
 bots = json.loads((root / "data/wiki/bots.json").read_text(encoding="utf-8"))["bots"]
 pages = json.loads((root / "data/wiki/pages.json").read_text(encoding="utf-8"))["pages"]

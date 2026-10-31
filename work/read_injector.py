@@ -1,10 +1,10 @@
 import subprocess, struct, re, sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-ADB = r"C:\Users\gameg\Desktop\TFTF\work\platform-tools\adb.exe"
+ADB = r".\work\platform-tools\adb.exe"
 PID = subprocess.run([ADB, "shell", "pidof com.kabam.bigrobot"], capture_output=True, text=True).stdout.strip()
 if not PID:
     raise SystemExit("app not running")
-elf = open(r"C:\Users\gameg\Desktop\TFTF\work\unpacked\lib\arm64-v8a\libil2cpp.so", "rb").read()
+elf = open(r".\work\unpacked\lib\arm64-v8a\libil2cpp.so", "rb").read()
 e_phoff = struct.unpack_from("<Q", elf, 32)[0]
 e_phentsize = struct.unpack_from("<H", elf, 54)[0]
 e_phnum = struct.unpack_from("<H", elf, 56)[0]
