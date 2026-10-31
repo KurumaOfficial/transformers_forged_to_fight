@@ -1,13 +1,35 @@
-# MASTER_PROMPT v4.12 - current state and queue (2026-10-31)
+# MASTER_PROMPT v4.13 - current state and queue (2026-10-31)
 
 Continue from this file if the chat is lost. Files beat this text:
 `STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-31.md`,
-`data/client_character_census.json`, `docs/character_census.md`,
+`data/client_character_census.json`, `data/blueprint_id_map.json`,
+`docs/character_census.md`, `docs/blueprint_ids.md`, `docs/jitter_report.md`,
 `docs/bots_grid.md`, `docs/special_attack_tokens.md`,
 `docs/post_battle_flow.md`, `docs/level_lock.md`, `docs/difficulty_model.md`,
 `spec/buff_schema.md`, `spec/configs_v412.md`.
 
-## 2026-10-31 v4.12 update (read this first)
+## 2026-10-31 v4.13 progress (read this first)
+
+- **Blueprint id (Step 1):** pilot disproved the "rename to short token"
+  hypothesis for BOTS. Renaming `windblade_gs` -> `windb_gs_5` removed the
+  card; restoring the asset id returned it. The grid keys on the asset/
+  character id. The loc token is a separate `BCGCharacterData.Character`
+  field; setting it to `windb_gs_5` kept the card, but INFO still showed 0/0
+  because the panel is blocked by the Ore-13 message. Exact JSON key and
+  on-screen special-attack confirmation are open. `docs/blueprint_ids.md`.
+- **Jitter (Step 2):** 8 s INFO capture at 15.24 fps; model centroid moves
+  5.2/8.5 px/frame mean and 27/46 px max, while the static UI crop diff is
+  0.065. This is model motion/low-FPS, not whole-screen capture jitter.
+  `TuningGameplay.DefaultAnimatorScale=6.808`; `GetNewScale` uses
+  `CachedActorBounds`. No phone. `docs/jitter_report.md`.
+- **Tests:** check_all PASS 9/9, unit 32/32, fast smoke PASS.
+- **Push:** not performed; the standing queue rules forbid `git push`,
+  remotes and `git config`. All work is committed locally.
+- **Next:** Step 3 rewards/active-quest persistence, Step 4 LevelRewards root
+  key, Step 5 BuffTriggerFactory, Step 6 20+20, Step 7 systems, Step 8
+  sweep/nightly/openapi/routing, Step 9 docs, Step 10 FINAL.
+
+## 2026-10-31 v4.12 update (historical)
 
 - **Character census (Step 1) done:** 61 base characters, 122 tokens with
   `_lw`, 59 ODR bundles + 2 merged (`starscream_gs`, `optimusprime_gs_v`).
