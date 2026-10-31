@@ -1,12 +1,55 @@
-# MASTER_PROMPT v4.11 - current state and queue (2026-10-30)
+# MASTER_PROMPT v4.12 - current state and queue (2026-10-31)
 
 Continue from this file if the chat is lost. Files beat this text:
-`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-30.md`,
-`docs/damage_fix.md`, `spec/configs_catalog.md`, `spec/tuning_live.md`,
-`spec/tuning_zero_audit.md`, `docs/post_battle_flow.md`, `docs/level_lock.md`,
-`docs/stat_ui_check.md`, `docs/starscream_search.md`.
+`STATE.md`, `OPEN_QUESTIONS.md`, `LEDGER.md`, `report/FINAL_2026-10-31.md`,
+`data/client_character_census.json`, `docs/character_census.md`,
+`docs/bots_grid.md`, `docs/special_attack_tokens.md`,
+`docs/post_battle_flow.md`, `docs/level_lock.md`, `docs/difficulty_model.md`,
+`spec/buff_schema.md`, `spec/configs_v412.md`.
 
-## 2026-10-30 v4.11 update (read this first)
+## 2026-10-31 v4.12 update (read this first)
+
+- **Character census (Step 1) done:** 61 base characters, 122 tokens with
+  `_lw`, 59 ODR bundles + 2 merged (`starscream_gs`, `optimusprime_gs_v`).
+  923 move TextAssets; 108 TOCs; 102 assetbundles. Token -> bot mapping is in
+  `data/client_character_census.json`; `id_map` 61, `bot_catalog_real` 61,
+  `boss_map` 90/90, `boss_gaps` empty.
+- **BOTS grid (Step 2) static:** the screen shows exactly the 59 ODR playable
+  cards in reverse-alphabetical order; Starscream and Optimus GS are
+  merged-only and never appear. Server roster add/replace does not change the
+  grid. Cards show display default `300` although live `BCGUserHero` has
+  1381/1426; UPGRADE/INFO shows 0 HP/ATK. `docs/bots_grid.md`.
+- **Localization (Step 3) static:** key builder `0xC1B154` truncates the
+  blueprint id at the last `_`, so the id must be `<loc_token>_<suffix>`
+  (`windb_gs_2` -> `WINDB_GS`). Current catalog uses asset ids
+  (`windblade_gs`) and misses the strings. 7 bots have no strings at all.
+  `docs/special_attack_tokens.md`.
+- **Post-battle (Step 4) partial:** async `match-resolved` reads
+  `qid`/`battleId`; `ProcessActionResultsAndProgression` reads
+  `results`/`progression`/`teamData`; `QuestProgression` reads
+  `version`/`currentPos`/`cleared`/`previouslyCleared`. Three reward payload
+  shapes tried; VICTORY/PERFECT still shows empty REWARDS and 22%.
+  `docs/post_battle_flow.md`, evidence `docs/evidence/post_battle_2026-10-31/`.
+- **Level (Step 6) blocked:** `/levelrewards/fetch` requested; `status` and
+  `levelrewards` payloads with `last_awarded_level`/`nextLevelXp`/`types`
+  tried; live `LevelRewardsStatus.Level` stays 0 and `IsEnabled=false`.
+  `docs/level_lock.md`.
+- **Difficulty (Step 5) partial:** `test` = weak-enemy flag; `calibrated` =
+  wiki rank/level stats, no forced wins. 20+20 series not completed.
+  `docs/difficulty_model.md`.
+- **Buff (Step 7) blocked:** `BuffTriggerFactory`/`BuffGroup`/`BCGStatModifier`
+  anchors found; no named Bleed/Shield/Evade classes, no trigger JSON format.
+  `spec/buff_schema.md`.
+- **Configs (Step 8) partial:** only `bcg-combat` keys confirmed; other modes
+  empty and safe. `spec/configs_v412.md`.
+- **Tests:** normal battle step COMPLETED/LOST with wiki stats; weak wins for
+  post-battle checks; final nightly after the v4.12 changes is recorded in
+  `report/FINAL_2026-10-31.md`.
+- **Rules unchanged:** no Frida/gadget, client patch, debugger, Play Store
+  image, block bypass, OneDrive, push/gc --prune/filter-repo/force-push/remotes/
+  git config.
+
+## 2026-10-30 v4.11 update (historical)
 
 - **Damage chain is documented:** `TuningGameplay.ArmorRatingConstant`
   (+0x20) <- `DeserializeData` (`0x1425540`) <- `armor_break` in
